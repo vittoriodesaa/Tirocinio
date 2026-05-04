@@ -1,0 +1,11 @@
+# Ignora l'ambiente virtuale dentro backend
+backend/venv/
+
+# Ignora la cartella temporanea
+backend/temp/
+
+# File di sistema macOS
+.DS_Store
+
+# Cache di Python
+**/__pycache__/

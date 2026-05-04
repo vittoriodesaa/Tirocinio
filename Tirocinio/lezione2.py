@@ -20,10 +20,11 @@ graph.add_node('trolliamo', trolliamo)
 graph.add_edge(START, 'trolliamo')
 graph.add_edge('trolliamo', END)
 
+
 graph = graph.compile()
 
 
-ris = graph.invoke({'messages': [{'role': 'user', 'content': 'Uè, spiegami cos è un grafo in 5 parole'}]})
+ris = graph.invoke({'messages': [{'role': 'user', 'content': 'Uè, spiegami cos è un agente in informatica in 25 parole'}]})
 
 # print ultima frase detta dall'ia
 print(ris['messages'][-1].content)
