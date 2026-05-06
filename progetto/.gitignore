@@ -8,4 +8,5 @@ backend/temp/
 .DS_Store
 
 # Cache di Python
+**/__pycache__/backend/venv/
 **/__pycache__/
