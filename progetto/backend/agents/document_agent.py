@@ -1,4 +1,8 @@
 import re
+import os
+import subprocess
+from markitdown import MarkItDown
+
 from typing import Tuple, List
 from utils import (
     SourceInput, SourceProfile, QualitySignals, Issue,
@@ -7,15 +11,15 @@ from utils import (
 
 class DocumentAgent:
     def __init__(self):
-        # In futuro qui inizializzeremo: self.md_converter = MarkItDown()
-        pass
+        # Inizializziamo il jolly Microsoft
+        self.md_converter = MarkItDown()
 
     def elabora_sorgente(self, source: SourceInput) -> Tuple[SourceProfile, str, List[Chunk], QualityReport]:
         """
         Metodo principale dell'agente. Prende in carico il documento ed esegue la pipeline di estrazione.
         """
         # 1 e 2. Routing e Conversione (Simulata)
-        raw_markdown = self._estrai_con_markitdown(source)
+        raw_markdown = self._estrai_con_markitdown(source.storage_ref)
 
         # 3. Post-Processing
         clean_markdown = self._normalizza_testo(raw_markdown)
@@ -55,10 +59,45 @@ class DocumentAgent:
 
     # --- METODI INTERNI (L'intelligenza dell'Agente) ---
 
-    def _estrai_con_markitdown(self, source: SourceInput) -> str:
-        """Simula il lavoro 'cieco' della libreria Microsoft markitdown."""
-        # Simuliamo un output con qualche imperfezione per testare la logica
-        return f"# {source.title_hint or 'Documento Senza Titolo'}\n\nQuesto è un testo estratto dal file {source.filename}.\n\n| Tabella | Rotta |\n|---|---|\nTesto fuso per errore."
+    def _estrai_con_markitdown(self, source_path: str) -> str:
+        """
+        Smista il file al tool corretto in base all'estensione e restituisce il Markdown.
+        """
+        # 1. Estraggo l'estensione del file in minuscolo (es. '.pdf', '.docx')
+        _, ext = os.path.splitext(source_path)
+        ext = ext.lower()
+
+        try:
+            # caso A: pdf
+            if ext == '.pdf':
+                print(f"Routing: File PDF rilevato. Uso pdf_manuals_to_markdown.py per {source_path}")
+                # Lancia il tuo script dei PDF tramite terminale e cattura l'output
+                result = subprocess.run(
+                    ['python', 'tools/pdf_manuals_to_markdown.py', source_path],
+                    capture_output=True, text=True, check=True
+                )
+                return result.stdout
+
+            #caso B: Word
+            elif ext in ['.doc', '.docx']:
+                print(f"Routing: File Word rilevato. Uso doc_to_md.py per {source_path}")
+                # Lancia il tuo script Word tramite terminale e cattura l'output
+                result = subprocess.run(
+                    ['python', 'tools/doc_to_md.py', source_path],
+                    capture_output=True, text=True, check=True
+                )
+                return result.stdout
+
+            #caso C: jolly
+            else:
+                print(f"Routing: Estensione {ext} rilevata. Uso MarkItDown universale.")
+                # Usa la libreria MarkItDown per immagini, pptx, excel, ecc.
+                result = self.md_converter.convert(source_path)
+                return result.text_content
+                
+        except Exception as e:
+            print(f"Errore critico durante l'estrazione di {source_path}: {e}")
+            return f"Errore estrazione: {str(e)}"
 
     def _normalizza_testo(self, raw_md: str) -> str:
         """Ripulisce il markdown grezzo. Fase di post-processing."""
@@ -131,4 +170,4 @@ class DocumentAgent:
                     quality_score=base_score
                 )
             )
-        return chunks
+        return chunks 

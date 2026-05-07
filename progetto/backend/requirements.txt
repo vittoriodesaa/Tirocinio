@@ -1,0 +1,4 @@
+markitdown
+pymupdf4llm
+mammoth
+markdownify
