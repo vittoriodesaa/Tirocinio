@@ -11,25 +11,25 @@ from utils import (
 
 class DocumentAgent:
     def __init__(self):
-        # Inizializziamo il jolly Microsoft
+        # Inizializzo MarkItDown (il nostro fallback per i formati non coperti)
         self.md_converter = MarkItDown()
 
     def elabora_sorgente(self, source: SourceInput) -> Tuple[SourceProfile, str, List[Chunk], QualityReport]:
         """
-        Metodo principale dell'agente. Prende in carico il documento ed esegue la pipeline di estrazione.
+        Cuore dell'agente: prende il file, lo fa digerire agli script e restituisce testo pulito + metriche.
         """
-        # 1 e 2. Routing e Conversione (Simulata)
+        # 1. Capisce che file è e lo converte in markdown (chiama gli script esterni)
         raw_markdown = self._estrai_con_markitdown(source.storage_ref)
 
-        # 3. Post-Processing
+        # 2. Pulizia base del testo grezzo
         clean_markdown = self._normalizza_testo(raw_markdown)
 
-        # 4. Quality Check (Calcolo metriche e routing decisionale)
+        # 3. Check della qualità: com'è andata l'estrazione?
         signals, issues = self._calcola_segnali_qualita(clean_markdown)
         quality_score = self._calcola_punteggio_globale(signals)
         status, blocking, action = self._determina_stato_handoff(quality_score, issues)
 
-        # 5. Generazione dei 4 Artefatti di Output
+        # 4. Prepara il pacchetto finale per il prossimo agente
         profile = SourceProfile(
             source_id=source.source_id,
             detected_format=source.source_type_hint,
@@ -38,7 +38,7 @@ class DocumentAgent:
             has_extractable_text=True,
             ocr_used=source.ocr_required,
             layout_complexity="medium",
-            page_count=1, # Dato simulato
+            page_count=1, # TODO: da implementare il conteggio reale delle pagine
             conversion_strategy="markitdown_standard"
         )
 
@@ -52,46 +52,45 @@ class DocumentAgent:
             recommended_action=action
         )
 
-        # Creazione del Chunked Corpus (simulato dividendo per paragrafi)
+        # Taglia il testo in chunk (per ora in modo grezzo sui doppi a capo)
         chunks = self._crea_chunks(clean_markdown, source.source_id, quality_score)
 
         return profile, clean_markdown, chunks, report
 
-    # --- METODI INTERNI (L'intelligenza dell'Agente) ---
+    # --- HELPER METHODS ---
 
     def _estrai_con_markitdown(self, source_path: str) -> str:
         """
-        Smista il file al tool corretto in base all'estensione e restituisce il Markdown.
+        Capisce l'estensione e lancia lo script giusto tramite terminale.
         """
-        # 1. Estraggo l'estensione del file in minuscolo (es. '.pdf', '.docx')
+        # Prendo l'estensione in lower per evitare casini con i case
         _, ext = os.path.splitext(source_path)
         ext = ext.lower()
 
         try:
-            # caso A: pdf
+            # Sezione PDF
             if ext == '.pdf':
                 print(f"Routing: File PDF rilevato. Uso pdf_manuals_to_markdown.py per {source_path}")
-                # Lancia il tuo script dei PDF tramite terminale e cattura l'output
+                # Lancia lo script batch e si prende l'output da stdout
                 result = subprocess.run(
                     ['python', 'tools/pdf_manuals_to_markdown.py', source_path],
                     capture_output=True, text=True, check=True
                 )
                 return result.stdout
 
-            #caso B: Word
+            # Sezione Word
             elif ext in ['.doc', '.docx']:
                 print(f"Routing: File Word rilevato. Uso doc_to_md.py per {source_path}")
-                # Lancia il tuo script Word tramite terminale e cattura l'output
+                # Idem come sopra ma per i .docx
                 result = subprocess.run(
                     ['python', 'tools/doc_to_md.py', source_path],
                     capture_output=True, text=True, check=True
                 )
                 return result.stdout
 
-            #caso C: jolly
+            # Fallback per tutto il resto
             else:
-                print(f"Routing: Estensione {ext} rilevata. Uso MarkItDown universale.")
-                # Usa la libreria MarkItDown per immagini, pptx, excel, ecc.
+                print(f"Routing: Estensione {ext} rilevata. Passo la palla a MarkItDown universale.")
                 result = self.md_converter.convert(source_path)
                 return result.text_content
                 
@@ -100,17 +99,17 @@ class DocumentAgent:
             return f"Errore estrazione: {str(e)}"
 
     def _normalizza_testo(self, raw_md: str) -> str:
-        """Ripulisce il markdown grezzo. Fase di post-processing."""
+        """Toglie un po' di sporco dal markdown appena estratto."""
         testo_pulito = raw_md.strip()
-        # Esempio: rimuove spazi vuoti multipli
+        # Via gli a capo esagerati
         testo_pulito = re.sub(r'\n{3,}', '\n\n', testo_pulito)
         return testo_pulito
 
     def _calcola_segnali_qualita(self, test_md: str) -> Tuple[QualitySignals, List[Issue]]:
-        """Analizza il testo per capire se markitdown ha fatto un buon lavoro."""
+        """Cerca di capire se il testo fa schifo o è usabile."""
         issues = []
         
-        # Simulazione di analisi logica
+        # TODO: logica provvisoria, da raffinare
         ha_titoli = "#" in test_md
         ha_tabelle_rotte = "|---|---|" in test_md and "fuso" in test_md
 
@@ -128,7 +127,7 @@ class DocumentAgent:
         return signals, issues
 
     def _calcola_punteggio_globale(self, signals: QualitySignals) -> float:
-        """Pesa i vari segnali per ottenere un punteggio da 0.0 a 1.0"""
+        """Fa la media pesata dei segnali di qualità."""
         pesi = {
             'title_structure': 0.3,
             'reading_order': 0.3,
@@ -146,7 +145,7 @@ class DocumentAgent:
         return round(score, 2)
 
     def _determina_stato_handoff(self, score: float, issues: List[Issue]) -> Tuple[DocumentStatus, bool, str]:
-        """Applica la logica di business per decidere il destino del documento."""
+        """Decide se il file passa il turno o serve un controllo umano."""
         if score >= 0.85 and not issues:
             return DocumentStatus.PASS, False, "continue"
         elif score >= 0.60:
@@ -155,7 +154,7 @@ class DocumentAgent:
             return DocumentStatus.FAIL, True, "require_human_review"
 
     def _crea_chunks(self, text: str, source_id: str, base_score: float) -> List[Chunk]:
-        """Divide il testo pulito in blocchi per il Planning Agent."""
+        """Spezza il malloppo in chunk più piccoli (fondamentale per i vettori dopo)."""
         paragrafi = [p for p in text.split('\n\n') if p.strip()]
         chunks = []
         for i, para in enumerate(paragrafi):
@@ -163,11 +162,11 @@ class DocumentAgent:
                 Chunk(
                     chunk_id=f"{source_id}_chunk_{i+1:03d}",
                     source_id=source_id,
-                    section_path=["Root"], # Simulato
+                    section_path=["Root"], # TODO: da sistemare l'alberatura vera
                     page_refs=[1],
                     text=para,
-                    token_estimate=len(para) // 4, # Stima approssimativa
+                    token_estimate=len(para) // 4, # Hack veloce per stimare i token
                     quality_score=base_score
                 )
             )
-        return chunks 
+        return chunks
