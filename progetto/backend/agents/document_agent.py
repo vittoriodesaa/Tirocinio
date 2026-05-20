@@ -280,37 +280,67 @@ page_count: {estimated_pages}
     
     def _crea_chunks_strutturati(self, sezioni: List[dict], source_id: str, base_score: float):
         """
-        Punto 3a: Usa la gerarchia nativa dell'Analyzer e genera la sintesi LLM.
+        Usa la gerarchia nativa dell'Analyzer e genera la sintesi LLM.
+        Implementa il pattern Map-Reduce: raggruppa i sottocapitoli sotto il loro Capitolo Principale.
         Restituisce (List[Chunk], DocumentHierarchy).
         """
         chunks = []
-        gerarchia = DocumentHierarchy() # Il nostro nuovo cassetto
+        gerarchia = DocumentHierarchy()
+        
+       
+        macro_argomento_corrente = None
+        sintesi_accumulate = []
         
         for i, sec in enumerate(sezioni):
             titolo = sec["title"]
             testo = sec["raw_content"]
+            
+            
+            # Se il titolo inizia per "Numero.Numero" (es. 1.1, 12.4) o "Lettera.Numero" (es. B.5)
+            # allora è un Sottocapitolo (Livello 2). Altrimenti è un Capitolo Principale (Livello 1).
+            if re.match(r'^(\d+|[A-Z])\.\d+', titolo):
+                livello = 2
+            else:
+                livello = 1
+            
             range_pagine = sec.get("page_range", "1")
             token_est = int(len(testo.split()) * 1.3)
             
             
-            # Se il capitolo supera i 4000 token, è troppo grosso per Groq e per il DB vettoriale.
             if token_est > 4000:
-                print(f"   [Routing Interno] Capitolo '{titolo}' troppo grande ({token_est} token). Delego al carrello...")
-                # Chiamiamo l'altro metodo. Lui taglierà e farà tutto il lavoro sporco.
+                print(f"   [Routing Interno] Sezione '{titolo}' (Lvl {livello}) troppo grande ({token_est} token). Delego al carrello...")
                 sub_chunks, sub_gerarchia = self._crea_chunks_piatti(testo, source_id, base_score)
-                
-                # Uniamo il suo lavoro al nostro contenitore principale
                 chunks.extend(sub_chunks)
-                gerarchia.macro_argomenti.extend(sub_gerarchia.macro_argomenti)
-                gerarchia.mappa_sintesi.update(sub_gerarchia.mappa_sintesi)
-                continue # Saltiamo il resto del ciclo, per questo capitolo abbiamo finito!
+                
+                # Raccogliamo i riassunti creati dal carrello in un'unica stringa
+                sintesi_carrello = "\n".join([f"- {v}" for v in sub_gerarchia.mappa_sintesi.values()])
+                sintesi_corrente = f"Sintesi spezzettata:\n{sintesi_carrello}"
+                
+                # Applichiamo la stessa logica di smistamento anche per i mostri
+                if livello == 1:
+                    if macro_argomento_corrente:
+                        gerarchia.macro_argomenti.append(macro_argomento_corrente)
+                        gerarchia.mappa_sintesi[macro_argomento_corrente] = "\n\n".join(sintesi_accumulate)
+                    macro_argomento_corrente = titolo
+                    sintesi_accumulate = [f"**{titolo}**\n{sintesi_corrente}"]
+                else:
+                    if not macro_argomento_corrente:
+                        macro_argomento_corrente = "Introduzione"
+                    sintesi_accumulate.append(f"**{titolo}**\n{sintesi_corrente}")
+                continue
             
 
-            # 1. Creazione del Chunk (Già fixato nella Fase 3)
+            
+            # BONUS VETTORIALE: Ora il chunk sa esattamente a quale capitolo appartiene!
+            path_gerarchico = ["Document"]
+            if macro_argomento_corrente and macro_argomento_corrente != titolo:
+                path_gerarchico.append(macro_argomento_corrente)
+            path_gerarchico.append(titolo)
+
             chunk = Chunk(
                 chunk_id=f"{source_id}_chunk_{i+1:03d}",
                 source_id=source_id,
-                section_path=["Document", titolo],
+                section_path=path_gerarchico, # Path arricchito!
                 page_refs=[range_pagine], 
                 text=testo,                             
                 token_estimate=token_est,          
@@ -318,20 +348,42 @@ page_count: {estimated_pages}
             )
             chunks.append(chunk)
             
-            # 2. Popolamento dell'Indice Globale
-            if titolo not in gerarchia.macro_argomenti:
-                gerarchia.macro_argomenti.append(titolo)
+            
+            sintesi_pura = self._chiama_llm_per_sintesi_strutturati(titolo, testo)
+            # Formattiamo il riassunto mettendoci il titolo in grassetto
+            sintesi_formattata = f"**{titolo}**\n{sintesi_pura}"
+            
+            
+            if livello == 1:
+                # È iniziato un nuovo Capitolo! Chiudiamo il precedente e salviamolo.
+                if macro_argomento_corrente:
+                    gerarchia.macro_argomenti.append(macro_argomento_corrente)
+                    # Uniamo tutte le sintesi accumulate in un unico mega-testo
+                    gerarchia.mappa_sintesi[macro_argomento_corrente] = "\n\n".join(sintesi_accumulate)
                 
-            # 3. Chiamata all'IA (Solo per la sintesi)
-            sintesi = self._chiama_llm_per_sintesi_strutturati(titolo, testo)
-            gerarchia.mappa_sintesi[titolo] = sintesi
+                # Apriamo la cartellina per il nuovo capitolo appena trovato
+                macro_argomento_corrente = titolo
+                sintesi_accumulate = [sintesi_formattata]
+                
+            else:
+                # È un Sottocapitolo (Livello 2+). 
+                if not macro_argomento_corrente:
+                    macro_argomento_corrente = "Sezioni Iniziali"
+                
+                # Nascondiamo la sintesi nella cartellina aperta, NON nei macro-argomenti!
+                sintesi_accumulate.append(sintesi_formattata)
             
             
-            # Pausa matematica: 1 secondo ogni 100 token (limite Groq 6000/minuto), con minimo 3 secondi
             tempo_pausa = max(3, int(token_est / 100))
             print(f"   [Pacing] Attesa di {tempo_pausa} sec per il cooldown di Groq...")
             time.sleep(tempo_pausa)
             
+    
+        # Fuori dal ciclo: salviamo l'ultimo capitolo rimasto nella cartellina a fine libro!
+        if macro_argomento_corrente:
+            if macro_argomento_corrente not in gerarchia.macro_argomenti:
+                gerarchia.macro_argomenti.append(macro_argomento_corrente)
+            gerarchia.mappa_sintesi[macro_argomento_corrente] = "\n\n".join(sintesi_accumulate)
             
         return chunks, gerarchia
 
@@ -436,7 +488,7 @@ page_count: {estimated_pages}
                 tempo_pausa = max(3, int(token_est / 100))
                 print(f"   [Pacing] Attesa di {tempo_pausa} sec per il cooldown di Groq (Carrello)...")
                 time.sleep(tempo_pausa)
-                # ---------------------------------------------
+                
                 
                 # 6. Reset del carrello per il prossimo blocco
                 chunk_counter += 1
