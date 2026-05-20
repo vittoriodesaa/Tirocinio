@@ -1,19 +1,19 @@
-from typing import List, Optional
+from typing import List, Optional,Dict
 from enum import Enum
 from pydantic import BaseModel, Field
 
-# ============================================================================
+
 # ENUMERATORI (Stati rigidi per evitare errori di battitura)
-# ============================================================================
+
 
 class DocumentStatus(str, Enum):
     PASS = "PASS"
     PASS_WITH_WARNINGS = "PASS_WITH_WARNINGS"
     FAIL = "FAIL"
 
-# ============================================================================
-# 1. CONTRATTI DI INPUT (Ciò che entra nel sistema)
-# ============================================================================
+
+# 1. CONTRATTI DI INPUT (Ciò che entra nel Document Agent)
+
 
 class ImportContext(BaseModel):
     campagna_id: Optional[int] = None
@@ -43,9 +43,9 @@ class JobBatchInput(BaseModel):
     config: SourceConfig
 
 
-# ============================================================================
+
 # 2. CONTRATTI DI OUTPUT (Ciò che esce dal Document Agent)
-# ============================================================================
+
 
 class SourceProfile(BaseModel):
     source_id: str
@@ -79,11 +79,17 @@ class QualityReport(BaseModel):
     issues: List[Issue] = Field(default_factory=list)
     recommended_action: str
 
+
+class DocumentHierarchy(BaseModel):
+    macro_argomenti: List[str] = Field(default_factory=list)
+    mappa_sintesi: Dict[str, str] = Field(default_factory=dict)
+
+    
 class Chunk(BaseModel):
     chunk_id: str
     source_id: str
     section_path: List[str]
-    page_refs: List[int]
+    page_refs: List[str]
     text: str
     token_estimate: int
     quality_score: float

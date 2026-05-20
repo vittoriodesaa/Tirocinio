@@ -5,17 +5,26 @@ from markitdown import MarkItDown
 from typing import Tuple, List
 from pydantic import BaseModel, Field
 import json
+import time
 
 # LangChain/Groq setup
 from langchain_groq import ChatGroq
 
 from utils import (
     SourceInput, SourceProfile, QualitySignals, Issue,
-    QualityReport, Chunk, DocumentStatus
+    QualityReport, Chunk, DocumentStatus, 
+    JobBatchInput, JobBatchOutput, SourceOutputOverview,
+    DocumentHierarchy 
 )
 from dotenv import load_dotenv
 load_dotenv()
 
+from pathlib import Path
+
+# Importiamo le funzioni native dai nostri tool
+from tools.pdf_manuals_to_markdown import _convert_one as convert_pdf
+from tools.doc_to_md import convert as convert_word
+from tools.markdown_analyzer import MarkdownAnalyzer
 
 class RoutingDecision(BaseModel):
     extractor: str = Field(
@@ -36,6 +45,15 @@ class LLMQualityEvaluation(BaseModel):
     ocr_confidence: float = Field(description="Punteggio da 0.0 a 1.0", ge=0.0, le=1.0)
     issues: List[LLMIssue] = Field(default_factory=list)
 
+# Schema LLM temporaneo per estrarre in sicurezza il riassunto (Cantiere 4 - Strutturati)
+class CapitoloSintesi(BaseModel):
+    sintesi: str = Field(description="La sintesi densa, strutturata e proporzionale del testo fornito.")
+
+# Schema LLM di transito per estrarre titolo e riassunto (Cantiere 4 - Piatti)
+class CarrelloSintesi(BaseModel):
+    titolo: str = Field(description="Un titolo breve ed esplicativo inventato per questo blocco di testo.")
+    sintesi: str = Field(description="La sintesi densa, strutturata e proporzionale del testo fornito.")
+
 class DocumentAgent:
     def __init__(self):
         # Fallback per formati generici
@@ -43,7 +61,7 @@ class DocumentAgent:
         
         # Init LLM (Groq) - Temp 0 per precisione nel routing e nel reporting
         self.llm = ChatGroq(
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0,
             max_tokens=1024
         )
@@ -65,18 +83,25 @@ class DocumentAgent:
             
             # Esecuzione condizionale basata su decisione LLM
             if decision.extractor == 'pdf_script':
-                result = subprocess.run(
-                    ['python', 'tools/pdf_manuals_to_markdown.py', source.storage_ref],
-                    capture_output=True, text=True, check=True
+                # FASE 1: Chiamata diretta in RAM alla funzione PDF
+                testo_estratto = convert_pdf(
+                    Path(source.storage_ref),
+                    header=False, 
+                    footer=False, 
+                    show_progress=False, 
+                    page_separators=True, 
+                    dpi=150, 
+                    ocr_language="ita+eng", 
+                    front_matter=False, 
+                    write_images=False, 
+                    image_path=None
                 )
-                return result.stdout
+                return testo_estratto
                 
             elif decision.extractor == 'word_script':
-                result = subprocess.run(
-                    ['python', 'tools/doc_to_md.py', source.storage_ref],
-                    capture_output=True, text=True, check=True
-                )
-                return result.stdout
+                # FASE 1: Chiamata diretta in RAM alla funzione Word
+                testo_estratto = convert_word(Path(source.storage_ref), engine="mammoth")
+                return testo_estratto
                 
             else:
                 # Fallback universale per tutti gli altri formati
@@ -237,37 +262,221 @@ page_count: {estimated_pages}
             issues=issues,
             recommended_action=action
         )
-
-        # Generazione vettori (usiamo il testo SENZA YAML per non sporcare i chunk)
-        chunks = self._crea_chunks(clean_markdown, source.source_id, quality_score)
-
-        # Restituiamo il markdown CON il frontmatter YAML per il Planning Agent
-        return profile, clean_markdown_con_yaml, chunks, report
-    
-
-    
-    def _crea_chunks(self, text: str, source_id: str, base_score: float) -> List[Chunk]:
-        # Split base su doppi a capo con pulizia stringhe vuote
-        paragrafi = [p.strip() for p in text.split('\n\n') if p.strip()]
-        chunks = []
+        analisi = MarkdownAnalyzer.analyze(clean_markdown, section_level=2)
         
-        for i, para in enumerate(paragrafi):
-            # Stima token grezza: ~1.3 token per parola
-            num_words = len(para.split())
-            token_est = int(num_words * 1.3)
+        if analisi["is_flat"]:
+            print("-> Rilevato documento piatto. Esecuzione chunking di fallback.")
+            # Aggiunto 'gerarchia'
+            chunks, gerarchia = self._crea_chunks_piatti(clean_markdown, source.source_id, quality_score)
+        else:
+            print(f"-> Rilevato documento strutturato ({analisi['section_count']} sezioni). Esecuzione chunking gerarchico.")
+            # Aggiunto 'gerarchia'
+            chunks, gerarchia = self._crea_chunks_strutturati(analisi["sections"], source.source_id, quality_score)
+
+        # Restituiamo il markdown CON il frontmatter YAML e la NUOVA gerarchia per il Planning Agent
+        return profile, clean_markdown_con_yaml, chunks, report, gerarchia
+    
+
+    
+    def _crea_chunks_strutturati(self, sezioni: List[dict], source_id: str, base_score: float):
+        """
+        Punto 3a: Usa la gerarchia nativa dell'Analyzer e genera la sintesi LLM.
+        Restituisce (List[Chunk], DocumentHierarchy).
+        """
+        chunks = []
+        gerarchia = DocumentHierarchy() # Il nostro nuovo cassetto
+        
+        for i, sec in enumerate(sezioni):
+            titolo = sec["title"]
+            testo = sec["raw_content"]
+            range_pagine = sec.get("page_range", "1")
+            token_est = int(len(testo.split()) * 1.3)
             
-            chunks.append(
-                Chunk(
-                    chunk_id=f"{source_id}_chunk_{i+1:03d}",
+            
+            # Se il capitolo supera i 4000 token, è troppo grosso per Groq e per il DB vettoriale.
+            if token_est > 4000:
+                print(f"   [Routing Interno] Capitolo '{titolo}' troppo grande ({token_est} token). Delego al carrello...")
+                # Chiamiamo l'altro metodo. Lui taglierà e farà tutto il lavoro sporco.
+                sub_chunks, sub_gerarchia = self._crea_chunks_piatti(testo, source_id, base_score)
+                
+                # Uniamo il suo lavoro al nostro contenitore principale
+                chunks.extend(sub_chunks)
+                gerarchia.macro_argomenti.extend(sub_gerarchia.macro_argomenti)
+                gerarchia.mappa_sintesi.update(sub_gerarchia.mappa_sintesi)
+                continue # Saltiamo il resto del ciclo, per questo capitolo abbiamo finito!
+            
+
+            # 1. Creazione del Chunk (Già fixato nella Fase 3)
+            chunk = Chunk(
+                chunk_id=f"{source_id}_chunk_{i+1:03d}",
+                source_id=source_id,
+                section_path=["Document", titolo],
+                page_refs=[range_pagine], 
+                text=testo,                             
+                token_estimate=token_est,          
+                quality_score=base_score            
+            )
+            chunks.append(chunk)
+            
+            # 2. Popolamento dell'Indice Globale
+            if titolo not in gerarchia.macro_argomenti:
+                gerarchia.macro_argomenti.append(titolo)
+                
+            # 3. Chiamata all'IA (Solo per la sintesi)
+            sintesi = self._chiama_llm_per_sintesi_strutturati(titolo, testo)
+            gerarchia.mappa_sintesi[titolo] = sintesi
+            
+            
+            # Pausa matematica: 1 secondo ogni 100 token (limite Groq 6000/minuto), con minimo 3 secondi
+            tempo_pausa = max(3, int(token_est / 100))
+            print(f"   [Pacing] Attesa di {tempo_pausa} sec per il cooldown di Groq...")
+            time.sleep(tempo_pausa)
+            
+            
+        return chunks, gerarchia
+
+    def _chiama_llm_per_sintesi_strutturati(self, titolo: str, testo: str) -> str:
+        """
+        Helper reale per la chiamata a Groq (Documenti Strutturati).
+        Usa lo structured output di LangChain per estrarre la sintesi.
+        """
+        #print(f"   [LLM] Generazione sintesi reale per il capitolo: {titolo}...")
+        
+        prompt = (
+            f"Sei un analista esperto. Leggi il capitolo seguente intitolato '{titolo}'.\n"
+            "Genera un riassunto denso e strutturato, la cui lunghezza sia proporzionale "
+            "al volume del testo che hai appena letto.\n"
+            "ATTENZIONE: DEVI RESTITUIRE ESATTAMENTE ED ESCLUSIVAMENTE IL FORMATO JSON RICHIESTO. "
+            "NON AGGIUNGERE TESTO FUORI DAL JSON. NON USARE TAG COME <function>. "
+            "POPOLA SOLO ED ESCLUSIVAMENTE LA CHIAVE 'sintesi'.\n\n"
+            f"TESTO:\n{testo}"
+        )
+        
+        try:
+            # Vincoliamo l'LLM a rispondere usando la nostra micro-classe Pydantic
+            llm_strutturato = self.llm.with_structured_output(CapitoloSintesi)
+            
+            # Invocazione del modello
+            risposta = llm_strutturato.invoke(prompt)
+            
+            # Restituiamo direttamente la stringa estratta dal campo del modello
+            return risposta.sintesi
+            
+        except Exception as e:
+            print(f"   [Errore LLM] Impossibile generare la sintesi per {titolo}: {e}")
+            # Fallback sicuro in caso di timeout o errore API per non bloccare il batch
+            return f"Sintesi non disponibile. Errore durante l'elaborazione del capitolo '{titolo}'."
+
+    def _crea_chunks_piatti(self, raw_text: str, source_id: str, base_score: float):
+        """
+        Punto 3b: Motore semantico a carrelli per documenti senza struttura.
+        Restituisce (List[Chunk], DocumentHierarchy).
+        """
+        chunks = []
+        gerarchia = DocumentHierarchy() # Il nostro nuovo cassetto
+        
+        lines = raw_text.split('\n')
+        carrello = []
+        
+        # Contatori spaziali e di volume
+        current_page = 1
+        start_page = 1
+        parole_nel_carrello = 0
+        MAX_PAROLE = 3000  # Soglia del carrello: circa 8-10 pagine di testo
+        chunk_counter = 1
+        
+        import re
+        
+        for i, line in enumerate(lines):
+            # 1. Rilevatore di pagina spaziale
+            if re.match(r'^[-*_]{3,}$', line.strip()):
+                current_page += 1
+                continue
+                
+            testo_pulito = line.strip()
+            if not testo_pulito:
+                continue
+                
+            # 2. Riempimento del carrello
+            carrello.append(testo_pulito)
+            parole_nel_carrello += len(testo_pulito.split())
+            
+            # 3. Svuotamento carrello (se pieno o se è finita la lettura del documento)
+            is_last_line = (i == len(lines) - 1)
+            
+            if parole_nel_carrello >= MAX_PAROLE or is_last_line:
+                testo_carrello = "\n".join(carrello)
+                
+                # --- CHIAMATA ALL'IA (Llama/Groq) ---
+                # Chiamiamo un metodo di appoggio per ottenere il JSON col Titolo e la Sintesi dinamica
+                titolo, sintesi = self._chiama_llm_per_sintesi(testo_carrello)
+                
+                # 4. Archiviazione Globale (Compilazione di utils.py)
+                if titolo not in gerarchia.macro_argomenti:
+                    gerarchia.macro_argomenti.append(titolo)
+                gerarchia.mappa_sintesi[titolo] = sintesi
+                
+                # 5. Formattazione Spaziale e Creazione Chunk
+                # 5. Formattazione Spaziale e Creazione Chunk
+                token_est = int(parole_nel_carrello * 1.3)
+                range_pagine = f"{start_page}-{current_page}" if start_page != current_page else str(start_page)
+                
+                chunk = Chunk(
+                    chunk_id=f"{source_id}_chunk_{chunk_counter:03d}",
                     source_id=source_id,
-                    section_path=["Document"],
-                    page_refs=[1], # Placeholder: richiede tracking da parser
-                    text=para,
+                    section_path=["Document", titolo], 
+                    page_refs=[range_pagine],          
+                    text=testo_carrello,
                     token_estimate=token_est,
                     quality_score=base_score
                 )
-            )
-        return chunks
+                chunks.append(chunk)
+                
+                
+                tempo_pausa = max(3, int(token_est / 100))
+                print(f"   [Pacing] Attesa di {tempo_pausa} sec per il cooldown di Groq (Carrello)...")
+                time.sleep(tempo_pausa)
+                # ---------------------------------------------
+                
+                # 6. Reset del carrello per il prossimo blocco
+                chunk_counter += 1
+                carrello = []
+                parole_nel_carrello = 0
+                start_page = current_page # Il prossimo blocco parte dalla pagina attuale
+                
+        return chunks, gerarchia
+
+    def _chiama_llm_per_sintesi(self, testo: str) -> Tuple[str, str]:
+        """
+        Helper reale per la chiamata a Groq (Documenti Piatti).
+        Usa lo structured output di LangChain per farsi inventare Titolo e Sintesi.
+        """
+        #print("   [LLM] Generazione titolo e sintesi per il carrello di testo...")
+        
+        prompt = (
+            "Sei un analista esperto. Leggi il testo seguente.\n"
+            "Inventa un 'titolo' breve che riassuma l'argomento trattato, e scrivi una 'sintesi' densa "
+            "la cui lunghezza sia proporzionale al volume del testo che hai appena letto.\n"
+            "ATTENZIONE: DEVI RESTITUIRE ESATTAMENTE ED ESCLUSIVAMENTE IL FORMATO JSON RICHIESTO. "
+            "NON AGGIUNGERE TESTO FUORI DAL JSON. NON USARE TAG COME <function>. "
+            "POPOLA ENTRAMBE LE CHIAVI 'titolo' E 'sintesi'.\n\n"
+            f"TESTO:\n{testo}"
+        )
+        
+        try:
+            # Vincoliamo l'LLM a rispondere con i due campi richiesti (Titolo + Sintesi)
+            llm_strutturato = self.llm.with_structured_output(CarrelloSintesi)
+            
+            # Invocazione del modello
+            risposta = llm_strutturato.invoke(prompt)
+            
+            # Restituiamo la tupla pulita al chiamante
+            return risposta.titolo, risposta.sintesi
+            
+        except Exception as e:
+            print(f"   [Errore LLM] Impossibile generare dati per il carrello: {e}")
+            # Fallback sicuro per non far crashare lo script
+            return "Argomento Non Riconosciuto", "Sintesi non disponibile a causa di un errore dell'API."
     
 
     def elabora_batch(self, batch_input: JobBatchInput, workspace_dir: str = "workspace") -> JobBatchOutput:
@@ -293,7 +502,7 @@ page_count: {estimated_pages}
             print(f"\n--- Inizio elaborazione: {source.source_id} ---")
             try:
                 # Chiamiamo il nostro "operaio specializzato"
-                profile, md_text, chunks, report = self.elabora_sorgente(source)
+                profile, md_text, chunks, report, gerarchia = self.elabora_sorgente(source)
                 
                 # 3. Salvataggio su disco
                 # Markdown pulito (con YAML frontmatter integrato)
@@ -310,6 +519,10 @@ page_count: {estimated_pages}
                 report_path = f"{workspace_dir}/reports/{source.source_id}_quality.json"
                 with open(report_path, "w", encoding="utf-8") as f:
                     json.dump(report.model_dump(), f, indent=2, ensure_ascii=False)
+
+                hierarchy_path = f"{workspace_dir}/reports/{source.source_id}_hierarchy.json"
+                with open(hierarchy_path, "w", encoding="utf-8") as f:
+                    json.dump(gerarchia.model_dump(), f, indent=2, ensure_ascii=False)
                 
                 # 4. Aggiorniamo i contatori per le statistiche aggregate
                 processed += 1
@@ -329,7 +542,8 @@ page_count: {estimated_pages}
                     quality_score=report.quality_score,
                     markdown_ref=md_path,
                     chunk_index_ref=chunks_path,
-                    quality_report_ref=report_path
+                    quality_report_ref=report_path,
+                    hierarchy_ref=hierarchy_path
                 )
                 overviews.append(overview)
                 
@@ -387,19 +601,24 @@ if __name__ == "__main__":
     
     try:
         # Fa girare tutto il flusso
-        profile, testo, chunks, report = agente.elabora_sorgente(test_input)
+        profile, testo, chunks, report, gerarchia = agente.elabora_sorgente(test_input)
         
+        # --- NOVITÀ 1: Salviamo il file Markdown ---
+        with open("temp/anteprima_markdown.md", "w", encoding="utf-8") as f:
+            f.write(testo)
+            
+        # --- NOVITÀ 2: Salviamo la mappa dei riassunti generati da Groq! ---
+        with open("temp/gerarchia_test.json", "w", encoding="utf-8") as f:
+            json.dump(gerarchia.model_dump(), f, indent=2, ensure_ascii=False)
+            
         # Check rapido della tupla in uscita
         print("\n--- OUTPUT ---")
         print(f"PROFILE: Pagine={profile.page_count}, OCR={profile.ocr_used}")
-        print(f"TESTO: {len(testo)} chars. Anteprima: {testo[:80]}...")
         print(f"CHUNKS: {len(chunks)} generati.")
+        print(f"GERARCHIA: {len(gerarchia.macro_argomenti)} capitoli indicizzati.")
         print(f"REPORT: Score={report.quality_score}, Status={report.status.value}")
-        
-        if report.issues:
-            print("Difetti trovati:")
-            for issue in report.issues:
-                print(f"- {issue.type}: {issue.message}")
+        print("\n  File Markdown salvato in: temp/anteprima_markdown.md")
+        print("  Indice Riassunti salvato in: temp/gerarchia_test.json")
                 
     except Exception as e:
         print(f"Errore nel test: {e}")
