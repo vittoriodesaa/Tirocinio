@@ -1,0 +1,479 @@
+{
+  "titolo_corso": "Pattern di Design per Sistemi Agentici",
+  "lingua": "it",
+  "descrizione": "Un percorso microlearning che introduce i principali pattern architetturali per costruire sistemi AI agentici: dal Prompt Chaining al Routing, dalla Parallelizzazione alla Reflection, fino a Tool Use, Multi-Agent Collaboration, RAG e Human-in-the-Loop. Ogni lezione combina teoria, esempi concreti e casi pratici per sviluppatori che vogliono passare da semplici LLM ad agenti intelligenti e autonomi.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "tipo": "lezione",
+      "argomento": "Introduzione ai Sistemi Agentici",
+      "sintesi_breve": "## Introduzione\n\nUn sistema agentico è molto più di un semplice Large Language Model (LLM). Mentre un LLM tradizionale risponde passivamente a un input, un agente AI percepisce l'ambiente, prende decisioni informate ed esegue azioni per raggiungere obiettivi in modo autonomo. Que",
+      "contenuto": "## Introduzione\n\nUn sistema agentico è molto più di un semplice Large Language Model (LLM). Mentre un LLM tradizionale risponde passivamente a un input, un agente AI percepisce l'ambiente, prende decisioni informate ed esegue azioni per raggiungere obiettivi in modo autonomo. Questo passaggio — da \"generatore di testo\" a \"risolutore autonomo di problemi\" — è ciò che distingue un agente da un normale modello linguistico.\n\nPer uno sviluppatore, comprendere i fondamenti dei sistemi agentici è il primo passo per progettare applicazioni che vadano oltre il semplice chatbot: assistenti che prenotano viaggi, analizzano mercati, scrivono codice o gestiscono flussi di lavoro complessi. Il libro \"Agentic Design Patterns\" definisce 21 pattern fondamentali, ma tutto parte da una chiara comprensione di cosa renda un sistema \"agentico\".\n\n## Concetti chiave\n\n### Il ciclo in 5 passi di un agente\n\nUn agente AI segue un loop semplice ma potente:\n\n1. **Missione**: riceve un obiettivo (es. \"organizza la mia agenda\")\n2. **Scansione**: raccoglie informazioni (email, calendario, contatti)\n3. **Pianificazione**: elabora la strategia migliore\n4. **Azione**: esegue il piano (invia inviti, aggiorna il calendario)\n5. **Apprendimento**: osserva i risultati e migliora\n\n### I 4 livelli di complessità agentica\n\nIl libro introduce una scala a 4 livelli per classificare gli agenti:\n\n- **Livello 0 — Motore di ragionamento**: un LLM senza strumenti, memoria o interazione con l'ambiente. Risponde solo in base alla conoscenza pre-addestrata. Non sa chi ha vinto l'Oscar 2025 se i dati sono successivi al training.\n- **Livello 1 — Risolutore connesso**: l'LLM diventa un agente funzionale collegandosi a strumenti esterni (API, database, ricerca web). Può, ad esempio, chiamare un'API finanziaria per ottenere il prezzo live di un'azione.\n- **Livello 2 — Risolutore strategico**: l'agente pianifica strategicamente, agisce in modo proattivo e si auto-migliora. Usa il *context engineering* per selezionare le informazioni più rilevanti per ogni passo.\n- **Livello 3 — Sistemi multi-agente collaborativi**: emerge un paradigma in cui team di agenti specializzati collaborano, organizzati come reparti in un'azienda, con un agente Project Manager che coordina ricercatori, designer e marketer.\n\n### Pattern come mattoncini fondamentali\n\nI pattern agentici non sono regole rigide ma **template collaudati** che rispondono a sfide ricorrenti: come mantenere lo stato tra più passi? Come decidere quando usare uno strumento? Come coordinare più agenti? Padroneggiare questi pattern permette di evitare di reinventare la ruota e costruire sistemi più robusti.\n\n## Esempio pratico\n\nImmagina di dover creare un assistente per il customer service. A **Livello 0** avresti un LLM che risponde da solo. A **Livello 1** lo connetti a un database ordini e a un API di tracking. A **Livello 2** pianifica strategie: se un cliente è arrabbiato, prima verifica lo stato dell'ordine, poi cerca soluzioni proattive (sconto, spedizione prioritaria). A **Livello 3** hai un team: un agente \"frontline\" che filtra richieste semplici, uno \"tecnico\" per problemi complessi e un \"supervisore\" che gestisce le escalation.\n\n## Riepilogo\n\n- Un sistema agentico percepisce, decide e agisce autonomamente per raggiungere obiettivi\n- Gli agenti operano in un ciclo a 5 passi: missione, scansione, pianificazione, azione, apprendimento\n- Esistono 4 livelli di complessità: dal LLM puro (L0) ai team multi-agente collaborativi (L3)\n- I pattern agentici sono template collaudati che risolvono sfide ricorrenti nello sviluppo di agenti\n- Capire i fondamentali è il prerequisito per applicare pattern specifici come Prompt Chaining, Routing e Tool Use\n\n## Metti in pratica\n\nPensa a un'applicazione che usi quotidianamente. Come potrebbe evolvere se aggiungessi un livello di agenticità? Prova a mappare il suo flusso principale sul ciclo a 5 passi.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 220,
+        "riga_fine": 418
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere un sistema agentico da un semplice LLM",
+        "Descrivere il ciclo in 5 passi di un agente AI",
+        "Identificare i 4 livelli di complessità agentica",
+        "Riconoscere l'importanza dei pattern nell'architettura agentica"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "tipo": "lezione",
+      "argomento": "Prompt Chaining: Sequenze di Prompt Intelligenti",
+      "sintesi_breve": "## Introduzione\n\nUn errore comune nello sviluppo con LLM è pretendere che un singolo prompt risolva un problema complesso. Il risultato è spesso istruzioni ignorate, deriva contestuale e allucinazioni. Il **Prompt Chaining** (o Pipeline Pattern) rovescia questo approccio: invece ",
+      "contenuto": "## Introduzione\n\nUn errore comune nello sviluppo con LLM è pretendere che un singolo prompt risolva un problema complesso. Il risultato è spesso istruzioni ignorate, deriva contestuale e allucinazioni. Il **Prompt Chaining** (o Pipeline Pattern) rovescia questo approccio: invece di un prompt monolitico, si scompone il problema in una sequenza di sotto-problemi più semplici, dove l'output di ogni passaggio diventa l'input del successivo.\n\nQuesto pattern è la base architetturale su cui si costruiscono agenti capaci di ragionamento multi-step. Per uno sviluppatore, padroneggiare il Prompt Chaining significa passare da \"prompt engineer\" a \"architetto di flussi di lavoro AI\".\n\n## Concetti chiave\n\n### Perché un singolo prompt fallisce\n\nUn prompt complesso che chiede di analizzare un report, estrarre trend, identificare dati di supporto e scrivere un'email rischia di fallire su più fronti: **negligenza delle istruzioni** (parti del prompt vengono ignorate), **deriva contestuale** (il modello perde il focus iniziale) e **propagazione dell'errore** (un errore iniziale si amplifica nei passaggi successivi).\n\n### La soluzione a catena\n\nIl Prompt Chaining divide il problema in step focalizzati:\n\n1. **Prompt 1 — Riassunto**: \"Riassumi i punti chiave di questo report di mercato\"\n2. **Prompt 2 — Identificazione trend**: \"Usando il riassunto, identifica i 3 trend emergenti con dati di supporto\"\n3. **Prompt 3 — Composizione email**: \"Scrivi un'email al team marketing con questi trend\"\n\nOgni passo ha un focus singolo, riducendo il carico cognitivo sul modello e aumentando l'accuratezza. Si può persino assegnare un ruolo distinto a ogni passo: \"Analista di Mercato\", \"Analista di Trend\", \"Scrittore di Documentazione\".\n\n### Output strutturati: il collante della catena\n\nL'affidabilità della catena dipende dalla qualità dei dati scambiati tra i passi. Se l'output di un prompt è ambiguo, il passo successivo fallirà. La soluzione è specificare formati strutturati come JSON o XML. Ad esempio, l'output dell'identificazione trend potrebbe essere:\n\n```json\n{\n  \"trends\": [\n    {\"trend_name\": \"AI-Powered Personalization\", \"supporting_data\": \"73% dei consumatori preferisce... \"},\n    {\"trend_name\": \"Sustainable Brands\", \"supporting_data\": \"Vendite cresciute del 28%...\"}\n  ]\n}\n```\n\nQuesto formato machine-readable garantisce che il passo successivo possa parsare i dati senza ambiguità.\n\n## Esempio pratico\n\nUn sistema di estrazione dati da fatture. Invece di chiedere al LLM \"Estrai tutti i campi dalla fattura\" in un colpo solo, si costruisce una catena:\n\n1. **Estrai testo grezzo** dall'immagine della fattura (OCR + LLM)\n2. **Normalizza i dati**: converti \"mille e cinquanta\" in \"1050\"\n3. **Delega i calcoli**: chiama un tool esterno per calcolare totali e IVA (i LLM sono imprecisi nei calcoli)\n4. **Struttura in JSON**: produce un output validato e pronto per il database\n\nQuesto approccio modulare rende ogni passo debuggabile e migliorabile indipendentemente.\n\n## Riepilogo\n\n- Il Prompt Chaining scompone problemi complessi in una sequenza di prompt focalizzati\n- Riduce istruzione neglect, deriva contestuale e allucinazioni\n- L'output strutturato (JSON/XML) tra i passi è essenziale per l'affidabilità\n- Ogni passo può avere un ruolo distinto e strumenti specifici\n- È il pattern fondante per agenti con ragionamento multi-step\n\n## Metti in pratica\n\nPrendi un'attività che oggi risolvi con un singolo prompt complesso. Scomponila in 3-4 step sequenziali e per ognuno specifica: ruolo del modello, input atteso e formato dell'output.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 420,
+        "riga_fine": 738
+      },
+      "obiettivi_apprendimento": [
+        "Scomporre un problema complesso in una catena di prompt sequenziali",
+        "Progettare output strutturati tra passi della catena",
+        "Riconoscere i limiti dei prompt monolitici e come superarli",
+        "Applicare il Prompt Chaining a scenari reali come estrazione dati e generazione contenuti"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "tipo": "lezione",
+      "argomento": "Routing: Instradamento Intelligente delle Richieste",
+      "sintesi_breve": "## Introduzione\n\nMentre il Prompt Chaining segue un percorso lineare e deterministico, le applicazioni reali devono spesso scegliere tra diverse azioni possibili in base al contesto. Un cliente che scrive \"voglio cancellare l'ordine\" va gestito diversamente da uno che chiede \"qua",
+      "contenuto": "## Introduzione\n\nMentre il Prompt Chaining segue un percorso lineare e deterministico, le applicazioni reali devono spesso scegliere tra diverse azioni possibili in base al contesto. Un cliente che scrive \"voglio cancellare l'ordine\" va gestito diversamente da uno che chiede \"qual è lo stato della mia spedizione?\".\n\nIl **Routing** è il pattern che introduce la logica condizionale nei sistemi agentici: l'agente analizza l'input, determina l'intenzione e instrada la richiesta al componente specializzato più adatto. È il meccanismo che trasforma un esecutore passivo in un sistema adattivo.\n\n## Concetti chiave\n\n### Come funziona il routing\n\nIl cuore del pattern è un meccanismo che valuta criteri specifici e decide il percorso da seguire. Un agente di customer service evoluto:\n\n1. Analizza la richiesta dell'utente\n2. **Instrada** in base all'intento:\n   - \"Stato ordine\" → interroga il database ordini\n   - \"Informazioni prodotto\" → cerca nel catalogo\n   - \"Supporto tecnico\" → accede alle guide di troubleshooting\n   - Intento non chiaro → attiva un sottogente di chiarificazione\n\n### Strategie di routing\n\nIl libro descrive 4 approcci principali:\n\n- **LLM-based**: il modello stesso analizza l'input e produce un identificatore (es. \"categoria: Ordine_Status\"). Flessibile ma più lento e costoso.\n- **Embedding-based**: la richiesta viene convertita in un vettore e confrontata con gli embedding delle varie route. Ideale per routing semantico.\n- **Rule-based**: regole predefinite (if-else, switch) basate su keyword o pattern. Veloce e deterministico ma poco flessibile per input nuovi.\n- **ML Model-based**: un classificatore addestrato su dati etichettati che decide la route. Combina velocità e accuratezza ma richiede dati di training.\n\n### Routing multi-livello\n\nIl routing può avvenire in più punti del ciclo agentico: all'inizio (classificazione del task principale), a metà (decidere il passo successivo in una catena) o durante una sotto-routine (selezionare lo strumento più appropriato).\n\n## Esempio pratico\n\nImmagina un coordinatore agentico per un portale di viaggi. Usando LangChain, si definisce una catena di routing che classifica la richiesta dell'utente:\n\n- Richiesta di **prenotazione** (volo/hotel) → delegata a un `BookingHandler`\n- Richiesta di **informazioni** (capitale, meteo) → delegata a un `InfoHandler`\n- **Richiesta non chiara** → gestita da un `UnclearHandler`\n\nIl sistema usa un LLM per classificare l'input, produce un output a una parola (\"booker\", \"info\", \"unclear\") e un `RunnableBranch` instrada la richiesta al gestore appropriato. Questo è esattamente ciò che accade in un call center automatizzato, ma eseguito da agenti software.\n\n## Riepilogo\n\n- Il Routing introduce logica condizionale nei sistemi agentici\n- 4 strategie: LLM-based, embedding-based, rule-based, ML model-based\n- Permette di costruire sistemi adattivi che rispondono dinamicamente a input variabili\n- Può essere implementato a più livelli: inizio, metà o durante sotto-routine del flusso\n- Framework come LangChain (RunnableBranch) e LangGraph forniscono costrutti nativi per il routing\n\n## Metti in pratica\n\nIdentifica 3 categorie di richieste che il tuo sistema dovrebbe gestire. Per ognuna, definisci: criterio di classificazione, route di destinazione e strategia di routing più adatta.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 740,
+        "riga_fine": 1180
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere le 4 strategie di routing (LLM, embedding, rule-based, ML-based)",
+        "Progettare un sistema di routing per classificare e instradare richieste",
+        "Implementare routing condizionale con RunnableBranch in LangChain",
+        "Scegliere la strategia di routing appropriata per diversi scenari applicativi"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_001",
+      "ordine": 4,
+      "tipo": "quiz",
+      "argomento": "Verifica: Fondamenti, Prompt Chaining e Routing",
+      "sintesi_breve": "Quiz di verifica dopo mod_003",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 740,
+        "riga_fine": 1180
+      },
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_003"
+      ],
+      "domande": [
+        {
+          "testo": "Quale delle seguenti NON è una caratteristica di un sistema agentico?",
+          "opzioni": [
+            "Autonomia",
+            "Proattività",
+            "Esecuzione di codice binario nativo",
+            "Uso di strumenti (Tool Use)"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "L'esecuzione di codice binario nativo non è una caratteristica intrinseca di un sistema agentico. Gli agenti si basano su autonomia, proattività, reattività, uso di strumenti, memoria e comunicazione."
+        },
+        {
+          "testo": "Cosa risolve il Prompt Chaining che un singolo prompt complesso non riesce a gestire?",
+          "opzioni": [
+            "La latenza di rete",
+            "La negligenza delle istruzioni e la deriva contestuale",
+            "La mancanza di API key",
+            "La dimensione del contesto del modello"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Il Prompt Chaining affronta la negligenza delle istruzioni (parti del prompt ignorate) e la deriva contestuale (perdita del focus) scomponendo il problema in step focalizzati."
+        },
+        {
+          "testo": "Quale strategia di routing si basa sul confronto tra vettori (embedding) per instradare le richieste?",
+          "opzioni": [
+            "Rule-based routing",
+            "LLM-based routing",
+            "ML Model-based routing",
+            "Embedding-based routing"
+          ],
+          "indice_corretto": 3,
+          "spiegazione": "L'embedding-based routing converte la richiesta in un vettore e lo confronta con gli embedding delle varie route per trovare la più simile semanticamente."
+        },
+        {
+          "testo": "Nel Prompt Chaining, perché è importante usare output strutturati (JSON/XML) tra i passi?",
+          "opzioni": [
+            "Per ridurre il consumo di token",
+            "Per garantire che i dati siano machine-readable e parsabili senza ambiguità",
+            "Per velocizzare l'addestramento del modello",
+            "Per crittografare i dati scambiati"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Gli output strutturati garantiscono che i dati passati tra i passi della catena siano precisi, machine-readable e privi di ambiguità, evitando errori a catena."
+        }
+      ]
+    },
+    {
+      "id": "mod_004",
+      "ordine": 5,
+      "tipo": "lezione",
+      "argomento": "Parallelizzazione: Esecuzione Concorrente di Task",
+      "sintesi_breve": "## Introduzione\n\nDopo aver visto flussi sequenziali (Prompt Chaining) e dinamici (Routing), ci troviamo di fronte a una domanda: cosa fare quando più sotto-attività possono essere eseguite **contemporaneamente** invece che una dopo l'altra? La **Parallelizzazione** è il pattern c",
+      "contenuto": "## Introduzione\n\nDopo aver visto flussi sequenziali (Prompt Chaining) e dinamici (Routing), ci troviamo di fronte a una domanda: cosa fare quando più sotto-attività possono essere eseguite **contemporaneamente** invece che una dopo l'altra? La **Parallelizzazione** è il pattern che risponde a questa esigenza, eseguendo più componenti — chiamate LLM, tool o interi sotto-agenti — in modo concorrente.\n\nPer uno sviluppatore, questo pattern è cruciale per ottimizzare le performance: ridurre i tempi di risposta da minuti a secondi sfruttando l'indipendenza tra task.\n\n## Concetti chiave\n\n### Sequenziale vs Parallelo\n\nConsidera un agente che deve ricercare un tema e sintetizzare i risultati:\n\n**Approccio sequenziale:**\n1. Cerca Fonte A\n2. Riassumi Fonte A\n3. Cerca Fonte B\n4. Riassumi Fonte B\n5. Sintesi finale\n\n**Approccio parallelo:**\n1. Cerca Fonte A **e** Cerca Fonte B (simultaneamente)\n2. Riassumi Fonte A **e** Riassumi Fonte B (simultaneamente)\n3. Sintesi finale (passo sequenziale)\n\nIl risparmio è evidente: invece di 5 passi in cascata, si eseguono 2 blocchi paralleli + 1 sintesi. L'idea chiave è identificare le parti del workflow che **non dipendono** dall'output di altre parti.\n\n### Applicazioni pratiche\n\nIl libro elenca numerosi use case:\n\n- **Ricerca informativa**: un agente che ricerca un'azienda esegue in parallelo: cerca notizie, recupera dati azionari, controlla social media e interroga database aziendale\n- **Analisi dati**: sentiment analysis, estrazione keyword e categorizzazione eseguiti simultaneamente su un batch di feedback\n- **API multiple**: un'agente di viaggi controlla voli, hotel, eventi locali e ristoranti in parallelo\n- **Generazione contenuti**: genera oggetto, corpo email, immagini e call-to-action contemporaneamente\n- **Validazione**: verifica formato email, validità telefono e indirizzo in parallelo\n\n### Framework di supporto\n\nLangChain permette parallelizzazione via LCEL (`RunnableParallel`), LangGraph attraverso nodi concorrenti nel grafo, mentre Google ADK fornisce meccanismi nativi per l'esecuzione parallela di agenti.\n\n## Esempio pratico\n\nCon LangChain, si costruisce un sistema che, dato un argomento, esegue in parallelo tre catene indipendenti:\n\n1. **Riassunto**: \"Riassumi concisamente questo argomento\"\n2. **Domande**: \"Genera 3 domande interessanti sull'argomento\"\n3. **Termini chiave**: \"Identifica 5-10 termini chiave\"\n\nUsando `RunnableParallel`, queste tre catene partono simultaneamente. I risultati confluiscono in un passo finale di sintesi. Il tutto si riduce a poche righe di codice LCEL, con un guadagno di performance 3x rispetto all'esecuzione sequenziale.\n\n## Riepilogo\n\n- La parallelizzazione esegue task indipendenti simultaneamente, riducendo i tempi complessivi\n- È efficace quando attività multiple non dipendono l'una dall'output dell'altra\n- Use case tipici: information gathering, analisi multi-prospettiva, validazione incrociata\n- Framework come LangChain (RunnableParallel), LangGraph e ADK supportano nativamente l'esecuzione concorrente\n- La sintesi finale rimane spesso un passo sequenziale che attende i risultati paralleli\n\n## Metti in pratica\n\nAnalizza un flusso di lavoro della tua applicazione. Identifica 2-3 task che potrebbero essere eseguiti in parallelo e calcola il risparmio di tempo stimato rispetto all'esecuzione sequenziale.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 1183,
+        "riga_fine": 1686
+      },
+      "obiettivi_apprendimento": [
+        "Identificare task indipendenti parallelizzabili in un flusso agentico",
+        "Distinguere esecuzione sequenziale da parallela e calcolarne i benefici",
+        "Implementare parallelizzazione con RunnableParallel in LangChain",
+        "Applicare il pattern a scenari reali come information gathering e validazione"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_005",
+      "ordine": 6,
+      "tipo": "lezione",
+      "argomento": "Reflection: Auto-Miglioramento tramite Critica",
+      "sintesi_breve": "## Introduzione\n\nAnche con catene ben progettate, routing intelligente e parallelizzazione, l'output iniziale di un agente potrebbe non essere ottimale. Come può un sistema migliorare sé stesso senza intervento umano? Il **Reflection** pattern è la risposta: un meccanismo in cui ",
+      "contenuto": "## Introduzione\n\nAnche con catene ben progettate, routing intelligente e parallelizzazione, l'output iniziale di un agente potrebbe non essere ottimale. Come può un sistema migliorare sé stesso senza intervento umano? Il **Reflection** pattern è la risposta: un meccanismo in cui l'agente valuta il proprio operato e lo migliora iterativamente.\n\nQuesto pattern introduce un ciclo di feedback che va oltre la semplice esecuzione lineare. Per uno sviluppatore, padroneggiare la Reflection significa costruire agenti che producono output di qualità superiore — codice più pulito, testi più curati, piani più solidi — attraverso l'auto-correzione.\n\n## Concetti chiave\n\n### Il ciclo Producer-Critic\n\nLa Reflection segue un processo in 4 fasi:\n\n1. **Esecuzione**: l'agente produce un output iniziale (codice, testo, piano)\n2. **Valutazione/Critica**: l'agente (o un secondo agente) analizza il risultato per accuratezza, coerenza, stile, completezza\n3. **Riflessione/Miglioramento**: basandosi sulla critica, l'agente determina come migliorare\n4. **Iterazione**: il ciclo si ripete fino al raggiungimento della qualità desiderata\n\n### Due ruoli, una mente\n\nL'implementazione più efficace separa i ruoli in **Producer** e **Critic**:\n\n- **Producer**: si concentra sulla generazione. Il suo unico compito è produrre — codice, bozze, piani. Non si preoccupa di valutare.\n- **Critic**: analizza l'output del Producer con occhio fresco. Può avere una persona specifica (\"Sei un senior software engineer\", \"Sei un fact-checker meticoloso\"). Trova errori, suggerisce miglioramenti.\n\nQuesta separazione previene il \"bias cognitivo\" di un agente che revisiona il proprio lavoro. Con due chiamate LLM distinte e prompt specializzati, i risultati sono più robusti e imparziali.\n\n### Sinergie con altri pattern\n\nLa Reflection si potenzia se combinata con:\n- **Goal Setting & Monitoring** (Capitolo 11): l'obiettivo fornisce il benchmark per l'auto-valutazione\n- **Memory** (Capitolo 8): la memoria della conversazione permette alla Reflection di diventare un processo cumulativo, dove ogni ciclo costruisce sul precedente\n\n## Esempio pratico\n\nUn agente deve scrivere una funzione Python per calcolare il fattoriale. Con Reflection:\n\n1. **Producer** genera la funzione iniziale\n2. **Critic** (con ruolo \"revisore senior\") analizza il codice: controlla docstring, edge case (fattoriale di 0), gestione errori (input negativo)\n3. Se il Critic trova problemi, il Producer **refactoring** il codice applicando le correzioni\n4. Il ciclo si ripete fino a 3 iterazioni massime o fino a quando il Critic approva\n\nIl risultato è un codice robusto che gestisce correttamente `n=0` (restituisce 1) e lancia `ValueError` per input negativi — qualità che un singolo prompt difficilmente garantirebbe.\n\n## Riepilogo\n\n- La Reflection permette all'agente di valutare e migliorare il proprio output\n- Il modello Producer-Critic separa generazione e valutazione per risultati più obiettivi\n- Il ciclo tipico: esecuzione → critica → riflessione → iterazione\n- Combinato con Memoria e Goal Setting, diventa un sistema di apprendimento cumulativo\n- Applicazioni: scrittura creativa, generazione codice, problem solving complesso, summarization\n\n## Metti in pratica\n\nPrendi un'attività di generazione (testo o codice) e progetta un prompt per il ruolo Producer e uno per il ruolo Critic. Definisci i criteri di valutazione che il Critic deve usare.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 1688,
+        "riga_fine": 2067
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere il ciclo Producer-Critic della Reflection pattern",
+        "Distinguere auto-riflessione da critica con due agenti separati",
+        "Progettare prompt per i ruoli di Producer e Critic",
+        "Applicare Reflection a generazione codice e contenuti"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_006",
+      "ordine": 7,
+      "tipo": "lezione",
+      "argomento": "Tool Use: Oltre i Limiti del LLM con le API",
+      "sintesi_breve": "## Introduzione\n\nUn LLM da solo è un motore di testo straordinario, ma è confinato alla conoscenza su cui è stato addestrato. Non può controllare il meteo di domani, non può accedere al tuo database aziendale, non può inviare email. Il **Tool Use** (o Function Calling) è il patte",
+      "contenuto": "## Introduzione\n\nUn LLM da solo è un motore di testo straordinario, ma è confinato alla conoscenza su cui è stato addestrato. Non può controllare il meteo di domani, non può accedere al tuo database aziendale, non può inviare email. Il **Tool Use** (o Function Calling) è il pattern che trasforma un LLM da generatore di testo a **agente operativo**, capace di interagire con API, database, servizi esterni e persino eseguire codice.\n\nPer uno sviluppatore, questo è probabilmente il pattern più trasformativo: è ciò che permette di collegare l'intelligenza del linguaggio naturale con il mondo reale dei sistemi software.\n\n## Concetti chiave\n\n### Il ciclo del Tool Use\n\nIl processo segue 6 passi ben definiti:\n\n1. **Definizione dello strumento**: ogni funzione esterna viene descritta al LLM con nome, scopo, parametri e tipi\n2. **Decisione del LLM**: il modello analizza la richiesta e decide se chiamare uno o più tool\n3. **Generazione chiamata**: il LLM produce un output strutturato (JSON) con il nome del tool e gli argomenti\n4. **Esecuzione**: il framework intercetta la richiesta ed esegue la funzione reale\n5. **Osservazione**: il risultato del tool torna all'agente\n6. **Elaborazione finale**: il LLM usa l'output del tool per formulare la risposta o decidere il passo successivo\n\n### Da Function Calling a Tool Calling\n\nIl libro introduce una distinzione importante: mentre \"function calling\" evoca funzioni di codice precise, \"tool calling\" è un concetto più ampio che include API endpoint, query a database, o persino istruzioni ad altri agenti specializzati. Questa visione estesa permette di pensare agli agenti come **orchestratori** di un ecosistema di risorse digitali.\n\n### Applicazioni reali\n\n- **Recupero informazioni**: un agente meteo chiama un'API con \"London\" e restituisce i dati formattati\n- **Interazione con database**: un agente e-commerce controlla inventario e stato ordini\n- **Calcoli**: un agente finanziario chiama API azionaria + calcolatrice per profitti\n- **Comunicazioni**: invio email, messaggi, notifiche\n- **Esecuzione codice**: un assistente di programmazione esegue snippet Python in ambiente sicuro\n\n## Esempio pratico\n\nCon LangChain, si definisce un tool `search_information` con un decorator `@tool` che simula la ricerca di informazioni. Il tool ha risposte predefinite per query comuni (\"capitale della Francia\", \"meteo a Londra\") e un fallback generico.\n\nSi crea poi un agente `create_tool_calling_agent` che lega LLM, tool e prompt. Quando l'utente chiede \"Qual è la capitale della Francia?\", il LLM riconosce che serve il tool, lo chiama con il parametro corretto, ottiene la risposta e la formatta in linguaggio naturale per l'utente. L'`AgentExecutor` gestisce tutto il ciclo: invoca l'agente, esegue i tool scelti e ripete fino a risposta completa.\n\n## Riepilogo\n\n- Il Tool Use pattern collega i LLM al mondo esterno via API, database e servizi\n- Il ciclo è: definizione tool → decisione LLM → generazione chiamata → esecuzione → osservazione → risposta finale\n- \"Tool calling\" è un concetto più ampio di \"function calling\": include API, database e altri agenti\n- Framework come LangChain e ADK forniscono supporto nativo per la definizione e l'esecuzione di tool\n- È il pattern che trasforma un LLM in un vero agente capace di agire nel mondo digitale\n\n## Metti in pratica\n\nIdentifica 3 API esterne che il tuo sistema dovrebbe utilizzare. Per ognuna, scrivi la descrizione del tool (nome, scopo, parametri) come la presenteresti a un LLM per il function calling.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 2069,
+        "riga_fine": 2690
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere il ciclo in 6 passi del Tool Use pattern",
+        "Distinguere tra function calling e tool calling",
+        "Definire tool con descrizioni adatte al LLM",
+        "Implementare un agente tool-calling con LangChain o ADK"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_002",
+      "ordine": 8,
+      "tipo": "quiz",
+      "argomento": "Verifica: Parallelizzazione, Reflection e Tool Use",
+      "sintesi_breve": "Quiz di verifica dopo mod_006",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 2069,
+        "riga_fine": 2690
+      },
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_006"
+      ],
+      "domande": [
+        {
+          "testo": "Quale condizione deve essere soddisfatta per parallelizzare due task in un flusso agentico?",
+          "opzioni": [
+            "Devono usare lo stesso LLM",
+            "Non devono dipendere dall'output l'uno dell'altro",
+            "Devono essere scritti in Python",
+            "Devono avere la stessa temperatura"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Task parallelizzabili sono quelli indipendenti: nessuno dei due richiede l'output dell'altro per essere eseguito."
+        },
+        {
+          "testo": "Nel Reflection pattern, qual è il vantaggio principale del modello Producer-Critic con due agenti separati?",
+          "opzioni": [
+            "Richiede meno token",
+            "Previene il bias cognitivo dell'auto-revisione",
+            "È più facile da programmare",
+            "Elimina la necessità di prompt engineering"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Separare Producer e Critic in due agenti distinti previene il bias cognitivo: il Critic valuta con occhio fresco e imparziale l'output del Producer."
+        },
+        {
+          "testo": "Cosa succede DOPO che il LLM genera una chiamata a un tool (es. JSON con nome e argomenti)?",
+          "opzioni": [
+            "Il LLM attende 5 secondi",
+            "Il framework intercetta la richiesta ed esegue la funzione reale",
+            "Il tool viene ignorato e si procede",
+            "L'utente deve approvare manualmente"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Dopo che il LLM genera la chiamata strutturata, il framework intercetta la richiesta, identifica il tool richiesto ed esegue la funzione esterna con gli argomenti forniti."
+        },
+        {
+          "testo": "Quale strumento di LangChain permette di eseguire più catene in parallelo?",
+          "opzioni": [
+            "RunnableSequence",
+            "RunnableParallel",
+            "RunnableBranch",
+            "RunnableLambda"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "RunnableParallel è il costrutto LCEL che esegue più runnable simultaneamente, raccogliendo i risultati in un unico output."
+        }
+      ]
+    },
+    {
+      "id": "mod_007",
+      "ordine": 9,
+      "tipo": "lezione",
+      "argomento": "Planning: Strategia e Pianificazione Automatica",
+      "sintesi_breve": "## Introduzione\n\nI pattern visti finora — Chaining, Routing, Parallelizzazione, Tool Use — sono reattivi: rispondono a input immediati. Ma un agente davvero intelligente deve anche saper **pianificare**: guardare avanti, scomporre un obiettivo complesso in passi e adattarsi quand",
+      "contenuto": "## Introduzione\n\nI pattern visti finora — Chaining, Routing, Parallelizzazione, Tool Use — sono reattivi: rispondono a input immediati. Ma un agente davvero intelligente deve anche saper **pianificare**: guardare avanti, scomporre un obiettivo complesso in passi e adattarsi quando le cose cambiano. Il **Planning** pattern è ciò che dota un agente di foresight strategico.\n\nPer uno sviluppatore, il Planning è la differenza tra un agente che segue istruzioni e uno che **scopre da solo come raggiungere un obiettivo**. È il pattern che trasforma un esecutore in un risolutore autonomo di problemi.\n\n## Concetti chiave\n\n### Dal \"cosa\" al \"come\"\n\nQuando affidi a un agente di planning un obiettivo come \"organizza un team offsite\", stai definendo il **cosa** (l'obiettivo e i vincoli), ma non il **come**. L'agente deve:\n\n1. Comprendere lo stato iniziale (budget, partecipanti, date)\n2. Definire lo stato obiettivo (offsite prenotato con successo)\n3. Scoprire la sequenza ottimale di azioni per collegarli\n\nIl piano **non è noto in anticipo**: viene creato in risposta alla richiesta.\n\n### Adattabilità: la firma del planning\n\nUn tratto distintivo del Planning è l'adattabilità. Il piano iniziale non è uno script rigido ma un punto di partenza. Se la sede preferita non è disponibile o il catering è già prenotato, un agente capace non fallisce: si adatta. Registra il nuovo vincolo, rivaluta le opzioni e formula un nuovo piano (es. sedi alternative o date diverse).\n\n### Quando usare (e non usare) il Planning\n\nIl libro sottolinea un punto cruciale: il planning dinamico non è una soluzione universale. Se la soluzione a un problema è già ben nota e ripetibile, è più efficace vincolare l'agente a un flusso di lavoro predefinito. La domanda guida è: **il \"come\" va scoperto o è già noto?**\n\n### Esempi di applicazione\n\n- **Automazione procedurale**: onboarding di un nuovo dipendente — creazione account, assegnazione moduli formativi, coordinamento con HR\n- **Sintesi informativa strutturata**: generare un report di ricerca in fasi distinte (raccolta dati → summarization → strutturazione → raffinamento)\n- **Deep Research**: sistemi come Google Gemini DeepResearch scompongono una query in un piano di ricerca multi-punto, eseguono ricerche iterative e producono un report strutturato con citazioni\n\n## Esempio pratico\n\nCon CrewAI, si definisce un agente \"Article Planner and Writer\" che:\n\n1. **Pianifica**: crea una lista di punti bullet per un sommario sull'argomento \"L'importanza del Reinforcement Learning in AI\"\n2. **Esegue**: scrive il sommario basandosi sul piano, mantenendolo attorno alle 200 parole\n\nIl processo è `sequential` e l'agente ha un backstory che enfatizza la pianificazione prima della scrittura. L'output atteso è strutturato in due sezioni: `### Plan` (lista puntata) e `### Summary` (testo coerente). Questo esempio mostra come un singolo agente possa prima pianificare e poi eseguire, dimostrando che il Planning non richiede necessariamente multi-agente.\n\n## Riepilogo\n\n- Il Planning pattern permette all'agente di formulare una sequenza di azioni per raggiungere un obiettivo\n- L'agente scopre autonomamente il \"come\" partendo dal \"cosa\" (obiettivo e vincoli)\n- L'adattabilità è cruciale: il piano iniziale viene rivisto in base a nuovi vincoli o ostacoli\n- Non va usato quando la soluzione è già nota: in quel caso un workflow predefinito è più efficace\n- Sistemi come Gemini DeepResearch e Agentic RAG usano il planning per ricerche complesse multi-step\n\n## Metti in pratica\n\nScegli un obiettivo complesso che potresti affidare a un agente (es. \"organizza un workshop tecnico\"). Scomponilo in stato iniziale, stato obiettivo e possibili vincoli. Scrivi il prompt che definirebbe l'obiettivo per un agente planner.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 2693,
+        "riga_fine": 2996
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra obiettivo (cosa) e piano (come) in un sistema agentico",
+        "Progettare un agente planner che scompone obiettivi in sequenze di azioni",
+        "Valutare quando usare planning dinamico vs workflow predefinito",
+        "Applicare il Planning a scenari come ricerca automatica e automazione procedurale"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_008",
+      "ordine": 10,
+      "tipo": "lezione",
+      "argomento": "Multi-Agent Collaboration: Team di Agenti Specializzati",
+      "sintesi_breve": "## Introduzione\n\nFinora abbiamo lavorato con agenti singoli, anche se sofisticati. Ma esiste un limite a quanto un singolo agente può fare, specialmente per problemi multi-dominio. Il **Multi-Agent Collaboration** pattern supera questo limite strutturando il sistema come un team ",
+      "contenuto": "## Introduzione\n\nFinora abbiamo lavorato con agenti singoli, anche se sofisticati. Ma esiste un limite a quanto un singolo agente può fare, specialmente per problemi multi-dominio. Il **Multi-Agent Collaboration** pattern supera questo limite strutturando il sistema come un team di agenti specializzati che collaborano.\n\nL'idea è semplice e potente: invece di un agente全能 (onnisciente), si costruisce un'organizzazione dove ogni agente ha un ruolo, strumenti specifici e obiettivi allineati. Come in un'azienda, il risultato del team supera la somma dei contributi individuali.\n\n## Concetti chiave\n\n### Architetture di collaborazione\n\nIl libro identifica diversi modelli di interazione tra agenti:\n\n- **Passaggi Sequenziali**: un agente completa un task e passa l'output al successivo (simile a una pipeline con attori diversi)\n- **Elaborazione Parallela**: più agenti lavorano simultaneamente su parti diverse del problema e i risultati vengono poi combinati\n- **Dibattito e Consenso**: agenti con prospettive diverse discutono per raggiungere una decisione più informata\n- **Struttura Gerarchica**: un agente manager delega task a worker agents in base alle loro capacità\n- **Team di Esperti**: agenti con conoscenze specializzate (ricercatore, scrittore, editor) collaborano a un output complesso\n- **Critic-Reviewer**: un gruppo di agenti valuta criticamente l'output di un altro per policy, sicurezza e qualità\n\n### I 6 modelli di comunicazione\n\nLa scelta del modello di comunicazione è cruciale:\n\n1. **Single Agent**: un agente singolo, nessuna comunicazione\n2. **Network**: agenti interagiscono peer-to-peer, decentralizzato\n3. **Supervisor**: un agente centrale coordina i sub-agenti\n4. **Supervisor as a Tool**: il supervisore fornisce risorse e guida senza controllo diretto\n5. **Hierarchical**: struttura multi-livello con supervisori che coordinano altri supervisori\n6. **Custom**: strutture ibride o completamente personalizzate\n\n## Esempio pratico\n\nCon CrewAI, si costruisce un team per la creazione di un blog post:\n\n1. **Senior Research Analyst**: cerca e riassume le ultime tendenze AI\n2. **Technical Content Writer**: scrive un blog post di 500 parole basato sulla ricerca\n\nIl `Process.sequential` garantisce che il ricercatore completi prima il suo lavoro e che lo scrittore lo riceva come `context`. L'output dello scrittore dipende dall'output del ricercatore. Con pochi agenti e task, si ottiene un flusso di lavoro che imita un vero team editoriale.\n\nIn alternativa, con Google ADK, si crea una struttura gerarchica: un agente `coordinator` padre che delega a un `greeter` (saluti) e un `task_doer` (esecuzione compiti), stabilendo una chiara relazione genitore-figlio.\n\n## Riepilogo\n\n- Il Multi-Agent Collaboration organizza agenti specializzati in team per problemi complessi\n- Le architetture spaziano da semplici passaggi sequenziali a dibattiti e strutture gerarchiche\n- La scelta del modello di comunicazione (Network, Supervisor, Hierarchical, Custom) è una decisione architetturale chiave\n- Framework come CrewAI e ADK forniscono costrutti nativi per definire ruoli, task e interazioni tra agenti\n- I vantaggi includono modularità, scalabilità e robustezza (il fallimento di un agente non blocca l'intero sistema)\n\n## Metti in pratica\n\nProgetta un team di 3 agenti per automatizzare un processo della tua azienda. Per ogni agente definisci: ruolo, obiettivo, strumenti necessari e modello di comunicazione tra di loro.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 2998,
+        "riga_fine": 3497
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere i diversi modelli di collaborazione multi-agente",
+        "Scegliere il modello di comunicazione appropriato (network, supervisor, hierarchical)",
+        "Progettare un team di agenti con ruoli e obiettivi specializzati",
+        "Implementare collaborazione sequenziale e gerarchica con CrewAI o ADK"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_009",
+      "ordine": 11,
+      "tipo": "lezione",
+      "argomento": "Knowledge Retrieval (RAG): Grounding su Dati Esterni",
+      "sintesi_breve": "## Introduzione\n\nI LLM hanno conoscenze straordinarie ma sono limitati ai dati su cui sono stati addestrati. Non sanno cosa è successo ieri, non conoscono le policy interne della tua azienda, non possono consultare documenti aggiornati. Il pattern **Knowledge Retrieval (RAG)** — ",
+      "contenuto": "## Introduzione\n\nI LLM hanno conoscenze straordinarie ma sono limitati ai dati su cui sono stati addestrati. Non sanno cosa è successo ieri, non conoscono le policy interne della tua azienda, non possono consultare documenti aggiornati. Il pattern **Knowledge Retrieval (RAG)** — Retrieval Augmented Generation — risolve questo limite fondamentale: invece di chiedere al LLM di rispondere solo con la sua memoria, si interroga prima un database esterno di conoscenza e si \"augmenta\" il prompt con le informazioni recuperate.\n\nPer uno sviluppatore, RAG è probabilmente il pattern più usato in produzione: è ciò che permette di costruire chatbot aziendali che rispondono su documentazione interna, assistenti che consultano manuali tecnici e sistemi di Q&A che citano le fonti.\n\n## Concetti chiave\n\n### Il flusso RAG\n\nIl processo RAG segue 3 fasi:\n\n1. **Recupero**: la query utente viene convertita in un embedding (vettore numerico) e confrontata con gli embedding dei documenti in un database vettoriale\n2. **Augment**: i chunk più rilevanti vengono aggiunti al prompt originale\n3. **Generazione**: il LLM produce una risposta grounded nei dati recuperati, con citazioni alle fonti\n\n### Concetti fondamentali\n\n- **Embedding**: rappresentazioni numeriche del testo in forma di vettori. Parole con significato simile hanno vettori vicini nello spazio multidimensionale. \"Gatto\" e \"micio\" saranno vicini, \"macchina\" sarà lontano.\n- **Similarità semantica**: misura quanto due testi sono simili nel significato, non nelle parole usate. \"Qual è la capitale della Francia?\" e \"Quale città è la capitale francese?\" hanno alta similarità semantica.\n- **Chunking**: la suddivisione dei documenti in pezzi gestibili. Un manuale di 50 pagine viene chunkato in sezioni (\"Installazione\", \"Troubleshooting\") per recuperi più mirati.\n- **Vector Database**: database specializzati (Pinecone, Weaviate, Chroma DB, pgvector) che memorizzano embedding e permettono ricerche semantiche veloci (es. con algoritmo HNSW).\n\n### Da RAG a Agentic RAG\n\nL'evoluzione del pattern è l'**Agentic RAG**, dove un agente non si limita a recuperare passivamente ma:\n\n1. **Valida le fonti**: se trova un blog post del 2020 e una policy del 2025, scarta il primo\n2. **Riconcilia conflitti**: se due documenti danno budget diversi (€50K vs €65K), sceglie la fonte più autorevole\n3. **Ragionamento multi-step**: per confrontare due prodotti, scompone in sotto-ricerche separate e sintetizza\n4. **Usa tool per colmare gap**: se il DB interno non ha dati recenti, attiva una ricerca web live\n\n## Esempio pratico\n\nCon Google ADK, si crea un agente di ricerca che usa `google_search` come tool RAG integrato:\n\n```python\nsearch_agent = Agent(\n    name=\"research_assistant\",\n    model=\"gemini-2.0-flash-exp\",\n    instruction=\"Aiuta gli utenti a ricercare argomenti. Quando richiesto, usa lo strumento Google Search.\",\n    tools=[google_search]\n)\n```\n\nL'agente riceve una domanda, cerca su Google, recupera i risultati e li usa per formulare una risposta informata. Questo è RAG nella sua forma più semplice: retrieval via web search + generation con contesto arricchito.\n\n## Riepilogo\n\n- RAG permette ai LLM di rispondere basandosi su conoscenza esterna e aggiornata\n- Il flusso è: query → embedding → ricerca vettoriale → augment prompt → generazione con fonti\n- Concetti chiave: embedding, similarità semantica, chunking, vector database\n- RAG riduce le allucinazioni e permette citazioni verificabili\n- Agentic RAG aggiunge validazione, riconciliazione conflitti e ragionamento multi-step\n- Implementazioni: Google Search API, Vertex AI RAG, Chroma DB, Pinecone\n\n## Metti in pratica\n\nIdentifica una knowledge base della tua organizzazione (wiki, documentazione, manuali) che un agente potrebbe interrogare. Descrivi come chunkeresti i documenti e quali metadati useresti per migliorare il retrieval.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 5481,
+        "riga_fine": 6100
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere il flusso in 3 fasi del pattern RAG",
+        "Distinguere tra RAG standard e Agentic RAG",
+        "Spiegare i concetti di embedding, similarità semantica e chunking",
+        "Progettare un sistema RAG per un caso d'uso aziendale"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_010",
+      "ordine": 12,
+      "tipo": "lezione",
+      "argomento": "Human-in-the-Loop: Sinergia Uomo-Macchina",
+      "sintesi_breve": "## Introduzione\n\nNonostante i progressi nei pattern agentici, ci sono domini in cui l'autonomia totale non è desiderabile — anzi, è rischiosa. Transazioni finanziarie, diagnosi mediche, moderazione di contenuti, decisioni legali: in questi contesti, l'essere umano deve rimanere n",
+      "contenuto": "## Introduzione\n\nNonostante i progressi nei pattern agentici, ci sono domini in cui l'autonomia totale non è desiderabile — anzi, è rischiosa. Transazioni finanziarie, diagnosi mediche, moderazione di contenuti, decisioni legali: in questi contesti, l'essere umano deve rimanere nel circuito decisionale. Il **Human-in-the-Loop (HITL)** pattern progetta intenzionalmente punti di intervento umano nei flussi agentici.\n\nPer uno sviluppatore, HITL non è un compromesso ma una strategia di design: permette di delegare all'AI ciò che l'AI fa bene (scala, velocità, pattern recognition) e preservare per l'umano ciò che l'umano fa meglio (giudizio, creatività, etica).\n\n## Concetti chiave\n\n### Le 6 modalità di HITL\n\nIl libro descrive 6 forme di interazione uomo-agente:\n\n1. **Supervisione umana**: monitoraggio delle performance dell'agente via dashboard e log\n2. **Intervento e correzione**: l'agente richiede aiuto quando incontra errori o ambiguità; l'umano corregge e l'agente impara\n3. **Feedback per l'apprendimento**: le preferenze umane (es. RLHF) guidano la traiettoria di apprendimento dell'agente\n4. **Decisione assistita**: l'agente fornisce analisi e raccomandazioni, l'umano prende la decisione finale\n5. **Collaborazione uomo-agente**: l'agente gestisce dati di routine, l'umano gestisce problem-solving creativo\n6. **Politiche di escalation**: protocolli predefiniti che determinano quando e come l'agente deve escalare a un operatore umano\n\n### Human-on-the-Loop: una variante importante\n\nUna variante del pattern è \"Human-on-the-loop\", dove l'esperto umano definisce le politiche di alto livello e l'AI gestisce le azioni immediate per garantire la conformità. Ad esempio:\n\n- **Trading finanziario**: un umano imposta \"70% azioni tech, 30% obbligazioni, vendi auto se -10%\". L'AI esegue le transazioni in real-time rispettando le policy.\n- **Call center**: un manager imposta \"chiamate con 'guasto servizio' → routing a supporto tecnico\". L'AI gestisce le chiamate in autonomia seguendo le policy.\n\n### Caveat: quando HITL non funziona\n\nIl pattern ha limiti importanti. Il principale è la **scalabilità**: un operatore umano non può gestire milioni di task. Serve un approccio ibrido: automazione per la scala, HITL per l'accuratezza. Inoltre, l'efficacia dipende dall'esperienza degli operatori: solo uno sviluppatore esperto può correggere codice AI in modo efficace.\n\n## Esempio pratico\n\nUn agente di supporto tecnico ADK implementa HITL con escalation. Quando l'agente non riesce a risolvere un problema complesso:\n1. Tenta il troubleshooting autonomo\n2. Se fallisce, crea un ticket\n3. Escala a uno specialista umano con `escalate_to_human()`\n\nL'agente rimane nel loop: l'operatore umano prende in carico, risolve e l'agente registra l'esito per apprendere per il futuro. Questo modello è usato da chatbot enterprise, sistemi di moderazione contenuti e piattaforme di customer service.\n\n## Riepilogo\n\n- HITL integra deliberatamente punti di intervento umano nei flussi agentici\n- Le 6 modalità spaziano dalla supervisione alla collaborazione attiva\n- \"Human-on-the-loop\" è una variante dove l'umano definisce policy, l'AI esegue\n- Il principale limite è la scalabilità: serve un bilanciamento tra automazione e intervento umano\n- Applicazioni tipiche: moderazione contenuti, supporto tecnico, revisione documenti legali, trading finanziario\n\n## Metti in pratica\n\nIdentifica un processo nella tua organizzazione dove un agente potrebbe operare in autonomia il 90% delle volte, con escalation umana per il restante 10%. Definisci le policy di escalation e il flusso di ritorno all'agente dopo l'intervento umano.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 5251,
+        "riga_fine": 5479
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere le 6 modalità di interazione Human-in-the-Loop",
+        "Distinguere tra HITL e Human-on-the-Loop",
+        "Progettare politiche di escalation da agente a operatore umano",
+        "Valutare i trade-off tra automazione e supervisione umana"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_011",
+      "ordine": 13,
+      "tipo": "lezione",
+      "argomento": "Memory Management: Memoria a Breve e Lungo Termine",
+      "sintesi_breve": "## Introduzione\n\nUn agente senza memoria è come un professionista con amnesia: ogni interazione ricomincia da zero. Il **Memory Management** pattern dota gli agenti della capacità di ricordare informazioni attraverso le conversazioni, apprendere dalle interazioni passate e person",
+      "contenuto": "## Introduzione\n\nUn agente senza memoria è come un professionista con amnesia: ogni interazione ricomincia da zero. Il **Memory Management** pattern dota gli agenti della capacità di ricordare informazioni attraverso le conversazioni, apprendere dalle interazioni passate e personalizzare le risposte. Come spiega il libro, gli agenti richiedono diversi tipi di memoria — proprio come gli umani — per operare efficacemente.\n\nPer uno sviluppatore, la memoria è ciò che trasforma un chatbot \"usa e getta\" in un assistente personale che conosce le tue preferenze, ricorda le tue richieste precedenti e migliora nel tempo.\n\n## Concetti chiave\n\n### Due tipi di memoria\n\n**Memoria a breve termine (contestuale):** simile alla memoria di lavoro umana. Risiede nel context window del LLM: messaggi recenti, risposte, risultati di tool e riflessioni. Ha capacità limitata: una volta chiusa la sessione, il contesto viene perso. I modelli con \"long context window\" semplicemente espandono questa memoria, ma resta effimera.\n\n**Memoria a lungo termine (persistente):** agisce come un magazzino di informazioni che l'agente conserva tra interazioni diverse. I dati sono memorizzati in database, knowledge graph o database vettoriali. Quando serve, l'agente interroga questa memoria esterna e integra le informazioni nel contesto a breve termine.\n\n### I tre concetti fondamentali di ADK\n\nGoogle ADK struttura la memoria in:\n\n- **Session**: un thread di conversazione individuale che registra messaggi e azioni\n- **State (session.state)**: dati temporanei rilevanti per la conversazione attiva corrente\n- **Memory**: un repository ricercabile di informazioni provenienti da chat passate o fonti esterne\n\nADK fornisce `SessionService` per gestire i thread di conversazione e `MemoryService` per la memoria a lungo termine, con implementazioni InMemory (test) e Database (produzione).\n\n### Applicazioni pratiche\n\n- **Chatbot conversazionali**: la memoria a breve termine mantiene il flusso del dialogo; quella a lungo termine ricorda preferenze utente e problemi passati\n- **Agenti task-oriented**: tengono traccia dei passi compiuti, progressi e obiettivi\n- **Esperienze personalizzate**: memorizzano preferenze e comportamenti per adattare risposte e suggerimenti\n- **RAG**: la knowledge base è essenzialmente una forma di memoria a lungo termine per agenti di Q&A\n\n## Esempio pratico\n\nUn agente di customer service con memoria: quando un cliente richiama dopo una settimana, l'agente consulta la memoria a lungo termine e recupera lo storico delle interazioni — \"La settimana scorsa hai aperto un ticket per il problema X, risolto con Y. Oggi hai bisogno di assistenza sullo stesso prodotto?\" Senza memoria, l'agente chiederebbe ogni volta \"Come posso aiutarti?\" come se fosse la prima interazione.\n\n## Riepilogo\n\n- La memoria a breve termine vive nel context window del LLM ed è effimera (sessione)\n- La memoria a lungo termine è persistente in database/knowledge graph e sopravvive tra sessioni\n- ADK struttura la memoria in Session, State e Memory con servizi dedicati\n- La memoria permette personalizzazione, continuità conversazionale e apprendimento\n- Combinata con RAG, permette all'agente di accedere a knowledge base aziendali\n\n## Metti in pratica\n\nDescrivi come progetteresti la memoria per un agente che aiuta gli utenti a prenotare viaggi: cosa deve ricordare nella sessione corrente (volo scelto, date) e cosa deve persistere tra sessioni (preferenze di viaggio, storico prenotazioni)?",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 3499,
+        "riga_fine": 4200
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra memoria a breve termine (contesto) e memoria a lungo termine (persistente)",
+        "Descrivere i concetti di Session, State e Memory in ADK",
+        "Progettare un sistema di memoria per agenti conversazionali",
+        "Combinare memoria e RAG per agenti con conoscenza persistente"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_012",
+      "ordine": 14,
+      "tipo": "lezione",
+      "argomento": "Guardrails e Safety: AI Responsabile",
+      "sintesi_breve": "## Introduzione\n\nPiù gli agenti diventano autonomi e integrati in sistemi critici, più diventa essenziale garantirne un funzionamento sicuro, etico e prevedibile. Il pattern **Guardrails** (o Safety Patterns) è il meccanismo di protezione che guida il comportamento dell'agente pe",
+      "contenuto": "## Introduzione\n\nPiù gli agenti diventano autonomi e integrati in sistemi critici, più diventa essenziale garantirne un funzionamento sicuro, etico e prevedibile. Il pattern **Guardrails** (o Safety Patterns) è il meccanismo di protezione che guida il comportamento dell'agente per prevenire risposte dannose, biased, irrilevanti o indesiderate.\n\nPer uno sviluppatore, le guardrail non sono un optional ma un requisito di produzione: senza di esse, un agente può generare contenuti offensivi, fornire consigli pericolosi o essere manipolato da attacchi di jailbreaking.\n\n## Concetti chiave\n\n### Livelli di protezione\n\nLe guardrail operano su più livelli:\n\n1. **Input Validation/Sanitization**: filtra contenuti malevoli prima che raggiungano l'agente\n2. **Output Filtering**: analisi post-generazione per tossicità, bias o contenuti proibiti\n3. **Behavioral Constraints (Prompt-level)**: istruzioni dirette nel prompt che limitano il comportamento\n4. **Tool Use Restrictions**: limitare a quali tool l'agente può accedere\n5. **External Moderation APIs**: API esterne (es. Perspective API) per moderazione contenuti\n6. **Human Oversight**: meccanismi Human-in-the-Loop per decisioni critiche\n\n### Una strategia a strati\n\nImplementare guardrail efficaci richiede un approccio multi-livello:\n\n- **Sanitizzazione input**: usare API di moderazione contenuti e validazione schema con Pydantic\n- **Prompt engineering difensivo**: prompt che definiscono confini chiari di comportamento\n- **Agent specializzati come guardrail**: un agente dedicato al \"content policy enforcement\" che analizza l'input prima che arrivi all'agente principale\n- **Modello leggero come safeguard**: un modello meno costoso (es. Gemini Flash) può pre-screening rapido degli input o double-check degli output del modello principale\n- **Logging e osservabilità**: tracciare ogni azione, tool usato e output per auditing e debugging\n- **Error handling robusto**: try-except, retry con backoff, messaggi di errore chiari\n\n### Applicazioni critiche\n\n- **Customer service**: prevenire linguaggio offensivo, consigli medici/legali errati\n- **Generazione contenuti**: assicurarsi che testi marketing aderiscano a linee guida legali ed etiche\n- **Tutor educativi**: evitare risposte biased o inappropriate\n- **HR e recruitment**: filtrare linguaggio discriminatorio nelle valutazioni\n- **Social media moderazione**: identificare hate speech e disinformazione\n\n## Esempio pratico\n\nCon CrewAI, si implementa un guardrail a due livelli:\n\n1. Un agente **Content Policy Enforcer** analizza l'input utente usando un prompt specializzato che cerca tentativi di jailbreaking, contenuti proibiti (discriminatori, violenti, espliciti) e richieste fuori dominio\n2. Se l'input supera il controllo, viene passato all'agente principale. Altrimenti, viene bloccato o escalato\n3. Un modello leggero (Gemini Flash) viene usato per il guardrail per ragioni di costo e velocità\n\nLa validazione Pydantic garantisce che gli input strutturati aderiscano a regole predefinite. Il logging traccia ogni decisione del guardrail per audit di sicurezza.\n\n## Riepilogo\n\n- Le guardrail proteggono utenti, organizzazioni e reputazione del sistema AI\n- Operano su 6 livelli: input, output, prompt, tool, API esterne, supervisione umana\n- Un approccio a strati combina validazione input, prompt engineering, agenti specializzati e logging\n- Modelli leggeri (es. Gemini Flash) sono ideali per guardrail per ragioni di costo\n- Sono essenziali in produzione per prevenire jailbreaking, contenuti tossici e comportamenti imprevisti\n\n## Metti in pratica\n\nIdentifica 3 potenziali rischi di sicurezza per un agente che gestisce richieste di assistenza clienti. Per ognuno, progetta una guardrail specifica: cosa filtrare, a che livello (input/output/prompt) e come gestire il caso di violazione.",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 7361,
+        "riga_fine": 7600
+      },
+      "obiettivi_apprendimento": [
+        "Identificare i 6 livelli di protezione delle guardrail",
+        "Progettare un sistema di guardrail multi-livello per un agente",
+        "Implementare un content policy enforcer con CrewAI",
+        "Valutare i rischi di sicurezza negli agenti autonomi"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_003",
+      "ordine": 15,
+      "tipo": "quiz",
+      "argomento": "Verifica: Planning, Multi-Agente, RAG, Memoria e Sicurezza",
+      "sintesi_breve": "Quiz di verifica dopo mod_012",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/agentic_design_patterns.md",
+        "riga_inizio": 7361,
+        "riga_fine": 7600
+      },
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_012"
+      ],
+      "domande": [
+        {
+          "testo": "Cosa distingue un agente di Planning da un semplice esecutore di workflow?",
+          "opzioni": [
+            "Creare un singolo prompt complesso",
+            "Usare un workflow predefinito rigido",
+            "Lasciare che l'agente scopra autonomamente la sequenza di azioni",
+            "Addestrare un modello ML dedicato"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "Nel Planning pattern, l'agente scopre autonomamente il 'come' (sequenza di azioni) partendo dal 'cosa' (obiettivo e vincoli)."
+        },
+        {
+          "testo": "Quali forme di collaborazione multi-agente vengono descritte nel libro?",
+          "opzioni": [
+            "Sequenziale handoff, parallelo, dibattito, gerarchico",
+            "Solo sequenziale e parallelo",
+            "Solo gerarchico e a rete",
+            "Prompt Chaining, Routing e Reflection"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il libro descrive diverse architetture: passaggi sequenziali, elaborazione parallela, dibattito e consenso, strutture gerarchiche e team di esperti."
+        },
+        {
+          "testo": "Qual è il vantaggio principale del pattern RAG rispetto a un LLM standard?",
+          "opzioni": [
+            "Sostituisce completamente il LLM",
+            "Elimina la necessità di prompt engineering",
+            "Aumenta la velocità di generazione del LLM",
+            "Permette di 'groundare' le risposte su conoscenza esterna e aggiornata"
+          ],
+          "indice_corretto": 3,
+          "spiegazione": "RAG (Retrieval Augmented Generation) integra conoscenza esterna nel prompt, permettendo al LLM di rispondere con dati aggiornati e verificabili."
+        },
+        {
+          "testo": "Quale tipo di database è ottimale per memorizzare embedding in un sistema RAG?",
+          "opzioni": [
+            "Un database SQL tradizionale",
+            "Un file JSON",
+            "Un context window del LLM",
+            "Un database specializzato per embedding vettoriali"
+          ],
+          "indice_corretto": 3,
+          "spiegazione": "I vector database (es. Pinecone, Chroma DB, pgvector) memorizzano embedding e permettono ricerche semantiche veloci basate sul significato."
+        },
+        {
+          "testo": "Qual è lo scopo principale delle Guardrail (Safety Patterns) in un sistema agentico?",
+          "opzioni": [
+            "Aumentare la temperatura del modello",
+            "Filtrare input malevoli e output tossici su più livelli",
+            "Usare modelli più grandi",
+            "Aumentare il context window"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Le guardrail operano su più livelli (input, output, prompt, tool) per prevenire contenuti dannosi, jailbreaking e comportamenti imprevisti."
+        }
+      ]
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-05-25T11:17:43Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/agentic_design_patterns",
+    "agente": "microlearning_planning_agent"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "source_id": "ko2",
+  "quality_score": 0.68,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.7,
+    "reading_order": 0.6,
+    "noise_level": 0.4,
+    "table_quality": 0.8,
+    "ocr_confidence": 0.85
+  },
+  "issues": [
+    {
+      "severity": "minor",
+      "type": "heading_formatting",
+      "message": "Titolo principale non standard: 'EP-133 **K.O.** ~~**II**~~' con barratura e doppio grassetto, seguito da tre righe '**A Guidebook** **A Notebook A Reference Book**' senza gerarchia chiara."
+    },
+    {
+      "severity": "minor",
+      "type": "repeated_page_breaks",
+      "message": "Fine pagina ripetuta: '--- end of page.page_number=2 ---' appare due volte consecutive senza contenuto intermedio."
+    },
+    {
+      "severity": "minor",
+      "type": "markdown_noise",
+      "message": "Testo spurio 'UT OUT OUT OUT' prima di '**----- End of picture text -----**' a centro documento; probabilmente frammento OCR residuo."
+    },
+    {
+      "severity": "minor",
+      "type": "disconnected_text_block",
+      "message": "Blocco '## M ## Q ## N' e '## R' a pagina 217 sembra un frammento di indice con strutture di intestazione innaturali, forse da unione errata di colonne."
+    },
+    {
+      "severity": "minor",
+      "type": "inconsistent_index_format",
+      "message": "Indice a pagina 218 presenta voci con spaziatura e ritorno a capo non uniformi (es. 'Tempo  16,  44,  47' vs 'Velocity  124–125')."
+    },
+    {
+      "severity": "info",
+      "type": "omitted_pictures",
+      "message": "Immagini omesse intenzionalmente indicate con '**==> picture [dimensione] intentionally omitted <==**'. Non costituiscono errore ma riducono completezza del contenuto."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

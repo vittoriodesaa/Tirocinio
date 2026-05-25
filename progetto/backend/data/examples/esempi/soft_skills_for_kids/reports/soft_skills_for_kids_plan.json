@@ -1,0 +1,1535 @@
+{
+  "source_id": "soft_skills_for_kids",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/soft_skills_for_kids_clean.md",
+  "unita_tempo_totale_minuti": 633,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "Introduzione",
+      "riga_inizio": 1,
+      "riga_fine": 51,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Soft Skills for Kids",
+      "riga_inizio": 3,
+      "riga_fine": 2041,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_001"
+      ]
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "Soft Skills for Kids",
+      "riga_inizio": 3,
+      "riga_fine": 2041,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_002"
+      ]
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "In Schools, at Home, and Online",
+      "riga_inizio": 9,
+      "riga_fine": 109,
+      "carico_cognitivo": 0.44,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_003"
+      ]
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "Nancy Armstrong Melser",
+      "riga_inizio": 12,
+      "riga_fine": 29,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_004"
+      ]
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "Library of Congress Cataloging-in-Publication Data",
+      "riga_inizio": 30,
+      "riga_fine": 50,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_005"
+      ]
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "Preface",
+      "riga_inizio": 80,
+      "riga_fine": 118,
+      "carico_cognitivo": 0.36,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_006"
+      ]
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "Acknowledgments",
+      "riga_inizio": 119,
+      "riga_fine": 131,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_007"
+      ]
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "Introduction",
+      "riga_inizio": 132,
+      "riga_fine": 154,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_008"
+      ]
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "HARD SKILLS VS. SOFT SKILLS",
+      "riga_inizio": 155,
+      "riga_fine": 181,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_009"
+      ]
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "HOW EDUCATORS CAN TEACH SOFT SKILLS",
+      "riga_inizio": 182,
+      "riga_fine": 190,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_010"
+      ]
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "HOW PARENTS CAN TEACH SOFT SKILLS",
+      "riga_inizio": 191,
+      "riga_fine": 203,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_011"
+      ]
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "HOW TO USE SOFT SKILLS ONLINE AND FOR HOMESCHOOLING",
+      "riga_inizio": 204,
+      "riga_fine": 220,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_012"
+      ]
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "IMPORTANCE OF COMMUNICATION SKILLS",
+      "riga_inizio": 226,
+      "riga_fine": 244,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_013"
+      ]
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "HOW CAN EDUCATORS TEACH ABOUT COMMUNICATION SKILLS?",
+      "riga_inizio": 245,
+      "riga_fine": 275,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_014"
+      ]
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "HOW CAN PARENTS TEACH ABOUT COMMUNICATION SKILLS?",
+      "riga_inizio": 276,
+      "riga_fine": 296,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_015"
+      ]
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "HOW CAN KIDS LEARN COMMUNICATION SKILLS ONLINE?",
+      "riga_inizio": 297,
+      "riga_fine": 319,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_016"
+      ]
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_017"
+      ]
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": "IMPORTANCE OF TEAMWORK",
+      "riga_inizio": 342,
+      "riga_fine": 356,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_018"
+      ]
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "HOW CAN EDUCATORS TEACH TEAMWORK TO CHILDREN?",
+      "riga_inizio": 357,
+      "riga_fine": 387,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_019"
+      ]
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "HOW CAN PARENTS TEACH TEAMWORK TO CHILDREN?",
+      "riga_inizio": 388,
+      "riga_fine": 412,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_020"
+      ]
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "HOW CAN KIDS LEARN TEAMWORK IN AN ONLINE SETTING?",
+      "riga_inizio": 413,
+      "riga_fine": 435,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_021"
+      ]
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_022"
+      ]
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "IMPORTANCE OF MANNERS",
+      "riga_inizio": 458,
+      "riga_fine": 478,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_023"
+      ]
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "HOW CAN EDUCATORS TEACH MANNERS?",
+      "riga_inizio": 479,
+      "riga_fine": 495,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_024"
+      ]
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "HOW CAN PARENTS TEACH MANNERS?",
+      "riga_inizio": 496,
+      "riga_fine": 530,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_025"
+      ]
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "HOW CAN KIDS LEARN MANNERS IN AN ONLINE SETTING?",
+      "riga_inizio": 531,
+      "riga_fine": 549,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_026"
+      ]
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "KEY POINTS",
+      "riga_inizio": 550,
+      "riga_fine": 566,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_027"
+      ]
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "IMPORTANCE OF RESPECT",
+      "riga_inizio": 572,
+      "riga_fine": 590,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_028"
+      ]
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "HOW CAN EDUCATORS TEACH RESPECT TO CHILDREN?",
+      "riga_inizio": 591,
+      "riga_fine": 621,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_029"
+      ]
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "HOW CAN PARENTS TEACH RESPECT TO CHILDREN?",
+      "riga_inizio": 622,
+      "riga_fine": 652,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_030"
+      ]
+    },
+    {
+      "id": "pt_032",
+      "ordine": 32,
+      "titolo": "HOW CAN KIDS LEARN RESPECT ONLINE?",
+      "riga_inizio": 653,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_031"
+      ]
+    },
+    {
+      "id": "pt_033",
+      "ordine": 33,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_032"
+      ]
+    },
+    {
+      "id": "pt_034",
+      "ordine": 34,
+      "titolo": "IMPORTANCE OF EMPATHY",
+      "riga_inizio": 690,
+      "riga_fine": 706,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_033"
+      ]
+    },
+    {
+      "id": "pt_035",
+      "ordine": 35,
+      "titolo": "HOW CAN EDUCATORS TEACH EMPATHY TO CHILDREN?",
+      "riga_inizio": 707,
+      "riga_fine": 727,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_034"
+      ]
+    },
+    {
+      "id": "pt_036",
+      "ordine": 36,
+      "titolo": "HOW CAN PARENTS TEACH EMPATHY TO CHILDREN?",
+      "riga_inizio": 728,
+      "riga_fine": 756,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_035"
+      ]
+    },
+    {
+      "id": "pt_037",
+      "ordine": 37,
+      "titolo": "HOW CAN KIDS LEARN EMPATHY IN AN ONLINE SETTING?",
+      "riga_inizio": 757,
+      "riga_fine": 777,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_036"
+      ]
+    },
+    {
+      "id": "pt_038",
+      "ordine": 38,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_037"
+      ]
+    },
+    {
+      "id": "pt_039",
+      "ordine": 39,
+      "titolo": "IMPORTANCE OF COMPOSURE",
+      "riga_inizio": 800,
+      "riga_fine": 818,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_038"
+      ]
+    },
+    {
+      "id": "pt_040",
+      "ordine": 40,
+      "titolo": "HOW CAN EDUCATORS TEACH COMPOSURE TO CHILDREN?",
+      "riga_inizio": 819,
+      "riga_fine": 837,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_039"
+      ]
+    },
+    {
+      "id": "pt_041",
+      "ordine": 41,
+      "titolo": "HOW CAN PARENTS TEACH COMPOSURE TO CHILDREN?",
+      "riga_inizio": 838,
+      "riga_fine": 868,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_040"
+      ]
+    },
+    {
+      "id": "pt_042",
+      "ordine": 42,
+      "titolo": "HOW CAN KIDS LEARN COMPOSURE IN AN ONLINE SETTING?",
+      "riga_inizio": 869,
+      "riga_fine": 891,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_041"
+      ]
+    },
+    {
+      "id": "pt_043",
+      "ordine": 43,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_042"
+      ]
+    },
+    {
+      "id": "pt_044",
+      "ordine": 44,
+      "titolo": "IMPORTANCE OF RESPONSIBILITY",
+      "riga_inizio": 914,
+      "riga_fine": 928,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_043"
+      ]
+    },
+    {
+      "id": "pt_045",
+      "ordine": 45,
+      "titolo": "HOW CAN EDUCATORS TEACH RESPONSIBILITY TO CHILDREN?",
+      "riga_inizio": 929,
+      "riga_fine": 961,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_044"
+      ]
+    },
+    {
+      "id": "pt_046",
+      "ordine": 46,
+      "titolo": "HOW CAN PARENTS TEACH RESPONSIBILITY TO CHILDREN?",
+      "riga_inizio": 962,
+      "riga_fine": 980,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_045"
+      ]
+    },
+    {
+      "id": "pt_047",
+      "ordine": 47,
+      "titolo": "HOW CAN KIDS LEARN RESPONSIBILITY IN AN ONLINE SETTING?",
+      "riga_inizio": 981,
+      "riga_fine": 1005,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_046"
+      ]
+    },
+    {
+      "id": "pt_048",
+      "ordine": 48,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_047"
+      ]
+    },
+    {
+      "id": "pt_049",
+      "ordine": 49,
+      "titolo": "IMPORTANCE OF MOTIVATION",
+      "riga_inizio": 1028,
+      "riga_fine": 1048,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_048"
+      ]
+    },
+    {
+      "id": "pt_050",
+      "ordine": 50,
+      "titolo": "HOW CAN EDUCATORS TEACH MOTIVATION TO CHILDREN?",
+      "riga_inizio": 1049,
+      "riga_fine": 1077,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_049"
+      ]
+    },
+    {
+      "id": "pt_051",
+      "ordine": 51,
+      "titolo": "HOW CAN PARENTS TEACH MOTIVATION TO CHILDREN?",
+      "riga_inizio": 1078,
+      "riga_fine": 1104,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_050"
+      ]
+    },
+    {
+      "id": "pt_052",
+      "ordine": 52,
+      "titolo": "HOW CAN KIDS LEARN MOTIVATION ONLINE?",
+      "riga_inizio": 1105,
+      "riga_fine": 1129,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_051"
+      ]
+    },
+    {
+      "id": "pt_053",
+      "ordine": 53,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_052"
+      ]
+    },
+    {
+      "id": "pt_054",
+      "ordine": 54,
+      "titolo": "IMPORTANCE OF RESILIENCE",
+      "riga_inizio": 1152,
+      "riga_fine": 1168,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_053"
+      ]
+    },
+    {
+      "id": "pt_055",
+      "ordine": 55,
+      "titolo": "HOW CAN EDUCATORS TEACH RESILIENCE TO CHILDREN?",
+      "riga_inizio": 1169,
+      "riga_fine": 1195,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_054"
+      ]
+    },
+    {
+      "id": "pt_056",
+      "ordine": 56,
+      "titolo": "HOW CAN PARENTS TEACH RESILIENCE TO CHILDREN?",
+      "riga_inizio": 1196,
+      "riga_fine": 1220,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_055"
+      ]
+    },
+    {
+      "id": "pt_057",
+      "ordine": 57,
+      "titolo": "HOW CAN KIDS LEARN RESILIENCE ONLINE?",
+      "riga_inizio": 1221,
+      "riga_fine": 1247,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_056"
+      ]
+    },
+    {
+      "id": "pt_058",
+      "ordine": 58,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_057"
+      ]
+    },
+    {
+      "id": "pt_059",
+      "ordine": 59,
+      "titolo": "IMPORTANCE OF INTEGRITY",
+      "riga_inizio": 1270,
+      "riga_fine": 1288,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_058"
+      ]
+    },
+    {
+      "id": "pt_060",
+      "ordine": 60,
+      "titolo": "HOW CAN EDUCATORS TEACH INTEGRITY TO CHILDREN?",
+      "riga_inizio": 1289,
+      "riga_fine": 1315,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_059"
+      ]
+    },
+    {
+      "id": "pt_061",
+      "ordine": 61,
+      "titolo": "HOW CAN PARENTS TEACH INTEGRITY TO CHILDREN?",
+      "riga_inizio": 1316,
+      "riga_fine": 1338,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_060"
+      ]
+    },
+    {
+      "id": "pt_062",
+      "ordine": 62,
+      "titolo": "HOW CAN KIDS LEARN INTEGRITY IN AN ONLINE SETTING?",
+      "riga_inizio": 1339,
+      "riga_fine": 1357,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_061"
+      ]
+    },
+    {
+      "id": "pt_063",
+      "ordine": 63,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_062"
+      ]
+    },
+    {
+      "id": "pt_064",
+      "ordine": 64,
+      "titolo": "IMPORTANCE OF ORGANIZATION",
+      "riga_inizio": 1380,
+      "riga_fine": 1396,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_063"
+      ]
+    },
+    {
+      "id": "pt_065",
+      "ordine": 65,
+      "titolo": "HOW CAN EDUCATORS TEACH THIS SKILL TO CHILDREN?",
+      "riga_inizio": 1397,
+      "riga_fine": 1415,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_064"
+      ]
+    },
+    {
+      "id": "pt_066",
+      "ordine": 66,
+      "titolo": "HOW CAN PARENTS TEACH ORGANIZATION SKILLS TO CHILDREN?",
+      "riga_inizio": 1416,
+      "riga_fine": 1450,
+      "carico_cognitivo": 0.35,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_065"
+      ]
+    },
+    {
+      "id": "pt_067",
+      "ordine": 67,
+      "titolo": "HOW DO KIDS LEARN ORGANIZATION IN AN ONLINE SETTING?",
+      "riga_inizio": 1451,
+      "riga_fine": 1473,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_066"
+      ]
+    },
+    {
+      "id": "pt_068",
+      "ordine": 68,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_067"
+      ]
+    },
+    {
+      "id": "pt_069",
+      "ordine": 69,
+      "titolo": "IMPORTANCE OF TIME MANAGEMENT",
+      "riga_inizio": 1496,
+      "riga_fine": 1510,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_068"
+      ]
+    },
+    {
+      "id": "pt_070",
+      "ordine": 70,
+      "titolo": "HOW CAN EDUCATORS TEACH TIME MANAGEMENT TO CHILDREN?",
+      "riga_inizio": 1511,
+      "riga_fine": 1545,
+      "carico_cognitivo": 0.34,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_069"
+      ]
+    },
+    {
+      "id": "pt_071",
+      "ordine": 71,
+      "titolo": "HOW CAN PARENTS TEACH TIME MANAGEMENT TO CHILDREN?",
+      "riga_inizio": 1546,
+      "riga_fine": 1568,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_070"
+      ]
+    },
+    {
+      "id": "pt_072",
+      "ordine": 72,
+      "titolo": "HOW CAN KIDS LEARN TIME MANAGEMENT IN AN ONLINE SETTING?",
+      "riga_inizio": 1569,
+      "riga_fine": 1587,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_071"
+      ]
+    },
+    {
+      "id": "pt_073",
+      "ordine": 73,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_072"
+      ]
+    },
+    {
+      "id": "pt_074",
+      "ordine": 74,
+      "titolo": "IMPORTANCE OF BALANCE",
+      "riga_inizio": 1610,
+      "riga_fine": 1626,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_073"
+      ]
+    },
+    {
+      "id": "pt_075",
+      "ordine": 75,
+      "titolo": "HOW CAN EDUCATORS TEACH BALANCE TO CHILDREN?",
+      "riga_inizio": 1627,
+      "riga_fine": 1655,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_074"
+      ]
+    },
+    {
+      "id": "pt_076",
+      "ordine": 76,
+      "titolo": "HOW CAN PARENTS TEACH BALANCE TO CHILDREN?",
+      "riga_inizio": 1656,
+      "riga_fine": 1686,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_075"
+      ]
+    },
+    {
+      "id": "pt_077",
+      "ordine": 77,
+      "titolo": "HOW CAN KIDS LEARN BALANCE IN AN ONLINE SETTING?",
+      "riga_inizio": 1687,
+      "riga_fine": 1703,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_076"
+      ]
+    },
+    {
+      "id": "pt_078",
+      "ordine": 78,
+      "titolo": "KEY POINTS",
+      "riga_inizio": 550,
+      "riga_fine": 566,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_077"
+      ]
+    },
+    {
+      "id": "pt_079",
+      "ordine": 79,
+      "titolo": "WHY IS A POSITIVE ATTITUDE IMPORTANT TO CHILDREN?",
+      "riga_inizio": 1726,
+      "riga_fine": 1740,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_078"
+      ]
+    },
+    {
+      "id": "pt_080",
+      "ordine": 80,
+      "titolo": "HOW CAN EDUCATORS TEACH ABOUT A POSITIVE ATTITUDE TO CHILDREN?",
+      "riga_inizio": 1741,
+      "riga_fine": 1777,
+      "carico_cognitivo": 0.34,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_079"
+      ]
+    },
+    {
+      "id": "pt_081",
+      "ordine": 81,
+      "titolo": "HOW CAN PARENTS TEACH ABOUT A POSITIVE ATTITUDE TO CHILDREN?",
+      "riga_inizio": 1778,
+      "riga_fine": 1800,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_080"
+      ]
+    },
+    {
+      "id": "pt_082",
+      "ordine": 82,
+      "titolo": "HOW CAN KIDS LEARN A POSITIVE ATTITUDE IN AN ONLINE SETTING?",
+      "riga_inizio": 1801,
+      "riga_fine": 1815,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_081"
+      ]
+    },
+    {
+      "id": "pt_083",
+      "ordine": 83,
+      "titolo": "KEY IDEAS",
+      "riga_inizio": 320,
+      "riga_fine": 336,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_082"
+      ]
+    },
+    {
+      "id": "pt_084",
+      "ordine": 84,
+      "titolo": "WHY DO SOFT SKILLS MATTER?",
+      "riga_inizio": 1836,
+      "riga_fine": 1880,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_083"
+      ]
+    },
+    {
+      "id": "pt_085",
+      "ordine": 85,
+      "titolo": "HOW SOFT SKILLS APPLY TO TEACHERS",
+      "riga_inizio": 1881,
+      "riga_fine": 1891,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_084"
+      ]
+    },
+    {
+      "id": "pt_086",
+      "ordine": 86,
+      "titolo": "HOW SOFT SKILLS APPLY TO PARENTS",
+      "riga_inizio": 1892,
+      "riga_fine": 1904,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_085"
+      ]
+    },
+    {
+      "id": "pt_087",
+      "ordine": 87,
+      "titolo": "THE FUTURE OF SOFT SKILLS IN AN ONLINE SETTING",
+      "riga_inizio": 1905,
+      "riga_fine": 1919,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_086"
+      ]
+    },
+    {
+      "id": "pt_088",
+      "ordine": 88,
+      "titolo": "THE FUTURE OF SOFT SKILLS AND CHILDREN",
+      "riga_inizio": 1920,
+      "riga_fine": 1932,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_087"
+      ]
+    },
+    {
+      "id": "pt_089",
+      "ordine": 89,
+      "titolo": "Bibliography",
+      "riga_inizio": 1933,
+      "riga_fine": 2029,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_088"
+      ]
+    },
+    {
+      "id": "pt_090",
+      "ordine": 90,
+      "titolo": "About the Author",
+      "riga_inizio": 2030,
+      "riga_fine": 2041,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_089"
+      ]
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    },
+    {
+      "da": "pt_031",
+      "a": "pt_032"
+    },
+    {
+      "da": "pt_032",
+      "a": "pt_033"
+    },
+    {
+      "da": "pt_033",
+      "a": "pt_034"
+    },
+    {
+      "da": "pt_034",
+      "a": "pt_035"
+    },
+    {
+      "da": "pt_035",
+      "a": "pt_036"
+    },
+    {
+      "da": "pt_036",
+      "a": "pt_037"
+    },
+    {
+      "da": "pt_037",
+      "a": "pt_038"
+    },
+    {
+      "da": "pt_038",
+      "a": "pt_039"
+    },
+    {
+      "da": "pt_039",
+      "a": "pt_040"
+    },
+    {
+      "da": "pt_040",
+      "a": "pt_041"
+    },
+    {
+      "da": "pt_041",
+      "a": "pt_042"
+    },
+    {
+      "da": "pt_042",
+      "a": "pt_043"
+    },
+    {
+      "da": "pt_043",
+      "a": "pt_044"
+    },
+    {
+      "da": "pt_044",
+      "a": "pt_045"
+    },
+    {
+      "da": "pt_045",
+      "a": "pt_046"
+    },
+    {
+      "da": "pt_046",
+      "a": "pt_047"
+    },
+    {
+      "da": "pt_047",
+      "a": "pt_048"
+    },
+    {
+      "da": "pt_048",
+      "a": "pt_049"
+    },
+    {
+      "da": "pt_049",
+      "a": "pt_050"
+    },
+    {
+      "da": "pt_050",
+      "a": "pt_051"
+    },
+    {
+      "da": "pt_051",
+      "a": "pt_052"
+    },
+    {
+      "da": "pt_052",
+      "a": "pt_053"
+    },
+    {
+      "da": "pt_053",
+      "a": "pt_054"
+    },
+    {
+      "da": "pt_054",
+      "a": "pt_055"
+    },
+    {
+      "da": "pt_055",
+      "a": "pt_056"
+    },
+    {
+      "da": "pt_056",
+      "a": "pt_057"
+    },
+    {
+      "da": "pt_057",
+      "a": "pt_058"
+    },
+    {
+      "da": "pt_058",
+      "a": "pt_059"
+    },
+    {
+      "da": "pt_059",
+      "a": "pt_060"
+    },
+    {
+      "da": "pt_060",
+      "a": "pt_061"
+    },
+    {
+      "da": "pt_061",
+      "a": "pt_062"
+    },
+    {
+      "da": "pt_062",
+      "a": "pt_063"
+    },
+    {
+      "da": "pt_063",
+      "a": "pt_064"
+    },
+    {
+      "da": "pt_064",
+      "a": "pt_065"
+    },
+    {
+      "da": "pt_065",
+      "a": "pt_066"
+    },
+    {
+      "da": "pt_066",
+      "a": "pt_067"
+    },
+    {
+      "da": "pt_067",
+      "a": "pt_068"
+    },
+    {
+      "da": "pt_068",
+      "a": "pt_069"
+    },
+    {
+      "da": "pt_069",
+      "a": "pt_070"
+    },
+    {
+      "da": "pt_070",
+      "a": "pt_071"
+    },
+    {
+      "da": "pt_071",
+      "a": "pt_072"
+    },
+    {
+      "da": "pt_072",
+      "a": "pt_073"
+    },
+    {
+      "da": "pt_073",
+      "a": "pt_074"
+    },
+    {
+      "da": "pt_074",
+      "a": "pt_075"
+    },
+    {
+      "da": "pt_075",
+      "a": "pt_076"
+    },
+    {
+      "da": "pt_076",
+      "a": "pt_077"
+    },
+    {
+      "da": "pt_077",
+      "a": "pt_078"
+    },
+    {
+      "da": "pt_078",
+      "a": "pt_079"
+    },
+    {
+      "da": "pt_079",
+      "a": "pt_080"
+    },
+    {
+      "da": "pt_080",
+      "a": "pt_081"
+    },
+    {
+      "da": "pt_081",
+      "a": "pt_082"
+    },
+    {
+      "da": "pt_082",
+      "a": "pt_083"
+    },
+    {
+      "da": "pt_083",
+      "a": "pt_084"
+    },
+    {
+      "da": "pt_084",
+      "a": "pt_085"
+    },
+    {
+      "da": "pt_085",
+      "a": "pt_086"
+    },
+    {
+      "da": "pt_086",
+      "a": "pt_087"
+    },
+    {
+      "da": "pt_087",
+      "a": "pt_088"
+    },
+    {
+      "da": "pt_088",
+      "a": "pt_089"
+    },
+    {
+      "da": "pt_089",
+      "a": "pt_090"
+    }
+  ],
+  "note_pianificazione": "Piano da 90 sezioni markdown (structured). Carico cognitivo derivato da token stimati."
+}

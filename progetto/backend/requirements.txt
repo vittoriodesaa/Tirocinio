@@ -1,4 +1,26 @@
-markitdown
+# API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Contratti e config
+pydantic
+python-dotenv
+
+# LLM (OpenRouter o Groq — vedi LLM_PROVIDER in .env)
+langchain-openai
+langchain-groq
+langchain-core
+langgraph
+deepagents
+
+# Conversione documenti — PDF (script dedicato)
 pymupdf4llm
+pymupdf
+
+# Conversione documenti — Word
 mammoth
 markdownify
+
+# Fallback universale (pptx, epub, html, immagini, txt, md, pdf…)
+markitdown[all]

@@ -1,0 +1,362 @@
+{
+  "titolo_corso": "Think Python: Impara a programmare come un informatico",
+  "lingua": "it",
+  "descrizione": "Corso microlearning basato sul libro \"Think Python\" di Allen Downey. Un percorso progressivo che parte dai fondamenti della programmazione (variabili, espressioni, statement) fino ad arrivare alla programmazione orientata agli oggetti, passando per funzioni, condizionali, ricorsione, iterazione, strutture dati (stringhe, liste, dizionari, tuple), file e classi. Ogni modulo include concetti chiave, esempi pratici e strategie di debugging.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "argomento": "Il Metodo del Programma: pensare come un informatico",
+      "sintesi_breve": "Introduzione alla programmazione come disciplina che unisce matematica, ingegneria e scienze. Si definisce il concetto di problema-solving e si illustrano le istruzioni fondamentali di ogni programma (input, output, operazioni matematiche, esecuzione condizionale, ripetizione). Si spiega la differenza tra linguaggi naturali e formali, con focus sulla sintassi e parsing.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 663,
+        "riga_fine": 862
+      },
+      "obiettivi_apprendimento": [
+        "Spiegare cosa significa 'pensare come un informatico'",
+        "Elencare le 5 categorie di istruzioni base di ogni programma",
+        "Distinguere tra linguaggi formali e naturali",
+        "Comprendere il concetto di parsing e sintassi"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "argomento": "Variabili, Espressioni e Statement in Python",
+      "sintesi_breve": "Le variabili sono nomi che si riferiscono a valori. Il modulo spiega come creare variabili con assignment statement, le regole per i nomi (lettere, numeri e underscore), la differenza tra espressioni (valutate) e statement (eseguiti), l'ordine delle operazioni (PEMDAS), le operazioni su stringhe (concatenazione e ripetizione), l'uso dei commenti e la classificazione degli errori (sintassi, runtime, semantici).",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 952,
+        "riga_fine": 1151
+      },
+      "obiettivi_apprendimento": [
+        "Creare e assegnare variabili con statement di assegnazione",
+        "Applicare le regole per nomi di variabili validi (evitando keyword)",
+        "Distinguere tra espressioni e statement",
+        "Applicare l'ordine delle operazioni PEMDAS",
+        "Usare concatenazione e ripetizione su stringhe",
+        "Inserire commenti efficaci nel codice"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": []
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "argomento": "Funzioni: chiamate, definizione e composizione",
+      "sintesi_breve": "Le funzioni sono sequenze nominate di istruzioni che eseguono un calcolo. Si apprende come chiamare funzioni built-in (type, int, float, str), importare moduli (math) con dot notation, comporre funzioni annidando chiamate, e definire nuove funzioni con def, comprendendo header, body, parametri, argomenti e flusso di esecuzione. Viene introdotto lo stack diagram per tracciare le chiamate.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 1234,
+        "riga_fine": 1433
+      },
+      "obiettivi_apprendimento": [
+        "Chiamare funzioni built-in con argomenti e catturarne il valore di ritorno",
+        "Importare moduli e usare dot notation per funzioni matematiche",
+        "Comporre funzioni annidando chiamate e operazioni",
+        "Definire nuove funzioni con def (header, body, indentazione)",
+        "Spiegare il flusso di esecuzione e cosa sono stack frame"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": []
+    },
+    {
+      "id": "mod_004",
+      "ordine": 4,
+      "argomento": "Condizionali e Ricorsione",
+      "sintesi_breve": "Il modulo introduce divisione intera (//) e modulo (%) come nuovi operatori, espressioni booleane (True/False) e operatori logici (and, or, not). Si spiega l'istruzione if con alternativa (else), condizionali incatenati (elif), condizionali annidati e il potente concetto di ricorsione: una funzione che chiama se stessa, con stack diagram dedicati.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 2205,
+        "riga_fine": 2430
+      },
+      "obiettivi_apprendimento": [
+        "Usare floor division (//) e modulo (%) per divisione intera e resto",
+        "Scrivere espressioni booleane e usare operatori logici (and, or, not)",
+        "Implementare esecuzione condizionale con if/else/elif",
+        "Scrivere condizionali annidati",
+        "Comprendere e scrivere funzioni ricorsive semplici",
+        "Disegnare stack diagram per funzioni ricorsive"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_003"
+      ]
+    },
+    {
+      "id": "mod_005",
+      "ordine": 5,
+      "argomento": "Case Study: il modulo Turtle e il Design delle Interfacce",
+      "sintesi_breve": "Caso studio pratico che usa il modulo turtle per la grafica tartaruga. Si impara la ripetizione semplice (for loop), l'incapsulamento (racchiudere codice in funzioni), la generalizzazione (aggiungere parametri), il design dell'interfaccia (scegliere nomi e parametri chiari), il refactoring (migliorare codice esistente) e l'uso dei docstring per documentare le funzioni.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 1789,
+        "riga_fine": 1920
+      },
+      "obiettivi_apprendimento": [
+        "Usare il modulo turtle per disegnare figure geometriche",
+        "Applicare la ripetizione con cicli for",
+        "Incapsulare codice in funzioni riutilizzabili",
+        "Generalizzare funzioni con parametri",
+        "Rifattorizzare codice esistente per migliorarlo",
+        "Scrivere docstring per documentare le funzioni"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_003"
+      ]
+    },
+    {
+      "id": "mod_006",
+      "ordine": 6,
+      "argomento": "Funzioni Fruttuose: valori di ritorno e sviluppo incrementale",
+      "sintesi_breve": "Le funzioni fruttuose restituiscono un valore tramite return (es. math.sqrt), mentre quelle void eseguono azioni e restituiscono None. Si illustra lo sviluppo incrementale (creare un prototipo, testarlo, perfezionarlo), la composizione di funzioni, le funzioni booleane (predicati), la ricorsione avanzata (es. fattoriale) e le tecniche di debugging per funzioni fruttuose.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 1583,
+        "riga_fine": 1698
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra funzioni fruttuose (con return) e funzioni void",
+        "Scrivere funzioni che restituiscono valori calcolati",
+        "Applicare lo sviluppo incrementale per costruire funzioni passo-passo",
+        "Comporre funzioni fruttuose in espressioni complesse",
+        "Scrivere funzioni booleane (predicati)",
+        "Usare la tecnica 'leap of faith' per fidarsi della ricorsione"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_003",
+        "mod_004"
+      ]
+    },
+    {
+      "id": "mod_007",
+      "ordine": 7,
+      "argomento": "Iterazione: il ciclo while e il controllo dei loop",
+      "sintesi_breve": "L'iterazione è la capacità di eseguire ripetutamente un blocco di codice. Si parte dal riassegnamento delle variabili (aggiornamento, inizializzazione, incremento/decremento), per poi introdurre il ciclo while con la sua logica condizione-corpo. Viene spiegata l'istruzione break per uscire da un loop a metà e si discute il concetto di algoritmo con l'esempio della congettura di Collatz.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 3251,
+        "riga_fine": 3420
+      },
+      "obiettivi_apprendimento": [
+        "Comprendere il riassegnamento di variabili e lo stato in memoria",
+        "Inizializzare e aggiornare correttamente le variabili",
+        "Scrivere cicli while con condizione di terminazione",
+        "Usare break per uscire da un loop a metà",
+        "Riconoscere e prevenire loop infiniti",
+        "Spiegare cos'è un algoritmo e perché la correttezza è importante"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_004"
+      ]
+    },
+    {
+      "id": "mod_008",
+      "ordine": 8,
+      "argomento": "Stringhe: sequenze, slicing e metodi",
+      "sintesi_breve": "Le stringhe sono sequenze ordinate di caratteri. Si impara ad accedere ai singoli caratteri con indici (partendo da 0), usare len(), traversare stringhe con cicli for/while, estrarre sottostringhe con slicing [start:end], comprendere l'immutabilità, usare metodi built-in (upper, find, etc.) e l'operatore in per la ricerca.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 3590,
+        "riga_fine": 3780
+      },
+      "obiettivi_apprendimento": [
+        "Accedere ai singoli caratteri di una stringa con indici",
+        "Usare len() per ottenere la lunghezza di una stringa",
+        "Traversare una stringa con cicli for e while",
+        "Estrarre sottostringhe con lo slicing",
+        "Spiegare l'immutabilità delle stringhe",
+        "Usare metodi delle stringhe (upper, find, replace, etc.)",
+        "Usare l'operatore in per cercare sottostringhe"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_002",
+        "mod_007"
+      ]
+    },
+    {
+      "id": "mod_009",
+      "ordine": 9,
+      "argomento": "Case Study: Word Play - lettura file e ricerca parole",
+      "sintesi_breve": "Caso studio basato su word puzzles: si legge una lista di parole da file, si applicano filtri (parole con determinate lettere, palindromi, parole in ordine alfabetico), si usa il pattern di ricerca con cicli e condizionali, e si traversano stringhe usando indici numerici per controlli posizionali.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 4183,
+        "riga_fine": 4300
+      },
+      "obiettivi_apprendimento": [
+        "Leggere file di testo con open e readline/for",
+        "Applicare filtri su parole usando string methods",
+        "Usare il pattern di ricerca con cicli e condizionali",
+        "Attraversare stringhe con indici numerici",
+        "Scrivere funzioni per risolvere word puzzles"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [
+        "mod_008",
+        "mod_005"
+      ]
+    },
+    {
+      "id": "mod_010",
+      "ordine": 10,
+      "argomento": "Liste: sequenze mutabili, metodi e aliasing",
+      "sintesi_breve": "Le liste sono sequenze mutabili di elementi. Si impara a creare, indicizzare e modificare liste, usarne i metodi principali (append, extend, sort, pop), applicare i pattern map/filter/reduce, eliminare elementi, convertire stringhe in liste (split/join) e comprendere i concetti di oggetti, valori, aliasing e passaggio di liste come argomenti.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 4400,
+        "riga_fine": 4650
+      },
+      "obiettivi_apprendimento": [
+        "Creare e indicizzare liste di elementi",
+        "Modificare liste (mutabilità) vs stringhe immutabili",
+        "Traversare una lista con cicli for",
+        "Usare metodi delle liste (append, extend, sort, etc.)",
+        "Applicare i pattern map, filter e reduce sulle liste",
+        "Eliminare elementi da una lista",
+        "Convertire tra stringhe e liste (split/join)",
+        "Comprendere aliasing e oggetti condivisi"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_008",
+        "mod_007"
+      ]
+    },
+    {
+      "id": "mod_011",
+      "ordine": 11,
+      "argomento": "Dizionari: mapping, chiavi-valore e hashtable",
+      "sintesi_breve": "I dizionari sono mapping chiave-valore. Si creano con {} o dict(), si aggiungono elementi con le parentesi quadre, si cerca con in e si usano come contatori (istogramma). Viene introdotto il metodo get(), il reverse lookup, l'uso di liste come valori, il concetto di memo (cache per ottimizzare funzioni ricorsive) e variabili globali.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 5169,
+        "riga_fine": 5400
+      },
+      "obiettivi_apprendimento": [
+        "Creare e popolare dizionari con coppie chiave-valore",
+        "Accedere ai valori tramite chiave e gestire KeyError",
+        "Usare l'operatore in per controllare le chiavi",
+        "Usare un dizionario come contatore (istogramma)",
+        "Usare il metodo get() con valore di default",
+        "Implementare reverse lookup e gestire valori duplicati",
+        "Usare liste come valori in un dizionario"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_010"
+      ]
+    },
+    {
+      "id": "mod_012",
+      "ordine": 12,
+      "argomento": "Tuple: sequenze immutabili e assegnazione multipla",
+      "sintesi_breve": "Le tuple sono sequenze immutabili simili alle liste. Si imparano la sintassi (parentesi opzionali), l'immutabilità, il tuple assignment (scambio variabili, split di sequenze), tuple come valori di ritorno multipli, gather e scatter per argomenti variabili (*args), confronto tra tuple e l'uso combinato con liste e dizionari.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 5706,
+        "riga_fine": 5900
+      },
+      "obiettivi_apprendimento": [
+        "Creare tuple con e senza parentesi",
+        "Distinguere tuple da liste (immutabilità)",
+        "Usare tuple assignment per scambiare variabili",
+        "Restituire tuple multiple da una funzione",
+        "Usare gather e scatter con *args",
+        "Combinare tuple, liste e dizionari",
+        "Confrontare tuple per ordinamento"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [
+        "mod_010",
+        "mod_011"
+      ]
+    },
+    {
+      "id": "mod_013",
+      "ordine": 13,
+      "argomento": "Case Study: Selezione delle Strutture Dati",
+      "sintesi_breve": "Caso studio avanzato sull'uso combinato di strutture dati. Si analizza la frequenza delle parole in un testo (istogramma con dizionari), si generano numeri casuali (random), si filtrano le parole più comuni, si implementa sottrazione tra dizionari e generazione di parole casuali. Viene introdotta l'analisi di Markov per generare testi probabilistici.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 5900,
+        "riga_fine": 6150
+      },
+      "obiettivi_apprendimento": [
+        "Analizzare la frequenza delle parole in un testo con istogrammi",
+        "Generare numeri casuali con il modulo random",
+        "Filtrare le parole più comuni con dizionari",
+        "Usare parametri opzionali nelle funzioni",
+        "Implementare sottrazione tra dizionari",
+        "Generare parole casuali basate su frequenze",
+        "Comprendere l'analisi di Markov per generazione testuale"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_011",
+        "mod_012"
+      ]
+    },
+    {
+      "id": "mod_014",
+      "ordine": 14,
+      "argomento": "File: persistenza, lettura, scrittura e serializzazione",
+      "sintesi_breve": "I programmi persistenti conservano dati su memoria permanente. Si impara ad aprire file in lettura/scrittura (open con modalità 'w'), usare il format operator % per formattare stringhe, gestire percorsi con os.path, catturare eccezioni con try/except, lavorare con database semplici (dbm), serializzare oggetti con pickle e usare pipe per collegare programmi.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 6648,
+        "riga_fine": 6930
+      },
+      "obiettivi_apprendimento": [
+        "Aprire e chiudere file in modalità lettura e scrittura",
+        "Leggere e scrivere file di testo con open/read/write",
+        "Usare l'operatore di formato % per formattare stringhe",
+        "Gestire percorsi di file con il modulo os.path",
+        "Catturare eccezioni con try/except",
+        "Usare il modulo pickle per serializzare oggetti",
+        "Comprendere il concetto di pipe per comunicazione tra processi"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_009",
+        "mod_010"
+      ]
+    },
+    {
+      "id": "mod_015",
+      "ordine": 15,
+      "argomento": "Classi e Oggetti: programmazione orientata agli oggetti in Python",
+      "sintesi_breve": "Introduzione alla programmazione orientata agli oggetti. Si definisce una classe Point con class, si creano istanze (oggetti) chiamando la classe come funzione, si aggiungono attributi con dot notation, si passano istanze come argomenti e si restituiscono come valori di ritorno. Vengono introdotti gli object diagram per visualizzare lo stato degli oggetti in memoria.",
+      "fonte": {
+        "percorso": "sources/test_doc_001_clean.md",
+        "riga_inizio": 7150,
+        "riga_fine": 7350
+      },
+      "obiettivi_apprendimento": [
+        "Definire una classe con class e creare oggetti (istanze)",
+        "Aggiungere attributi a un'istanza con dot notation",
+        "Usare istanze come argomenti e valori di ritorno",
+        "Disegnare object diagram con attributi",
+        "Comprendere il concetto di programmazione orientata agli oggetti",
+        "Modellare entità del mondo reale con classi"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_010",
+        "mod_006"
+      ]
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-05-22T10:06:21Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/temp/workspace",
+    "agente": "microlearning_planning_agent"
+  }
+}

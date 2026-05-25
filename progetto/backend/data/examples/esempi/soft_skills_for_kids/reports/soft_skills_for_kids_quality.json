@@ -1,0 +1,36 @@
+{
+  "source_id": "soft_skills_for_kids",
+  "quality_score": 0.81,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.9,
+    "reading_order": 0.8,
+    "noise_level": 0.1,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.95
+  },
+  "issues": [
+    {
+      "severity": "low",
+      "type": "truncated_text",
+      "message": "Il testo a pagina 73 si interrompe bruscamente con 'concerns, and other ch' e non prosegue. Potrebbe essere un taglio di OCR o un errore di estrazione."
+    },
+    {
+      "severity": "low",
+      "type": "orphan_fragment",
+      "message": "Il frammento '/travel_guide/201606/ kids_and_teens/4_steps_to_a_balanced_life_for_your_kids_using_a_sandwich. html.' appare isolato, probabilmente parte di una bibliografia o nota a piè di pagina, ma senza contesto."
+    },
+    {
+      "severity": "low",
+      "type": "formatting_anomaly",
+      "message": "La riga '--- end of page.page_number=140 ---' è seguita da un'altra riga identica per pagina 141, ma non c'è contenuto intermedio. Potrebbe essere un doppione o un errore di impaginazione."
+    },
+    {
+      "severity": "low",
+      "type": "inconsistent_heading",
+      "message": "Il titolo 'Soft Skills for Kids' appare sia come H1 (pagina 1) che come H2 (pagina 3). Probabilmente è un errore di struttura gerarchica."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

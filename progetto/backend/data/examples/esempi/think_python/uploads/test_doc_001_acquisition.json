@@ -1,0 +1,11 @@
+{
+  "source_id": "test_doc_001",
+  "filename": "file_di_prova.pdf",
+  "media_type": "application/pdf",
+  "storage_ref": "migrato — PDF originale non presente in uploads",
+  "size_bytes": 0,
+  "estensione": ".pdf",
+  "ocr_probabile": false,
+  "acquisito_il": "2026-05-22T12:00:00+00:00",
+  "note": "Corso migrato da temp/workspace; sorgenti già convertite in sources/"
+}

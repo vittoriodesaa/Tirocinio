@@ -1,0 +1,130 @@
+{
+  "titolo_corso": "Soft Skills per Bambini: Scuola, Casa e Online",
+  "lingua": "it",
+  "descrizione": "Corso microlearning basato sul libro \"Soft Skills for Kids: In Schools, at Home, and Online\" di Nancy Armstrong Melser (2ª edizione). Un percorso in 15 moduli che esplora le 14 competenze trasversali fondamentali per bambini e ragazzi: comunicazione, lavoro di squadra, buone maniere, rispetto, empatia, compostezza, responsabilità, motivazione, resilienza, integrità, organizzazione, gestione del tempo, equilibrio e atteggiamento positivo. Ogni modulo presenta definizioni, strategie per educatori, attività per genitori e applicazioni online.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "argomento": "Fondamenti: Hard Skills vs Soft Skills",
+      "sintesi_breve": "Modulo introduttivo che distingue le hard skills (competenze tecniche e misurabili insegnate a scuola) dalle soft skills (capacità relazionali e personali). Spiega perché entrambe sono necessarie per il successo scolastico, universitario e professionale, e introduce il concetto di \"teachable moments\" per insegnare le soft skills in contesti quotidiani.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 170,
+        "riga_fine": 196
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra hard skills e soft skills con esempi concreti",
+        "Comprendere l'importanza delle soft skills per il futuro lavorativo",
+        "Identificare i 14 ambiti delle soft skills trattati nel corso"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "argomento": "Il Ruolo di Educatori e Genitori nell'Insegnamento delle Soft Skills",
+      "sintesi_breve": "Analizza come insegnanti e genitori collaborano per sviluppare le soft skills. Per gli educatori: modeling, insegnamento curricolare e collaborazione con le famiglie. Per i genitori: primi insegnanti, modellamento quotidiano e partnership con la scuola. Include strategie per l'insegnamento online e homeschooling emerse durante la pandemia.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 197,
+        "riga_fine": 235
+      },
+      "obiettivi_apprendimento": [
+        "Comprendere il ruolo di modeling degli insegnanti nello sviluppo delle soft skills",
+        "Riconoscere l'importanza della famiglia come primo contesto di apprendimento",
+        "Identificare strategie per insegnare soft skills in contesti online"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": [
+        "mod_001"
+      ]
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "argomento": "Abilità di Comunicazione",
+      "sintesi_breve": "La comunicazione comprende parlare, ascoltare, leggere e scrivere. Include linguaggio verbale, body language (55% della comunicazione secondo Mehrabian), social cues e tecnologia. Strategie per educatori: insegnamento di frasi assertive, volume appropriato, lettura critica. Per genitori: insegnamento di saluti, contatto visivo, buone maniere comunicative. Online: etichetta digitale, breakout room, video survey.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 238,
+        "riga_fine": 350
+      },
+      "obiettivi_apprendimento": [
+        "Identificare le 4 aree della comunicazione (parlare, ascoltare, leggere, scrivere)",
+        "Applicare strategie per insegnare comunicazione assertiva ai bambini",
+        "Utilizzare tecniche per sviluppare comunicazione efficace in contesti online"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [
+        "mod_002"
+      ]
+    },
+    {
+      "id": "mod_004",
+      "ordine": 4,
+      "argomento": "Lavoro di Squadra (Teamwork)",
+      "sintesi_breve": "Il teamwork è fondamentale per collaborare in progetti, attività e futuro lavoro. Include negoziazione, condivisione e ascolto attivo. Per educatori: gruppi cooperativi intenzionali, competizioni amichevoli, valutazione del prodotto + cooperazione. Per genitori: sport di squadra, scoutismo, modello familiare a team. Online: breakout room, Kahoot! Team Mode, game night virtuali.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 354,
+        "riga_fine": 466
+      },
+      "obiettivi_apprendimento": [
+        "Comprendere l'importanza del teamwork come abilità per la vita",
+        "Implementare strategie didattiche per gruppi cooperativi efficaci",
+        "Applicare tecniche di teamwork in contesti online e familiari"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [
+        "mod_003"
+      ]
+    },
+    {
+      "id": "mod_005",
+      "ordine": 5,
+      "argomento": "Buone Maniere (Manners)",
+      "sintesi_breve": "Le buone maniere sono comportamenti appresi (non innati) che includono frasi chiave (per favore, grazie, scusa) e azioni di rispetto e gentilezza. Per educatori: creare un'aula famiglia, lodare atti di gentilezza, ringraziare il personale scolastico. Per genitori: modellare fin dall'infanzia, biglietti di ringraziamento, video di ringraziamento. Online: ambiente di apprendimento ordinato, ascolto attivo in videochiamata.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 470,
+        "riga_fine": 578
+      },
+      "obiettivi_apprendimento": [
+        "Insegnare le buone maniere come competenza fondamentale per la vita",
+        "Utilizzare strategie per rinforzare la gentilezza in classe e a casa",
+        "Adattare l'insegnamento delle buone maniere ai contesti digitali"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": [
+        "mod_003"
+      ]
+    },
+    {
+      "id": "mod_006",
+      "ordine": 6,
+      "argomento": "Rispetto (Respect)",
+      "sintesi_breve": "Il rispetto si divide in rispetto per gli altri e rispetto per sé stessi (self-respect). Si apprende osservando gli adulti. Per educatori: regole e procedure, motti di classe, lettura su personaggi rispettosi, gestione di bullismo e prese in giro. Per genitori: modellare gesti di cortesia, gestire situazioni stressanti con dignità, insegnare l'umiltà. Online: ambiente professionale, gestione dei turni di parola, collaborazione scuola-famiglia.",
+      "fonte": {
+        "percorso": "sources/soft_skills_for_kids.md",
+        "riga_inizio": 584,
+        "riga_fine": 698
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra rispetto per sé e rispetto per gli altri",
+        "Applicare strategie educative per promuovere il rispetto in classe",
+        "Insegnare il rispetto in contesti digitali e online"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [
+        "mod_005"
+      ]
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-05-22T10:54:08Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/soft_skills_for_kids",
+    "agente": "microlearning_planning_agent"
+  }
+}

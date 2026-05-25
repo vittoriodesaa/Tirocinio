@@ -1,0 +1,36 @@
+{
+  "source_id": "test_doc_001",
+  "quality_score": 0.91,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 1.0,
+    "reading_order": 1.0,
+    "noise_level": 0.1,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.95
+  },
+  "issues": [
+    {
+      "severity": "low",
+      "type": "broken_formatting",
+      "message": "LaTeX placeholder 'L[A] TEX' non risolto (potrebbe essere un marcato di OCR/encoding)."
+    },
+    {
+      "severity": "low",
+      "type": "noise",
+      "message": "Righe vuote ripetute tra fini pagina e tra blocchi, ma non compromettono la leggibilità (normale rumore di estrazione multi-pagina)."
+    },
+    {
+      "severity": "low",
+      "type": "ocr_artifact",
+      "message": "Nell'indice finale, virgole e spazi anomali (es. 'p1', 'r2', 't1', 'o1') – probabilmente output di codice Python mal separato. Non è un errore del markdown ma potrebbe essere confuso."
+    },
+    {
+      "severity": "low",
+      "type": "broken_table",
+      "message": "Nelle voci di indice, alcune righe hanno due punti invece di virgole (es. 'zero, index starting at, 71' vs 'zero, index starting at, 90') – ma non è una vera tabella."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

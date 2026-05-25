@@ -5,3 +5,7 @@ __pycache__/
 .env
 anaconda3/
 pwa-scuse-main/
+vevn/
+.venv/
+__pycache__/
+progetto/backend/pipeline/**/__pycache__/

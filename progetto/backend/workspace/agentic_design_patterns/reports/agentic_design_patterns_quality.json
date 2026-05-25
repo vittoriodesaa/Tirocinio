@@ -1,0 +1,56 @@
+{
+  "source_id": "agentic_design_patterns",
+  "quality_score": 0.79,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.9,
+    "reading_order": 0.8,
+    "noise_level": 0.1,
+    "table_quality": 0.9,
+    "ocr_confidence": 0.9
+  },
+  "issues": [
+    {
+      "severity": "low",
+      "type": "ocr_truncation",
+      "message": "Riga 10: '12. Chapter 12: ... code ok], **216**' final page number separatore a capo. La somma delle pagine per la part 3 è 8+9+17=34, ok."
+    },
+    {
+      "severity": "low",
+      "type": "ocr_typo",
+      "message": "Riga 7: 'Chapter 3: ... code okl' -> 'code ok' probabilmente."
+    },
+    {
+      "severity": "low",
+      "type": "ocr_typo",
+      "message": "Riga 11: 'Chapter 11: ... code don, code oe' -> 'code done, code ok'."
+    },
+    {
+      "severity": "low",
+      "type": "ocr_truncation",
+      "message": "Riga 17: 'Part Four (Total: 114 pages) ... Resource-Aware Optimization (code), 15 pages  [final,  las' troncata a fine pagina."
+    },
+    {
+      "severity": "low",
+      "type": "spacing",
+      "message": "Riga 4: 'Acknowledgment, _2 pages_ [final, last read done] Foreword, 1 page ...' manca un a capo tra le voci."
+    },
+    {
+      "severity": "low",
+      "type": "ocr_error_link",
+      "message": "Riga 21: 'htps://github.com/google' e 'birthd ay_planner_adk' -> errori OCR da 'https://github.com/google/' e 'birthday_planner_adk'."
+    },
+    {
+      "severity": "low",
+      "type": "page_number_mismatch",
+      "message": "La somma di tot. pagine dichiarata (1+2+1+1+4+9+...+5+4=424? verificare) non corrisponde a 424 nel testo a causa di '11 Dedication' forse misplaced."
+    },
+    {
+      "severity": "low",
+      "type": "readability",
+      "message": "Il testo centrale contiene una sezione ben formattata, ma gli estremi (sommario + frammenti finali) hanno pagine troncate e a capo mancanti, riducendo la fluidità."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

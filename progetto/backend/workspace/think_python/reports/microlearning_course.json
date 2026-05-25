@@ -1,0 +1,11 @@
+{
+  "titolo_corso": "Corso microlearning",
+  "lingua": "it",
+  "descrizione": "",
+  "moduli": [],
+  "metadati": {
+    "generato_il": "2026-05-25T10:51:13Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/think_python",
+    "agente": "microlearning_planning_agent"
+  }
+}

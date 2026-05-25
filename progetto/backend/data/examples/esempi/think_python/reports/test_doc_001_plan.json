@@ -1,0 +1,4816 @@
+{
+  "source_id": "test_doc_001",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/test_doc_001_clean.md",
+  "unita_tempo_totale_minuti": 1646,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "Think Python",
+      "riga_inizio": 1,
+      "riga_fine": 30,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Preface",
+      "riga_inizio": 31,
+      "riga_fine": 131,
+      "carico_cognitivo": 0.37,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_001"
+      ]
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "The strange history of this book",
+      "riga_inizio": 32,
+      "riga_fine": 88,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_002"
+      ]
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "Acknowledgments",
+      "riga_inizio": 89,
+      "riga_fine": 103,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_003"
+      ]
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "Contributor List",
+      "riga_inizio": 104,
+      "riga_fine": 374,
+      "carico_cognitivo": 0.67,
+      "durata_stimata_minuti": 18,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_004"
+      ]
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "Contents",
+      "riga_inizio": 375,
+      "riga_fine": 661,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_005"
+      ]
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "Chapter 1",
+      "riga_inizio": 662,
+      "riga_fine": 762,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_006"
+      ]
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "The way of the program",
+      "riga_inizio": 663,
+      "riga_fine": 669,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_007"
+      ]
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "1.1 What is a program?",
+      "riga_inizio": 670,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_008"
+      ]
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "1.2 Running Python",
+      "riga_inizio": 689,
+      "riga_fine": 725,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_009"
+      ]
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "1.3 The first program",
+      "riga_inizio": 726,
+      "riga_fine": 750,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_010"
+      ]
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "1.4 Arithmetic operators",
+      "riga_inizio": 751,
+      "riga_fine": 791,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_011"
+      ]
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "1.5 Values and types",
+      "riga_inizio": 792,
+      "riga_fine": 824,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_012"
+      ]
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "1.6 Formal and natural languages",
+      "riga_inizio": 825,
+      "riga_fine": 863,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_013"
+      ]
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "1.7 Debugging",
+      "riga_inizio": 864,
+      "riga_fine": 876,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_014"
+      ]
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "1.8 Glossary",
+      "riga_inizio": 877,
+      "riga_fine": 921,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_015"
+      ]
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "1.9 Exercises",
+      "riga_inizio": 922,
+      "riga_fine": 950,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_016"
+      ]
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "Chapter 2",
+      "riga_inizio": 951,
+      "riga_fine": 1051,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_017"
+      ]
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": "Variables, expressions and statements",
+      "riga_inizio": 952,
+      "riga_fine": 954,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_018"
+      ]
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "2.1 Assignment statements",
+      "riga_inizio": 955,
+      "riga_fine": 970,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_019"
+      ]
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "2.2 Variable names",
+      "riga_inizio": 971,
+      "riga_fine": 1013,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_020"
+      ]
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "2.3 Expressions and statements",
+      "riga_inizio": 1014,
+      "riga_fine": 1031,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_021"
+      ]
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "2.4 Script mode",
+      "riga_inizio": 1032,
+      "riga_fine": 1073,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_022"
+      ]
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "2.5 Order of operations",
+      "riga_inizio": 1074,
+      "riga_fine": 1088,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_023"
+      ]
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "2.6 String operations",
+      "riga_inizio": 1089,
+      "riga_fine": 1113,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_024"
+      ]
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "2.7 Comments",
+      "riga_inizio": 1114,
+      "riga_fine": 1149,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_025"
+      ]
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "2.8 Debugging",
+      "riga_inizio": 1150,
+      "riga_fine": 1166,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_026"
+      ]
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "2.9 Glossary",
+      "riga_inizio": 1167,
+      "riga_fine": 1205,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_027"
+      ]
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "2.10 Exercises",
+      "riga_inizio": 1206,
+      "riga_fine": 1232,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_028"
+      ]
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "Chapter 3",
+      "riga_inizio": 1233,
+      "riga_fine": 1333,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_029"
+      ]
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "Functions",
+      "riga_inizio": 1234,
+      "riga_fine": 1236,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_030"
+      ]
+    },
+    {
+      "id": "pt_032",
+      "ordine": 32,
+      "titolo": "3.1 Function calls",
+      "riga_inizio": 1237,
+      "riga_fine": 1279,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_031"
+      ]
+    },
+    {
+      "id": "pt_033",
+      "ordine": 33,
+      "titolo": "3.2 Math functions",
+      "riga_inizio": 1280,
+      "riga_fine": 1335,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_032"
+      ]
+    },
+    {
+      "id": "pt_034",
+      "ordine": 34,
+      "titolo": "3.3 Composition",
+      "riga_inizio": 1336,
+      "riga_fine": 1358,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_033"
+      ]
+    },
+    {
+      "id": "pt_035",
+      "ordine": 35,
+      "titolo": "3.4 Adding new functions",
+      "riga_inizio": 1359,
+      "riga_fine": 1415,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_034"
+      ]
+    },
+    {
+      "id": "pt_036",
+      "ordine": 36,
+      "titolo": "3.5",
+      "riga_inizio": 1416,
+      "riga_fine": 1444,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_035"
+      ]
+    },
+    {
+      "id": "pt_037",
+      "ordine": 37,
+      "titolo": "3.6 Flow of execution",
+      "riga_inizio": 1445,
+      "riga_fine": 1459,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_036"
+      ]
+    },
+    {
+      "id": "pt_038",
+      "ordine": 38,
+      "titolo": "3.7 Parameters and arguments",
+      "riga_inizio": 1460,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_037"
+      ]
+    },
+    {
+      "id": "pt_039",
+      "ordine": 39,
+      "titolo": "3.8 Variables and parameters are local",
+      "riga_inizio": 1516,
+      "riga_fine": 1552,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_038"
+      ]
+    },
+    {
+      "id": "pt_040",
+      "ordine": 40,
+      "titolo": "3.9 Stack diagrams",
+      "riga_inizio": 1553,
+      "riga_fine": 1582,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_039"
+      ]
+    },
+    {
+      "id": "pt_041",
+      "ordine": 41,
+      "titolo": "3.10 Fruitful functions and void functions",
+      "riga_inizio": 1583,
+      "riga_fine": 1626,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_040"
+      ]
+    },
+    {
+      "id": "pt_042",
+      "ordine": 42,
+      "titolo": "3.11 Why functions?",
+      "riga_inizio": 1627,
+      "riga_fine": 1639,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_041"
+      ]
+    },
+    {
+      "id": "pt_043",
+      "ordine": 43,
+      "titolo": "3.12 Debugging",
+      "riga_inizio": 1640,
+      "riga_fine": 1650,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_042"
+      ]
+    },
+    {
+      "id": "pt_044",
+      "ordine": 44,
+      "titolo": "3.13 Glossary",
+      "riga_inizio": 1651,
+      "riga_fine": 1697,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_043"
+      ]
+    },
+    {
+      "id": "pt_045",
+      "ordine": 45,
+      "titolo": "3.14 Exercises",
+      "riga_inizio": 1698,
+      "riga_fine": 1787,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_044"
+      ]
+    },
+    {
+      "id": "pt_046",
+      "ordine": 46,
+      "titolo": "Chapter 4",
+      "riga_inizio": 1788,
+      "riga_fine": 1888,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_045"
+      ]
+    },
+    {
+      "id": "pt_047",
+      "ordine": 47,
+      "titolo": "Case study: interface design",
+      "riga_inizio": 1789,
+      "riga_fine": 1797,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_046"
+      ]
+    },
+    {
+      "id": "pt_048",
+      "ordine": 48,
+      "titolo": "4.1 The turtle module",
+      "riga_inizio": 1798,
+      "riga_fine": 1854,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_047"
+      ]
+    },
+    {
+      "id": "pt_049",
+      "ordine": 49,
+      "titolo": "4.2 Simple repetition",
+      "riga_inizio": 1855,
+      "riga_fine": 1913,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_048"
+      ]
+    },
+    {
+      "id": "pt_050",
+      "ordine": 50,
+      "titolo": "4.3 Exercises",
+      "riga_inizio": 1914,
+      "riga_fine": 1934,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_049"
+      ]
+    },
+    {
+      "id": "pt_051",
+      "ordine": 51,
+      "titolo": "4.4 Encapsulation",
+      "riga_inizio": 1935,
+      "riga_fine": 1959,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_050"
+      ]
+    },
+    {
+      "id": "pt_052",
+      "ordine": 52,
+      "titolo": "4.5 Generalization",
+      "riga_inizio": 1960,
+      "riga_fine": 2005,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_051"
+      ]
+    },
+    {
+      "id": "pt_053",
+      "ordine": 53,
+      "titolo": "4.6 Interface design",
+      "riga_inizio": 2006,
+      "riga_fine": 2046,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_052"
+      ]
+    },
+    {
+      "id": "pt_054",
+      "ordine": 54,
+      "titolo": "4.7 Refactoring",
+      "riga_inizio": 2047,
+      "riga_fine": 2095,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_053"
+      ]
+    },
+    {
+      "id": "pt_055",
+      "ordine": 55,
+      "titolo": "4.8 A development plan",
+      "riga_inizio": 2096,
+      "riga_fine": 2110,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_054"
+      ]
+    },
+    {
+      "id": "pt_056",
+      "ordine": 56,
+      "titolo": "4.9 docstring",
+      "riga_inizio": 2111,
+      "riga_fine": 2134,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_055"
+      ]
+    },
+    {
+      "id": "pt_057",
+      "ordine": 57,
+      "titolo": "4.10 Debugging",
+      "riga_inizio": 2135,
+      "riga_fine": 2145,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_056"
+      ]
+    },
+    {
+      "id": "pt_058",
+      "ordine": 58,
+      "titolo": "4.11 Glossary",
+      "riga_inizio": 2146,
+      "riga_fine": 2178,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_057"
+      ]
+    },
+    {
+      "id": "pt_059",
+      "ordine": 59,
+      "titolo": "4.12 Exercises",
+      "riga_inizio": 2179,
+      "riga_fine": 2203,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_058"
+      ]
+    },
+    {
+      "id": "pt_060",
+      "ordine": 60,
+      "titolo": "Chapter 5",
+      "riga_inizio": 2204,
+      "riga_fine": 2304,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_059"
+      ]
+    },
+    {
+      "id": "pt_061",
+      "ordine": 61,
+      "titolo": "Conditionals and recursion",
+      "riga_inizio": 2205,
+      "riga_fine": 2207,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_060"
+      ]
+    },
+    {
+      "id": "pt_062",
+      "ordine": 62,
+      "titolo": "5.1 Floor division and modulus",
+      "riga_inizio": 2208,
+      "riga_fine": 2249,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_061"
+      ]
+    },
+    {
+      "id": "pt_063",
+      "ordine": 63,
+      "titolo": "5.2 Boolean expressions",
+      "riga_inizio": 2250,
+      "riga_fine": 2280,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_062"
+      ]
+    },
+    {
+      "id": "pt_064",
+      "ordine": 64,
+      "titolo": "5.3 Logical operators",
+      "riga_inizio": 2281,
+      "riga_fine": 2298,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_063"
+      ]
+    },
+    {
+      "id": "pt_065",
+      "ordine": 65,
+      "titolo": "5.4 Conditional execution",
+      "riga_inizio": 2299,
+      "riga_fine": 2323,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_064"
+      ]
+    },
+    {
+      "id": "pt_066",
+      "ordine": 66,
+      "titolo": "5.5 Alternative execution",
+      "riga_inizio": 2324,
+      "riga_fine": 2338,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_065"
+      ]
+    },
+    {
+      "id": "pt_067",
+      "ordine": 67,
+      "titolo": "5.6 Chained conditionals",
+      "riga_inizio": 2339,
+      "riga_fine": 2365,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_066"
+      ]
+    },
+    {
+      "id": "pt_068",
+      "ordine": 68,
+      "titolo": "5.7 Nested conditionals",
+      "riga_inizio": 2366,
+      "riga_fine": 2412,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_067"
+      ]
+    },
+    {
+      "id": "pt_069",
+      "ordine": 69,
+      "titolo": "5.8 Recursion",
+      "riga_inizio": 2413,
+      "riga_fine": 2493,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_068"
+      ]
+    },
+    {
+      "id": "pt_070",
+      "ordine": 70,
+      "titolo": "5.9 Stack diagrams for recursive functions",
+      "riga_inizio": 2494,
+      "riga_fine": 2506,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_069"
+      ]
+    },
+    {
+      "id": "pt_071",
+      "ordine": 71,
+      "titolo": "5.10",
+      "riga_inizio": 2507,
+      "riga_fine": 2539,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_070"
+      ]
+    },
+    {
+      "id": "pt_072",
+      "ordine": 72,
+      "titolo": "5.11 Keyboard input",
+      "riga_inizio": 2540,
+      "riga_fine": 2561,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_071"
+      ]
+    },
+    {
+      "id": "pt_073",
+      "ordine": 73,
+      "titolo": "5.12 Debugging",
+      "riga_inizio": 2562,
+      "riga_fine": 2601,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_072"
+      ]
+    },
+    {
+      "id": "pt_074",
+      "ordine": 74,
+      "titolo": "5.13 Glossary",
+      "riga_inizio": 2602,
+      "riga_fine": 2632,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_073"
+      ]
+    },
+    {
+      "id": "pt_075",
+      "ordine": 75,
+      "titolo": "5.14 Exercises",
+      "riga_inizio": 2633,
+      "riga_fine": 2737,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_074"
+      ]
+    },
+    {
+      "id": "pt_076",
+      "ordine": 76,
+      "titolo": "Chapter 6",
+      "riga_inizio": 2738,
+      "riga_fine": 2838,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_075"
+      ]
+    },
+    {
+      "id": "pt_077",
+      "ordine": 77,
+      "titolo": "Fruitful functions",
+      "riga_inizio": 1583,
+      "riga_fine": 1626,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_076"
+      ]
+    },
+    {
+      "id": "pt_078",
+      "ordine": 78,
+      "titolo": "6.1 Return values",
+      "riga_inizio": 2742,
+      "riga_fine": 2832,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_077"
+      ]
+    },
+    {
+      "id": "pt_079",
+      "ordine": 79,
+      "titolo": "6.2 Incremental development",
+      "riga_inizio": 2833,
+      "riga_fine": 2912,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_078"
+      ]
+    },
+    {
+      "id": "pt_080",
+      "ordine": 80,
+      "titolo": "6.3 Composition",
+      "riga_inizio": 2913,
+      "riga_fine": 2943,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_079"
+      ]
+    },
+    {
+      "id": "pt_081",
+      "ordine": 81,
+      "titolo": "6.4 Boolean functions",
+      "riga_inizio": 2944,
+      "riga_fine": 2968,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_080"
+      ]
+    },
+    {
+      "id": "pt_082",
+      "ordine": 82,
+      "titolo": "6.5 More recursion",
+      "riga_inizio": 2969,
+      "riga_fine": 3050,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_081"
+      ]
+    },
+    {
+      "id": "pt_083",
+      "ordine": 83,
+      "titolo": "6.6 Leap of faith",
+      "riga_inizio": 3051,
+      "riga_fine": 3061,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_082"
+      ]
+    },
+    {
+      "id": "pt_084",
+      "ordine": 84,
+      "titolo": "6.7 One more example",
+      "riga_inizio": 3062,
+      "riga_fine": 3082,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_083"
+      ]
+    },
+    {
+      "id": "pt_085",
+      "ordine": 85,
+      "titolo": "6.8 Checking types",
+      "riga_inizio": 3083,
+      "riga_fine": 3134,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_084"
+      ]
+    },
+    {
+      "id": "pt_086",
+      "ordine": 86,
+      "titolo": "6.9 Debugging",
+      "riga_inizio": 3135,
+      "riga_fine": 3170,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_085"
+      ]
+    },
+    {
+      "id": "pt_087",
+      "ordine": 87,
+      "titolo": "6.10 Glossary",
+      "riga_inizio": 3171,
+      "riga_fine": 3181,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_086"
+      ]
+    },
+    {
+      "id": "pt_088",
+      "ordine": 88,
+      "titolo": "6.11 Exercises",
+      "riga_inizio": 3182,
+      "riga_fine": 3249,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_087"
+      ]
+    },
+    {
+      "id": "pt_089",
+      "ordine": 89,
+      "titolo": "Chapter 7",
+      "riga_inizio": 3250,
+      "riga_fine": 3350,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_088"
+      ]
+    },
+    {
+      "id": "pt_090",
+      "ordine": 90,
+      "titolo": "Iteration",
+      "riga_inizio": 3251,
+      "riga_fine": 3253,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_089"
+      ]
+    },
+    {
+      "id": "pt_091",
+      "ordine": 91,
+      "titolo": "7.1 Reassignment",
+      "riga_inizio": 3254,
+      "riga_fine": 3287,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_090"
+      ]
+    },
+    {
+      "id": "pt_092",
+      "ordine": 92,
+      "titolo": "Figure 7.1: State diagram.",
+      "riga_inizio": 3288,
+      "riga_fine": 3304,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_091"
+      ]
+    },
+    {
+      "id": "pt_093",
+      "ordine": 93,
+      "titolo": "7.2 Updating variables",
+      "riga_inizio": 3305,
+      "riga_fine": 3335,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_092"
+      ]
+    },
+    {
+      "id": "pt_094",
+      "ordine": 94,
+      "titolo": "7.3 The** `while` **statement",
+      "riga_inizio": 3336,
+      "riga_fine": 3392,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_093"
+      ]
+    },
+    {
+      "id": "pt_095",
+      "ordine": 95,
+      "titolo": "**7.4** `break`",
+      "riga_inizio": 3393,
+      "riga_fine": 3423,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_094"
+      ]
+    },
+    {
+      "id": "pt_096",
+      "ordine": 96,
+      "titolo": "7.5 Square roots",
+      "riga_inizio": 3424,
+      "riga_fine": 3492,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_095"
+      ]
+    },
+    {
+      "id": "pt_097",
+      "ordine": 97,
+      "titolo": "7.6 Algorithms",
+      "riga_inizio": 3493,
+      "riga_fine": 3507,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_096"
+      ]
+    },
+    {
+      "id": "pt_098",
+      "ordine": 98,
+      "titolo": "7.7 Debugging",
+      "riga_inizio": 3508,
+      "riga_fine": 3520,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_097"
+      ]
+    },
+    {
+      "id": "pt_099",
+      "ordine": 99,
+      "titolo": "7.8 Glossary",
+      "riga_inizio": 3521,
+      "riga_fine": 3539,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_098"
+      ]
+    },
+    {
+      "id": "pt_100",
+      "ordine": 100,
+      "titolo": "7.9 Exercises",
+      "riga_inizio": 3540,
+      "riga_fine": 3588,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_099"
+      ]
+    },
+    {
+      "id": "pt_101",
+      "ordine": 101,
+      "titolo": "Chapter 8",
+      "riga_inizio": 3589,
+      "riga_fine": 3689,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_100"
+      ]
+    },
+    {
+      "id": "pt_102",
+      "ordine": 102,
+      "titolo": "Strings",
+      "riga_inizio": 3590,
+      "riga_fine": 3592,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_101"
+      ]
+    },
+    {
+      "id": "pt_103",
+      "ordine": 103,
+      "titolo": "8.1 A string is a sequence",
+      "riga_inizio": 3593,
+      "riga_fine": 3649,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_102"
+      ]
+    },
+    {
+      "id": "pt_104",
+      "ordine": 104,
+      "titolo": "**8.2** `len`",
+      "riga_inizio": 3650,
+      "riga_fine": 3683,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_103"
+      ]
+    },
+    {
+      "id": "pt_105",
+      "ordine": 105,
+      "titolo": "8.3 Traversal with a** `for` **loop",
+      "riga_inizio": 3684,
+      "riga_fine": 3749,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_104"
+      ]
+    },
+    {
+      "id": "pt_106",
+      "ordine": 106,
+      "titolo": "8.4 String slices",
+      "riga_inizio": 3750,
+      "riga_fine": 3789,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_105"
+      ]
+    },
+    {
+      "id": "pt_107",
+      "ordine": 107,
+      "titolo": "8.5 Strings are immutable",
+      "riga_inizio": 3790,
+      "riga_fine": 3811,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_106"
+      ]
+    },
+    {
+      "id": "pt_108",
+      "ordine": 108,
+      "titolo": "8.6 Searching",
+      "riga_inizio": 3812,
+      "riga_fine": 3836,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_107"
+      ]
+    },
+    {
+      "id": "pt_109",
+      "ordine": 109,
+      "titolo": "8.7 Looping and counting",
+      "riga_inizio": 3837,
+      "riga_fine": 3854,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_108"
+      ]
+    },
+    {
+      "id": "pt_110",
+      "ordine": 110,
+      "titolo": "8.8 String methods",
+      "riga_inizio": 3855,
+      "riga_fine": 3910,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_109"
+      ]
+    },
+    {
+      "id": "pt_111",
+      "ordine": 111,
+      "titolo": "8.9 The** `in` **operator",
+      "riga_inizio": 3911,
+      "riga_fine": 3954,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_110"
+      ]
+    },
+    {
+      "id": "pt_112",
+      "ordine": 112,
+      "titolo": "8.10 String comparison",
+      "riga_inizio": 3955,
+      "riga_fine": 3984,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_111"
+      ]
+    },
+    {
+      "id": "pt_113",
+      "ordine": 113,
+      "titolo": "8.11 Debugging",
+      "riga_inizio": 3985,
+      "riga_fine": 4078,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_112"
+      ]
+    },
+    {
+      "id": "pt_114",
+      "ordine": 114,
+      "titolo": "8.12 Glossary",
+      "riga_inizio": 4079,
+      "riga_fine": 4103,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_113"
+      ]
+    },
+    {
+      "id": "pt_115",
+      "ordine": 115,
+      "titolo": "8.13 Exercises",
+      "riga_inizio": 4104,
+      "riga_fine": 4178,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_114"
+      ]
+    },
+    {
+      "id": "pt_116",
+      "ordine": 116,
+      "titolo": "Chapter 9",
+      "riga_inizio": 4179,
+      "riga_fine": 4279,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_115"
+      ]
+    },
+    {
+      "id": "pt_117",
+      "ordine": 117,
+      "titolo": "Case study: word play",
+      "riga_inizio": 4180,
+      "riga_fine": 4182,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_116"
+      ]
+    },
+    {
+      "id": "pt_118",
+      "ordine": 118,
+      "titolo": "9.1 Reading word lists",
+      "riga_inizio": 4183,
+      "riga_fine": 4230,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_117"
+      ]
+    },
+    {
+      "id": "pt_119",
+      "ordine": 119,
+      "titolo": "9.2 Exercises",
+      "riga_inizio": 4231,
+      "riga_fine": 4257,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_118"
+      ]
+    },
+    {
+      "id": "pt_120",
+      "ordine": 120,
+      "titolo": "9.3 Search",
+      "riga_inizio": 4258,
+      "riga_fine": 4364,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_119"
+      ]
+    },
+    {
+      "id": "pt_121",
+      "ordine": 121,
+      "titolo": "9.4 Looping with indices",
+      "riga_inizio": 4365,
+      "riga_fine": 4448,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_120"
+      ]
+    },
+    {
+      "id": "pt_122",
+      "ordine": 122,
+      "titolo": "9.5 Debugging",
+      "riga_inizio": 4449,
+      "riga_fine": 4463,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_121"
+      ]
+    },
+    {
+      "id": "pt_123",
+      "ordine": 123,
+      "titolo": "9.6 Glossary",
+      "riga_inizio": 4464,
+      "riga_fine": 4472,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_122"
+      ]
+    },
+    {
+      "id": "pt_124",
+      "ordine": 124,
+      "titolo": "9.7 Exercises",
+      "riga_inizio": 4473,
+      "riga_fine": 4499,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_123"
+      ]
+    },
+    {
+      "id": "pt_125",
+      "ordine": 125,
+      "titolo": "Chapter 10",
+      "riga_inizio": 4500,
+      "riga_fine": 4600,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_124"
+      ]
+    },
+    {
+      "id": "pt_126",
+      "ordine": 126,
+      "titolo": "Lists",
+      "riga_inizio": 4183,
+      "riga_fine": 4230,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_125"
+      ]
+    },
+    {
+      "id": "pt_127",
+      "ordine": 127,
+      "titolo": "10.1 A list is a sequence",
+      "riga_inizio": 4504,
+      "riga_fine": 4545,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_126"
+      ]
+    },
+    {
+      "id": "pt_128",
+      "ordine": 128,
+      "titolo": "10.2 Lists are mutable",
+      "riga_inizio": 4546,
+      "riga_fine": 4584,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_127"
+      ]
+    },
+    {
+      "id": "pt_129",
+      "ordine": 129,
+      "titolo": "10.3 Traversing a list",
+      "riga_inizio": 4585,
+      "riga_fine": 4617,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_128"
+      ]
+    },
+    {
+      "id": "pt_130",
+      "ordine": 130,
+      "titolo": "10.4 List operations",
+      "riga_inizio": 4618,
+      "riga_fine": 4622,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_129"
+      ]
+    },
+    {
+      "id": "pt_131",
+      "ordine": 131,
+      "titolo": "10.5 List slices",
+      "riga_inizio": 4623,
+      "riga_fine": 4650,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_130"
+      ]
+    },
+    {
+      "id": "pt_132",
+      "ordine": 132,
+      "titolo": "10.6 List methods",
+      "riga_inizio": 4651,
+      "riga_fine": 4677,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_131"
+      ]
+    },
+    {
+      "id": "pt_133",
+      "ordine": 133,
+      "titolo": "10.7 Map, filter and reduce",
+      "riga_inizio": 4678,
+      "riga_fine": 4743,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_132"
+      ]
+    },
+    {
+      "id": "pt_134",
+      "ordine": 134,
+      "titolo": "10.8 Deleting elements",
+      "riga_inizio": 4744,
+      "riga_fine": 4761,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_133"
+      ]
+    },
+    {
+      "id": "pt_135",
+      "ordine": 135,
+      "titolo": "10.9 Lists and strings",
+      "riga_inizio": 4762,
+      "riga_fine": 4813,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_134"
+      ]
+    },
+    {
+      "id": "pt_136",
+      "ordine": 136,
+      "titolo": "10.10 Objects and values",
+      "riga_inizio": 4814,
+      "riga_fine": 4871,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_135"
+      ]
+    },
+    {
+      "id": "pt_137",
+      "ordine": 137,
+      "titolo": "10.11 Aliasing",
+      "riga_inizio": 4872,
+      "riga_fine": 4916,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_136"
+      ]
+    },
+    {
+      "id": "pt_138",
+      "ordine": 138,
+      "titolo": "10.12 List arguments",
+      "riga_inizio": 4917,
+      "riga_fine": 5003,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_137"
+      ]
+    },
+    {
+      "id": "pt_139",
+      "ordine": 139,
+      "titolo": "10.13 Debugging",
+      "riga_inizio": 5004,
+      "riga_fine": 5072,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_138"
+      ]
+    },
+    {
+      "id": "pt_140",
+      "ordine": 140,
+      "titolo": "10.14 Glossary",
+      "riga_inizio": 5073,
+      "riga_fine": 5101,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_139"
+      ]
+    },
+    {
+      "id": "pt_141",
+      "ordine": 141,
+      "titolo": "10.15 Exercises",
+      "riga_inizio": 5102,
+      "riga_fine": 5167,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_140"
+      ]
+    },
+    {
+      "id": "pt_142",
+      "ordine": 142,
+      "titolo": "Chapter 11",
+      "riga_inizio": 5168,
+      "riga_fine": 5268,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_141"
+      ]
+    },
+    {
+      "id": "pt_143",
+      "ordine": 143,
+      "titolo": "Dictionaries",
+      "riga_inizio": 5169,
+      "riga_fine": 5171,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_142"
+      ]
+    },
+    {
+      "id": "pt_144",
+      "ordine": 144,
+      "titolo": "11.1 A dictionary is a mapping",
+      "riga_inizio": 5172,
+      "riga_fine": 5191,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_143"
+      ]
+    },
+    {
+      "id": "pt_145",
+      "ordine": 145,
+      "titolo": "`>>> eng2sp['one'] = 'uno'`",
+      "riga_inizio": 5192,
+      "riga_fine": 5270,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_144"
+      ]
+    },
+    {
+      "id": "pt_146",
+      "ordine": 146,
+      "titolo": "11.2 Dictionary as a collection of counters",
+      "riga_inizio": 5271,
+      "riga_fine": 5323,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_145"
+      ]
+    },
+    {
+      "id": "pt_147",
+      "ordine": 147,
+      "titolo": "11.3 Looping and dictionaries",
+      "riga_inizio": 5324,
+      "riga_fine": 5356,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_146"
+      ]
+    },
+    {
+      "id": "pt_148",
+      "ordine": 148,
+      "titolo": "11.4 Reverse lookup",
+      "riga_inizio": 5357,
+      "riga_fine": 5405,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_147"
+      ]
+    },
+    {
+      "id": "pt_149",
+      "ordine": 149,
+      "titolo": "11.5 Dictionaries and lists",
+      "riga_inizio": 5406,
+      "riga_fine": 5476,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_148"
+      ]
+    },
+    {
+      "id": "pt_150",
+      "ordine": 150,
+      "titolo": "11.6 Memos",
+      "riga_inizio": 5477,
+      "riga_fine": 5511,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_149"
+      ]
+    },
+    {
+      "id": "pt_151",
+      "ordine": 151,
+      "titolo": "11.7 Global variables",
+      "riga_inizio": 5512,
+      "riga_fine": 5605,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_150"
+      ]
+    },
+    {
+      "id": "pt_152",
+      "ordine": 152,
+      "titolo": "11.8 Debugging",
+      "riga_inizio": 5606,
+      "riga_fine": 5626,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_151"
+      ]
+    },
+    {
+      "id": "pt_153",
+      "ordine": 153,
+      "titolo": "11.9 Glossary",
+      "riga_inizio": 5627,
+      "riga_fine": 5669,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_152"
+      ]
+    },
+    {
+      "id": "pt_154",
+      "ordine": 154,
+      "titolo": "11.10 Exercises",
+      "riga_inizio": 5670,
+      "riga_fine": 5704,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_153"
+      ]
+    },
+    {
+      "id": "pt_155",
+      "ordine": 155,
+      "titolo": "Chapter 12",
+      "riga_inizio": 5705,
+      "riga_fine": 5805,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_154"
+      ]
+    },
+    {
+      "id": "pt_156",
+      "ordine": 156,
+      "titolo": "Tuples",
+      "riga_inizio": 5706,
+      "riga_fine": 5710,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_155"
+      ]
+    },
+    {
+      "id": "pt_157",
+      "ordine": 157,
+      "titolo": "12.1 Tuples are immutable",
+      "riga_inizio": 5711,
+      "riga_fine": 5767,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_156"
+      ]
+    },
+    {
+      "id": "pt_158",
+      "ordine": 158,
+      "titolo": "12.2 Tuple assignment",
+      "riga_inizio": 5768,
+      "riga_fine": 5809,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_157"
+      ]
+    },
+    {
+      "id": "pt_159",
+      "ordine": 159,
+      "titolo": "12.3 Tuples as return values",
+      "riga_inizio": 5810,
+      "riga_fine": 5841,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_158"
+      ]
+    },
+    {
+      "id": "pt_160",
+      "ordine": 160,
+      "titolo": "12.4 Variable-length argument tuples",
+      "riga_inizio": 5842,
+      "riga_fine": 5890,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_159"
+      ]
+    },
+    {
+      "id": "pt_161",
+      "ordine": 161,
+      "titolo": "12.5 Lists and tuples",
+      "riga_inizio": 5891,
+      "riga_fine": 5984,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_160"
+      ]
+    },
+    {
+      "id": "pt_162",
+      "ordine": 162,
+      "titolo": "12.6 Dictionaries and tuples",
+      "riga_inizio": 5985,
+      "riga_fine": 6058,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_161"
+      ]
+    },
+    {
+      "id": "pt_163",
+      "ordine": 163,
+      "titolo": "12.7 Sequences of sequences",
+      "riga_inizio": 6059,
+      "riga_fine": 6077,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_162"
+      ]
+    },
+    {
+      "id": "pt_164",
+      "ordine": 164,
+      "titolo": "12.8 Debugging",
+      "riga_inizio": 6078,
+      "riga_fine": 6098,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_163"
+      ]
+    },
+    {
+      "id": "pt_165",
+      "ordine": 165,
+      "titolo": "12.9 Glossary",
+      "riga_inizio": 6099,
+      "riga_fine": 6117,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_164"
+      ]
+    },
+    {
+      "id": "pt_166",
+      "ordine": 166,
+      "titolo": "12.10 Exercises",
+      "riga_inizio": 6118,
+      "riga_fine": 6167,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_165"
+      ]
+    },
+    {
+      "id": "pt_167",
+      "ordine": 167,
+      "titolo": "Chapter 13",
+      "riga_inizio": 6168,
+      "riga_fine": 6268,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_166"
+      ]
+    },
+    {
+      "id": "pt_168",
+      "ordine": 168,
+      "titolo": "Case study: data structure selection",
+      "riga_inizio": 6169,
+      "riga_fine": 6173,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_167"
+      ]
+    },
+    {
+      "id": "pt_169",
+      "ordine": 169,
+      "titolo": "13.1 Word frequency analysis",
+      "riga_inizio": 6174,
+      "riga_fine": 6198,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_168"
+      ]
+    },
+    {
+      "id": "pt_170",
+      "ordine": 170,
+      "titolo": "13.2 Random numbers",
+      "riga_inizio": 6199,
+      "riga_fine": 6245,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_169"
+      ]
+    },
+    {
+      "id": "pt_171",
+      "ordine": 171,
+      "titolo": "13.3 Word histogram",
+      "riga_inizio": 6246,
+      "riga_fine": 6314,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_170"
+      ]
+    },
+    {
+      "id": "pt_172",
+      "ordine": 172,
+      "titolo": "13.4 Most common words",
+      "riga_inizio": 6315,
+      "riga_fine": 6374,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_171"
+      ]
+    },
+    {
+      "id": "pt_173",
+      "ordine": 173,
+      "titolo": "13.5 Optional parameters",
+      "riga_inizio": 6375,
+      "riga_fine": 6409,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_172"
+      ]
+    },
+    {
+      "id": "pt_174",
+      "ordine": 174,
+      "titolo": "13.6 Dictionary subtraction",
+      "riga_inizio": 6410,
+      "riga_fine": 6456,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_173"
+      ]
+    },
+    {
+      "id": "pt_175",
+      "ordine": 175,
+      "titolo": "13.7 Random words",
+      "riga_inizio": 6457,
+      "riga_fine": 6489,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_174"
+      ]
+    },
+    {
+      "id": "pt_176",
+      "ordine": 176,
+      "titolo": "13.8 Markov analysis",
+      "riga_inizio": 6490,
+      "riga_fine": 6536,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_175"
+      ]
+    },
+    {
+      "id": "pt_177",
+      "ordine": 177,
+      "titolo": "13.9 Data structures",
+      "riga_inizio": 6537,
+      "riga_fine": 6581,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_176"
+      ]
+    },
+    {
+      "id": "pt_178",
+      "ordine": 178,
+      "titolo": "13.10 Debugging",
+      "riga_inizio": 6582,
+      "riga_fine": 6610,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_177"
+      ]
+    },
+    {
+      "id": "pt_179",
+      "ordine": 179,
+      "titolo": "13.11 Glossary",
+      "riga_inizio": 6611,
+      "riga_fine": 6623,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_178"
+      ]
+    },
+    {
+      "id": "pt_180",
+      "ordine": 180,
+      "titolo": "13.12 Exercises",
+      "riga_inizio": 6624,
+      "riga_fine": 6646,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_179"
+      ]
+    },
+    {
+      "id": "pt_181",
+      "ordine": 181,
+      "titolo": "Chapter 14",
+      "riga_inizio": 6647,
+      "riga_fine": 6747,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_180"
+      ]
+    },
+    {
+      "id": "pt_182",
+      "ordine": 182,
+      "titolo": "Files",
+      "riga_inizio": 6648,
+      "riga_fine": 6650,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_181"
+      ]
+    },
+    {
+      "id": "pt_183",
+      "ordine": 183,
+      "titolo": "14.1 Persistence",
+      "riga_inizio": 6651,
+      "riga_fine": 6661,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_182"
+      ]
+    },
+    {
+      "id": "pt_184",
+      "ordine": 184,
+      "titolo": "14.2 Reading and writing",
+      "riga_inizio": 6662,
+      "riga_fine": 6701,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_183"
+      ]
+    },
+    {
+      "id": "pt_185",
+      "ordine": 185,
+      "titolo": "14.3 Format operator",
+      "riga_inizio": 6702,
+      "riga_fine": 6766,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_184"
+      ]
+    },
+    {
+      "id": "pt_186",
+      "ordine": 186,
+      "titolo": "14.4 Filenames and paths",
+      "riga_inizio": 6767,
+      "riga_fine": 6816,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_185"
+      ]
+    },
+    {
+      "id": "pt_187",
+      "ordine": 187,
+      "titolo": "14.5 Catching exceptions",
+      "riga_inizio": 6817,
+      "riga_fine": 6858,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_186"
+      ]
+    },
+    {
+      "id": "pt_188",
+      "ordine": 188,
+      "titolo": "14.6 Databases",
+      "riga_inizio": 6859,
+      "riga_fine": 6922,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_187"
+      ]
+    },
+    {
+      "id": "pt_189",
+      "ordine": 189,
+      "titolo": "14.7 Pickling",
+      "riga_inizio": 6923,
+      "riga_fine": 6959,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_188"
+      ]
+    },
+    {
+      "id": "pt_190",
+      "ordine": 190,
+      "titolo": "14.8 Pipes",
+      "riga_inizio": 6960,
+      "riga_fine": 7010,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_189"
+      ]
+    },
+    {
+      "id": "pt_191",
+      "ordine": 191,
+      "titolo": "14.9 Writing modules",
+      "riga_inizio": 7011,
+      "riga_fine": 7065,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_190"
+      ]
+    },
+    {
+      "id": "pt_192",
+      "ordine": 192,
+      "titolo": "14.10 Debugging",
+      "riga_inizio": 7066,
+      "riga_fine": 7096,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_191"
+      ]
+    },
+    {
+      "id": "pt_193",
+      "ordine": 193,
+      "titolo": "14.11 Glossary",
+      "riga_inizio": 7097,
+      "riga_fine": 7125,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_192"
+      ]
+    },
+    {
+      "id": "pt_194",
+      "ordine": 194,
+      "titolo": "14.12 Exercises",
+      "riga_inizio": 7126,
+      "riga_fine": 7148,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_193"
+      ]
+    },
+    {
+      "id": "pt_195",
+      "ordine": 195,
+      "titolo": "Chapter 15",
+      "riga_inizio": 7149,
+      "riga_fine": 7249,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_194"
+      ]
+    },
+    {
+      "id": "pt_196",
+      "ordine": 196,
+      "titolo": "Classes and objects",
+      "riga_inizio": 7150,
+      "riga_fine": 7154,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_195"
+      ]
+    },
+    {
+      "id": "pt_197",
+      "ordine": 197,
+      "titolo": "15.1 Programmer-defined types",
+      "riga_inizio": 7155,
+      "riga_fine": 7186,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_196"
+      ]
+    },
+    {
+      "id": "pt_198",
+      "ordine": 198,
+      "titolo": "Figure 15.1: Object diagram.",
+      "riga_inizio": 7187,
+      "riga_fine": 7221,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_197"
+      ]
+    },
+    {
+      "id": "pt_199",
+      "ordine": 199,
+      "titolo": "15.2 Attributes",
+      "riga_inizio": 7222,
+      "riga_fine": 7279,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_198"
+      ]
+    },
+    {
+      "id": "pt_200",
+      "ordine": 200,
+      "titolo": "15.3 Rectangles",
+      "riga_inizio": 7280,
+      "riga_fine": 7329,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_199"
+      ]
+    },
+    {
+      "id": "pt_201",
+      "ordine": 201,
+      "titolo": "15.4 Instances as return values",
+      "riga_inizio": 7330,
+      "riga_fine": 7353,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_200"
+      ]
+    },
+    {
+      "id": "pt_202",
+      "ordine": 202,
+      "titolo": "15.5 Objects are mutable",
+      "riga_inizio": 7354,
+      "riga_fine": 7383,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_201"
+      ]
+    },
+    {
+      "id": "pt_203",
+      "ordine": 203,
+      "titolo": "15.6 Copying",
+      "riga_inizio": 7384,
+      "riga_fine": 7451,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_202"
+      ]
+    },
+    {
+      "id": "pt_204",
+      "ordine": 204,
+      "titolo": "15.7 Debugging",
+      "riga_inizio": 7452,
+      "riga_fine": 7481,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_203"
+      ]
+    },
+    {
+      "id": "pt_205",
+      "ordine": 205,
+      "titolo": "15.8 Glossary",
+      "riga_inizio": 7482,
+      "riga_fine": 7502,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_204"
+      ]
+    },
+    {
+      "id": "pt_206",
+      "ordine": 206,
+      "titolo": "15.9 Exercises",
+      "riga_inizio": 7503,
+      "riga_fine": 7521,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_205"
+      ]
+    },
+    {
+      "id": "pt_207",
+      "ordine": 207,
+      "titolo": "Chapter 16",
+      "riga_inizio": 7522,
+      "riga_fine": 7622,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_206"
+      ]
+    },
+    {
+      "id": "pt_208",
+      "ordine": 208,
+      "titolo": "Classes and functions",
+      "riga_inizio": 7523,
+      "riga_fine": 7527,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_207"
+      ]
+    },
+    {
+      "id": "pt_209",
+      "ordine": 209,
+      "titolo": "16.1 Time",
+      "riga_inizio": 7528,
+      "riga_fine": 7567,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_208"
+      ]
+    },
+    {
+      "id": "pt_210",
+      "ordine": 210,
+      "titolo": "16.2 Pure functions",
+      "riga_inizio": 7568,
+      "riga_fine": 7633,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_209"
+      ]
+    },
+    {
+      "id": "pt_211",
+      "ordine": 211,
+      "titolo": "16.3",
+      "riga_inizio": 7634,
+      "riga_fine": 7663,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_210"
+      ]
+    },
+    {
+      "id": "pt_212",
+      "ordine": 212,
+      "titolo": "16.4 Prototyping versus planning",
+      "riga_inizio": 7664,
+      "riga_fine": 7731,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_211"
+      ]
+    },
+    {
+      "id": "pt_213",
+      "ordine": 213,
+      "titolo": "16.5 Debugging",
+      "riga_inizio": 7732,
+      "riga_fine": 7779,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_212"
+      ]
+    },
+    {
+      "id": "pt_214",
+      "ordine": 214,
+      "titolo": "16.6 Glossary",
+      "riga_inizio": 7780,
+      "riga_fine": 7794,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_213"
+      ]
+    },
+    {
+      "id": "pt_215",
+      "ordine": 215,
+      "titolo": "16.7 Exercises",
+      "riga_inizio": 7795,
+      "riga_fine": 7815,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_214"
+      ]
+    },
+    {
+      "id": "pt_216",
+      "ordine": 216,
+      "titolo": "Chapter 17",
+      "riga_inizio": 7816,
+      "riga_fine": 7916,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_215"
+      ]
+    },
+    {
+      "id": "pt_217",
+      "ordine": 217,
+      "titolo": "Classes and methods",
+      "riga_inizio": 7817,
+      "riga_fine": 7821,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_216"
+      ]
+    },
+    {
+      "id": "pt_218",
+      "ordine": 218,
+      "titolo": "17.1 Object-oriented features",
+      "riga_inizio": 7822,
+      "riga_fine": 7848,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_217"
+      ]
+    },
+    {
+      "id": "pt_219",
+      "ordine": 219,
+      "titolo": "17.2 Printing objects",
+      "riga_inizio": 7849,
+      "riga_fine": 7932,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_218"
+      ]
+    },
+    {
+      "id": "pt_220",
+      "ordine": 220,
+      "titolo": "17.3 Another example",
+      "riga_inizio": 7933,
+      "riga_fine": 7981,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_219"
+      ]
+    },
+    {
+      "id": "pt_221",
+      "ordine": 221,
+      "titolo": "17.4 A more complicated example",
+      "riga_inizio": 7982,
+      "riga_fine": 8005,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_220"
+      ]
+    },
+    {
+      "id": "pt_222",
+      "ordine": 222,
+      "titolo": "17.5 The init method",
+      "riga_inizio": 8006,
+      "riga_fine": 8041,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_221"
+      ]
+    },
+    {
+      "id": "pt_223",
+      "ordine": 223,
+      "titolo": "17.6 The** `__str__` **method",
+      "riga_inizio": 8042,
+      "riga_fine": 8054,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_222"
+      ]
+    },
+    {
+      "id": "pt_224",
+      "ordine": 224,
+      "titolo": "17.7 Operator overloading",
+      "riga_inizio": 8055,
+      "riga_fine": 8073,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_223"
+      ]
+    },
+    {
+      "id": "pt_225",
+      "ordine": 225,
+      "titolo": "17.8 Type-based dispatch",
+      "riga_inizio": 8074,
+      "riga_fine": 8140,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_224"
+      ]
+    },
+    {
+      "id": "pt_226",
+      "ordine": 226,
+      "titolo": "17.9 Polymorphism",
+      "riga_inizio": 8141,
+      "riga_fine": 8189,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_225"
+      ]
+    },
+    {
+      "id": "pt_227",
+      "ordine": 227,
+      "titolo": "17.10 Debugging",
+      "riga_inizio": 8190,
+      "riga_fine": 8216,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_226"
+      ]
+    },
+    {
+      "id": "pt_228",
+      "ordine": 228,
+      "titolo": "17.11 Interface and implementation",
+      "riga_inizio": 8217,
+      "riga_fine": 8231,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_227"
+      ]
+    },
+    {
+      "id": "pt_229",
+      "ordine": 229,
+      "titolo": "17.12 Glossary",
+      "riga_inizio": 8232,
+      "riga_fine": 8250,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_228"
+      ]
+    },
+    {
+      "id": "pt_230",
+      "ordine": 230,
+      "titolo": "17.13 Exercises",
+      "riga_inizio": 8251,
+      "riga_fine": 8267,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_229"
+      ]
+    },
+    {
+      "id": "pt_231",
+      "ordine": 231,
+      "titolo": "Chapter 18",
+      "riga_inizio": 8268,
+      "riga_fine": 8368,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_230"
+      ]
+    },
+    {
+      "id": "pt_232",
+      "ordine": 232,
+      "titolo": "Inheritance",
+      "riga_inizio": 8269,
+      "riga_fine": 8275,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_231"
+      ]
+    },
+    {
+      "id": "pt_233",
+      "ordine": 233,
+      "titolo": "18.1 Card objects",
+      "riga_inizio": 8276,
+      "riga_fine": 8314,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_232"
+      ]
+    },
+    {
+      "id": "pt_234",
+      "ordine": 234,
+      "titolo": "18.2 Class attributes",
+      "riga_inizio": 8315,
+      "riga_fine": 8361,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_233"
+      ]
+    },
+    {
+      "id": "pt_235",
+      "ordine": 235,
+      "titolo": "18.3 Comparing cards",
+      "riga_inizio": 8362,
+      "riga_fine": 8405,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_234"
+      ]
+    },
+    {
+      "id": "pt_236",
+      "ordine": 236,
+      "titolo": "18.4 Decks",
+      "riga_inizio": 8406,
+      "riga_fine": 8425,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_235"
+      ]
+    },
+    {
+      "id": "pt_237",
+      "ordine": 237,
+      "titolo": "18.5 Printing the deck",
+      "riga_inizio": 8426,
+      "riga_fine": 8455,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_236"
+      ]
+    },
+    {
+      "id": "pt_238",
+      "ordine": 238,
+      "titolo": "18.6 Add, remove, shuffle and sort",
+      "riga_inizio": 8456,
+      "riga_fine": 8504,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_237"
+      ]
+    },
+    {
+      "id": "pt_239",
+      "ordine": 239,
+      "titolo": "18.7 Inheritance",
+      "riga_inizio": 8505,
+      "riga_fine": 8577,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_238"
+      ]
+    },
+    {
+      "id": "pt_240",
+      "ordine": 240,
+      "titolo": "18.8 Class diagrams",
+      "riga_inizio": 8578,
+      "riga_fine": 8611,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_239"
+      ]
+    },
+    {
+      "id": "pt_241",
+      "ordine": 241,
+      "titolo": "18.9 Debugging",
+      "riga_inizio": 8612,
+      "riga_fine": 8651,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_240"
+      ]
+    },
+    {
+      "id": "pt_242",
+      "ordine": 242,
+      "titolo": "18.10 Data encapsulation",
+      "riga_inizio": 8652,
+      "riga_fine": 8717,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_241"
+      ]
+    },
+    {
+      "id": "pt_243",
+      "ordine": 243,
+      "titolo": "18.11 Glossary",
+      "riga_inizio": 8718,
+      "riga_fine": 8746,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_242"
+      ]
+    },
+    {
+      "id": "pt_244",
+      "ordine": 244,
+      "titolo": "18.12 Exercises",
+      "riga_inizio": 8747,
+      "riga_fine": 8801,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_243"
+      ]
+    },
+    {
+      "id": "pt_245",
+      "ordine": 245,
+      "titolo": "**four of a kind:** _four cards with the same rank_",
+      "riga_inizio": 8802,
+      "riga_fine": 8827,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_244"
+      ]
+    },
+    {
+      "id": "pt_246",
+      "ordine": 246,
+      "titolo": "Chapter 19",
+      "riga_inizio": 8828,
+      "riga_fine": 8928,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_245"
+      ]
+    },
+    {
+      "id": "pt_247",
+      "ordine": 247,
+      "titolo": "The Goodies",
+      "riga_inizio": 8829,
+      "riga_fine": 8833,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_246"
+      ]
+    },
+    {
+      "id": "pt_248",
+      "ordine": 248,
+      "titolo": "19.1 Conditional expressions",
+      "riga_inizio": 8834,
+      "riga_fine": 8910,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_247"
+      ]
+    },
+    {
+      "id": "pt_249",
+      "ordine": 249,
+      "titolo": "19.2 List comprehensions",
+      "riga_inizio": 8911,
+      "riga_fine": 8956,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_248"
+      ]
+    },
+    {
+      "id": "pt_250",
+      "ordine": 250,
+      "titolo": "19.3 Generator expressions",
+      "riga_inizio": 8957,
+      "riga_fine": 9010,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_249"
+      ]
+    },
+    {
+      "id": "pt_251",
+      "ordine": 251,
+      "titolo": "**19.4 and** `all any`",
+      "riga_inizio": 9011,
+      "riga_fine": 9044,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_250"
+      ]
+    },
+    {
+      "id": "pt_252",
+      "ordine": 252,
+      "titolo": "19.5 Sets",
+      "riga_inizio": 9045,
+      "riga_fine": 9136,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_251"
+      ]
+    },
+    {
+      "id": "pt_253",
+      "ordine": 253,
+      "titolo": "19.6 Counters",
+      "riga_inizio": 9137,
+      "riga_fine": 9188,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_252"
+      ]
+    },
+    {
+      "id": "pt_254",
+      "ordine": 254,
+      "titolo": "19.7 defaultdict",
+      "riga_inizio": 9189,
+      "riga_fine": 9257,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_253"
+      ]
+    },
+    {
+      "id": "pt_255",
+      "ordine": 255,
+      "titolo": "19.8 Named tuples",
+      "riga_inizio": 9258,
+      "riga_fine": 9329,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_254"
+      ]
+    },
+    {
+      "id": "pt_256",
+      "ordine": 256,
+      "titolo": "19.9 Gathering keyword args",
+      "riga_inizio": 9330,
+      "riga_fine": 9393,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_255"
+      ]
+    },
+    {
+      "id": "pt_257",
+      "ordine": 257,
+      "titolo": "19.10 Glossary",
+      "riga_inizio": 9394,
+      "riga_fine": 9406,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_256"
+      ]
+    },
+    {
+      "id": "pt_258",
+      "ordine": 258,
+      "titolo": "19.11 Exercises",
+      "riga_inizio": 9407,
+      "riga_fine": 9445,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_257"
+      ]
+    },
+    {
+      "id": "pt_259",
+      "ordine": 259,
+      "titolo": "Appendix A",
+      "riga_inizio": 9446,
+      "riga_fine": 9546,
+      "carico_cognitivo": 0.42,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_258"
+      ]
+    },
+    {
+      "id": "pt_260",
+      "ordine": 260,
+      "titolo": "Debugging",
+      "riga_inizio": 864,
+      "riga_fine": 876,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_259"
+      ]
+    },
+    {
+      "id": "pt_261",
+      "ordine": 261,
+      "titolo": "A.1 Syntax errors",
+      "riga_inizio": 9458,
+      "riga_fine": 9488,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_260"
+      ]
+    },
+    {
+      "id": "pt_262",
+      "ordine": 262,
+      "titolo": "A.1.1 I keep making changes and it makes no difference.",
+      "riga_inizio": 9489,
+      "riga_fine": 9509,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_261"
+      ]
+    },
+    {
+      "id": "pt_263",
+      "ordine": 263,
+      "titolo": "A.2 Runtime errors",
+      "riga_inizio": 9510,
+      "riga_fine": 9512,
+      "carico_cognitivo": 0.01,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_262"
+      ]
+    },
+    {
+      "id": "pt_264",
+      "ordine": 264,
+      "titolo": "A.2.1 My program does absolutely nothing.",
+      "riga_inizio": 9513,
+      "riga_fine": 9517,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_263"
+      ]
+    },
+    {
+      "id": "pt_265",
+      "ordine": 265,
+      "titolo": "A.2.2 My program hangs.",
+      "riga_inizio": 9518,
+      "riga_fine": 9534,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_264"
+      ]
+    },
+    {
+      "id": "pt_266",
+      "ordine": 266,
+      "titolo": "Infinite Loop",
+      "riga_inizio": 9535,
+      "riga_fine": 9561,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_265"
+      ]
+    },
+    {
+      "id": "pt_267",
+      "ordine": 267,
+      "titolo": "Flow of Execution",
+      "riga_inizio": 1445,
+      "riga_fine": 1459,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_266"
+      ]
+    },
+    {
+      "id": "pt_268",
+      "ordine": 268,
+      "titolo": "A.2.3 When I run the program I get an exception.",
+      "riga_inizio": 9567,
+      "riga_fine": 9597,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_267"
+      ]
+    },
+    {
+      "id": "pt_269",
+      "ordine": 269,
+      "titolo": "A.2.4 I added so many** `print` **statements I get inundated with output.",
+      "riga_inizio": 9598,
+      "riga_fine": 9612,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_268"
+      ]
+    },
+    {
+      "id": "pt_270",
+      "ordine": 270,
+      "titolo": "A.3 Semantic errors",
+      "riga_inizio": 9613,
+      "riga_fine": 9619,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_269"
+      ]
+    },
+    {
+      "id": "pt_271",
+      "ordine": 271,
+      "titolo": "A.3.1 My program doesn’t work.",
+      "riga_inizio": 9620,
+      "riga_fine": 9636,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_270"
+      ]
+    },
+    {
+      "id": "pt_272",
+      "ordine": 272,
+      "titolo": "A.3.2 I’ve got a big hairy expression and it doesn’t do what I expect.",
+      "riga_inizio": 9637,
+      "riga_fine": 9671,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_271"
+      ]
+    },
+    {
+      "id": "pt_273",
+      "ordine": 273,
+      "titolo": "A.3.3 I’ve got a function that doesn’t return what I expect.",
+      "riga_inizio": 9672,
+      "riga_fine": 9689,
+      "carico_cognitivo": 0.02,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_272"
+      ]
+    },
+    {
+      "id": "pt_274",
+      "ordine": 274,
+      "titolo": "A.3.4 I’m really, really stuck and I need help.",
+      "riga_inizio": 9690,
+      "riga_fine": 9702,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_273"
+      ]
+    },
+    {
+      "id": "pt_275",
+      "ordine": 275,
+      "titolo": "A.3.5 No, I really need help.",
+      "riga_inizio": 9703,
+      "riga_fine": 9721,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_274"
+      ]
+    },
+    {
+      "id": "pt_276",
+      "ordine": 276,
+      "titolo": "Appendix B",
+      "riga_inizio": 9722,
+      "riga_fine": 9822,
+      "carico_cognitivo": 0.5,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_275"
+      ]
+    },
+    {
+      "id": "pt_277",
+      "ordine": 277,
+      "titolo": "Analysis of Algorithms",
+      "riga_inizio": 9723,
+      "riga_fine": 9751,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_276"
+      ]
+    },
+    {
+      "id": "pt_278",
+      "ordine": 278,
+      "titolo": "B.1 Order of growth",
+      "riga_inizio": 9752,
+      "riga_fine": 9806,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_277"
+      ]
+    },
+    {
+      "id": "pt_279",
+      "ordine": 279,
+      "titolo": "B.2 Analysis of basic Python operations",
+      "riga_inizio": 9807,
+      "riga_fine": 9871,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_278"
+      ]
+    },
+    {
+      "id": "pt_280",
+      "ordine": 280,
+      "titolo": "B.3 Analysis of search algorithms",
+      "riga_inizio": 9872,
+      "riga_fine": 9888,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_279"
+      ]
+    },
+    {
+      "id": "pt_281",
+      "ordine": 281,
+      "titolo": "B.4 Hashtables",
+      "riga_inizio": 9889,
+      "riga_fine": 10021,
+      "carico_cognitivo": 0.43,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_280"
+      ]
+    },
+    {
+      "id": "pt_282",
+      "ordine": 282,
+      "titolo": "B.5 Glossary",
+      "riga_inizio": 10022,
+      "riga_fine": 10048,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_281"
+      ]
+    },
+    {
+      "id": "pt_283",
+      "ordine": 283,
+      "titolo": "Index",
+      "riga_inizio": 10049,
+      "riga_fine": 10126,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_282"
+      ]
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    },
+    {
+      "da": "pt_031",
+      "a": "pt_032"
+    },
+    {
+      "da": "pt_032",
+      "a": "pt_033"
+    },
+    {
+      "da": "pt_033",
+      "a": "pt_034"
+    },
+    {
+      "da": "pt_034",
+      "a": "pt_035"
+    },
+    {
+      "da": "pt_035",
+      "a": "pt_036"
+    },
+    {
+      "da": "pt_036",
+      "a": "pt_037"
+    },
+    {
+      "da": "pt_037",
+      "a": "pt_038"
+    },
+    {
+      "da": "pt_038",
+      "a": "pt_039"
+    },
+    {
+      "da": "pt_039",
+      "a": "pt_040"
+    },
+    {
+      "da": "pt_040",
+      "a": "pt_041"
+    },
+    {
+      "da": "pt_041",
+      "a": "pt_042"
+    },
+    {
+      "da": "pt_042",
+      "a": "pt_043"
+    },
+    {
+      "da": "pt_043",
+      "a": "pt_044"
+    },
+    {
+      "da": "pt_044",
+      "a": "pt_045"
+    },
+    {
+      "da": "pt_045",
+      "a": "pt_046"
+    },
+    {
+      "da": "pt_046",
+      "a": "pt_047"
+    },
+    {
+      "da": "pt_047",
+      "a": "pt_048"
+    },
+    {
+      "da": "pt_048",
+      "a": "pt_049"
+    },
+    {
+      "da": "pt_049",
+      "a": "pt_050"
+    },
+    {
+      "da": "pt_050",
+      "a": "pt_051"
+    },
+    {
+      "da": "pt_051",
+      "a": "pt_052"
+    },
+    {
+      "da": "pt_052",
+      "a": "pt_053"
+    },
+    {
+      "da": "pt_053",
+      "a": "pt_054"
+    },
+    {
+      "da": "pt_054",
+      "a": "pt_055"
+    },
+    {
+      "da": "pt_055",
+      "a": "pt_056"
+    },
+    {
+      "da": "pt_056",
+      "a": "pt_057"
+    },
+    {
+      "da": "pt_057",
+      "a": "pt_058"
+    },
+    {
+      "da": "pt_058",
+      "a": "pt_059"
+    },
+    {
+      "da": "pt_059",
+      "a": "pt_060"
+    },
+    {
+      "da": "pt_060",
+      "a": "pt_061"
+    },
+    {
+      "da": "pt_061",
+      "a": "pt_062"
+    },
+    {
+      "da": "pt_062",
+      "a": "pt_063"
+    },
+    {
+      "da": "pt_063",
+      "a": "pt_064"
+    },
+    {
+      "da": "pt_064",
+      "a": "pt_065"
+    },
+    {
+      "da": "pt_065",
+      "a": "pt_066"
+    },
+    {
+      "da": "pt_066",
+      "a": "pt_067"
+    },
+    {
+      "da": "pt_067",
+      "a": "pt_068"
+    },
+    {
+      "da": "pt_068",
+      "a": "pt_069"
+    },
+    {
+      "da": "pt_069",
+      "a": "pt_070"
+    },
+    {
+      "da": "pt_070",
+      "a": "pt_071"
+    },
+    {
+      "da": "pt_071",
+      "a": "pt_072"
+    },
+    {
+      "da": "pt_072",
+      "a": "pt_073"
+    },
+    {
+      "da": "pt_073",
+      "a": "pt_074"
+    },
+    {
+      "da": "pt_074",
+      "a": "pt_075"
+    },
+    {
+      "da": "pt_075",
+      "a": "pt_076"
+    },
+    {
+      "da": "pt_076",
+      "a": "pt_077"
+    },
+    {
+      "da": "pt_077",
+      "a": "pt_078"
+    },
+    {
+      "da": "pt_078",
+      "a": "pt_079"
+    },
+    {
+      "da": "pt_079",
+      "a": "pt_080"
+    },
+    {
+      "da": "pt_080",
+      "a": "pt_081"
+    },
+    {
+      "da": "pt_081",
+      "a": "pt_082"
+    },
+    {
+      "da": "pt_082",
+      "a": "pt_083"
+    },
+    {
+      "da": "pt_083",
+      "a": "pt_084"
+    },
+    {
+      "da": "pt_084",
+      "a": "pt_085"
+    },
+    {
+      "da": "pt_085",
+      "a": "pt_086"
+    },
+    {
+      "da": "pt_086",
+      "a": "pt_087"
+    },
+    {
+      "da": "pt_087",
+      "a": "pt_088"
+    },
+    {
+      "da": "pt_088",
+      "a": "pt_089"
+    },
+    {
+      "da": "pt_089",
+      "a": "pt_090"
+    },
+    {
+      "da": "pt_090",
+      "a": "pt_091"
+    },
+    {
+      "da": "pt_091",
+      "a": "pt_092"
+    },
+    {
+      "da": "pt_092",
+      "a": "pt_093"
+    },
+    {
+      "da": "pt_093",
+      "a": "pt_094"
+    },
+    {
+      "da": "pt_094",
+      "a": "pt_095"
+    },
+    {
+      "da": "pt_095",
+      "a": "pt_096"
+    },
+    {
+      "da": "pt_096",
+      "a": "pt_097"
+    },
+    {
+      "da": "pt_097",
+      "a": "pt_098"
+    },
+    {
+      "da": "pt_098",
+      "a": "pt_099"
+    },
+    {
+      "da": "pt_099",
+      "a": "pt_100"
+    },
+    {
+      "da": "pt_100",
+      "a": "pt_101"
+    },
+    {
+      "da": "pt_101",
+      "a": "pt_102"
+    },
+    {
+      "da": "pt_102",
+      "a": "pt_103"
+    },
+    {
+      "da": "pt_103",
+      "a": "pt_104"
+    },
+    {
+      "da": "pt_104",
+      "a": "pt_105"
+    },
+    {
+      "da": "pt_105",
+      "a": "pt_106"
+    },
+    {
+      "da": "pt_106",
+      "a": "pt_107"
+    },
+    {
+      "da": "pt_107",
+      "a": "pt_108"
+    },
+    {
+      "da": "pt_108",
+      "a": "pt_109"
+    },
+    {
+      "da": "pt_109",
+      "a": "pt_110"
+    },
+    {
+      "da": "pt_110",
+      "a": "pt_111"
+    },
+    {
+      "da": "pt_111",
+      "a": "pt_112"
+    },
+    {
+      "da": "pt_112",
+      "a": "pt_113"
+    },
+    {
+      "da": "pt_113",
+      "a": "pt_114"
+    },
+    {
+      "da": "pt_114",
+      "a": "pt_115"
+    },
+    {
+      "da": "pt_115",
+      "a": "pt_116"
+    },
+    {
+      "da": "pt_116",
+      "a": "pt_117"
+    },
+    {
+      "da": "pt_117",
+      "a": "pt_118"
+    },
+    {
+      "da": "pt_118",
+      "a": "pt_119"
+    },
+    {
+      "da": "pt_119",
+      "a": "pt_120"
+    },
+    {
+      "da": "pt_120",
+      "a": "pt_121"
+    },
+    {
+      "da": "pt_121",
+      "a": "pt_122"
+    },
+    {
+      "da": "pt_122",
+      "a": "pt_123"
+    },
+    {
+      "da": "pt_123",
+      "a": "pt_124"
+    },
+    {
+      "da": "pt_124",
+      "a": "pt_125"
+    },
+    {
+      "da": "pt_125",
+      "a": "pt_126"
+    },
+    {
+      "da": "pt_126",
+      "a": "pt_127"
+    },
+    {
+      "da": "pt_127",
+      "a": "pt_128"
+    },
+    {
+      "da": "pt_128",
+      "a": "pt_129"
+    },
+    {
+      "da": "pt_129",
+      "a": "pt_130"
+    },
+    {
+      "da": "pt_130",
+      "a": "pt_131"
+    },
+    {
+      "da": "pt_131",
+      "a": "pt_132"
+    },
+    {
+      "da": "pt_132",
+      "a": "pt_133"
+    },
+    {
+      "da": "pt_133",
+      "a": "pt_134"
+    },
+    {
+      "da": "pt_134",
+      "a": "pt_135"
+    },
+    {
+      "da": "pt_135",
+      "a": "pt_136"
+    },
+    {
+      "da": "pt_136",
+      "a": "pt_137"
+    },
+    {
+      "da": "pt_137",
+      "a": "pt_138"
+    },
+    {
+      "da": "pt_138",
+      "a": "pt_139"
+    },
+    {
+      "da": "pt_139",
+      "a": "pt_140"
+    },
+    {
+      "da": "pt_140",
+      "a": "pt_141"
+    },
+    {
+      "da": "pt_141",
+      "a": "pt_142"
+    },
+    {
+      "da": "pt_142",
+      "a": "pt_143"
+    },
+    {
+      "da": "pt_143",
+      "a": "pt_144"
+    },
+    {
+      "da": "pt_144",
+      "a": "pt_145"
+    },
+    {
+      "da": "pt_145",
+      "a": "pt_146"
+    },
+    {
+      "da": "pt_146",
+      "a": "pt_147"
+    },
+    {
+      "da": "pt_147",
+      "a": "pt_148"
+    },
+    {
+      "da": "pt_148",
+      "a": "pt_149"
+    },
+    {
+      "da": "pt_149",
+      "a": "pt_150"
+    },
+    {
+      "da": "pt_150",
+      "a": "pt_151"
+    },
+    {
+      "da": "pt_151",
+      "a": "pt_152"
+    },
+    {
+      "da": "pt_152",
+      "a": "pt_153"
+    },
+    {
+      "da": "pt_153",
+      "a": "pt_154"
+    },
+    {
+      "da": "pt_154",
+      "a": "pt_155"
+    },
+    {
+      "da": "pt_155",
+      "a": "pt_156"
+    },
+    {
+      "da": "pt_156",
+      "a": "pt_157"
+    },
+    {
+      "da": "pt_157",
+      "a": "pt_158"
+    },
+    {
+      "da": "pt_158",
+      "a": "pt_159"
+    },
+    {
+      "da": "pt_159",
+      "a": "pt_160"
+    },
+    {
+      "da": "pt_160",
+      "a": "pt_161"
+    },
+    {
+      "da": "pt_161",
+      "a": "pt_162"
+    },
+    {
+      "da": "pt_162",
+      "a": "pt_163"
+    },
+    {
+      "da": "pt_163",
+      "a": "pt_164"
+    },
+    {
+      "da": "pt_164",
+      "a": "pt_165"
+    },
+    {
+      "da": "pt_165",
+      "a": "pt_166"
+    },
+    {
+      "da": "pt_166",
+      "a": "pt_167"
+    },
+    {
+      "da": "pt_167",
+      "a": "pt_168"
+    },
+    {
+      "da": "pt_168",
+      "a": "pt_169"
+    },
+    {
+      "da": "pt_169",
+      "a": "pt_170"
+    },
+    {
+      "da": "pt_170",
+      "a": "pt_171"
+    },
+    {
+      "da": "pt_171",
+      "a": "pt_172"
+    },
+    {
+      "da": "pt_172",
+      "a": "pt_173"
+    },
+    {
+      "da": "pt_173",
+      "a": "pt_174"
+    },
+    {
+      "da": "pt_174",
+      "a": "pt_175"
+    },
+    {
+      "da": "pt_175",
+      "a": "pt_176"
+    },
+    {
+      "da": "pt_176",
+      "a": "pt_177"
+    },
+    {
+      "da": "pt_177",
+      "a": "pt_178"
+    },
+    {
+      "da": "pt_178",
+      "a": "pt_179"
+    },
+    {
+      "da": "pt_179",
+      "a": "pt_180"
+    },
+    {
+      "da": "pt_180",
+      "a": "pt_181"
+    },
+    {
+      "da": "pt_181",
+      "a": "pt_182"
+    },
+    {
+      "da": "pt_182",
+      "a": "pt_183"
+    },
+    {
+      "da": "pt_183",
+      "a": "pt_184"
+    },
+    {
+      "da": "pt_184",
+      "a": "pt_185"
+    },
+    {
+      "da": "pt_185",
+      "a": "pt_186"
+    },
+    {
+      "da": "pt_186",
+      "a": "pt_187"
+    },
+    {
+      "da": "pt_187",
+      "a": "pt_188"
+    },
+    {
+      "da": "pt_188",
+      "a": "pt_189"
+    },
+    {
+      "da": "pt_189",
+      "a": "pt_190"
+    },
+    {
+      "da": "pt_190",
+      "a": "pt_191"
+    },
+    {
+      "da": "pt_191",
+      "a": "pt_192"
+    },
+    {
+      "da": "pt_192",
+      "a": "pt_193"
+    },
+    {
+      "da": "pt_193",
+      "a": "pt_194"
+    },
+    {
+      "da": "pt_194",
+      "a": "pt_195"
+    },
+    {
+      "da": "pt_195",
+      "a": "pt_196"
+    },
+    {
+      "da": "pt_196",
+      "a": "pt_197"
+    },
+    {
+      "da": "pt_197",
+      "a": "pt_198"
+    },
+    {
+      "da": "pt_198",
+      "a": "pt_199"
+    },
+    {
+      "da": "pt_199",
+      "a": "pt_200"
+    },
+    {
+      "da": "pt_200",
+      "a": "pt_201"
+    },
+    {
+      "da": "pt_201",
+      "a": "pt_202"
+    },
+    {
+      "da": "pt_202",
+      "a": "pt_203"
+    },
+    {
+      "da": "pt_203",
+      "a": "pt_204"
+    },
+    {
+      "da": "pt_204",
+      "a": "pt_205"
+    },
+    {
+      "da": "pt_205",
+      "a": "pt_206"
+    },
+    {
+      "da": "pt_206",
+      "a": "pt_207"
+    },
+    {
+      "da": "pt_207",
+      "a": "pt_208"
+    },
+    {
+      "da": "pt_208",
+      "a": "pt_209"
+    },
+    {
+      "da": "pt_209",
+      "a": "pt_210"
+    },
+    {
+      "da": "pt_210",
+      "a": "pt_211"
+    },
+    {
+      "da": "pt_211",
+      "a": "pt_212"
+    },
+    {
+      "da": "pt_212",
+      "a": "pt_213"
+    },
+    {
+      "da": "pt_213",
+      "a": "pt_214"
+    },
+    {
+      "da": "pt_214",
+      "a": "pt_215"
+    },
+    {
+      "da": "pt_215",
+      "a": "pt_216"
+    },
+    {
+      "da": "pt_216",
+      "a": "pt_217"
+    },
+    {
+      "da": "pt_217",
+      "a": "pt_218"
+    },
+    {
+      "da": "pt_218",
+      "a": "pt_219"
+    },
+    {
+      "da": "pt_219",
+      "a": "pt_220"
+    },
+    {
+      "da": "pt_220",
+      "a": "pt_221"
+    },
+    {
+      "da": "pt_221",
+      "a": "pt_222"
+    },
+    {
+      "da": "pt_222",
+      "a": "pt_223"
+    },
+    {
+      "da": "pt_223",
+      "a": "pt_224"
+    },
+    {
+      "da": "pt_224",
+      "a": "pt_225"
+    },
+    {
+      "da": "pt_225",
+      "a": "pt_226"
+    },
+    {
+      "da": "pt_226",
+      "a": "pt_227"
+    },
+    {
+      "da": "pt_227",
+      "a": "pt_228"
+    },
+    {
+      "da": "pt_228",
+      "a": "pt_229"
+    },
+    {
+      "da": "pt_229",
+      "a": "pt_230"
+    },
+    {
+      "da": "pt_230",
+      "a": "pt_231"
+    },
+    {
+      "da": "pt_231",
+      "a": "pt_232"
+    },
+    {
+      "da": "pt_232",
+      "a": "pt_233"
+    },
+    {
+      "da": "pt_233",
+      "a": "pt_234"
+    },
+    {
+      "da": "pt_234",
+      "a": "pt_235"
+    },
+    {
+      "da": "pt_235",
+      "a": "pt_236"
+    },
+    {
+      "da": "pt_236",
+      "a": "pt_237"
+    },
+    {
+      "da": "pt_237",
+      "a": "pt_238"
+    },
+    {
+      "da": "pt_238",
+      "a": "pt_239"
+    },
+    {
+      "da": "pt_239",
+      "a": "pt_240"
+    },
+    {
+      "da": "pt_240",
+      "a": "pt_241"
+    },
+    {
+      "da": "pt_241",
+      "a": "pt_242"
+    },
+    {
+      "da": "pt_242",
+      "a": "pt_243"
+    },
+    {
+      "da": "pt_243",
+      "a": "pt_244"
+    },
+    {
+      "da": "pt_244",
+      "a": "pt_245"
+    },
+    {
+      "da": "pt_245",
+      "a": "pt_246"
+    },
+    {
+      "da": "pt_246",
+      "a": "pt_247"
+    },
+    {
+      "da": "pt_247",
+      "a": "pt_248"
+    },
+    {
+      "da": "pt_248",
+      "a": "pt_249"
+    },
+    {
+      "da": "pt_249",
+      "a": "pt_250"
+    },
+    {
+      "da": "pt_250",
+      "a": "pt_251"
+    },
+    {
+      "da": "pt_251",
+      "a": "pt_252"
+    },
+    {
+      "da": "pt_252",
+      "a": "pt_253"
+    },
+    {
+      "da": "pt_253",
+      "a": "pt_254"
+    },
+    {
+      "da": "pt_254",
+      "a": "pt_255"
+    },
+    {
+      "da": "pt_255",
+      "a": "pt_256"
+    },
+    {
+      "da": "pt_256",
+      "a": "pt_257"
+    },
+    {
+      "da": "pt_257",
+      "a": "pt_258"
+    },
+    {
+      "da": "pt_258",
+      "a": "pt_259"
+    },
+    {
+      "da": "pt_259",
+      "a": "pt_260"
+    },
+    {
+      "da": "pt_260",
+      "a": "pt_261"
+    },
+    {
+      "da": "pt_261",
+      "a": "pt_262"
+    },
+    {
+      "da": "pt_262",
+      "a": "pt_263"
+    },
+    {
+      "da": "pt_263",
+      "a": "pt_264"
+    },
+    {
+      "da": "pt_264",
+      "a": "pt_265"
+    },
+    {
+      "da": "pt_265",
+      "a": "pt_266"
+    },
+    {
+      "da": "pt_266",
+      "a": "pt_267"
+    },
+    {
+      "da": "pt_267",
+      "a": "pt_268"
+    },
+    {
+      "da": "pt_268",
+      "a": "pt_269"
+    },
+    {
+      "da": "pt_269",
+      "a": "pt_270"
+    },
+    {
+      "da": "pt_270",
+      "a": "pt_271"
+    },
+    {
+      "da": "pt_271",
+      "a": "pt_272"
+    },
+    {
+      "da": "pt_272",
+      "a": "pt_273"
+    },
+    {
+      "da": "pt_273",
+      "a": "pt_274"
+    },
+    {
+      "da": "pt_274",
+      "a": "pt_275"
+    },
+    {
+      "da": "pt_275",
+      "a": "pt_276"
+    },
+    {
+      "da": "pt_276",
+      "a": "pt_277"
+    },
+    {
+      "da": "pt_277",
+      "a": "pt_278"
+    },
+    {
+      "da": "pt_278",
+      "a": "pt_279"
+    },
+    {
+      "da": "pt_279",
+      "a": "pt_280"
+    },
+    {
+      "da": "pt_280",
+      "a": "pt_281"
+    },
+    {
+      "da": "pt_281",
+      "a": "pt_282"
+    },
+    {
+      "da": "pt_282",
+      "a": "pt_283"
+    }
+  ],
+  "note_pianificazione": "Piano da 283 sezioni markdown (structured). Carico cognitivo derivato da token stimati."
+}

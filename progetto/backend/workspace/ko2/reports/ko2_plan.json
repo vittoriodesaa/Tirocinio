@@ -1,0 +1,3354 @@
+{
+  "source_id": "ko2",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/ko2_clean.md",
+  "unita_tempo_totale_minuti": 1150,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "Introduzione",
+      "riga_inizio": 1,
+      "riga_fine": 51,
+      "carico_cognitivo": 0.34,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Contents",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_001"
+      ]
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "1.  Overview",
+      "riga_inizio": 17,
+      "riga_fine": 44,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_002"
+      ]
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "Overview",
+      "riga_inizio": 17,
+      "riga_fine": 44,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_003"
+      ]
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "Hold [Shift] + Press [Erase]",
+      "riga_inizio": 66,
+      "riga_fine": 70,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_004"
+      ]
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "Example Commands",
+      "riga_inizio": 74,
+      "riga_fine": 86,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_005"
+      ]
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "1.2 Overview",
+      "riga_inizio": 87,
+      "riga_fine": 97,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_006"
+      ]
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "Sync & MIDI",
+      "riga_inizio": 100,
+      "riga_fine": 157,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_007"
+      ]
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "1.3 Architecture",
+      "riga_inizio": 374,
+      "riga_fine": 411,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_008"
+      ]
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "Battery Option",
+      "riga_inizio": 416,
+      "riga_fine": 438,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_009"
+      ]
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "USB-C Powered Option",
+      "riga_inizio": 439,
+      "riga_fine": 464,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_010"
+      ]
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "Quick Start Reference",
+      "riga_inizio": 465,
+      "riga_fine": 472,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_011"
+      ]
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "2.1 Quick Reference Guide",
+      "riga_inizio": 473,
+      "riga_fine": 671,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_012"
+      ]
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "How to Build Beats",
+      "riga_inizio": 676,
+      "riga_fine": 776,
+      "carico_cognitivo": 0.43,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_013"
+      ]
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "Beat Overview",
+      "riga_inizio": 686,
+      "riga_fine": 726,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_014"
+      ]
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "▌CREATING A DRUM KIT USING THE GROUP PADS",
+      "riga_inizio": 727,
+      "riga_fine": 763,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_015"
+      ]
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "▌LIVE RECORDING SCENE 1.",
+      "riga_inizio": 764,
+      "riga_fine": 800,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_016"
+      ]
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "▌STEP RECORDING SCENE 2.",
+      "riga_inizio": 801,
+      "riga_fine": 829,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_017"
+      ]
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": ". ▌PLAYING THE SCENES",
+      "riga_inizio": 830,
+      "riga_fine": 853,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_018"
+      ]
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "2.3 Tutorial 2 - Add a Bass line",
+      "riga_inizio": 854,
+      "riga_fine": 866,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_019"
+      ]
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "Bass Overview",
+      "riga_inizio": 867,
+      "riga_fine": 914,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_020"
+      ]
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "▌RECORDING A BASS LINE",
+      "riga_inizio": 915,
+      "riga_fine": 928,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_021"
+      ]
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "▌ADDING CHARACTER THROUGH EFFECTS",
+      "riga_inizio": 929,
+      "riga_fine": 938,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_022"
+      ]
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "2.4 Tutorial 3 - Drone Pad",
+      "riga_inizio": 939,
+      "riga_fine": 950,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_023"
+      ]
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "Sound Overview",
+      "riga_inizio": 951,
+      "riga_fine": 1044,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_024"
+      ]
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "Projects & Global",
+      "riga_inizio": 1045,
+      "riga_fine": 1052,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_025"
+      ]
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "3.1 Introduction to the 3 Main Modes",
+      "riga_inizio": 1053,
+      "riga_fine": 1077,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_026"
+      ]
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "▌SELECTING A PROJECT",
+      "riga_inizio": 1084,
+      "riga_fine": 1104,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_027"
+      ]
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "▌ERASING A PROJECT",
+      "riga_inizio": 1105,
+      "riga_fine": 1125,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_028"
+      ]
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "Saving a Project",
+      "riga_inizio": 1126,
+      "riga_fine": 1136,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_029"
+      ]
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "3.3 Global Tempo",
+      "riga_inizio": 1137,
+      "riga_fine": 1165,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_030"
+      ]
+    },
+    {
+      "id": "pt_032",
+      "ordine": 32,
+      "titolo": "▌TAPPING A TEMPO ENTRY",
+      "riga_inizio": 1166,
+      "riga_fine": 1186,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_031"
+      ]
+    },
+    {
+      "id": "pt_033",
+      "ordine": 33,
+      "titolo": "▌AUTOMATICALLY SETTING THE TEMPO BASED ON AUDIO IN",
+      "riga_inizio": 1190,
+      "riga_fine": 1206,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_032"
+      ]
+    },
+    {
+      "id": "pt_034",
+      "ordine": 34,
+      "titolo": "3.4 Metronome",
+      "riga_inizio": 1207,
+      "riga_fine": 1223,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_033"
+      ]
+    },
+    {
+      "id": "pt_035",
+      "ordine": 35,
+      "titolo": "▌CHANGING THE METRONOME BEHAVIOUR",
+      "riga_inizio": 1224,
+      "riga_fine": 1281,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_034"
+      ]
+    },
+    {
+      "id": "pt_036",
+      "ordine": 36,
+      "titolo": "3.5 Undo Command",
+      "riga_inizio": 1282,
+      "riga_fine": 1292,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_035"
+      ]
+    },
+    {
+      "id": "pt_037",
+      "ordine": 37,
+      "titolo": "3.6 Erase Command",
+      "riga_inizio": 1293,
+      "riga_fine": 1317,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_036"
+      ]
+    },
+    {
+      "id": "pt_038",
+      "ordine": 38,
+      "titolo": "3.7 Copy & Paste Commands",
+      "riga_inizio": 1318,
+      "riga_fine": 1340,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_037"
+      ]
+    },
+    {
+      "id": "pt_039",
+      "ordine": 39,
+      "titolo": "3.8 AutoSave & Lock Mode",
+      "riga_inizio": 1341,
+      "riga_fine": 1374,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_038"
+      ]
+    },
+    {
+      "id": "pt_040",
+      "ordine": 40,
+      "titolo": "Fader Operation",
+      "riga_inizio": 1379,
+      "riga_fine": 1390,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_039"
+      ]
+    },
+    {
+      "id": "pt_041",
+      "ordine": 41,
+      "titolo": "Fader Configuration",
+      "riga_inizio": 1391,
+      "riga_fine": 1404,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_040"
+      ]
+    },
+    {
+      "id": "pt_042",
+      "ordine": 42,
+      "titolo": "Fader Automation",
+      "riga_inizio": 1405,
+      "riga_fine": 1412,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_041"
+      ]
+    },
+    {
+      "id": "pt_043",
+      "ordine": 43,
+      "titolo": "Recording Automation Example",
+      "riga_inizio": 1413,
+      "riga_fine": 1431,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_042"
+      ]
+    },
+    {
+      "id": "pt_044",
+      "ordine": 44,
+      "titolo": "Fader Assignment Summary",
+      "riga_inizio": 1432,
+      "riga_fine": 1464,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_043"
+      ]
+    },
+    {
+      "id": "pt_045",
+      "ordine": 45,
+      "titolo": "Samples & Sounds",
+      "riga_inizio": 1465,
+      "riga_fine": 1472,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_044"
+      ]
+    },
+    {
+      "id": "pt_046",
+      "ordine": 46,
+      "titolo": "4.1 Sound v Sample",
+      "riga_inizio": 1473,
+      "riga_fine": 1478,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_045"
+      ]
+    },
+    {
+      "id": "pt_047",
+      "ordine": 47,
+      "titolo": "Example: Sample v Sound",
+      "riga_inizio": 1479,
+      "riga_fine": 1492,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_046"
+      ]
+    },
+    {
+      "id": "pt_048",
+      "ordine": 48,
+      "titolo": "▌PLAYING THE PADS",
+      "riga_inizio": 1497,
+      "riga_fine": 1510,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_047"
+      ]
+    },
+    {
+      "id": "pt_049",
+      "ordine": 49,
+      "titolo": "Example: Group Convention & 12 Pad Assignments",
+      "riga_inizio": 1511,
+      "riga_fine": 1520,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_048"
+      ]
+    },
+    {
+      "id": "pt_050",
+      "ordine": 50,
+      "titolo": "4.3 Loading & Erasing Samples",
+      "riga_inizio": 1521,
+      "riga_fine": 1526,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_049"
+      ]
+    },
+    {
+      "id": "pt_051",
+      "ordine": 51,
+      "titolo": "▌LOADING A SAMPLE TO A PAD",
+      "riga_inizio": 1527,
+      "riga_fine": 1585,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_050"
+      ]
+    },
+    {
+      "id": "pt_052",
+      "ordine": 52,
+      "titolo": "4.4 Sample Editing Options",
+      "riga_inizio": 1586,
+      "riga_fine": 1589,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_051"
+      ]
+    },
+    {
+      "id": "pt_053",
+      "ordine": 53,
+      "titolo": "Sample Editing Options",
+      "riga_inizio": 1586,
+      "riga_fine": 1589,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_052"
+      ]
+    },
+    {
+      "id": "pt_054",
+      "ordine": 54,
+      "titolo": "4.5 Sound Mode Amplitude & Pitch",
+      "riga_inizio": 1598,
+      "riga_fine": 1620,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_053"
+      ]
+    },
+    {
+      "id": "pt_055",
+      "ordine": 55,
+      "titolo": "4.6 Sound Edit Mode Options",
+      "riga_inizio": 1621,
+      "riga_fine": 1638,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_054"
+      ]
+    },
+    {
+      "id": "pt_056",
+      "ordine": 56,
+      "titolo": "4.7 Trimming a Sound Start & End",
+      "riga_inizio": 1639,
+      "riga_fine": 1665,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_055"
+      ]
+    },
+    {
+      "id": "pt_057",
+      "ordine": 57,
+      "titolo": "▌TRIMMING A SOUND START & END",
+      "riga_inizio": 1666,
+      "riga_fine": 1695,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_056"
+      ]
+    },
+    {
+      "id": "pt_058",
+      "ordine": 58,
+      "titolo": "4.8 Shaping the Sound Envelope",
+      "riga_inizio": 1696,
+      "riga_fine": 1706,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_057"
+      ]
+    },
+    {
+      "id": "pt_059",
+      "ordine": 59,
+      "titolo": "▌SHAPING A SOUND ENVELOPE",
+      "riga_inizio": 1707,
+      "riga_fine": 1722,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_058"
+      ]
+    },
+    {
+      "id": "pt_060",
+      "ordine": 60,
+      "titolo": "4.9 Time Stretching a Sound",
+      "riga_inizio": 1723,
+      "riga_fine": 1741,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_059"
+      ]
+    },
+    {
+      "id": "pt_061",
+      "ordine": 61,
+      "titolo": "▌TIME STRETCHING A SAMPLE",
+      "riga_inizio": 1742,
+      "riga_fine": 1766,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_060"
+      ]
+    },
+    {
+      "id": "pt_062",
+      "ordine": 62,
+      "titolo": "4.10 Play Mode",
+      "riga_inizio": 1767,
+      "riga_fine": 1775,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_061"
+      ]
+    },
+    {
+      "id": "pt_063",
+      "ordine": 63,
+      "titolo": "ONE = One-Shot Play Mode",
+      "riga_inizio": 1776,
+      "riga_fine": 1810,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_062"
+      ]
+    },
+    {
+      "id": "pt_064",
+      "ordine": 64,
+      "titolo": "LEG = Legato Play Mode",
+      "riga_inizio": 1811,
+      "riga_fine": 1819,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_063"
+      ]
+    },
+    {
+      "id": "pt_065",
+      "ordine": 65,
+      "titolo": "Comments on Monophonic v Polyphonic Application",
+      "riga_inizio": 1820,
+      "riga_fine": 1839,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_064"
+      ]
+    },
+    {
+      "id": "pt_066",
+      "ordine": 66,
+      "titolo": "▌SELECTING THE PLAY MODE PER SOUND",
+      "riga_inizio": 1840,
+      "riga_fine": 1859,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_065"
+      ]
+    },
+    {
+      "id": "pt_067",
+      "ordine": 67,
+      "titolo": "4.11 Mute Group / Choke Group",
+      "riga_inizio": 1860,
+      "riga_fine": 1865,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_066"
+      ]
+    },
+    {
+      "id": "pt_068",
+      "ordine": 68,
+      "titolo": "Example: Mute Group Behaviour (Mute Group Mode)",
+      "riga_inizio": 1866,
+      "riga_fine": 1880,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_067"
+      ]
+    },
+    {
+      "id": "pt_069",
+      "ordine": 69,
+      "titolo": "▌SETTING UP A MUTE GROUP",
+      "riga_inizio": 1881,
+      "riga_fine": 1902,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_068"
+      ]
+    },
+    {
+      "id": "pt_070",
+      "ordine": 70,
+      "titolo": "4.12 Panning a Sound",
+      "riga_inizio": 1903,
+      "riga_fine": 1917,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_069"
+      ]
+    },
+    {
+      "id": "pt_071",
+      "ordine": 71,
+      "titolo": "▌COPYING A SOUND FROM PAD TO PAD",
+      "riga_inizio": 1922,
+      "riga_fine": 1952,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_070"
+      ]
+    },
+    {
+      "id": "pt_072",
+      "ordine": 72,
+      "titolo": "4.14 EP Sample Tool",
+      "riga_inizio": 1953,
+      "riga_fine": 1963,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_071"
+      ]
+    },
+    {
+      "id": "pt_073",
+      "ordine": 73,
+      "titolo": "▌CONNECTING THE EP SAMPLE TOOL",
+      "riga_inizio": 1964,
+      "riga_fine": 1988,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_072"
+      ]
+    },
+    {
+      "id": "pt_074",
+      "ordine": 74,
+      "titolo": "▌UPLOADING USER SAMPLES TO THE KOII",
+      "riga_inizio": 1989,
+      "riga_fine": 2038,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_073"
+      ]
+    },
+    {
+      "id": "pt_075",
+      "ordine": 75,
+      "titolo": "Summary of EP Sample Tool Commands",
+      "riga_inizio": 2039,
+      "riga_fine": 2068,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_074"
+      ]
+    },
+    {
+      "id": "pt_076",
+      "ordine": 76,
+      "titolo": "Sampling & Audio",
+      "riga_inizio": 2069,
+      "riga_fine": 2076,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_075"
+      ]
+    },
+    {
+      "id": "pt_077",
+      "ordine": 77,
+      "titolo": "Audio Inputs & Outputs",
+      "riga_inizio": 2081,
+      "riga_fine": 2095,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_076"
+      ]
+    },
+    {
+      "id": "pt_078",
+      "ordine": 78,
+      "titolo": "5.2 Basic Sampling Workflow",
+      "riga_inizio": 2096,
+      "riga_fine": 2106,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_077"
+      ]
+    },
+    {
+      "id": "pt_079",
+      "ordine": 79,
+      "titolo": "5.3 Sampling from the Internal Microphone",
+      "riga_inizio": 2107,
+      "riga_fine": 2137,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_078"
+      ]
+    },
+    {
+      "id": "pt_080",
+      "ordine": 80,
+      "titolo": "5.4 Sampling from the Line In",
+      "riga_inizio": 2138,
+      "riga_fine": 2191,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_079"
+      ]
+    },
+    {
+      "id": "pt_081",
+      "ordine": 81,
+      "titolo": "▌RESAMPLING A PATTERN",
+      "riga_inizio": 2203,
+      "riga_fine": 2260,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_080"
+      ]
+    },
+    {
+      "id": "pt_082",
+      "ordine": 82,
+      "titolo": "5.6 Input Level and Threshold",
+      "riga_inizio": 2261,
+      "riga_fine": 2280,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_081"
+      ]
+    },
+    {
+      "id": "pt_083",
+      "ordine": 83,
+      "titolo": "5.7 Sampling to a Selected Library Slot",
+      "riga_inizio": 2281,
+      "riga_fine": 2308,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_082"
+      ]
+    },
+    {
+      "id": "pt_084",
+      "ordine": 84,
+      "titolo": "5.8 Chopping a Sample",
+      "riga_inizio": 2309,
+      "riga_fine": 2376,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_083"
+      ]
+    },
+    {
+      "id": "pt_085",
+      "ordine": 85,
+      "titolo": "Pattern Basics",
+      "riga_inizio": 2377,
+      "riga_fine": 2384,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_084"
+      ]
+    },
+    {
+      "id": "pt_086",
+      "ordine": 86,
+      "titolo": "LIVE RECORDING",
+      "riga_inizio": 764,
+      "riga_fine": 800,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_085"
+      ]
+    },
+    {
+      "id": "pt_087",
+      "ordine": 87,
+      "titolo": "STEP SEQUENCING",
+      "riga_inizio": 2405,
+      "riga_fine": 2442,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_086"
+      ]
+    },
+    {
+      "id": "pt_088",
+      "ordine": 88,
+      "titolo": "6.2 Overview of an Arrangement",
+      "riga_inizio": 2443,
+      "riga_fine": 2468,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_087"
+      ]
+    },
+    {
+      "id": "pt_089",
+      "ordine": 89,
+      "titolo": "6.3 Managing Patterns",
+      "riga_inizio": 2469,
+      "riga_fine": 2477,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_088"
+      ]
+    },
+    {
+      "id": "pt_090",
+      "ordine": 90,
+      "titolo": "The following are performed in [Main] Mode.",
+      "riga_inizio": 2478,
+      "riga_fine": 2485,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_089"
+      ]
+    },
+    {
+      "id": "pt_091",
+      "ordine": 91,
+      "titolo": "▌CHANGING PATTERNS",
+      "riga_inizio": 2486,
+      "riga_fine": 2495,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_090"
+      ]
+    },
+    {
+      "id": "pt_092",
+      "ordine": 92,
+      "titolo": "▌COPYING / PASTING A PATTERN OR BAR",
+      "riga_inizio": 2506,
+      "riga_fine": 2523,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_091"
+      ]
+    },
+    {
+      "id": "pt_093",
+      "ordine": 93,
+      "titolo": "6.4 Live Recording Patterns",
+      "riga_inizio": 2524,
+      "riga_fine": 2575,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_092"
+      ]
+    },
+    {
+      "id": "pt_094",
+      "ordine": 94,
+      "titolo": "6.5 Step Recording Patterns",
+      "riga_inizio": 2576,
+      "riga_fine": 2620,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_093"
+      ]
+    },
+    {
+      "id": "pt_095",
+      "ordine": 95,
+      "titolo": "6.6 Playing Patterns",
+      "riga_inizio": 2621,
+      "riga_fine": 2629,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_094"
+      ]
+    },
+    {
+      "id": "pt_096",
+      "ordine": 96,
+      "titolo": "▌PLAYING A PATTERN",
+      "riga_inizio": 2630,
+      "riga_fine": 2641,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_095"
+      ]
+    },
+    {
+      "id": "pt_097",
+      "ordine": 97,
+      "titolo": "6.7 Solo & Muting Sounds",
+      "riga_inizio": 2642,
+      "riga_fine": 2654,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_096"
+      ]
+    },
+    {
+      "id": "pt_098",
+      "ordine": 98,
+      "titolo": "6.8 Time Signature",
+      "riga_inizio": 2655,
+      "riga_fine": 2686,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_097"
+      ]
+    },
+    {
+      "id": "pt_099",
+      "ordine": 99,
+      "titolo": "6.9 Pattern Length",
+      "riga_inizio": 2687,
+      "riga_fine": 2695,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_098"
+      ]
+    },
+    {
+      "id": "pt_100",
+      "ordine": 100,
+      "titolo": "Duplicate Examples",
+      "riga_inizio": 2696,
+      "riga_fine": 2703,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_099"
+      ]
+    },
+    {
+      "id": "pt_101",
+      "ordine": 101,
+      "titolo": "▌ADJUSTING THE PATTERN LENGTH",
+      "riga_inizio": 2704,
+      "riga_fine": 2721,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_100"
+      ]
+    },
+    {
+      "id": "pt_102",
+      "ordine": 102,
+      "titolo": "▌DUPLICATING PATTERN LENGTH",
+      "riga_inizio": 2722,
+      "riga_fine": 2752,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_101"
+      ]
+    },
+    {
+      "id": "pt_103",
+      "ordine": 103,
+      "titolo": "6.10 Note Timing & Swing",
+      "riga_inizio": 2753,
+      "riga_fine": 2774,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_102"
+      ]
+    },
+    {
+      "id": "pt_104",
+      "ordine": 104,
+      "titolo": "Swing",
+      "riga_inizio": 2753,
+      "riga_fine": 2774,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_103"
+      ]
+    },
+    {
+      "id": "pt_105",
+      "ordine": 105,
+      "titolo": "6.11 Quantize",
+      "riga_inizio": 2790,
+      "riga_fine": 2793,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_104"
+      ]
+    },
+    {
+      "id": "pt_106",
+      "ordine": 106,
+      "titolo": "Example: Quantize on 1/16[th] Timing Resolution",
+      "riga_inizio": 2794,
+      "riga_fine": 2808,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_105"
+      ]
+    },
+    {
+      "id": "pt_107",
+      "ordine": 107,
+      "titolo": "6.12 Timing Correct",
+      "riga_inizio": 2809,
+      "riga_fine": 2814,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_106"
+      ]
+    },
+    {
+      "id": "pt_108",
+      "ordine": 108,
+      "titolo": "Example: Unquantized notes, 1/16[th] Timing Resolution",
+      "riga_inizio": 2815,
+      "riga_fine": 2829,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_107"
+      ]
+    },
+    {
+      "id": "pt_109",
+      "ordine": 109,
+      "titolo": "6.13 Offset & Nudge Notes",
+      "riga_inizio": 2830,
+      "riga_fine": 2837,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_108"
+      ]
+    },
+    {
+      "id": "pt_110",
+      "ordine": 110,
+      "titolo": "Example: 1/16[th] Timing Resolution",
+      "riga_inizio": 2838,
+      "riga_fine": 2852,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_109"
+      ]
+    },
+    {
+      "id": "pt_111",
+      "ordine": 111,
+      "titolo": "▌SETTING THE VELOCITY SENSITIVITY PROFILE",
+      "riga_inizio": 2857,
+      "riga_fine": 2876,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_110"
+      ]
+    },
+    {
+      "id": "pt_112",
+      "ordine": 112,
+      "titolo": "Note Velocity Editing",
+      "riga_inizio": 2890,
+      "riga_fine": 2903,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_111"
+      ]
+    },
+    {
+      "id": "pt_113",
+      "ordine": 113,
+      "titolo": "Example: Note Duration.",
+      "riga_inizio": 2908,
+      "riga_fine": 2922,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_112"
+      ]
+    },
+    {
+      "id": "pt_114",
+      "ordine": 114,
+      "titolo": "Example: Quantized notes, 1/8[th] & 1/16[th] Timing Resolution",
+      "riga_inizio": 2927,
+      "riga_fine": 2951,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_113"
+      ]
+    },
+    {
+      "id": "pt_115",
+      "ordine": 115,
+      "titolo": "Patterns & Scenes",
+      "riga_inizio": 2952,
+      "riga_fine": 2959,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_114"
+      ]
+    },
+    {
+      "id": "pt_116",
+      "ordine": 116,
+      "titolo": "7.1 Keys Mode",
+      "riga_inizio": 2960,
+      "riga_fine": 2993,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_115"
+      ]
+    },
+    {
+      "id": "pt_117",
+      "ordine": 117,
+      "titolo": "Keys Mode Scales",
+      "riga_inizio": 2994,
+      "riga_fine": 3013,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_116"
+      ]
+    },
+    {
+      "id": "pt_118",
+      "ordine": 118,
+      "titolo": "Example: MA.P Major Pentatonic",
+      "riga_inizio": 3014,
+      "riga_fine": 3051,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_117"
+      ]
+    },
+    {
+      "id": "pt_119",
+      "ordine": 119,
+      "titolo": "Overview of Scene Structure",
+      "riga_inizio": 3056,
+      "riga_fine": 3069,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_118"
+      ]
+    },
+    {
+      "id": "pt_120",
+      "ordine": 120,
+      "titolo": "Scenes",
+      "riga_inizio": 830,
+      "riga_fine": 853,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_119"
+      ]
+    },
+    {
+      "id": "pt_121",
+      "ordine": 121,
+      "titolo": "Important notes regarding scenes",
+      "riga_inizio": 3093,
+      "riga_fine": 3120,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_120"
+      ]
+    },
+    {
+      "id": "pt_122",
+      "ordine": 122,
+      "titolo": "7.3 Using Scenes",
+      "riga_inizio": 3121,
+      "riga_fine": 3131,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_121"
+      ]
+    },
+    {
+      "id": "pt_123",
+      "ordine": 123,
+      "titolo": "▌CREATING A SCENE",
+      "riga_inizio": 3132,
+      "riga_fine": 3147,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_122"
+      ]
+    },
+    {
+      "id": "pt_124",
+      "ordine": 124,
+      "titolo": "▌SELECTING AN EXISTING SCENE",
+      "riga_inizio": 3148,
+      "riga_fine": 3157,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_123"
+      ]
+    },
+    {
+      "id": "pt_125",
+      "ordine": 125,
+      "titolo": "▌DELETING A SCENE",
+      "riga_inizio": 3158,
+      "riga_fine": 3175,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_124"
+      ]
+    },
+    {
+      "id": "pt_126",
+      "ordine": 126,
+      "titolo": "Example Song Structure",
+      "riga_inizio": 3180,
+      "riga_fine": 3206,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_125"
+      ]
+    },
+    {
+      "id": "pt_127",
+      "ordine": 127,
+      "titolo": "▌CREATING A SONG",
+      "riga_inizio": 3207,
+      "riga_fine": 3255,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_126"
+      ]
+    },
+    {
+      "id": "pt_128",
+      "ordine": 128,
+      "titolo": "Effects & Performance",
+      "riga_inizio": 3256,
+      "riga_fine": 3263,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_127"
+      ]
+    },
+    {
+      "id": "pt_129",
+      "ordine": 129,
+      "titolo": "8.1 Looping Patterns",
+      "riga_inizio": 3264,
+      "riga_fine": 3285,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_128"
+      ]
+    },
+    {
+      "id": "pt_130",
+      "ordine": 130,
+      "titolo": "▌CAPTURING AND PLAYING A PATTERN LOOP",
+      "riga_inizio": 3286,
+      "riga_fine": 3315,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_129"
+      ]
+    },
+    {
+      "id": "pt_131",
+      "ordine": 131,
+      "titolo": "8.2 Variable Speed & Pitch",
+      "riga_inizio": 3316,
+      "riga_fine": 3340,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_130"
+      ]
+    },
+    {
+      "id": "pt_132",
+      "ordine": 132,
+      "titolo": "8.3 Punch-In Effects Overview",
+      "riga_inizio": 3341,
+      "riga_fine": 3372,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_131"
+      ]
+    },
+    {
+      "id": "pt_133",
+      "ordine": 133,
+      "titolo": "8.4 Punch-In Application",
+      "riga_inizio": 3373,
+      "riga_fine": 3397,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_132"
+      ]
+    },
+    {
+      "id": "pt_134",
+      "ordine": 134,
+      "titolo": "8.5 Master Effects Overview",
+      "riga_inizio": 3398,
+      "riga_fine": 3429,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_133"
+      ]
+    },
+    {
+      "id": "pt_135",
+      "ordine": 135,
+      "titolo": "Master Effects",
+      "riga_inizio": 3398,
+      "riga_fine": 3429,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_134"
+      ]
+    },
+    {
+      "id": "pt_136",
+      "ordine": 136,
+      "titolo": "Master Output Compressor",
+      "riga_inizio": 3446,
+      "riga_fine": 3460,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_135"
+      ]
+    },
+    {
+      "id": "pt_137",
+      "ordine": 137,
+      "titolo": "8.7 Delay",
+      "riga_inizio": 3461,
+      "riga_fine": 3475,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_136"
+      ]
+    },
+    {
+      "id": "pt_138",
+      "ordine": 138,
+      "titolo": "8.8 Reverb",
+      "riga_inizio": 3476,
+      "riga_fine": 3490,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_137"
+      ]
+    },
+    {
+      "id": "pt_139",
+      "ordine": 139,
+      "titolo": "8.9 Distortion",
+      "riga_inizio": 3491,
+      "riga_fine": 3505,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_138"
+      ]
+    },
+    {
+      "id": "pt_140",
+      "ordine": 140,
+      "titolo": "8.10 Chorus",
+      "riga_inizio": 3506,
+      "riga_fine": 3520,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_139"
+      ]
+    },
+    {
+      "id": "pt_141",
+      "ordine": 141,
+      "titolo": "8.11 Filter",
+      "riga_inizio": 3521,
+      "riga_fine": 3535,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_140"
+      ]
+    },
+    {
+      "id": "pt_142",
+      "ordine": 142,
+      "titolo": "8.12 Compressor - Master Effect",
+      "riga_inizio": 3536,
+      "riga_fine": 3559,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_141"
+      ]
+    },
+    {
+      "id": "pt_143",
+      "ordine": 143,
+      "titolo": "KOII Master Output Compressor",
+      "riga_inizio": 3570,
+      "riga_fine": 3585,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_142"
+      ]
+    },
+    {
+      "id": "pt_144",
+      "ordine": 144,
+      "titolo": "8.14 MIDI Sidechain Compression",
+      "riga_inizio": 3586,
+      "riga_fine": 3634,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_143"
+      ]
+    },
+    {
+      "id": "pt_145",
+      "ordine": 145,
+      "titolo": "Connecting Gear",
+      "riga_inizio": 3635,
+      "riga_fine": 3642,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_144"
+      ]
+    },
+    {
+      "id": "pt_146",
+      "ordine": 146,
+      "titolo": "9.1 Audio In",
+      "riga_inizio": 3643,
+      "riga_fine": 3651,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_145"
+      ]
+    },
+    {
+      "id": "pt_147",
+      "ordine": 147,
+      "titolo": "▌MONITORING INCOMING AUDIO",
+      "riga_inizio": 3652,
+      "riga_fine": 3665,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_146"
+      ]
+    },
+    {
+      "id": "pt_148",
+      "ordine": 148,
+      "titolo": "Live In FX",
+      "riga_inizio": 3666,
+      "riga_fine": 3695,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_147"
+      ]
+    },
+    {
+      "id": "pt_149",
+      "ordine": 149,
+      "titolo": "9.2 Audio Out",
+      "riga_inizio": 3696,
+      "riga_fine": 3708,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_148"
+      ]
+    },
+    {
+      "id": "pt_150",
+      "ordine": 150,
+      "titolo": "9.3 MIDI Implementation",
+      "riga_inizio": 3709,
+      "riga_fine": 3721,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_149"
+      ]
+    },
+    {
+      "id": "pt_151",
+      "ordine": 151,
+      "titolo": "Global MIDI Channels",
+      "riga_inizio": 3726,
+      "riga_fine": 3758,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_150"
+      ]
+    },
+    {
+      "id": "pt_152",
+      "ordine": 152,
+      "titolo": "Pad MIDI Channel & MIDI Root Note",
+      "riga_inizio": 3759,
+      "riga_fine": 3778,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_151"
+      ]
+    },
+    {
+      "id": "pt_153",
+      "ordine": 153,
+      "titolo": "MIDI Note Map Assignments",
+      "riga_inizio": 3779,
+      "riga_fine": 3824,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_152"
+      ]
+    },
+    {
+      "id": "pt_154",
+      "ordine": 154,
+      "titolo": "MIDI Synchronisation",
+      "riga_inizio": 3825,
+      "riga_fine": 3850,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_153"
+      ]
+    },
+    {
+      "id": "pt_155",
+      "ordine": 155,
+      "titolo": "▌CONFIGURING MIDI",
+      "riga_inizio": 3851,
+      "riga_fine": 3884,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_154"
+      ]
+    },
+    {
+      "id": "pt_156",
+      "ordine": 156,
+      "titolo": "USB Device:",
+      "riga_inizio": 3889,
+      "riga_fine": 3898,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_155"
+      ]
+    },
+    {
+      "id": "pt_157",
+      "ordine": 157,
+      "titolo": "USB Host:",
+      "riga_inizio": 3899,
+      "riga_fine": 3909,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_156"
+      ]
+    },
+    {
+      "id": "pt_158",
+      "ordine": 158,
+      "titolo": "Example: KOII + Ableton Live in a MacBook Pro",
+      "riga_inizio": 3910,
+      "riga_fine": 3995,
+      "carico_cognitivo": 0.35,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_157"
+      ]
+    },
+    {
+      "id": "pt_159",
+      "ordine": 159,
+      "titolo": "MIDI TRS Connectivity",
+      "riga_inizio": 4000,
+      "riga_fine": 4021,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_158"
+      ]
+    },
+    {
+      "id": "pt_160",
+      "ordine": 160,
+      "titolo": "External MIDI Controller (MIDI In)",
+      "riga_inizio": 4022,
+      "riga_fine": 4029,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_159"
+      ]
+    },
+    {
+      "id": "pt_161",
+      "ordine": 161,
+      "titolo": "External Synth (MIDI Out)",
+      "riga_inizio": 4030,
+      "riga_fine": 4039,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_160"
+      ]
+    },
+    {
+      "id": "pt_162",
+      "ordine": 162,
+      "titolo": "9.6 MIDI Thru",
+      "riga_inizio": 4040,
+      "riga_fine": 4061,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_161"
+      ]
+    },
+    {
+      "id": "pt_163",
+      "ordine": 163,
+      "titolo": "9.7 Program Change",
+      "riga_inizio": 4062,
+      "riga_fine": 4089,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_162"
+      ]
+    },
+    {
+      "id": "pt_164",
+      "ordine": 164,
+      "titolo": "9.8 Sync Settings",
+      "riga_inizio": 4090,
+      "riga_fine": 4117,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_163"
+      ]
+    },
+    {
+      "id": "pt_165",
+      "ordine": 165,
+      "titolo": "PPQN",
+      "riga_inizio": 4122,
+      "riga_fine": 4131,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_164"
+      ]
+    },
+    {
+      "id": "pt_166",
+      "ordine": 166,
+      "titolo": "Sync TRS / TS Connectivity",
+      "riga_inizio": 4132,
+      "riga_fine": 4146,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_165"
+      ]
+    },
+    {
+      "id": "pt_167",
+      "ordine": 167,
+      "titolo": "Sync TS to DIN Connectivity",
+      "riga_inizio": 4147,
+      "riga_fine": 4157,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_166"
+      ]
+    },
+    {
+      "id": "pt_168",
+      "ordine": 168,
+      "titolo": "External Pocket Operator (Sync Out)",
+      "riga_inizio": 4158,
+      "riga_fine": 4165,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_167"
+      ]
+    },
+    {
+      "id": "pt_169",
+      "ordine": 169,
+      "titolo": "External Pocket Operator (Sync In)",
+      "riga_inizio": 4189,
+      "riga_fine": 4196,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_168"
+      ]
+    },
+    {
+      "id": "pt_170",
+      "ordine": 170,
+      "titolo": "External Module - Pamela’s New Workout (Sync Out)",
+      "riga_inizio": 4219,
+      "riga_fine": 4238,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_169"
+      ]
+    },
+    {
+      "id": "pt_171",
+      "ordine": 171,
+      "titolo": "▌CHANGING A SYSTEM OPTION IN THE MENU",
+      "riga_inizio": 4249,
+      "riga_fine": 4297,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_170"
+      ]
+    },
+    {
+      "id": "pt_172",
+      "ordine": 172,
+      "titolo": "Direct Access Codes",
+      "riga_inizio": 4298,
+      "riga_fine": 4410,
+      "carico_cognitivo": 0.35,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_171"
+      ]
+    },
+    {
+      "id": "pt_173",
+      "ordine": 173,
+      "titolo": "10.2 Back up and Restore (Beta)",
+      "riga_inizio": 4411,
+      "riga_fine": 4476,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_172"
+      ]
+    },
+    {
+      "id": "pt_174",
+      "ordine": 174,
+      "titolo": "10.3 Factory Restore (Beta)",
+      "riga_inizio": 4477,
+      "riga_fine": 4504,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_173"
+      ]
+    },
+    {
+      "id": "pt_175",
+      "ordine": 175,
+      "titolo": "10.4 Updating the Firmware",
+      "riga_inizio": 4505,
+      "riga_fine": 4510,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_174"
+      ]
+    },
+    {
+      "id": "pt_176",
+      "ordine": 176,
+      "titolo": "▌FIRMWARE UPDATE USING THE UPDATE UTILITY",
+      "riga_inizio": 4511,
+      "riga_fine": 4531,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_175"
+      ]
+    },
+    {
+      "id": "pt_177",
+      "ordine": 177,
+      "titolo": "10.5 Error Codes",
+      "riga_inizio": 4532,
+      "riga_fine": 4544,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_176"
+      ]
+    },
+    {
+      "id": "pt_178",
+      "ordine": 178,
+      "titolo": "1. Power off the KOII.",
+      "riga_inizio": 4556,
+      "riga_fine": 4573,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_177"
+      ]
+    },
+    {
+      "id": "pt_179",
+      "ordine": 179,
+      "titolo": "Global and Architecture",
+      "riga_inizio": 4578,
+      "riga_fine": 4600,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_178"
+      ]
+    },
+    {
+      "id": "pt_180",
+      "ordine": 180,
+      "titolo": "Projects",
+      "riga_inizio": 1045,
+      "riga_fine": 1052,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_179"
+      ]
+    },
+    {
+      "id": "pt_181",
+      "ordine": 181,
+      "titolo": "Samples & Audio",
+      "riga_inizio": 4611,
+      "riga_fine": 4634,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_180"
+      ]
+    },
+    {
+      "id": "pt_182",
+      "ordine": 182,
+      "titolo": "Effects & Performance",
+      "riga_inizio": 3256,
+      "riga_fine": 3263,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_181"
+      ]
+    },
+    {
+      "id": "pt_183",
+      "ordine": 183,
+      "titolo": "MIDI & Synchronisation",
+      "riga_inizio": 4640,
+      "riga_fine": 4660,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_182"
+      ]
+    },
+    {
+      "id": "pt_184",
+      "ordine": 184,
+      "titolo": "END",
+      "riga_inizio": 1639,
+      "riga_fine": 1665,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_183"
+      ]
+    },
+    {
+      "id": "pt_185",
+      "ordine": 185,
+      "titolo": "C",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_184"
+      ]
+    },
+    {
+      "id": "pt_186",
+      "ordine": 186,
+      "titolo": "D",
+      "riga_inizio": 66,
+      "riga_fine": 70,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_185"
+      ]
+    },
+    {
+      "id": "pt_187",
+      "ordine": 187,
+      "titolo": "E",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_186"
+      ]
+    },
+    {
+      "id": "pt_188",
+      "ordine": 188,
+      "titolo": "F",
+      "riga_inizio": 66,
+      "riga_fine": 70,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_187"
+      ]
+    },
+    {
+      "id": "pt_189",
+      "ordine": 189,
+      "titolo": "I",
+      "riga_inizio": 17,
+      "riga_fine": 44,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_188"
+      ]
+    },
+    {
+      "id": "pt_190",
+      "ordine": 190,
+      "titolo": "L",
+      "riga_inizio": 66,
+      "riga_fine": 70,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_189"
+      ]
+    },
+    {
+      "id": "pt_191",
+      "ordine": 191,
+      "titolo": "O",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_190"
+      ]
+    },
+    {
+      "id": "pt_192",
+      "ordine": 192,
+      "titolo": "M",
+      "riga_inizio": 74,
+      "riga_fine": 86,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_191"
+      ]
+    },
+    {
+      "id": "pt_193",
+      "ordine": 193,
+      "titolo": "N",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_192"
+      ]
+    },
+    {
+      "id": "pt_194",
+      "ordine": 194,
+      "titolo": "R",
+      "riga_inizio": 17,
+      "riga_fine": 44,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_193"
+      ]
+    },
+    {
+      "id": "pt_195",
+      "ordine": 195,
+      "titolo": "S",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_194"
+      ]
+    },
+    {
+      "id": "pt_196",
+      "ordine": 196,
+      "titolo": "V",
+      "riga_inizio": 17,
+      "riga_fine": 44,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_195"
+      ]
+    },
+    {
+      "id": "pt_197",
+      "ordine": 197,
+      "titolo": "T",
+      "riga_inizio": 16,
+      "riga_fine": 116,
+      "carico_cognitivo": 0.55,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_196"
+      ]
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    },
+    {
+      "da": "pt_031",
+      "a": "pt_032"
+    },
+    {
+      "da": "pt_032",
+      "a": "pt_033"
+    },
+    {
+      "da": "pt_033",
+      "a": "pt_034"
+    },
+    {
+      "da": "pt_034",
+      "a": "pt_035"
+    },
+    {
+      "da": "pt_035",
+      "a": "pt_036"
+    },
+    {
+      "da": "pt_036",
+      "a": "pt_037"
+    },
+    {
+      "da": "pt_037",
+      "a": "pt_038"
+    },
+    {
+      "da": "pt_038",
+      "a": "pt_039"
+    },
+    {
+      "da": "pt_039",
+      "a": "pt_040"
+    },
+    {
+      "da": "pt_040",
+      "a": "pt_041"
+    },
+    {
+      "da": "pt_041",
+      "a": "pt_042"
+    },
+    {
+      "da": "pt_042",
+      "a": "pt_043"
+    },
+    {
+      "da": "pt_043",
+      "a": "pt_044"
+    },
+    {
+      "da": "pt_044",
+      "a": "pt_045"
+    },
+    {
+      "da": "pt_045",
+      "a": "pt_046"
+    },
+    {
+      "da": "pt_046",
+      "a": "pt_047"
+    },
+    {
+      "da": "pt_047",
+      "a": "pt_048"
+    },
+    {
+      "da": "pt_048",
+      "a": "pt_049"
+    },
+    {
+      "da": "pt_049",
+      "a": "pt_050"
+    },
+    {
+      "da": "pt_050",
+      "a": "pt_051"
+    },
+    {
+      "da": "pt_051",
+      "a": "pt_052"
+    },
+    {
+      "da": "pt_052",
+      "a": "pt_053"
+    },
+    {
+      "da": "pt_053",
+      "a": "pt_054"
+    },
+    {
+      "da": "pt_054",
+      "a": "pt_055"
+    },
+    {
+      "da": "pt_055",
+      "a": "pt_056"
+    },
+    {
+      "da": "pt_056",
+      "a": "pt_057"
+    },
+    {
+      "da": "pt_057",
+      "a": "pt_058"
+    },
+    {
+      "da": "pt_058",
+      "a": "pt_059"
+    },
+    {
+      "da": "pt_059",
+      "a": "pt_060"
+    },
+    {
+      "da": "pt_060",
+      "a": "pt_061"
+    },
+    {
+      "da": "pt_061",
+      "a": "pt_062"
+    },
+    {
+      "da": "pt_062",
+      "a": "pt_063"
+    },
+    {
+      "da": "pt_063",
+      "a": "pt_064"
+    },
+    {
+      "da": "pt_064",
+      "a": "pt_065"
+    },
+    {
+      "da": "pt_065",
+      "a": "pt_066"
+    },
+    {
+      "da": "pt_066",
+      "a": "pt_067"
+    },
+    {
+      "da": "pt_067",
+      "a": "pt_068"
+    },
+    {
+      "da": "pt_068",
+      "a": "pt_069"
+    },
+    {
+      "da": "pt_069",
+      "a": "pt_070"
+    },
+    {
+      "da": "pt_070",
+      "a": "pt_071"
+    },
+    {
+      "da": "pt_071",
+      "a": "pt_072"
+    },
+    {
+      "da": "pt_072",
+      "a": "pt_073"
+    },
+    {
+      "da": "pt_073",
+      "a": "pt_074"
+    },
+    {
+      "da": "pt_074",
+      "a": "pt_075"
+    },
+    {
+      "da": "pt_075",
+      "a": "pt_076"
+    },
+    {
+      "da": "pt_076",
+      "a": "pt_077"
+    },
+    {
+      "da": "pt_077",
+      "a": "pt_078"
+    },
+    {
+      "da": "pt_078",
+      "a": "pt_079"
+    },
+    {
+      "da": "pt_079",
+      "a": "pt_080"
+    },
+    {
+      "da": "pt_080",
+      "a": "pt_081"
+    },
+    {
+      "da": "pt_081",
+      "a": "pt_082"
+    },
+    {
+      "da": "pt_082",
+      "a": "pt_083"
+    },
+    {
+      "da": "pt_083",
+      "a": "pt_084"
+    },
+    {
+      "da": "pt_084",
+      "a": "pt_085"
+    },
+    {
+      "da": "pt_085",
+      "a": "pt_086"
+    },
+    {
+      "da": "pt_086",
+      "a": "pt_087"
+    },
+    {
+      "da": "pt_087",
+      "a": "pt_088"
+    },
+    {
+      "da": "pt_088",
+      "a": "pt_089"
+    },
+    {
+      "da": "pt_089",
+      "a": "pt_090"
+    },
+    {
+      "da": "pt_090",
+      "a": "pt_091"
+    },
+    {
+      "da": "pt_091",
+      "a": "pt_092"
+    },
+    {
+      "da": "pt_092",
+      "a": "pt_093"
+    },
+    {
+      "da": "pt_093",
+      "a": "pt_094"
+    },
+    {
+      "da": "pt_094",
+      "a": "pt_095"
+    },
+    {
+      "da": "pt_095",
+      "a": "pt_096"
+    },
+    {
+      "da": "pt_096",
+      "a": "pt_097"
+    },
+    {
+      "da": "pt_097",
+      "a": "pt_098"
+    },
+    {
+      "da": "pt_098",
+      "a": "pt_099"
+    },
+    {
+      "da": "pt_099",
+      "a": "pt_100"
+    },
+    {
+      "da": "pt_100",
+      "a": "pt_101"
+    },
+    {
+      "da": "pt_101",
+      "a": "pt_102"
+    },
+    {
+      "da": "pt_102",
+      "a": "pt_103"
+    },
+    {
+      "da": "pt_103",
+      "a": "pt_104"
+    },
+    {
+      "da": "pt_104",
+      "a": "pt_105"
+    },
+    {
+      "da": "pt_105",
+      "a": "pt_106"
+    },
+    {
+      "da": "pt_106",
+      "a": "pt_107"
+    },
+    {
+      "da": "pt_107",
+      "a": "pt_108"
+    },
+    {
+      "da": "pt_108",
+      "a": "pt_109"
+    },
+    {
+      "da": "pt_109",
+      "a": "pt_110"
+    },
+    {
+      "da": "pt_110",
+      "a": "pt_111"
+    },
+    {
+      "da": "pt_111",
+      "a": "pt_112"
+    },
+    {
+      "da": "pt_112",
+      "a": "pt_113"
+    },
+    {
+      "da": "pt_113",
+      "a": "pt_114"
+    },
+    {
+      "da": "pt_114",
+      "a": "pt_115"
+    },
+    {
+      "da": "pt_115",
+      "a": "pt_116"
+    },
+    {
+      "da": "pt_116",
+      "a": "pt_117"
+    },
+    {
+      "da": "pt_117",
+      "a": "pt_118"
+    },
+    {
+      "da": "pt_118",
+      "a": "pt_119"
+    },
+    {
+      "da": "pt_119",
+      "a": "pt_120"
+    },
+    {
+      "da": "pt_120",
+      "a": "pt_121"
+    },
+    {
+      "da": "pt_121",
+      "a": "pt_122"
+    },
+    {
+      "da": "pt_122",
+      "a": "pt_123"
+    },
+    {
+      "da": "pt_123",
+      "a": "pt_124"
+    },
+    {
+      "da": "pt_124",
+      "a": "pt_125"
+    },
+    {
+      "da": "pt_125",
+      "a": "pt_126"
+    },
+    {
+      "da": "pt_126",
+      "a": "pt_127"
+    },
+    {
+      "da": "pt_127",
+      "a": "pt_128"
+    },
+    {
+      "da": "pt_128",
+      "a": "pt_129"
+    },
+    {
+      "da": "pt_129",
+      "a": "pt_130"
+    },
+    {
+      "da": "pt_130",
+      "a": "pt_131"
+    },
+    {
+      "da": "pt_131",
+      "a": "pt_132"
+    },
+    {
+      "da": "pt_132",
+      "a": "pt_133"
+    },
+    {
+      "da": "pt_133",
+      "a": "pt_134"
+    },
+    {
+      "da": "pt_134",
+      "a": "pt_135"
+    },
+    {
+      "da": "pt_135",
+      "a": "pt_136"
+    },
+    {
+      "da": "pt_136",
+      "a": "pt_137"
+    },
+    {
+      "da": "pt_137",
+      "a": "pt_138"
+    },
+    {
+      "da": "pt_138",
+      "a": "pt_139"
+    },
+    {
+      "da": "pt_139",
+      "a": "pt_140"
+    },
+    {
+      "da": "pt_140",
+      "a": "pt_141"
+    },
+    {
+      "da": "pt_141",
+      "a": "pt_142"
+    },
+    {
+      "da": "pt_142",
+      "a": "pt_143"
+    },
+    {
+      "da": "pt_143",
+      "a": "pt_144"
+    },
+    {
+      "da": "pt_144",
+      "a": "pt_145"
+    },
+    {
+      "da": "pt_145",
+      "a": "pt_146"
+    },
+    {
+      "da": "pt_146",
+      "a": "pt_147"
+    },
+    {
+      "da": "pt_147",
+      "a": "pt_148"
+    },
+    {
+      "da": "pt_148",
+      "a": "pt_149"
+    },
+    {
+      "da": "pt_149",
+      "a": "pt_150"
+    },
+    {
+      "da": "pt_150",
+      "a": "pt_151"
+    },
+    {
+      "da": "pt_151",
+      "a": "pt_152"
+    },
+    {
+      "da": "pt_152",
+      "a": "pt_153"
+    },
+    {
+      "da": "pt_153",
+      "a": "pt_154"
+    },
+    {
+      "da": "pt_154",
+      "a": "pt_155"
+    },
+    {
+      "da": "pt_155",
+      "a": "pt_156"
+    },
+    {
+      "da": "pt_156",
+      "a": "pt_157"
+    },
+    {
+      "da": "pt_157",
+      "a": "pt_158"
+    },
+    {
+      "da": "pt_158",
+      "a": "pt_159"
+    },
+    {
+      "da": "pt_159",
+      "a": "pt_160"
+    },
+    {
+      "da": "pt_160",
+      "a": "pt_161"
+    },
+    {
+      "da": "pt_161",
+      "a": "pt_162"
+    },
+    {
+      "da": "pt_162",
+      "a": "pt_163"
+    },
+    {
+      "da": "pt_163",
+      "a": "pt_164"
+    },
+    {
+      "da": "pt_164",
+      "a": "pt_165"
+    },
+    {
+      "da": "pt_165",
+      "a": "pt_166"
+    },
+    {
+      "da": "pt_166",
+      "a": "pt_167"
+    },
+    {
+      "da": "pt_167",
+      "a": "pt_168"
+    },
+    {
+      "da": "pt_168",
+      "a": "pt_169"
+    },
+    {
+      "da": "pt_169",
+      "a": "pt_170"
+    },
+    {
+      "da": "pt_170",
+      "a": "pt_171"
+    },
+    {
+      "da": "pt_171",
+      "a": "pt_172"
+    },
+    {
+      "da": "pt_172",
+      "a": "pt_173"
+    },
+    {
+      "da": "pt_173",
+      "a": "pt_174"
+    },
+    {
+      "da": "pt_174",
+      "a": "pt_175"
+    },
+    {
+      "da": "pt_175",
+      "a": "pt_176"
+    },
+    {
+      "da": "pt_176",
+      "a": "pt_177"
+    },
+    {
+      "da": "pt_177",
+      "a": "pt_178"
+    },
+    {
+      "da": "pt_178",
+      "a": "pt_179"
+    },
+    {
+      "da": "pt_179",
+      "a": "pt_180"
+    },
+    {
+      "da": "pt_180",
+      "a": "pt_181"
+    },
+    {
+      "da": "pt_181",
+      "a": "pt_182"
+    },
+    {
+      "da": "pt_182",
+      "a": "pt_183"
+    },
+    {
+      "da": "pt_183",
+      "a": "pt_184"
+    },
+    {
+      "da": "pt_184",
+      "a": "pt_185"
+    },
+    {
+      "da": "pt_185",
+      "a": "pt_186"
+    },
+    {
+      "da": "pt_186",
+      "a": "pt_187"
+    },
+    {
+      "da": "pt_187",
+      "a": "pt_188"
+    },
+    {
+      "da": "pt_188",
+      "a": "pt_189"
+    },
+    {
+      "da": "pt_189",
+      "a": "pt_190"
+    },
+    {
+      "da": "pt_190",
+      "a": "pt_191"
+    },
+    {
+      "da": "pt_191",
+      "a": "pt_192"
+    },
+    {
+      "da": "pt_192",
+      "a": "pt_193"
+    },
+    {
+      "da": "pt_193",
+      "a": "pt_194"
+    },
+    {
+      "da": "pt_194",
+      "a": "pt_195"
+    },
+    {
+      "da": "pt_195",
+      "a": "pt_196"
+    },
+    {
+      "da": "pt_196",
+      "a": "pt_197"
+    }
+  ],
+  "note_pianificazione": "Piano da 197 sezioni markdown (structured). Carico cognitivo derivato da token stimati."
+}

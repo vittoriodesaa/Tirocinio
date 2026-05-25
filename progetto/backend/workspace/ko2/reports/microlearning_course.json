@@ -1,0 +1,325 @@
+{
+  "titolo_corso": "KOII: Guida Pratica al Campionatore/Compositore EP-133",
+  "lingua": "it",
+  "descrizione": "Un percorso microlearning per imparare a usare il campionatore/compositore KOII di Teenage Engineering. Dalle basi dell'architettura e dell'alimentazione, fino al sequenziamento di pattern, alla registrazione di campioni, all'uso di effetti e alla costruzione di brani completi con scene e song mode. Ogni lezione combina spiegazioni concettuali ed esempi pratici tratti dal manuale ufficiale.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "tipo": "lezione",
+      "argomento": "Panoramica e architettura del KOII",
+      "sintesi_breve": "Panoramica del KOII: gerarchia strutturale (progetti, gruppi, pattern, scene), specifiche tecniche, tre modi principali e controlli hardware.",
+      "contenuto": "## Introduzione\n\nIl KOII (noto anche come EP-133 K.O. II) è un campionatore/compositore da 64 MB prodotto da Teenage Engineering, un'azienda svedese che ha rivoluzionato il design di sintetizzatori e dispositivi audio portatili. Rilasciato nel 2023, il KOII si posiziona come un fratello maggiore della serie Pocket Operator e un dispositivo intermedio rispetto alla linea OP. In questa lezione esplorerai l'architettura generale del dispositivo, comprendendo come sono organizzati progetti, gruppi, pattern, scene e suoni. Questa base è essenziale prima di iniziare qualsiasi flusso di produzione musicale.\n\n## Concetti chiave\n\n### La gerarchia strutturale\n\nIl KOII organizza la musica in una gerarchia chiara: ogni **progetto** contiene fino a 4 **gruppi** (A, B, C, D), ogni gruppo ha 12 **pad** (suoni) e 99 **pattern**. I pattern possono essere combinati in **scene** (fino a 99 per progetto), e le scene possono essere sequenziate in una **canzone**. È come avere una cartella per ogni brano, con sottocartelle per batteria, basso, melodie e atmosfere.\n\n### Specifiche tecniche principali\n\n- **Memoria campioni**: 64 MB o fino a 999 campioni\n- **Progetti**: 9 slot (1–9)\n- **Note per progetto**: fino a 80.000\n- **Gruppi per progetto**: 4 (A, B, C, D)\n- **Campioni per gruppo**: 12 (uno per pad)\n- **Pattern per gruppo**: 99, ognuno con 12 tracce (campioni e MIDI)\n- **Lunghezza pattern**: da 1 a 99 battute\n- **Scene per progetto**: fino a 99\n- **Voci polifoniche**: 6 stereo o 12 mono\n- **Effetti**: 6 effetti di invio (send FX) + 12 effetti punch-in\n\n### I tre modi principali\n\nIl KOII opera in tre modi principali, selezionabili con i pulsanti sotto il display:\n\n- **Sound Mode**: per assegnare e gestire i campioni sui pad, modificare parametri di base del suono.\n- **Main Mode**: la modalità \"home\" per suonare, registrare, arrangiare e gestire progetti, scene e pattern.\n- **Tempo Mode**: per impostare BPM, metronomo e opzioni temporali.\n\n### Display ibrido e controlli\n\nIl dispositivo ha un display ibrido che combina icone fisse (che si illuminano a seconda dello stato) e un display digitale a 3 cifre. I controlli principali sono: manopola Bianca (Volume), Arancione (X, multifunzione), Nera (Y, multifunzione), un fader assegnabile e 12 pad sensibili alla velocità (velocity). I pad, se premuti nella metà inferiore, rispondono alla dinamica.\n\n## Esempio pratico\n\nImmagina di voler creare un brano. Usi il Progetto 8 (vuoto). Nel Gruppo A inserisci i suoni di batteria (kick, hi-hat, rullante). Nel Gruppo B metti un basso. Nel Gruppo D un tappeto sonoro drone. Crei un pattern di 2 battute per ogni gruppo, li organizzi in Scene (strofa, ritornello) e infine costruisci la canzone in Song Mode. Ogni livello della gerarchia ha il suo scopo e comprendere questa architettura ti permette di lavorare in modo strutturato e creativo.\n\n## Riepilogo\n\n- Il KOII ha una gerarchia chiara: Progetto → Gruppi → Pad/Suoni → Pattern → Scene → Canzone\n- Dispone di 9 progetti, 4 gruppi per progetto, 99 pattern per gruppo e 99 scene per progetto\n- Tre modi operativi principali: Sound, Main e Tempo\n- I controlli includono manopole X/Y, fader assegnabile, pad velocity-sensitive e display ibrido\n- L'architettura a 64 MB supporta fino a 999 campioni e 80.000 note per progetto\n\n## Metti in pratica\n\nAccendi il KOII, tieni premuto [Main] e osserva il display. Nota il numero di progetto e di scena attivi. Premi i pulsanti [Sound], [Main] e [Tempo] per familiarizzare con il passaggio tra i tre modi. Osserva come cambiano le icone sul display.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 62,
+        "riga_fine": 427
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere la gerarchia strutturale del KOII (progetto, gruppo, pattern, scena, canzone)",
+        "Identificare le specifiche tecniche principali del dispositivo",
+        "Distinguere i tre modi operativi principali (Sound, Main, Tempo)",
+        "Riconoscere i controlli hardware e il display ibrido"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "tipo": "lezione",
+      "argomento": "Alimentazione, Sync e MIDI",
+      "sintesi_breve": "Alimentazione a batterie AAA o USB-C, Sync e MIDI via TRS, indicatori LED e display.",
+      "contenuto": "## Introduzione\n\nPrima di iniziare a creare musica con il KOII, è fondamentale sapere come alimentarlo correttamente e come collegarlo ad altri dispositivi. Il KOII offre due modalità di alimentazione e supporta protocolli Sync e MIDI per integrarsi con drum machine, sintetizzatori, computer e altre apparecchiature da studio. Capire queste basi ti eviterà problemi di connessione e ti permetterà di espandere le capacità del dispositivo ben oltre i suoi confini hardware.\n\n## Concetti chiave\n\n### Alimentazione a batteria\n\nIl KOII può essere alimentato da **4 batterie AAA**, ideali per l'uso in mobilità. Il vano batterie si trova sotto il pannello frontale del dispositivo. Per installarle: spegni il KOII, rimuovi il coperchio delle batterie facendo attenzione a non rompere i fissaggi multipli, inserisci le 4 batterie AAA con il polo positivo verso destra (come indicato sul dispositivo), e rimonta il coperchio allineando tutti i supporti.\n\n**Indicatori LED** dello stato batteria:\n- **Lit (acceso)**: il dispositivo è alimentato a batteria\n- **Unlit (spento)**: il dispositivo è alimentato via USB\n- **Flash (lampeggiante)**: la carica delle batterie è bassa, vanno sostituite\n\n### Alimentazione via USB-C\n\nIn alternativa, puoi usare un cavo USB-C collegato a un alimentatore USB da **5V minimo 1A**. Il KOII può essere alimentato da un PC/Mac, un adattatore da muro o un power bank portatile. **Importante**: il KOII consuma poca energia, quindi un power bank dovrebbe idealmente non avere funzioni di spegnimento automatico, o queste devono essere disattivabili.\n\nIl display si illumina immediatamente all'accensione. L'icona della batteria è spenta quando si è alimentati via USB e si accende arancione quando si è su batteria.\n\n### Sync e MIDI\n\nIl KOII dispone di connessioni **USB-C** e **mini jack TRS da 3.5 mm** per audio, sincronizzazione e MIDI. Le connessioni audio sono TRS stereo. Le porte disponibili sono:\n\n- **Power Switch**: accende/spegne il dispositivo\n- **USB-C**: interfaccia di comunicazione e alimentazione alternativa\n- **Input**: ingresso audio esterno\n- **Output**: uscita audio principale\n- **Sync**: ingressi/uscite di sincronizzazione (Type A)\n- **MIDI**: ingressi/uscite MIDI (Type A)\n\nGli indicatori del display mostrano:\n- **Sync Activity Lit**: attività di sincronizzazione in ingresso ricevuta\n- **MIDI Activity Lit**: dati MIDI in invio o ricezione\n- **USB MIDI Lit**: comunicazione USB attiva\n- **USB MIDI Flash**: attività MIDI in invio/ricezione via USB\n\n## Esempio pratico\n\nStai preparando un live set. Colleghi il KOII a un sintetizzatore esterno via MIDI (mini jack TRS). Colleghi anche un computer via USB-C per trasferire campioni. Il KOII riceve alimentazione dal computer via USB-C: l'icona batteria è spenta, segno che non sta usando le batterie. Colleghi l'uscita audio a un mixer. Con le impostazioni SYNC, sincronizzi il tempo del KOII con una drum machine esterna. Quando invii un colpo di kick dalla drum machine, l'indicatore Sync Activity si illumina. Ora tutti i dispositivi suonano in sincrono.\n\n## Riepilogo\n\n- Il KOII si alimenta con 4 batterie AAA o via USB-C (5V/1A minimo)\n- Lo stato della batteria è indicato dal LED: acceso (batteria), spento (USB), lampeggiante (batteria scarica)\n- Sync e MIDI usano connessioni mini jack TRS 3.5 mm (Type A)\n- USB-C serve sia per alimentazione che per comunicazione MIDI con il computer\n- Gli indicatori sul display danno feedback in tempo reale su Sync, MIDI e USB activity\n\n## Metti in pratica\n\nAccendi il KOII con le batterie, poi collega il cavo USB-C a un computer. Osserva l'icona batteria spegnersi. Prova a premere alcuni pad mentre guardi l'indicatore MIDI: se non è attivo, significa che non stai trasmettendo dati MIDI — dovrai abilitare l'uscita MIDI dalle impostazioni di sistema.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 117,
+        "riga_fine": 471
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere le due modalità di alimentazione del KOII",
+        "Interpretare gli indicatori LED dello stato batteria",
+        "Identificare le connessioni Sync, MIDI e USB e i relativi indicatori",
+        "Configurare correttamente l'alimentazione del dispositivo"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "tipo": "lezione",
+      "argomento": "Progetti, Modi Principali e Tempo",
+      "sintesi_breve": "I tre modi operativi (Sound, Main, Tempo), gestione dei 9 progetti, regolazione del tempo BPM e metronomo.",
+      "contenuto": "## Introduzione\n\nI progetti sono il contenitore di livello più alto nel KOII: ogni produzione musicale vive in un progetto. Capire come selezionare, cancellare e gestire i progetti è essenziale per organizzare il tuo lavoro. In questa lezione esplorerai anche i tre modi operativi principali (Sound, Main, Tempo) e tutti gli strumenti legati al tempo globale: BPM, metronomo e tempo match. Imparerai a muoverti agilmente tra queste modalità, che sono il cuore del flusso di lavoro sul KOII.\n\n## Concetti chiave\n\n### I tre modi operativi principali\n\nIl KOII opera in tre modalità, selezionabili con i pulsanti sotto il display:\n\n- **Sound Mode** (`[Sound]`): opera a livello del suono. Consente di assegnare e gestire i campioni sui pad, impostare parametri sonori di base come ampiezza e pitch.\n- **Main Mode** (`[Main]`): è la modalità \"home\", quella primaria. Qui si esegue la maggior parte delle attività: suonare dal vivo, arrangiare, registrare, gestire progetti, scene e pattern.\n- **Tempo Mode** (`[Tempo]`): gestisce gli elementi temporali come BPM e metronomo.\n\n**Regola pratica**: Main è la tua base operativa. Entra in Sound o Tempo per configurazioni specifiche e poi torna sempre a Main per suonare e registrare.\n\n### Gestione dei progetti\n\nIl KOII ha 9 progetti (slot 1–9). I progetti 1–5 sono pre-caricati con suoni di fabbrica; i progetti 6–9 sono vuoti. Ogni progetto contiene fino a 80.000 note.\n\n- **Selezionare un progetto**: assicurati che il pattern non stia suonando (`[Play]` per fermare). Tieni premuto `[Main]` + tieni premuto il `[Pad]` corrispondente al progetto (1–9). Il display mostra \"P 1\", \"P 2\" ecc. Rilascia entrambi i pulsanti.\n- **Visualizzare il progetto attivo**: tieni premuto `[Main]`: il display mostra il numero di scena (S.01) e il LED del pad lampeggia per indicare il progetto attivo.\n- **Cancellare un progetto**: tieni `[Main]` + `[Erase]` + il `[Pad]` del progetto. Il display lampeggia \"PRJ\" poi \"DEL\". Attenzione: questa operazione **non può essere annullata**.\n- **Salvataggio**: il KOII salva automaticamente a intervalli regolari quando non è in riproduzione. L'icona Auto-Save si illumina durante il salvataggio. Non esiste un salvataggio manuale. All'accensione, il progetto precedente viene ricaricato automaticamente.\n\n### Global Tempo (BPM)\n\nIl KOII ha un range globale di 40–399 BPM. La manopola (X) controlla direttamente tra 60–180 BPM.\n\n**Metodi per impostare il tempo**:\n- **Manopola (X)**: premi `[Tempo]`, ruota la manopola Arancione (X). Usa `[Shift]` + manopola per regolazioni più fini (valori decimali).\n- **Tap Tempo**: premi `[Tempo]` almeno 4 volte a tempo con il beat. Il KOII calcola il BPM dal tuo tapping.\n- **Inserimento manuale**: tieni `[Tempo]` + premi i pad numerici per inserire il valore (es. 1-2-0 per 120 BPM). Usa `[.]` per i decimali. Questo metodo permette di accedere al range esteso 40–399 BPM.\n- **Tempo Match**: tieni `[Sample]` + `[Tempo]` mentre riproduci audio esterno (microfono o line in). Il KOII analizza e imposta il BPM corrispondente. Nota: a volte il BPM rilevato può essere di 1 inferiore a quello effettivo (possibile bug di sistema).\n\n### Metronomo\n\nIl metronomo genera un tick udibile e un beat visivo a tempo con il BPM. Per impostazione predefinita è attivo solo durante la registrazione.\n\n**Configurazione** (menu di sistema `Seq > Met`):\n- **ON**: il metronomo è udibile durante riproduzione e registrazione (`[Play]` o `[Record]` + `[Play]`)\n- **REC**: solo durante la registrazione con `[Record]` + `[Play]` (impostazione predefinita)\n- **CNT**: solo durante il count-in all'avvio della registrazione (`[Record]`, poi `[Play]`)\n\nPer regolare il volume del metronomo: premi `[Tempo]` e regola la manopola Nera (Y).\n\n## Esempio pratico\n\nStai iniziando un nuovo brano. Vuoi usare il Progetto 8 (vuoto). Lo selezioni: `[Main]` + `[Pad 8]`. Il display mostra \"P 8\". Ora imposti il tempo a 128 BPM: premi `[Tempo]`, tieni premuto `[Tempo]` + premi `[1]`-`[2]`-`[8]`. Il display mostra 128 con l'icona BPM accesa. Attivi il metronomo: imposta il volume con la manopola (Y) e lo senti tickare. Quando registri, premi `[Record]` + `[Play]` e il metronomo scandisce il count-in di 4 battute. Sei pronto per creare il tuo beat.\n\n## Riepilogo\n\n- Il KOII ha 3 modi operativi: Sound (campioni), Main (home/performance), Tempo (BPM/metronomo)\n- I progetti sono 9 contenitori di produzione, con salvataggio automatico\n- Il tempo globale va da 40 a 399 BPM, regolabile con manopola, tap, inserimento manuale o tempo match\n- Il metronomo supporta 3 modalità (ON, REC, CNT) configurabili dal menu di sistema\n- I progetti 1–5 hanno suoni pre-caricati, i progetti 6–9 sono vuoti\n\n## Metti in pratica\n\nApri il Progetto 8 (vuoto) e imposta il tempo a 100 BPM con l'inserimento manuale. Attiva il metronomo in modalità ON. Premi `[Play]`: senti il tick del metronomo. Poi passa alla modalità REC e registra un pattern semplice: premi `[Record]` + `[Play]` e suona qualche pad. Ferma con `[Play]`.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 1062,
+        "riga_fine": 1240
+      },
+      "obiettivi_apprendimento": [
+        "Selezionare, visualizzare e cancellare un progetto sul KOII",
+        "Distinguere e utilizzare i tre modi operativi (Sound, Main, Tempo)",
+        "Regolare il tempo globale con diversi metodi (manopola, tap, inserimento manuale, tempo match)",
+        "Configurare il metronomo e le sue modalità di attivazione"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_001",
+      "ordine": 4,
+      "tipo": "quiz",
+      "argomento": "Verifica: Fondamenti del KOII",
+      "sintesi_breve": "Quiz di verifica dopo mod_003",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 1062,
+        "riga_fine": 1240
+      },
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 6,
+      "prerequisiti": [
+        "mod_003"
+      ],
+      "domande": [
+        {
+          "testo": "Qual è la gerarchia strutturale corretta del KOII, dal livello più alto a quello più basso?",
+          "opzioni": [
+            "Progetto → Gruppo → Pattern → Scena → Canzone",
+            "Progetto → Scena → Gruppo → Pattern → Canzone",
+            "Canzone → Progetto → Gruppo → Pattern → Scena",
+            "Progetto → Gruppo → Scena → Pattern → Canzone"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La gerarchia è: Progetto (contenitore principale) → Gruppi (A/B/C/D) → Pattern e Pad/Suoni → Scene (combinazioni di pattern) → Canzone (sequenza di scene in Song Mode)."
+        },
+        {
+          "testo": "Come si alimenta il KOII quando NON si usano le batterie?",
+          "opzioni": [
+            "Solo con un cavo USB-C collegato a un PC/Mac",
+            "Con un cavo USB-C collegato a una fonte di alimentazione 5V/1A (PC, power bank o adattatore)",
+            "Con un cavo Lightning",
+            "Con un alimentatore proprietario Teenage Engineering"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Il KOII si alimenta via USB-C con una fonte da 5V minimo 1A: può essere un PC/Mac, un adattatore USB da muro o un power bank portatile."
+        },
+        {
+          "testo": "Qual è la modalità operativa considerata 'home' sul KOII?",
+          "opzioni": [
+            "Sound Mode",
+            "Tempo Mode",
+            "Main Mode",
+            "System Mode"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "Main Mode è la modalità 'home' principale, dove si svolgono la maggior parte delle attività: suonare, registrare, arrangiare e gestire progetti, scene e pattern."
+        },
+        {
+          "testo": "Quale metodo permette di impostare il tempo BPM sull'intero range 40-399?",
+          "opzioni": [
+            "Ruotare la manopola Arancione (X)",
+            "Usare il Tap Tempo",
+            "Inserimento manuale tenendo [Tempo] + pad numerici",
+            "Tempo Match con [Sample] + [Tempo]"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "La manopola (X) copre solo 60-180 BPM. L'inserimento manuale con [Tempo] + pad numerici permette di accedere al range completo 40-399 BPM."
+        }
+      ]
+    },
+    {
+      "id": "mod_004",
+      "ordine": 5,
+      "tipo": "lezione",
+      "argomento": "Campioni e Suoni: Caricamento e Gestione",
+      "sintesi_breve": "Differenza tra sample e sound, libreria campioni, caricamento su pad, copia/incolla e EP Sample Tool.",
+      "contenuto": "## Introduzione\n\nNel KOII, la differenza tra \"campione\" (sample) e \"suono\" (sound) è sottile ma fondamentale. Un campione è l'audio grezzo nella libreria; un suono è quel campione caricato su un pad con parametri aggiuntivi (trim, inviluppo, pitch, ampiezza). In questa lezione imparerai a navigare la libreria campioni, caricare suoni sui pad, copiare suoni tra pad e usare l'EP Sample Tool per trasferire file dal computer. Questa è la base per costruire qualsiasi kit di produzione musicale.\n\n## Concetti chiave\n\n### Sample vs Sound\n\nIl KOII può contenere fino a **999 campioni** (o 64 MB). Viene fornito con 300 campioni di fabbrica, lasciando spazio per 699 campioni utente. Un **campione** è l'elemento audio grezzo nella libreria. Quando lo carichi su un pad e ci applichi parametri (trim, inviluppo, pitch, ampiezza, play mode), diventa un **suono**. Le modifiche al suono non alterano il campione originale nella libreria.\n\n### La Convenzione della Libreria Campioni\n\nI campioni sono organizzati per genere in slot numerici, seguendo una convenzione standard:\n\n| Slot | Genere | Descrizione |\n|------|--------|-------------|\n| 1–99 | Kicks | 31 campioni di fabbrica |\n| 100–199 | Snares | 46 campioni di fabbrica |\n| 200–299 | Cymbals | 54 campioni di fabbrica |\n| 300–399 | Percussion | 58 campioni di fabbrica |\n| 400–499 | Bass | 60 campioni di fabbrica |\n| 500–599 | Melody | 60 campioni di fabbrica |\n| 600–699 | Loop | Vuoto |\n| 700–799 | User 1 | Vuoto |\n| 800–899 | User 2 | Vuoto |\n| 900–999 | SFX | Vuoto |\n\nRispettare questa convenzione rende più facile ritrovare i campioni e garantisce la compatibilità con il tool EP Sample Tool.\n\n### Caricare un campione su un pad\n\n1. Premi `[Sound]` per entrare in Sound Mode.\n2. Seleziona il gruppo: premi `[A]`, `[B]`, `[C]` o `[D]`.\n3. Seleziona un pad: premi un `[Pad]` da `.` a `9`.\n4. Il display mostra il numero del campione caricato e l'icona mono/stereo.\n5. Per cambiare campione: premi `[+]` o `[-]` per scorrere la libreria. Usa `[Shift]` + `[+]/[-]` per passi da 10.\n6. In alternativa, tieni premuto `[Sound]` + premi i pad numerici per inserire direttamente il numero del campione (es. `[Sound]` + `[1]` `[9]` `[9]` per il campione 199). Se il numero lampeggia, lo slot è vuoto.\n\nPer vedere il **nome** del campione, tieni premuto il pad mentre sei in Sound Mode: il nome scorre sul display alfanumerico.\n\n### Copiare e incollare un suono tra pad\n\n1. In Sound Mode, seleziona il pad sorgente.\n2. `[Shift]` + `[C]` (gruppo C) per copiare il suono negli appunti.\n3. Seleziona il pad destinazione.\n4. `[Shift]` + `[D]` (gruppo D) per incollare.\n5. Il suono esistente sul pad destinazione viene sovrascritto, ma puoi usare Undo (`[Shift]` + `[B]`) per ripristinare.\n\n### EP Sample Tool\n\nÈ un tool web MIDI che permette di trasferire campioni `.WAV` e `.AIF` dal computer al KOII via USB-C. Compatibile con Chrome v43+, Edge v79+ e Firefox. Connetto il KOII via USB, apro il browser, drag & drop i file dal computer alla libreria o direttamente sui pad. Si possono anche regolare i trim (IN/OUT) dal browser.\n\n## Esempio pratico\n\nStai creando un kit di batteria nel Gruppo A. Selezioni Sound Mode (`[Sound]`), confermi il Gruppo A (`[A]`). Sul Pad `.` carichi un kick: tieni `[Sound]` + premi `[1]` `[9]` — il display mostra \"19\", il sample \"Afterparty Kick\". Sul Pad `0` carichi un tom: `[Sound]` + `[3]` `[4]` `[7]`. Sul Pad `5` carichi un hi-hat chiuso: `[Sound]` + `[2]` `[0]` `[3]`. Ora premi i pad per ascoltare il kit. Se vuoi duplicare il suono del kick sul Pad `3`, seleziona il Pad `.`, fai `[Shift]` + `[C]`, seleziona Pad `3`, fai `[Shift]` + `[D]`.\n\n## Riepilogo\n\n- Un **campione** è l'audio grezzo; un **suono** è il campione caricato su un pad con parametri associati\n- La libreria ha 300 campioni pre-caricati organizzati per genere in slot numerici (1–999)\n- Per caricare un campione: `[Sound]` → seleziona gruppo e pad → naviga con `[+]/[-]` o inserisci il numero\n- Copia/incolla suoni con `[Shift]` + `[C]` / `[Shift]` + `[D]`\n- EP Sample Tool via browser per trasferire e gestire campioni da PC/Mac\n\n## Metti in pratica\n\nApri il Progetto 1 (pre-caricato). In Sound Mode, premi vari pad e tieni premuto per leggere il nome del campione. Prova a cambiare un campione usando l'inserimento diretto del numero. Poi copia un suono da un pad all'altro con `[Shift]` + `[C]` e `[Shift]` + `[D]`.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 1482,
+        "riga_fine": 2076
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra campione (sample) e suono (sound) nel KOII",
+        "Caricare un campione su un pad usando la navigazione e l'inserimento diretto",
+        "Copiare e incollare suoni tra pad usando gli appunti",
+        "Utilizzare l'EP Sample Tool per trasferire campioni dal computer"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_005",
+      "ordine": 6,
+      "tipo": "lezione",
+      "argomento": "Editing dei Suoni: Trim, Inviluppo e Time Stretch",
+      "sintesi_breve": "Sound Edit Mode: trim (inizio/fine), inviluppo (attack/release), time stretch, play mode e mute group.",
+      "contenuto": "## Introduzione\n\nUna volta caricato un campione su un pad, inizia il vero lavoro creativo: modellare il suono. Il KOII offre un potente Sound Edit Mode che ti permette di tagliare l'inizio e la fine del campione (trim), modellare l'attacco e il rilascio (inviluppo/ENV), applicare time stretch per adattare il campione al tempo del progetto, e scegliere la modalità di riproduzione (One Shot, Key, Legato). In questa lezione esplorerai ciascuna di queste opzioni, fondamentali per trasformare un campione grezzo in un suono espressivo e pronto per la tua produzione.\n\n## Concetti chiave\n\n### Sound Edit Mode\n\nPer accedere alle opzioni di editing avanzato: tieni premuto `[Shift]` + premi `[Edit]` (il tasto `[Sound]` ha come secondaria la funzione Edit). Il display mostra l'opzione corrente. Usa `[+]` e `[-]` per ciclare tra le opzioni disponibili:\n\n- **SND** — Play Mode (One Shot, Key, Legato)\n- **TRI** — Trim (taglio inizio/fine)\n- **ENV** — Envelope (attacco/rilascio)\n- **TIM** — Time Stretch (allungamento temporale)\n- **MID** — MIDI (canale e root note)\n- **GRP** — Mute/Choke Group\n\nPer salvare le modifiche: tieni `[Shift]` + tieni `[Edit]` per oltre 2 secondi (solo a riproduzione ferma).\n\n### Trim (TRI) — Tagliare l'inizio e la fine\n\nIl trim permette di regolare il punto di **inizio (IN)** e **fine (OUT)** del campione, in secondi dalla posizione originale 0.00.\n\n- **Manopola Arancione (X)**: regola il punto di IN (start). Non può superare il valore di OUT.\n- **Manopola Nera (Y)**: regola il punto di OUT (end). Non può essere inferiore a IN.\n- Usa `[Shift]` mentre ruoti per regolazioni più precise.\n- Tocca il pad per ascoltare il risultato mentre modifichi.\n\nIl KOII non mostra una forma d'onda grafica: i valori sono numerici (secondi) e gli indicatori X/Y a quadranti danno un feedback visivo approssimativo.\n\n### Envelope (ENV) — Modellare attacco e rilascio\n\nL'inviluppo controlla come il suono si accende e si spegne nel tempo:\n\n- **Attack (X)**: tempo di salita dal silenzio al volume massimo quando premi il pad. Un attacco lungo (es. 2 secondi) crea un fade-in morbido; un attacco corto (es. 0.01 s) è immediato e percussivo.\n- **Release (Y)**: tempo di discesa dal volume massimo al silenzio quando rilasci il pad. Un rilascio lungo crea un fade-out; uno corto tronca il suono immediatamente.\n\n**Esempio**: un suono di pad atmosferico avrà attack lungo (2-3 s) e release lungo (2 s). Un suono di kick avrà attack quasi nullo e release breve.\n\n### Time Stretch (TIM) — Allungare senza alterare l'intonazione\n\nIl time stretch modifica la durata del campione senza cambiarne il pitch. È utile per adattare un loop al BPM del progetto.\n\n- **Manopola (X)**: seleziona la modalità — OFF (nessun stretch), BPM (allunga/accorcia in base al BPM target), BAR (allunga/accorcia in base a frazioni di battuta: 1/4, 1/2, 1, 2, 4 battute).\n- **Manopola (Y)**: applica lo stretch. In modalità BPM, imposta il BPM originale del campione; in modalità BAR, imposta la durata in battute.\n\n**Nota**: aumentare il BPM target allunga il campione (lo rende più lento); diminuirlo lo accorcia (più veloce). L'icona dell'orologio (Time) si illumina quando il time stretch è attivo.\n\n### Play Mode (SND) — Come viene riprodotto il suono\n\n- **ONE (One Shot)**: il suono parte e arriva fino alla fine, anche se rilasci il pad. Monofonico: una nuova pressione riavvia il suono da capo.\n- **KEY (Key/Poly)**: polifonico — puoi suonare più note dello stesso suono contemporaneamente (utile per accordi in Keys Mode).\n- **LEG (Legato)**: monofonico con legato — una nuova nota subentra alla precedente senza riavviare il campione, riprendendo dalla posizione corrente.\n\n### Mute Group (GRP)\n\nUn mute group (o choke group) fa sì che solo l'ultimo suono attivato nel gruppo sia udibile, silenziando tutti gli altri. Utile per simulare il comportamento di piatti e hi-hat: quando suoni l'hi-hat chiuso, quello aperto viene \"choked\" (troncato).\n\n## Esempio pratico\n\nHai registrato un campione vocale di 10 secondi con il microfono. Vuoi usare solo la parte centrale di 3 secondi come tappeto sonoro. Entri in Sound Edit Mode (`[Shift]` + `[Edit]`), navighi a TRI con `[+]`. Con la manopola (X) imposti IN a 2.5 secondi, con (Y) imposti OUT a 5.5 secondi. Ora navighi a ENV: imposti Attack a 1 secondo (fade-in morbido) e Release a 2 secondi (fade-out graduale). Poi navighi a TIM: selezioni BAR e imposti 2 battute con la manopola (Y). Infine navighi a SND e imponi KEY per poter suonare il campione polifonicamente in Keys Mode. Salvi con `[Shift]` + tieni `[Edit]` > 2 secondi.\n\n## Riepilogo\n\n- Sound Edit Mode (`[Shift]` + `[Edit]`) offre 6 opzioni: SND, TRI, ENV, TIM, MID, GRP\n- **Trim (TRI)**: taglia inizio (X) e fine (Y) del campione in secondi\n- **Envelope (ENV)**: modella attack (X) e release (Y) per fade-in/out\n- **Time Stretch (TIM)**: allunga/accorcia il campione in BPM o battute senza alterare il pitch\n- **Play Mode (SND)**: One Shot (mono), Key (poli), Legato (mono con subentro)\n- **Mute Group (GRP)**: raggruppa pad per comportamento choke (solo l'ultimo suona)\n\n## Metti in pratica\n\nCarica un campione lungo (es. un loop di 4 battute) su un pad. Entra in Sound Edit Mode e prova a tagliare l'inizio con TRI. Poi applica un time stretch in modalità BPM: imposta un BPM diverso dal progetto e ascolta come cambia la velocità senza alterare l'intonazione.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 1603,
+        "riga_fine": 1918
+      },
+      "obiettivi_apprendimento": [
+        "Accedere e navigare le opzioni di Sound Edit Mode",
+        "Tagliare l'inizio e la fine di un campione con il trim (TRI)",
+        "Modellare l'inviluppo del suono con attack e release (ENV)",
+        "Applicare il time stretch per adattare un campione al tempo del progetto",
+        "Selezionare la modalità di riproduzione appropriata (One Shot, Key, Legato)"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_006",
+      "ordine": 7,
+      "tipo": "lezione",
+      "argomento": "Campionamento e Registrazione Audio",
+      "sintesi_breve": "Campionamento da microfono, Line In e resampling; regolazione di livello e soglia, hands-free recording e chopping.",
+      "contenuto": "## Introduzione\n\nIl KOII si definisce un \"Sampler Composer\" proprio perché la registrazione di audio è al centro del suo flusso di lavoro. Puoi catturare suoni dal microfono interno, dall'ingresso di linea (Line In) o risamply (resample) i pattern interni per creare nuovi layer sonori. In questa lezione imparerai l'intero workflow di campionamento: dalla regolazione di livello e soglia, alla registrazione su un pad, fino al chopping di un campione per distribuirlo su più pad.\n\n## Concetti chiave\n\n### Ingressi audio\n\nIl KOII ha tre fonti di ingresso per il campionamento:\n\n- **Microfono interno**: situato vicino allo speaker, sotto il coperchio posteriore. È la sorgente predefinita quando nessun cavo è inserito nell'Input. Registra in mono.\n- **Line In**: ingresso stereo TRS da 3.5 mm. Quando inserisci un cavo, il KOII passa automaticamente all'ingresso di linea. Puoi selezionare varie opzioni: IN Mono (somma stereo → mono), IN Stereo, L.IN (solo canale sinistro), R.IN (solo canale destro).\n- **Resampling (RSP)**: registra l'audio interno del KOII (pattern, effetti). Utile per creare loop, catturare performance con effetti o liberare voci polifoniche. Disponibile in mono e stereo.\n\n### Flusso di campionamento base\n\n1. **Preparazione**: connetti la sorgente audio (o usa il microfono). Premi `[Sample]` per entrare in Sample Mode. I pad LED lampeggiano (slot vuoti) o sono accesi fissi (slot occupati).\n2. **Livello (Level)**: regola la manopola Arancione (X) per impostare il volume di ingresso. Cerca un segnale forte ma senza clipping (l'icona Clip si illumina se il segnale è troppo alto).\n3. **Soglia (Threshold)**: regola la manopola Nera (Y) per impostare il livello minimo che avvia la registrazione. Solo quando l'audio supera questa soglia la registrazione parte.\n4. **Registrazione**: tieni premuto un `[Pad]` per registrare. La registrazione inizia quando l'audio supera la soglia e si ferma quando rilasci il pad. Il tempo di registrazione è mostrato sul display.\n5. **Hands-Free**: in alternativa, tieni `[Shift]` + premi il `[Pad]` per armare, poi premi `[Sample]` per fermare.\n\nIl campione registrato viene salvato nel primo slot libero della libreria e il pad si accende fisso. Il nome del file sarà \"Sample #NUMERO.PCM\".\n\n### Campionare in uno slot specifico\n\nSe vuoi registrare direttamente in uno slot preciso della libreria (es. slot 701 nella categoria User 1):\n\n1. In Sound Mode, seleziona un pad vuoto o con un suono da sovrascrivere.\n2. Tieni `[Sound]` + premi il numero dello slot desiderato (es. `[7]` `[0]` `[1]`).\n3. Torna in Sample Mode e registra sul pad.\n\n### Resampling\n\nIl resampling registra l'audio interno del KOII:\n\n1. Premi `[Sample]`, poi usa `[+]/[-]` per selezionare RSP Mono o RSP Stereo.\n2. Attiva Hands-Free: `[Shift]` + `[Pad]` per selezionare il pad di destinazione.\n3. Premi `[Play]` per avviare il pattern e contemporaneamente iniziare la registrazione.\n4. Premi `[Sample]` per fermare prima della fine, o attendi la fine del pattern.\n5. Premi `[Main]` per uscire.\n\nPuoi anche resamply una durata specifica: in Sample Mode, dopo aver selezionato RSP, usa `[-]/[+]` per scegliere la lunghezza in battute, poi avvia con `[Play]`.\n\n### Chopping (taglio)\n\nDopo aver registrato un campione, puoi tagliarlo in più parti e distribuirle sui pad. Il chop è accessibile dalla Sample Mode:\n\n- **Auto Chop**: premi `[C]` in Chop Mode. Il campione viene automaticamente suddiviso in parti uguali sui pad del gruppo target.\n- **Live Chop**: premi i pad mentre il campione suona per creare tagli manuali in tempo reale.\n\n### Livello e soglia: consigli pratici\n\n- **Level (X)**: regola il volume in ingresso. Troppo alto = clipping (distorsione); troppo basso = rumore di fondo.\n- **Threshold (Y)**: più è alta, più l'audio deve essere forte per iniziare la registrazione. Utile per evitare di catturare silenzi o rumori ambientali prima del suono desiderato.\n\n## Esempio pratico\n\nVuoi creare un drone atmosferico. Selezioni il Gruppo D. Premi `[Sample]`. Con il microfono interno, regoli Level (X) a circa 75% (3 quadranti) e Threshold (Y) a circa 25% (1 quadrante). Tieni il Pad `[1]` e fai un \"hummmmm\" nel microfono per circa 5 secondi, poi rilasci. Il pad si accende fisso. Premi `[Main]` e poi premi il Pad `[1]` per ascoltare il campione registrato. Ora puoi andare in Sound Edit Mode per applicargli trim, envelope e time stretch come hai imparato nella lezione precedente.\n\n## Riepilogo\n\n- Tre fonti di campionamento: microfono (mono), Line In (stereo/mono) e Resampling (da pattern interni)\n- Flusso base: `[Sample]` → regola Level (X) e Threshold (Y) → tieni un pad per registrare\n- Hands-Free: `[Shift]` + `[Pad]` per armare, `[Sample]` per fermare\n- Resampling per catturare pattern ed effetti interni, anche per durate specifiche\n- Chop Mode per tagliare un campione in parti e distribuirle sui pad\n- Il campione finisce nel primo slot libero della libreria e può essere sovrascritto\n\n## Metti in pratica\n\nCollega uno smartphone o un lettore audio al Line In del KOII. Premi `[Sample]`, seleziona IN Stereo con `[+]/[-]`. Regola Level e Threshold. Tieni un pad vuoto mentre riproduci audio dallo smartphone, poi rilascia. Premi il pad per ascoltare il risultato. Prova ora il resampling: crea un pattern semplice, premi `[Sample]`, seleziona RSP Stereo, attiva Hands-Free su un pad vuoto, premi `[Play]`.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 2086,
+        "riga_fine": 2286
+      },
+      "obiettivi_apprendimento": [
+        "Descrivere le tre fonti di campionamento del KOII",
+        "Registrare un campione dal microfono interno e dal Line In",
+        "Utilizzare il resampling per catturare pattern ed effetti interni",
+        "Applicare il chopping per suddividere un campione sui pad",
+        "Regolare livello e soglia per una registrazione ottimale"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_007",
+      "ordine": 8,
+      "tipo": "lezione",
+      "argomento": "Pattern e Sequenziamento: Live e Step Recording",
+      "sintesi_breve": "## Introduzione\n\nOra che sai caricare campioni, modificarli e registrare audio, è il momento di metterli in sequenza. Il cuore del KOII è la creazione di **pattern**: sequenze ritmiche e melodiche costruite con i suoni assegnati ai pad. Il KOII offre due metodi di registrazione m",
+      "contenuto": "## Introduzione\n\nOra che sai caricare campioni, modificarli e registrare audio, è il momento di metterli in sequenza. Il cuore del KOII è la creazione di **pattern**: sequenze ritmiche e melodiche costruite con i suoni assegnati ai pad. Il KOII offre due metodi di registrazione molto diversi: la **Live Recording** (registrazione dal vivo, performativa) e la **Step Recording** (programmazione passo-passo, precisa). Comprendere entrambi ti permette di scegliere l'approccio giusto per ogni situazione, o di combinarli per ottenere il meglio da ciascuno.\n\n## Concetti chiave\n\n### Pattern e sequenze: cosa sono\n\nUn **pattern** è una raccolta di note, parametri e automazioni che costituisce un loop ritmico o melodico. Ogni gruppo (A, B, C, D) ha fino a 99 pattern. I pattern vengono creati tramite **sequenziamento**, che può essere eseguito in due modalità.\n\nLa struttura del pattern si basa su una **griglia temporale**: la risoluzione è determinata dal **note interval** (es. 1/8, 1/16, 1/32) e dalla **lunghezza** in battute (da 1 a 99 bar). La risoluzione più alta offre più precisione ma richiede più passaggi.\n\n### Live Recording (Registrazione dal vivo)\n\nLa registrazione dal vivo è il metodo più immediato e musicale. Si suonano i pad in tempo reale mentre il sequencer scorre, e tutto viene catturato.\n\n**Come avviarla:**\n- **Con count-in**: premi `[Record]` + `[Play]`. Dopo 4 battute di conteggio, inizia la registrazione.\n- **Immediata**: tieni `[Record]` + premi `[Play]`. La registrazione parte subito.\n- **Arming**: premi `[Record]` per armare, poi premi un `[Pad]` per innescare l'avvio.\n\nDurante la registrazione, il pattern loopa e puoi aggiungere elementi su ogni ciclo. Puoi anche registrare **automazioni** muovendo il fader mentre tieni `[Record]`.\n\nUn trucco utile: se non sei sicuro del tempo, rallenta il BPM prima di registrare, poi riportalo al valore originale.\n\n### Step Recording (Programmazione a passi)\n\nLo step recording è più lento ma molto più preciso. Il sequencer è **fermo** e inserisci le note una per una su una griglia.\n\n**Come procedere:**\n1. Ferma il sequencer con `[Play]`.\n2. Premi `[Timing]` per impostare la risoluzione (es. 1/16) con la manopola (X).\n3. Usa `[-]` e `[+]` per navigare tra gli step.\n4. Tieni `[Record]` + premi un `[Pad]` per inserire una nota in quella posizione.\n5. Per cancellare una nota: tieni `[Erase]` + premi il `[Pad]` nella posizione desiderata.\n6. Per registrare automazioni: tieni `[Record]` + muovi il `{Fader}` su uno step specifico.\n\n**Modalità Quantize vs Free**: in modalità Quantize le note sono agganciate alla griglia; in modalità Free puoi posizionarle fuori griglia e regolarle in tick con `[Shift]` + `[Pad]` + `[-]`/`[+]`.\n\n### Gestione dei pattern\n\nOltre alla registrazione, puoi gestire i pattern con queste operazioni chiave in Main Mode:\n\n- **Cambiare pattern**: tieni `[Gruppo]` + premi i pad numerici (es. A + 2-1 = A.21) oppure `[Gruppo]` + `[+]`/`[-]`.\n- **Cancellare pattern**: tieni `[Erase]` + tieni `[Gruppo]`. Il display mostra \"PTN\" poi \"DEL\".\n- **Copiare pattern**: tieni `[Shift]` + premi `[C]` (due volte per pattern, una per barra).\n- **Incollare pattern**: tieni `[Shift]` + premi `[D]`.\n- **Duplicare lunghezza**: durante l'arm, tieni `[Shift]` + `[+]` (raddoppia) o `[-]` (dimezza).\n\n### Time Signature e Swing\n\nLa **time signature** (es. 4/4, 3/4, 6/8) si imposta da `[Main]` + `[Tempo]`, ruotando (X) per il numeratore e (Y) per il denominatore. Lo **Swing** (50-75) aggiunge una sensazione shufflata e umana, ed è disponibile solo sui note interval 1/8 e 1/16.\n\n## Esempio pratico\n\nVuoi costruire un pattern di batteria per il Gruppo A. Inizi con la **live recording**: imposti BPM a 90, armi `[Record]` + `[Play]`, suoni il kick sui tempi 1 e 3, il rullante su 2 e 4, e i hi-hat in ottavi. Dopo qualche giro, fermi tutto. Il pattern è registrato ma il rullante è leggermente fuori tempo.\n\nPassi allo **step recording** per correggere: selezioni lo step del rullante con `[-]`/`[+]`, tieni `[Erase]` + premi il pad del rullante per cancellare la nota. Poi navighi allo step giusto e tieni `[Record]` + premi il pad del rullante per reinserirlo al posto esatto. Infine aggiungi un accento di piatto con un colpo secco su uno step vuoto. Ora hai un pattern pulito e preciso.\n\n## Riepilogo\n\n- La **Live Recording** è veloce, performativa e ideale per catturare idee; la **Step Recording** è precisa e adatta per editing chirurgico\n- La risoluzione temporale (note interval) definisce la granularità della griglia\n- Quantize aggancia le note alla griglia, Free le lascia nella posizione esatta suonata\n- I pattern si gestiscono in Main Mode: cambio, copia, incolla, cancellazione e duplicazione\n- Time signature e Swing aggiungono varietà ritmica ai pattern\n\n## Metti in pratica\n\nCrea un nuovo pattern nel Gruppo B con un campione di basso. Registralo in live recording suonando una linea semplice di 2 battute. Poi passa allo step recording e sposta una nota fuori griglia in modalità Free. Ascolta la differenza ritmica.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 2394,
+        "riga_fine": 2636
+      },
+      "obiettivi_apprendimento": [
+        "Distinguere tra Live Recording e Step Recording e scegliere l'approccio appropriato",
+        "Registrare un pattern in Live Recording con e senza count-in",
+        "Inserire, cancellare e modificare note in Step Recording",
+        "Gestire pattern tramite copia, incolla, cancellazione e duplicazione della lunghezza",
+        "Impostare time signature, swing e risoluzione temporale"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [
+        "mod_004",
+        "mod_006"
+      ],
+      "domande": []
+    },
+    {
+      "id": "mod_008",
+      "ordine": 9,
+      "tipo": "lezione",
+      "argomento": "Scene, Commit e Song Mode",
+      "sintesi_breve": "## Introduzione\n\nNei moduli precedenti hai imparato a creare singoli pattern per ogni gruppo. Ora è il momento di alzare lo sguardo e vedere come si organizza un brano completo. Il KOII usa due livelli di aggregazione: le **Scene** (combinazioni di pattern) e la **Song Mode** (se",
+      "contenuto": "## Introduzione\n\nNei moduli precedenti hai imparato a creare singoli pattern per ogni gruppo. Ora è il momento di alzare lo sguardo e vedere come si organizza un brano completo. Il KOII usa due livelli di aggregazione: le **Scene** (combinazioni di pattern) e la **Song Mode** (sequenza di scene). A fare da ponte tra pattern e scene c'è l'operazione di **Commit**, che replica lo stato corrente in una nuova scena. Questo flusso è ciò che trasforma una manciata di loop in una composizione strutturata con intro, strofe, ritornelli e outro.\n\n## Concetti chiave\n\n### Cosa sono le Scene\n\nUna **scena** è un contenitore che organizza i pattern attivi dei quattro gruppi (A, B, C, D) in un'unica configurazione. Pensala come una \"fotografia\" del tuo arrangiamento in un dato momento: la scena S.01 potrebbe contenere A.01, B.01, C.01, D.01, mentre la S.02 ha A.02 (kick + hi-hat), B.02 (basso diverso), C.01 invariato, D.03 (nuovo tappeto sonoro).\n\n**Caratteristiche fondamentali:**\n- Fino a **99 scene** per progetto\n- La scena **S.01 esiste sempre** per default\n- Le scene si suonano **manualmente**: non c'è chaining automatico sequenziale. Devi cambiarle tu durante l'esecuzione\n- Quando modifichi un pattern che è usato in più scene, la modifica si riflette **in tutte le scene** che lo utilizzano\n\n### Commit: duplicare una scena\n\nIl **Commit** è l'operazione che crea una nuova scena a partire da quella attiva. Quando esegui Commit:\n\n1. I pattern della scena attuale vengono copiati nei successivi slot disponibili (es. A.01 → A.02, B.01 → B.02)\n2. Viene creata una nuova scena (S.02, S.03, ecc.)\n3. La nuova scena diventa automaticamente la scena attiva\n\n**Attenzione ai pattern numerati**: il Commit copia i pattern nei prossimi slot numerici disponibili. Se A.01 viene usato in S.01, dopo il Commit avrai A.02 (copia) in S.02. È buona pratica tenere traccia della numerazione per non creare confusione.\n\n### Creare e gestire le Scene\n\n- **Visualizzare la scena attiva**: tieni `[Main]` — il display mostra \"S.01\"\n- **Cambiare scena**: tieni `[Main]` + `[-]`/`[+]` oppure tieni `[Main]` + premi i pad numerici\n- **Creare una nuova scena (Commit)**: tieni `[Shift]` + tieni `[Commit]`\n- **Cancellare una scena**: tieni `[Erase]` + tieni `[Main]`. Il display flasha \"SCN\" poi \"DEL\". Le scene successive vengono rinominate per chiudere il buco (es. se cancelli S.02 e S.03 esiste, S.03 diventa S.02)\n\n### Song Mode: l'arrangiamento completo\n\nLa **Song Mode** è l'evoluzione finale: una sequenza lineare di scene che si susseguono automaticamente, formando un brano completo. Ogni progetto ha una song.\n\n**Struttura della Song:**\n- La song è composta da slot chiamati **L.01, L.02, ..., L.99** (fino a 99 slot)\n- Ogni slot può contenere **una scena**\n- Una scena può essere usata in più slot (es. S.01 in L.01 e L.04)\n\n**Flusso di lavoro consigliato:** crea prima tutte le scene (intro, strofa, ritornello, ponte, outro), poi assembla la song come ultimo passo della produzione.\n\n### Operazioni in Song Mode\n\n1. **Entrare in Song Mode**: tieni `[Main]` + premi `[Enter]` (pad). Il display mostra \"L.01\"\n2. **Aggiungere slot**: tieni `[Shift]` + premi `[A]` per ogni slot da aggiungere\n3. **Navigare tra gli slot**: usa `[-]` e `[+]`\n4. **Assegnare una scena a uno slot**: tieni `[Shift]` + `[-]`/`[+]` per scorrere le scene disponibili\n5. **Tagliare uno slot**: tieni `[Shift]` + premi `[C]`\n6. **Inserire uno slot**: tieni `[Shift]` + premi `[D]`\n7. **Suonare la song**: tieni `[Main]` + premi `[Play]` (parte dall'inizio), oppure premi `[Play]` dall'editor (parte dallo slot selezionato)\n\nMentre la song suona, l'indicatore **X Level** mostra l'avanzamento dell'intera song, mentre **Y Level** mostra l'avanzamento della scena corrente.\n\n## Esempio pratico\n\nHai creato tre scene: S.01 (intro con kick e hi-hat), S.02 (strofa con basso e batteria completa), S.03 (ritornello con tutti gli strumenti più un lead). Ora vuoi costruire una canzone: Intro (S.01) → Strofa (S.02) → Ritornello (S.03) → Strofa (S.02) → Ritornello (S.03) → Outro (S.01).\n\nEntri in Song Mode (`[Main]` + `[Enter]`). Aggiungi 6 slot con `[Shift]` + `[A]` ripetuto. Assegni a ogni slot la scena corrispondente navigando con `[Shift]` + `[-]`/`[+]`. Ora premi `[Main]` + `[Play]` e la song parte dall'inizio. Durante l'esecuzione, puoi osservare l'avanzamento negli indicatori X/Y Level.\n\n## Riepilogo\n\n- Le **Scene** raggruppano i pattern dei 4 gruppi in configurazioni per sezioni di brano (fino a 99)\n- Il **Commit** duplica la scena attiva nella successiva, copiando i pattern nei nuovi slot\n- Le scene si selezionano e cambiano manualmente; non c'è riproduzione automatica in sequenza\n- La **Song Mode** organizza le scene in una sequenza lineare (fino a 99 slot L.01–L.99)\n- La song si crea come ultimo passo: prima sviluppa scene e pattern, poi assembla\n\n## Metti in pratica\n\nCrea tre pattern brevi (A.01 batteria, B.01 basso, C.01 accordi). Con il Commit, genera S.02 e modifica il pattern del basso. Poi entra in Song Mode e costruisci una mini-canzone di 4 slot alternando S.01 e S.02. Premi Play e ascolta il risultato.",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 3087,
+        "riga_fine": 3265
+      },
+      "obiettivi_apprendimento": [
+        "Spiegare il concetto di scena e il suo ruolo nell'arrangiamento",
+        "Eseguire l'operazione di Commit per creare nuove scene",
+        "Creare, selezionare, cambiare e cancellare scene",
+        "Costruire una canzone in Song Mode assegnando scene agli slot",
+        "Riconoscere gli indicatori di avanzamento X Level e Y Level durante la riproduzione"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [
+        "mod_007"
+      ],
+      "domande": []
+    },
+    {
+      "id": "quiz_002",
+      "ordine": 10,
+      "tipo": "quiz",
+      "argomento": "Verifica: Pattern, Scene e Song Mode",
+      "sintesi_breve": "Quiz di verifica dopo mod_008",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/ko2.md",
+        "riga_inizio": 3087,
+        "riga_fine": 3265
+      },
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 6,
+      "prerequisiti": [
+        "mod_008"
+      ],
+      "domande": [
+        {
+          "testo": "Qual è la differenza principale tra Live Recording e Step Recording sul KOII?",
+          "opzioni": [
+            "La Live Recording registra solo batteria, la Step Recording solo melodie",
+            "La Live Recording registra mentre il sequencer suona (dal vivo), la Step Recording programma note una per una a sequencer fermo",
+            "La Live Recording usa il microfono interno, la Step Recording usa l'ingresso linea",
+            "Non c'è differenza, sono termini intercambiabili"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "La Live Recording cattura l'esecuzione in tempo reale mentre il sequencer scorre. La Step Recording inserisce note su una griglia con il sequencer fermo, offrendo maggiore precisione."
+        },
+        {
+          "testo": "Cosa fa l'operazione di Commit sul KOII?",
+          "opzioni": [
+            "Salva il progetto sulla memoria interna",
+            "Cancella tutti i pattern del gruppo selezionato",
+            "Duplica la scena attiva in una nuova scena, copiando i pattern negli slot successivi",
+            "Invia i dati MIDI al computer collegato via USB"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "Il Commit replica la scena attuale nella nuova scena, copiando i pattern nei prossimi slot numerici disponibili. La nuova scena diventa automaticamente quella attiva."
+        },
+        {
+          "testo": "Cosa succede se modifichi un pattern che è usato in più scene?",
+          "opzioni": [
+            "La modifica si applica solo alla scena attiva",
+            "Il KOII impedisce la modifica per non alterare le altre scene",
+            "La modifica si riflette in tutte le scene che usano quel pattern",
+            "Viene automaticamente creato un nuovo pattern separato"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "I pattern sono risorse condivise: se Pattern A.05 è usato in 3 scene, modificarlo aggiorna tutte e 3 le scene. Ecco perché conviene usare il Commit per creare varianti."
+        },
+        {
+          "testo": "Come si avvia la riproduzione di una song dall'inizio in Song Mode?",
+          "opzioni": [
+            "Si preme [Play] dall'editor song",
+            "Si tiene [Main] + si preme [Play]",
+            "Si tiene [Shift] + [Play] in qualsiasi modo",
+            "Si preme [Play] due volte"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Da qualsiasi modalità, tieni premuto [Main] + premi [Play] per far partire la song dall'inizio. Se premi [Play] dall'editor, parte invece dallo slot selezionato."
+        }
+      ]
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-05-25T12:20:12Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/ko2",
+    "agente": "microlearning_planning_agent"
+  }
+}

@@ -1,0 +1,7502 @@
+{
+  "source_id": "agentic_design_patterns",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/agentic_design_patterns_clean.md",
+  "unita_tempo_totale_minuti": 2874,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "_A Hands-On Guide to Building Intelligent Systems[1] , Antonio Gulli_",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Acknowledgment",
+      "riga_inizio": 97,
+      "riga_fine": 140,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_001"
+      ]
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "Foreword",
+      "riga_inizio": 141,
+      "riga_fine": 158,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_002"
+      ]
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "A Thought Leader's Perspective: Power and Responsibility",
+      "riga_inizio": 159,
+      "riga_fine": 190,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_003"
+      ]
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "Preface",
+      "riga_inizio": 191,
+      "riga_fine": 200,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_004"
+      ]
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "What are Agentic Systems?",
+      "riga_inizio": 201,
+      "riga_fine": 214,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_005"
+      ]
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "Why Patterns Matter in Agent Development",
+      "riga_inizio": 215,
+      "riga_fine": 226,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_006"
+      ]
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "Overview of the Book and How to Use It",
+      "riga_inizio": 227,
+      "riga_fine": 248,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_007"
+      ]
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "Introduction to the Frameworks Used",
+      "riga_inizio": 249,
+      "riga_fine": 258,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_008"
+      ]
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "What makes an AI system an Agent?",
+      "riga_inizio": 259,
+      "riga_fine": 286,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_009"
+      ]
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "Level 0: The Core Reasoning Engine",
+      "riga_inizio": 293,
+      "riga_fine": 296,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_010"
+      ]
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "Level 1: The Connected Problem-Solver",
+      "riga_inizio": 297,
+      "riga_fine": 302,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_011"
+      ]
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "Level 2: The Strategic Problem-Solver",
+      "riga_inizio": 303,
+      "riga_fine": 324,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_012"
+      ]
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "Level 3: The Rise of Collaborative Multi-Agent Systems",
+      "riga_inizio": 325,
+      "riga_fine": 334,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_013"
+      ]
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "Hypothesis 1: The Emergence of the Generalist Agent",
+      "riga_inizio": 339,
+      "riga_fine": 342,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_014"
+      ]
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "Hypothesis 2: Deep Personalization and Proactive Goal Discovery",
+      "riga_inizio": 343,
+      "riga_fine": 356,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_015"
+      ]
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "Hypothesis 3: Embodiment and Physical World Interaction",
+      "riga_inizio": 357,
+      "riga_fine": 364,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_016"
+      ]
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "Hypothesis 4: The Agent-Driven Economy",
+      "riga_inizio": 365,
+      "riga_fine": 368,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_017"
+      ]
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": "Hypothesis 5:  The Goal-Driven, Metamorphic Multi-Agent System",
+      "riga_inizio": 369,
+      "riga_fine": 384,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_018"
+      ]
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_019"
+      ]
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "Prompt Chaining Pattern Overview",
+      "riga_inizio": 403,
+      "riga_fine": 455,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_020"
+      ]
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_021"
+      ]
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_022"
+      ]
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "For better security, load environment variables from a .env file",
+      "riga_inizio": 587,
+      "riga_fine": 687,
+      "carico_cognitivo": 0.4,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_023"
+      ]
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "load_dotenv()",
+      "riga_inizio": 594,
+      "riga_fine": 694,
+      "carico_cognitivo": 0.43,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_024"
+      ]
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "Make sure your OPENAI_API_KEY is set in the .env file",
+      "riga_inizio": 595,
+      "riga_fine": 695,
+      "carico_cognitivo": 0.43,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_025"
+      ]
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "--- Build the Chain using LCEL ---",
+      "riga_inizio": 608,
+      "riga_fine": 708,
+      "carico_cognitivo": 0.41,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_026"
+      ]
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "Execute the chain with the input text dictionary.",
+      "riga_inizio": 624,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.82,
+      "durata_stimata_minuti": 19,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_027"
+      ]
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "Context Engineering and Prompt Engineering",
+      "riga_inizio": 636,
+      "riga_fine": 655,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_028"
+      ]
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_029"
+      ]
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_030"
+      ]
+    },
+    {
+      "id": "pt_032",
+      "ordine": 32,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_031"
+      ]
+    },
+    {
+      "id": "pt_033",
+      "ordine": 33,
+      "titolo": "Routing Pattern Overview",
+      "riga_inizio": 723,
+      "riga_fine": 766,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_032"
+      ]
+    },
+    {
+      "id": "pt_034",
+      "ordine": 34,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_033"
+      ]
+    },
+    {
+      "id": "pt_035",
+      "ordine": 35,
+      "titolo": "Hands-On Code Example (LangChain)",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_034"
+      ]
+    },
+    {
+      "id": "pt_036",
+      "ordine": 36,
+      "titolo": "Copyright (c) 2025 Marco Fago",
+      "riga_inizio": 799,
+      "riga_fine": 899,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_035"
+      ]
+    },
+    {
+      "id": "pt_037",
+      "ordine": 37,
+      "titolo": "This code is licensed under the MIT License.",
+      "riga_inizio": 802,
+      "riga_fine": 902,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_036"
+      ]
+    },
+    {
+      "id": "pt_038",
+      "ordine": 38,
+      "titolo": "--- Configuration ---",
+      "riga_inizio": 809,
+      "riga_fine": 909,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_037"
+      ]
+    },
+    {
+      "id": "pt_039",
+      "ordine": 39,
+      "titolo": "--- Define Simulated Sub-Agent Handlers (equivalent to ADK",
+      "riga_inizio": 824,
+      "riga_fine": 843,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_038"
+      ]
+    },
+    {
+      "id": "pt_040",
+      "ordine": 40,
+      "titolo": "This chain decides which handler to delegate to.",
+      "riga_inizio": 846,
+      "riga_fine": 860,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_039"
+      ]
+    },
+    {
+      "id": "pt_041",
+      "ordine": 41,
+      "titolo": "Use RunnableBranch to route based on the router chain's output.",
+      "riga_inizio": 868,
+      "riga_fine": 968,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_040"
+      ]
+    },
+    {
+      "id": "pt_042",
+      "ordine": 42,
+      "titolo": "Create the RunnableBranch. It takes the output of the router chain",
+      "riga_inizio": 878,
+      "riga_fine": 978,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_041"
+      ]
+    },
+    {
+      "id": "pt_043",
+      "ordine": 43,
+      "titolo": "--- Example Usage ---",
+      "riga_inizio": 899,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_042"
+      ]
+    },
+    {
+      "id": "pt_044",
+      "ordine": 44,
+      "titolo": "Hands-On Code Example (Google ADK)",
+      "riga_inizio": 934,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_043"
+      ]
+    },
+    {
+      "id": "pt_045",
+      "ordine": 45,
+      "titolo": "Copyright (c) 2025 Marco Fago",
+      "riga_inizio": 799,
+      "riga_fine": 899,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_044"
+      ]
+    },
+    {
+      "id": "pt_046",
+      "ordine": 46,
+      "titolo": "This code is licensed under the MIT License.",
+      "riga_inizio": 802,
+      "riga_fine": 902,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_045"
+      ]
+    },
+    {
+      "id": "pt_047",
+      "ordine": 47,
+      "titolo": "--- Define Tool Functions ---",
+      "riga_inizio": 956,
+      "riga_fine": 1056,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_046"
+      ]
+    },
+    {
+      "id": "pt_048",
+      "ordine": 48,
+      "titolo": "These functions simulate the actions of the specialist agents.",
+      "riga_inizio": 957,
+      "riga_fine": 989,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_047"
+      ]
+    },
+    {
+      "id": "pt_049",
+      "ordine": 49,
+      "titolo": "Define the parent agent with explicit delegation instructions",
+      "riga_inizio": 1008,
+      "riga_fine": 1028,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_048"
+      ]
+    },
+    {
+      "id": "pt_050",
+      "ordine": 50,
+      "titolo": "Should go to Info",
+      "riga_inizio": 1096,
+      "riga_fine": 1310,
+      "carico_cognitivo": 0.64,
+      "durata_stimata_minuti": 17,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_049"
+      ]
+    },
+    {
+      "id": "pt_051",
+      "ordine": 51,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_050"
+      ]
+    },
+    {
+      "id": "pt_052",
+      "ordine": 52,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_051"
+      ]
+    },
+    {
+      "id": "pt_053",
+      "ordine": 53,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_052"
+      ]
+    },
+    {
+      "id": "pt_054",
+      "ordine": 54,
+      "titolo": "Parallelization Pattern Overview",
+      "riga_inizio": 1166,
+      "riga_fine": 1201,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_053"
+      ]
+    },
+    {
+      "id": "pt_055",
+      "ordine": 55,
+      "titolo": "Fig.1. Example of parallelization with sub-agents",
+      "riga_inizio": 1202,
+      "riga_fine": 1209,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_054"
+      ]
+    },
+    {
+      "id": "pt_056",
+      "ordine": 56,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_055"
+      ]
+    },
+    {
+      "id": "pt_057",
+      "ordine": 57,
+      "titolo": "1. Information Gathering and Research:",
+      "riga_inizio": 1214,
+      "riga_fine": 1243,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_056"
+      ]
+    },
+    {
+      "id": "pt_058",
+      "ordine": 58,
+      "titolo": "4. Content Generation with Multiple Components:",
+      "riga_inizio": 1244,
+      "riga_fine": 1287,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_057"
+      ]
+    },
+    {
+      "id": "pt_059",
+      "ordine": 59,
+      "titolo": "Hands-On Code Example (LangChain)",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_058"
+      ]
+    },
+    {
+      "id": "pt_060",
+      "ordine": 60,
+      "titolo": "--- Configuration ---",
+      "riga_inizio": 809,
+      "riga_fine": 909,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_059"
+      ]
+    },
+    {
+      "id": "pt_061",
+      "ordine": 61,
+      "titolo": "--- Define Independent Chains ---",
+      "riga_inizio": 1320,
+      "riga_fine": 1420,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_060"
+      ]
+    },
+    {
+      "id": "pt_062",
+      "ordine": 62,
+      "titolo": "These three chains represent distinct tasks that can be executed in",
+      "riga_inizio": 1321,
+      "riga_fine": 1353,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_061"
+      ]
+    },
+    {
+      "id": "pt_063",
+      "ordine": 63,
+      "titolo": "--- Build the Parallel + Synthesis Chain ---",
+      "riga_inizio": 1354,
+      "riga_fine": 1454,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_062"
+      ]
+    },
+    {
+      "id": "pt_064",
+      "ordine": 64,
+      "titolo": "3. Construct the full chain by piping the parallel results directly",
+      "riga_inizio": 1377,
+      "riga_fine": 1477,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_063"
+      ]
+    },
+    {
+      "id": "pt_065",
+      "ordine": 65,
+      "titolo": "Hands-On Code Example (Google ADK)",
+      "riga_inizio": 934,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_064"
+      ]
+    },
+    {
+      "id": "pt_066",
+      "ordine": 66,
+      "titolo": "--- 1. Define Researcher Sub-Agents (to run in parallel) ---",
+      "riga_inizio": 1442,
+      "riga_fine": 1542,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_065"
+      ]
+    },
+    {
+      "id": "pt_067",
+      "ordine": 67,
+      "titolo": "--- 2. Create the ParallelAgent (Runs researchers concurrently) ---",
+      "riga_inizio": 1496,
+      "riga_fine": 1596,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_066"
+      ]
+    },
+    {
+      "id": "pt_068",
+      "ordine": 68,
+      "titolo": "and synthesizes them into a single, structured response with",
+      "riga_inizio": 1512,
+      "riga_fine": 1565,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_067"
+      ]
+    },
+    {
+      "id": "pt_069",
+      "ordine": 69,
+      "titolo": "Summary of Recent Sustainable Technology Advancements",
+      "riga_inizio": 1544,
+      "riga_fine": 1565,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_068"
+      ]
+    },
+    {
+      "id": "pt_070",
+      "ordine": 70,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_069"
+      ]
+    },
+    {
+      "id": "pt_071",
+      "ordine": 71,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_070"
+      ]
+    },
+    {
+      "id": "pt_072",
+      "ordine": 72,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_071"
+      ]
+    },
+    {
+      "id": "pt_073",
+      "ordine": 73,
+      "titolo": "Reflection Pattern Overview",
+      "riga_inizio": 1671,
+      "riga_fine": 1708,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_072"
+      ]
+    },
+    {
+      "id": "pt_074",
+      "ordine": 74,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_073"
+      ]
+    },
+    {
+      "id": "pt_075",
+      "ordine": 75,
+      "titolo": "6. Conversational Agents:",
+      "riga_inizio": 1765,
+      "riga_fine": 1778,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_074"
+      ]
+    },
+    {
+      "id": "pt_076",
+      "ordine": 76,
+      "titolo": "Hands-On Code Example (LangChain)",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_075"
+      ]
+    },
+    {
+      "id": "pt_077",
+      "ordine": 77,
+      "titolo": "--- Configuration ---",
+      "riga_inizio": 809,
+      "riga_fine": 909,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_076"
+      ]
+    },
+    {
+      "id": "pt_078",
+      "ordine": 78,
+      "titolo": "Initialize the Chat LLM. We use gpt-4o for better reasoning.",
+      "riga_inizio": 1810,
+      "riga_fine": 1910,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_077"
+      ]
+    },
+    {
+      "id": "pt_079",
+      "ordine": 79,
+      "titolo": "The second agent critiques the draft from the first agent.",
+      "riga_inizio": 1948,
+      "riga_fine": 1969,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_078"
+      ]
+    },
+    {
+      "id": "pt_080",
+      "ordine": 80,
+      "titolo": "Execution Flow:",
+      "riga_inizio": 1975,
+      "riga_fine": 2075,
+      "carico_cognitivo": 0.44,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_079"
+      ]
+    },
+    {
+      "id": "pt_081",
+      "ordine": 81,
+      "titolo": "1. generator runs -> saves its paragraph to state['draft_text'].",
+      "riga_inizio": 1976,
+      "riga_fine": 2076,
+      "carico_cognitivo": 0.48,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_080"
+      ]
+    },
+    {
+      "id": "pt_082",
+      "ordine": 82,
+      "titolo": "2. reviewer runs -> reads state['draft_text'] and saves its",
+      "riga_inizio": 1977,
+      "riga_fine": 2193,
+      "carico_cognitivo": 0.91,
+      "durata_stimata_minuti": 20,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_081"
+      ]
+    },
+    {
+      "id": "pt_083",
+      "ordine": 83,
+      "titolo": "At Glance",
+      "riga_inizio": 1987,
+      "riga_fine": 1994,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_082"
+      ]
+    },
+    {
+      "id": "pt_084",
+      "ordine": 84,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_083"
+      ]
+    },
+    {
+      "id": "pt_085",
+      "ordine": 85,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_084"
+      ]
+    },
+    {
+      "id": "pt_086",
+      "ordine": 86,
+      "titolo": "Chapter 5: Tool Use (Function Calling) Tool Use Pattern Overview",
+      "riga_inizio": 2050,
+      "riga_fine": 2081,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_085"
+      ]
+    },
+    {
+      "id": "pt_087",
+      "ordine": 87,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_086"
+      ]
+    },
+    {
+      "id": "pt_088",
+      "ordine": 88,
+      "titolo": "6. Controlling Other Systems or Devices:",
+      "riga_inizio": 2138,
+      "riga_fine": 2155,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_087"
+      ]
+    },
+    {
+      "id": "pt_089",
+      "ordine": 89,
+      "titolo": "Hands-On Code Example (LangChain)",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_088"
+      ]
+    },
+    {
+      "id": "pt_090",
+      "ordine": 90,
+      "titolo": "--- Best Practice: Configure Logging ---",
+      "riga_inizio": 2204,
+      "riga_fine": 2304,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_089"
+      ]
+    },
+    {
+      "id": "pt_091",
+      "ordine": 91,
+      "titolo": "--- Set up your API Key ---",
+      "riga_inizio": 2209,
+      "riga_fine": 2309,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_090"
+      ]
+    },
+    {
+      "id": "pt_092",
+      "ordine": 92,
+      "titolo": "os.environ[\"OPENAI_API_KEY\"] = \"YOUR_API_KEY\"",
+      "riga_inizio": 2216,
+      "riga_fine": 2316,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_091"
+      ]
+    },
+    {
+      "id": "pt_093",
+      "ordine": 93,
+      "titolo": "os.environ[\"OPENAI_MODEL_NAME\"] = \"gpt-4o\"",
+      "riga_inizio": 2217,
+      "riga_fine": 2317,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_092"
+      ]
+    },
+    {
+      "id": "pt_094",
+      "ordine": 94,
+      "titolo": "--- 1. Refactored Tool: Returns Clean Data ---",
+      "riga_inizio": 2218,
+      "riga_fine": 2318,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_093"
+      ]
+    },
+    {
+      "id": "pt_095",
+      "ordine": 95,
+      "titolo": "--- 2. Define the Agent ---",
+      "riga_inizio": 2251,
+      "riga_fine": 2351,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_094"
+      ]
+    },
+    {
+      "id": "pt_096",
+      "ordine": 96,
+      "titolo": "--- 3. Refined Task: Clearer Instructions and Error Handling ---",
+      "riga_inizio": 2267,
+      "riga_fine": 2367,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_095"
+      ]
+    },
+    {
+      "id": "pt_097",
+      "ordine": 97,
+      "titolo": "to both successful data retrieval and potential errors.",
+      "riga_inizio": 2270,
+      "riga_fine": 2286,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_096"
+      ]
+    },
+    {
+      "id": "pt_098",
+      "ordine": 98,
+      "titolo": "--- 4. Formulate the Crew ---",
+      "riga_inizio": 2287,
+      "riga_fine": 2387,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_097"
+      ]
+    },
+    {
+      "id": "pt_099",
+      "ordine": 99,
+      "titolo": "Hands-on code (Google ADK)",
+      "riga_inizio": 2327,
+      "riga_fine": 2340,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_098"
+      ]
+    },
+    {
+      "id": "pt_100",
+      "ordine": 100,
+      "titolo": "--- Configuration ---",
+      "riga_inizio": 809,
+      "riga_fine": 909,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_099"
+      ]
+    },
+    {
+      "id": "pt_101",
+      "ordine": 101,
+      "titolo": "For example:",
+      "riga_inizio": 2517,
+      "riga_fine": 2617,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_100"
+      ]
+    },
+    {
+      "id": "pt_102",
+      "ordine": 102,
+      "titolo": "os.environ[\"GOOGLE_API_KEY\"] = \"YOUR_API_KEY\"",
+      "riga_inizio": 2518,
+      "riga_fine": 2618,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_101"
+      ]
+    },
+    {
+      "id": "pt_103",
+      "ordine": 103,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_102"
+      ]
+    },
+    {
+      "id": "pt_104",
+      "ordine": 104,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_103"
+      ]
+    },
+    {
+      "id": "pt_105",
+      "ordine": 105,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_104"
+      ]
+    },
+    {
+      "id": "pt_106",
+      "ordine": 106,
+      "titolo": "Planning Pattern Overview",
+      "riga_inizio": 2678,
+      "riga_fine": 2685,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_105"
+      ]
+    },
+    {
+      "id": "pt_107",
+      "ordine": 107,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_106"
+      ]
+    },
+    {
+      "id": "pt_108",
+      "ordine": 108,
+      "titolo": "3. Define a task with a more structured and specific expected",
+      "riga_inizio": 2739,
+      "riga_fine": 2758,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_107"
+      ]
+    },
+    {
+      "id": "pt_109",
+      "ordine": 109,
+      "titolo": "Execute the task",
+      "riga_inizio": 2770,
+      "riga_fine": 2836,
+      "carico_cognitivo": 0.39,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_108"
+      ]
+    },
+    {
+      "id": "pt_110",
+      "ordine": 110,
+      "titolo": "Google DeepResearch",
+      "riga_inizio": 2779,
+      "riga_fine": 2802,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_109"
+      ]
+    },
+    {
+      "id": "pt_111",
+      "ordine": 111,
+      "titolo": "Fig. 2: An example of Deep Research plan being executed, resulting in Google Search being used as a tool to search various web sources.",
+      "riga_inizio": 2803,
+      "riga_fine": 2812,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_110"
+      ]
+    },
+    {
+      "id": "pt_112",
+      "ordine": 112,
+      "titolo": "Fig. 3: Final output generated by the Google Deep Research agent, analyzing on our behalf sources obtained using Google Search as a tool.",
+      "riga_inizio": 2813,
+      "riga_fine": 2818,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_111"
+      ]
+    },
+    {
+      "id": "pt_113",
+      "ordine": 113,
+      "titolo": "OpenAI Deep Research API",
+      "riga_inizio": 2819,
+      "riga_fine": 2836,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_112"
+      ]
+    },
+    {
+      "id": "pt_114",
+      "ordine": 114,
+      "titolo": "3. Code Execution: Any code run by the agent using the code",
+      "riga_inizio": 2916,
+      "riga_fine": 3094,
+      "carico_cognitivo": 0.84,
+      "durata_stimata_minuti": 20,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_113"
+      ]
+    },
+    {
+      "id": "pt_115",
+      "ordine": 115,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_114"
+      ]
+    },
+    {
+      "id": "pt_116",
+      "ordine": 116,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_115"
+      ]
+    },
+    {
+      "id": "pt_117",
+      "ordine": 117,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_116"
+      ]
+    },
+    {
+      "id": "pt_118",
+      "ordine": 118,
+      "titolo": "Chapter 7: Multi-Agent Collaboration",
+      "riga_inizio": 2979,
+      "riga_fine": 2986,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_117"
+      ]
+    },
+    {
+      "id": "pt_119",
+      "ordine": 119,
+      "titolo": "Multi-Agent Collaboration Pattern Overview",
+      "riga_inizio": 2987,
+      "riga_fine": 3016,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_118"
+      ]
+    },
+    {
+      "id": "pt_120",
+      "ordine": 120,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_119"
+      ]
+    },
+    {
+      "id": "pt_121",
+      "ordine": 121,
+      "titolo": "Multi-Agent Collaboration: Exploring Interrelationships and Communication Structures",
+      "riga_inizio": 3041,
+      "riga_fine": 3070,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_120"
+      ]
+    },
+    {
+      "id": "pt_122",
+      "ordine": 122,
+      "titolo": "Hands-on Code (Google ADK)",
+      "riga_inizio": 2327,
+      "riga_fine": 2340,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_121"
+      ]
+    },
+    {
+      "id": "pt_123",
+      "ordine": 123,
+      "titolo": "Define individual agents with proper initialization",
+      "riga_inizio": 3203,
+      "riga_fine": 3303,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_122"
+      ]
+    },
+    {
+      "id": "pt_124",
+      "ordine": 124,
+      "titolo": "Create a parent agent and assign its sub-agents",
+      "riga_inizio": 3214,
+      "riga_fine": 3314,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_123"
+      ]
+    },
+    {
+      "id": "pt_125",
+      "ordine": 125,
+      "titolo": "These assertions will pass if checked after initialization.",
+      "riga_inizio": 3239,
+      "riga_fine": 3253,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_124"
+      ]
+    },
+    {
+      "id": "pt_126",
+      "ordine": 126,
+      "titolo": "This poller will now execute 'process_step'",
+      "riga_inizio": 3280,
+      "riga_fine": 3380,
+      "carico_cognitivo": 0.28,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_125"
+      ]
+    },
+    {
+      "id": "pt_127",
+      "ordine": 127,
+      "titolo": "and then 'ConditionChecker'",
+      "riga_inizio": 3281,
+      "riga_fine": 3381,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_126"
+      ]
+    },
+    {
+      "id": "pt_128",
+      "ordine": 128,
+      "titolo": "repeatedly until the status is 'completed' or 10 iterations",
+      "riga_inizio": 3282,
+      "riga_fine": 3382,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_127"
+      ]
+    },
+    {
+      "id": "pt_129",
+      "ordine": 129,
+      "titolo": "have passed.",
+      "riga_inizio": 3283,
+      "riga_fine": 3293,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_128"
+      ]
+    },
+    {
+      "id": "pt_130",
+      "ordine": 130,
+      "titolo": "This agent will use the data from the previous step.",
+      "riga_inizio": 3296,
+      "riga_fine": 3396,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_129"
+      ]
+    },
+    {
+      "id": "pt_131",
+      "ordine": 131,
+      "titolo": "When the pipeline is run with an initial input, Step1 will execute,",
+      "riga_inizio": 3307,
+      "riga_fine": 3407,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_130"
+      ]
+    },
+    {
+      "id": "pt_132",
+      "ordine": 132,
+      "titolo": "its response will be stored in session.state[\"data\"], and then",
+      "riga_inizio": 3308,
+      "riga_fine": 3408,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_131"
+      ]
+    },
+    {
+      "id": "pt_133",
+      "ordine": 133,
+      "titolo": "Step2 will execute, using the information from the state as",
+      "riga_inizio": 3309,
+      "riga_fine": 3323,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_132"
+      ]
+    },
+    {
+      "id": "pt_134",
+      "ordine": 134,
+      "titolo": "It's better to define the fetching logic as tools for the agents",
+      "riga_inizio": 3324,
+      "riga_fine": 3424,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_133"
+      ]
+    },
+    {
+      "id": "pt_135",
+      "ordine": 135,
+      "titolo": "In a real-world scenario, you would use tools.",
+      "riga_inizio": 3327,
+      "riga_fine": 3427,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_134"
+      ]
+    },
+    {
+      "id": "pt_136",
+      "ordine": 136,
+      "titolo": "Create the ParallelAgent to orchestrate the sub-agents",
+      "riga_inizio": 3345,
+      "riga_fine": 3364,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_135"
+      ]
+    },
+    {
+      "id": "pt_137",
+      "ordine": 137,
+      "titolo": "1. A simple function tool for the core capability.",
+      "riga_inizio": 3365,
+      "riga_fine": 3465,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_136"
+      ]
+    },
+    {
+      "id": "pt_138",
+      "ordine": 138,
+      "titolo": "2. Refactor the ImageGeneratorAgent into an LlmAgent.",
+      "riga_inizio": 3388,
+      "riga_fine": 3488,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_137"
+      ]
+    },
+    {
+      "id": "pt_139",
+      "ordine": 139,
+      "titolo": "It now correctly uses the input passed to it.",
+      "riga_inizio": 3389,
+      "riga_fine": 3409,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_138"
+      ]
+    },
+    {
+      "id": "pt_140",
+      "ordine": 140,
+      "titolo": "3. Wrap the corrected agent in an AgentTool.",
+      "riga_inizio": 3410,
+      "riga_fine": 3510,
+      "carico_cognitivo": 0.36,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_139"
+      ]
+    },
+    {
+      "id": "pt_141",
+      "ordine": 141,
+      "titolo": "4. The parent agent remains unchanged. Its logic was correct.",
+      "riga_inizio": 3417,
+      "riga_fine": 3536,
+      "carico_cognitivo": 0.49,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_140"
+      ]
+    },
+    {
+      "id": "pt_142",
+      "ordine": 142,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_141"
+      ]
+    },
+    {
+      "id": "pt_143",
+      "ordine": 143,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_142"
+      ]
+    },
+    {
+      "id": "pt_144",
+      "ordine": 144,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_143"
+      ]
+    },
+    {
+      "id": "pt_145",
+      "ordine": 145,
+      "titolo": "Chapter 8: Memory Management",
+      "riga_inizio": 3480,
+      "riga_fine": 3491,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_144"
+      ]
+    },
+    {
+      "id": "pt_146",
+      "ordine": 146,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_145"
+      ]
+    },
+    {
+      "id": "pt_147",
+      "ordine": 147,
+      "titolo": "Hands-On Code: Memory Management in Google Agent Developer Kit (ADK)",
+      "riga_inizio": 3512,
+      "riga_fine": 3531,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_146"
+      ]
+    },
+    {
+      "id": "pt_148",
+      "ordine": 148,
+      "titolo": "Session: Keeping Track of Each Chat",
+      "riga_inizio": 3532,
+      "riga_fine": 3536,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_147"
+      ]
+    },
+    {
+      "id": "pt_149",
+      "ordine": 149,
+      "titolo": "This is suitable for local development and testing where data",
+      "riga_inizio": 3541,
+      "riga_fine": 3641,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_148"
+      ]
+    },
+    {
+      "id": "pt_150",
+      "ordine": 150,
+      "titolo": "session_service.delete_session(app_name=REASONING_ENGINE_APP_NAME,",
+      "riga_inizio": 3631,
+      "riga_fine": 3669,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_149"
+      ]
+    },
+    {
+      "id": "pt_151",
+      "ordine": 151,
+      "titolo": "State: The Session's Scratchpad",
+      "riga_inizio": 3643,
+      "riga_fine": 3669,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_150"
+      ]
+    },
+    {
+      "id": "pt_152",
+      "ordine": 152,
+      "titolo": "--- Check Updated State ---",
+      "riga_inizio": 3707,
+      "riga_fine": 3807,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_151"
+      ]
+    },
+    {
+      "id": "pt_153",
+      "ordine": 153,
+      "titolo": "Correctly check the state *after* the runner has finished",
+      "riga_inizio": 3708,
+      "riga_fine": 3730,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_152"
+      ]
+    },
+    {
+      "id": "pt_154",
+      "ordine": 154,
+      "titolo": "--- Demonstration of Usage ---",
+      "riga_inizio": 3763,
+      "riga_fine": 3863,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_153"
+      ]
+    },
+    {
+      "id": "pt_155",
+      "ordine": 155,
+      "titolo": "Here, we simulate a direct call for demonstration purposes.",
+      "riga_inizio": 3766,
+      "riga_fine": 3866,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_154"
+      ]
+    },
+    {
+      "id": "pt_156",
+      "ordine": 156,
+      "titolo": "Expected output will show the same state change as the",
+      "riga_inizio": 3795,
+      "riga_fine": 3895,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_155"
+      ]
+    },
+    {
+      "id": "pt_157",
+      "ordine": 157,
+      "titolo": "\"Before\" case,",
+      "riga_inizio": 3796,
+      "riga_fine": 3896,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_156"
+      ]
+    },
+    {
+      "id": "pt_158",
+      "ordine": 158,
+      "titolo": "and more robust.",
+      "riga_inizio": 3803,
+      "riga_fine": 3822,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_157"
+      ]
+    },
+    {
+      "id": "pt_159",
+      "ordine": 159,
+      "titolo": "This is suitable for local development and testing where data",
+      "riga_inizio": 3541,
+      "riga_fine": 3641,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_158"
+      ]
+    },
+    {
+      "id": "pt_160",
+      "ordine": 160,
+      "titolo": "Memory content is lost when the app stops.",
+      "riga_inizio": 3835,
+      "riga_fine": 3857,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_159"
+      ]
+    },
+    {
+      "id": "pt_161",
+      "ordine": 161,
+      "titolo": "When using this service, methods like add_session_to_memory",
+      "riga_inizio": 3878,
+      "riga_fine": 3978,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_160"
+      ]
+    },
+    {
+      "id": "pt_162",
+      "ordine": 162,
+      "titolo": "and search_memory will interact with the specified Vertex AI",
+      "riga_inizio": 3879,
+      "riga_fine": 3979,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_161"
+      ]
+    },
+    {
+      "id": "pt_163",
+      "ordine": 163,
+      "titolo": "RAG Corpus.",
+      "riga_inizio": 3880,
+      "riga_fine": 3898,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_162"
+      ]
+    },
+    {
+      "id": "pt_164",
+      "ordine": 164,
+      "titolo": "Hands-on code: Memory Management in LangChain and LangGraph",
+      "riga_inizio": 3883,
+      "riga_fine": 3898,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_163"
+      ]
+    },
+    {
+      "id": "pt_165",
+      "ordine": 165,
+      "titolo": "Access the list of messages",
+      "riga_inizio": 3904,
+      "riga_fine": 3919,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_164"
+      ]
+    },
+    {
+      "id": "pt_166",
+      "ordine": 166,
+      "titolo": "2. Configure Memory",
+      "riga_inizio": 3946,
+      "riga_fine": 4046,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_165"
+      ]
+    },
+    {
+      "id": "pt_167",
+      "ordine": 167,
+      "titolo": "4. Run the Conversation",
+      "riga_inizio": 3951,
+      "riga_fine": 3977,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_166"
+      ]
+    },
+    {
+      "id": "pt_168",
+      "ordine": 168,
+      "titolo": "2. Configure Memory",
+      "riga_inizio": 3946,
+      "riga_fine": 4046,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_167"
+      ]
+    },
+    {
+      "id": "pt_169",
+      "ordine": 169,
+      "titolo": "4. Run the Conversation",
+      "riga_inizio": 3951,
+      "riga_fine": 3977,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_168"
+      ]
+    },
+    {
+      "id": "pt_170",
+      "ordine": 170,
+      "titolo": "3. Search for memories within the namespace, filtering by content",
+      "riga_inizio": 4077,
+      "riga_fine": 4177,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_169"
+      ]
+    },
+    {
+      "id": "pt_171",
+      "ordine": 171,
+      "titolo": "and sorting by vector similarity to the query.",
+      "riga_inizio": 4078,
+      "riga_fine": 4339,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_170"
+      ]
+    },
+    {
+      "id": "pt_172",
+      "ordine": 172,
+      "titolo": "Vertex Memory Bank",
+      "riga_inizio": 4092,
+      "riga_fine": 4119,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_171"
+      ]
+    },
+    {
+      "id": "pt_173",
+      "ordine": 173,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_172"
+      ]
+    },
+    {
+      "id": "pt_174",
+      "ordine": 174,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_173"
+      ]
+    },
+    {
+      "id": "pt_175",
+      "ordine": 175,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_174"
+      ]
+    },
+    {
+      "id": "pt_176",
+      "ordine": 176,
+      "titolo": "The big picture",
+      "riga_inizio": 4189,
+      "riga_fine": 4242,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_175"
+      ]
+    },
+    {
+      "id": "pt_177",
+      "ordine": 177,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_176"
+      ]
+    },
+    {
+      "id": "pt_178",
+      "ordine": 178,
+      "titolo": "Case Study: The Self-Improving Coding Agent (SICA)",
+      "riga_inizio": 4267,
+      "riga_fine": 4314,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_177"
+      ]
+    },
+    {
+      "id": "pt_179",
+      "ordine": 179,
+      "titolo": "AlphaEvolve and OpenEvolve",
+      "riga_inizio": 4315,
+      "riga_fine": 4339,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_178"
+      ]
+    },
+    {
+      "id": "pt_180",
+      "ordine": 180,
+      "titolo": "Run the evolution",
+      "riga_inizio": 4346,
+      "riga_fine": 4571,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_179"
+      ]
+    },
+    {
+      "id": "pt_181",
+      "ordine": 181,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_180"
+      ]
+    },
+    {
+      "id": "pt_182",
+      "ordine": 182,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_181"
+      ]
+    },
+    {
+      "id": "pt_183",
+      "ordine": 183,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_182"
+      ]
+    },
+    {
+      "id": "pt_184",
+      "ordine": 184,
+      "titolo": "MCP Pattern Overview",
+      "riga_inizio": 4428,
+      "riga_fine": 4439,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_183"
+      ]
+    },
+    {
+      "id": "pt_185",
+      "ordine": 185,
+      "titolo": "MCP vs. Tool Function Calling",
+      "riga_inizio": 4440,
+      "riga_fine": 4480,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_184"
+      ]
+    },
+    {
+      "id": "pt_186",
+      "ordine": 186,
+      "titolo": "Additional considerations for MCP",
+      "riga_inizio": 4481,
+      "riga_fine": 4528,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_185"
+      ]
+    },
+    {
+      "id": "pt_187",
+      "ordine": 187,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_186"
+      ]
+    },
+    {
+      "id": "pt_188",
+      "ordine": 188,
+      "titolo": "Agent Setup with MCPToolset",
+      "riga_inizio": 4563,
+      "riga_fine": 4571,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_187"
+      ]
+    },
+    {
+      "id": "pt_189",
+      "ordine": 189,
+      "titolo": "within the same directory as this agent script.",
+      "riga_inizio": 4574,
+      "riga_fine": 4674,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_188"
+      ]
+    },
+    {
+      "id": "pt_190",
+      "ordine": 190,
+      "titolo": "This ensures the agent works out-of-the-box for demonstration.",
+      "riga_inizio": 4575,
+      "riga_fine": 4675,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_189"
+      ]
+    },
+    {
+      "id": "pt_191",
+      "ordine": 191,
+      "titolo": "./adk_agent_samples/mcp_agent/__init__.py",
+      "riga_inizio": 4622,
+      "riga_fine": 4691,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_190"
+      ]
+    },
+    {
+      "id": "pt_192",
+      "ordine": 192,
+      "titolo": "Connecting the MCP Server with ADK Web",
+      "riga_inizio": 4660,
+      "riga_fine": 4678,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_191"
+      ]
+    },
+    {
+      "id": "pt_193",
+      "ordine": 193,
+      "titolo": "Creating an MCP Server with FastMCP",
+      "riga_inizio": 4679,
+      "riga_fine": 4686,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_192"
+      ]
+    },
+    {
+      "id": "pt_194",
+      "ordine": 194,
+      "titolo": "fastmcp_server.py",
+      "riga_inizio": 4692,
+      "riga_fine": 4792,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_193"
+      ]
+    },
+    {
+      "id": "pt_195",
+      "ordine": 195,
+      "titolo": "This script demonstrates how to create a simple MCP server using FastMCP.",
+      "riga_inizio": 4693,
+      "riga_fine": 4793,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_194"
+      ]
+    },
+    {
+      "id": "pt_196",
+      "ordine": 196,
+      "titolo": "It exposes a single tool that generates a greeting.",
+      "riga_inizio": 4694,
+      "riga_fine": 4794,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_195"
+      ]
+    },
+    {
+      "id": "pt_197",
+      "ordine": 197,
+      "titolo": "1. Make sure you have FastMCP installed:",
+      "riga_inizio": 4695,
+      "riga_fine": 4795,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_196"
+      ]
+    },
+    {
+      "id": "pt_198",
+      "ordine": 198,
+      "titolo": "Define a simple tool function.",
+      "riga_inizio": 4700,
+      "riga_fine": 4800,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_197"
+      ]
+    },
+    {
+      "id": "pt_199",
+      "ordine": 199,
+      "titolo": "Or if you want to run it from the script:",
+      "riga_inizio": 4719,
+      "riga_fine": 4744,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_198"
+      ]
+    },
+    {
+      "id": "pt_200",
+      "ordine": 200,
+      "titolo": "Consuming the FastMCP Server with an ADK Agent",
+      "riga_inizio": 4732,
+      "riga_fine": 4744,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_199"
+      ]
+    },
+    {
+      "id": "pt_201",
+      "ordine": 201,
+      "titolo": "Define the FastMCP server's address.",
+      "riga_inizio": 4750,
+      "riga_fine": 4850,
+      "carico_cognitivo": 0.39,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_200"
+      ]
+    },
+    {
+      "id": "pt_202",
+      "ordine": 202,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_201"
+      ]
+    },
+    {
+      "id": "pt_203",
+      "ordine": 203,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_202"
+      ]
+    },
+    {
+      "id": "pt_204",
+      "ordine": 204,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_203"
+      ]
+    },
+    {
+      "id": "pt_205",
+      "ordine": 205,
+      "titolo": "Chapter 11: Goal Setting and Monitoring",
+      "riga_inizio": 4834,
+      "riga_fine": 4837,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_204"
+      ]
+    },
+    {
+      "id": "pt_206",
+      "ordine": 206,
+      "titolo": "Goal Setting and Monitoring Pattern Overview",
+      "riga_inizio": 4838,
+      "riga_fine": 4845,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_205"
+      ]
+    },
+    {
+      "id": "pt_207",
+      "ordine": 207,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_206"
+      ]
+    },
+    {
+      "id": "pt_208",
+      "ordine": 208,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_207"
+      ]
+    },
+    {
+      "id": "pt_209",
+      "ordine": 209,
+      "titolo": "MIT License",
+      "riga_inizio": 802,
+      "riga_fine": 902,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_208"
+      ]
+    },
+    {
+      "id": "pt_210",
+      "ordine": 210,
+      "titolo": "Copyright (c) 2025 Mahtab Syed",
+      "riga_inizio": 4887,
+      "riga_fine": 4987,
+      "carico_cognitivo": 0.48,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_209"
+      ]
+    },
+    {
+      "id": "pt_211",
+      "ordine": 211,
+      "titolo": "https://www.linkedin.com/in/mahtabsyed/",
+      "riga_inizio": 4888,
+      "riga_fine": 4934,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_210"
+      ]
+    },
+    {
+      "id": "pt_212",
+      "ordine": 212,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_211"
+      ]
+    },
+    {
+      "id": "pt_213",
+      "ordine": 213,
+      "titolo": "Key takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_212"
+      ]
+    },
+    {
+      "id": "pt_214",
+      "ordine": 214,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_213"
+      ]
+    },
+    {
+      "id": "pt_215",
+      "ordine": 215,
+      "titolo": "Chapter 12: Exception Handling and Recovery",
+      "riga_inizio": 5067,
+      "riga_fine": 5076,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_214"
+      ]
+    },
+    {
+      "id": "pt_216",
+      "ordine": 216,
+      "titolo": "Exception Handling and Recovery Pattern Overview",
+      "riga_inizio": 5077,
+      "riga_fine": 5100,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_215"
+      ]
+    },
+    {
+      "id": "pt_217",
+      "ordine": 217,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_216"
+      ]
+    },
+    {
+      "id": "pt_218",
+      "ordine": 218,
+      "titolo": "The SequentialAgent ensures the handlers run in a guaranteed order.",
+      "riga_inizio": 5172,
+      "riga_fine": 5307,
+      "carico_cognitivo": 0.74,
+      "durata_stimata_minuti": 18,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_217"
+      ]
+    },
+    {
+      "id": "pt_219",
+      "ordine": 219,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_218"
+      ]
+    },
+    {
+      "id": "pt_220",
+      "ordine": 220,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_219"
+      ]
+    },
+    {
+      "id": "pt_221",
+      "ordine": 221,
+      "titolo": "Essential points to remember:",
+      "riga_inizio": 5202,
+      "riga_fine": 5217,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_220"
+      ]
+    },
+    {
+      "id": "pt_222",
+      "ordine": 222,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_221"
+      ]
+    },
+    {
+      "id": "pt_223",
+      "ordine": 223,
+      "titolo": "Chapter 13: Human-in-the-Loop",
+      "riga_inizio": 5232,
+      "riga_fine": 5243,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_222"
+      ]
+    },
+    {
+      "id": "pt_224",
+      "ordine": 224,
+      "titolo": "Human-in-the-Loop Pattern Overview",
+      "riga_inizio": 5244,
+      "riga_fine": 5257,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_223"
+      ]
+    },
+    {
+      "id": "pt_225",
+      "ordine": 225,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_224"
+      ]
+    },
+    {
+      "id": "pt_226",
+      "ordine": 226,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_225"
+      ]
+    },
+    {
+      "id": "pt_227",
+      "ordine": 227,
+      "titolo": "At Glance",
+      "riga_inizio": 1987,
+      "riga_fine": 1994,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_226"
+      ]
+    },
+    {
+      "id": "pt_228",
+      "ordine": 228,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_227"
+      ]
+    },
+    {
+      "id": "pt_229",
+      "ordine": 229,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_228"
+      ]
+    },
+    {
+      "id": "pt_230",
+      "ordine": 230,
+      "titolo": "Chapter 14: Knowledge Retrieval (RAG)",
+      "riga_inizio": 5462,
+      "riga_fine": 5467,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_229"
+      ]
+    },
+    {
+      "id": "pt_231",
+      "ordine": 231,
+      "titolo": "Knowledge Retrieval (RAG) Pattern Overview",
+      "riga_inizio": 5468,
+      "riga_fine": 5541,
+      "carico_cognitivo": 0.78,
+      "durata_stimata_minuti": 19,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_230"
+      ]
+    },
+    {
+      "id": "pt_232",
+      "ordine": 232,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_231"
+      ]
+    },
+    {
+      "id": "pt_233",
+      "ordine": 233,
+      "titolo": "Define an optional parameter for the vector distance threshold.",
+      "riga_inizio": 5605,
+      "riga_fine": 5705,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_232"
+      ]
+    },
+    {
+      "id": "pt_234",
+      "ordine": 234,
+      "titolo": "This sets up the connection to your Vertex AI RAG Corpus.",
+      "riga_inizio": 5621,
+      "riga_fine": 5721,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_233"
+      ]
+    },
+    {
+      "id": "pt_235",
+      "ordine": 235,
+      "titolo": "- rag_corpus: Specifies the unique identifier for your RAG Corpus.",
+      "riga_inizio": 5622,
+      "riga_fine": 5722,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_234"
+      ]
+    },
+    {
+      "id": "pt_236",
+      "ordine": 236,
+      "titolo": "- vector_distance_threshold: Defines the similarity threshold for",
+      "riga_inizio": 5625,
+      "riga_fine": 5659,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_235"
+      ]
+    },
+    {
+      "id": "pt_237",
+      "ordine": 237,
+      "titolo": "Hands-On Code Example (LangChain)",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_236"
+      ]
+    },
+    {
+      "id": "pt_238",
+      "ordine": 238,
+      "titolo": "Set your OpenAI API key (ensure it's loaded from .env or set here)",
+      "riga_inizio": 5662,
+      "riga_fine": 5762,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_237"
+      ]
+    },
+    {
+      "id": "pt_239",
+      "ordine": 239,
+      "titolo": "os.environ[\"OPENAI_API_KEY\"] = \"YOUR_OPENAI_API_KEY\"",
+      "riga_inizio": 5663,
+      "riga_fine": 5763,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_238"
+      ]
+    },
+    {
+      "id": "pt_240",
+      "ordine": 240,
+      "titolo": "--- 1. Data Preparation (Preprocessing) ---",
+      "riga_inizio": 5664,
+      "riga_fine": 5764,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_239"
+      ]
+    },
+    {
+      "id": "pt_241",
+      "ordine": 241,
+      "titolo": "--- 5. Run the RAG Application ---",
+      "riga_inizio": 5759,
+      "riga_fine": 6013,
+      "carico_cognitivo": 0.71,
+      "durata_stimata_minuti": 18,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_240"
+      ]
+    },
+    {
+      "id": "pt_242",
+      "ordine": 242,
+      "titolo": "At Glance",
+      "riga_inizio": 1987,
+      "riga_fine": 1994,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_241"
+      ]
+    },
+    {
+      "id": "pt_243",
+      "ordine": 243,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_242"
+      ]
+    },
+    {
+      "id": "pt_244",
+      "ordine": 244,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_243"
+      ]
+    },
+    {
+      "id": "pt_245",
+      "ordine": 245,
+      "titolo": "Inter-Agent Communication Pattern Overview",
+      "riga_inizio": 5854,
+      "riga_fine": 5861,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_244"
+      ]
+    },
+    {
+      "id": "pt_246",
+      "ordine": 246,
+      "titolo": "Core Concepts of A2A",
+      "riga_inizio": 5862,
+      "riga_fine": 6013,
+      "carico_cognitivo": 0.34,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_245"
+      ]
+    },
+    {
+      "id": "pt_247",
+      "ordine": 247,
+      "titolo": "Streaming Request Example",
+      "riga_inizio": 6014,
+      "riga_fine": 6119,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_246"
+      ]
+    },
+    {
+      "id": "pt_248",
+      "ordine": 248,
+      "titolo": "A2A vs. MCP",
+      "riga_inizio": 6049,
+      "riga_fine": 6062,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_247"
+      ]
+    },
+    {
+      "id": "pt_249",
+      "ordine": 249,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_248"
+      ]
+    },
+    {
+      "id": "pt_250",
+      "ordine": 250,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_249"
+      ]
+    },
+    {
+      "id": "pt_251",
+      "ordine": 251,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_250"
+      ]
+    },
+    {
+      "id": "pt_252",
+      "ordine": 252,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_251"
+      ]
+    },
+    {
+      "id": "pt_253",
+      "ordine": 253,
+      "titolo": "Conclusions",
+      "riga_inizio": 6237,
+      "riga_fine": 6242,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_252"
+      ]
+    },
+    {
+      "id": "pt_254",
+      "ordine": 254,
+      "titolo": "Chapter 16: Resource-Aware Optimization",
+      "riga_inizio": 6281,
+      "riga_fine": 6286,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_253"
+      ]
+    },
+    {
+      "id": "pt_255",
+      "ordine": 255,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_254"
+      ]
+    },
+    {
+      "id": "pt_256",
+      "ordine": 256,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_255"
+      ]
+    },
+    {
+      "id": "pt_257",
+      "ordine": 257,
+      "titolo": "Agent using the less expensive Gemini Flash 2.5",
+      "riga_inizio": 6336,
+      "riga_fine": 6353,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_256"
+      ]
+    },
+    {
+      "id": "pt_258",
+      "ordine": 258,
+      "titolo": "Hands-On Code with OpenAI",
+      "riga_inizio": 6454,
+      "riga_fine": 6470,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_257"
+      ]
+    },
+    {
+      "id": "pt_259",
+      "ordine": 259,
+      "titolo": "MIT License",
+      "riga_inizio": 802,
+      "riga_fine": 902,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_258"
+      ]
+    },
+    {
+      "id": "pt_260",
+      "ordine": 260,
+      "titolo": "Copyright (c) 2025 Mahtab Syed",
+      "riga_inizio": 4887,
+      "riga_fine": 4987,
+      "carico_cognitivo": 0.48,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_259"
+      ]
+    },
+    {
+      "id": "pt_261",
+      "ordine": 261,
+      "titolo": "Load environment variables",
+      "riga_inizio": 587,
+      "riga_fine": 687,
+      "carico_cognitivo": 0.4,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_260"
+      ]
+    },
+    {
+      "id": "pt_262",
+      "ordine": 262,
+      "titolo": "--- Step 1: Classify the Prompt ---",
+      "riga_inizio": 6497,
+      "riga_fine": 6524,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_261"
+      ]
+    },
+    {
+      "id": "pt_263",
+      "ordine": 263,
+      "titolo": "Hands-On Code Example (OpenRouter)",
+      "riga_inizio": 6593,
+      "riga_fine": 6652,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_262"
+      ]
+    },
+    {
+      "id": "pt_264",
+      "ordine": 264,
+      "titolo": "Beyond Dynamic Model Switching: A Spectrum of Agent Resource Optimizations",
+      "riga_inizio": 6653,
+      "riga_fine": 6672,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_263"
+      ]
+    },
+    {
+      "id": "pt_265",
+      "ordine": 265,
+      "titolo": "**Parallelization & Distributed Computing Awareness** leverages distributed",
+      "riga_inizio": 6673,
+      "riga_fine": 6680,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_264"
+      ]
+    },
+    {
+      "id": "pt_266",
+      "ordine": 266,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_265"
+      ]
+    },
+    {
+      "id": "pt_267",
+      "ordine": 267,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_266"
+      ]
+    },
+    {
+      "id": "pt_268",
+      "ordine": 268,
+      "titolo": "Conclusions",
+      "riga_inizio": 6237,
+      "riga_fine": 6242,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_267"
+      ]
+    },
+    {
+      "id": "pt_269",
+      "ordine": 269,
+      "titolo": "Chapter 17: Reasoning Techniques",
+      "riga_inizio": 6732,
+      "riga_fine": 6735,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_268"
+      ]
+    },
+    {
+      "id": "pt_270",
+      "ordine": 270,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_269"
+      ]
+    },
+    {
+      "id": "pt_271",
+      "ordine": 271,
+      "titolo": "Reasoning techniques",
+      "riga_inizio": 6732,
+      "riga_fine": 6735,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_270"
+      ]
+    },
+    {
+      "id": "pt_272",
+      "ordine": 272,
+      "titolo": "Scaling Inference Law",
+      "riga_inizio": 7184,
+      "riga_fine": 7207,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_271"
+      ]
+    },
+    {
+      "id": "pt_273",
+      "ordine": 273,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_272"
+      ]
+    },
+    {
+      "id": "pt_274",
+      "ordine": 274,
+      "titolo": "Set the entrypoint as `generate_query`",
+      "riga_inizio": 7228,
+      "riga_fine": 7328,
+      "carico_cognitivo": 0.39,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_273"
+      ]
+    },
+    {
+      "id": "pt_275",
+      "ordine": 275,
+      "titolo": "Finalize the answer",
+      "riga_inizio": 7248,
+      "riga_fine": 7386,
+      "carico_cognitivo": 0.64,
+      "durata_stimata_minuti": 17,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_274"
+      ]
+    },
+    {
+      "id": "pt_276",
+      "ordine": 276,
+      "titolo": "So, what do agents think?",
+      "riga_inizio": 7255,
+      "riga_fine": 7276,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_275"
+      ]
+    },
+    {
+      "id": "pt_277",
+      "ordine": 277,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_276"
+      ]
+    },
+    {
+      "id": "pt_278",
+      "ordine": 278,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_277"
+      ]
+    },
+    {
+      "id": "pt_279",
+      "ordine": 279,
+      "titolo": "Conclusions",
+      "riga_inizio": 6237,
+      "riga_fine": 6242,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_278"
+      ]
+    },
+    {
+      "id": "pt_280",
+      "ordine": 280,
+      "titolo": "Chapter 18: Guardrails/Safety Patterns",
+      "riga_inizio": 7342,
+      "riga_fine": 7347,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_279"
+      ]
+    },
+    {
+      "id": "pt_281",
+      "ordine": 281,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_280"
+      ]
+    },
+    {
+      "id": "pt_282",
+      "ordine": 282,
+      "titolo": "Hands-On Code CrewAI Example",
+      "riga_inizio": 7372,
+      "riga_fine": 7386,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_281"
+      ]
+    },
+    {
+      "id": "pt_283",
+      "ordine": 283,
+      "titolo": "Copyright (c) 2025 Marco Fago",
+      "riga_inizio": 799,
+      "riga_fine": 899,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_282"
+      ]
+    },
+    {
+      "id": "pt_284",
+      "ordine": 284,
+      "titolo": "This code is licensed under the MIT License.",
+      "riga_inizio": 802,
+      "riga_fine": 902,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_283"
+      ]
+    },
+    {
+      "id": "pt_285",
+      "ordine": 285,
+      "titolo": "--- 0. Setup ---",
+      "riga_inizio": 7400,
+      "riga_fine": 7500,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_284"
+      ]
+    },
+    {
+      "id": "pt_286",
+      "ordine": 286,
+      "titolo": "--- AI Content Policy Prompt ---",
+      "riga_inizio": 7421,
+      "riga_fine": 7521,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_285"
+      ]
+    },
+    {
+      "id": "pt_287",
+      "ordine": 287,
+      "titolo": "This prompt instructs an LLM to act as a content policy enforcer.",
+      "riga_inizio": 7422,
+      "riga_fine": 7522,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_286"
+      ]
+    },
+    {
+      "id": "pt_288",
+      "ordine": 288,
+      "titolo": "It's designed to filter and block non-compliant inputs based on",
+      "riga_inizio": 7423,
+      "riga_fine": 7523,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_287"
+      ]
+    },
+    {
+      "id": "pt_289",
+      "ordine": 289,
+      "titolo": "--- Agent and Task Setup ---",
+      "riga_inizio": 7597,
+      "riga_fine": 7697,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_288"
+      ]
+    },
+    {
+      "id": "pt_290",
+      "ordine": 290,
+      "titolo": "Hands-On Code Vertex AI Example",
+      "riga_inizio": 7685,
+      "riga_fine": 7711,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_289"
+      ]
+    },
+    {
+      "id": "pt_291",
+      "ordine": 291,
+      "titolo": "Engineering Reliable Agents",
+      "riga_inizio": 7886,
+      "riga_fine": 7903,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_290"
+      ]
+    },
+    {
+      "id": "pt_292",
+      "ordine": 292,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_291"
+      ]
+    },
+    {
+      "id": "pt_293",
+      "ordine": 293,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_292"
+      ]
+    },
+    {
+      "id": "pt_294",
+      "ordine": 294,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_293"
+      ]
+    },
+    {
+      "id": "pt_295",
+      "ordine": 295,
+      "titolo": "Chapter 19: Evaluation and Monitoring",
+      "riga_inizio": 7948,
+      "riga_fine": 7955,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_294"
+      ]
+    },
+    {
+      "id": "pt_296",
+      "ordine": 296,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_295"
+      ]
+    },
+    {
+      "id": "pt_297",
+      "ordine": 297,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_296"
+      ]
+    },
+    {
+      "id": "pt_298",
+      "ordine": 298,
+      "titolo": "Example usage",
+      "riga_inizio": 899,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_297"
+      ]
+    },
+    {
+      "id": "pt_299",
+      "ordine": 299,
+      "titolo": "Example usage",
+      "riga_inizio": 899,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_298"
+      ]
+    },
+    {
+      "id": "pt_300",
+      "ordine": 300,
+      "titolo": "--- Configuration ---",
+      "riga_inizio": 809,
+      "riga_fine": 909,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_299"
+      ]
+    },
+    {
+      "id": "pt_301",
+      "ordine": 301,
+      "titolo": "Set your API key as an environment variable to run this script",
+      "riga_inizio": 8068,
+      "riga_fine": 8168,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_300"
+      ]
+    },
+    {
+      "id": "pt_302",
+      "ordine": 302,
+      "titolo": "--- LLM-as-a-Judge Rubric for Legal Survey Quality ---",
+      "riga_inizio": 8082,
+      "riga_fine": 8187,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_301"
+      ]
+    },
+    {
+      "id": "pt_303",
+      "ordine": 303,
+      "titolo": "--- Example Usage ---",
+      "riga_inizio": 899,
+      "riga_fine": 944,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_302"
+      ]
+    },
+    {
+      "id": "pt_304",
+      "ordine": 304,
+      "titolo": "Agents trajectories",
+      "riga_inizio": 8269,
+      "riga_fine": 8296,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_303"
+      ]
+    },
+    {
+      "id": "pt_305",
+      "ordine": 305,
+      "titolo": "From Agents to Advanced Contractors",
+      "riga_inizio": 8297,
+      "riga_fine": 8322,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_304"
+      ]
+    },
+    {
+      "id": "pt_306",
+      "ordine": 306,
+      "titolo": "Google's ADK",
+      "riga_inizio": 8323,
+      "riga_fine": 8336,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_305"
+      ]
+    },
+    {
+      "id": "pt_307",
+      "ordine": 307,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_306"
+      ]
+    },
+    {
+      "id": "pt_308",
+      "ordine": 308,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_307"
+      ]
+    },
+    {
+      "id": "pt_309",
+      "ordine": 309,
+      "titolo": "Conclusions",
+      "riga_inizio": 6237,
+      "riga_fine": 6242,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_308"
+      ]
+    },
+    {
+      "id": "pt_310",
+      "ordine": 310,
+      "titolo": "Chapter 20: Prioritization",
+      "riga_inizio": 8404,
+      "riga_fine": 8407,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_309"
+      ]
+    },
+    {
+      "id": "pt_311",
+      "ordine": 311,
+      "titolo": "Prioritization Pattern Overview",
+      "riga_inizio": 8408,
+      "riga_fine": 8419,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_310"
+      ]
+    },
+    {
+      "id": "pt_312",
+      "ordine": 312,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_311"
+      ]
+    },
+    {
+      "id": "pt_313",
+      "ordine": 313,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_312"
+      ]
+    },
+    {
+      "id": "pt_314",
+      "ordine": 314,
+      "titolo": "--- 0. Configuration and Setup ---",
+      "riga_inizio": 8459,
+      "riga_fine": 8559,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_313"
+      ]
+    },
+    {
+      "id": "pt_315",
+      "ordine": 315,
+      "titolo": "--- 2. Tools for the Project Manager Agent ---",
+      "riga_inizio": 8517,
+      "riga_fine": 8617,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_314"
+      ]
+    },
+    {
+      "id": "pt_316",
+      "ordine": 316,
+      "titolo": "Use Pydantic models for tool arguments for better validation and",
+      "riga_inizio": 8518,
+      "riga_fine": 8554,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_315"
+      ]
+    },
+    {
+      "id": "pt_317",
+      "ordine": 317,
+      "titolo": "All tools the PM agent can use",
+      "riga_inizio": 8555,
+      "riga_fine": 8589,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_316"
+      ]
+    },
+    {
+      "id": "pt_318",
+      "ordine": 318,
+      "titolo": "--- 3. Project Manager Agent Definition ---",
+      "riga_inizio": 8590,
+      "riga_fine": 8613,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_317"
+      ]
+    },
+    {
+      "id": "pt_319",
+      "ordine": 319,
+      "titolo": "Run the simulation",
+      "riga_inizio": 8646,
+      "riga_fine": 9277,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_318"
+      ]
+    },
+    {
+      "id": "pt_320",
+      "ordine": 320,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_319"
+      ]
+    },
+    {
+      "id": "pt_321",
+      "ordine": 321,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_320"
+      ]
+    },
+    {
+      "id": "pt_322",
+      "ordine": 322,
+      "titolo": "Conclusions",
+      "riga_inizio": 6237,
+      "riga_fine": 6242,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_321"
+      ]
+    },
+    {
+      "id": "pt_323",
+      "ordine": 323,
+      "titolo": "Chapter 21: Exploration and Discovery",
+      "riga_inizio": 8710,
+      "riga_fine": 8713,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_322"
+      ]
+    },
+    {
+      "id": "pt_324",
+      "ordine": 324,
+      "titolo": "Practical Applications & Use Cases",
+      "riga_inizio": 456,
+      "riga_fine": 565,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_323"
+      ]
+    },
+    {
+      "id": "pt_325",
+      "ordine": 325,
+      "titolo": "Google Co-Scientist",
+      "riga_inizio": 8734,
+      "riga_fine": 8775,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_324"
+      ]
+    },
+    {
+      "id": "pt_326",
+      "ordine": 326,
+      "titolo": "End-to-End Experimental Validation:",
+      "riga_inizio": 8776,
+      "riga_fine": 8790,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_325"
+      ]
+    },
+    {
+      "id": "pt_327",
+      "ordine": 327,
+      "titolo": "Hands-On Code Example",
+      "riga_inizio": 566,
+      "riga_fine": 586,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_326"
+      ]
+    },
+    {
+      "id": "pt_328",
+      "ordine": 328,
+      "titolo": "At a Glance",
+      "riga_inizio": 656,
+      "riga_fine": 667,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_327"
+      ]
+    },
+    {
+      "id": "pt_329",
+      "ordine": 329,
+      "titolo": "Key Takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_328"
+      ]
+    },
+    {
+      "id": "pt_330",
+      "ordine": 330,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_329"
+      ]
+    },
+    {
+      "id": "pt_331",
+      "ordine": 331,
+      "titolo": "Introduction to Prompting",
+      "riga_inizio": 9098,
+      "riga_fine": 9107,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_330"
+      ]
+    },
+    {
+      "id": "pt_332",
+      "ordine": 332,
+      "titolo": "Core Prompting Principles",
+      "riga_inizio": 9108,
+      "riga_fine": 9131,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_331"
+      ]
+    },
+    {
+      "id": "pt_333",
+      "ordine": 333,
+      "titolo": "Zero-Shot Prompting",
+      "riga_inizio": 9136,
+      "riga_fine": 9145,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_332"
+      ]
+    },
+    {
+      "id": "pt_334",
+      "ordine": 334,
+      "titolo": "One-Shot Prompting",
+      "riga_inizio": 9146,
+      "riga_fine": 9159,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_333"
+      ]
+    },
+    {
+      "id": "pt_335",
+      "ordine": 335,
+      "titolo": "Few-Shot Prompting",
+      "riga_inizio": 9160,
+      "riga_fine": 9189,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_334"
+      ]
+    },
+    {
+      "id": "pt_336",
+      "ordine": 336,
+      "titolo": "System Prompting",
+      "riga_inizio": 9194,
+      "riga_fine": 9205,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_335"
+      ]
+    },
+    {
+      "id": "pt_337",
+      "ordine": 337,
+      "titolo": "Role Prompting",
+      "riga_inizio": 9206,
+      "riga_fine": 9213,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_336"
+      ]
+    },
+    {
+      "id": "pt_338",
+      "ordine": 338,
+      "titolo": "Using Delimiters",
+      "riga_inizio": 9214,
+      "riga_fine": 9229,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_337"
+      ]
+    },
+    {
+      "id": "pt_339",
+      "ordine": 339,
+      "titolo": "Contextual Enginnering",
+      "riga_inizio": 9230,
+      "riga_fine": 9237,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_338"
+      ]
+    },
+    {
+      "id": "pt_340",
+      "ordine": 340,
+      "titolo": "● **External data:**",
+      "riga_inizio": 9238,
+      "riga_fine": 9255,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_339"
+      ]
+    },
+    {
+      "id": "pt_341",
+      "ordine": 341,
+      "titolo": "Chain of Thought (CoT)",
+      "riga_inizio": 9350,
+      "riga_fine": 9383,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_340"
+      ]
+    },
+    {
+      "id": "pt_342",
+      "ordine": 342,
+      "titolo": "Self-Consistency",
+      "riga_inizio": 9384,
+      "riga_fine": 9411,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_341"
+      ]
+    },
+    {
+      "id": "pt_343",
+      "ordine": 343,
+      "titolo": "Step-Back Prompting",
+      "riga_inizio": 9412,
+      "riga_fine": 9427,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_342"
+      ]
+    },
+    {
+      "id": "pt_344",
+      "ordine": 344,
+      "titolo": "Tree of Thoughts (ToT)",
+      "riga_inizio": 9428,
+      "riga_fine": 9437,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_343"
+      ]
+    },
+    {
+      "id": "pt_345",
+      "ordine": 345,
+      "titolo": "Tool Use / Function Calling",
+      "riga_inizio": 9444,
+      "riga_fine": 9459,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_344"
+      ]
+    },
+    {
+      "id": "pt_346",
+      "ordine": 346,
+      "titolo": "ReAct (Reason & Act)",
+      "riga_inizio": 9460,
+      "riga_fine": 9477,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_345"
+      ]
+    },
+    {
+      "id": "pt_347",
+      "ordine": 347,
+      "titolo": "● **Example (Illustrative ReAct Trace):**",
+      "riga_inizio": 9478,
+      "riga_fine": 9495,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_346"
+      ]
+    },
+    {
+      "id": "pt_348",
+      "ordine": 348,
+      "titolo": "Automatic Prompt Engineering (APE)",
+      "riga_inizio": 9500,
+      "riga_fine": 9527,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_347"
+      ]
+    },
+    {
+      "id": "pt_349",
+      "ordine": 349,
+      "titolo": "● **Example:**",
+      "riga_inizio": 9532,
+      "riga_fine": 9541,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_348"
+      ]
+    },
+    {
+      "id": "pt_350",
+      "ordine": 350,
+      "titolo": "Providing Negative Examples",
+      "riga_inizio": 9542,
+      "riga_fine": 9555,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_349"
+      ]
+    },
+    {
+      "id": "pt_351",
+      "ordine": 351,
+      "titolo": "Factored Cognition / Decomposition",
+      "riga_inizio": 9564,
+      "riga_fine": 9579,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_350"
+      ]
+    },
+    {
+      "id": "pt_352",
+      "ordine": 352,
+      "titolo": "Retrieval Augmented Generation (RAG)",
+      "riga_inizio": 9580,
+      "riga_fine": 9583,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_351"
+      ]
+    },
+    {
+      "id": "pt_353",
+      "ordine": 353,
+      "titolo": "● **Example:**",
+      "riga_inizio": 9532,
+      "riga_fine": 9541,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_352"
+      ]
+    },
+    {
+      "id": "pt_354",
+      "ordine": 354,
+      "titolo": "● **Example:**",
+      "riga_inizio": 9532,
+      "riga_fine": 9541,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_353"
+      ]
+    },
+    {
+      "id": "pt_355",
+      "ordine": 355,
+      "titolo": "Using Google Gems",
+      "riga_inizio": 9606,
+      "riga_fine": 9619,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_354"
+      ]
+    },
+    {
+      "id": "pt_356",
+      "ordine": 356,
+      "titolo": "Using LLMs to Refine Prompts (The Meta Approach)",
+      "riga_inizio": 9620,
+      "riga_fine": 9659,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_355"
+      ]
+    },
+    {
+      "id": "pt_357",
+      "ordine": 357,
+      "titolo": "Code Prompting",
+      "riga_inizio": 9664,
+      "riga_fine": 9687,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_356"
+      ]
+    },
+    {
+      "id": "pt_358",
+      "ordine": 358,
+      "titolo": "Multimodal Prompting",
+      "riga_inizio": 9688,
+      "riga_fine": 9695,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_357"
+      ]
+    },
+    {
+      "id": "pt_359",
+      "ordine": 359,
+      "titolo": "Best Practices and Experimentation",
+      "riga_inizio": 9696,
+      "riga_fine": 9733,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_358"
+      ]
+    },
+    {
+      "id": "pt_360",
+      "ordine": 360,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_359"
+      ]
+    },
+    {
+      "id": "pt_361",
+      "ordine": 361,
+      "titolo": "Interaction: Agents with Computers",
+      "riga_inizio": 9772,
+      "riga_fine": 9803,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_360"
+      ]
+    },
+    {
+      "id": "pt_362",
+      "ordine": 362,
+      "titolo": "Interaction: Agents with the Environment",
+      "riga_inizio": 9804,
+      "riga_fine": 9827,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_361"
+      ]
+    },
+    {
+      "id": "pt_363",
+      "ordine": 363,
+      "titolo": "Vibe Coding: Intuitive Development with AI",
+      "riga_inizio": 9828,
+      "riga_fine": 9849,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_362"
+      ]
+    },
+    {
+      "id": "pt_364",
+      "ordine": 364,
+      "titolo": "Key takeaways",
+      "riga_inizio": 675,
+      "riga_fine": 688,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_363"
+      ]
+    },
+    {
+      "id": "pt_365",
+      "ordine": 365,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_364"
+      ]
+    },
+    {
+      "id": "pt_366",
+      "ordine": 366,
+      "titolo": "LangChain",
+      "riga_inizio": 783,
+      "riga_fine": 798,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_365"
+      ]
+    },
+    {
+      "id": "pt_367",
+      "ordine": 367,
+      "titolo": "Python",
+      "riga_inizio": 1412,
+      "riga_fine": 1441,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_366"
+      ]
+    },
+    {
+      "id": "pt_368",
+      "ordine": 368,
+      "titolo": "A simple LCEL chain conceptually",
+      "riga_inizio": 9915,
+      "riga_fine": 10015,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_367"
+      ]
+    },
+    {
+      "id": "pt_369",
+      "ordine": 369,
+      "titolo": "(This is not runnable code, just illustrates the flow)",
+      "riga_inizio": 9916,
+      "riga_fine": 9952,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_368"
+      ]
+    },
+    {
+      "id": "pt_370",
+      "ordine": 370,
+      "titolo": "LangGraph",
+      "riga_inizio": 3883,
+      "riga_fine": 3898,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_369"
+      ]
+    },
+    {
+      "id": "pt_371",
+      "ordine": 371,
+      "titolo": "Which One Should You Use?",
+      "riga_inizio": 9944,
+      "riga_fine": 9949,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_370"
+      ]
+    },
+    {
+      "id": "pt_372",
+      "ordine": 372,
+      "titolo": "Python",
+      "riga_inizio": 1412,
+      "riga_fine": 1441,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_371"
+      ]
+    },
+    {
+      "id": "pt_373",
+      "ordine": 373,
+      "titolo": "Invoke",
+      "riga_inizio": 1403,
+      "riga_fine": 1503,
+      "carico_cognitivo": 0.27,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_372"
+      ]
+    },
+    {
+      "id": "pt_374",
+      "ordine": 374,
+      "titolo": "Google's ADK",
+      "riga_inizio": 8323,
+      "riga_fine": 8336,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_373"
+      ]
+    },
+    {
+      "id": "pt_375",
+      "ordine": 375,
+      "titolo": "Python",
+      "riga_inizio": 1412,
+      "riga_fine": 1441,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_374"
+      ]
+    },
+    {
+      "id": "pt_376",
+      "ordine": 376,
+      "titolo": "Crew.AI",
+      "riga_inizio": 10046,
+      "riga_fine": 10071,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_375"
+      ]
+    },
+    {
+      "id": "pt_377",
+      "ordine": 377,
+      "titolo": "Other agent development framework",
+      "riga_inizio": 10072,
+      "riga_fine": 10089,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_376"
+      ]
+    },
+    {
+      "id": "pt_378",
+      "ordine": 378,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_377"
+      ]
+    },
+    {
+      "id": "pt_379",
+      "ordine": 379,
+      "titolo": "Overview",
+      "riga_inizio": 227,
+      "riga_fine": 248,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_378"
+      ]
+    },
+    {
+      "id": "pt_380",
+      "ordine": 380,
+      "titolo": "How to build an Agent with AgentSpace UI",
+      "riga_inizio": 10120,
+      "riga_fine": 10149,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_379"
+      ]
+    },
+    {
+      "id": "pt_381",
+      "ordine": 381,
+      "titolo": "Fig.4: Customizing the Agent's Prompt",
+      "riga_inizio": 10150,
+      "riga_fine": 10167,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_380"
+      ]
+    },
+    {
+      "id": "pt_382",
+      "ordine": 382,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_381"
+      ]
+    },
+    {
+      "id": "pt_383",
+      "ordine": 383,
+      "titolo": "Introduction",
+      "riga_inizio": 249,
+      "riga_fine": 258,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_382"
+      ]
+    },
+    {
+      "id": "pt_384",
+      "ordine": 384,
+      "titolo": "Claude CLI (Claude Code)",
+      "riga_inizio": 10192,
+      "riga_fine": 10195,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_383"
+      ]
+    },
+    {
+      "id": "pt_385",
+      "ordine": 385,
+      "titolo": "Example Use Cases:",
+      "riga_inizio": 10196,
+      "riga_fine": 10206,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_384"
+      ]
+    },
+    {
+      "id": "pt_386",
+      "ordine": 386,
+      "titolo": "Example Use Cases:",
+      "riga_inizio": 10196,
+      "riga_fine": 10206,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_385"
+      ]
+    },
+    {
+      "id": "pt_387",
+      "ordine": 387,
+      "titolo": "Example Use Cases:",
+      "riga_inizio": 10196,
+      "riga_fine": 10206,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_386"
+      ]
+    },
+    {
+      "id": "pt_388",
+      "ordine": 388,
+      "titolo": "Example Use Cases:",
+      "riga_inizio": 10196,
+      "riga_fine": 10206,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_387"
+      ]
+    },
+    {
+      "id": "pt_389",
+      "ordine": 389,
+      "titolo": "Terminal-Bench: A Benchmark for AI Agents in Command-Line Interfaces",
+      "riga_inizio": 10250,
+      "riga_fine": 10253,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_388"
+      ]
+    },
+    {
+      "id": "pt_390",
+      "ordine": 390,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_389"
+      ]
+    },
+    {
+      "id": "pt_391",
+      "ordine": 391,
+      "titolo": "Vibe Coding: A Starting Point",
+      "riga_inizio": 10278,
+      "riga_fine": 10281,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_390"
+      ]
+    },
+    {
+      "id": "pt_392",
+      "ordine": 392,
+      "titolo": "Agents as Team Members",
+      "riga_inizio": 10282,
+      "riga_fine": 10307,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_391"
+      ]
+    },
+    {
+      "id": "pt_393",
+      "ordine": 393,
+      "titolo": "Core Components",
+      "riga_inizio": 10308,
+      "riga_fine": 10363,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_392"
+      ]
+    },
+    {
+      "id": "pt_394",
+      "ordine": 394,
+      "titolo": "Setup Checklist",
+      "riga_inizio": 10366,
+      "riga_fine": 10383,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_393"
+      ]
+    },
+    {
+      "id": "pt_395",
+      "ordine": 395,
+      "titolo": "Principles for Leading the Augmented Team",
+      "riga_inizio": 10384,
+      "riga_fine": 10397,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_394"
+      ]
+    },
+    {
+      "id": "pt_396",
+      "ordine": 396,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_395"
+      ]
+    },
+    {
+      "id": "pt_397",
+      "ordine": 397,
+      "titolo": "Vibe Coding: A Starting Point",
+      "riga_inizio": 10278,
+      "riga_fine": 10281,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_396"
+      ]
+    },
+    {
+      "id": "pt_398",
+      "ordine": 398,
+      "titolo": "Agents as Team Members",
+      "riga_inizio": 10282,
+      "riga_fine": 10307,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_397"
+      ]
+    },
+    {
+      "id": "pt_399",
+      "ordine": 399,
+      "titolo": "Core Components",
+      "riga_inizio": 10308,
+      "riga_fine": 10363,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_398"
+      ]
+    },
+    {
+      "id": "pt_400",
+      "ordine": 400,
+      "titolo": "Setup Checklist",
+      "riga_inizio": 10366,
+      "riga_fine": 10383,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_399"
+      ]
+    },
+    {
+      "id": "pt_401",
+      "ordine": 401,
+      "titolo": "Principles for Leading the Augmented Team",
+      "riga_inizio": 10384,
+      "riga_fine": 10397,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_400"
+      ]
+    },
+    {
+      "id": "pt_402",
+      "ordine": 402,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_401"
+      ]
+    },
+    {
+      "id": "pt_403",
+      "ordine": 403,
+      "titolo": "Conclusion",
+      "riga_inizio": 385,
+      "riga_fine": 388,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_402"
+      ]
+    },
+    {
+      "id": "pt_404",
+      "ordine": 404,
+      "titolo": "Review of key agentic principles",
+      "riga_inizio": 10558,
+      "riga_fine": 10573,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_403"
+      ]
+    },
+    {
+      "id": "pt_405",
+      "ordine": 405,
+      "titolo": "Combining Patterns for Complex Systems",
+      "riga_inizio": 10574,
+      "riga_fine": 10597,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_404"
+      ]
+    },
+    {
+      "id": "pt_406",
+      "ordine": 406,
+      "titolo": "Looking to the Future",
+      "riga_inizio": 10598,
+      "riga_fine": 10611,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_405"
+      ]
+    },
+    {
+      "id": "pt_407",
+      "ordine": 407,
+      "titolo": "Final Thoughts",
+      "riga_inizio": 10612,
+      "riga_fine": 10657,
+      "carico_cognitivo": 0.31,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_406"
+      ]
+    },
+    {
+      "id": "pt_408",
+      "ordine": 408,
+      "titolo": "(NSP), where it determines if two sentences logically follow each other.",
+      "riga_inizio": 10658,
+      "riga_fine": 10693,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_407"
+      ]
+    },
+    {
+      "id": "pt_409",
+      "ordine": 409,
+      "titolo": "B",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_408"
+      ]
+    },
+    {
+      "id": "pt_410",
+      "ordine": 410,
+      "titolo": "F",
+      "riga_inizio": 141,
+      "riga_fine": 158,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_409"
+      ]
+    },
+    {
+      "id": "pt_411",
+      "ordine": 411,
+      "titolo": "H",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_410"
+      ]
+    },
+    {
+      "id": "pt_412",
+      "ordine": 412,
+      "titolo": "K",
+      "riga_inizio": 97,
+      "riga_fine": 140,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_411"
+      ]
+    },
+    {
+      "id": "pt_413",
+      "ordine": 413,
+      "titolo": "L",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_412"
+      ]
+    },
+    {
+      "id": "pt_414",
+      "ordine": 414,
+      "titolo": "M",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_413"
+      ]
+    },
+    {
+      "id": "pt_415",
+      "ordine": 415,
+      "titolo": "O",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_414"
+      ]
+    },
+    {
+      "id": "pt_416",
+      "ordine": 416,
+      "titolo": "Q",
+      "riga_inizio": 824,
+      "riga_fine": 843,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_415"
+      ]
+    },
+    {
+      "id": "pt_417",
+      "ordine": 417,
+      "titolo": "U",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_416"
+      ]
+    },
+    {
+      "id": "pt_418",
+      "ordine": 418,
+      "titolo": "V",
+      "riga_inizio": 159,
+      "riga_fine": 190,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_417"
+      ]
+    },
+    {
+      "id": "pt_419",
+      "ordine": 419,
+      "titolo": "W",
+      "riga_inizio": 97,
+      "riga_fine": 140,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_418"
+      ]
+    },
+    {
+      "id": "pt_420",
+      "ordine": 420,
+      "titolo": "Z",
+      "riga_inizio": 343,
+      "riga_fine": 356,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_419"
+      ]
+    },
+    {
+      "id": "pt_421",
+      "ordine": 421,
+      "titolo": "_do you read_",
+      "riga_inizio": 11246,
+      "riga_fine": 11253,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_420"
+      ]
+    },
+    {
+      "id": "pt_422",
+      "ordine": 422,
+      "titolo": "Crafting the Extraction Strategy",
+      "riga_inizio": 11299,
+      "riga_fine": 11301,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_421"
+      ]
+    },
+    {
+      "id": "pt_423",
+      "ordine": 423,
+      "titolo": "Defining the Approach",
+      "riga_inizio": 11302,
+      "riga_fine": 11346,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_422"
+      ]
+    },
+    {
+      "id": "pt_424",
+      "ordine": 424,
+      "titolo": "(NSP), where it determines if two sentences logically follow each other.",
+      "riga_inizio": 10658,
+      "riga_fine": 10693,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_423"
+      ]
+    },
+    {
+      "id": "pt_425",
+      "ordine": 425,
+      "titolo": "B",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_424"
+      ]
+    },
+    {
+      "id": "pt_426",
+      "ordine": 426,
+      "titolo": "F",
+      "riga_inizio": 141,
+      "riga_fine": 158,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_425"
+      ]
+    },
+    {
+      "id": "pt_427",
+      "ordine": 427,
+      "titolo": "H",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_426"
+      ]
+    },
+    {
+      "id": "pt_428",
+      "ordine": 428,
+      "titolo": "K",
+      "riga_inizio": 97,
+      "riga_fine": 140,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_427"
+      ]
+    },
+    {
+      "id": "pt_429",
+      "ordine": 429,
+      "titolo": "L",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_428"
+      ]
+    },
+    {
+      "id": "pt_430",
+      "ordine": 430,
+      "titolo": "M",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_429"
+      ]
+    },
+    {
+      "id": "pt_431",
+      "ordine": 431,
+      "titolo": "O",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_430"
+      ]
+    },
+    {
+      "id": "pt_432",
+      "ordine": 432,
+      "titolo": "Q",
+      "riga_inizio": 824,
+      "riga_fine": 843,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_431"
+      ]
+    },
+    {
+      "id": "pt_433",
+      "ordine": 433,
+      "titolo": "U",
+      "riga_inizio": 3,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_432"
+      ]
+    },
+    {
+      "id": "pt_434",
+      "ordine": 434,
+      "titolo": "V",
+      "riga_inizio": 159,
+      "riga_fine": 190,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_433"
+      ]
+    },
+    {
+      "id": "pt_435",
+      "ordine": 435,
+      "titolo": "W",
+      "riga_inizio": 97,
+      "riga_fine": 140,
+      "carico_cognitivo": 0.29,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_434"
+      ]
+    },
+    {
+      "id": "pt_436",
+      "ordine": 436,
+      "titolo": "Z",
+      "riga_inizio": 343,
+      "riga_fine": 356,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_435"
+      ]
+    },
+    {
+      "id": "pt_437",
+      "ordine": 437,
+      "titolo": "_do you read_",
+      "riga_inizio": 11246,
+      "riga_fine": 11253,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_436"
+      ]
+    },
+    {
+      "id": "pt_438",
+      "ordine": 438,
+      "titolo": "Crafting the Extraction Strategy",
+      "riga_inizio": 11299,
+      "riga_fine": 11301,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_437"
+      ]
+    },
+    {
+      "id": "pt_439",
+      "ordine": 439,
+      "titolo": "Defining the Approach",
+      "riga_inizio": 11302,
+      "riga_fine": 11346,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_438"
+      ]
+    },
+    {
+      "id": "pt_440",
+      "ordine": 440,
+      "titolo": "Frequently Asked Questions: Agentic Design Patterns",
+      "riga_inizio": 12000,
+      "riga_fine": 12094,
+      "carico_cognitivo": 0.57,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_439"
+      ]
+    },
+    {
+      "id": "pt_441",
+      "ordine": 441,
+      "titolo": "What are the benefits of a multi-agent system?",
+      "riga_inizio": 12095,
+      "riga_fine": 12150,
+      "carico_cognitivo": 0.26,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_440"
+      ]
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    },
+    {
+      "da": "pt_031",
+      "a": "pt_032"
+    },
+    {
+      "da": "pt_032",
+      "a": "pt_033"
+    },
+    {
+      "da": "pt_033",
+      "a": "pt_034"
+    },
+    {
+      "da": "pt_034",
+      "a": "pt_035"
+    },
+    {
+      "da": "pt_035",
+      "a": "pt_036"
+    },
+    {
+      "da": "pt_036",
+      "a": "pt_037"
+    },
+    {
+      "da": "pt_037",
+      "a": "pt_038"
+    },
+    {
+      "da": "pt_038",
+      "a": "pt_039"
+    },
+    {
+      "da": "pt_039",
+      "a": "pt_040"
+    },
+    {
+      "da": "pt_040",
+      "a": "pt_041"
+    },
+    {
+      "da": "pt_041",
+      "a": "pt_042"
+    },
+    {
+      "da": "pt_042",
+      "a": "pt_043"
+    },
+    {
+      "da": "pt_043",
+      "a": "pt_044"
+    },
+    {
+      "da": "pt_044",
+      "a": "pt_045"
+    },
+    {
+      "da": "pt_045",
+      "a": "pt_046"
+    },
+    {
+      "da": "pt_046",
+      "a": "pt_047"
+    },
+    {
+      "da": "pt_047",
+      "a": "pt_048"
+    },
+    {
+      "da": "pt_048",
+      "a": "pt_049"
+    },
+    {
+      "da": "pt_049",
+      "a": "pt_050"
+    },
+    {
+      "da": "pt_050",
+      "a": "pt_051"
+    },
+    {
+      "da": "pt_051",
+      "a": "pt_052"
+    },
+    {
+      "da": "pt_052",
+      "a": "pt_053"
+    },
+    {
+      "da": "pt_053",
+      "a": "pt_054"
+    },
+    {
+      "da": "pt_054",
+      "a": "pt_055"
+    },
+    {
+      "da": "pt_055",
+      "a": "pt_056"
+    },
+    {
+      "da": "pt_056",
+      "a": "pt_057"
+    },
+    {
+      "da": "pt_057",
+      "a": "pt_058"
+    },
+    {
+      "da": "pt_058",
+      "a": "pt_059"
+    },
+    {
+      "da": "pt_059",
+      "a": "pt_060"
+    },
+    {
+      "da": "pt_060",
+      "a": "pt_061"
+    },
+    {
+      "da": "pt_061",
+      "a": "pt_062"
+    },
+    {
+      "da": "pt_062",
+      "a": "pt_063"
+    },
+    {
+      "da": "pt_063",
+      "a": "pt_064"
+    },
+    {
+      "da": "pt_064",
+      "a": "pt_065"
+    },
+    {
+      "da": "pt_065",
+      "a": "pt_066"
+    },
+    {
+      "da": "pt_066",
+      "a": "pt_067"
+    },
+    {
+      "da": "pt_067",
+      "a": "pt_068"
+    },
+    {
+      "da": "pt_068",
+      "a": "pt_069"
+    },
+    {
+      "da": "pt_069",
+      "a": "pt_070"
+    },
+    {
+      "da": "pt_070",
+      "a": "pt_071"
+    },
+    {
+      "da": "pt_071",
+      "a": "pt_072"
+    },
+    {
+      "da": "pt_072",
+      "a": "pt_073"
+    },
+    {
+      "da": "pt_073",
+      "a": "pt_074"
+    },
+    {
+      "da": "pt_074",
+      "a": "pt_075"
+    },
+    {
+      "da": "pt_075",
+      "a": "pt_076"
+    },
+    {
+      "da": "pt_076",
+      "a": "pt_077"
+    },
+    {
+      "da": "pt_077",
+      "a": "pt_078"
+    },
+    {
+      "da": "pt_078",
+      "a": "pt_079"
+    },
+    {
+      "da": "pt_079",
+      "a": "pt_080"
+    },
+    {
+      "da": "pt_080",
+      "a": "pt_081"
+    },
+    {
+      "da": "pt_081",
+      "a": "pt_082"
+    },
+    {
+      "da": "pt_082",
+      "a": "pt_083"
+    },
+    {
+      "da": "pt_083",
+      "a": "pt_084"
+    },
+    {
+      "da": "pt_084",
+      "a": "pt_085"
+    },
+    {
+      "da": "pt_085",
+      "a": "pt_086"
+    },
+    {
+      "da": "pt_086",
+      "a": "pt_087"
+    },
+    {
+      "da": "pt_087",
+      "a": "pt_088"
+    },
+    {
+      "da": "pt_088",
+      "a": "pt_089"
+    },
+    {
+      "da": "pt_089",
+      "a": "pt_090"
+    },
+    {
+      "da": "pt_090",
+      "a": "pt_091"
+    },
+    {
+      "da": "pt_091",
+      "a": "pt_092"
+    },
+    {
+      "da": "pt_092",
+      "a": "pt_093"
+    },
+    {
+      "da": "pt_093",
+      "a": "pt_094"
+    },
+    {
+      "da": "pt_094",
+      "a": "pt_095"
+    },
+    {
+      "da": "pt_095",
+      "a": "pt_096"
+    },
+    {
+      "da": "pt_096",
+      "a": "pt_097"
+    },
+    {
+      "da": "pt_097",
+      "a": "pt_098"
+    },
+    {
+      "da": "pt_098",
+      "a": "pt_099"
+    },
+    {
+      "da": "pt_099",
+      "a": "pt_100"
+    },
+    {
+      "da": "pt_100",
+      "a": "pt_101"
+    },
+    {
+      "da": "pt_101",
+      "a": "pt_102"
+    },
+    {
+      "da": "pt_102",
+      "a": "pt_103"
+    },
+    {
+      "da": "pt_103",
+      "a": "pt_104"
+    },
+    {
+      "da": "pt_104",
+      "a": "pt_105"
+    },
+    {
+      "da": "pt_105",
+      "a": "pt_106"
+    },
+    {
+      "da": "pt_106",
+      "a": "pt_107"
+    },
+    {
+      "da": "pt_107",
+      "a": "pt_108"
+    },
+    {
+      "da": "pt_108",
+      "a": "pt_109"
+    },
+    {
+      "da": "pt_109",
+      "a": "pt_110"
+    },
+    {
+      "da": "pt_110",
+      "a": "pt_111"
+    },
+    {
+      "da": "pt_111",
+      "a": "pt_112"
+    },
+    {
+      "da": "pt_112",
+      "a": "pt_113"
+    },
+    {
+      "da": "pt_113",
+      "a": "pt_114"
+    },
+    {
+      "da": "pt_114",
+      "a": "pt_115"
+    },
+    {
+      "da": "pt_115",
+      "a": "pt_116"
+    },
+    {
+      "da": "pt_116",
+      "a": "pt_117"
+    },
+    {
+      "da": "pt_117",
+      "a": "pt_118"
+    },
+    {
+      "da": "pt_118",
+      "a": "pt_119"
+    },
+    {
+      "da": "pt_119",
+      "a": "pt_120"
+    },
+    {
+      "da": "pt_120",
+      "a": "pt_121"
+    },
+    {
+      "da": "pt_121",
+      "a": "pt_122"
+    },
+    {
+      "da": "pt_122",
+      "a": "pt_123"
+    },
+    {
+      "da": "pt_123",
+      "a": "pt_124"
+    },
+    {
+      "da": "pt_124",
+      "a": "pt_125"
+    },
+    {
+      "da": "pt_125",
+      "a": "pt_126"
+    },
+    {
+      "da": "pt_126",
+      "a": "pt_127"
+    },
+    {
+      "da": "pt_127",
+      "a": "pt_128"
+    },
+    {
+      "da": "pt_128",
+      "a": "pt_129"
+    },
+    {
+      "da": "pt_129",
+      "a": "pt_130"
+    },
+    {
+      "da": "pt_130",
+      "a": "pt_131"
+    },
+    {
+      "da": "pt_131",
+      "a": "pt_132"
+    },
+    {
+      "da": "pt_132",
+      "a": "pt_133"
+    },
+    {
+      "da": "pt_133",
+      "a": "pt_134"
+    },
+    {
+      "da": "pt_134",
+      "a": "pt_135"
+    },
+    {
+      "da": "pt_135",
+      "a": "pt_136"
+    },
+    {
+      "da": "pt_136",
+      "a": "pt_137"
+    },
+    {
+      "da": "pt_137",
+      "a": "pt_138"
+    },
+    {
+      "da": "pt_138",
+      "a": "pt_139"
+    },
+    {
+      "da": "pt_139",
+      "a": "pt_140"
+    },
+    {
+      "da": "pt_140",
+      "a": "pt_141"
+    },
+    {
+      "da": "pt_141",
+      "a": "pt_142"
+    },
+    {
+      "da": "pt_142",
+      "a": "pt_143"
+    },
+    {
+      "da": "pt_143",
+      "a": "pt_144"
+    },
+    {
+      "da": "pt_144",
+      "a": "pt_145"
+    },
+    {
+      "da": "pt_145",
+      "a": "pt_146"
+    },
+    {
+      "da": "pt_146",
+      "a": "pt_147"
+    },
+    {
+      "da": "pt_147",
+      "a": "pt_148"
+    },
+    {
+      "da": "pt_148",
+      "a": "pt_149"
+    },
+    {
+      "da": "pt_149",
+      "a": "pt_150"
+    },
+    {
+      "da": "pt_150",
+      "a": "pt_151"
+    },
+    {
+      "da": "pt_151",
+      "a": "pt_152"
+    },
+    {
+      "da": "pt_152",
+      "a": "pt_153"
+    },
+    {
+      "da": "pt_153",
+      "a": "pt_154"
+    },
+    {
+      "da": "pt_154",
+      "a": "pt_155"
+    },
+    {
+      "da": "pt_155",
+      "a": "pt_156"
+    },
+    {
+      "da": "pt_156",
+      "a": "pt_157"
+    },
+    {
+      "da": "pt_157",
+      "a": "pt_158"
+    },
+    {
+      "da": "pt_158",
+      "a": "pt_159"
+    },
+    {
+      "da": "pt_159",
+      "a": "pt_160"
+    },
+    {
+      "da": "pt_160",
+      "a": "pt_161"
+    },
+    {
+      "da": "pt_161",
+      "a": "pt_162"
+    },
+    {
+      "da": "pt_162",
+      "a": "pt_163"
+    },
+    {
+      "da": "pt_163",
+      "a": "pt_164"
+    },
+    {
+      "da": "pt_164",
+      "a": "pt_165"
+    },
+    {
+      "da": "pt_165",
+      "a": "pt_166"
+    },
+    {
+      "da": "pt_166",
+      "a": "pt_167"
+    },
+    {
+      "da": "pt_167",
+      "a": "pt_168"
+    },
+    {
+      "da": "pt_168",
+      "a": "pt_169"
+    },
+    {
+      "da": "pt_169",
+      "a": "pt_170"
+    },
+    {
+      "da": "pt_170",
+      "a": "pt_171"
+    },
+    {
+      "da": "pt_171",
+      "a": "pt_172"
+    },
+    {
+      "da": "pt_172",
+      "a": "pt_173"
+    },
+    {
+      "da": "pt_173",
+      "a": "pt_174"
+    },
+    {
+      "da": "pt_174",
+      "a": "pt_175"
+    },
+    {
+      "da": "pt_175",
+      "a": "pt_176"
+    },
+    {
+      "da": "pt_176",
+      "a": "pt_177"
+    },
+    {
+      "da": "pt_177",
+      "a": "pt_178"
+    },
+    {
+      "da": "pt_178",
+      "a": "pt_179"
+    },
+    {
+      "da": "pt_179",
+      "a": "pt_180"
+    },
+    {
+      "da": "pt_180",
+      "a": "pt_181"
+    },
+    {
+      "da": "pt_181",
+      "a": "pt_182"
+    },
+    {
+      "da": "pt_182",
+      "a": "pt_183"
+    },
+    {
+      "da": "pt_183",
+      "a": "pt_184"
+    },
+    {
+      "da": "pt_184",
+      "a": "pt_185"
+    },
+    {
+      "da": "pt_185",
+      "a": "pt_186"
+    },
+    {
+      "da": "pt_186",
+      "a": "pt_187"
+    },
+    {
+      "da": "pt_187",
+      "a": "pt_188"
+    },
+    {
+      "da": "pt_188",
+      "a": "pt_189"
+    },
+    {
+      "da": "pt_189",
+      "a": "pt_190"
+    },
+    {
+      "da": "pt_190",
+      "a": "pt_191"
+    },
+    {
+      "da": "pt_191",
+      "a": "pt_192"
+    },
+    {
+      "da": "pt_192",
+      "a": "pt_193"
+    },
+    {
+      "da": "pt_193",
+      "a": "pt_194"
+    },
+    {
+      "da": "pt_194",
+      "a": "pt_195"
+    },
+    {
+      "da": "pt_195",
+      "a": "pt_196"
+    },
+    {
+      "da": "pt_196",
+      "a": "pt_197"
+    },
+    {
+      "da": "pt_197",
+      "a": "pt_198"
+    },
+    {
+      "da": "pt_198",
+      "a": "pt_199"
+    },
+    {
+      "da": "pt_199",
+      "a": "pt_200"
+    },
+    {
+      "da": "pt_200",
+      "a": "pt_201"
+    },
+    {
+      "da": "pt_201",
+      "a": "pt_202"
+    },
+    {
+      "da": "pt_202",
+      "a": "pt_203"
+    },
+    {
+      "da": "pt_203",
+      "a": "pt_204"
+    },
+    {
+      "da": "pt_204",
+      "a": "pt_205"
+    },
+    {
+      "da": "pt_205",
+      "a": "pt_206"
+    },
+    {
+      "da": "pt_206",
+      "a": "pt_207"
+    },
+    {
+      "da": "pt_207",
+      "a": "pt_208"
+    },
+    {
+      "da": "pt_208",
+      "a": "pt_209"
+    },
+    {
+      "da": "pt_209",
+      "a": "pt_210"
+    },
+    {
+      "da": "pt_210",
+      "a": "pt_211"
+    },
+    {
+      "da": "pt_211",
+      "a": "pt_212"
+    },
+    {
+      "da": "pt_212",
+      "a": "pt_213"
+    },
+    {
+      "da": "pt_213",
+      "a": "pt_214"
+    },
+    {
+      "da": "pt_214",
+      "a": "pt_215"
+    },
+    {
+      "da": "pt_215",
+      "a": "pt_216"
+    },
+    {
+      "da": "pt_216",
+      "a": "pt_217"
+    },
+    {
+      "da": "pt_217",
+      "a": "pt_218"
+    },
+    {
+      "da": "pt_218",
+      "a": "pt_219"
+    },
+    {
+      "da": "pt_219",
+      "a": "pt_220"
+    },
+    {
+      "da": "pt_220",
+      "a": "pt_221"
+    },
+    {
+      "da": "pt_221",
+      "a": "pt_222"
+    },
+    {
+      "da": "pt_222",
+      "a": "pt_223"
+    },
+    {
+      "da": "pt_223",
+      "a": "pt_224"
+    },
+    {
+      "da": "pt_224",
+      "a": "pt_225"
+    },
+    {
+      "da": "pt_225",
+      "a": "pt_226"
+    },
+    {
+      "da": "pt_226",
+      "a": "pt_227"
+    },
+    {
+      "da": "pt_227",
+      "a": "pt_228"
+    },
+    {
+      "da": "pt_228",
+      "a": "pt_229"
+    },
+    {
+      "da": "pt_229",
+      "a": "pt_230"
+    },
+    {
+      "da": "pt_230",
+      "a": "pt_231"
+    },
+    {
+      "da": "pt_231",
+      "a": "pt_232"
+    },
+    {
+      "da": "pt_232",
+      "a": "pt_233"
+    },
+    {
+      "da": "pt_233",
+      "a": "pt_234"
+    },
+    {
+      "da": "pt_234",
+      "a": "pt_235"
+    },
+    {
+      "da": "pt_235",
+      "a": "pt_236"
+    },
+    {
+      "da": "pt_236",
+      "a": "pt_237"
+    },
+    {
+      "da": "pt_237",
+      "a": "pt_238"
+    },
+    {
+      "da": "pt_238",
+      "a": "pt_239"
+    },
+    {
+      "da": "pt_239",
+      "a": "pt_240"
+    },
+    {
+      "da": "pt_240",
+      "a": "pt_241"
+    },
+    {
+      "da": "pt_241",
+      "a": "pt_242"
+    },
+    {
+      "da": "pt_242",
+      "a": "pt_243"
+    },
+    {
+      "da": "pt_243",
+      "a": "pt_244"
+    },
+    {
+      "da": "pt_244",
+      "a": "pt_245"
+    },
+    {
+      "da": "pt_245",
+      "a": "pt_246"
+    },
+    {
+      "da": "pt_246",
+      "a": "pt_247"
+    },
+    {
+      "da": "pt_247",
+      "a": "pt_248"
+    },
+    {
+      "da": "pt_248",
+      "a": "pt_249"
+    },
+    {
+      "da": "pt_249",
+      "a": "pt_250"
+    },
+    {
+      "da": "pt_250",
+      "a": "pt_251"
+    },
+    {
+      "da": "pt_251",
+      "a": "pt_252"
+    },
+    {
+      "da": "pt_252",
+      "a": "pt_253"
+    },
+    {
+      "da": "pt_253",
+      "a": "pt_254"
+    },
+    {
+      "da": "pt_254",
+      "a": "pt_255"
+    },
+    {
+      "da": "pt_255",
+      "a": "pt_256"
+    },
+    {
+      "da": "pt_256",
+      "a": "pt_257"
+    },
+    {
+      "da": "pt_257",
+      "a": "pt_258"
+    },
+    {
+      "da": "pt_258",
+      "a": "pt_259"
+    },
+    {
+      "da": "pt_259",
+      "a": "pt_260"
+    },
+    {
+      "da": "pt_260",
+      "a": "pt_261"
+    },
+    {
+      "da": "pt_261",
+      "a": "pt_262"
+    },
+    {
+      "da": "pt_262",
+      "a": "pt_263"
+    },
+    {
+      "da": "pt_263",
+      "a": "pt_264"
+    },
+    {
+      "da": "pt_264",
+      "a": "pt_265"
+    },
+    {
+      "da": "pt_265",
+      "a": "pt_266"
+    },
+    {
+      "da": "pt_266",
+      "a": "pt_267"
+    },
+    {
+      "da": "pt_267",
+      "a": "pt_268"
+    },
+    {
+      "da": "pt_268",
+      "a": "pt_269"
+    },
+    {
+      "da": "pt_269",
+      "a": "pt_270"
+    },
+    {
+      "da": "pt_270",
+      "a": "pt_271"
+    },
+    {
+      "da": "pt_271",
+      "a": "pt_272"
+    },
+    {
+      "da": "pt_272",
+      "a": "pt_273"
+    },
+    {
+      "da": "pt_273",
+      "a": "pt_274"
+    },
+    {
+      "da": "pt_274",
+      "a": "pt_275"
+    },
+    {
+      "da": "pt_275",
+      "a": "pt_276"
+    },
+    {
+      "da": "pt_276",
+      "a": "pt_277"
+    },
+    {
+      "da": "pt_277",
+      "a": "pt_278"
+    },
+    {
+      "da": "pt_278",
+      "a": "pt_279"
+    },
+    {
+      "da": "pt_279",
+      "a": "pt_280"
+    },
+    {
+      "da": "pt_280",
+      "a": "pt_281"
+    },
+    {
+      "da": "pt_281",
+      "a": "pt_282"
+    },
+    {
+      "da": "pt_282",
+      "a": "pt_283"
+    },
+    {
+      "da": "pt_283",
+      "a": "pt_284"
+    },
+    {
+      "da": "pt_284",
+      "a": "pt_285"
+    },
+    {
+      "da": "pt_285",
+      "a": "pt_286"
+    },
+    {
+      "da": "pt_286",
+      "a": "pt_287"
+    },
+    {
+      "da": "pt_287",
+      "a": "pt_288"
+    },
+    {
+      "da": "pt_288",
+      "a": "pt_289"
+    },
+    {
+      "da": "pt_289",
+      "a": "pt_290"
+    },
+    {
+      "da": "pt_290",
+      "a": "pt_291"
+    },
+    {
+      "da": "pt_291",
+      "a": "pt_292"
+    },
+    {
+      "da": "pt_292",
+      "a": "pt_293"
+    },
+    {
+      "da": "pt_293",
+      "a": "pt_294"
+    },
+    {
+      "da": "pt_294",
+      "a": "pt_295"
+    },
+    {
+      "da": "pt_295",
+      "a": "pt_296"
+    },
+    {
+      "da": "pt_296",
+      "a": "pt_297"
+    },
+    {
+      "da": "pt_297",
+      "a": "pt_298"
+    },
+    {
+      "da": "pt_298",
+      "a": "pt_299"
+    },
+    {
+      "da": "pt_299",
+      "a": "pt_300"
+    },
+    {
+      "da": "pt_300",
+      "a": "pt_301"
+    },
+    {
+      "da": "pt_301",
+      "a": "pt_302"
+    },
+    {
+      "da": "pt_302",
+      "a": "pt_303"
+    },
+    {
+      "da": "pt_303",
+      "a": "pt_304"
+    },
+    {
+      "da": "pt_304",
+      "a": "pt_305"
+    },
+    {
+      "da": "pt_305",
+      "a": "pt_306"
+    },
+    {
+      "da": "pt_306",
+      "a": "pt_307"
+    },
+    {
+      "da": "pt_307",
+      "a": "pt_308"
+    },
+    {
+      "da": "pt_308",
+      "a": "pt_309"
+    },
+    {
+      "da": "pt_309",
+      "a": "pt_310"
+    },
+    {
+      "da": "pt_310",
+      "a": "pt_311"
+    },
+    {
+      "da": "pt_311",
+      "a": "pt_312"
+    },
+    {
+      "da": "pt_312",
+      "a": "pt_313"
+    },
+    {
+      "da": "pt_313",
+      "a": "pt_314"
+    },
+    {
+      "da": "pt_314",
+      "a": "pt_315"
+    },
+    {
+      "da": "pt_315",
+      "a": "pt_316"
+    },
+    {
+      "da": "pt_316",
+      "a": "pt_317"
+    },
+    {
+      "da": "pt_317",
+      "a": "pt_318"
+    },
+    {
+      "da": "pt_318",
+      "a": "pt_319"
+    },
+    {
+      "da": "pt_319",
+      "a": "pt_320"
+    },
+    {
+      "da": "pt_320",
+      "a": "pt_321"
+    },
+    {
+      "da": "pt_321",
+      "a": "pt_322"
+    },
+    {
+      "da": "pt_322",
+      "a": "pt_323"
+    },
+    {
+      "da": "pt_323",
+      "a": "pt_324"
+    },
+    {
+      "da": "pt_324",
+      "a": "pt_325"
+    },
+    {
+      "da": "pt_325",
+      "a": "pt_326"
+    },
+    {
+      "da": "pt_326",
+      "a": "pt_327"
+    },
+    {
+      "da": "pt_327",
+      "a": "pt_328"
+    },
+    {
+      "da": "pt_328",
+      "a": "pt_329"
+    },
+    {
+      "da": "pt_329",
+      "a": "pt_330"
+    },
+    {
+      "da": "pt_330",
+      "a": "pt_331"
+    },
+    {
+      "da": "pt_331",
+      "a": "pt_332"
+    },
+    {
+      "da": "pt_332",
+      "a": "pt_333"
+    },
+    {
+      "da": "pt_333",
+      "a": "pt_334"
+    },
+    {
+      "da": "pt_334",
+      "a": "pt_335"
+    },
+    {
+      "da": "pt_335",
+      "a": "pt_336"
+    },
+    {
+      "da": "pt_336",
+      "a": "pt_337"
+    },
+    {
+      "da": "pt_337",
+      "a": "pt_338"
+    },
+    {
+      "da": "pt_338",
+      "a": "pt_339"
+    },
+    {
+      "da": "pt_339",
+      "a": "pt_340"
+    },
+    {
+      "da": "pt_340",
+      "a": "pt_341"
+    },
+    {
+      "da": "pt_341",
+      "a": "pt_342"
+    },
+    {
+      "da": "pt_342",
+      "a": "pt_343"
+    },
+    {
+      "da": "pt_343",
+      "a": "pt_344"
+    },
+    {
+      "da": "pt_344",
+      "a": "pt_345"
+    },
+    {
+      "da": "pt_345",
+      "a": "pt_346"
+    },
+    {
+      "da": "pt_346",
+      "a": "pt_347"
+    },
+    {
+      "da": "pt_347",
+      "a": "pt_348"
+    },
+    {
+      "da": "pt_348",
+      "a": "pt_349"
+    },
+    {
+      "da": "pt_349",
+      "a": "pt_350"
+    },
+    {
+      "da": "pt_350",
+      "a": "pt_351"
+    },
+    {
+      "da": "pt_351",
+      "a": "pt_352"
+    },
+    {
+      "da": "pt_352",
+      "a": "pt_353"
+    },
+    {
+      "da": "pt_353",
+      "a": "pt_354"
+    },
+    {
+      "da": "pt_354",
+      "a": "pt_355"
+    },
+    {
+      "da": "pt_355",
+      "a": "pt_356"
+    },
+    {
+      "da": "pt_356",
+      "a": "pt_357"
+    },
+    {
+      "da": "pt_357",
+      "a": "pt_358"
+    },
+    {
+      "da": "pt_358",
+      "a": "pt_359"
+    },
+    {
+      "da": "pt_359",
+      "a": "pt_360"
+    },
+    {
+      "da": "pt_360",
+      "a": "pt_361"
+    },
+    {
+      "da": "pt_361",
+      "a": "pt_362"
+    },
+    {
+      "da": "pt_362",
+      "a": "pt_363"
+    },
+    {
+      "da": "pt_363",
+      "a": "pt_364"
+    },
+    {
+      "da": "pt_364",
+      "a": "pt_365"
+    },
+    {
+      "da": "pt_365",
+      "a": "pt_366"
+    },
+    {
+      "da": "pt_366",
+      "a": "pt_367"
+    },
+    {
+      "da": "pt_367",
+      "a": "pt_368"
+    },
+    {
+      "da": "pt_368",
+      "a": "pt_369"
+    },
+    {
+      "da": "pt_369",
+      "a": "pt_370"
+    },
+    {
+      "da": "pt_370",
+      "a": "pt_371"
+    },
+    {
+      "da": "pt_371",
+      "a": "pt_372"
+    },
+    {
+      "da": "pt_372",
+      "a": "pt_373"
+    },
+    {
+      "da": "pt_373",
+      "a": "pt_374"
+    },
+    {
+      "da": "pt_374",
+      "a": "pt_375"
+    },
+    {
+      "da": "pt_375",
+      "a": "pt_376"
+    },
+    {
+      "da": "pt_376",
+      "a": "pt_377"
+    },
+    {
+      "da": "pt_377",
+      "a": "pt_378"
+    },
+    {
+      "da": "pt_378",
+      "a": "pt_379"
+    },
+    {
+      "da": "pt_379",
+      "a": "pt_380"
+    },
+    {
+      "da": "pt_380",
+      "a": "pt_381"
+    },
+    {
+      "da": "pt_381",
+      "a": "pt_382"
+    },
+    {
+      "da": "pt_382",
+      "a": "pt_383"
+    },
+    {
+      "da": "pt_383",
+      "a": "pt_384"
+    },
+    {
+      "da": "pt_384",
+      "a": "pt_385"
+    },
+    {
+      "da": "pt_385",
+      "a": "pt_386"
+    },
+    {
+      "da": "pt_386",
+      "a": "pt_387"
+    },
+    {
+      "da": "pt_387",
+      "a": "pt_388"
+    },
+    {
+      "da": "pt_388",
+      "a": "pt_389"
+    },
+    {
+      "da": "pt_389",
+      "a": "pt_390"
+    },
+    {
+      "da": "pt_390",
+      "a": "pt_391"
+    },
+    {
+      "da": "pt_391",
+      "a": "pt_392"
+    },
+    {
+      "da": "pt_392",
+      "a": "pt_393"
+    },
+    {
+      "da": "pt_393",
+      "a": "pt_394"
+    },
+    {
+      "da": "pt_394",
+      "a": "pt_395"
+    },
+    {
+      "da": "pt_395",
+      "a": "pt_396"
+    },
+    {
+      "da": "pt_396",
+      "a": "pt_397"
+    },
+    {
+      "da": "pt_397",
+      "a": "pt_398"
+    },
+    {
+      "da": "pt_398",
+      "a": "pt_399"
+    },
+    {
+      "da": "pt_399",
+      "a": "pt_400"
+    },
+    {
+      "da": "pt_400",
+      "a": "pt_401"
+    },
+    {
+      "da": "pt_401",
+      "a": "pt_402"
+    },
+    {
+      "da": "pt_402",
+      "a": "pt_403"
+    },
+    {
+      "da": "pt_403",
+      "a": "pt_404"
+    },
+    {
+      "da": "pt_404",
+      "a": "pt_405"
+    },
+    {
+      "da": "pt_405",
+      "a": "pt_406"
+    },
+    {
+      "da": "pt_406",
+      "a": "pt_407"
+    },
+    {
+      "da": "pt_407",
+      "a": "pt_408"
+    },
+    {
+      "da": "pt_408",
+      "a": "pt_409"
+    },
+    {
+      "da": "pt_409",
+      "a": "pt_410"
+    },
+    {
+      "da": "pt_410",
+      "a": "pt_411"
+    },
+    {
+      "da": "pt_411",
+      "a": "pt_412"
+    },
+    {
+      "da": "pt_412",
+      "a": "pt_413"
+    },
+    {
+      "da": "pt_413",
+      "a": "pt_414"
+    },
+    {
+      "da": "pt_414",
+      "a": "pt_415"
+    },
+    {
+      "da": "pt_415",
+      "a": "pt_416"
+    },
+    {
+      "da": "pt_416",
+      "a": "pt_417"
+    },
+    {
+      "da": "pt_417",
+      "a": "pt_418"
+    },
+    {
+      "da": "pt_418",
+      "a": "pt_419"
+    },
+    {
+      "da": "pt_419",
+      "a": "pt_420"
+    },
+    {
+      "da": "pt_420",
+      "a": "pt_421"
+    },
+    {
+      "da": "pt_421",
+      "a": "pt_422"
+    },
+    {
+      "da": "pt_422",
+      "a": "pt_423"
+    },
+    {
+      "da": "pt_423",
+      "a": "pt_424"
+    },
+    {
+      "da": "pt_424",
+      "a": "pt_425"
+    },
+    {
+      "da": "pt_425",
+      "a": "pt_426"
+    },
+    {
+      "da": "pt_426",
+      "a": "pt_427"
+    },
+    {
+      "da": "pt_427",
+      "a": "pt_428"
+    },
+    {
+      "da": "pt_428",
+      "a": "pt_429"
+    },
+    {
+      "da": "pt_429",
+      "a": "pt_430"
+    },
+    {
+      "da": "pt_430",
+      "a": "pt_431"
+    },
+    {
+      "da": "pt_431",
+      "a": "pt_432"
+    },
+    {
+      "da": "pt_432",
+      "a": "pt_433"
+    },
+    {
+      "da": "pt_433",
+      "a": "pt_434"
+    },
+    {
+      "da": "pt_434",
+      "a": "pt_435"
+    },
+    {
+      "da": "pt_435",
+      "a": "pt_436"
+    },
+    {
+      "da": "pt_436",
+      "a": "pt_437"
+    },
+    {
+      "da": "pt_437",
+      "a": "pt_438"
+    },
+    {
+      "da": "pt_438",
+      "a": "pt_439"
+    },
+    {
+      "da": "pt_439",
+      "a": "pt_440"
+    },
+    {
+      "da": "pt_440",
+      "a": "pt_441"
+    }
+  ],
+  "note_pianificazione": "Piano da 441 sezioni markdown (structured). Carico cognitivo derivato da token stimati."
+}
