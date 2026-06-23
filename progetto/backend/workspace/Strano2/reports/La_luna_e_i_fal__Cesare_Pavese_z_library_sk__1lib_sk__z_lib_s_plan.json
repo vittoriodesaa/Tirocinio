@@ -1,0 +1,812 @@
+{
+  "source_id": "La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s_clean.md",
+  "unita_tempo_totale_minuti": 303,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "II",
+      "riga_inizio": 35,
+      "riga_fine": 103,
+      "carico_cognitivo": 0.5,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [
+        "nuto",
+        "poi",
+        "lui",
+        "alla",
+        "disse"
+      ],
+      "prerequisiti": [],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "III",
+      "riga_inizio": 104,
+      "riga_fine": 150,
+      "carico_cognitivo": 0.41,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "era",
+        "nora",
+        "nuto",
+        "lui",
+        "aveva"
+      ],
+      "prerequisiti": [
+        "pt_001"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "IV",
+      "riga_inizio": 151,
+      "riga_fine": 223,
+      "carico_cognitivo": 0.34,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "nuto",
+        "disse",
+        "qualcosa",
+        "era",
+        "quel"
+      ],
+      "prerequisiti": [
+        "pt_002"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "VI",
+      "riga_inizio": 263,
+      "riga_fine": 321,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "aveva",
+        "delle",
+        "adesso",
+        "riva"
+      ],
+      "prerequisiti": [
+        "pt_003"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "VII",
+      "riga_inizio": 322,
+      "riga_fine": 386,
+      "carico_cognitivo": 0.42,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "cinto",
+        "disse",
+        "poi",
+        "aveva",
+        "riva"
+      ],
+      "prerequisiti": [
+        "pt_004"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "VIII",
+      "riga_inizio": 387,
+      "riga_fine": 439,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "paese",
+        "vecchio",
+        "cavaliere",
+        "vigna"
+      ],
+      "prerequisiti": [
+        "pt_005"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "IX",
+      "riga_inizio": 440,
+      "riga_fine": 530,
+      "carico_cognitivo": 0.5,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [
+        "dissi",
+        "cinto",
+        "delle",
+        "disse",
+        "era"
+      ],
+      "prerequisiti": [
+        "pt_006"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "X",
+      "riga_inizio": 440,
+      "riga_fine": 530,
+      "carico_cognitivo": 0.5,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [
+        "era",
+        "canelli",
+        "tutto",
+        "cose",
+        "avevo"
+      ],
+      "prerequisiti": [
+        "pt_007"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "XI",
+      "riga_inizio": 574,
+      "riga_fine": 612,
+      "carico_cognitivo": 0.42,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "avevo",
+        "era",
+        "strada",
+        "quel",
+        "pianura"
+      ],
+      "prerequisiti": [
+        "pt_008"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "XII",
+      "riga_inizio": 613,
+      "riga_fine": 659,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "morti",
+        "disse",
+        "due",
+        "nuto",
+        "tutti"
+      ],
+      "prerequisiti": [
+        "pt_009"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "XIII",
+      "riga_inizio": 660,
+      "riga_fine": 744,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "nuto",
+        "disse",
+        "fatto",
+        "era",
+        "paese"
+      ],
+      "prerequisiti": [
+        "pt_010"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "XIV",
+      "riga_inizio": 745,
+      "riga_fine": 775,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "poi",
+        "alla",
+        "volta",
+        "era",
+        "padrino"
+      ],
+      "prerequisiti": [
+        "pt_011"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "XV",
+      "riga_inizio": 776,
+      "riga_fine": 810,
+      "carico_cognitivo": 0.44,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "alla",
+        "matteo",
+        "adesso",
+        "sor"
+      ],
+      "prerequisiti": [
+        "pt_012"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "XVI",
+      "riga_inizio": 811,
+      "riga_fine": 893,
+      "carico_cognitivo": 0.44,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "disse",
+        "cinto",
+        "nuto",
+        "era",
+        "alla"
+      ],
+      "prerequisiti": [
+        "pt_013"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "XVII",
+      "riga_inizio": 894,
+      "riga_fine": 926,
+      "carico_cognitivo": 0.46,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "nuto",
+        "lui",
+        "era",
+        "tutti",
+        "cosa"
+      ],
+      "prerequisiti": [
+        "pt_014"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "XVIII",
+      "riga_inizio": 927,
+      "riga_fine": 985,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "disse",
+        "sor",
+        "matteo",
+        "adesso",
+        "silvia"
+      ],
+      "prerequisiti": [
+        "pt_015"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "XIX",
+      "riga_inizio": 986,
+      "riga_fine": 1028,
+      "carico_cognitivo": 0.39,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "era",
+        "avevo",
+        "festa",
+        "lui",
+        "poi"
+      ],
+      "prerequisiti": [
+        "pt_016"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "XX",
+      "riga_inizio": 1029,
+      "riga_fine": 1061,
+      "carico_cognitivo": 0.4,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "era",
+        "aveva",
+        "nuto",
+        "irene",
+        "mani"
+      ],
+      "prerequisiti": [
+        "pt_017"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": "XXI",
+      "riga_inizio": 1062,
+      "riga_fine": 1116,
+      "carico_cognitivo": 0.49,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "lei",
+        "era",
+        "genova",
+        "perché",
+        "mio"
+      ],
+      "prerequisiti": [
+        "pt_018"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "XXII",
+      "riga_inizio": 1117,
+      "riga_fine": 1139,
+      "carico_cognitivo": 0.41,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "loro",
+        "era",
+        "vecchia",
+        "nido",
+        "poi"
+      ],
+      "prerequisiti": [
+        "pt_019"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "XXIII",
+      "riga_inizio": 1140,
+      "riga_fine": 1188,
+      "carico_cognitivo": 0.49,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "irene",
+        "arturo",
+        "diceva",
+        "silvia",
+        "faceva"
+      ],
+      "prerequisiti": [
+        "pt_020"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "XXIV",
+      "riga_inizio": 1189,
+      "riga_fine": 1255,
+      "carico_cognitivo": 0.39,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "silvia",
+        "irene",
+        "era",
+        "perché",
+        "diceva"
+      ],
+      "prerequisiti": [
+        "pt_021"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "XXV",
+      "riga_inizio": 1256,
+      "riga_fine": 1292,
+      "carico_cognitivo": 0.43,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "irene",
+        "era",
+        "silvia",
+        "lei",
+        "canelli"
+      ],
+      "prerequisiti": [
+        "pt_022"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "XXVI",
+      "riga_inizio": 1293,
+      "riga_fine": 1337,
+      "carico_cognitivo": 0.42,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "cosa",
+        "era",
+        "avevo",
+        "allora",
+        "casa"
+      ],
+      "prerequisiti": [
+        "pt_023"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "XXVII",
+      "riga_inizio": 1338,
+      "riga_fine": 1412,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "cinto",
+        "aveva",
+        "rosina",
+        "lui"
+      ],
+      "prerequisiti": [
+        "pt_024"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "XXVIII",
+      "riga_inizio": 1413,
+      "riga_fine": 1443,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "silvia",
+        "alla",
+        "aveva",
+        "matteo"
+      ],
+      "prerequisiti": [
+        "pt_025"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "XXIX",
+      "riga_inizio": 1444,
+      "riga_fine": 1484,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "era",
+        "irene",
+        "aveva",
+        "arturo",
+        "silvia"
+      ],
+      "prerequisiti": [
+        "pt_026"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "XXX",
+      "riga_inizio": 1485,
+      "riga_fine": 1543,
+      "carico_cognitivo": 0.53,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [
+        "silvia",
+        "poi",
+        "irene",
+        "loro",
+        "nuto"
+      ],
+      "prerequisiti": [
+        "pt_027"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "XXXI",
+      "riga_inizio": 1544,
+      "riga_fine": 1614,
+      "carico_cognitivo": 0.41,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "nuto",
+        "era",
+        "casa",
+        "strada",
+        "dissi"
+      ],
+      "prerequisiti": [
+        "pt_028"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "XXXII",
+      "riga_inizio": 1615,
+      "riga_fine": 1677,
+      "carico_cognitivo": 0.51,
+      "durata_stimata_minuti": 11,
+      "concetti_chiave": [
+        "santa",
+        "nuto",
+        "disse",
+        "lei",
+        "aveva"
+      ],
+      "prerequisiti": [
+        "pt_029"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "Indice",
+      "riga_inizio": 1678,
+      "riga_fine": 1681,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "indice",
+        "iii",
+        "vii",
+        "viii",
+        "xii"
+      ],
+      "prerequisiti": [
+        "pt_030"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    }
+  ],
+  "note_pianificazione": "Piano da 31 sezioni markdown (structured). Carico cognitivo derivato da token stimati.",
+  "sorgenti": []
+}

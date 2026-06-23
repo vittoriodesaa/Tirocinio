@@ -1,0 +1,107 @@
+{
+  "titolo_corso": "La luna, i falò e l'AI: da Pavese a LangChain",
+  "lingua": "it",
+  "descrizione": "Un percorso microlearning che intreccia l'analisi letteraria de \"La luna e i falò\" di Cesare Pavese con i fondamenti di LangChain e LLM per sviluppatori. Attraverso 32 capitoli pavesiani e 8 integrazioni tematiche con tecniche di AI, il corso esplora memoria, identità e linguaggio combinando narrativa e programmazione. Prosegue poi con un approfondimento completo di LangChain: RAG, LangGraph, agenti, deployment e testing.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "tipo": "lezione",
+      "argomento": "Il ritorno al paese: l'arrivo dell'Anguilla",
+      "sintesi_breve": "## Introduzione\n\nIl romanzo \"La luna e i falò\" di Cesare Pavese si apre con il ritorno del narratore, Anguilla, nel paese delle Langhe dove è cresciuto. Questo momento di ritorno non è solo geografico, ma anche temporale: il protagonista torna dopo aver fatto fortuna in America e",
+      "contenuto": "## Introduzione\n\nIl romanzo \"La luna e i falò\" di Cesare Pavese si apre con il ritorno del narratore, Anguilla, nel paese delle Langhe dove è cresciuto. Questo momento di ritorno non è solo geografico, ma anche temporale: il protagonista torna dopo aver fatto fortuna in America e si trova a confrontarsi con un passato che credeva di aver superato. Per uno sviluppatore, questa tensione tra \"ciò che si era\" e \"ciò che si è diventati\" richiama il concetto di **refactoring del codice**: si torna su un progetto vecchio e ci si chiede se il codice passato regga ancora al confronto con le competenze acquisite.\n\n## Concetti chiave\n\n### Il peso del passato e la memoria del codice\nAnguilla scende all'albergo dell'Angelo durante la festa della Madonna d'agosto. La piazza è piena di rumori, balli, confusione — \"stessi rumori, stesso vino, stesse facce di una volta\". Come in un repository Git, il commit history non cambia, ma chi lo rilegge oggi ha occhi diversi. Il narratore riconosce i suoni, gli odori, le persone, ma ora \"lo sapeva, e quel tempo era passato\".\n\n### Nuto: il compagno che è rimasto\nL'incontro con Nuto, falegname e ex musicante, rappresenta l'alter ego rimasto in patria. Nuto ha smesso di suonare il clarino — \"o falegname o musicante\" — e incarna la scelta di restare e adattarsi. Per chi sviluppa, è il collega che ha scelto un percorso più stabile, mentre Anguilla ha viaggiato (cambiato linguaggi, aziende, tecnologie).\n\n### Il destino e l'identità\nNuto dice: \"Tuo padre, sei tu\". Questa battuta colpisce il tema dell'identità auto-costruita. Anguilla non ha origini certe — è un trovatello — e la sua identità è interamente il risultato delle sue scelte. In ambito tech, è la storia dello sviluppatore self-taught che si fa da sé, senza un background formale in informatica.\n\n## Esempio pratico\n\nImmagina di tornare su un progetto legacy scritto in jQuery che non tocchi da 5 anni. Il codice funziona ancora, i test passano, ma tu adesso conosci React, TypeScript, e pattern moderni. Provi lo stesso misto di familiarità e disagio di Anguilla: \"Ero venuto per riposarmi un quindici giorni\" — ma ogni riga di quel vecchio codice ti parla di un passato che hai superato.\n\n## Riepilogo\n\n- Il ritorno di Anguilla al paese natale è un'occasione per misurare il cambiamento personale\n- Nuto rappresenta la stabilità e la scelta consapevole di restare\n- L'identità è auto-costruita, come per molti sviluppatori senza formazione formale\n- I luoghi e i rumori della festa sono gli stessi, ma la percezione è mutata\n- Il passato, come il codice legacy, non va rinnegato ma compreso",
+      "fonte": {
+        "percorso": "sources/La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s_clean.md",
+        "riga_inizio": 35,
+        "riga_fine": 103
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Analizzare il tema del ritorno come metafora del confronto col passato",
+        "Identificare il rapporto tra Anguilla e Nuto come dinamica tra esperienza e stabilità",
+        "Riconoscere il valore dell'identità auto-costruita nel percorso professionale"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "tipo": "lezione",
+      "argomento": "L'America e il disincanto: il capitolo californiano",
+      "sintesi_breve": "## Introduzione\n\nNel capitolo III, Anguilla rievoca la sua permanenza in California, dove ha lavorato come lattaio e barista. Questo capitolo è una delle parti più potenti del romanzo perché mostra il contrasto tra il sogno americano e la realtà dell'emigrazione. Per uno sviluppa",
+      "contenuto": "## Introduzione\n\nNel capitolo III, Anguilla rievoca la sua permanenza in California, dove ha lavorato come lattaio e barista. Questo capitolo è una delle parti più potenti del romanzo perché mostra il contrasto tra il sogno americano e la realtà dell'emigrazione. Per uno sviluppatore, è la metafora perfetta del \"cambiare azienda pensando che sarà tutto diverso\" — e scoprire che i problemi sono gli stessi, solo con un fuso orario diverso.\n\n## Concetti chiave\n\n### L'illusione del \"dove tutto funziona\"\nAnguilla arriva in California e pensa: \"Sono a casa\". Le lunghe colline sotto il sole gli ricordano le Langhe. Ma presto scopre che la realtà è fatta di locali notturni, whisky illegale e una ragazza (Nora) con cui non c'è vera intesa. In ambito tech, è la delusione di chi cambia stack tecnologico credendo che risolverà tutti i problemi di produttività.\n\n### Nora e la difficoltà di comunicazione\nNora non capisce il dialetto piemontese di Anguilla, ma più profondamente non capisce il suo bisogno di natura, di erba, di terra. Lui vorrebbe portarla in campagna, \"rovesciarla su quella terra, dare un senso a tutto il baccano sotto le stelle\". Lei vuole i locali notturni. Come in un team dove gli obiettivi non sono allineati: due persone che lavorano sullo stesso progetto ma hanno visioni opposte.\n\n### Il racconto di Nuto musicante come ponte\nUn emigrato piemontese riconosce Anguilla al bar e gli racconta di Nuto, della gara di bande a Nizza e della notte magica in cui suonarono fino a Calamandrana. Questo collegamento improvviso — un frammento di casa in mezzo al deserto californiano — è come trovare un collega ex-azienda in una conferenza internazionale.\n\n## Esempio pratico\n\nUn developer italiano si trasferisce a San Francisco per lavorare in una big tech. I primi mesi sono entusiasmo puro — \"Sono a casa\". Poi scopre che la burocrazia, le dinamiche politiche e lo stress sono uguali, solo in inglese e con stipendi più alti. La sera, come Anguilla, sta su un ciglione a guardare le stelle e si chiede: \"Valeva la pena esser venuto? Dove potevo ancora andare?\"\n\n## Riepilogo\n\n- Il sogno americano si scontra con la realtà della solitudine e dell'incomunicabilità\n- Nora e Anguilla rappresentano due modi incompatibili di vivere le relazioni e il lavoro\n- Un incontro casuale porta un frammento di casa: potente metafora del networking\n- La notte dei rospi e delle stelle è il momento di più profonda alienazione\n- La decisione di tornare nasce dalla consapevolezza che l'America non è la risposta",
+      "fonte": {
+        "percorso": "sources/La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s_clean.md",
+        "riga_inizio": 104,
+        "riga_fine": 150
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Analizzare il contrasto tra sogno americano e realtà dell'emigrazione",
+        "Riconoscere le dinamiche di incomunicabilità in contesti multiculturali",
+        "Valutare il ruolo dei ricordi e delle connessioni umane nel superare l'alienazione"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "tipo": "lezione",
+      "argomento": "Dialogo e riflessione: parlare con Nuto come pattern di auto-correzione",
+      "sintesi_breve": "## Introduzione\n\nNel capitolo IV del romanzo, Anguilla e Nuto discutono sul poggiolo dell'albergo durante la festa. È un dialogo apparentemente semplice, ma carico di significato: Nuto riflette sul destino, sulla guerra, sulla giustizia sociale. In parallelo, nel libro su LangCha",
+      "contenuto": "## Introduzione\n\nNel capitolo IV del romanzo, Anguilla e Nuto discutono sul poggiolo dell'albergo durante la festa. È un dialogo apparentemente semplice, ma carico di significato: Nuto riflette sul destino, sulla guerra, sulla giustizia sociale. In parallelo, nel libro su LangChain, si introduce il concetto di **reflection pattern** — un'architettura in cui un modello LLM genera output, poi lo critica e lo migliora in un ciclo di auto-correzione. Il dialogo umano diventa metafora del ciclo reflexion: Nuto è il \"reflection node\" che critica e raffinna le idee di Anguilla.\n\n## Concetti chiave\n\n### Il dialogo come ciclo di miglioramento\n\"Parlava a testa bassa, la voce usciva storta contro la ringhiera. Fece scorrere i denti sulla ringhiera.\" Nuto non dà risposte facili: riflette, si trattiene, cambia discorso. Come nel pattern di reflection di LangChain, dove un LLM produce una risposta iniziale e poi un secondo passo (reflect) la critica per migliorarla. La tensione nel dialogo — Nuto che \"vuota il sacco\" ma non quella sera — è l'equivalente umano di un ciclo di generazione-riflessione non concluso.\n\n### Destino e Chain-of-Thought\nNuto dice: \"È perché c'è un destino. Tu a Genova, in America, va' a sapere, dovevi far qualcosa, capire qualcosa che ti sarebbe toccato.\" Questo ragionamento sequenziale che cerca un senso negli eventi passati richiama il **Chain-of-Thought prompting**: ogni passo logico costruisce sul precedente. In LangChain, il reflection pattern può funzionare a due livelli: generazione iniziale (Anguilla che racconta la sua storia) e riflessione critica (Nuto che analizza).\n\n### L'output finale e il silenzio\nNel segmento del libro LangChain, si mostra l'output finale di un ciclo di reflection: un AIMessage che contiene la risposta raffinata. \"This simple type of reflection can sometimes improve performance by giving the LLM multiple attempts at refining its output.\" Allo stesso modo, il silenzio di Nuto alla fine del capitolo IV — \"Non vuotò il sacco\" — è un \"output\" non concluso, un loop che richiederà un altro ciclo.\n\n## Esempio pratico\n\nImmagina di scrivere un'agente LangChain che risponde a domande legali. Il primo tentativo produce una risposta generica. Un secondo nodo \"reflection\" analizza la risposta, trova che manca il riferimento all'articolo di legge specifico, e genera una nuova risposta migliorata. È esattamente quello che fa Nuto con Anguilla: non accetta la prima versione della storia, spinge più a fondo, e alla fine arriva a una verità più complessa.\n\n## Riepilogo\n\n- Il dialogo tra Nuto e Anguilla è un ciclo naturale di riflessione e auto-correzione\n- Il reflection pattern in LangChain segue la stessa logica: genera, critica, migliora\n- Nuto funge da \"reflection node\" che spinge Anguilla oltre le sue prime risposte\n- L'output finale può essere ritardato (come il silenzio di Nuto) per maggiore qualità\n- Il ciclo reflection è applicabile a chatbot, agenti e sistemi di QA complessi",
+      "fonte": {
+        "percorso": "sources/La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s_clean.md",
+        "riga_inizio": 151,
+        "riga_fine": 223
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Learning_LangChain_Building_AI_and_LL_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 7832,
+          "riga_fine": 7862
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Analizzare il dialogo come pattern di riflessione e auto-correzione",
+        "Comprendere il reflection pattern di LangChain e la sua architettura",
+        "Collegare il silenzio narrativo ai cicli iterativi di miglioramento dell'output LLM",
+        "Valutare l'importanza della critica nel raffinamento delle risposte AI"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_004",
+      "ordine": 4,
+      "tipo": "lezione",
+      "argomento": "Il ritorno ai luoghi dell'infanzia: Gaminella e la memoria",
+      "sintesi_breve": "## Introduzione\n\nNel capitolo VI, Anguilla torna all'aia di Gaminella, il casolare dov'era cresciuto. Incontra le nuove abitanti — la cognata del Valino, la vecchia sulla soglia, e il ragazzo Cinto. Questo ritorno fisico a un luogo dell'infanzia è un'esperienza universale: il pos",
+      "contenuto": "## Introduzione\n\nNel capitolo VI, Anguilla torna all'aia di Gaminella, il casolare dov'era cresciuto. Incontra le nuove abitanti — la cognata del Valino, la vecchia sulla soglia, e il ragazzo Cinto. Questo ritorno fisico a un luogo dell'infanzia è un'esperienza universale: il posto è cambiato eppure è lo stesso. Per uno sviluppatore, è come navigare in un repository di cui ricordi la struttura generale ma dove ogni file è stato riscritto.\n\n## Concetti chiave\n\n### Cinto: lo specchio del passato\nCinto ha una gamba malata e ride senza far voce, chiudendo gli occhi come un gioco: \"Conoscevo questo gioco anch'io\". Anguilla riconosce in Cinto sé stesso bambino — storpio non nel corpo ma nelle condizioni sociali. È l'erede invisibile della stessa miseria. Il parallelismo richiama la **ricorsione**: ogni caso base (infanzia di Anguilla) genera un nuovo caso (infanzia di Cinto) in un loop che sembra non terminare.\n\n### Il paesaggio come codice immutabile\n\"Era strano come tutto fosse cambiato eppure uguale. Nemmeno una vite era rimasta delle vecchie, nemmeno una bestia... eppure a guardarsi intorno, il grosso fianco di Gaminella, tutto era sempre uguale.\" Il codice sorgente di un'applicazione può essere completamente riscritto, ma l'architettura generale e il comportamento rimangono riconoscibili. Il paesaggio delle Langhe è l'interfaccia pubblica che non cambia.\n\n### Il tedesco mangiato dalle formiche\nCinto racconta del cadavere di un tedesco trovato nella riva, \"tutto scorticato\" dopo due inverni sottoterra. La guerra è ancora presente nel paesaggio, come un bug in produzione che nessuno ha mai fixato ma che ogni tanto riemerge nei log.\n\n## Esempio pratico\n\nUno sviluppatore torna su un progetto Node.js che non toccava da 3 anni. Il package.json è irriconoscibile (tutto aggiornato da altri), ma la struttura delle cartelle e le route API sono intatte. I commenti vecchi parlano di bug fix che ora sembrano incomprensibili. Qualcuno ha riscritto tutto, ma l'applicazione funziona come prima. È Gaminella: stesso comportamento, zero righe uguali.\n\n## Riepilogo\n\n- Cinto è il riflesso dell'infanzia di Anguilla: stesso destino in un corpo diverso\n- Il paesaggio cambia nei dettagli ma resta identico nella sostanza, come il software legacy\n- Il cadavere del tedesco è il passato che riemerge: bug storico che il sistema non ha risolto\n- Le donne di Gaminella rappresentano la povertà che si auto-perpetua\n- Ogni generazione riscrive il codice ma la struttura profonda rimane",
+      "fonte": {
+        "percorso": "sources/La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s_clean.md",
+        "riga_inizio": 263,
+        "riga_fine": 321
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Analizzare il parallelismo tra Cinto e l'infanzia di Anguilla come metafora di ricorsione",
+        "Interpretare il paesaggio immutabile come interfaccia stabile di un sistema",
+        "Riconoscere il trauma storico che riemerge come bug non risolto"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-06-23T17:00:08Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/Strano2",
+    "agente": "microlearning_planning_agent"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source_id": "La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s",
+  "quality_score": 0.75,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.7,
+    "reading_order": 0.6,
+    "noise_level": 0.7,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.9
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "title_structure",
+      "message": "Il titolo 'Cesare Pavese' e 'La luna e i falò' sono entrambi formattati come heading di secondo livello, causando ambiguità."
+    },
+    {
+      "severity": "warning",
+      "type": "reading_order",
+      "message": "Parola 'Angiolina' viene troncata a fine pagina 1 e ripresa come 'rava' in pagina 54, indicando interruzione di parola."
+    },
+    {
+      "severity": "warning",
+      "type": "noise",
+      "message": "L'indice finale contiene linee di punti e numeri di pagina che possono essere considerati rumore OCR."
+    },
+    {
+      "severity": "warning",
+      "type": "noise",
+      "message": "Immagine omessa intenzionalmente, indicata come rumore."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

@@ -133,6 +133,7 @@ def get_config_report() -> dict[str, Any]:
                 _entry("LLM_PROVIDER", in_file=in_file),
                 _entry("OPENROUTER_API_KEY", in_file=in_file),
                 _entry("OPENROUTER_MODEL", default="meta-llama/llama-3.1-8b-instruct", effective=model if prov == "openrouter" else None, in_file=in_file),
+                _entry("OPENROUTER_EMBEDDING_MODEL", default="openai/text-embedding-3-small", in_file=in_file),
                 _entry("GROQ_API_KEY", in_file=in_file),
                 _entry("GROQ_MODEL", default="llama-3.1-8b-instant", in_file=in_file),
                 _entry("GROQ_MAX_TOKENS", default="1024", in_file=in_file),
@@ -152,8 +153,13 @@ def get_config_report() -> dict[str, Any]:
         "pipeline": {
             "variabili": [
                 _entry("PLANNING_MIN_WORDS", default="80", in_file=in_file),
+                _entry("CORPUS_EMBEDDING_MIN_SIMILARITY", default="0.28", in_file=in_file),
+                _entry("CORPUS_EMBEDDING_SNIPPET_CHARS", default="1000", in_file=in_file),
+                _entry("CORPUS_EMBEDDING_BATCH_SIZE", default="48", in_file=in_file),
                 _entry("VALIDATION_USE_LLM", default="off", in_file=in_file),
-                _entry("MICROLEARNING_MAX_STEPS", default="80", in_file=in_file),
+                _entry("MICROLEARNING_MAX_STEPS", default="(auto)", in_file=in_file),
+                _entry("MICROLEARNING_TARGET_MAX_LESSONS", default="40", in_file=in_file),
+                _entry("MICROLEARNING_TARGET_LESSONS_CAP", default="120", in_file=in_file),
                 _entry("MICRO_MIN_CONTENUTO_CHARS", default="500", in_file=in_file),
                 _entry("MICRO_MIN_QUIZ_DOMANDE", default="3", in_file=in_file),
                 _entry("MICRO_MIN_H2_SECTIONS", default="3", in_file=in_file),

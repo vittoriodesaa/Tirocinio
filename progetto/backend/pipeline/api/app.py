@@ -5,10 +5,13 @@ Ogni corso vive in workspace/{course_id}/.
 from __future__ import annotations
 
 import logging
-from typing import Optional
+import re
+import threading
+from pathlib import Path
+from typing import List, Optional
 
 from dotenv import load_dotenv
-from fastapi import BackgroundTasks, FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -73,18 +76,68 @@ async def course_status(course_id: str):
         raise HTTPException(status_code=404, detail=f"Corso '{course_id}' non trovato")
 
 
+def _source_id_from_filename(filename: str) -> str:
+    stem = Path(filename).stem
+    sid = re.sub(r"[^a-zA-Z0-9_-]", "_", stem)[:64]
+    return sid or "doc"
+
+
+async def _collect_uploads(
+    *,
+    file: UploadFile | None,
+    files: List[UploadFile],
+    source_id: str,
+    source_ids: Optional[str],
+) -> list[tuple[bytes, str, str]]:
+    collected: list[UploadFile] = []
+    if file and file.filename:
+        collected.append(file)
+    collected.extend(f for f in files if f.filename)
+    if not collected:
+        return []
+
+    extra_ids: list[str] = []
+    if source_ids:
+        extra_ids = [s.strip() for s in source_ids.split(",") if s.strip()]
+
+    uploads: list[tuple[bytes, str, str]] = []
+    multi = len(collected) > 1
+    for i, up in enumerate(collected):
+        data = await up.read()
+        if not data:
+            continue
+        if multi:
+            # Multi-documento: ogni sorgente ha id proprio (slug filename), non il course_id.
+            sid = extra_ids[i] if i < len(extra_ids) else _source_id_from_filename(up.filename)
+        elif extra_ids:
+            sid = extra_ids[0]
+        else:
+            sid = source_id.strip() if source_id else _source_id_from_filename(up.filename)
+        uploads.append((data, up.filename, sid))
+    return uploads
+
+
 def _run_pipeline_task(
     *,
     course_id: str,
     from_step: str,
     source_id: Optional[str],
     run_microlearning: bool,
-    file_bytes: Optional[bytes],
-    filename: Optional[str],
+    uploads: Optional[list[tuple[bytes, str, str]]] = None,
+    file_bytes: Optional[bytes] = None,
+    filename: Optional[str] = None,
     language_hint: str,
 ):
     try:
-        if file_bytes and filename and from_step in ("acquisition", "full", "document"):
+        if uploads and from_step in ("acquisition", "full", "document"):
+            orchestratore.acquisisci_multi_ed_elabora(
+                uploads,
+                course_id=course_id,
+                language_hint=language_hint,
+                run_microlearning=run_microlearning,
+                from_step=from_step,
+            )
+        elif file_bytes and filename and from_step in ("acquisition", "full", "document"):
             orchestratore.acquisisci_ed_elabora(
                 file_bytes,
                 filename,
@@ -116,6 +169,29 @@ def _run_pipeline_task(
         finish_run(course_id, success=False, error=str(e))
 
 
+def _start_pipeline_thread(**kwargs) -> None:
+    """Avvia la pipeline in un thread dedicato (non blocca l'event loop FastAPI)."""
+    threading.Thread(
+        target=_run_pipeline_task,
+        kwargs=kwargs,
+        daemon=True,
+        name=f"pipeline-{kwargs.get('course_id', 'unknown')}",
+    ).start()
+
+
+def _parse_activity_log_line(line: str) -> dict:
+    """Estrae percentuale e messaggio da una riga di activity.log."""
+    m = re.match(r"^\[\s*([\d.]+)%\]\s*(.*)$", line.strip())
+    if m:
+        pct = float(m.group(1))
+        msg = m.group(2).strip()
+        channel = "deep_agent" if msg.startswith("🤖 ") else "pipeline"
+        if channel == "deep_agent":
+            msg = msg[2:].strip()
+        return {"time": "", "message": msg, "percent": pct, "level": "info", "channel": channel}
+    return {"time": "", "message": line, "percent": 0.0, "level": "info", "channel": "pipeline"}
+
+
 @app.get("/api/v1/courses/{course_id}/activity")
 async def course_activity(course_id: str):
     """Log narrativo in tempo reale + percentuale (polling UI)."""
@@ -128,53 +204,66 @@ async def course_activity(course_id: str):
     ws = orchestratore.resolve_course_path(course_id)
     log_file = ws / "activity.log"
     if log_file.exists():
-        lines = log_file.read_text(encoding="utf-8").strip().split("\n")[-40:]
+        lines = [ln for ln in log_file.read_text(encoding="utf-8").strip().split("\n") if ln.strip()][-80:]
+        entries = [_parse_activity_log_line(ln) for ln in lines]
+        percent = entries[-1]["percent"] if entries else 0.0
         return {
             "course_id": course_id,
             "status": "idle",
-            "percent": 100.0,
-            "entries": [{"time": "", "message": ln, "percent": 0, "level": "info"} for ln in lines],
+            "percent": percent,
+            "entries": entries,
         }
     return {"course_id": course_id, "status": "idle", "percent": 0, "entries": []}
 
 
 @app.post("/api/v1/pipeline/run-async")
 async def run_pipeline_async(
-    background_tasks: BackgroundTasks,
-    source_id: str = Form(...),
+    source_id: str = Form(""),
     course_id: Optional[str] = Form(None),
     language_hint: str = Form("it"),
     run_microlearning: bool = Form(True),
     from_step: str = Form("full"),
+    source_ids: Optional[str] = Form(None),
     file: UploadFile | None = File(None),
+    files: List[UploadFile] = File(default=[]),
 ):
-    """Avvia pipeline in background; usa GET .../activity per seguire i log."""
+    """Avvia pipeline in background; supporta uno o più file (merge al planning)."""
     cid = course_id or source_id
+    if not cid:
+        raise HTTPException(status_code=400, detail="course_id richiesto")
     orchestratore.course_workspace(cid)
 
-    data = None
-    fname = None
-    if file and file.filename:
-        data = await file.read()
-        fname = file.filename
+    uploads = await _collect_uploads(
+        file=file, files=files, source_id=source_id, source_ids=source_ids,
+    )
+    if not uploads and from_step in ("acquisition", "full", "document"):
+        raise HTTPException(status_code=400, detail="Almeno un file richiesto")
 
-    background_tasks.add_task(
-        _run_pipeline_task,
+    ws = str(orchestratore.course_workspace(cid))
+    start_run(cid, ws)
+
+    _start_pipeline_thread(
         course_id=cid,
         from_step=from_step,
-        source_id=source_id,
+        source_id=source_id or (uploads[0][2] if uploads else None),
         run_microlearning=run_microlearning,
-        file_bytes=data,
-        filename=fname,
+        uploads=uploads if len(uploads) > 1 else None,
+        file_bytes=uploads[0][0] if len(uploads) == 1 else None,
+        filename=uploads[0][1] if len(uploads) == 1 else None,
         language_hint=language_hint,
     )
-    return {"course_id": cid, "status": "started", "message": "Elaborazione avviata. Aggiorna i log."}
+    n = len(uploads)
+    return {
+        "course_id": cid,
+        "status": "started",
+        "documents": n,
+        "message": f"Elaborazione avviata ({n} documento/i).",
+    }
 
 
 @app.post("/api/v1/courses/{course_id}/resume")
 async def resume_course(
     course_id: str,
-    background_tasks: BackgroundTasks,
     from_step: str = Form(...),
     source_id: Optional[str] = Form(None),
     run_microlearning: bool = Form(True),
@@ -186,14 +275,14 @@ async def resume_course(
     if async_mode:
         ws = str(orchestratore.course_workspace(course_id))
         start_run(course_id, ws)
-        background_tasks.add_task(
-            _run_pipeline_task,
+        _start_pipeline_thread(
             course_id=course_id,
             from_step=from_step,
             source_id=source_id,
             run_microlearning=run_microlearning,
             file_bytes=None,
             filename=None,
+            uploads=None,
             language_hint="it",
         )
         return {"course_id": course_id, "status": "started"}

@@ -20,6 +20,8 @@ Ogni corso ha una cartella dedicata sotto `workspace/{course_id}/` con tutti gli
 10. [Moduli Python (riferimento file)](#moduli-python-riferimento-file)
 11. [Sviluppo e test agenti](#sviluppo-e-test-agenti)
 
+> Riferimento esteso (tutti i file, cosa serve e cosa no): **[DOCUMENTAZIONE_FILE.md](DOCUMENTAZIONE_FILE.md)**
+
 ---
 
 ## Requisiti
@@ -170,6 +172,48 @@ flowchart LR
 
 Lo **Supervisor** (`pipeline/core/supervisor.py`) coordina gli step, consente la **ripresa** da uno step intermedio e scrive log narrativi in `activity.log`.
 
+### Corsi multi-documento (corpus)
+
+Puoi caricare **più PDF** nello stesso `course_id`. La pipeline:
+
+1. Esegue **document + planning** per ogni libro.
+2. Al planning di livello **corso** (`source_id: corso`) esegue **`planning_corpus`**: embedding OpenRouter, accoppiamento capitoli simili → `reports/corso_plan.json`.
+3. **Segmentation** e **validation** lavorano sul piano corpus (`modules/corso_*`).
+
+Moduli: `corpus_fusion.py`, `embedding_client.py`. Cache: `reports/corpus_embeddings_cache.json`.
+
+### Embedding semantici (fusione corpus)
+
+Quando ci sono **due o più libri**, il planning corpus allinea i capitoli con **vettori embedding** (non con il solo titolo):
+
+1. Per ogni `punto_taglio` del piano per-documento, si estrae uno **snippet** di testo (prime ~1000 caratteri della sezione, configurabile con `CORPUS_EMBEDDING_SNIPPET_CHARS`).
+2. `embedding_client.py` invia gli snippet a **OpenRouter** (`/v1/embeddings`, modello default `openai/text-embedding-3-small`) in batch da 48.
+3. I vettori già calcolati sono salvati in **`corpus_embeddings_cache.json`** (chiave = hash del testo) per evitare richieste duplicate.
+4. `corpus_fusion.py` calcola la **similarità coseno** tra punti di libri diversi; sopra la soglia (`CORPUS_EMBEDDING_MIN_SIMILARITY`, default `0.28`) crea lezioni **«Integrazione: …»** che uniscono segmenti affini.
+
+| Variabile `.env` | Default | Ruolo |
+|------------------|---------|--------|
+| `OPENROUTER_EMBEDDING_MODEL` | `openai/text-embedding-3-small` | Modello embedding |
+| `CORPUS_EMBEDDING_BATCH_SIZE` | `48` | Testi per richiesta API |
+| `CORPUS_EMBEDDING_SNIPPET_CHARS` | `1000` | Lunghezza snippet per punto |
+| `CORPUS_EMBEDDING_MIN_SIMILARITY` | `0.28` | Soglia fusione (0–1) |
+
+Richiede **`OPENROUTER_API_KEY`** anche se il chat model usa Groq.
+
+### Concorrenza server (pipeline in background)
+
+`POST run-async` e `resume` (async) avviano la pipeline in un **thread dedicato**, non nell'event loop di FastAPI. Così il server resta reattivo: polling `/activity`, navigazione UI e altri client possono operare mentre un corso è in elaborazione.
+
+### Monitor live e `activity.log`
+
+La UI interroga `GET /api/v1/courses/{id}/activity` ogni ~450 ms.
+
+- `start_run()` registra la run **prima** del background task e azzera `activity.log`.
+- `RunLog` espone `running` → `done` / `error` con percentuale e voci deep agent.
+- Fallback: parse delle righe `[52.0%] …` se il server è stato riavviato.
+
+**Fix giugno 2026:** `run-async` chiama `start_run` nella richiesta HTTP; il frontend non tratta più `idle` come completamento durante l’avvio.
+
 ---
 
 ## Configurazione (.env)
@@ -186,6 +230,10 @@ Copia `.env.example` in `.env`. Variabili principali:
 | `LOG_LEVEL` | `DEBUG`, `INFO`, … |
 | `VALIDATION_USE_LLM` | `off` / `flagged` / `all` — controllo qualità moduli |
 | `MICRO_MIN_CONTENUTO_CHARS` | Lunghezza minima testo lezione |
+| `OPENROUTER_EMBEDDING_MODEL` | Modello embedding per fusione corpus |
+| `CORPUS_EMBEDDING_MIN_SIMILARITY` | Soglia similarità per unire lezioni multi-libro |
+| `CORPUS_EMBEDDING_SNIPPET_CHARS` | Caratteri di testo usati per ogni embedding |
+| `CORPUS_EMBEDDING_BATCH_SIZE` | Batch richieste embedding OpenRouter |
 
 Dall’UI: pulsante **Configurazione .env** → `GET /api/v1/config` (chiavi mascherate).
 
@@ -202,7 +250,9 @@ Dall’UI: pulsante **Configurazione .env** → `GET /api/v1/config` (chiavi mas
 Funzionalità principali:
 
 - Selezione corso e visualizzazione step completati / prossimo step
-- Avvio pipeline o ripresa da step
+- Avvio pipeline o ripresa da step (anche **multi-upload** per corpus)
+- **Monitor live**: barra percentuale, badge stato (`in esecuzione` / `completato`), terminale `activity.log`
+- **Deep Agent (live)**: tool call del microlearning agent in tempo reale
 - **Esplora corso**: grafo lezioni/quiz, catalogo markdown, quiz con punteggio complessivo
 - Avvisi validazione (`PASS_WITH_WARNINGS`)
 
@@ -305,10 +355,11 @@ Contratti Pydantic: `SourceInput`, `JobBatchInput`, `MicrolearningCourse`, `Modu
 |------|----------------|
 | `acquisition_agent.py` | Salva upload in `uploads/`, crea `SourceInput` |
 | `document_agent.py` | Routing PDF/Word/markitdown, pulizia MD, chunk, qualità LLM |
-| `planning_agent.py` | Analisi struttura MD, piano tagli, gerarchia |
+| `planning_agent.py` | Analisi struttura MD, piano tagli, gerarchia; **fusione corpus** multi-libro |
 | `segmentation_agent.py` | Estrae moduli grezzi dal piano |
 | `validation_agent.py` | Regole + LLM opzionale, moduli validati |
 | `microlearning_agent.py` | Deep Agent: workspace corso + home `/agent/` (note, script, memoria) |
+| `corpus_fusion.py` | Accoppiamento semantico punti_taglio tra documenti (embedding) |
 | `agent_home.py` | Libreria globale `agent_shared/` + mount materiali corso in lettura |
 
 ### Tools (`pipeline/tools/`)

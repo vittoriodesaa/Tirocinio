@@ -1,0 +1,474 @@
+{
+  "source_id": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk_",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+  "unita_tempo_totale_minuti": 160,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "Introduzione",
+      "riga_inizio": 487,
+      "riga_fine": 566,
+      "carico_cognitivo": 0.45,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "end",
+        "pagepage",
+        "picture",
+        "649",
+        "intentionally"
+      ],
+      "prerequisiti": [],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Prologo",
+      "riga_inizio": 21,
+      "riga_fine": 46,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "stoici",
+        "vita",
+        "opere",
+        "tre",
+        "loro"
+      ],
+      "prerequisiti": [
+        "pt_001"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "I. Il filosofo come medico",
+      "riga_inizio": 47,
+      "riga_fine": 96,
+      "carico_cognitivo": 0.61,
+      "durata_stimata_minuti": 12,
+      "concetti_chiave": [
+        "cose",
+        "buono",
+        "carattere",
+        "essere",
+        "ciò"
+      ],
+      "prerequisiti": [
+        "pt_002"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "II. Quali cose si possono controllare?",
+      "riga_inizio": 97,
+      "riga_fine": 190,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [
+        "controllo",
+        "cose",
+        "possiamo",
+        "emozioni",
+        "nostro"
+      ],
+      "prerequisiti": [
+        "pt_003"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "IV. Affrontare le avversità",
+      "riga_inizio": 191,
+      "riga_fine": 296,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [
+        "seneca",
+        "solo",
+        "vita",
+        "marco",
+        "aurelio"
+      ],
+      "prerequisiti": [
+        "pt_004"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "quotidiane. Il passo seguente merita di essere citato per esteso:",
+      "riga_inizio": 297,
+      "riga_fine": 440,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [
+        "vita",
+        "noi",
+        "tempo",
+        "ciò",
+        "nostra"
+      ],
+      "prerequisiti": [
+        "pt_005"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "Epilogo",
+      "riga_inizio": 441,
+      "riga_fine": 458,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "idee",
+        "vivere",
+        "tutti",
+        "stoici",
+        "molte"
+      ],
+      "prerequisiti": [
+        "pt_006"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "Letture di approfondimento",
+      "riga_inizio": 459,
+      "riga_fine": 502,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "traduzione",
+        "seneca",
+        "stoici",
+        "oxford",
+        "opere"
+      ],
+      "prerequisiti": [
+        "pt_007"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "I. _Il filosofo come medico._",
+      "riga_inizio": 507,
+      "riga_fine": 510,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "diogene",
+        "filosofo",
+        "medico",
+        "socrate",
+        "cura"
+      ],
+      "prerequisiti": [
+        "pt_008"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "II. _Quali cose si possono controllare?_",
+      "riga_inizio": 511,
+      "riga_fine": 518,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "trova",
+        "epitteto",
+        "cose",
+        "marco",
+        "aurelio"
+      ],
+      "prerequisiti": [
+        "pt_009"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "III. _Il problema delle emozioni._",
+      "riga_inizio": 519,
+      "riga_fine": 522,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "emozioni",
+        "veda",
+        "ibid",
+        "delle",
+        "epitteto"
+      ],
+      "prerequisiti": [
+        "pt_010"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "IV. _Affrontare le avversità._",
+      "riga_inizio": 523,
+      "riga_fine": 526,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "avversità",
+        "seneca",
+        "consolazione",
+        "trova",
+        "ibid"
+      ],
+      "prerequisiti": [
+        "pt_011"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "V. _Il nostro posto nella Natura._",
+      "riga_inizio": 527,
+      "riga_fine": 534,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "ibid",
+        "gaia",
+        "natura",
+        "marco",
+        "aurelio"
+      ],
+      "prerequisiti": [
+        "pt_012"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "VII. _La vita sociale_ .",
+      "riga_inizio": 539,
+      "riga_fine": 542,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "diatribe",
+        "epitteto",
+        "vita",
+        "marco",
+        "aurelio"
+      ],
+      "prerequisiti": [
+        "pt_013"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "_Ringraziamenti._",
+      "riga_inizio": 553,
+      "riga_fine": 582,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "romano",
+        "imperatore",
+        "seneca",
+        "end",
+        "pagepage"
+      ],
+      "prerequisiti": [
+        "pt_014"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "_Il libro_",
+      "riga_inizio": 583,
+      "riga_fine": 588,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "nostra",
+        "vita",
+        "essere",
+        "libro",
+        "modo"
+      ],
+      "prerequisiti": [
+        "pt_015"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "_L’autore_",
+      "riga_inizio": 589,
+      "riga_fine": 594,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "lautore",
+        "john",
+        "sellars",
+        "docente",
+        "filosofia"
+      ],
+      "prerequisiti": [
+        "pt_016"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "Titolo originale _Lessons in Stoicism_",
+      "riga_inizio": 595,
+      "riga_fine": 612,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "ebook",
+        "essere",
+        "quanto",
+        "rights",
+        "alcun"
+      ],
+      "prerequisiti": [
+        "pt_017"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    }
+  ],
+  "note_pianificazione": "Piano da 18 sezioni markdown (structured). Carico cognitivo derivato da token stimati.",
+  "sorgenti": []
+}

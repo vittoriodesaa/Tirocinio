@@ -1,0 +1,6573 @@
+{
+  "source_id": "Learning_LangChain_Building_AI_and_LL_z_library_sk__1lib_sk_",
+  "livello_struttura": "structured",
+  "markdown_sorgente": "sources/Learning_LangChain_Building_AI_and_LL_z_library_sk__1lib_sk__clean.md",
+  "unita_tempo_totale_minuti": 1537,
+  "punti_taglio": [
+    {
+      "id": "pt_001",
+      "ordine": 1,
+      "titolo": "Learning LangChain",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langchain",
+        "learning",
+        "agents",
+        "building",
+        "llm"
+      ],
+      "prerequisiti": [],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_002",
+      "ordine": 2,
+      "titolo": "Learning LangChain",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langchain",
+        "applications",
+        "data",
+        "build",
+        "productionready"
+      ],
+      "prerequisiti": [
+        "pt_001"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_003",
+      "ordine": 3,
+      "titolo": "**Praise for** _**Learning LangChain**_",
+      "riga_inizio": 50,
+      "riga_fine": 85,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "langchain",
+        "learning",
+        "applications",
+        "clear",
+        "productionready"
+      ],
+      "prerequisiti": [
+        "pt_002"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_004",
+      "ordine": 4,
+      "titolo": "Learning LangChain",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "oreilly",
+        "inc",
+        "editor",
+        "mayo",
+        "oshin"
+      ],
+      "prerequisiti": [
+        "pt_003"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_005",
+      "ordine": 5,
+      "titolo": "Revision History for the First Edition",
+      "riga_inizio": 103,
+      "riga_fine": 113,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "work",
+        "oreilly",
+        "authors",
+        "responsibility",
+        "use"
+      ],
+      "prerequisiti": [
+        "pt_004"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_006",
+      "ordine": 6,
+      "titolo": "Table of Contents",
+      "riga_inizio": 114,
+      "riga_fine": 130,
+      "carico_cognitivo": 0.37,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "summary",
+        "langgraph",
+        "llms",
+        "embeddings",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_005"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_007",
+      "ordine": 7,
+      "titolo": "Preface",
+      "riga_inizio": 131,
+      "riga_fine": 173,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "llms",
+        "llm",
+        "langchain",
+        "new",
+        "models"
+      ],
+      "prerequisiti": [
+        "pt_006"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_008",
+      "ordine": 8,
+      "titolo": "Brief Primer on LLMs",
+      "riga_inizio": 174,
+      "riga_fine": 204,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "text",
+        "model",
+        "training",
+        "other",
+        "llms"
+      ],
+      "prerequisiti": [
+        "pt_007"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_009",
+      "ordine": 9,
+      "titolo": "`_morning`",
+      "riga_inizio": 209,
+      "riga_fine": 240,
+      "carico_cognitivo": 0.17,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "words",
+        "word",
+        "token",
+        "training",
+        "text"
+      ],
+      "prerequisiti": [
+        "pt_008"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_010",
+      "ordine": 10,
+      "titolo": "_Predict a missing word_",
+      "riga_inizio": 249,
+      "riga_fine": 254,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "england",
+        "capital",
+        "word",
+        "response",
+        "predict"
+      ],
+      "prerequisiti": [
+        "pt_009"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_011",
+      "ordine": 11,
+      "titolo": "_Reinforcement learning from human feedback (RLHF)_",
+      "riga_inizio": 262,
+      "riga_fine": 267,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "capital",
+        "england",
+        "feedback",
+        "rlhf",
+        "user"
+      ],
+      "prerequisiti": [
+        "pt_010"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_012",
+      "ordine": 12,
+      "titolo": "_Chat format_",
+      "riga_inizio": 277,
+      "riga_fine": 280,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "input",
+        "instructions",
+        "user",
+        "output",
+        "model"
+      ],
+      "prerequisiti": [
+        "pt_011"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_013",
+      "ordine": 13,
+      "titolo": "Fine-Tuned LLMs",
+      "riga_inizio": 281,
+      "riga_fine": 287,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llms",
+        "finetuned",
+        "llm",
+        "task",
+        "when"
+      ],
+      "prerequisiti": [
+        "pt_012"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_014",
+      "ordine": 14,
+      "titolo": "Brief Primer on Prompting",
+      "riga_inizio": 288,
+      "riga_fine": 308,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "openai",
+        "llms",
+        "playground",
+        "llm",
+        "use"
+      ],
+      "prerequisiti": [
+        "pt_013"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_015",
+      "ordine": 15,
+      "titolo": "Zero-Shot Prompting",
+      "riga_inizio": 309,
+      "riga_fine": 330,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "get",
+        "prompting",
+        "first",
+        "what",
+        "try"
+      ],
+      "prerequisiti": [
+        "pt_014"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_016",
+      "ordine": 16,
+      "titolo": "Chain-of-Thought",
+      "riga_inizio": 331,
+      "riga_fine": 379,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "performance",
+        "how",
+        "chainofthought",
+        "model",
+        "tasks"
+      ],
+      "prerequisiti": [
+        "pt_015"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_017",
+      "ordine": 17,
+      "titolo": "Retrieval-Augmented Generation",
+      "riga_inizio": 380,
+      "riga_fine": 412,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "rag",
+        "retrievalaugmented",
+        "generation",
+        "context",
+        "including"
+      ],
+      "prerequisiti": [
+        "pt_016"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_018",
+      "ordine": 18,
+      "titolo": "Tool Calling",
+      "riga_inizio": 413,
+      "riga_fine": 455,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "output",
+        "tool",
+        "calling",
+        "functions",
+        "one"
+      ],
+      "prerequisiti": [
+        "pt_017"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_019",
+      "ordine": 19,
+      "titolo": "`Context:`",
+      "riga_inizio": 456,
+      "riga_fine": 474,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_018"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_020",
+      "ordine": 20,
+      "titolo": "`Tools:`",
+      "riga_inizio": 475,
+      "riga_fine": 506,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "output",
+        "get",
+        "step",
+        "end",
+        "pagepage"
+      ],
+      "prerequisiti": [
+        "pt_019"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_021",
+      "ordine": 21,
+      "titolo": "Few-Shot Prompting",
+      "riga_inizio": 507,
+      "riga_fine": 509,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "prompting",
+        "fewshot",
+        "finetuning",
+        "llm",
+        "finally"
+      ],
+      "prerequisiti": [
+        "pt_020"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_022",
+      "ordine": 22,
+      "titolo": "LangChain and Why It’s Important",
+      "riga_inizio": 520,
+      "riga_fine": 556,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "langchain",
+        "these",
+        "provides",
+        "llm",
+        "into"
+      ],
+      "prerequisiti": [
+        "pt_021"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_023",
+      "ordine": 23,
+      "titolo": "What to Expect from This Book",
+      "riga_inizio": 557,
+      "riga_fine": 581,
+      "carico_cognitivo": 0.19,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "chatbot",
+        "well",
+        "what",
+        "book",
+        "llms"
+      ],
+      "prerequisiti": [
+        "pt_022"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_024",
+      "ordine": 24,
+      "titolo": "Using Code Examples",
+      "riga_inizio": 603,
+      "riga_fine": 613,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "code",
+        "permission",
+        "examples",
+        "book",
+        "example"
+      ],
+      "prerequisiti": [
+        "pt_023"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_025",
+      "ordine": 25,
+      "titolo": "O’Reilly Online Learning",
+      "riga_inizio": 614,
+      "riga_fine": 622,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "learning",
+        "oreilly",
+        "online",
+        "more",
+        "training"
+      ],
+      "prerequisiti": [
+        "pt_024"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_026",
+      "ordine": 26,
+      "titolo": "How to Contact Us",
+      "riga_inizio": 623,
+      "riga_fine": 635,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "book",
+        "page",
+        "information",
+        "how",
+        "contact"
+      ],
+      "prerequisiti": [
+        "pt_025"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_027",
+      "ordine": 27,
+      "titolo": "CHAPTER 1 LLM Fundamentals with LangChain",
+      "riga_inizio": 643,
+      "riga_fine": 651,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "applications",
+        "langchain",
+        "building",
+        "how"
+      ],
+      "prerequisiti": [
+        "pt_026"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_028",
+      "ordine": 28,
+      "titolo": "_Prebuilt common patterns_",
+      "riga_inizio": 657,
+      "riga_fine": 660,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "common",
+        "patterns",
+        "langchain",
+        "application",
+        "these"
+      ],
+      "prerequisiti": [
+        "pt_027"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_029",
+      "ordine": 29,
+      "titolo": "_Interchangeable building blocks_",
+      "riga_inizio": 661,
+      "riga_fine": 674,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "these",
+        "model",
+        "components",
+        "out",
+        "alternatives"
+      ],
+      "prerequisiti": [
+        "pt_028"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_030",
+      "ordine": 30,
+      "titolo": "_Vector stores_",
+      "riga_inizio": 683,
+      "riga_fine": 700,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langchain",
+        "chat",
+        "vector",
+        "use",
+        "popular"
+      ],
+      "prerequisiti": [
+        "pt_029"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_031",
+      "ordine": 31,
+      "titolo": "Getting Set Up with LangChain",
+      "riga_inizio": 701,
+      "riga_fine": 763,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "langchain",
+        "api",
+        "running",
+        "instructions",
+        "openai"
+      ],
+      "prerequisiti": [
+        "pt_030"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_032",
+      "ordine": 32,
+      "titolo": "`Blue!`",
+      "riga_inizio": 807,
+      "riga_fine": 814,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "most",
+        "models",
+        "parameter",
+        "configure",
+        "model"
+      ],
+      "prerequisiti": [
+        "pt_031"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_033",
+      "ordine": 33,
+      "titolo": "`max_tokens`",
+      "riga_inizio": 819,
+      "riga_fine": 828,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "model",
+        "output",
+        "llm",
+        "end",
+        "interface"
+      ],
+      "prerequisiti": [
+        "pt_032"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_034",
+      "ordine": 34,
+      "titolo": "Here is an example of a detailed prompt:",
+      "riga_inizio": 943,
+      "riga_fine": 970,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "prompt",
+        "example",
+        "what",
+        "here",
+        "detailed"
+      ],
+      "prerequisiti": [
+        "pt_033"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_035",
+      "ordine": 35,
+      "titolo": "`prompt` and `completion` are the results of using template and model once",
+      "riga_inizio": 1120,
+      "riga_fine": 1290,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "models",
+        "model",
+        "nlp",
+        "llms",
+        "these"
+      ],
+      "prerequisiti": [
+        "pt_034"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_036",
+      "ordine": 36,
+      "titolo": "`prompt` and `completion` are the results of using template and model once",
+      "riga_inizio": 1120,
+      "riga_fine": 1290,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "models",
+        "model",
+        "nlp",
+        "llms",
+        "these"
+      ],
+      "prerequisiti": [
+        "pt_035"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_037",
+      "ordine": 37,
+      "titolo": "Getting Specific Formats out of LLMs",
+      "riga_inizio": 1373,
+      "riga_fine": 1377,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "useful",
+        "llm",
+        "output",
+        "such",
+        "getting"
+      ],
+      "prerequisiti": [
+        "pt_036"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_038",
+      "ordine": 38,
+      "titolo": "JSON Output",
+      "riga_inizio": 1378,
+      "riga_fine": 1444,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "schema",
+        "json",
+        "output",
+        "llm",
+        "used"
+      ],
+      "prerequisiti": [
+        "pt_037"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_039",
+      "ordine": 39,
+      "titolo": "Using the Runnable Interface",
+      "riga_inizio": 1493,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "interface",
+        "all",
+        "output",
+        "there",
+        "outputs"
+      ],
+      "prerequisiti": [
+        "pt_038"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_040",
+      "ordine": 40,
+      "titolo": "bye",
+      "riga_inizio": 1530,
+      "riga_fine": 1630,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "bye"
+      ],
+      "prerequisiti": [
+        "pt_039"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_041",
+      "ordine": 41,
+      "titolo": "!",
+      "riga_inizio": 807,
+      "riga_fine": 814,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_040"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_042",
+      "ordine": 42,
+      "titolo": "combine them in a function",
+      "riga_inizio": 1612,
+      "riga_fine": 1712,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "combine",
+        "them",
+        "function"
+      ],
+      "prerequisiti": [
+        "pt_041"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_043",
+      "ordine": 43,
+      "titolo": "use it",
+      "riga_inizio": 1624,
+      "riga_fine": 1738,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "use",
+        "chatbotinvokequestion",
+        "which",
+        "model",
+        "providers"
+      ],
+      "prerequisiti": [
+        "pt_042"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_044",
+      "ordine": 44,
+      "titolo": "use it",
+      "riga_inizio": 1624,
+      "riga_fine": 1738,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "use",
+        "chatbotinvokequestion",
+        "which",
+        "model",
+        "providers"
+      ],
+      "prerequisiti": [
+        "pt_043"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_045",
+      "ordine": 45,
+      "titolo": "> AIMessageChunk(content=\"Hugging\")",
+      "riga_inizio": 1833,
+      "riga_fine": 1933,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "aimessagechunkcontenthugging"
+      ],
+      "prerequisiti": [
+        "pt_044"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_046",
+      "ordine": 46,
+      "titolo": "> AIMessageChunk(content=\" `transformers`\")",
+      "riga_inizio": 1840,
+      "riga_fine": 1940,
+      "carico_cognitivo": 0.35,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "aimessagechunkcontent"
+      ],
+      "prerequisiti": [
+        "pt_045"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_047",
+      "ordine": 47,
+      "titolo": "...",
+      "riga_inizio": 1841,
+      "riga_fine": 2164,
+      "carico_cognitivo": 0.97,
+      "durata_stimata_minuti": 21,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_046"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_048",
+      "ordine": 48,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "components",
+        "llm",
+        "output",
+        "chapter",
+        "build"
+      ],
+      "prerequisiti": [
+        "pt_047"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_049",
+      "ordine": 49,
+      "titolo": "CHAPTER 2 RAG Part I: Indexing Your Data",
+      "riga_inizio": 1883,
+      "riga_fine": 1887,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "model",
+        "chapter",
+        "about",
+        "simple",
+        "chatbot"
+      ],
+      "prerequisiti": [
+        "pt_048"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_050",
+      "ordine": 50,
+      "titolo": "_Current events_",
+      "riga_inizio": 1892,
+      "riga_fine": 1899,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "knowledge",
+        "current",
+        "events",
+        "training",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_049"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_051",
+      "ordine": 51,
+      "titolo": "The Goal: Picking Relevant Context for LLMs",
+      "riga_inizio": 1900,
+      "riga_fine": 1932,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "text",
+        "llm",
+        "documents",
+        "relevant",
+        "llms"
+      ],
+      "prerequisiti": [
+        "pt_050"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_052",
+      "ordine": 52,
+      "titolo": "Embeddings Before LLMs",
+      "riga_inizio": 1938,
+      "riga_fine": 1954,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "sunny",
+        "day",
+        "before",
+        "llms",
+        "what"
+      ],
+      "prerequisiti": [
+        "pt_051"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_053",
+      "ordine": 53,
+      "titolo": "Table 2-1 shows the result.",
+      "riga_inizio": 1955,
+      "riga_fine": 1978,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "sunny",
+        "day",
+        "word",
+        "embeddings",
+        "havent"
+      ],
+      "prerequisiti": [
+        "pt_052"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_054",
+      "ordine": 54,
+      "titolo": "_Classification of documents_",
+      "riga_inizio": 1983,
+      "riga_fine": 1992,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "spam",
+        "words",
+        "embeddings",
+        "meaning",
+        "classification"
+      ],
+      "prerequisiti": [
+        "pt_053"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_055",
+      "ordine": 55,
+      "titolo": "LLM-Based Embeddings",
+      "riga_inizio": 1993,
+      "riga_fine": 2005,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "embeddings",
+        "different",
+        "models",
+        "embedding",
+        "training"
+      ],
+      "prerequisiti": [
+        "pt_054"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_056",
+      "ordine": 56,
+      "titolo": "Semantic Embeddings Explained",
+      "riga_inizio": 2006,
+      "riga_fine": 2032,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "between",
+        "pet",
+        "words",
+        "each",
+        "vectors"
+      ],
+      "prerequisiti": [
+        "pt_055"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_057",
+      "ordine": 57,
+      "titolo": "Other Uses for Embeddings",
+      "riga_inizio": 2033,
+      "riga_fine": 2053,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "meaning",
+        "embedding",
+        "embeddings",
+        "instance",
+        "points"
+      ],
+      "prerequisiti": [
+        "pt_056"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_058",
+      "ordine": 58,
+      "titolo": "Converting Your Documents into Text",
+      "riga_inizio": 2076,
+      "riga_fine": 2080,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "text",
+        "document",
+        "into",
+        "logic",
+        "extract"
+      ],
+      "prerequisiti": [
+        "pt_057"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_059",
+      "ordine": 59,
+      "titolo": "install the pdf parsing library",
+      "riga_inizio": 2165,
+      "riga_fine": 2265,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "install",
+        "pdf",
+        "parsing",
+        "library"
+      ],
+      "prerequisiti": [
+        "pt_058"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_060",
+      "ordine": 60,
+      "titolo": "pip install pypdf",
+      "riga_inizio": 2166,
+      "riga_fine": 2264,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "pip",
+        "install",
+        "pypdf",
+        "fromlangchain",
+        "communitydocument"
+      ],
+      "prerequisiti": [
+        "pt_059"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_061",
+      "ordine": 61,
+      "titolo": "Splitting Your Text into Chunks",
+      "riga_inizio": 2199,
+      "riga_fine": 2219,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "text",
+        "chunks",
+        "separator",
+        "into",
+        "split"
+      ],
+      "prerequisiti": [
+        "pt_060"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_062",
+      "ordine": 62,
+      "titolo": "Call the function",
+      "riga_inizio": 2265,
+      "riga_fine": 2323,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "python",
+        "chunk",
+        "call",
+        "function",
+        "hello"
+      ],
+      "prerequisiti": [
+        "pt_061"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_063",
+      "ordine": 63,
+      "titolo": "LangChain",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langchain"
+      ],
+      "prerequisiti": [
+        "pt_062"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_064",
+      "ordine": 64,
+      "titolo": "Generating Text Embeddings",
+      "riga_inizio": 2360,
+      "riga_fine": 2381,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "text",
+        "embedding",
+        "class",
+        "one",
+        "takes"
+      ],
+      "prerequisiti": [
+        "pt_063"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_065",
+      "ordine": 65,
+      "titolo": "Load the document",
+      "riga_inizio": 2431,
+      "riga_fine": 2456,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "load",
+        "document",
+        "loading",
+        "documents",
+        "loaders"
+      ],
+      "prerequisiti": [
+        "pt_064"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_066",
+      "ordine": 66,
+      "titolo": "Storing Embeddings in a Vector Store",
+      "riga_inizio": 2507,
+      "riga_fine": 2535,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "vector",
+        "store",
+        "stores",
+        "database",
+        "data"
+      ],
+      "prerequisiti": [
+        "pt_065"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_067",
+      "ordine": 67,
+      "titolo": "Getting Set Up with PGVector",
+      "riga_inizio": 2536,
+      "riga_fine": 2562,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "pgvector",
+        "use",
+        "postgres",
+        "need",
+        "docker"
+      ],
+      "prerequisiti": [
+        "pt_066"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_068",
+      "ordine": 68,
+      "titolo": "embed each chunk and insert it into the vector store",
+      "riga_inizio": 2581,
+      "riga_fine": 2775,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "embeddings",
+        "embed",
+        "each",
+        "chunk",
+        "insert"
+      ],
+      "prerequisiti": [
+        "pt_067"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_069",
+      "ordine": 69,
+      "titolo": "Tracking Changes to Your Documents",
+      "riga_inizio": 2730,
+      "riga_fine": 2775,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "documents",
+        "content",
+        "document",
+        "source",
+        "vector"
+      ],
+      "prerequisiti": [
+        "pt_068"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_070",
+      "ordine": 70,
+      "titolo": "If we mutate a document, the new version will be written and all old",
+      "riga_inizio": 2814,
+      "riga_fine": 2914,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "mutate",
+        "document",
+        "new",
+        "version",
+        "written"
+      ],
+      "prerequisiti": [
+        "pt_069"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_071",
+      "ordine": 71,
+      "titolo": "versions sharing the same source will be deleted.",
+      "riga_inizio": 2815,
+      "riga_fine": 3007,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "source",
+        "index",
+        "versions",
+        "sharing",
+        "same"
+      ],
+      "prerequisiti": [
+        "pt_070"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_072",
+      "ordine": 72,
+      "titolo": "MultiVectorRetriever",
+      "riga_inizio": 2973,
+      "riga_fine": 3007,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "table",
+        "document",
+        "contains",
+        "tables",
+        "context"
+      ],
+      "prerequisiti": [
+        "pt_071"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_073",
+      "ordine": 73,
+      "titolo": "Load the document",
+      "riga_inizio": 2431,
+      "riga_fine": 2456,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "load",
+        "document",
+        "loadertextloadertesttxt",
+        "encodingutf8",
+        "docsloaderload"
+      ],
+      "prerequisiti": [
+        "pt_072"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_074",
+      "ordine": 74,
+      "titolo": "indexing the summaries in our vector store, whilst retaining the original",
+      "riga_inizio": 3055,
+      "riga_fine": 3155,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "indexing",
+        "summaries",
+        "vector",
+        "store",
+        "whilst"
+      ],
+      "prerequisiti": [
+        "pt_073"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_075",
+      "ordine": 75,
+      "titolo": "Store the original documents in the document store, linked to their summaries",
+      "riga_inizio": 3088,
+      "riga_fine": 3188,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "store",
+        "original",
+        "documents",
+        "document",
+        "linked"
+      ],
+      "prerequisiti": [
+        "pt_074"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_076",
+      "ordine": 76,
+      "titolo": "via doc_ids",
+      "riga_inizio": 3089,
+      "riga_fine": 3189,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "via",
+        "doc",
+        "ids"
+      ],
+      "prerequisiti": [
+        "pt_075"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_077",
+      "ordine": 77,
+      "titolo": "This allows us to first search summaries efficiently, then fetch the full",
+      "riga_inizio": 3090,
+      "riga_fine": 3190,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "allows",
+        "first",
+        "search",
+        "summaries",
+        "efficiently"
+      ],
+      "prerequisiti": [
+        "pt_076"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_078",
+      "ordine": 78,
+      "titolo": "Whereas the retriever will return the larger source document chunks:",
+      "riga_inizio": 3106,
+      "riga_fine": 3250,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "whereas",
+        "retriever",
+        "return",
+        "larger",
+        "source"
+      ],
+      "prerequisiti": [
+        "pt_077"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_079",
+      "ordine": 79,
+      "titolo": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "riga_inizio": 3218,
+      "riga_fine": 3230,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "retrieval",
+        "questions",
+        "raptor",
+        "recursive",
+        "abstractive"
+      ],
+      "prerequisiti": [
+        "pt_078"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_080",
+      "ordine": 80,
+      "titolo": "ColBERT: Optimizing Embeddings",
+      "riga_inizio": 3231,
+      "riga_fine": 3247,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "document",
+        "embedding",
+        "embeddings",
+        "each",
+        "colbert"
+      ],
+      "prerequisiti": [
+        "pt_079"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_081",
+      "ordine": 81,
+      "titolo": "Extracting page content",
+      "riga_inizio": 3300,
+      "riga_fine": 3442,
+      "carico_cognitivo": 0.33,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "extracting",
+        "page",
+        "content",
+        "pagenextiterdataquerypagesvalues",
+        "returnpageextract"
+      ],
+      "prerequisiti": [
+        "pt_080"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_082",
+      "ordine": 82,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "text",
+        "documents",
+        "similar",
+        "chunks",
+        "vector"
+      ],
+      "prerequisiti": [
+        "pt_081"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_083",
+      "ordine": 83,
+      "titolo": "CHAPTER 3 RAG Part II: Chatting with Your Data",
+      "riga_inizio": 3349,
+      "riga_fine": 3357,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "rag",
+        "data",
+        "chapter",
+        "documents",
+        "how"
+      ],
+      "prerequisiti": [
+        "pt_082"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_084",
+      "ordine": 84,
+      "titolo": "Introducing Retrieval-Augmented Generation",
+      "riga_inizio": 3358,
+      "riga_fine": 3366,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "retrievalaugmented",
+        "generation",
+        "rag",
+        "its",
+        "introducing"
+      ],
+      "prerequisiti": [
+        "pt_083"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_085",
+      "ordine": 85,
+      "titolo": "_Output_",
+      "riga_inizio": 3373,
+      "riga_fine": 3407,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "llm",
+        "context",
+        "response",
+        "accurate",
+        "prompt"
+      ],
+      "prerequisiti": [
+        "pt_084"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_086",
+      "ordine": 86,
+      "titolo": "_Generation_",
+      "riga_inizio": 3419,
+      "riga_fine": 3442,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "stage",
+        "prompt",
+        "stages",
+        "figure",
+        "indexing"
+      ],
+      "prerequisiti": [
+        "pt_085"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_087",
+      "ordine": 87,
+      "titolo": "embed each chunk and insert it into the vector store",
+      "riga_inizio": 2581,
+      "riga_fine": 2775,
+      "carico_cognitivo": 0.3,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "embed",
+        "each",
+        "chunk",
+        "insert",
+        "into"
+      ],
+      "prerequisiti": [
+        "pt_086"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_088",
+      "ordine": 88,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "fetch",
+        "relevant",
+        "documents",
+        "docsretrieverinvokewho",
+        "key"
+      ],
+      "prerequisiti": [
+        "pt_087"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_089",
+      "ordine": 89,
+      "titolo": "fetch the 2 most relevant documents",
+      "riga_inizio": 3535,
+      "riga_fine": 3601,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "fetch",
+        "most",
+        "relevant",
+        "documents",
+        "docsretrieverinvokewho"
+      ],
+      "prerequisiti": [
+        "pt_088"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_090",
+      "ordine": 90,
+      "titolo": "Generating LLM Predictions Using Relevant Documents",
+      "riga_inizio": 3560,
+      "riga_fine": 3568,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "documents",
+        "relevant",
+        "llm",
+        "retrieved",
+        "final"
+      ],
+      "prerequisiti": [
+        "pt_089"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_091",
+      "ordine": 91,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "relevant",
+        "fetch",
+        "documents",
+        "docsretrieverget",
+        "documentswho"
+      ],
+      "prerequisiti": [
+        "pt_090"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_092",
+      "ordine": 92,
+      "titolo": "run",
+      "riga_inizio": 1493,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "run",
+        "chaininvokecontext",
+        "docsquestion",
+        "who",
+        "key"
+      ],
+      "prerequisiti": [
+        "pt_091"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_093",
+      "ordine": 93,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "relevant",
+        "fetch",
+        "documents",
+        "docsretrieverget",
+        "documentsinput"
+      ],
+      "prerequisiti": [
+        "pt_092"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_094",
+      "ordine": 94,
+      "titolo": "run",
+      "riga_inizio": 1493,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "run",
+        "qainvokewho",
+        "key",
+        "figures",
+        "ancient"
+      ],
+      "prerequisiti": [
+        "pt_093"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_095",
+      "ordine": 95,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "relevant",
+        "fetch",
+        "documents",
+        "docsretrieverget",
+        "documentsinput"
+      ],
+      "prerequisiti": [
+        "pt_094"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_096",
+      "ordine": 96,
+      "titolo": "Query Transformation",
+      "riga_inizio": 3819,
+      "riga_fine": 3827,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "users",
+        "transformation",
+        "input",
+        "rag"
+      ],
+      "prerequisiti": [
+        "pt_095"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_097",
+      "ordine": 97,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "relevant",
+        "fetch",
+        "documents",
+        "docsretrieverget",
+        "documentsinput"
+      ],
+      "prerequisiti": [
+        "pt_096"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_098",
+      "ordine": 98,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "relevant",
+        "fetch",
+        "documents",
+        "docsretrieverget",
+        "documentsnew"
+      ],
+      "prerequisiti": [
+        "pt_097"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_099",
+      "ordine": 99,
+      "titolo": "run",
+      "riga_inizio": 1493,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "then",
+        "run",
+        "rrrinvoketoday",
+        "woke",
+        "brushed"
+      ],
+      "prerequisiti": [
+        "pt_098"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_100",
+      "ordine": 100,
+      "titolo": "Multi-Query Retrieval",
+      "riga_inizio": 3975,
+      "riga_fine": 4015,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "retrieval",
+        "multiquery",
+        "query",
+        "strategy",
+        "users"
+      ],
+      "prerequisiti": [
+        "pt_099"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_101",
+      "ordine": 101,
+      "titolo": "return a flat list of unique docs",
+      "riga_inizio": 4047,
+      "riga_fine": 4171,
+      "carico_cognitivo": 0.25,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "unique",
+        "return",
+        "flat",
+        "list",
+        "docs"
+      ],
+      "prerequisiti": [
+        "pt_100"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_102",
+      "ordine": 102,
+      "titolo": "RAG-Fusion",
+      "riga_inizio": 4097,
+      "riga_fine": 4101,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "ragfusion",
+        "strategy",
+        "combining",
+        "different",
+        "queries"
+      ],
+      "prerequisiti": [
+        "pt_101"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_103",
+      "ordine": 103,
+      "titolo": "Initialize a dictionary to hold fused scores for each document",
+      "riga_inizio": 4172,
+      "riga_fine": 4272,
+      "carico_cognitivo": 0.13,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "initialize",
+        "dictionary",
+        "hold",
+        "fused",
+        "scores"
+      ],
+      "prerequisiti": [
+        "pt_102"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_104",
+      "ordine": 104,
+      "titolo": "Iterate through each document in the list,",
+      "riga_inizio": 4178,
+      "riga_fine": 4278,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "iterate",
+        "through",
+        "each",
+        "document",
+        "list"
+      ],
+      "prerequisiti": [
+        "pt_103"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_105",
+      "ordine": 105,
+      "titolo": "If the document hasn't been seen yet,",
+      "riga_inizio": 4183,
+      "riga_fine": 4283,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "document",
+        "hasnt",
+        "seen",
+        "yet"
+      ],
+      "prerequisiti": [
+        "pt_104"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_106",
+      "ordine": 106,
+      "titolo": "- initialize score to 0",
+      "riga_inizio": 4184,
+      "riga_fine": 4284,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "initialize",
+        "score"
+      ],
+      "prerequisiti": [
+        "pt_105"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_107",
+      "ordine": 107,
+      "titolo": "Update the score of the document using the RRF formula:",
+      "riga_inizio": 4189,
+      "riga_fine": 4289,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "update",
+        "score",
+        "document",
+        "using",
+        "rrf"
+      ],
+      "prerequisiti": [
+        "pt_106"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_108",
+      "ordine": 108,
+      "titolo": "Sort the documents based on their fused scores in descending order",
+      "riga_inizio": 4197,
+      "riga_fine": 4297,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "sort",
+        "documents",
+        "based",
+        "fused",
+        "scores"
+      ],
+      "prerequisiti": [
+        "pt_107"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_109",
+      "ordine": 109,
+      "titolo": "retrieve the corresponding doc for each doc_str",
+      "riga_inizio": 4202,
+      "riga_fine": 4267,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "doc",
+        "str",
+        "retrieve",
+        "corresponding",
+        "each"
+      ],
+      "prerequisiti": [
+        "pt_108"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_110",
+      "ordine": 110,
+      "titolo": "fetch relevant documents",
+      "riga_inizio": 3511,
+      "riga_fine": 3532,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "fetch",
+        "relevant",
+        "documents",
+        "docsretrieval",
+        "chaininvokeinput"
+      ],
+      "prerequisiti": [
+        "pt_109"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_111",
+      "ordine": 111,
+      "titolo": "Hypothetical Document Embeddings",
+      "riga_inizio": 4314,
+      "riga_fine": 4348,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "document",
+        "hypothetical",
+        "embeddings",
+        "hyde",
+        "query"
+      ],
+      "prerequisiti": [
+        "pt_110"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_112",
+      "ordine": 112,
+      "titolo": "Query Routing",
+      "riga_inizio": 4486,
+      "riga_fine": 4490,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "data",
+        "vector",
+        "routing",
+        "stores"
+      ],
+      "prerequisiti": [
+        "pt_111"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_113",
+      "ordine": 113,
+      "titolo": "Logical Routing",
+      "riga_inizio": 4491,
+      "riga_fine": 4503,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "routing",
+        "data",
+        "based",
+        "logical"
+      ],
+      "prerequisiti": [
+        "pt_112"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_114",
+      "ordine": 114,
+      "titolo": "Prompt",
+      "riga_inizio": 288,
+      "riga_fine": 308,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "question",
+        "data",
+        "source",
+        "system",
+        "prompt"
+      ],
+      "prerequisiti": [
+        "pt_113"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_115",
+      "ordine": 115,
+      "titolo": "Define router",
+      "riga_inizio": 4554,
+      "riga_fine": 4623,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "define",
+        "router",
+        "routerprompt",
+        "structured",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_114"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_116",
+      "ordine": 116,
+      "titolo": "\"python_docs\"",
+      "riga_inizio": 4624,
+      "riga_fine": 4719,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "python",
+        "docs"
+      ],
+      "prerequisiti": [
+        "pt_115"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_117",
+      "ordine": 117,
+      "titolo": "Two prompts",
+      "riga_inizio": 4720,
+      "riga_fine": 4746,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "question",
+        "physics",
+        "answer",
+        "templateyou",
+        "very"
+      ],
+      "prerequisiti": [
+        "pt_116"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_118",
+      "ordine": 118,
+      "titolo": "Pick the prompt most similar to the input question",
+      "riga_inizio": 4766,
+      "riga_fine": 5024,
+      "carico_cognitivo": 0.36,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "prompt",
+        "most",
+        "similar",
+        "router",
+        "pick"
+      ],
+      "prerequisiti": [
+        "pt_117"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_119",
+      "ordine": 119,
+      "titolo": "Query Construction",
+      "riga_inizio": 4851,
+      "riga_fine": 4863,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "data",
+        "construction",
+        "unstructured",
+        "structured"
+      ],
+      "prerequisiti": [
+        "pt_118"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_120",
+      "ordine": 120,
+      "titolo": "Text-to-Metadata Filter",
+      "riga_inizio": 4864,
+      "riga_fine": 4905,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "metadata",
+        "filter",
+        "vector",
+        "based",
+        "index"
+      ],
+      "prerequisiti": [
+        "pt_119"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_121",
+      "ordine": 121,
+      "titolo": "_Few-shot examples_",
+      "riga_inizio": 4999,
+      "riga_fine": 5012,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "examples",
+        "query",
+        "fewshot",
+        "prompt",
+        "figure"
+      ],
+      "prerequisiti": [
+        "pt_120"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_122",
+      "ordine": 122,
+      "titolo": "invoke the chain",
+      "riga_inizio": 5043,
+      "riga_fine": 5363,
+      "carico_cognitivo": 0.75,
+      "durata_stimata_minuti": 19,
+      "concetti_chiave": [
+        "invoke",
+        "chain",
+        "chaininvokehow",
+        "many",
+        "employees"
+      ],
+      "prerequisiti": [
+        "pt_121"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_123",
+      "ordine": 123,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "users",
+        "relevant",
+        "end",
+        "pagepage"
+      ],
+      "prerequisiti": [
+        "pt_122"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_124",
+      "ordine": 124,
+      "titolo": "CHAPTER 4 Using LangGraph to Add Memory to Your Chatbot",
+      "riga_inizio": 5112,
+      "riga_fine": 5124,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "memory",
+        "chapter",
+        "chatbot",
+        "how",
+        "context"
+      ],
+      "prerequisiti": [
+        "pt_123"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_125",
+      "ordine": 125,
+      "titolo": "Building a Chatbot Memory System",
+      "riga_inizio": 5125,
+      "riga_fine": 5205,
+      "carico_cognitivo": 0.15,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "memory",
+        "system",
+        "messages",
+        "how",
+        "simple"
+      ],
+      "prerequisiti": [
+        "pt_124"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_126",
+      "ordine": 126,
+      "titolo": "Introducing LangGraph",
+      "riga_inizio": 5206,
+      "riga_fine": 5248,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "actors",
+        "each",
+        "figure",
+        "applications",
+        "actor"
+      ],
+      "prerequisiti": [
+        "pt_125"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_127",
+      "ordine": 127,
+      "titolo": "_Edges_",
+      "riga_inizio": 5259,
+      "riga_fine": 5266,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "node",
+        "edges",
+        "after",
+        "visit",
+        "langgraph"
+      ],
+      "prerequisiti": [
+        "pt_126"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_128",
+      "ordine": 128,
+      "titolo": "The first argument is the unique node name",
+      "riga_inizio": 5364,
+      "riga_fine": 5464,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "first",
+        "argument",
+        "unique",
+        "node",
+        "name"
+      ],
+      "prerequisiti": [
+        "pt_127"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_129",
+      "ordine": 129,
+      "titolo": "The second argument is the function or Runnable to run",
+      "riga_inizio": 5365,
+      "riga_fine": 5998,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [
+        "second",
+        "argument",
+        "function",
+        "runnable",
+        "run"
+      ],
+      "prerequisiti": [
+        "pt_128"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_130",
+      "ordine": 130,
+      "titolo": "Adding Memory to StateGraph",
+      "riga_inizio": 5469,
+      "riga_fine": 5479,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "adapter",
+        "langgraph",
+        "database",
+        "which",
+        "graph"
+      ],
+      "prerequisiti": [
+        "pt_129"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_131",
+      "ordine": 131,
+      "titolo": "Trimming Messages",
+      "riga_inizio": 5567,
+      "riga_fine": 5606,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "messages",
+        "prompt",
+        "chat",
+        "history",
+        "example"
+      ],
+      "prerequisiti": [
+        "pt_130"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_132",
+      "ordine": 132,
+      "titolo": "Filtering Messages",
+      "riga_inizio": 5675,
+      "riga_fine": 5728,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "messages",
+        "filter",
+        "chat",
+        "history",
+        "types"
+      ],
+      "prerequisiti": [
+        "pt_131"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_133",
+      "ordine": 133,
+      "titolo": "Merging Consecutive Messages",
+      "riga_inizio": 5796,
+      "riga_fine": 5872,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "messages",
+        "consecutive",
+        "merge",
+        "models",
+        "same"
+      ],
+      "prerequisiti": [
+        "pt_132"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_134",
+      "ordine": 134,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "chat",
+        "chapter",
+        "chatbot",
+        "its",
+        "discussed"
+      ],
+      "prerequisiti": [
+        "pt_133"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_135",
+      "ordine": 135,
+      "titolo": "CHAPTER 5 Cognitive Architectures with LangGraph",
+      "riga_inizio": 5898,
+      "riga_fine": 5940,
+      "carico_cognitivo": 0.23,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "llm",
+        "application",
+        "email",
+        "cognitive",
+        "architectures"
+      ],
+      "prerequisiti": [
+        "pt_134"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_136",
+      "ordine": 136,
+      "titolo": "_2: Chain_",
+      "riga_inizio": 5949,
+      "riga_fine": 5958,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "llm",
+        "user",
+        "call",
+        "use"
+      ],
+      "prerequisiti": [
+        "pt_135"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_137",
+      "ordine": 137,
+      "titolo": "_3: Router_",
+      "riga_inizio": 5959,
+      "riga_fine": 5970,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "steps",
+        "indexes",
+        "query",
+        "router"
+      ],
+      "prerequisiti": [
+        "pt_136"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_138",
+      "ordine": 138,
+      "titolo": "be updated (in this case, it appends new messages to the",
+      "riga_inizio": 6003,
+      "riga_fine": 6148,
+      "carico_cognitivo": 0.22,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "messages",
+        "state",
+        "chatbot",
+        "builderadd",
+        "end"
+      ],
+      "prerequisiti": [
+        "pt_137"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_139",
+      "ordine": 139,
+      "titolo": "Architecture #2: Chain",
+      "riga_inizio": 6109,
+      "riga_fine": 6127,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "query",
+        "llm",
+        "call",
+        "user",
+        "architecture"
+      ],
+      "prerequisiti": [
+        "pt_138"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_140",
+      "ordine": 140,
+      "titolo": "Architecture #3: Router",
+      "riga_inizio": 6327,
+      "riga_fine": 6366,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "query",
+        "use",
+        "architecture",
+        "llm",
+        "index"
+      ],
+      "prerequisiti": [
+        "pt_139"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_141",
+      "ordine": 141,
+      "titolo": "refer to Chapter 2 on how to fill a vector store with documents",
+      "riga_inizio": 6393,
+      "riga_fine": 6418,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "records",
+        "insurance",
+        "documents",
+        "medical",
+        "faqs"
+      ],
+      "prerequisiti": [
+        "pt_140"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_142",
+      "ordine": 142,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "more",
+        "chapter",
+        "about",
+        "llm",
+        "agency"
+      ],
+      "prerequisiti": [
+        "pt_141"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_143",
+      "ordine": 143,
+      "titolo": "CHAPTER 6 Agent Architecture",
+      "riga_inizio": 6687,
+      "riga_fine": 6699,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "agent",
+        "what",
+        "llm",
+        "chapter",
+        "all"
+      ],
+      "prerequisiti": [
+        "pt_142"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_144",
+      "ordine": 144,
+      "titolo": "`Tools:`",
+      "riga_inizio": 475,
+      "riga_fine": 506,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [],
+      "prerequisiti": [
+        "pt_143"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_145",
+      "ordine": 145,
+      "titolo": "`tool,input`",
+      "riga_inizio": 6733,
+      "riga_fine": 6746,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "output",
+        "llm",
+        "when",
+        "stop",
+        "prompt"
+      ],
+      "prerequisiti": [
+        "pt_144"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_146",
+      "ordine": 146,
+      "titolo": "The Plan-Do Loop",
+      "riga_inizio": 6747,
+      "riga_fine": 6765,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "loop",
+        "stop",
+        "well",
+        "what",
+        "agent"
+      ],
+      "prerequisiti": [
+        "pt_145"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_147",
+      "ordine": 147,
+      "titolo": "`Tools:`",
+      "riga_inizio": 475,
+      "riga_fine": 506,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "output",
+        "llm",
+        "use",
+        "tool",
+        "next"
+      ],
+      "prerequisiti": [
+        "pt_146"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_148",
+      "ordine": 148,
+      "titolo": "Let’s continue with a third iteration:",
+      "riga_inizio": 6816,
+      "riga_fine": 6863,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "lets",
+        "continue",
+        "third",
+        "iteration"
+      ],
+      "prerequisiti": [
+        "pt_147"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_149",
+      "ordine": 149,
+      "titolo": "And the output:",
+      "riga_inizio": 6864,
+      "riga_fine": 6879,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "architecture",
+        "answer",
+        "agent",
+        "tool",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_148"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_150",
+      "ordine": 150,
+      "titolo": "Building a LangGraph Agent",
+      "riga_inizio": 6880,
+      "riga_fine": 7084,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "tool",
+        "agent",
+        "example",
+        "search",
+        "python"
+      ],
+      "prerequisiti": [
+        "pt_149"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_151",
+      "ordine": 151,
+      "titolo": "Always Calling a Tool First",
+      "riga_inizio": 7085,
+      "riga_fine": 7095,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "tool",
+        "call",
+        "application",
+        "always",
+        "first"
+      ],
+      "prerequisiti": [
+        "pt_150"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_152",
+      "ordine": 152,
+      "titolo": "Dealing with Many Tools",
+      "riga_inizio": 7329,
+      "riga_fine": 7396,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "tools",
+        "many",
+        "llms",
+        "more",
+        "when"
+      ],
+      "prerequisiti": [
+        "pt_151"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_153",
+      "ordine": 153,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "chapter",
+        "llm",
+        "agent",
+        "architecture",
+        "extensions"
+      ],
+      "prerequisiti": [
+        "pt_152"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_154",
+      "ordine": 154,
+      "titolo": "First message is the original user request.",
+      "riga_inizio": 7653,
+      "riga_fine": 7753,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "first",
+        "message",
+        "original",
+        "user",
+        "request"
+      ],
+      "prerequisiti": [
+        "pt_153"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_155",
+      "ordine": 155,
+      "titolo": "End after 3 iterations, each with 2 messages",
+      "riga_inizio": 7664,
+      "riga_fine": 7915,
+      "carico_cognitivo": 0.46,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "messages",
+        "generate",
+        "builderadd",
+        "little",
+        "books"
+      ],
+      "prerequisiti": [
+        "pt_154"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_156",
+      "ordine": 156,
+      "titolo": "And the final output:",
+      "riga_inizio": 7832,
+      "riga_fine": 7862,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "output",
+        "final",
+        "reflection",
+        "its",
+        "user"
+      ],
+      "prerequisiti": [
+        "pt_155"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_157",
+      "ordine": 157,
+      "titolo": "Subgraphs in LangGraph",
+      "riga_inizio": 7863,
+      "riga_fine": 7875,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "subgraph",
+        "graph",
+        "subgraphs",
+        "graphs",
+        "parent"
+      ],
+      "prerequisiti": [
+        "pt_156"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_158",
+      "ordine": 158,
+      "titolo": "Calling a Subgraph Directly",
+      "riga_inizio": 7886,
+      "riga_fine": 7894,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "subgraph",
+        "keys",
+        "node",
+        "graph",
+        "directly"
+      ],
+      "prerequisiti": [
+        "pt_157"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_159",
+      "ordine": 159,
+      "titolo": "note that this subgraph node can communicate with the parent graph",
+      "riga_inizio": 7918,
+      "riga_fine": 8018,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "note",
+        "subgraph",
+        "node",
+        "communicate",
+        "parent"
+      ],
+      "prerequisiti": [
+        "pt_158"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_160",
+      "ordine": 160,
+      "titolo": "Define parent graph",
+      "riga_inizio": 7928,
+      "riga_fine": 7977,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "define",
+        "parent",
+        "graph",
+        "builderstategraphstate",
+        "builderadd"
+      ],
+      "prerequisiti": [
+        "pt_159"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_161",
+      "ordine": 161,
+      "titolo": "Calling a Subgraph with a Function",
+      "riga_inizio": 7967,
+      "riga_fine": 7977,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "subgraph",
+        "state",
+        "function",
+        "node",
+        "transform"
+      ],
+      "prerequisiti": [
+        "pt_160"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_162",
+      "ordine": 162,
+      "titolo": "Define parent graph",
+      "riga_inizio": 7928,
+      "riga_fine": 7977,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "define",
+        "parent",
+        "graph",
+        "defnodestate",
+        "state"
+      ],
+      "prerequisiti": [
+        "pt_161"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_163",
+      "ordine": 163,
+      "titolo": "note that we are using `node` function instead of a compiled subgraph",
+      "riga_inizio": 7995,
+      "riga_fine": 8195,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "note",
+        "using",
+        "function",
+        "instead",
+        "compiled"
+      ],
+      "prerequisiti": [
+        "pt_162"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_164",
+      "ordine": 164,
+      "titolo": "Multi-Agent Architectures",
+      "riga_inizio": 8049,
+      "riga_fine": 8067,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "agents",
+        "multiagent",
+        "agent",
+        "multiple",
+        "figure"
+      ],
+      "prerequisiti": [
+        "pt_163"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_165",
+      "ordine": 165,
+      "titolo": "Supervisor Architecture",
+      "riga_inizio": 8088,
+      "riga_fine": 8127,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "node",
+        "which",
+        "supervisor",
+        "architecture",
+        "add"
+      ],
+      "prerequisiti": [
+        "pt_164"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_166",
+      "ordine": 166,
+      "titolo": "route to one of the agents or exit based on the supervisor's decision",
+      "riga_inizio": 8196,
+      "riga_fine": 8641,
+      "carico_cognitivo": 0.97,
+      "durata_stimata_minuti": 21,
+      "concetti_chiave": [
+        "supervisor",
+        "state",
+        "researcher",
+        "each",
+        "route"
+      ],
+      "prerequisiti": [
+        "pt_165"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_167",
+      "ordine": 167,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "chapter",
+        "agent",
+        "important",
+        "architecture",
+        "multiagent"
+      ],
+      "prerequisiti": [
+        "pt_166"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_168",
+      "ordine": 168,
+      "titolo": "CHAPTER 8",
+      "riga_inizio": 8272,
+      "riga_fine": 8372,
+      "carico_cognitivo": 0.32,
+      "durata_stimata_minuti": 8,
+      "concetti_chiave": [
+        "chapter"
+      ],
+      "prerequisiti": [
+        "pt_167"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_169",
+      "ordine": 169,
+      "titolo": "Patterns to Make the Most of LLMs",
+      "riga_inizio": 8273,
+      "riga_fine": 8289,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "application",
+        "tradeoff",
+        "agency",
+        "reliability"
+      ],
+      "prerequisiti": [
+        "pt_168"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_170",
+      "ordine": 170,
+      "titolo": "_Variance_",
+      "riga_inizio": 8298,
+      "riga_fine": 8313,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "higher",
+        "reliability",
+        "frontier",
+        "all",
+        "agency"
+      ],
+      "prerequisiti": [
+        "pt_169"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_171",
+      "ordine": 171,
+      "titolo": "_JSON mode_",
+      "riga_inizio": 8343,
+      "riga_fine": 8389,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "output",
+        "schema",
+        "json",
+        "models",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_170"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_172",
+      "ordine": 172,
+      "titolo": "Streaming LLM Output Token-by-Token",
+      "riga_inizio": 8533,
+      "riga_fine": 8578,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "each",
+        "streaming",
+        "output",
+        "want"
+      ],
+      "prerequisiti": [
+        "pt_171"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_173",
+      "ordine": 173,
+      "titolo": "Human-in-the-Loop Modalities",
+      "riga_inizio": 8579,
+      "riga_fine": 8583,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "humanintheloop",
+        "autonomy",
+        "chapter",
+        "makes",
+        "use"
+      ],
+      "prerequisiti": [
+        "pt_172"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_174",
+      "ordine": 174,
+      "titolo": "Somewhere else in your application",
+      "riga_inizio": 8642,
+      "riga_fine": 8813,
+      "carico_cognitivo": 0.24,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "somewhere",
+        "else",
+        "application",
+        "eventset"
+      ],
+      "prerequisiti": [
+        "pt_173"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_175",
+      "ordine": 175,
+      "titolo": "Restart",
+      "riga_inizio": 8764,
+      "riga_fine": 8803,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "new",
+        "start",
+        "input",
+        "want",
+        "graph"
+      ],
+      "prerequisiti": [
+        "pt_174"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_176",
+      "ordine": 176,
+      "titolo": "something you want to add or replace",
+      "riga_inizio": 8814,
+      "riga_fine": 8854,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "update",
+        "something",
+        "want",
+        "add",
+        "replace"
+      ],
+      "prerequisiti": [
+        "pt_175"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_177",
+      "ordine": 177,
+      "titolo": "replay a past state",
+      "riga_inizio": 8855,
+      "riga_fine": 8989,
+      "carico_cognitivo": 0.47,
+      "durata_stimata_minuti": 10,
+      "concetti_chiave": [
+        "replay",
+        "past",
+        "state",
+        "graphinvokenone",
+        "history2config"
+      ],
+      "prerequisiti": [
+        "pt_176"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_178",
+      "ordine": 178,
+      "titolo": "Multitasking LLMs",
+      "riga_inizio": 8878,
+      "riga_fine": 8882,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llms",
+        "more",
+        "problem",
+        "concurrent",
+        "much"
+      ],
+      "prerequisiti": [
+        "pt_177"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_179",
+      "ordine": 179,
+      "titolo": "Handle independently",
+      "riga_inizio": 8888,
+      "riga_fine": 8890,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "new",
+        "two",
+        "handle",
+        "independently",
+        "another"
+      ],
+      "prerequisiti": [
+        "pt_178"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_180",
+      "ordine": 180,
+      "titolo": "Queue concurrent inputs",
+      "riga_inizio": 8891,
+      "riga_fine": 8903,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "inputs",
+        "input",
+        "current",
+        "processing",
+        "previous"
+      ],
+      "prerequisiti": [
+        "pt_179"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_181",
+      "ordine": 181,
+      "titolo": "Interrupt",
+      "riga_inizio": 8904,
+      "riga_fine": 8930,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "input",
+        "new",
+        "state",
+        "step",
+        "keep"
+      ],
+      "prerequisiti": [
+        "pt_180"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_182",
+      "ordine": 182,
+      "titolo": "Fork and merge",
+      "riga_inizio": 8931,
+      "riga_fine": 8937,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "new",
+        "input",
+        "option",
+        "state",
+        "thread"
+      ],
+      "prerequisiti": [
+        "pt_181"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_183",
+      "ordine": 183,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "agency",
+        "application",
+        "end",
+        "chapter"
+      ],
+      "prerequisiti": [
+        "pt_182"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_184",
+      "ordine": 184,
+      "titolo": "CHAPTER 9 Deployment: Launching Your AI Application into Production",
+      "riga_inizio": 8951,
+      "riga_fine": 8959,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "application",
+        "chapter",
+        "into",
+        "production",
+        "tools"
+      ],
+      "prerequisiti": [
+        "pt_183"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_185",
+      "ordine": 185,
+      "titolo": "Prerequisites",
+      "riga_inizio": 8960,
+      "riga_fine": 8978,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "application",
+        "services",
+        "store",
+        "example",
+        "prerequisites"
+      ],
+      "prerequisiti": [
+        "pt_184"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_186",
+      "ordine": 186,
+      "titolo": "for tracing",
+      "riga_inizio": 8990,
+      "riga_fine": 9480,
+      "carico_cognitivo": 0.9,
+      "durata_stimata_minuti": 20,
+      "concetti_chiave": [
+        "langchain",
+        "tracing",
+        "v2true",
+        "endpointhttpsapismithlangchaincom",
+        "api"
+      ],
+      "prerequisiti": [
+        "pt_185"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_187",
+      "ordine": 187,
+      "titolo": "Large Language Model",
+      "riga_inizio": 8998,
+      "riga_fine": 9008,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "openai",
+        "api",
+        "keys",
+        "llm",
+        "figure"
+      ],
+      "prerequisiti": [
+        "pt_186"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_188",
+      "ordine": 188,
+      "titolo": "Vector Store",
+      "riga_inizio": 683,
+      "riga_fine": 700,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "project",
+        "vector",
+        "store",
+        "supabase",
+        "api"
+      ],
+      "prerequisiti": [
+        "pt_187"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_189",
+      "ordine": 189,
+      "titolo": "Create a table to store your documents",
+      "riga_inizio": 9036,
+      "riga_fine": 9057,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "create",
+        "table",
+        "documents",
+        "corresponds",
+        "store"
+      ],
+      "prerequisiti": [
+        "pt_188"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_190",
+      "ordine": 190,
+      "titolo": "Create a function to search for documents",
+      "riga_inizio": 9058,
+      "riga_fine": 9117,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "embedding",
+        "query",
+        "supabase",
+        "create",
+        "documents"
+      ],
+      "prerequisiti": [
+        "pt_189"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_191",
+      "ordine": 191,
+      "titolo": "Backend API",
+      "riga_inizio": 9198,
+      "riga_fine": 9228,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "langgraph",
+        "platform",
+        "agentic",
+        "figure",
+        "enables"
+      ],
+      "prerequisiti": [
+        "pt_190"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_192",
+      "ordine": 192,
+      "titolo": "Create a LangSmith Account",
+      "riga_inizio": 9229,
+      "riga_fine": 9243,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langsmith",
+        "create",
+        "platform",
+        "api",
+        "langgraph"
+      ],
+      "prerequisiti": [
+        "pt_191"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_193",
+      "ordine": 193,
+      "titolo": "Threads",
+      "riga_inizio": 9265,
+      "riga_fine": 9269,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "thread",
+        "state",
+        "threads",
+        "run",
+        "contains"
+      ],
+      "prerequisiti": [
+        "pt_192"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_194",
+      "ordine": 194,
+      "titolo": "Human-in-the-loop",
+      "riga_inizio": 8579,
+      "riga_fine": 8583,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "humanintheloop",
+        "application",
+        "outcomes",
+        "left",
+        "run"
+      ],
+      "prerequisiti": [
+        "pt_193"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_195",
+      "ordine": 195,
+      "titolo": "Stateless runs",
+      "riga_inizio": 9340,
+      "riga_fine": 9354,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "runs",
+        "stateless",
+        "thread",
+        "all",
+        "however"
+      ],
+      "prerequisiti": [
+        "pt_194"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_196",
+      "ordine": 196,
+      "titolo": "Test Your LangGraph App Locally",
+      "riga_inizio": 9413,
+      "riga_fine": 9480,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "langgraph",
+        "server",
+        "api",
+        "python",
+        "locally"
+      ],
+      "prerequisiti": [
+        "pt_195"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_197",
+      "ordine": 197,
+      "titolo": "only pass the url argument to get_client() if you changed the default port",
+      "riga_inizio": 9481,
+      "riga_fine": 9581,
+      "carico_cognitivo": 0.21,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "only",
+        "pass",
+        "url",
+        "argument",
+        "get"
+      ],
+      "prerequisiti": [
+        "pt_196"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_198",
+      "ordine": 198,
+      "titolo": "Using the graph deployed with the name \"agent\"",
+      "riga_inizio": 9484,
+      "riga_fine": 9775,
+      "carico_cognitivo": 0.79,
+      "durata_stimata_minuti": 19,
+      "concetti_chiave": [
+        "assistant",
+        "using",
+        "graph",
+        "deployed",
+        "name"
+      ],
+      "prerequisiti": [
+        "pt_197"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_199",
+      "ordine": 199,
+      "titolo": "Deploy from the LangSmith UI",
+      "riga_inizio": 9539,
+      "riga_fine": 9555,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "page",
+        "langsmith",
+        "see",
+        "deployment",
+        "langgraph"
+      ],
+      "prerequisiti": [
+        "pt_198"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_200",
+      "ordine": 200,
+      "titolo": "Deployment details",
+      "riga_inizio": 9556,
+      "riga_fine": 9564,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "github",
+        "deployment",
+        "repository",
+        "specify",
+        "select"
+      ],
+      "prerequisiti": [
+        "pt_199"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_201",
+      "ordine": 201,
+      "titolo": "Environment variables",
+      "riga_inizio": 9568,
+      "riga_fine": 9590,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "deployment",
+        "figure",
+        "api",
+        "button",
+        "new"
+      ],
+      "prerequisiti": [
+        "pt_200"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_202",
+      "ordine": 202,
+      "titolo": "Launch LangGraph Studio",
+      "riga_inizio": 9591,
+      "riga_fine": 9635,
+      "carico_cognitivo": 0.12,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "langgraph",
+        "studio",
+        "figure",
+        "graph",
+        "application"
+      ],
+      "prerequisiti": [
+        "pt_201"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_203",
+      "ordine": 203,
+      "titolo": "_Database access_",
+      "riga_inizio": 9665,
+      "riga_fine": 9670,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "access",
+        "database",
+        "agent",
+        "mitigate",
+        "credentials"
+      ],
+      "prerequisiti": [
+        "pt_202"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_204",
+      "ordine": 204,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "application",
+        "langgraph",
+        "chapter",
+        "best",
+        "practices"
+      ],
+      "prerequisiti": [
+        "pt_203"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_205",
+      "ordine": 205,
+      "titolo": "CHAPTER 10 Testing: Evaluation, Monitoring, and Continuous Improvement",
+      "riga_inizio": 9694,
+      "riga_fine": 9704,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "app",
+        "llm",
+        "chapter",
+        "testing",
+        "how"
+      ],
+      "prerequisiti": [
+        "pt_204"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_206",
+      "ordine": 206,
+      "titolo": "_Production_",
+      "riga_inizio": 9716,
+      "riga_fine": 9731,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "production",
+        "these",
+        "stages",
+        "cycle",
+        "monitor"
+      ],
+      "prerequisiti": [
+        "pt_205"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_207",
+      "ordine": 207,
+      "titolo": "The Design Stage: Self-Corrective RAG",
+      "riga_inizio": 9732,
+      "riga_fine": 9775,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "flow",
+        "llm",
+        "relevant",
+        "control",
+        "answer"
+      ],
+      "prerequisiti": [
+        "pt_206"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_208",
+      "ordine": 208,
+      "titolo": "Retrieve the relevant documents",
+      "riga_inizio": 9797,
+      "riga_fine": 9882,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "import",
+        "documents",
+        "used",
+        "fromlangchain",
+        "langgraph"
+      ],
+      "prerequisiti": [
+        "pt_207"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_209",
+      "ordine": 209,
+      "titolo": "Prompt",
+      "riga_inizio": 288,
+      "riga_fine": 308,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "question",
+        "document",
+        "relevant",
+        "prompt",
+        "grader"
+      ],
+      "prerequisiti": [
+        "pt_208"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_210",
+      "ordine": 210,
+      "titolo": "_Synthetic data_",
+      "riga_inizio": 9971,
+      "riga_fine": 10006,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "dataset",
+        "inputs",
+        "new",
+        "type",
+        "outputs"
+      ],
+      "prerequisiti": [
+        "pt_209"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_211",
+      "ordine": 211,
+      "titolo": "`chat` _dataset_",
+      "riga_inizio": 10007,
+      "riga_fine": 10038,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "dataset",
+        "figure",
+        "chat",
+        "messages",
+        "type"
+      ],
+      "prerequisiti": [
+        "pt_210"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_212",
+      "ordine": 212,
+      "titolo": "Defining Your Evaluation Criteria",
+      "riga_inizio": 10039,
+      "riga_fine": 10049,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "evaluation",
+        "applications",
+        "outputs",
+        "offline",
+        "ground"
+      ],
+      "prerequisiti": [
+        "pt_211"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_213",
+      "ordine": 213,
+      "titolo": "_LLM-as-a-judge evaluators_",
+      "riga_inizio": 10058,
+      "riga_fine": 10075,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llmasajudge",
+        "evaluators",
+        "human",
+        "scores",
+        "evaluator"
+      ],
+      "prerequisiti": [
+        "pt_212"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_214",
+      "ordine": 214,
+      "titolo": "Improving LLM-as-a-judge evaluators performance",
+      "riga_inizio": 10076,
+      "riga_fine": 10120,
+      "carico_cognitivo": 0.16,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "evaluator",
+        "llmasajudge",
+        "fewshot",
+        "prompt",
+        "llm"
+      ],
+      "prerequisiti": [
+        "pt_213"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_215",
+      "ordine": 215,
+      "titolo": "Pairwise evaluation",
+      "riga_inizio": 10121,
+      "riga_fine": 10139,
+      "carico_cognitivo": 0.07,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "pairwise",
+        "evaluation",
+        "llm",
+        "langsmith",
+        "preference"
+      ],
+      "prerequisiti": [
+        "pt_214"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_216",
+      "ordine": 216,
+      "titolo": "Regression Testing",
+      "riga_inizio": 10140,
+      "riga_fine": 10166,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "regression",
+        "testing",
+        "performance",
+        "runs",
+        "model"
+      ],
+      "prerequisiti": [
+        "pt_215"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_217",
+      "ordine": 217,
+      "titolo": "Evaluating an Agent’s End-to-End Performance",
+      "riga_inizio": 10167,
+      "riga_fine": 10173,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "agents",
+        "tool",
+        "different",
+        "performance",
+        "use"
+      ],
+      "prerequisiti": [
+        "pt_216"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_218",
+      "ordine": 218,
+      "titolo": "Create a dataset",
+      "riga_inizio": 10216,
+      "riga_fine": 10307,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "most",
+        "dataset",
+        "total",
+        "sales",
+        "which"
+      ],
+      "prerequisiti": [
+        "pt_217"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_219",
+      "ordine": 219,
+      "titolo": "chain",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "chain",
+        "defpredict",
+        "sql",
+        "agent",
+        "answerexample"
+      ],
+      "prerequisiti": [
+        "pt_218"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_220",
+      "ordine": 220,
+      "titolo": "Run evaluator",
+      "riga_inizio": 10331,
+      "riga_fine": 10430,
+      "carico_cognitivo": 0.09,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "answer",
+        "score",
+        "reference",
+        "run",
+        "evaluator"
+      ],
+      "prerequisiti": [
+        "pt_219"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_221",
+      "ordine": 221,
+      "titolo": "_Output_",
+      "riga_inizio": 3373,
+      "riga_fine": 3407,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "output",
+        "llm",
+        "response",
+        "inputs",
+        "step"
+      ],
+      "prerequisiti": [
+        "pt_220"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_222",
+      "ordine": 222,
+      "titolo": "Run",
+      "riga_inizio": 1493,
+      "riga_fine": 1515,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "run",
+        "responseroot",
+        "runoutputsresponse"
+      ],
+      "prerequisiti": [
+        "pt_221"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_223",
+      "ordine": 223,
+      "titolo": "Get tool call",
+      "riga_inizio": 10435,
+      "riga_fine": 10565,
+      "carico_cognitivo": 0.14,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "tool",
+        "call",
+        "score",
+        "get",
+        "try"
+      ],
+      "prerequisiti": [
+        "pt_222"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_224",
+      "ordine": 224,
+      "titolo": "_Output_",
+      "riga_inizio": 3373,
+      "riga_fine": 3407,
+      "carico_cognitivo": 0.11,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "tool",
+        "calls",
+        "output",
+        "expected",
+        "sequence"
+      ],
+      "prerequisiti": [
+        "pt_223"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_225",
+      "ordine": 225,
+      "titolo": "Production",
+      "riga_inizio": 8951,
+      "riga_fine": 8959,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "llm",
+        "these",
+        "outputs",
+        "process",
+        "guardrails"
+      ],
+      "prerequisiti": [
+        "pt_224"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_226",
+      "ordine": 226,
+      "titolo": "Tracing",
+      "riga_inizio": 8990,
+      "riga_fine": 9480,
+      "carico_cognitivo": 0.9,
+      "durata_stimata_minuti": 20,
+      "concetti_chiave": [
+        "tracing",
+        "trace",
+        "langsmith",
+        "series",
+        "steps"
+      ],
+      "prerequisiti": [
+        "pt_225"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_227",
+      "ordine": 227,
+      "titolo": "The below examples use the OpenAI API, though you can use other LLM providers",
+      "riga_inizio": 10783,
+      "riga_fine": 11180,
+      "carico_cognitivo": 1.0,
+      "durata_stimata_minuti": 22,
+      "concetti_chiave": [
+        "tracing",
+        "use",
+        "openai",
+        "api",
+        "other"
+      ],
+      "prerequisiti": [
+        "pt_226"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_228",
+      "ordine": 228,
+      "titolo": "Classification and Tagging",
+      "riga_inizio": 10815,
+      "riga_fine": 10821,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "labels",
+        "classification",
+        "tagging",
+        "effective",
+        "user"
+      ],
+      "prerequisiti": [
+        "pt_227"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_229",
+      "ordine": 229,
+      "titolo": "Monitoring and Fixing Errors",
+      "riga_inizio": 10822,
+      "riga_fine": 10828,
+      "carico_cognitivo": 0.03,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "errors",
+        "dataset",
+        "evaluation",
+        "app",
+        "monitoring"
+      ],
+      "prerequisiti": [
+        "pt_228"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_230",
+      "ordine": 230,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "testing",
+        "ensure",
+        "llm",
+        "cycle",
+        "performance"
+      ],
+      "prerequisiti": [
+        "pt_229"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_231",
+      "ordine": 231,
+      "titolo": "CHAPTER 11 Building with LLMs",
+      "riga_inizio": 10838,
+      "riga_fine": 10862,
+      "carico_cognitivo": 0.18,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "software",
+        "llms",
+        "interface",
+        "case",
+        "tools"
+      ],
+      "prerequisiti": [
+        "pt_230"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_232",
+      "ordine": 232,
+      "titolo": "Interactive Chatbots",
+      "riga_inizio": 10863,
+      "riga_fine": 10875,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "application",
+        "existing",
+        "its",
+        "basic",
+        "user"
+      ],
+      "prerequisiti": [
+        "pt_231"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_233",
+      "ordine": 233,
+      "titolo": "_Real-time collaboration_",
+      "riga_inizio": 10911,
+      "riga_fine": 10922,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "document",
+        "collaboration",
+        "same",
+        "google",
+        "users"
+      ],
+      "prerequisiti": [
+        "pt_232"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_234",
+      "ordine": 234,
+      "titolo": "Ambient Computing",
+      "riga_inizio": 10949,
+      "riga_fine": 10961,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "when",
+        "pattern",
+        "notify",
+        "some",
+        "interesting"
+      ],
+      "prerequisiti": [
+        "pt_233"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_235",
+      "ordine": 235,
+      "titolo": "Summary",
+      "riga_inizio": 1872,
+      "riga_fine": 1882,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "build",
+        "new",
+        "something",
+        "llms",
+        "only"
+      ],
+      "prerequisiti": [
+        "pt_234"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_236",
+      "ordine": 236,
+      "titolo": "Index",
+      "riga_inizio": 1883,
+      "riga_fine": 1887,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "index",
+        "symbols",
+        "curly",
+        "braces"
+      ],
+      "prerequisiti": [
+        "pt_235"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_237",
+      "ordine": 237,
+      "titolo": "A",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "architecture",
+        "agent",
+        "116",
+        "xxi",
+        "chatbots"
+      ],
+      "prerequisiti": [
+        "pt_236"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_238",
+      "ordine": 238,
+      "titolo": "B",
+      "riga_inizio": 114,
+      "riga_fine": 130,
+      "carico_cognitivo": 0.37,
+      "durata_stimata_minuti": 9,
+      "concetti_chiave": [
+        "bagofwords",
+        "model",
+        "bard",
+        "batch",
+        "method"
+      ],
+      "prerequisiti": [
+        "pt_237"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_239",
+      "ordine": 239,
+      "titolo": "C",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "langgraph",
+        "253",
+        "architecture",
+        "chat",
+        "composition"
+      ],
+      "prerequisiti": [
+        "pt_238"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_240",
+      "ordine": 240,
+      "titolo": "E",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "embeddings",
+        "retrieving",
+        "evaluation",
+        "228",
+        "edges"
+      ],
+      "prerequisiti": [
+        "pt_239"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_241",
+      "ordine": 241,
+      "titolo": "F",
+      "riga_inizio": 50,
+      "riga_fine": 85,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "llms",
+        "feedback",
+        "collecting",
+        "production",
+        "248"
+      ],
+      "prerequisiti": [
+        "pt_240"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_242",
+      "ordine": 242,
+      "titolo": "G",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "xxi",
+        "gemma",
+        "generatereflect",
+        "loop",
+        "160"
+      ],
+      "prerequisiti": [
+        "pt_241"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_243",
+      "ordine": 243,
+      "titolo": "H",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "step",
+        "evaluators",
+        "228",
+        "mode",
+        "185"
+      ],
+      "prerequisiti": [
+        "pt_242"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_244",
+      "ordine": 244,
+      "titolo": "I",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "indexing",
+        "see",
+        "llms",
+        "chatbots",
+        "interrupt"
+      ],
+      "prerequisiti": [
+        "pt_243"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_245",
+      "ordine": 245,
+      "titolo": "M",
+      "riga_inizio": 174,
+      "riga_fine": 204,
+      "carico_cognitivo": 0.2,
+      "durata_stimata_minuti": 7,
+      "concetti_chiave": [
+        "memory",
+        "machine",
+        "learning",
+        "applications",
+        "parameter"
+      ],
+      "prerequisiti": [
+        "pt_244"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_246",
+      "ordine": 246,
+      "titolo": "N",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "neural",
+        "networks",
+        "nodes",
+        "100",
+        "norvig"
+      ],
+      "prerequisiti": [
+        "pt_245"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_247",
+      "ordine": 247,
+      "titolo": "O",
+      "riga_inizio": 50,
+      "riga_fine": 85,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "output",
+        "247",
+        "evaluation",
+        "api",
+        "xvi"
+      ],
+      "prerequisiti": [
+        "pt_246"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_248",
+      "ordine": 248,
+      "titolo": "P",
+      "riga_inizio": 50,
+      "riga_fine": 85,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "strategy",
+        "purpose",
+        "prompting",
+        "chatbot",
+        "document"
+      ],
+      "prerequisiti": [
+        "pt_247"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_249",
+      "ordine": 249,
+      "titolo": "R",
+      "riga_inizio": 1,
+      "riga_fine": 17,
+      "carico_cognitivo": 0.04,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "routing",
+        "rag",
+        "retrieval",
+        "retrievalaugmented",
+        "generation"
+      ],
+      "prerequisiti": [
+        "pt_248"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_250",
+      "ordine": 250,
+      "titolo": "S",
+      "riga_inizio": 50,
+      "riga_fine": 85,
+      "carico_cognitivo": 0.1,
+      "durata_stimata_minuti": 6,
+      "concetti_chiave": [
+        "213",
+        "semantic",
+        "streaming",
+        "output",
+        "subgraphs"
+      ],
+      "prerequisiti": [
+        "pt_249"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_251",
+      "ordine": 251,
+      "titolo": "V",
+      "riga_inizio": 103,
+      "riga_fine": 113,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "vector",
+        "xxi",
+        "stores",
+        "values",
+        "mode"
+      ],
+      "prerequisiti": [
+        "pt_250"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_252",
+      "ordine": 252,
+      "titolo": "Y",
+      "riga_inizio": 103,
+      "riga_fine": 113,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "yao",
+        "shunyu",
+        "138"
+      ],
+      "prerequisiti": [
+        "pt_251"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_253",
+      "ordine": 253,
+      "titolo": "Z",
+      "riga_inizio": 309,
+      "riga_fine": 330,
+      "carico_cognitivo": 0.06,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "zeroshot",
+        "prompting",
+        "xvi",
+        "zod",
+        "end"
+      ],
+      "prerequisiti": [
+        "pt_252"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_254",
+      "ordine": 254,
+      "titolo": "About the Authors",
+      "riga_inizio": 11149,
+      "riga_fine": 11157,
+      "carico_cognitivo": 0.05,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "mayo",
+        "software",
+        "about",
+        "tech",
+        "early"
+      ],
+      "prerequisiti": [
+        "pt_253"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    },
+    {
+      "id": "pt_255",
+      "ordine": 255,
+      "titolo": "Colophon",
+      "riga_inizio": 11158,
+      "riga_fine": 11172,
+      "carico_cognitivo": 0.08,
+      "durata_stimata_minuti": 5,
+      "concetti_chiave": [
+        "cover",
+        "frogs",
+        "font",
+        "animals",
+        "european"
+      ],
+      "prerequisiti": [
+        "pt_254"
+      ],
+      "source_id": null,
+      "markdown_sorgente": null,
+      "segmenti_fonte": []
+    }
+  ],
+  "albero_dipendenze": [
+    {
+      "da": "pt_001",
+      "a": "pt_002"
+    },
+    {
+      "da": "pt_002",
+      "a": "pt_003"
+    },
+    {
+      "da": "pt_003",
+      "a": "pt_004"
+    },
+    {
+      "da": "pt_004",
+      "a": "pt_005"
+    },
+    {
+      "da": "pt_005",
+      "a": "pt_006"
+    },
+    {
+      "da": "pt_006",
+      "a": "pt_007"
+    },
+    {
+      "da": "pt_007",
+      "a": "pt_008"
+    },
+    {
+      "da": "pt_008",
+      "a": "pt_009"
+    },
+    {
+      "da": "pt_009",
+      "a": "pt_010"
+    },
+    {
+      "da": "pt_010",
+      "a": "pt_011"
+    },
+    {
+      "da": "pt_011",
+      "a": "pt_012"
+    },
+    {
+      "da": "pt_012",
+      "a": "pt_013"
+    },
+    {
+      "da": "pt_013",
+      "a": "pt_014"
+    },
+    {
+      "da": "pt_014",
+      "a": "pt_015"
+    },
+    {
+      "da": "pt_015",
+      "a": "pt_016"
+    },
+    {
+      "da": "pt_016",
+      "a": "pt_017"
+    },
+    {
+      "da": "pt_017",
+      "a": "pt_018"
+    },
+    {
+      "da": "pt_018",
+      "a": "pt_019"
+    },
+    {
+      "da": "pt_019",
+      "a": "pt_020"
+    },
+    {
+      "da": "pt_020",
+      "a": "pt_021"
+    },
+    {
+      "da": "pt_021",
+      "a": "pt_022"
+    },
+    {
+      "da": "pt_022",
+      "a": "pt_023"
+    },
+    {
+      "da": "pt_023",
+      "a": "pt_024"
+    },
+    {
+      "da": "pt_024",
+      "a": "pt_025"
+    },
+    {
+      "da": "pt_025",
+      "a": "pt_026"
+    },
+    {
+      "da": "pt_026",
+      "a": "pt_027"
+    },
+    {
+      "da": "pt_027",
+      "a": "pt_028"
+    },
+    {
+      "da": "pt_028",
+      "a": "pt_029"
+    },
+    {
+      "da": "pt_029",
+      "a": "pt_030"
+    },
+    {
+      "da": "pt_030",
+      "a": "pt_031"
+    },
+    {
+      "da": "pt_031",
+      "a": "pt_032"
+    },
+    {
+      "da": "pt_032",
+      "a": "pt_033"
+    },
+    {
+      "da": "pt_033",
+      "a": "pt_034"
+    },
+    {
+      "da": "pt_034",
+      "a": "pt_035"
+    },
+    {
+      "da": "pt_035",
+      "a": "pt_036"
+    },
+    {
+      "da": "pt_036",
+      "a": "pt_037"
+    },
+    {
+      "da": "pt_037",
+      "a": "pt_038"
+    },
+    {
+      "da": "pt_038",
+      "a": "pt_039"
+    },
+    {
+      "da": "pt_039",
+      "a": "pt_040"
+    },
+    {
+      "da": "pt_040",
+      "a": "pt_041"
+    },
+    {
+      "da": "pt_041",
+      "a": "pt_042"
+    },
+    {
+      "da": "pt_042",
+      "a": "pt_043"
+    },
+    {
+      "da": "pt_043",
+      "a": "pt_044"
+    },
+    {
+      "da": "pt_044",
+      "a": "pt_045"
+    },
+    {
+      "da": "pt_045",
+      "a": "pt_046"
+    },
+    {
+      "da": "pt_046",
+      "a": "pt_047"
+    },
+    {
+      "da": "pt_047",
+      "a": "pt_048"
+    },
+    {
+      "da": "pt_048",
+      "a": "pt_049"
+    },
+    {
+      "da": "pt_049",
+      "a": "pt_050"
+    },
+    {
+      "da": "pt_050",
+      "a": "pt_051"
+    },
+    {
+      "da": "pt_051",
+      "a": "pt_052"
+    },
+    {
+      "da": "pt_052",
+      "a": "pt_053"
+    },
+    {
+      "da": "pt_053",
+      "a": "pt_054"
+    },
+    {
+      "da": "pt_054",
+      "a": "pt_055"
+    },
+    {
+      "da": "pt_055",
+      "a": "pt_056"
+    },
+    {
+      "da": "pt_056",
+      "a": "pt_057"
+    },
+    {
+      "da": "pt_057",
+      "a": "pt_058"
+    },
+    {
+      "da": "pt_058",
+      "a": "pt_059"
+    },
+    {
+      "da": "pt_059",
+      "a": "pt_060"
+    },
+    {
+      "da": "pt_060",
+      "a": "pt_061"
+    },
+    {
+      "da": "pt_061",
+      "a": "pt_062"
+    },
+    {
+      "da": "pt_062",
+      "a": "pt_063"
+    },
+    {
+      "da": "pt_063",
+      "a": "pt_064"
+    },
+    {
+      "da": "pt_064",
+      "a": "pt_065"
+    },
+    {
+      "da": "pt_065",
+      "a": "pt_066"
+    },
+    {
+      "da": "pt_066",
+      "a": "pt_067"
+    },
+    {
+      "da": "pt_067",
+      "a": "pt_068"
+    },
+    {
+      "da": "pt_068",
+      "a": "pt_069"
+    },
+    {
+      "da": "pt_069",
+      "a": "pt_070"
+    },
+    {
+      "da": "pt_070",
+      "a": "pt_071"
+    },
+    {
+      "da": "pt_071",
+      "a": "pt_072"
+    },
+    {
+      "da": "pt_072",
+      "a": "pt_073"
+    },
+    {
+      "da": "pt_073",
+      "a": "pt_074"
+    },
+    {
+      "da": "pt_074",
+      "a": "pt_075"
+    },
+    {
+      "da": "pt_075",
+      "a": "pt_076"
+    },
+    {
+      "da": "pt_076",
+      "a": "pt_077"
+    },
+    {
+      "da": "pt_077",
+      "a": "pt_078"
+    },
+    {
+      "da": "pt_078",
+      "a": "pt_079"
+    },
+    {
+      "da": "pt_079",
+      "a": "pt_080"
+    },
+    {
+      "da": "pt_080",
+      "a": "pt_081"
+    },
+    {
+      "da": "pt_081",
+      "a": "pt_082"
+    },
+    {
+      "da": "pt_082",
+      "a": "pt_083"
+    },
+    {
+      "da": "pt_083",
+      "a": "pt_084"
+    },
+    {
+      "da": "pt_084",
+      "a": "pt_085"
+    },
+    {
+      "da": "pt_085",
+      "a": "pt_086"
+    },
+    {
+      "da": "pt_086",
+      "a": "pt_087"
+    },
+    {
+      "da": "pt_087",
+      "a": "pt_088"
+    },
+    {
+      "da": "pt_088",
+      "a": "pt_089"
+    },
+    {
+      "da": "pt_089",
+      "a": "pt_090"
+    },
+    {
+      "da": "pt_090",
+      "a": "pt_091"
+    },
+    {
+      "da": "pt_091",
+      "a": "pt_092"
+    },
+    {
+      "da": "pt_092",
+      "a": "pt_093"
+    },
+    {
+      "da": "pt_093",
+      "a": "pt_094"
+    },
+    {
+      "da": "pt_094",
+      "a": "pt_095"
+    },
+    {
+      "da": "pt_095",
+      "a": "pt_096"
+    },
+    {
+      "da": "pt_096",
+      "a": "pt_097"
+    },
+    {
+      "da": "pt_097",
+      "a": "pt_098"
+    },
+    {
+      "da": "pt_098",
+      "a": "pt_099"
+    },
+    {
+      "da": "pt_099",
+      "a": "pt_100"
+    },
+    {
+      "da": "pt_100",
+      "a": "pt_101"
+    },
+    {
+      "da": "pt_101",
+      "a": "pt_102"
+    },
+    {
+      "da": "pt_102",
+      "a": "pt_103"
+    },
+    {
+      "da": "pt_103",
+      "a": "pt_104"
+    },
+    {
+      "da": "pt_104",
+      "a": "pt_105"
+    },
+    {
+      "da": "pt_105",
+      "a": "pt_106"
+    },
+    {
+      "da": "pt_106",
+      "a": "pt_107"
+    },
+    {
+      "da": "pt_107",
+      "a": "pt_108"
+    },
+    {
+      "da": "pt_108",
+      "a": "pt_109"
+    },
+    {
+      "da": "pt_109",
+      "a": "pt_110"
+    },
+    {
+      "da": "pt_110",
+      "a": "pt_111"
+    },
+    {
+      "da": "pt_111",
+      "a": "pt_112"
+    },
+    {
+      "da": "pt_112",
+      "a": "pt_113"
+    },
+    {
+      "da": "pt_113",
+      "a": "pt_114"
+    },
+    {
+      "da": "pt_114",
+      "a": "pt_115"
+    },
+    {
+      "da": "pt_115",
+      "a": "pt_116"
+    },
+    {
+      "da": "pt_116",
+      "a": "pt_117"
+    },
+    {
+      "da": "pt_117",
+      "a": "pt_118"
+    },
+    {
+      "da": "pt_118",
+      "a": "pt_119"
+    },
+    {
+      "da": "pt_119",
+      "a": "pt_120"
+    },
+    {
+      "da": "pt_120",
+      "a": "pt_121"
+    },
+    {
+      "da": "pt_121",
+      "a": "pt_122"
+    },
+    {
+      "da": "pt_122",
+      "a": "pt_123"
+    },
+    {
+      "da": "pt_123",
+      "a": "pt_124"
+    },
+    {
+      "da": "pt_124",
+      "a": "pt_125"
+    },
+    {
+      "da": "pt_125",
+      "a": "pt_126"
+    },
+    {
+      "da": "pt_126",
+      "a": "pt_127"
+    },
+    {
+      "da": "pt_127",
+      "a": "pt_128"
+    },
+    {
+      "da": "pt_128",
+      "a": "pt_129"
+    },
+    {
+      "da": "pt_129",
+      "a": "pt_130"
+    },
+    {
+      "da": "pt_130",
+      "a": "pt_131"
+    },
+    {
+      "da": "pt_131",
+      "a": "pt_132"
+    },
+    {
+      "da": "pt_132",
+      "a": "pt_133"
+    },
+    {
+      "da": "pt_133",
+      "a": "pt_134"
+    },
+    {
+      "da": "pt_134",
+      "a": "pt_135"
+    },
+    {
+      "da": "pt_135",
+      "a": "pt_136"
+    },
+    {
+      "da": "pt_136",
+      "a": "pt_137"
+    },
+    {
+      "da": "pt_137",
+      "a": "pt_138"
+    },
+    {
+      "da": "pt_138",
+      "a": "pt_139"
+    },
+    {
+      "da": "pt_139",
+      "a": "pt_140"
+    },
+    {
+      "da": "pt_140",
+      "a": "pt_141"
+    },
+    {
+      "da": "pt_141",
+      "a": "pt_142"
+    },
+    {
+      "da": "pt_142",
+      "a": "pt_143"
+    },
+    {
+      "da": "pt_143",
+      "a": "pt_144"
+    },
+    {
+      "da": "pt_144",
+      "a": "pt_145"
+    },
+    {
+      "da": "pt_145",
+      "a": "pt_146"
+    },
+    {
+      "da": "pt_146",
+      "a": "pt_147"
+    },
+    {
+      "da": "pt_147",
+      "a": "pt_148"
+    },
+    {
+      "da": "pt_148",
+      "a": "pt_149"
+    },
+    {
+      "da": "pt_149",
+      "a": "pt_150"
+    },
+    {
+      "da": "pt_150",
+      "a": "pt_151"
+    },
+    {
+      "da": "pt_151",
+      "a": "pt_152"
+    },
+    {
+      "da": "pt_152",
+      "a": "pt_153"
+    },
+    {
+      "da": "pt_153",
+      "a": "pt_154"
+    },
+    {
+      "da": "pt_154",
+      "a": "pt_155"
+    },
+    {
+      "da": "pt_155",
+      "a": "pt_156"
+    },
+    {
+      "da": "pt_156",
+      "a": "pt_157"
+    },
+    {
+      "da": "pt_157",
+      "a": "pt_158"
+    },
+    {
+      "da": "pt_158",
+      "a": "pt_159"
+    },
+    {
+      "da": "pt_159",
+      "a": "pt_160"
+    },
+    {
+      "da": "pt_160",
+      "a": "pt_161"
+    },
+    {
+      "da": "pt_161",
+      "a": "pt_162"
+    },
+    {
+      "da": "pt_162",
+      "a": "pt_163"
+    },
+    {
+      "da": "pt_163",
+      "a": "pt_164"
+    },
+    {
+      "da": "pt_164",
+      "a": "pt_165"
+    },
+    {
+      "da": "pt_165",
+      "a": "pt_166"
+    },
+    {
+      "da": "pt_166",
+      "a": "pt_167"
+    },
+    {
+      "da": "pt_167",
+      "a": "pt_168"
+    },
+    {
+      "da": "pt_168",
+      "a": "pt_169"
+    },
+    {
+      "da": "pt_169",
+      "a": "pt_170"
+    },
+    {
+      "da": "pt_170",
+      "a": "pt_171"
+    },
+    {
+      "da": "pt_171",
+      "a": "pt_172"
+    },
+    {
+      "da": "pt_172",
+      "a": "pt_173"
+    },
+    {
+      "da": "pt_173",
+      "a": "pt_174"
+    },
+    {
+      "da": "pt_174",
+      "a": "pt_175"
+    },
+    {
+      "da": "pt_175",
+      "a": "pt_176"
+    },
+    {
+      "da": "pt_176",
+      "a": "pt_177"
+    },
+    {
+      "da": "pt_177",
+      "a": "pt_178"
+    },
+    {
+      "da": "pt_178",
+      "a": "pt_179"
+    },
+    {
+      "da": "pt_179",
+      "a": "pt_180"
+    },
+    {
+      "da": "pt_180",
+      "a": "pt_181"
+    },
+    {
+      "da": "pt_181",
+      "a": "pt_182"
+    },
+    {
+      "da": "pt_182",
+      "a": "pt_183"
+    },
+    {
+      "da": "pt_183",
+      "a": "pt_184"
+    },
+    {
+      "da": "pt_184",
+      "a": "pt_185"
+    },
+    {
+      "da": "pt_185",
+      "a": "pt_186"
+    },
+    {
+      "da": "pt_186",
+      "a": "pt_187"
+    },
+    {
+      "da": "pt_187",
+      "a": "pt_188"
+    },
+    {
+      "da": "pt_188",
+      "a": "pt_189"
+    },
+    {
+      "da": "pt_189",
+      "a": "pt_190"
+    },
+    {
+      "da": "pt_190",
+      "a": "pt_191"
+    },
+    {
+      "da": "pt_191",
+      "a": "pt_192"
+    },
+    {
+      "da": "pt_192",
+      "a": "pt_193"
+    },
+    {
+      "da": "pt_193",
+      "a": "pt_194"
+    },
+    {
+      "da": "pt_194",
+      "a": "pt_195"
+    },
+    {
+      "da": "pt_195",
+      "a": "pt_196"
+    },
+    {
+      "da": "pt_196",
+      "a": "pt_197"
+    },
+    {
+      "da": "pt_197",
+      "a": "pt_198"
+    },
+    {
+      "da": "pt_198",
+      "a": "pt_199"
+    },
+    {
+      "da": "pt_199",
+      "a": "pt_200"
+    },
+    {
+      "da": "pt_200",
+      "a": "pt_201"
+    },
+    {
+      "da": "pt_201",
+      "a": "pt_202"
+    },
+    {
+      "da": "pt_202",
+      "a": "pt_203"
+    },
+    {
+      "da": "pt_203",
+      "a": "pt_204"
+    },
+    {
+      "da": "pt_204",
+      "a": "pt_205"
+    },
+    {
+      "da": "pt_205",
+      "a": "pt_206"
+    },
+    {
+      "da": "pt_206",
+      "a": "pt_207"
+    },
+    {
+      "da": "pt_207",
+      "a": "pt_208"
+    },
+    {
+      "da": "pt_208",
+      "a": "pt_209"
+    },
+    {
+      "da": "pt_209",
+      "a": "pt_210"
+    },
+    {
+      "da": "pt_210",
+      "a": "pt_211"
+    },
+    {
+      "da": "pt_211",
+      "a": "pt_212"
+    },
+    {
+      "da": "pt_212",
+      "a": "pt_213"
+    },
+    {
+      "da": "pt_213",
+      "a": "pt_214"
+    },
+    {
+      "da": "pt_214",
+      "a": "pt_215"
+    },
+    {
+      "da": "pt_215",
+      "a": "pt_216"
+    },
+    {
+      "da": "pt_216",
+      "a": "pt_217"
+    },
+    {
+      "da": "pt_217",
+      "a": "pt_218"
+    },
+    {
+      "da": "pt_218",
+      "a": "pt_219"
+    },
+    {
+      "da": "pt_219",
+      "a": "pt_220"
+    },
+    {
+      "da": "pt_220",
+      "a": "pt_221"
+    },
+    {
+      "da": "pt_221",
+      "a": "pt_222"
+    },
+    {
+      "da": "pt_222",
+      "a": "pt_223"
+    },
+    {
+      "da": "pt_223",
+      "a": "pt_224"
+    },
+    {
+      "da": "pt_224",
+      "a": "pt_225"
+    },
+    {
+      "da": "pt_225",
+      "a": "pt_226"
+    },
+    {
+      "da": "pt_226",
+      "a": "pt_227"
+    },
+    {
+      "da": "pt_227",
+      "a": "pt_228"
+    },
+    {
+      "da": "pt_228",
+      "a": "pt_229"
+    },
+    {
+      "da": "pt_229",
+      "a": "pt_230"
+    },
+    {
+      "da": "pt_230",
+      "a": "pt_231"
+    },
+    {
+      "da": "pt_231",
+      "a": "pt_232"
+    },
+    {
+      "da": "pt_232",
+      "a": "pt_233"
+    },
+    {
+      "da": "pt_233",
+      "a": "pt_234"
+    },
+    {
+      "da": "pt_234",
+      "a": "pt_235"
+    },
+    {
+      "da": "pt_235",
+      "a": "pt_236"
+    },
+    {
+      "da": "pt_236",
+      "a": "pt_237"
+    },
+    {
+      "da": "pt_237",
+      "a": "pt_238"
+    },
+    {
+      "da": "pt_238",
+      "a": "pt_239"
+    },
+    {
+      "da": "pt_239",
+      "a": "pt_240"
+    },
+    {
+      "da": "pt_240",
+      "a": "pt_241"
+    },
+    {
+      "da": "pt_241",
+      "a": "pt_242"
+    },
+    {
+      "da": "pt_242",
+      "a": "pt_243"
+    },
+    {
+      "da": "pt_243",
+      "a": "pt_244"
+    },
+    {
+      "da": "pt_244",
+      "a": "pt_245"
+    },
+    {
+      "da": "pt_245",
+      "a": "pt_246"
+    },
+    {
+      "da": "pt_246",
+      "a": "pt_247"
+    },
+    {
+      "da": "pt_247",
+      "a": "pt_248"
+    },
+    {
+      "da": "pt_248",
+      "a": "pt_249"
+    },
+    {
+      "da": "pt_249",
+      "a": "pt_250"
+    },
+    {
+      "da": "pt_250",
+      "a": "pt_251"
+    },
+    {
+      "da": "pt_251",
+      "a": "pt_252"
+    },
+    {
+      "da": "pt_252",
+      "a": "pt_253"
+    },
+    {
+      "da": "pt_253",
+      "a": "pt_254"
+    },
+    {
+      "da": "pt_254",
+      "a": "pt_255"
+    }
+  ],
+  "note_pianificazione": "Piano da 255 sezioni markdown (structured). Carico cognitivo derivato da token stimati.",
+  "sorgenti": []
+}

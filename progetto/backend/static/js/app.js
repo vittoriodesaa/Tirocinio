@@ -21,12 +21,18 @@ const STEP_LABELS = {
     let lastDeepAgentCount = 0;
 
     function setProgress(pct) {
+      const rounded = Math.round(pct);
       document.getElementById("progressBar").style.width = pct + "%";
-      document.getElementById("progressPct").textContent = Math.round(pct) + "%";
+      document.getElementById("progressPct").textContent = rounded + "%";
+      const track = document.querySelector(".progress-track");
+      if (track) track.setAttribute("aria-valuenow", String(rounded));
     }
 
-    function renderActivityEntries(entries) {
-      if (!entries || !entries.length) return;
+    function renderActivityEntries(entries, overallPercent) {
+      if (!entries || !entries.length) {
+        if (typeof overallPercent === "number") setProgress(overallPercent);
+        return;
+      }
       logEl.innerHTML = "";
       entries.forEach((e) => {
         if (e.channel === "deep_agent") return;
@@ -38,8 +44,11 @@ const STEP_LABELS = {
         logEl.appendChild(line);
       });
       logEl.scrollTop = logEl.scrollHeight;
-      const last = entries[entries.length - 1];
-      if (last && typeof last.percent === "number") setProgress(last.percent);
+      if (typeof overallPercent === "number") setProgress(overallPercent);
+      else {
+        const last = entries[entries.length - 1];
+        if (last && typeof last.percent === "number") setProgress(last.percent);
+      }
     }
 
     function setDeepAgentBadge(status, hasEntries) {
@@ -73,6 +82,7 @@ const STEP_LABELS = {
       }
       if (list.length === lastDeepAgentCount && status !== "running") return;
       lastDeepAgentCount = list.length;
+      if (status === "running" && list.length) setOptionalPanel("deep", true);
       deepAgentLogEl.innerHTML = "";
       list.forEach((e) => {
         const line = document.createElement("div");
@@ -103,17 +113,77 @@ const STEP_LABELS = {
     }
 
     let pollTimer = null;
+    let pollSawRunning = false;
+    let pollIdleTicks = 0;
     function stopPolling() {
       if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+      pollSawRunning = false;
+      pollIdleTicks = 0;
+      setActivityState("idle");
+    }
+
+    function setActivityState(status) {
+      const badge = document.getElementById("activityBadge");
+      const sub = document.getElementById("activitySub");
+      const section = document.querySelector(".card--monitor");
+      if (!badge) return;
+      badge.classList.remove("live", "done", "err");
+      section?.classList.toggle("section-activity--running", status === "running");
+      if (status === "running") {
+        badge.textContent = "in esecuzione";
+        badge.classList.add("live");
+        if (sub) sub.textContent = "Pipeline attiva: aggiornamento automatico.";
+        setOptionalPanel("monitor", true);
+      } else if (status === "error") {
+        badge.textContent = "errore";
+        badge.classList.add("err");
+        if (sub) sub.textContent = "Si è verificato un problema.";
+      } else if (status === "done") {
+        badge.textContent = "completato";
+        badge.classList.add("done");
+        if (sub) sub.textContent = "Ultima operazione terminata.";
+      } else {
+        badge.textContent = "in attesa";
+        if (sub) sub.textContent = "In attesa di un'operazione.";
+      }
+    }
+
+    async function loadActivitySnapshot(courseId, { resumePoll = false } = {}) {
+      if (!courseId) return;
+      try {
+        const r = await fetch(`/api/v1/courses/${encodeURIComponent(courseId)}/activity`);
+        const data = await r.json();
+        renderActivityEntries(data.entries || [], data.percent);
+        const deep = data.deep_agent_entries
+          || (data.entries || []).filter((e) => e.channel === "deep_agent").map((e) => ({
+            time: e.time,
+            message: e.message,
+            percent: e.percent,
+            level: e.level,
+            kind: e.kind,
+          }));
+        renderDeepAgentEntries(deep, data.status);
+        if (data.status === "running") {
+          if (resumePoll && !pollTimer) startPolling(courseId, finishRun);
+          else setActivityState("running");
+        } else if (data.status === "error") {
+          setActivityState("error");
+        } else if (data.status === "done") {
+          setActivityState("done");
+        } else {
+          setActivityState("idle");
+        }
+      } catch (_) {}
     }
 
     function startPolling(courseId, onComplete) {
       stopPolling();
+      setActivityState("running");
       const poll = async () => {
         try {
           const r = await fetch(`/api/v1/courses/${encodeURIComponent(courseId)}/activity`);
           const data = await r.json();
-          renderActivityEntries(data.entries || []);
+          renderActivityEntries(data.entries || [], data.percent);
           const deep = data.deep_agent_entries
             || (data.entries || []).filter((e) => e.channel === "deep_agent").map((e) => ({
               time: e.time,
@@ -123,8 +193,20 @@ const STEP_LABELS = {
               kind: e.kind,
             }));
           renderDeepAgentEntries(deep, data.status);
-          if (data.status === "running") return;
+          if (data.status === "running") {
+            pollSawRunning = true;
+            pollIdleTicks = 0;
+            return;
+          }
+          if (data.status === "idle") {
+            pollIdleTicks += 1;
+            if (!pollSawRunning && pollIdleTicks < 40) return;
+            stopPolling();
+            setActivityState("idle");
+            return;
+          }
           stopPolling();
+          setActivityState(data.status === "error" ? "error" : "done");
           onComplete(data);
         } catch (_) {}
       };
@@ -132,8 +214,41 @@ const STEP_LABELS = {
       pollTimer = setInterval(poll, 450);
     }
 
+    const STEP_META = {
+      acquisition: { desc: "Upload file", icon: "↑" },
+      document: { desc: "Markdown + chunk", icon: "◇" },
+      planning: { desc: "Piano strutturale", icon: "◈" },
+      segmentation: { desc: "Moduli grezzi", icon: "▤" },
+      validation: { desc: "Controllo qualità", icon: "✓" },
+      microlearning: { desc: "Deep Agent", icon: "✦" },
+    };
+
+    function updatePipelineHero(status) {
+      const steps = status?.steps || [];
+      const done = steps.filter((s) => s.completato).length;
+      const total = STEP_ORDER.length;
+      const pct = Math.round((done / total) * 100);
+
+      const elDone = document.getElementById("statStepsDone");
+      const elCourse = document.getElementById("statActiveCourse");
+      const elNext = document.getElementById("statNextStep");
+      const elPct = document.getElementById("pipelineOverallPct");
+      const elFill = document.getElementById("pipelineOverallFill");
+
+      if (elDone) elDone.textContent = `${done} / ${total}`;
+      if (elCourse) {
+        elCourse.textContent = status?.course_id || "—";
+        elCourse.title = status?.course_id || "";
+      }
+      const nextId = status?.prossimo_step || "acquisition";
+      if (elNext) elNext.textContent = STEP_LABELS[nextId] || nextId;
+      if (elPct) elPct.textContent = pct + "%";
+      if (elFill) elFill.style.width = pct + "%";
+    }
+
     function renderPipeline(status) {
       pipelineEl.innerHTML = "";
+      updatePipelineHero(status);
       const steps = status?.steps || STEP_ORDER.map((id, i) => ({
         id, label: STEP_LABELS[id], ordine: i, completato: false,
       }));
@@ -142,14 +257,22 @@ const STEP_LABELS = {
       steps.forEach((s) => {
         const el = document.createElement("div");
         el.className = "step";
+        el.setAttribute("role", "listitem");
         if (s.completato) el.classList.add("done");
         else if (s.id === next) el.classList.add("next");
+        if (status && s.id === next && !s.completato) el.classList.add("active");
         el.dataset.step = s.id;
+        const meta = STEP_META[s.id] || { desc: "", icon: "○" };
+        const num = String(s.ordine + 1).padStart(2, "0");
+        const icon = s.completato ? "✓" : meta.icon;
+        const statusText = s.completato
+          ? (s.artifact ? "Completato" : "Fatto")
+          : (s.id === next ? "Prossimo" : "In attesa");
         el.innerHTML = `
-          <div class="num">0${s.ordine + 1}</div>
-          ${s.completato ? '<div class="tick">✓</div>' : ""}
+          <div class="step-icon" title="${meta.desc}">${icon}</div>
           <strong>${s.label || STEP_LABELS[s.id]}</strong>
-          <span>${s.completato ? (s.artifact ? "ok" : "fatto") : (s.id === next ? "prossimo" : "—")}</span>
+          <span class="step-desc">${meta.desc}</span>
+          <span>${statusText}</span>
         `;
         pipelineEl.appendChild(el);
       });
@@ -192,18 +315,26 @@ const STEP_LABELS = {
 
     async function loadCourses() {
       const sel = document.getElementById("courseSelect");
+      const exSel = document.getElementById("exploreCourseSelect");
       const r = await fetch("/api/v1/courses");
       const data = await r.json();
       sel.innerHTML = '<option value="">— Seleziona corso —</option>';
+      if (exSel) exSel.innerHTML = '<option value="">— Seleziona —</option>';
       data.courses.forEach((c) => {
         const opt = document.createElement("option");
         opt.value = c.course_id;
         opt.textContent = `${c.course_id} · ${c.prossimo_step}${c.legacy ? " (legacy)" : ""}`;
         sel.appendChild(opt);
+
+        const exOpt = document.createElement("option");
+        exOpt.value = c.course_id;
+        exOpt.textContent = c.course_id;
+        document.getElementById("exploreCourseSelect")?.appendChild(exOpt);
       });
       if (data.courses.length === 0) {
-        sel.innerHTML = '<option value="">Nessun corso — creane uno nuovo</option>';
+        sel.innerHTML = '<option value="">Nessun corso: creane uno nuovo</option>';
       }
+      renderPipeline(currentStatus);
     }
 
     async function loadCourseStatus(courseId) {
@@ -223,12 +354,31 @@ const STEP_LABELS = {
 
       const box = document.getElementById("courseStatus");
       box.hidden = false;
+      const nextLabel = STEP_LABELS[currentStatus.prossimo_step] || currentStatus.prossimo_step;
+      const legacy = currentStatus.course_id === "temp_workspace"
+        ? '<span class="legacy-tag">legacy</span>' : "";
+      const docsItem = currentStatus.is_corpus && currentStatus.sources?.length
+        ? `<div class="status-box__item status-box__item--wide">
+            <span>Documenti (${currentStatus.sources.length})</span>
+            <strong>${escapeHtml(currentStatus.sources.map((s) => s.source_id).join(", "))}</strong>
+          </div>`
+        : `<div class="status-box__item">
+            <span>Source</span>
+            <strong>${escapeHtml(currentStatus.source_id || "n/d")}</strong>
+          </div>`;
       box.innerHTML = `
-        <strong>${currentStatus.course_id}</strong>
-        ${currentStatus.course_id === "temp_workspace" ? '<span class="legacy-tag">vecchio temp/workspace</span>' : ""}
-        <br>Source: <strong>${currentStatus.source_id || "n/d"}</strong>
-        · File: ${currentStatus.file_count}
-        · Prossimo: <strong>${STEP_LABELS[currentStatus.prossimo_step] || currentStatus.prossimo_step}</strong>
+        <div class="status-box__title">${escapeHtml(currentStatus.course_id)}${legacy}</div>
+        <div class="status-box__grid">
+          ${docsItem}
+          <div class="status-box__item">
+            <span>File nel workspace</span>
+            <strong>${currentStatus.file_count}</strong>
+          </div>
+          <div class="status-box__item">
+            <span>Prossimo step</span>
+            <strong>${escapeHtml(nextLabel)}</strong>
+          </div>
+        </div>
       `;
       if (currentStatus.source_id) {
         document.getElementById("resumeSourceId").placeholder = currentStatus.source_id;
@@ -238,68 +388,104 @@ const STEP_LABELS = {
     }
 
     async function refreshCourseExplorer(courseId) {
+      const exploreEmpty = document.getElementById("exploreEmpty");
+      const exploreSelect = document.getElementById("exploreCourseSelect");
+
+      if (exploreSelect && courseId && exploreSelect.value !== courseId) {
+        exploreSelect.value = courseId;
+      }
+
       if (!courseId) {
         explorerEl.classList.remove("visible");
         courseViewData = null;
+        if (exploreEmpty) exploreEmpty.hidden = false;
         return;
       }
+
       const microOk = currentStatus?.steps?.find((s) => s.id === "microlearning")?.completato;
       if (!microOk) {
         explorerEl.classList.remove("visible");
+        if (exploreEmpty) {
+          exploreEmpty.hidden = false;
+          const p = exploreEmpty.querySelector("p");
+          if (p) {
+            p.innerHTML = "Il corso <strong>" + escapeHtml(courseId) + "</strong> non ha ancora completato lo step Microlearning.";
+          }
+        }
         return;
       }
+
       try {
         const r = await fetch(
           `/api/v1/courses/${encodeURIComponent(courseId)}/course-view`
         );
         if (!r.ok) {
           explorerEl.classList.remove("visible");
+          if (exploreEmpty) exploreEmpty.hidden = false;
           return;
         }
         courseViewData = await r.json();
         explorerEl.classList.add("visible");
+        if (exploreEmpty) exploreEmpty.hidden = true;
+
         const st = courseViewData.stats || {};
-        document.getElementById("explorerMeta").innerHTML =
-          `<strong>${courseViewData.titolo_corso}</strong> · ` +
-          `${st.lezioni ?? st.moduli ?? 0} lezioni` +
-          (st.quiz ? ` · ${st.quiz} quiz` : "") +
-          ` · ~${st.durata_totale_minuti || 0} min · ${st.archi || 0} collegamenti` +
-          (courseViewData.completato ? ' · <span style="color:var(--accent2)">completato</span>' : "");
+        const metaEl = document.getElementById("explorerMeta");
+        if (metaEl) {
+          metaEl.innerHTML =
+            `<strong>${escapeHtml(courseViewData.titolo_corso)}</strong> · ` +
+            `${st.lezioni ?? st.moduli ?? 0} lezioni` +
+            (st.quiz ? ` · ${st.quiz} quiz` : "") +
+            ` · ~${st.durata_totale_minuti || 0} min · ${st.archi || 0} collegamenti` +
+            (courseViewData.completato ? ' · <span class="text-success">completato</span>' : "");
+        }
+
         renderCourseGraph(courseViewData);
         renderQuizSummary(courseViewData);
         renderAllModules(courseViewData);
         const view = new URLSearchParams(location.search).get("view");
-        if (view === "modules" || view === "demo") {
-          document.querySelector('.explorer-tabs button[data-explorer="modules"]').click();
+        if (view === "graph") switchExplorerTab("graph");
+        else switchExplorerTab("modules");
+        if (getCurrentView() === "explore" && graphNetwork) {
+          setTimeout(() => graphNetwork.fit(), 120);
         }
       } catch (_) {
         explorerEl.classList.remove("visible");
+        if (exploreEmpty) exploreEmpty.hidden = false;
       }
     }
 
     function renderCourseGraph(data) {
       const container = document.getElementById("graphNetwork");
       if (!window.vis || !data?.graph) return;
-      const color = { lezione: "#3d9cf5", quiz: "#a78bfa", ok: "#6ee7b7", warn: "#fbbf24" };
+      const color = {
+        lezione: { bg: "#ccfbf1", border: "#0d9488", font: "#0f766e" },
+        quiz: { bg: "#ede9fe", border: "#7c3aed", font: "#5b21b6" },
+        ok: { bg: "#d1fae5", border: "#059669", font: "#047857" },
+        warn: { bg: "#fef3c7", border: "#d97706", font: "#b45309" },
+      };
+      const pick = (g) => color[g] || color.lezione;
       const nodes = new vis.DataSet(
-        data.graph.nodes.map((n) => ({
-          id: n.id,
-          label: n.label,
-          title: `${n.title}\n${n.tipo || "lezione"} · ${n.durata} min`,
-          shape: n.shape || (n.group === "quiz" ? "diamond" : "box"),
-          color: {
-            background: color[n.group] || color.lezione,
-            border: color[n.group] || color.lezione,
-            highlight: { background: "#fff", border: "#fff" },
-          },
-          font: { color: "#e8edf4", size: n.group === "quiz" ? 10 : 11 },
-        }))
+        data.graph.nodes.map((n) => {
+          const c = pick(n.group);
+          return {
+            id: n.id,
+            label: n.label,
+            title: `${n.title}\n${n.tipo || "lezione"} · ${n.durata} min`,
+            shape: n.shape || (n.group === "quiz" ? "diamond" : "box"),
+            color: {
+              background: c.bg,
+              border: c.border,
+              highlight: { background: "#ffffff", border: c.border },
+            },
+            font: { color: c.font, size: n.group === "quiz" ? 10 : 11, face: "Plus Jakarta Sans" },
+          };
+        })
       );
       const edgeStyle = {
-        prerequisite: { color: { color: "#3d9cf5" }, width: 2, arrows: "to" },
-        quiz_after: { color: { color: "#a78bfa" }, width: 2, arrows: "to" },
-        plan: { color: { color: "#6ee7b7" }, width: 2, arrows: "to" },
-        sequence: { color: { color: "#8b9cb3" }, width: 1, arrows: "to", dashes: [6, 4] },
+        prerequisite: { color: { color: "#0d9488" }, width: 2, arrows: "to" },
+        quiz_after: { color: { color: "#7c3aed" }, width: 2, arrows: "to" },
+        plan: { color: { color: "#059669" }, width: 2, arrows: "to" },
+        sequence: { color: { color: "#94a3b8" }, width: 1, arrows: "to", dashes: [6, 4] },
       };
       const edges = new vis.DataSet(
         data.graph.edges.map((e, i) => ({
@@ -333,8 +519,20 @@ const STEP_LABELS = {
       graphNetwork.on("click", (params) => {
         if (!params.nodes.length) return;
         scrollToModule(params.nodes[0]);
-        document.querySelector('.explorer-tabs button[data-explorer="modules"]').click();
+        switchExplorerTab("modules");
       });
+    }
+
+    function switchExplorerTab(which) {
+      const isGraph = which === "graph";
+      document.querySelectorAll(".explorer-tabs button").forEach((b) => {
+        b.classList.toggle("active", b.dataset.explorer === which);
+      });
+      const graphEl = document.getElementById("explorerGraph");
+      const modEl = document.getElementById("explorerModules");
+      if (graphEl) graphEl.hidden = !isGraph;
+      if (modEl) modEl.hidden = isGraph;
+      if (isGraph && graphNetwork) setTimeout(() => graphNetwork.fit(), 80);
     }
 
     function escapeHtml(s) {
@@ -501,7 +699,7 @@ const STEP_LABELS = {
         html += `<ul class="quiz-per-list">`;
         stats.perQuiz.forEach((q) => {
           const icon = q.perfetto ? "✓" : q.completo ? "~" : "○";
-          const col = q.perfetto ? "var(--accent2)" : q.completo ? "var(--warn)" : "var(--muted)";
+          const col = q.perfetto ? "var(--success)" : q.completo ? "var(--warn)" : "var(--muted)";
           html += `<li><a href="#mod-${q.id}" onclick="event.preventDefault();scrollToModule('${q.id}')">` +
             `${icon} ${escapeHtml(q.titolo)}</a>` +
             `<span style="color:${col}">${q.corrette}/${q.domande}</span></li>`;
@@ -535,7 +733,7 @@ const STEP_LABELS = {
         const fb = box.querySelector(".quiz-feedback");
         box.classList.add(saved.correct ? "answered-ok" : "answered-ko");
         fb.textContent = saved.correct ? "Corretto!" : "Non corretto.";
-        fb.style.color = saved.correct ? "var(--accent2)" : "var(--err)";
+        fb.style.color = saved.correct ? "var(--success)" : "var(--error)";
       });
     }
 
@@ -653,7 +851,7 @@ const STEP_LABELS = {
             box.classList.remove("answered-ok", "answered-ko");
             box.classList.add(ok ? "answered-ok" : "answered-ko");
             fb.textContent = ok ? "Corretto!" : "Non corretto. Rileggi la lezione collegata.";
-            fb.style.color = ok ? "var(--accent2)" : "var(--err)";
+            fb.style.color = ok ? "var(--success)" : "var(--error)";
             saveQuizAnswer(activeCourseId(), quizId, box.dataset.qidx, selected, ok);
             if (courseViewData) renderQuizSummary(courseViewData);
           };
@@ -672,14 +870,7 @@ const STEP_LABELS = {
     }
 
     document.querySelectorAll(".explorer-tabs button").forEach((btn) => {
-      btn.onclick = () => {
-        document.querySelectorAll(".explorer-tabs button").forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-        const graph = btn.dataset.explorer === "graph";
-        document.getElementById("explorerGraph").hidden = !graph;
-        document.getElementById("explorerModules").hidden = graph;
-        if (graph && graphNetwork) setTimeout(() => graphNetwork.fit(), 80);
-      };
+      btn.onclick = () => switchExplorerTab(btn.dataset.explorer);
     });
 
     document.getElementById("moduleSearch").oninput = (e) => {
@@ -712,7 +903,7 @@ const STEP_LABELS = {
       let html = `<div class="warnings-panel"><h4>${w.stato_label || "Avvisi pipeline"}</h4>`;
       html += `<p class="warn-stats">Validazione: <strong>${w.moduli_approvati}</strong> moduli ok, ` +
         `<strong style="color:var(--warn)">${w.moduli_in_revisione}</strong> da rivedere` +
-        (w.moduli_respinti ? `, <strong style="color:var(--err)">${w.moduli_respinti}</strong> respinti` : "") +
+        (w.moduli_respinti ? `, <strong style="color:var(--error)">${w.moduli_respinti}</strong> respinti` : "") +
         `.</p>`;
       if (w.messaggi_aggregati?.length) {
         html += "<p><strong>Motivi principali:</strong></p><ul>";
@@ -745,11 +936,32 @@ const STEP_LABELS = {
       el.hidden = false;
     }
 
+    function closePreview() {
+      const wrap = document.getElementById("previewWrap");
+      const pre = document.getElementById("preview");
+      if (wrap) wrap.hidden = true;
+      if (pre) pre.textContent = "";
+    }
+
+    function showPreview(path, content, isJson) {
+      const wrap = document.getElementById("previewWrap");
+      const pre = document.getElementById("preview");
+      const label = document.getElementById("previewLabel");
+      if (!wrap || !pre) return;
+      label.textContent = path;
+      pre.textContent = isJson ? JSON.stringify(content, null, 2) : content;
+      wrap.hidden = false;
+      wrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
     function showResults(data) {
       const src = data.sources?.[0];
       if (!src) {
         document.getElementById("summary").textContent = `Corso ${data.job_id} — ${data.log_summary?.join(" ")}`;
         resultsEl.classList.add("visible");
+        document.getElementById("btnCloseResults")?.removeAttribute("hidden");
+        document.getElementById("resultsExploreCta")?.setAttribute("hidden", "");
+        closePreview();
         return;
       }
       document.getElementById("summary").innerHTML =
@@ -781,17 +993,22 @@ const STEP_LABELS = {
         a.onclick = async (ev) => {
           ev.preventDefault();
           const r = await fetch(`/api/v1/courses/${cid}/file?path=${encodeURIComponent(path)}`);
-          const pre = document.getElementById("preview");
-          pre.hidden = false;
-          pre.textContent = path.endsWith(".json")
-            ? JSON.stringify(await r.json(), null, 2)
-            : await r.text();
+          if (path.endsWith(".json")) {
+            showPreview(path, await r.json(), true);
+          } else {
+            showPreview(path, await r.text(), false);
+          }
         };
-        li.innerHTML = `<span>${label}</span>`;
+        li.innerHTML = `<span class="artifact-label">${label}</span>`;
         li.appendChild(a);
         list.appendChild(li);
       }
       resultsEl.classList.add("visible");
+      document.getElementById("btnCloseResults")?.removeAttribute("hidden");
+      closePreview();
+      const exploreCta = document.getElementById("resultsExploreCta");
+      const microRef = src?.microlearning_ref || data.microlearning_course_ref;
+      if (exploreCta) exploreCta.hidden = !microRef;
       refreshCourseExplorer(cid);
     }
 
@@ -844,19 +1061,44 @@ const STEP_LABELS = {
       if (data.result) showResults(data.result);
       else log("Completato.", "ok");
       loadCourses();
+      if (currentStatus?.steps?.find((s) => s.id === "microlearning")?.completato) {
+        document.getElementById("resultsExploreCta")?.removeAttribute("hidden");
+      }
     }
 
     document.querySelectorAll(".tab").forEach((btn) => {
       btn.onclick = () => {
-        document.querySelectorAll(".tab").forEach((b) => b.classList.remove("active"));
+        document.querySelectorAll(".tab").forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
         document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
         btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
         document.getElementById(btn.dataset.tab === "new" ? "panelNew" : "panelResume").classList.add("active");
       };
     });
 
-    document.getElementById("courseSelect").onchange = () =>
-      loadCourseStatus(document.getElementById("courseSelect").value).catch((e) => log(e.message, "err"));
+    document.getElementById("file")?.addEventListener("change", (e) => {
+      const drop = e.target.closest(".file-drop");
+      const label = drop?.querySelector(".file-drop__label");
+      const hint = drop?.querySelector(".file-drop__hint");
+      const f = e.target.files?.[0];
+      if (label && f) {
+        const kb = (f.size / 1024).toFixed(0);
+        label.textContent = f.name;
+        if (hint) hint.textContent = `${kb} KB`;
+        label.style.color = "var(--text)";
+        label.style.fontWeight = "600";
+      }
+    });
+
+    document.getElementById("courseSelect").onchange = () => {
+      const cid = document.getElementById("courseSelect").value;
+      const ex = document.getElementById("exploreCourseSelect");
+      if (ex) ex.value = cid || "";
+      loadCourseStatus(cid).catch((e) => log(e.message, "err"));
+    };
 
     document.getElementById("btnRefresh").onclick = () => loadCourses().then(() => log("Elenco corsi aggiornato", "ok"));
 
@@ -880,23 +1122,58 @@ const STEP_LABELS = {
       document.getElementById("btnResume").click();
     };
 
+    function slugFromFilename(name) {
+      return (name || "doc").replace(/\.[^.]+$/, "").replace(/[^a-zA-Z0-9_-]+/g, "_").slice(0, 64) || "doc";
+    }
+
+    function refreshUploadFileList() {
+      const input = document.getElementById("files");
+      const list = document.getElementById("uploadFileList");
+      if (!input || !list) return;
+      const files = [...(input.files || [])];
+      if (!files.length) {
+        list.hidden = true;
+        list.innerHTML = "";
+        return;
+      }
+      list.hidden = false;
+      const sid0 = document.getElementById("source_id");
+      const multi = files.length > 1;
+      list.innerHTML = files.map((f, i) => {
+        const sid = multi
+          ? slugFromFilename(f.name)
+          : ((i === 0 && sid0?.value.trim()) ? sid0.value.trim() : slugFromFilename(f.name));
+        return `<li><span class="upload-file-list__name">${escapeHtml(f.name)}</span><span class="upload-file-list__id">${escapeHtml(sid)}</span></li>`;
+      }).join("");
+    }
+
+    document.getElementById("files")?.addEventListener("change", refreshUploadFileList);
+    document.getElementById("source_id")?.addEventListener("input", () => {
+      document.getElementById("source_id").dataset.auto = "0";
+      refreshUploadFileList();
+    });
+
     document.getElementById("course_id").addEventListener("input", (e) => {
       const v = e.target.value.trim();
       const sid = document.getElementById("source_id");
+      const files = [...(document.getElementById("files")?.files || [])];
+      if (files.length > 1) {
+        refreshUploadFileList();
+        return;
+      }
       if (!sid.value || sid.dataset.auto === "1") {
-        sid.value = v;
+        sid.value = files.length === 1 ? slugFromFilename(files[0].name) : v;
         sid.dataset.auto = "1";
       }
-    });
-    document.getElementById("source_id").addEventListener("input", () => {
-      document.getElementById("source_id").dataset.auto = "0";
+      refreshUploadFileList();
     });
 
     document.getElementById("uploadForm").onsubmit = async (e) => {
       e.preventDefault();
       const btn = document.getElementById("submitBtn");
-      const file = document.getElementById("file").files[0];
-      if (!file) return;
+      const fileInput = document.getElementById("files");
+      const selected = [...(fileInput?.files || [])];
+      if (!selected.length) return;
       btn.disabled = true;
       logEl.innerHTML = "";
       clearDeepAgentLog();
@@ -905,8 +1182,16 @@ const STEP_LABELS = {
 
       const cid = document.getElementById("course_id").value.trim();
       const fd = new FormData();
-      fd.append("file", file);
-      fd.append("source_id", document.getElementById("source_id").value.trim());
+      const sid0 = document.getElementById("source_id").value.trim();
+      const multi = selected.length > 1;
+      const extraIds = selected.map((f) => slugFromFilename(f.name));
+      if (selected.length === 1) {
+        fd.append("file", selected[0]);
+        fd.append("source_id", sid0 || extraIds[0]);
+      } else {
+        selected.forEach((f) => fd.append("files", f));
+        fd.append("source_ids", extraIds.join(","));
+      }
       fd.append("course_id", cid);
       fd.append("language_hint", document.getElementById("language_hint").value || "it");
       fd.append("from_step", "full");
@@ -916,6 +1201,7 @@ const STEP_LABELS = {
         const res = await fetch("/api/v1/pipeline/run-async", { method: "POST", body: fd });
         if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || res.statusText);
         document.getElementById("courseSelect").value = cid;
+        navigateTo("pipeline");
         startPolling(cid, (data) => {
           finishRun(data);
           loadCourses().then(() => {
@@ -930,25 +1216,257 @@ const STEP_LABELS = {
       }
     };
 
+    document.getElementById("btnClosePreview")?.addEventListener("click", closePreview);
+    document.getElementById("btnCloseResults")?.addEventListener("click", () => {
+      resultsEl.classList.remove("visible");
+      closePreview();
+      document.getElementById("btnCloseResults")?.setAttribute("hidden", "");
+    });
+
+    /* ── Config panel (toggle + close) ─────────────────────── */
+    let configOpen = false;
+    let configCache = null;
+
+    function renderConfigHtml(d) {
+      const llm = d.sezioni?.llm || {};
+      const sintesi = d.sintesi || {};
+      const varsHtml = (llm.variabili || [])
+        .map((v) => `<div class="config-var"><dt>${escapeHtml(v.nome)}</dt><dd>${escapeHtml(v.effettivo || v.fonte || "—")}</dd></div>`)
+        .join("");
+      return `
+        <div class="config-grid">
+          <div class="config-stat">
+            <div class="config-stat__label">Provider LLM</div>
+            <div class="config-stat__value">${escapeHtml(sintesi.provider || "—")}</div>
+          </div>
+          <div class="config-stat">
+            <div class="config-stat__label">Modello</div>
+            <div class="config-stat__value mono">${escapeHtml(sintesi.modello || "—")}</div>
+          </div>
+          <div class="config-stat">
+            <div class="config-stat__label">Parallelismo</div>
+            <div class="config-stat__value">${escapeHtml(String(sintesi.parallelismo_llm || "—"))}</div>
+          </div>
+        </div>
+        <div class="config-section">
+          <h3>File .env</h3>
+          <div class="config-vars">
+            <div class="config-var"><dt>percorso</dt><dd>${escapeHtml(d.env_file || "—")}</dd></div>
+            <div class="config-var"><dt>stato</dt><dd>${d.env_file_esiste ? "presente" : "assente"} · ${d.righe_attive_nel_file || 0} variabili</dd></div>
+            <div class="config-var"><dt>log level</dt><dd>${escapeHtml(sintesi.log_level || "INFO")}</dd></div>
+          </div>
+        </div>
+        <div class="config-section">
+          <h3>Variabili LLM</h3>
+          <div class="config-vars">${varsHtml || "<p class=\"hint\">Nessuna variabile.</p>"}</div>
+        </div>
+      `;
+    }
+
+    function updateHeaderChip(d) {
+      const chip = document.getElementById("headerStatus");
+      if (!chip || !d?.sintesi) return;
+      chip.textContent = `${d.sintesi.provider} · ${d.sintesi.modello}`;
+      chip.hidden = false;
+    }
+
+    function openConfigPanel() {
+      const wrap = document.getElementById("configWrap");
+      const btn = document.getElementById("btnShowConfig");
+      wrap.hidden = false;
+      configOpen = true;
+      btn.textContent = "Chiudi";
+      btn.setAttribute("aria-expanded", "true");
+      btn.classList.add("btn-show-config");
+    }
+
+    function closeConfigPanel() {
+      const wrap = document.getElementById("configWrap");
+      const btn = document.getElementById("btnShowConfig");
+      const details = document.getElementById("configJsonDetails");
+      wrap.hidden = true;
+      configOpen = false;
+      btn.textContent = "Configurazione";
+      btn.setAttribute("aria-expanded", "false");
+      btn.classList.remove("btn-show-config");
+      if (details) details.open = false;
+    }
+
+    async function loadConfig(force) {
+      if (configCache && !force) return configCache;
+      const r = await fetch("/api/v1/config");
+      if (!r.ok) throw new Error("Impossibile caricare la configurazione");
+      configCache = await r.json();
+      updateHeaderChip(configCache);
+      return configCache;
+    }
+
     document.getElementById("btnShowConfig")?.addEventListener("click", async () => {
-      const pre = document.getElementById("configPanel");
-      try {
-        const r = await fetch("/api/v1/config");
-        const d = await r.json();
-        const lines = [
-          `File: ${d.env_file} (${d.righe_attive_nel_file} variabili attive)`,
-          `Provider: ${d.sintesi.provider} · Modello: ${d.sintesi.modello}`,
-          `Parallelismo LLM: ${d.sintesi.parallelismo_llm} — ${d.sezioni.llm.nota_workers}`,
-          `Log: ${d.sintesi.log_level}`,
-          "",
-          "Chiavi nel .env: " + (d.chiavi_nel_file || []).join(", "),
-        ];
-        pre.hidden = false;
-        pre.textContent = lines.join("\n") + "\n\n" + JSON.stringify(d, null, 2);
-      } catch (e) {
-        pre.hidden = false;
-        pre.textContent = "Errore: " + e.message;
+      if (configOpen) {
+        closeConfigPanel();
+        return;
       }
+      const panel = document.getElementById("configPanel");
+      const jsonPre = document.getElementById("configJson");
+      openConfigPanel();
+      panel.innerHTML = '<div class="config-loading">Caricamento…</div>';
+      try {
+        const d = await loadConfig(true);
+        panel.innerHTML = renderConfigHtml(d);
+        if (jsonPre) jsonPre.textContent = JSON.stringify(d, null, 2);
+      } catch (e) {
+        panel.innerHTML = `<p class="line err">Errore: ${escapeHtml(e.message)}</p>`;
+      }
+    });
+
+    document.getElementById("btnCloseConfig")?.addEventListener("click", closeConfigPanel);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && configOpen) closeConfigPanel();
+    });
+
+    function setOptionalPanel(kind, open) {
+      const map = {
+        monitor: { panel: "monitorPanel", btn: "toggleMonitor" },
+        deep: { panel: "deepAgentPanel", btn: "toggleDeepAgent" },
+      };
+      const cfg = map[kind];
+      if (!cfg) return;
+      const panel = document.getElementById(cfg.panel);
+      const btn = document.getElementById(cfg.btn);
+      if (!panel || !btn) return;
+      panel.hidden = !open;
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    function toggleOptionalPanel(kind) {
+      const map = {
+        monitor: { panel: "monitorPanel", btn: "toggleMonitor" },
+        deep: { panel: "deepAgentPanel", btn: "toggleDeepAgent" },
+      };
+      const cfg = map[kind];
+      const panel = document.getElementById(cfg.panel);
+      const btn = document.getElementById(cfg.btn);
+      if (!panel || !btn) return;
+      const open = panel.hidden;
+      setOptionalPanel(kind, open);
+      if (open && kind === "monitor") {
+        const cid = document.getElementById("courseSelect")?.value;
+        if (cid && !pollTimer) loadActivitySnapshot(cid, { resumePoll: true });
+      }
+    }
+
+    document.getElementById("toggleMonitor")?.addEventListener("click", () => toggleOptionalPanel("monitor"));
+    document.getElementById("toggleDeepAgent")?.addEventListener("click", () => toggleOptionalPanel("deep"));
+
+    loadConfig().catch(() => {});
+
+    /* ── Navigazione viste (sidebar + hash) ─────────────────── */
+    const VIEW_IDS = ["home", "pipeline", "explore", "guide"];
+    const VIEW_TITLES = {
+      home: "Home",
+      pipeline: "Pipeline",
+      explore: "Esplora corso",
+      guide: "Come funziona",
+    };
+
+    function getCurrentView() {
+      const active = document.querySelector(".view:not([hidden])");
+      return active?.id?.replace("view-", "") || "home";
+    }
+
+    function closeSidebar() {
+      document.getElementById("shell")?.classList.remove("sidebar-open");
+      document.getElementById("sidebarBackdrop")?.setAttribute("hidden", "");
+    }
+
+    function openSidebar() {
+      document.getElementById("shell")?.classList.add("sidebar-open");
+      document.getElementById("sidebarBackdrop")?.removeAttribute("hidden");
+    }
+
+    function navigateTo(viewId) {
+      if (!VIEW_IDS.includes(viewId)) viewId = "home";
+
+      document.querySelectorAll(".view").forEach((v) => {
+        v.hidden = true;
+        v.classList.remove("view--active");
+      });
+      const target = document.getElementById("view-" + viewId);
+      if (target) {
+        target.hidden = false;
+        target.classList.add("view--active");
+      }
+
+      document.querySelectorAll(".nav-item").forEach((n) => {
+        n.classList.toggle("active", n.dataset.view === viewId);
+      });
+
+      const title = document.getElementById("topbarTitle");
+      if (title) title.textContent = VIEW_TITLES[viewId] || viewId;
+
+      if (location.hash !== "#" + viewId) {
+        history.replaceState(null, "", "#" + viewId);
+      }
+
+      closeSidebar();
+
+      if (viewId === "explore") {
+        const cid = document.getElementById("exploreCourseSelect")?.value
+          || document.getElementById("courseSelect")?.value;
+        switchExplorerTab("modules");
+        if (cid) {
+          loadCourseStatus(cid).catch(() => refreshCourseExplorer(cid));
+        } else {
+          refreshCourseExplorer(null);
+        }
+      }
+
+      if (viewId === "pipeline" && graphNetwork) {
+        setTimeout(() => graphNetwork.fit(), 80);
+      }
+    }
+
+    document.querySelectorAll("[data-view]").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigateTo(el.dataset.view);
+      });
+    });
+
+    document.querySelectorAll("[data-goto]").forEach((el) => {
+      el.addEventListener("click", () => navigateTo(el.dataset.goto));
+    });
+
+    document.getElementById("btnMenu")?.addEventListener("click", () => {
+      const shell = document.getElementById("shell");
+      if (shell?.classList.contains("sidebar-open")) closeSidebar();
+      else openSidebar();
+    });
+
+    document.getElementById("sidebarBackdrop")?.addEventListener("click", closeSidebar);
+
+    document.getElementById("exploreCourseSelect")?.addEventListener("change", (e) => {
+      const cid = e.target.value;
+      if (cid) {
+        document.getElementById("courseSelect").value = cid;
+        loadCourseStatus(cid).catch((err) => log(err.message, "err"));
+      } else {
+        refreshCourseExplorer(null);
+      }
+    });
+
+    function initRoute() {
+      const hash = (location.hash || "#home").slice(1);
+      const params = new URLSearchParams(location.search);
+      if (params.get("view") === "graph") navigateTo("explore");
+      else if (params.get("view") === "modules" || params.get("view") === "demo") navigateTo("explore");
+      else navigateTo(VIEW_IDS.includes(hash) ? hash : "home");
+    }
+
+    window.addEventListener("hashchange", () => {
+      const hash = (location.hash || "#home").slice(1);
+      if (VIEW_IDS.includes(hash) && hash !== getCurrentView()) navigateTo(hash);
     });
 
     loadCourses().then(() => {
@@ -956,7 +1474,10 @@ const STEP_LABELS = {
       const c = params.get("course");
       if (c) {
         document.getElementById("courseSelect").value = c;
+        const ex = document.getElementById("exploreCourseSelect");
+        if (ex) ex.value = c;
         loadCourseStatus(c);
       }
+      initRoute();
     });
     renderPipeline(null);

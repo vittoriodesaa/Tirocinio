@@ -1,0 +1,2031 @@
+{
+  "source_id": "corso",
+  "stato_globale": "PASS_WITH_WARNINGS",
+  "moduli_approvati": 124,
+  "moduli_respinti": 0,
+  "moduli_in_revisione": 127,
+  "validazioni": [
+    {
+      "modulo_id": "mod_001",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_002",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_003",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_004",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_005",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_006",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_007",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_008",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_009",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_010",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_011",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_012",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_013",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_014",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_015",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_016",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_017",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_018",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_019",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_020",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_021",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_022",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_023",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_024",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_025",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_026",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_027",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_028",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_029",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_030",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_031",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_032",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_033",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_034",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_035",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_036",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_037",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_038",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_039",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_040",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_041",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_042",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_043",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_044",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_045",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_046",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_047",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_048",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_049",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_050",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_051",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_052",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_053",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_054",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_055",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_056",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_057",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_058",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_059",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_060",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_061",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_062",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_063",
+      "stato": "needs_review",
+      "coerenza_logica": 0.8,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split."
+      ]
+    },
+    {
+      "modulo_id": "mod_064",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_065",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_066",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_067",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_068",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_069",
+      "stato": "needs_review",
+      "coerenza_logica": 0.8,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split."
+      ]
+    },
+    {
+      "modulo_id": "mod_070",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_071",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_072",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_073",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_074",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_075",
+      "stato": "needs_review",
+      "coerenza_logica": 0.8,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split."
+      ]
+    },
+    {
+      "modulo_id": "mod_076",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_077",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_078",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_079",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_080",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_081",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_082",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_083",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_084",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_085",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_086",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_087",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_088",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_089",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_090",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_091",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_092",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_093",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_094",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_095",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_096",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_097",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_098",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_099",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_100",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_101",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_102",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_103",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_104",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_105",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_106",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_107",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_108",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_109",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_110",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_111",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_112",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_113",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_114",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_115",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_116",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_117",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_118",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_119",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_120",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_121",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_122",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_123",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_124",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_125",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_126",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_127",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_128",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_129",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_130",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_131",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_132",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_133",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_134",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_135",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_136",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_137",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_138",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_139",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_140",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_141",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_142",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_143",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_144",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_145",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_146",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_147",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_148",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_149",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_150",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_151",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_152",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_153",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_154",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_155",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_156",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_157",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_158",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_159",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_160",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_161",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_162",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_163",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_164",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_165",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_166",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_167",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_168",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_169",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_170",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_171",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_172",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_173",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_174",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_175",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_176",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_177",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_178",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_179",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_180",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_181",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_182",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_183",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_184",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_185",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_186",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_187",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_188",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_189",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_190",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_191",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_192",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_193",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_194",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_195",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_196",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_197",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_198",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_199",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_200",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_201",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_202",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_203",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_204",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_205",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_206",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_207",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_208",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_209",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_210",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_211",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_212",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_213",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_214",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_215",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_216",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_217",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_218",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_219",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_220",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_221",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_222",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_223",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_224",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_225",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_226",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_227",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_228",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_229",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_230",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_231",
+      "stato": "needs_review",
+      "coerenza_logica": 0.55,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Modulo molto denso: valutare ulteriore split.",
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_232",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_233",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_234",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_235",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_236",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_237",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_238",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_239",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_240",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_241",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_242",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_243",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_244",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_245",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_246",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_247",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_248",
+      "stato": "approved",
+      "coerenza_logica": 1.0,
+      "propedeuticita_ok": true,
+      "messaggi": []
+    },
+    {
+      "modulo_id": "mod_249",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_250",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    },
+    {
+      "modulo_id": "mod_251",
+      "stato": "needs_review",
+      "coerenza_logica": 0.75,
+      "propedeuticita_ok": true,
+      "messaggi": [
+        "Il modulo potrebbe terminare a metà frase."
+      ]
+    }
+  ],
+  "albero_dipendenze_ok": true,
+  "raccomandazione": "continue_with_warnings"
+}

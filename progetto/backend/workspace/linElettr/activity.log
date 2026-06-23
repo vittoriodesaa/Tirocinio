@@ -1,0 +1,392 @@
+[  0.0%] Inizio lavorazione del corso «linElettr».
+[  0.0%] Ho ricevuto 2 documenti e avvio l'elaborazione del corso (merge al planning).
+[  8.0%] ▸ Conversione (documento linElettr): Sto convertendo il libro in testo e preparando i capitoli…
+[  8.9%] Elaboro il documento «linElettr».
+[  0.0%] ▸ Estrazione (documento linElettr): Sto estraendo il testo dal documento…
+[ 30.0%] Uso l'estrattore «pdf_script» per linElettr.pdf.
+[ 90.0%] PDF letto: circa 59,985 caratteri estratti.
+[100.0%] ✓ Estrazione completato in 12 s.
+[ 45.4%] Ho salvato markdown grezzo (post-estrazione) sul disco.
+[  0.0%] ▸ Pulizia: Sto ripulendo e sistemando il testo…
+[100.0%] ✓ Pulizia completato in 0 s.
+[ 45.4%] Ho salvato markdown normalizzato sul disco.
+[  0.0%] ▸ Struttura: Sto analizzando titoli e sezioni del documento…
+[100.0%] ✓ Struttura completato in 0 s.
+[ 25.6%] Documento strutturato: 118 sezioni, 118 analisi da fare.
+[  0.0%] ▸ Analisi IA: Sto analizzando qualità e sintesi con l'intelligenza artificiale…
+[  5.0%] Avvio 119 analisi con l'IA (in parallelo).
+[  5.0%] Sto ancora con l'analisi del testo: completate 14 su 119 richieste (11%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 28 su 119 richieste (23%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 42 su 119 richieste (35%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 56 su 119 richieste (47%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 70 su 119 richieste (58%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 84 su 119 richieste (70%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 98 su 119 richieste (82%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 112 su 119 richieste (94%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 119 su 119 richieste (100%).
+[100.0%] ✓ Analisi IA completato in 21 s.
+[ 49.8%] Qualità del testo: 60% — 4 avvisi.
+[ 45.4%] Ho salvato markdown finale (YAML + corpo) sul disco.
+[ 45.4%] Riepilogo IA: 119 chiamate, 124,946 token totali, circa $0.0157.
+[ 52.0%] Documento pronto: 118 segmenti e 117 capitoli nell'indice.
+[ 52.0%] ✓ Conversione completato in 34 s.
+[  8.0%] ▸ Conversione (documento Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_): Sto convertendo il libro in testo e preparando i capitoli…
+[  8.9%] Elaboro il documento «Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_».
+[  0.0%] ▸ Estrazione (documento Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_): Sto estraendo il testo dal documento…
+[ 30.0%] Uso l'estrattore «pdf_script» per Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_.pdf.
+[ 90.0%] PDF letto: circa 1,369,882 caratteri estratti.
+[100.0%] ✓ Estrazione completato in 123 s.
+[ 45.4%] Ho salvato markdown grezzo (post-estrazione) sul disco.
+[  0.0%] ▸ Pulizia: Sto ripulendo e sistemando il testo…
+[100.0%] ✓ Pulizia completato in 0 s.
+[ 45.4%] Ho salvato markdown normalizzato sul disco.
+[  0.0%] ▸ Struttura: Sto analizzando titoli e sezioni del documento…
+[100.0%] ✓ Struttura completato in 1 s.
+[ 25.6%] Documento strutturato: 269 sezioni, 269 analisi da fare.
+[  0.0%] ▸ Analisi IA: Sto analizzando qualità e sintesi con l'intelligenza artificiale…
+[  5.0%] Avvio 270 analisi con l'IA (in parallelo).
+[  5.0%] Sto ancora con l'analisi del testo: completate 33 su 270 richieste (12%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 66 su 270 richieste (24%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 99 su 270 richieste (36%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 132 su 270 richieste (48%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 165 su 270 richieste (61%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 198 su 270 richieste (73%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 231 su 270 richieste (85%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 264 su 270 richieste (97%).
+[  5.0%] Sto ancora con l'analisi del testo: completate 270 su 270 richieste (100%).
+[100.0%] ✓ Analisi IA completato in 45 s.
+[ 49.8%] Qualità del testo: 75% — 4 avvisi.
+[ 45.4%] Ho salvato markdown finale (YAML + corpo) sul disco.
+[ 45.4%] Riepilogo IA: 269 chiamate, 730,086 token totali, circa $0.0710.
+[ 52.0%] Documento pronto: 269 segmenti e 101 capitoli nell'indice.
+[ 52.0%] ✓ Conversione completato in 170 s.
+[  0.0%] ▸ Pianificazione (documento linElettr): Sto calcolando carico cognitivo e durata delle lezioni…
+[ 54.6%] Sto leggendo la struttura del libro per decidere dove tagliare le lezioni…
+[ 65.0%] Piano pronto: 66 lezioni, circa 396 minuti totali (documento structured).
+[100.0%] ✓ Pianificazione completato in 0 s.
+[  0.0%] ▸ Pianificazione (documento Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_): Sto calcolando carico cognitivo e durata delle lezioni…
+[ 54.6%] Sto leggendo la struttura del libro per decidere dove tagliare le lezioni…
+[ 65.0%] Piano pronto: 251 lezioni, circa 2554 minuti totali (documento structured).
+[100.0%] ✓ Pianificazione completato in 3 s.
+[ 52.0%] ▸ Pianificazione (documento corso): Sto costruendo la mappa del corso e i punti di taglio…
+[  0.0%] ▸ planning_corpus (documento corso): Sto eseguendo planning_corpus…
+[ 54.0%] Calcolo embedding e accoppio per similarità i piani di 2 documenti…
+[ 57.9%] Embedding OpenRouter in corso per allineare i capitoli tra i libri…
+[ 65.0%] Piano corpus pronto: 251 lezioni (fusione semantica), circa 2950 minuti da 2 documenti.
+[100.0%] ✓ planning_corpus completato in 9 s.
+[ 65.0%] ✓ Pianificazione completato in 9 s.
+[ 65.0%] ▸ Segmentazione (documento corso): Sto dividendo il testo in moduli didattici…
+[  0.0%] ▸ Segmentazione (documento corso): Sto tagliando il contenuto secondo il piano…
+[ 67.1%] Sto tagliando i moduli: 41 di 251 («Integrazione: Ottica Fisica · **7.15 Tra»…).
+[ 69.2%] Sto tagliando i moduli: 82 di 251 («3.2 Composition of Linear Maps and Matri»…).
+[ 71.4%] Sto tagliando i moduli: 123 di 251 («Vector Norms and Matrix Norms»…).
+[ 73.5%] Sto tagliando i moduli: 164 di 251 («12.2** _**QR**_ **-Decomposition Using H»…).
+[ 75.6%] Sto tagliando i moduli: 205 di 251 («17.2 Hessenberg Matrices»…).
+[ 77.7%] Sto tagliando i moduli: 246 di 251 («22.5 The Primary Decomposition Theorem»…).
+[ 78.0%] Sto tagliando i moduli: 251 di 251 («Index»…).
+[ 78.0%] Ho creato 251 moduli grezzi pronti per la validazione.
+[100.0%] ✓ Segmentazione completato in 1 s.
+[ 78.0%] ✓ Segmentazione completato in 1 s.
+[ 78.0%] ▸ Validazione (documento corso): Sto controllando coerenza e prerequisiti…
+[  0.0%] ▸ Validazione (documento corso): Sto verificando che ogni modulo sia comprensibile da solo…
+[ 78.7%] Validazione rapida di 251 moduli (controlli automatici, senza IA per modulo)…
+[ 79.7%] Controllo automatico: 31/251 moduli esaminati.
+[ 81.5%] Controllo automatico: 62/251 moduli esaminati.
+[ 83.2%] Controllo automatico: 93/251 moduli esaminati.
+[ 84.9%] Controllo automatico: 124/251 moduli esaminati.
+[ 86.6%] Controllo automatico: 155/251 moduli esaminati.
+[ 88.4%] Controllo automatico: 186/251 moduli esaminati.
+[ 90.1%] Controllo automatico: 217/251 moduli esaminati.
+[ 91.8%] Controllo automatico: 248/251 moduli esaminati.
+[ 92.0%] Controllo automatico: 251/251 moduli esaminati.
+[ 92.0%] Non ho usato l'IA in questa fase.
+[ 92.0%] Validazione finita: 124 approvati, 127 da rivedere, 0 respinti.
+[100.0%] ✓ Validazione completato in 0 s.
+[ 92.0%] ✓ Validazione completato in 0 s.
+[ 92.0%] ▸ Microlearning (documento corso): Sto progettando il corso microlearning in italiano…
+[  0.0%] ▸ Microlearning: Sto esplorando il materiale e scrivendo le lezioni…
+[ 92.4%] Esploro i materiali e compongo il corso in italiano (Deep Agent)…
+[ 92.8%] Round 1/8: budget 400 passi (avvio).
+[ 92.8%] 🤖 Round 1/8 — Deep Agent attivo.
+[ 92.8%] 🤖 Avvio round (nuovo), budget 400 passi…
+[ 92.8%] 🤖 → write_todos({"todos": [{"content": "Leggere /notes/percorsi_filesystem.md e /notes/workflow_microlearning.md per orientamento", "st…)
+[ 92.8%] 🤖 ✓ write_todos: Updated todo list to [{'content': 'Leggere /notes/percorsi_filesystem.md e /notes/workflow_microlearning.md per orientamento', 'status': 'in_progress'}, {'cont…
+[ 92.8%] 🤖 → read_file({"file_path": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/agent_shared/notes/percorsi_filesystem…)
+[ 92.8%] 🤖 → read_file({"file_path": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/agent_shared/notes/workflow_microlearn…)
+[ 92.8%] 🤖 → read_file({"file_path": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/linElettr/reports/corso_plan…)
+[ 92.8%] 🤖 ✓ read_file: Error: File '/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/agent_shared/notes/percorsi_filesystem.md' not found
+[ 92.8%] 🤖 ✓ read_file: Error: File '/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/agent_shared/notes/workflow_microlearning.md' not found
+[ 92.8%] 🤖 ✓ read_file: Error: File '/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/linElettr/reports/corso_plan.json' not found
+[ 92.8%] 🤖 → ls({"path": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/linElettr"})
+[ 92.8%] 🤖 → ls({"path": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/agent_shared"})
+[ 92.8%] 🤖 ✓ ls: []
+[ 92.8%] 🤖 ✓ ls: []
+[ 92.8%] 🤖 → ls({"path": "/sources"})
+[ 92.8%] 🤖 → ls({"path": "/chunks"})
+[ 92.8%] 🤖 → ls({"path": "/reports"})
+[ 92.8%] 🤖 → ls({"path": "/notes"})
+[ 92.8%] 🤖 → ls({"path": "/scripts"})
+[ 92.8%] 🤖 ✓ ls: ['/sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_.md', '/sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md', '/…
+[ 92.8%] 🤖 ✓ ls: ['/chunks/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__chunks.json', '/chunks/linElettr_chunks.json']
+[ 92.8%] 🤖 ✓ ls: ['/notes/percorsi_filesystem.md', '/notes/quiz_linee_guida.md', '/notes/struttura_lezione.md', '/notes/workflow_microlearning.md']
+[ 92.8%] 🤖 ✓ ls: ['/scripts/estrai_titoli_h2.py', '/scripts/grep_sources.py', '/scripts/list_reports.py', '/scripts/list_sources.py']
+[ 92.8%] 🤖 ✓ ls: ['/reports/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__hierarchy.json', '/reports/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__p…
+[ 92.8%] 🤖 → read_file({"file_path": "/notes/percorsi_filesystem.md"})
+[ 92.8%] 🤖 → read_file({"file_path": "/notes/workflow_microlearning.md"})
+[ 92.8%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 100, "offset": 0})
+[ 92.8%] 🤖 ✓ read_file: 1	# Percorsi e filesystem (OBBLIGATORIO)      2	      3	Leggi questo file **prima** di `ls`, `read_file`, `grep` o `execute` sul corso.      4	      5	## Due r…
+[ 92.8%] 🤖 ✓ read_file: 1	# Workflow microlearning (generico)      2	      3	**Prima di tutto:** leggi `/notes/percorsi_filesystem.md` (path virtuali, cosa evitare).      4	      5	##…
+[ 92.8%] 🤖 ✓ read_file: 1	{      2	  "source_id": "corso",      3	  "livello_struttura": "corpus",      4	  "markdown_sorgente": "",      5	  "unita_tempo_totale_minuti": 2950,      6…
+[ 92.8%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 200, "offset": 100})
+[ 92.8%] 🤖 → leggi_gerarchia_documento({"percorso_hierarchy": "/reports/linElettr_hierarchy.json"})
+[ 92.8%] 🤖 → leggi_gerarchia_documento({"percorso_hierarchy": "/reports/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__hierarchy.json"})
+[ 92.8%] 🤖 ✓ read_file: 101	        "studenti",    102	        "loro",    103	        "one",    104	        "theory",    105	        "linear",    106	        "algebra",    107	       …
+[ 94.0%] Leggo l'indice dei capitoli già sintetizzati…
+[ 94.0%] Leggo l'indice dei capitoli già sintetizzati…
+[ 94.0%] 🤖 ✓ leggi_gerarchia_documento: - **Introduzione**: **Introduzione** Capitolo introduttivo scritto da Francesco Porto, Gaetano Lanzalone e Ivano Lombardo. - **PROBLEMI DI FISICA GENERALE**: *…
+[ 94.0%] 🤖 ✓ leggi_gerarchia_documento: - **Introduzione**: **Introduzione** Capitolo introduttivo scritto da Francesco Porto, Gaetano Lanzalone e Ivano Lombardo. - **PROBLEMI DI FISICA GENERALE**: *…
+[ 94.0%] 🤖 → execute({"command": "python3 /scripts/list_reports.py"})
+[ 94.0%] 🤖 → execute({"command": "python3 /scripts/estrai_titoli_h2.py"})
+[ 94.0%] 🤖 ✓ execute: [stderr] python3: can't open file '/scripts/list_reports.py': [Errno 2] No such file or directory  Exit code: 2 [Command failed with exit code 2]
+[ 94.0%] 🤖 ✓ execute: [stderr] python3: can't open file '/scripts/estrai_titoli_h2.py': [Errno 2] No such file or directory  Exit code: 2 [Command failed with exit code 2]
+[ 94.0%] 🤖 → ls({"path": "/"})
+[ 94.0%] 🤖 ✓ ls: ['/README.md', '/chunks/', '/conversation_history/', '/memory/', '/modules/', '/notes/', '/reports/', '/scripts/', '/sources/', '/uploads/']
+[ 94.0%] 🤖 → ls({"path": "/scripts"})
+[ 94.0%] 🤖 ✓ ls: ['/scripts/estrai_titoli_h2.py', '/scripts/grep_sources.py', '/scripts/list_reports.py', '/scripts/list_sources.py']
+[ 94.0%] 🤖 → read_file({"file_path": "/scripts/list_reports.py"})
+[ 94.0%] 🤖 → read_file({"file_path": "/scripts/estrai_titoli_h2.py"})
+[ 94.0%] 🤖 ✓ read_file: 1	#!/usr/bin/env python3      2	"""Elenco JSON in WORKSPACE_ROOT/reports."""      3	import os      4	import sys      5	from pathlib import Path      6	      7	…
+[ 94.0%] 🤖 ✓ read_file: 1	#!/usr/bin/env python3      2	"""Prime 40 righe ## del markdown principale in sources (per outline rapido)."""      3	import os      4	import re      5	impor…
+[ 94.0%] 🤖 → execute({"command": "cd / && python3 scripts/list_reports.py"})
+[ 94.0%] 🤖 → execute({"command": "cd / && python3 scripts/estrai_titoli_h2.py"})
+[ 94.0%] 🤖 ✓ execute: [stderr] python3: can't open file '//scripts/estrai_titoli_h2.py': [Errno 2] No such file or directory  Exit code: 2 [Command failed with exit code 2]
+[ 94.0%] 🤖 ✓ execute: [stderr] python3: can't open file '//scripts/list_reports.py': [Errno 2] No such file or directory  Exit code: 2 [Command failed with exit code 2]
+[ 94.0%] 🤖 → execute({"command": "python3 /scripts/list_reports.py 2>&1; echo \"---\"; python3 -c \"import os; print(os.environ.get('WORKSPA…)
+[ 94.0%] 🤖 ✓ execute: python3: can't open file '/scripts/list_reports.py': [Errno 2] No such file or directory --- /home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/…
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "offset": 200, "limit": 300})
+[ 94.0%] 🤖 ✓ read_file: 201	          "riga_inizio": 352,    202	          "riga_fine": 452,    203	          "titolo_originale": "Chapter 1"    204	        }    205	      ]    206	  …
+[ 94.0%] 🤖 → execute({"command": "python3 -c \"\nimport json\nwith open('/reports/corso_plan.json') as f:\n    data = json.load(f)\npts = da…)
+[ 94.0%] 🤖 ✓ execute: [stderr] Traceback (most recent call last): [stderr]   File "<string>", line 3, in <module> [stderr] FileNotFoundError: [Errno 2] No such file or directory: '/…
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 200, "offset": 500})
+[ 94.0%] 🤖 ✓ read_file: 501	        },    502	        {    503	          "source_id": "Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_",    504	          "markdown_sorgent…
+[ 94.0%] 🤖 → grep({"pattern": "\"punti_taglio\"", "path": "/reports", "glob": "*.json", "output_mode": "content"})
+[ 94.0%] 🤖 ✓ grep: /reports/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__plan.json:   6:   "punti_taglio": [ /reports/corso_plan.json:   6:   "punti_taglio": [ /re…
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 5, "offset": 698})
+[ 94.0%] 🤖 ✓ read_file: 699	          "titolo_originale": "_However, keep in mind that vector spaces are not just algebraic objects; they are also geometric objects._"    700	        …
+[ 94.0%] 🤖 → execute({"command": "python3 -c \"\nwith open('/reports/corso_plan.json') as f:\n    data = __import__('json').load(f)\npts = d…)
+[ 94.0%] 🤖 ✓ execute: Traceback (most recent call last):   File "<string>", line 2, in <module> FileNotFoundError: [Errno 2] No such file or directory: '/reports/corso_plan.json'  E…
+[ 94.0%] 🤖 → grep({"output_mode": "content", "path": "/reports", "glob": "corso_plan.json", "pattern": "\"id\": \"pt_\""})
+[ 94.0%] 🤖 ✓ grep: No matches found
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 5, "offset": 699})
+[ 94.0%] 🤖 ✓ read_file: 700	        }    701	      ]    702	    },    703	    {    704	      "id": "pt_019",
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 2000, "offset": 700})
+[ 94.0%] 🤖 ✓ read_file: 701	      ]    702	    },    703	    {    704	      "id": "pt_019",    705	      "ordine": 19,    706	      "titolo": "Integrazione: _**Simbologia Usata**_ · 2…
+[ 94.0%] 🤖 → write_todos({"todos": [{"content": "Leggere /notes/percorsi_filesystem.md e /notes/workflow_microlearning.md per orientamento", "st…)
+[ 94.0%] 🤖 ✓ write_todos: Updated todo list to [{'content': 'Leggere /notes/percorsi_filesystem.md e /notes/workflow_microlearning.md per orientamento', 'status': 'completed'}, {'conten…
+[ 94.0%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 55, "offset": 0})
+[ 94.0%] 🤖 → read_file({"file_path": "/sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md", "limit": 250, "offset": …)
+[ 94.0%] 🤖 ✓ read_file: 1	**FRANCESCO PORTO GAETANO LANZALONE – IVANO LOMBARDO**       2	      3	## PROBLEMI DI FISICA GENERALE       4	      5	_ELETTROMAGNETISMO - OTTICA_       6	  …
+[ 94.0%] 🤖 ✓ read_file: 105	## Contents    106	|_Preface_|_Preface_|||v|    107	|---|---|---|---|---|    108	|1.|Introduction|||1|    109	|2.|Vector Spaces, Bases, Linear Maps|||5|   …
+[ 94.0%] 🤖 → imposta_corso({"titolo_corso": "Elettromagnetismo, Ottica e Algebra Lineare: dalla Fisica alle Applicazioni", "descrizione": "Corso i…)
+[ 94.0%] 🤖 ✓ imposta_corso: Corso inizializzato: 'Elettromagnetismo, Ottica e Algebra Lineare: dalla Fisica alle Applicazioni'
+[ 94.0%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 30, "offset": 1})
+[ 94.0%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 30, "offset": 27})
+[ 94.0%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 30, "offset": 55})
+[ 94.0%] 🤖 ✓ read_file: 28	_Gli esami di Fisica Generale I e II presentano una peculiarità che non tutti gli altri esami del Corso di laurea in Fisica e di altri corsi di studio in cu…
+[ 94.0%] 🤖 ✓ read_file: 2	      3	## PROBLEMI DI FISICA GENERALE       4	      5	_ELETTROMAGNETISMO - OTTICA_       6	      7	--- end of page.page_number=1 ---      8	      9	Francesc…
+[ 94.0%] 🤖 ✓ read_file: 56	## INDICE     57	**Capitolo 1: Elettrostatica pag. 5** _Forze e campi elettrici: a)cariche puntiformi, b) cariche distribuite – Legge di Gauss – Moto di car…
+[ 94.0%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 2000, "offset": 2700})
+[ 94.0%] 🤖 ✓ read_file: 2701	      "prerequisiti": [   2702	        "pt_069"   2703	      ],   2704	      "source_id": "Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_",  …
+[ 94.0%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_001", "ordine": 1, "argomento": "Integrazione: Introduzione · Contents", "contenuto": "## Introduzio…)
+[ 94.0%] 🤖 ✓ aggiungi_modulo_corso: ERRORE fonti_aggiuntive[0]: percorso mancante.
+[ 94.0%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_001", "ordine": 1, "argomento": "Integrazione: Introduzione · Contents", "contenuto": "## Introduzio…)
+[ 95.5%] Ho aggiunto la lezione 1 al corso microlearning.
+[ 95.5%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_001 aggiunto (ordine 1): Integrazione: Introduzione · Contents, 3113 caratteri di contenuto
+[ 95.5%] 🤖 → read_file({"file_path": "/sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md", "limit": 55, "offset": 0})
+[ 95.5%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 30, "offset": 55})
+[ 95.5%] 🤖 ✓ read_file: 1	--- end of page.page_number=1 ---      2	      3	**==> picture [192 x 85] intentionally omitted <==**      4	      5	--- end of page.page_number=2 ---      6…
+[ 95.5%] 🤖 ✓ read_file: 56	## INDICE     57	**Capitolo 1: Elettrostatica pag. 5** _Forze e campi elettrici: a)cariche puntiformi, b) cariche distribuite – Legge di Gauss – Moto di car…
+[ 95.5%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_002", "ordine": 2, "argomento": "Integrazione: PROBLEMI DI FISICA GENERALE · Introduzione", "contenu…)
+[ 95.8%] Ho aggiunto la lezione 2 al corso microlearning.
+[ 95.8%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_002 aggiunto (ordine 2): Integrazione: PROBLEMI DI FISICA GENERALE · Introduzione, 2186 caratteri di contenuto
+[ 95.8%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_003", "ordine": 3, "argomento": "Integrazione: Prefazione · Preface", "contenuto": "## Introduzione\…)
+[ 96.2%] Ho aggiunto la lezione 3 al corso microlearning.
+[ 96.2%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_003 aggiunto (ordine 3): Integrazione: Prefazione · Preface, 1865 caratteri di contenuto
+[ 96.2%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 200, "offset": 4700})
+[ 96.2%] 🤖 ✓ read_file: 4701	          "markdown_sorgente": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",   4702	          "riga_inizio": 10953,   47…
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 60, "offset": 80})
+[ 96.2%] 🤖 ✓ read_file: 81	## Capitolo 1     82	## Elettrostatica     83	## _**Simbologia Usata**_      84	     85	_wE, w densità di energia del campo elettrostatico WE, W energia ele…
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 60, "offset": 140})
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 60, "offset": 200})
+[ 96.2%] 🤖 ✓ read_file: 141	**==> picture [135 x 30] intentionally omitted <==**    142	    143	essendo uguali i secondi membri, saranno uguali anche i primi membri e quindi si ha:   …
+[ 96.2%] 🤖 ✓ read_file: 201	## Capitolo 2    202	## Circuiti con generatori    203	## di corrente stazionaria    204	## _**Simbologia Usata**_     205	    206	- _I, i corrente elettri…
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 60, "offset": 280})
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 80, "offset": 390})
+[ 96.2%] 🤖 → read_file({"file_path": "/sources/linElettr_clean.md", "limit": 80, "offset": 510})
+[ 96.2%] 🤖 ✓ read_file: 391	**==> picture [266 x 28] intentionally omitted <==**    392	    393	quindi applicando il _teorema di Ampère_ si ottiene:     394	    395	**==> picture [97 …
+[ 96.2%] 🤖 ✓ read_file: 281	    282	## _**Soluzione**_     283	    284	In condizione di regime la _d.d.p. VC_ ai capi del gruppo di condensatori sarà pari alla caduta di tensione nell…
+[ 96.2%] 🤖 ✓ read_file: 511	    512	## Capitolo 5    513	# Circuiti con generatori di corrente non stazionaria    514	## _**Simbologia Usata**_     515	    516	|_W_|_energia  immagazz…
+[ 96.2%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_004", "ordine": 4, "argomento": "Integrazione: INDICE · 2.9 Summary", "contenuto": "## Introduzione\…)
+[ 96.2%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_005", "ordine": 5, "argomento": "Integrazione: Capitolo 1 · Chapter 1", "contenuto": "## Introduzion…)
+[ 96.2%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_006", "ordine": 6, "argomento": "Integrazione: Elettrostatica · Example 2.2", "contenuto": "## Intro…)
+[ 97.1%] Ho aggiunto la lezione 6 al corso microlearning.
+[ 97.1%] Ho aggiunto la lezione 6 al corso microlearning.
+[ 96.8%] Ho aggiunto la lezione 5 al corso microlearning.
+[ 97.1%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_006 aggiunto (ordine 6): Integrazione: Elettrostatica · Example 2.2, 1899 caratteri di contenuto
+[ 97.1%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_004 aggiunto (ordine 4): Integrazione: INDICE · 2.9 Summary, 2000 caratteri di contenuto
+[ 97.1%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_005 aggiunto (ordine 5): Integrazione: Capitolo 1 · Chapter 1, 1836 caratteri di contenuto
+[ 97.1%] 🤖 → aggiungi_quiz_corso({"id_quiz": "quiz_001", "ordine": 1, "titolo": "Verifica: Fondamenti Integrati", "dopo_modulo_id": "mod_006", "percorso…)
+[ 97.4%] Ho aggiunto la lezione 7 al corso microlearning.
+[ 97.4%] 🤖 ✓ aggiungi_quiz_corso: Quiz quiz_001 aggiunto (ordine 1): Verifica: Fondamenti Integrati, 4 domande
+[ 97.4%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_007", "ordine": 7, "argomento": "Simbologia Usata · Chapter 10 (Spazio Duale)", "contenuto": "## Int…)
+[ 97.4%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_008", "ordine": 8, "argomento": "Soluzione di problemi · 15.9 Problems (Quaternioni)", "contenuto": …)
+[ 97.4%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_009", "ordine": 9, "argomento": "Problema 1.63 (Condensatore con dielettrico) · 13.9 Problems", "con…)
+[ 97.4%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_010", "ordine": 10, "argomento": "Soluzione sistemi · Matrici invertibili", "contenuto": "## Introdu…)
+[ 98.1%] Ho aggiunto la lezione 9 al corso microlearning.
+[ 98.4%] Ho aggiunto la lezione 10 al corso microlearning.
+[ 98.4%] Ho aggiunto la lezione 10 al corso microlearning.
+[ 98.4%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_008 aggiunto (ordine 8): Soluzione di problemi · 15.9 Problems (Quaternioni), 1719 caratteri di contenuto
+[ 98.7%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_007 aggiunto (ordine 7): Simbologia Usata · Chapter 10 (Spazio Duale), 1770 caratteri di contenuto
+[ 98.7%] Ho aggiunto la lezione 11 al corso microlearning.
+[ 98.7%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_009 aggiunto (ordine 9): Problema 1.63 (Condensatore con dielettrico) · 13.9 Problems, 1735 caratteri di contenuto
+[ 98.7%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_010 aggiunto (ordine 10): Soluzione sistemi · Matrici invertibili, 1598 caratteri di contenuto
+[ 98.7%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 2 · Chapter 2 (Circuiti e Spazi Vettoriali)", "contenuto": "## Introduzione\n\nIl Capitolo 2 de…)
+[ 98.7%] 🤖 → aggiungi_modulo_corso({"argomento": "Circuiti con generatori stazionari · Chapter 19 (Grafi)", "contenuto": "## Introduzione\n\nI circuiti co…)
+[ 98.7%] 🤖 → aggiungi_modulo_corso({"argomento": "Corrente stazionaria · 17.8 Summary (Metodi Iterativi)", "contenuto": "## Introduzione\n\nLa corrente st…)
+[ 99.4%] Ho aggiunto la lezione 13 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 14 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_012 aggiunto (ordine 12): Circuiti con generatori stazionari · Chapter 19 (Grafi), 1717 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_011 aggiunto (ordine 11): Capitolo 2 · Chapter 2 (Circuiti e Spazi Vettoriali), 1746 caratteri di contenuto
+[ 99.6%] Ho aggiunto la lezione 14 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_013 aggiunto (ordine 13): Corrente stazionaria · 17.8 Summary (Metodi Iterativi), 1568 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_quiz_corso({"id_quiz": "quiz_002", "ordine": 2, "titolo": "Verifica: Circuiti e Algebra Lineare", "dopo_modulo_id": "mod_013", "pe…)
+[ 99.6%] Ho aggiunto la lezione 15 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_quiz_corso: Quiz quiz_002 aggiunto (ordine 2): Verifica: Circuiti e Algebra Lineare, 4 domande
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia circuiti · 10.9 Summary (Spazio Duale)", "contenuto": "## Introduzione\n\nLa simbologia dei c…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Problema 2.21 (Kirchhoff) · 9.7 Problems (Metodi Iterativi)", "contenuto": "## Introduzione\n\nIl Proble…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione circuiti · Proposition e Matrici", "contenuto": "## Introduzione\n\nLa soluzione del problema …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 3 · Chapter 6 (Magnetostatica e Determinanti)", "contenuto": "## Introduzione\n\nIl Capitolo 3 …)
+[ 99.6%] Ho aggiunto la lezione 19 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 19 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 19 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 19 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_014 aggiunto (ordine 14): Simbologia circuiti · 10.9 Summary (Spazio Duale), 1524 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_017 aggiunto (ordine 17): Capitolo 3 · Chapter 6 (Magnetostatica e Determinanti), 1685 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_015 aggiunto (ordine 15): Problema 2.21 (Kirchhoff) · 9.7 Problems (Metodi Iterativi), 1377 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_016 aggiunto (ordine 16): Soluzione circuiti · Proposition e Matrici, 1541 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Magnetostatica · Spazi Vettoriali Geometrici", "contenuto": "## Introduzione\n\nLa Magnetostatica introd…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia magnetostatica · 2.8 Forme Lineari e Spazio Duale", "contenuto": "## Introduzione\n\nLa simbo…)
+[ 99.6%] Ho aggiunto la lezione 21 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 21 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_018 aggiunto (ordine 18): Magnetostatica · Spazi Vettoriali Geometrici, 1641 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_019 aggiunto (ordine 19): Simbologia magnetostatica · 2.8 Forme Lineari e Spazio Duale, 1473 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione problemi magnetici · Example 2.8 (Applicazioni Lineari)", "contenuto": "## Introduzione\n\nLa …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Problema 3.36 (Protoni e Deutoni) · 6.11 Problems", "contenuto": "## Introduzione\n\nIl Problema 3.36 ri…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione deutoni · Basi e Matrici", "contenuto": "## Introduzione\n\nLa soluzione del problema 3.36 mos…)
+[ 99.6%] Ho aggiunto la lezione 23 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 24 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 24 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_020 aggiunto (ordine 20): Soluzione problemi magnetici · Example 2.8 (Applicazioni Lineari), 1610 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_022 aggiunto (ordine 22): Soluzione deutoni · Basi e Matrici, 1543 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_021 aggiunto (ordine 21): Problema 3.36 (Protoni e Deutoni) · 6.11 Problems, 1487 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_quiz_corso({"id_quiz": "quiz_003", "ordine": 3, "titolo": "Verifica: Magnetostatica e Determinanti", "dopo_modulo_id": "mod_022", …)
+[ 99.6%] Ho aggiunto la lezione 25 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_quiz_corso: Quiz quiz_003 aggiunto (ordine 3): Verifica: Magnetostatica e Determinanti, 4 domande
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 4 · Chapter 14 (Campi Variabili e Autovalori)", "contenuto": "## Introduzione\n\nIl Capitolo 4 …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Campi EM variabili · Example 2.3 (Vettori)", "contenuto": "## Introduzione\n\nI campi elettromagnetici l…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Campi variabili · Spazi Vettoriali, Basi, Mappe Lineari", "contenuto": "## Introduzione\n\nI campi lenta…)
+[ 99.6%] Ho aggiunto la lezione 28 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 28 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 28 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_023 aggiunto (ordine 23): Capitolo 4 · Chapter 14 (Campi Variabili e Autovalori), 1663 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_024 aggiunto (ordine 24): Campi EM variabili · Example 2.3 (Vettori), 1536 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_025 aggiunto (ordine 25): Campi variabili · Spazi Vettoriali, Basi, Mappe Lineari, 1555 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia campi EM · 8.1 Spazi Vettoriali Normati", "contenuto": "## Introduzione\n\nLa simbologia dei …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione problemi EM · 21.7 Problems (SVD)", "contenuto": "## Introduzione\n\nLa soluzione di problemi …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Problema 4.40 (Sbarretta conduttrice) · 14.7 Problems", "contenuto": "## Introduzione\n\nIl Problema 4.4…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione sbarretta · Mappe Lineari", "contenuto": "## Introduzione\n\nLa soluzione del problema 4.40 mo…)
+[ 99.6%] Ho aggiunto la lezione 31 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_026 aggiunto (ordine 26): Simbologia campi EM · 8.1 Spazi Vettoriali Normati, 1480 caratteri di contenuto
+[ 99.6%] Ho aggiunto la lezione 32 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 32 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 32 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_027 aggiunto (ordine 27): Soluzione problemi EM · 21.7 Problems (SVD), 1456 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_029 aggiunto (ordine 29): Soluzione sbarretta · Mappe Lineari, 1338 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_028 aggiunto (ordine 28): Problema 4.40 (Sbarretta conduttrice) · 14.7 Problems, 1554 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 5 · Chapter 18 (Circuiti non stazionari e Grafi)", "contenuto": "## Introduzione\n\nIl Capitolo…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Circuiti non stazionari · 2.5 Basi di uno Spazio Vettoriale", "contenuto": "## Introduzione\n\nI circuit…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia AC · Example 8.1 (Norme)", "contenuto": "## Introduzione\n\nLa simbologia dei circuiti a corr…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione AC · Proposizione 13.8 (Hermitiani)", "contenuto": "## Introduzione\n\nLe soluzioni dei proble…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione sistemi AC · 4.8 Problems (Haar)", "contenuto": "## Introduzione\n\nLa soluzione dei sistemi d…)
+[ 99.6%] Ho aggiunto la lezione 34 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 34 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_030 aggiunto (ordine 30): Capitolo 5 · Chapter 18 (Circuiti non stazionari e Grafi), 1490 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_031 aggiunto (ordine 31): Circuiti non stazionari · 2.5 Basi di uno Spazio Vettoriale, 1408 caratteri di contenuto
+[ 99.6%] Ho aggiunto la lezione 36 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 37 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 37 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_033 aggiunto (ordine 33): Soluzione AC · Proposizione 13.8 (Hermitiani), 1382 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_032 aggiunto (ordine 32): Simbologia AC · Example 8.1 (Norme), 1316 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_034 aggiunto (ordine 34): Soluzione sistemi AC · 4.8 Problems (Haar), 1422 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_quiz_corso({"id_quiz": "quiz_004", "ordine": 4, "titolo": "Verifica: Campi Variabili, AC e Autovalori", "dopo_modulo_id": "mod_034…)
+[ 99.6%] Ho aggiunto la lezione 38 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_quiz_corso: Quiz quiz_004 aggiunto (ordine 4): Verifica: Campi Variabili, AC e Autovalori, 4 domande
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 6 · 13.8 Summary (Onde EM e Spazi Hermitiani)", "contenuto": "## Introduzione\n\nIl Capitolo 6 …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Onde EM · Chapter 8 (Norme Vettoriali)", "contenuto": "## Introduzione\n\nLe onde elettromagnetiche tras…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia onde EM · Remarks (Spazio Duale)", "contenuto": "## Introduzione\n\nLa simbologia delle onde …)
+[ 99.6%] Ho aggiunto la lezione 41 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 41 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 41 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_037 aggiunto (ordine 37): Simbologia onde EM · Remarks (Spazio Duale), 1403 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_035 aggiunto (ordine 35): Capitolo 6 · 13.8 Summary (Onde EM e Spazi Hermitiani), 1514 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_036 aggiunto (ordine 36): Onde EM · Chapter 8 (Norme Vettoriali), 1247 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione onde EM · 5.6 Problems (Somme Dirette)", "contenuto": "## Introduzione\n\nLe soluzioni dei pro…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione onde EM (2) · 8.10 Problems (Norme)", "contenuto": "## Introduzione\n\nI problemi di propagazi…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 7 · Chapter 13 (Ottica Fisica e Spazi Hermitiani)", "contenuto": "## Introduzione\n\nIl Capitol…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Ottica Fisica · Trasvezioni e Dilatazioni", "contenuto": "## Introduzione\n\nL'ottica fisica copre i fen…)
+[ 99.6%] Ho aggiunto la lezione 43 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 44 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 45 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 45 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_038 aggiunto (ordine 38): Soluzione onde EM · 5.6 Problems (Somme Dirette), 1233 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_039 aggiunto (ordine 39): Soluzione onde EM (2) · 8.10 Problems (Norme), 1257 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_040 aggiunto (ordine 40): Capitolo 7 · Chapter 13 (Ottica Fisica e Spazi Hermitiani), 1474 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_041 aggiunto (ordine 41): Ottica Fisica · Trasvezioni e Dilatazioni, 1301 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Simbologia ottica · Dualità e Pairing (10.2)", "contenuto": "## Introduzione\n\nLa simbologia dell'ottic…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione ottica · 3.6 Problems (Matrici)", "contenuto": "## Introduzione\n\nLa soluzione dei problemi d…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione ottica (2) · 7.17 Problems (Eliminazione Gaussiana)", "contenuto": "## Introduzione\n\nI probl…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione ottica (3) · Proof (Dimostrazioni)", "contenuto": "## Introduzione\n\nLe soluzioni dei problem…)
+[ 99.6%] Ho aggiunto la lezione 48 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 49 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 48 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 49 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_042 aggiunto (ordine 42): Simbologia ottica · Dualità e Pairing (10.2), 1244 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_045 aggiunto (ordine 45): Soluzione ottica (3) · Proof (Dimostrazioni), 1251 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_043 aggiunto (ordine 43): Soluzione ottica · 3.6 Problems (Matrici), 1233 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_044 aggiunto (ordine 44): Soluzione ottica (2) · 7.17 Problems (Eliminazione Gaussiana), 1311 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_quiz_corso({"dopo_modulo_id": "mod_045", "domande": [{"indice_corretto": 0, "opzioni": ["La luce segue il percorso di tempo minimo…)
+[ 99.6%] Ho aggiunto la lezione 50 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_quiz_corso: Quiz quiz_005 aggiunto (ordine 5): Verifica: Ottica Fisica, 4 domande
+[ 99.6%] 🤖 → read_file({"file_path": "/reports/corso_plan.json", "limit": 200, "offset": 5400})
+[ 99.6%] 🤖 ✓ read_file: 5401	      "titolo": "11.9 Some Applications of Euclidean Geometry",   5402	      "riga_inizio": 13818,   5403	      "riga_fine": 13848,   5404	      "carico_c…
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_046", "ordine": 46, "argomento": "Capitolo 8 · Chapter 11 (Ottica Geom. e Spazi Euclidei)", "contenu…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_047", "ordine": 47, "argomento": "Ottica Geometrica · 12.1 Riflessioni Ortogonali", "contenuto": "##…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"id_modulo": "mod_048", "ordine": 48, "argomento": "Simbologia ottica geometrica · Remarks (Spazio Nullo)", "contenuto…)
+[ 99.6%] Ho aggiunto la lezione 52 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 53 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 53 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_046 aggiunto (ordine 46): Capitolo 8 · Chapter 11 (Ottica Geom. e Spazi Euclidei), 1474 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_048 aggiunto (ordine 48): Simbologia ottica geometrica · Remarks (Spazio Nullo), 1436 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_047 aggiunto (ordine 47): Ottica Geometrica · 12.1 Riflessioni Ortogonali, 1322 caratteri di contenuto
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione ottica geometrica · 11.11 Problems (Spazi Euclidei)", "contenuto": "## Introduzione\n\nI probl…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione ottica (2) · 10.10 Problems (Dualità)", "contenuto": "## Introduzione\n\nI problemi di sistemi…)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Soluzione sistemi ottici · Proof (Serie di Matrici)", "contenuto": "## Introduzione\n\nLe soluzioni dei …)
+[ 99.6%] 🤖 → aggiungi_modulo_corso({"argomento": "Capitolo 9 · Chapter 4 (Fisica Moderna e Basi di Haar)", "contenuto": "## Introduzione\n\nIl Capitolo 9 …)
+[ 99.6%] Ho aggiunto la lezione 55 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 57 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 57 al corso microlearning.
+[ 99.6%] Ho aggiunto la lezione 57 al corso microlearning.
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_049 aggiunto (ordine 49): Soluzione ottica geometrica · 11.11 Problems (Spazi Euclidei), 1211 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_050 aggiunto (ordine 50): Soluzione ottica (2) · 10.10 Problems (Dualità), 1255 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_051 aggiunto (ordine 51): Soluzione sistemi ottici · Proof (Serie di Matrici), 1366 caratteri di contenuto
+[ 99.6%] 🤖 ✓ aggiungi_modulo_corso: Lezione mod_052 aggiunto (ordine 52): Capitolo 9 · Chapter 4 (Fisica Moderna e Basi di Haar), 1346 caratteri di contenuto

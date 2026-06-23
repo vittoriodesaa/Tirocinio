@@ -1,0 +1,20 @@
+{
+  "course_id": "Strano2",
+  "sources": [
+    {
+      "source_id": "La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s",
+      "filename": "La_luna_e_i_falò_Cesare_Pavese_z_library_sk,_1lib_sk,_z_lib_s.pdf",
+      "order": 1,
+      "role": "primary"
+    },
+    {
+      "source_id": "Learning_LangChain_Building_AI_and_LL_z_library_sk__1lib_sk_",
+      "filename": "Learning_LangChain_Building_AI_and_LL_z_library_sk,_1lib_sk,.pdf",
+      "order": 2,
+      "role": "primary"
+    }
+  ],
+  "source_id": "La_luna_e_i_fal__Cesare_Pavese_z_library_sk__1lib_sk__z_lib_s",
+  "filename": "La_luna_e_i_falò_Cesare_Pavese_z_library_sk,_1lib_sk,_z_lib_s.pdf",
+  "updated_at": "2026-06-23T16:58:20.370094+00:00"
+}

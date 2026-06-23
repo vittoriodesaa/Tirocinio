@@ -1,0 +1,20 @@
+{
+  "course_id": "linElettr",
+  "sources": [
+    {
+      "source_id": "linElettr",
+      "filename": "Problemi_di_fisica_generale_elettrom_z_library_sk,_1lib_sk,.pdf",
+      "order": 1,
+      "role": "primary"
+    },
+    {
+      "source_id": "Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_",
+      "filename": "Linear_Algebra_and_Optimization_with_z_library_sk,_1lib_sk,.pdf",
+      "order": 2,
+      "role": "primary"
+    }
+  ],
+  "source_id": "linElettr",
+  "filename": "Problemi_di_fisica_generale_elettrom_z_library_sk,_1lib_sk,.pdf",
+  "updated_at": "2026-06-23T15:39:06.338656+00:00"
+}

@@ -61,6 +61,8 @@ class CoursePipelineStatus(BaseModel):
     course_id: str
     workspace_path: str
     source_id: Optional[str] = None
+    sources: List[Dict[str, Any]] = Field(default_factory=list)
+    is_corpus: bool = False
     prossimo_step: str = "acquisition"
     steps: List[StepStatus] = Field(default_factory=list)
     file_count: int = 0
@@ -166,7 +168,45 @@ def _read_course_meta(ws: Path) -> dict:
     return {}
 
 
-def detect_source_id(ws: Path) -> Optional[str]:
+CORPUS_SOURCE_ID = "corso"
+
+
+def list_course_sources(ws: Path) -> List[Dict[str, Any]]:
+    """Sorgenti documentali del corso, ordinate per `order`."""
+    meta = _read_course_meta(ws)
+    if meta.get("sources"):
+        return sorted(meta["sources"], key=lambda s: s.get("order", 0))
+
+    sid = meta.get("source_id") or detect_source_id_legacy(ws)
+    if sid:
+        return [{
+            "source_id": sid,
+            "filename": meta.get("filename", ""),
+            "order": 1,
+            "role": "primary",
+        }]
+    return []
+
+
+def is_corpus_course(ws: Path) -> bool:
+    return len(list_course_sources(ws)) > 1
+
+
+def resolve_pipeline_source_id(ws: Path) -> str:
+    """ID artefatti downstream: `corso` se multi-documento, altrimenti la singola source."""
+    sources = list_course_sources(ws)
+    if len(sources) > 1:
+        return CORPUS_SOURCE_ID
+    if sources:
+        return sources[0]["source_id"]
+    return detect_source_id_legacy(ws) or "unknown"
+
+
+def corpus_plan_path(ws: Path) -> Path:
+    return ws / "reports" / f"{CORPUS_SOURCE_ID}_plan.json"
+
+
+def detect_source_id_legacy(ws: Path) -> Optional[str]:
     meta = _read_course_meta(ws)
     if meta.get("source_id"):
         return meta["source_id"]
@@ -196,60 +236,127 @@ def detect_source_id(ws: Path) -> Optional[str]:
     return None
 
 
+def detect_source_id(ws: Path) -> Optional[str]:
+    """Prima sorgente (retrocompatibilità UI)."""
+    sources = list_course_sources(ws)
+    if sources:
+        return sources[0]["source_id"]
+    return detect_source_id_legacy(ws)
+
+
+def append_course_source(
+    ws: Path,
+    course_id: str,
+    source_id: str,
+    filename: str = "",
+    *,
+    order: Optional[int] = None,
+    role: str = "primary",
+) -> None:
+    ws.mkdir(parents=True, exist_ok=True)
+    meta = _read_course_meta(ws)
+    meta["course_id"] = course_id
+    sources: List[Dict[str, Any]] = list(meta.get("sources") or [])
+
+    if not sources and meta.get("source_id"):
+        sources.append({
+            "source_id": meta["source_id"],
+            "filename": meta.get("filename", ""),
+            "order": 1,
+            "role": "primary",
+        })
+
+    existing = next((s for s in sources if s.get("source_id") == source_id), None)
+    if existing:
+        if filename:
+            existing["filename"] = filename
+    else:
+        sources.append({
+            "source_id": source_id,
+            "filename": filename,
+            "order": order or (max((s.get("order", 0) for s in sources), default=0) + 1),
+            "role": role,
+        })
+
+    sources.sort(key=lambda s: s.get("order", 0))
+    meta["sources"] = sources
+    meta["source_id"] = sources[0]["source_id"]
+    meta["filename"] = sources[0].get("filename", "")
+    meta["updated_at"] = datetime.now(timezone.utc).isoformat()
+    (ws / "course.json").write_text(
+        json.dumps(meta, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
 def analyze_course_workspace(ws: Path, course_id: str) -> CoursePipelineStatus:
     ws = ws.resolve()
-    source_id = detect_source_id(ws)
+    course_sources = list_course_sources(ws)
+    corpus = len(course_sources) > 1
+    source_id = course_sources[0]["source_id"] if course_sources else detect_source_id_legacy(ws)
+    pipeline_sid = resolve_pipeline_source_id(ws) if course_sources else (source_id or "unknown")
     steps_out: List[StepStatus] = []
 
     upload_files = list((ws / "uploads").glob("*")) if (ws / "uploads").exists() else []
     upload_files = [f for f in upload_files if f.is_file() and not f.name.endswith("_acquisition.json")]
     acq_meta = list((ws / "uploads").glob("*_acquisition.json")) if (ws / "uploads").exists() else []
 
-    sid_early = source_id or "unknown"
-    has_sources = (ws / "sources").exists() and any((ws / "sources").iterdir())
-    acquisition_ok = bool(upload_files or acq_meta) or has_sources
+    has_sources_dir = (ws / "sources").exists() and any((ws / "sources").iterdir())
+    acquisition_ok = bool(upload_files or acq_meta) or has_sources_dir
+    acq_detail = (
+        f"{len(course_sources)} documenti"
+        if corpus
+        else (str(upload_files[0].relative_to(ws)) if upload_files else None)
+    )
     steps_out.append(StepStatus(
         id="acquisition",
         label="Acquisizione",
         ordine=0,
         completato=acquisition_ok,
-        artifact=str(upload_files[0].relative_to(ws)) if upload_files else (
-            str(acq_meta[0].relative_to(ws)) if acq_meta else None
+        artifact=acq_detail if corpus else (
+            str(upload_files[0].relative_to(ws)) if upload_files else (
+                str(acq_meta[0].relative_to(ws)) if acq_meta else None
+            )
         ),
+        dettaglio=f"{len(course_sources)} sorgenti" if corpus else None,
     ))
 
-    sid = source_id or "unknown"
-    clean = ws / "sources" / f"{sid}_clean.md"
-    final_md = ws / "sources" / f"{sid}.md"
-    chunks = ws / "chunks" / f"{sid}_chunks.json"
-    hierarchy = ws / "reports" / f"{sid}_hierarchy.json"
-    quality = ws / "reports" / f"{sid}_quality.json"
+    if corpus:
+        docs_ready = all(
+            (ws / "chunks" / f"{s['source_id']}_chunks.json").exists()
+            for s in course_sources
+        )
+        doc_ok = docs_ready and has_sources_dir
+        doc_det = ", ".join(s["source_id"] for s in course_sources)
+    else:
+        sid = source_id or "unknown"
+        clean = ws / "sources" / f"{sid}_clean.md"
+        final_md = ws / "sources" / f"{sid}.md"
+        chunks = ws / "chunks" / f"{sid}_chunks.json"
+        hierarchy = ws / "reports" / f"{sid}_hierarchy.json"
+        doc_ok = (clean.exists() or final_md.exists()) and chunks.exists()
+        doc_det = f"chunk={'sì' if chunks.exists() else 'no'}, gerarchia={'sì' if hierarchy.exists() else 'no'}"
 
-    document_ok = clean.exists() or final_md.exists()
-    doc_artifacts = []
-    if clean.exists():
-        doc_artifacts.append(str(clean.relative_to(ws)))
-    if chunks.exists():
-        doc_artifacts.append(str(chunks.relative_to(ws)))
     steps_out.append(StepStatus(
         id="document",
         label="Document",
         ordine=1,
-        completato=document_ok and chunks.exists(),
-        artifact=doc_artifacts[0] if doc_artifacts else None,
-        dettaglio=f"chunk={'sì' if chunks.exists() else 'no'}, gerarchia={'sì' if hierarchy.exists() else 'no'}",
+        completato=doc_ok,
+        artifact=doc_det if corpus else None,
+        dettaglio=doc_det if not corpus else f"{len(course_sources)} documenti elaborati",
     ))
 
-    plan = ws / "reports" / f"{sid}_plan.json"
+    plan_path = corpus_plan_path(ws) if corpus else ws / "reports" / f"{pipeline_sid}_plan.json"
     steps_out.append(StepStatus(
         id="planning",
         label="Planning",
         ordine=2,
-        completato=plan.exists(),
-        artifact=str(plan.relative_to(ws)) if plan.exists() else None,
+        completato=plan_path.exists(),
+        artifact=str(plan_path.relative_to(ws)) if plan_path.exists() else None,
+        dettaglio="merge corpus" if corpus else None,
     ))
 
-    raw_mod = ws / "modules" / f"{sid}_raw_modules.json"
+    raw_mod = ws / "modules" / f"{pipeline_sid}_raw_modules.json"
     steps_out.append(StepStatus(
         id="segmentation",
         label="Segmentation",
@@ -258,8 +365,8 @@ def analyze_course_workspace(ws: Path, course_id: str) -> CoursePipelineStatus:
         artifact=str(raw_mod.relative_to(ws)) if raw_mod.exists() else None,
     ))
 
-    validation = ws / "reports" / f"{sid}_validation.json"
-    validated = ws / "modules" / f"{sid}_validated_modules.json"
+    validation = ws / "reports" / f"{pipeline_sid}_validation.json"
+    validated = ws / "modules" / f"{pipeline_sid}_validated_modules.json"
     steps_out.append(StepStatus(
         id="validation",
         label="Validation",
@@ -287,12 +394,15 @@ def analyze_course_workspace(ws: Path, course_id: str) -> CoursePipelineStatus:
 
     file_count = sum(1 for _ in ws.rglob("*") if _.is_file()) if ws.exists() else 0
 
-    warnings = load_pipeline_warnings(ws, sid) if source_id else None
+    warn_sid = pipeline_sid if corpus else (source_id or pipeline_sid)
+    warnings = load_pipeline_warnings(ws, warn_sid) if warn_sid else None
 
     return CoursePipelineStatus(
         course_id=course_id,
         workspace_path=str(ws),
         source_id=source_id,
+        sources=course_sources,
+        is_corpus=corpus,
         prossimo_step=prossimo,
         steps=steps_out,
         file_count=file_count,
@@ -301,14 +411,4 @@ def analyze_course_workspace(ws: Path, course_id: str) -> CoursePipelineStatus:
 
 
 def save_course_meta(ws: Path, course_id: str, source_id: str, filename: str = "") -> None:
-    ws.mkdir(parents=True, exist_ok=True)
-    meta = {
-        "course_id": course_id,
-        "source_id": source_id,
-        "filename": filename,
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-    }
-    (ws / "course.json").write_text(
-        json.dumps(meta, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
+    append_course_source(ws, course_id, source_id, filename, order=1)

@@ -1,0 +1,26 @@
+{
+  "source_id": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk_",
+  "quality_score": 0.7,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.8,
+    "reading_order": 0.5,
+    "noise_level": 0.3,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.8
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Page boundary markers and omitted picture placeholders present throughout text."
+    },
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Incomplete sentence at end of prologue: 'di diverse s' and placeholder '--- CENTRO ---'."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

@@ -1,0 +1,795 @@
+{
+  "titolo_corso": "Dai fondamenti agli oggetti: Corso completo di programmazione Java con approfondimenti filosofici",
+  "lingua": "it",
+  "descrizione": "Un percorso formativo integrato che unisce la programmazione Java (dal libro di Pighizzini e Ferrari) ai principi dello stoicismo romano (Seneca, Epitteto, Marco Aurelio). Attraverso 120 lezioni microlearning, i partecipanti apprendono algoritmi, strutture dati, programmazione orientata agli oggetti, gestione delle eccezioni, I/O, ricorsione e strutture dinamiche, collegando ogni concetto a una riflessione filosofica tratto dal pensiero stoico.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "tipo": "lezione",
+      "argomento": "Introduzione al corso: algoritmi e filosofia per lo sviluppatore",
+      "sintesi_breve": "## Introduzione\n\nBenvenuto in questo percorso formativo unico, che intreccia due discipline apparentemente lontane: la programmazione Java e la filosofia stoica. Da un lato, il manuale di Pighizzini e Ferrari \"Dai fondamenti agli oggetti\" ti guiderà attraverso i concetti fondamen",
+      "contenuto": "## Introduzione\n\nBenvenuto in questo percorso formativo unico, che intreccia due discipline apparentemente lontane: la programmazione Java e la filosofia stoica. Da un lato, il manuale di Pighizzini e Ferrari \"Dai fondamenti agli oggetti\" ti guiderà attraverso i concetti fondamentali dell'informatica e della programmazione orientata agli oggetti; dall'altro, le \"Sette brevi lezioni sullo stoicismo\" di John Sellars ti offriranno una lente filosofica per affrontare le sfide del pensiero tecnico con maggiore consapevolezza. Perché uno sviluppatore dovrebbe studiare filosofia? Perché programmare è, prima di tutto, un'attività mentale: richiede disciplina, capacità di astrazione, controllo delle emozioni di fronte agli errori, e la consapevolezza di ciò che si può controllare (il proprio codice) e ciò che non si può controllare (il comportamento degli altri sistemi). Lo stoicismo antico, come vedremo, offre strumenti preziosi proprio in questa direzione.\n\n## Concetti chiave\n\n### Il metodo algoritmico come disciplina mentale\nUn algoritmo è un insieme ordinato di passi eseguibili e non ambigui che definiscono un processo che termina. Questa definizione, che esploreremo in dettaglio nella prima parte del corso, richiede una mente ordinata e disciplinata. Lo stoicismo insegna qualcosa di molto simile: la necessità di distinguere tra ciò che dipende da noi (i nostri giudizi, le nostre azioni) e ciò che non dipende da noi (gli eventi esterni). In entrambi i casi, la chiarezza del pensiero è il fondamento di ogni buona pratica.\n\n### Due manuali, un unico percorso\nIl libro di programmazione Java (© 2015 Pearson Italia) è un testo tecnico consolidato, giunto alla quarta edizione, che copre l'intero spettro della programmazione: dagli algoritmi di base fino alle strutture dati dinamiche. Il libro sullo stoicismo, invece, è un'introduzione agile ma profonda alle idee di Seneca, Epitteto e Marco Aurelio. Ogni lezione tecnica sarà accompagnata da una riflessione filosofica che ti aiuterà a mantenere la giusta prospettiva mentale mentre impari a programmare.\n\n## Esempio pratico\nImmagina di essere uno sviluppatore junior alle prese con un bug elusivo. Dopo ore di debugging, la frustrazione cresce. Un approccio stoico ti suggerirebbe: \"Non sono le cose in sé a turbarci, ma il giudizio che diamo su di esse\" (Epitteto). Invece di lasciarti sopraffare dall'ansia, puoi applicare il metodo algoritmico: scomporre il problema in passi eseguibili, isolare le variabili, testare ogni ipotesi con calma. La disciplina stoica e quella algoritmica si rafforzano a vicenda.\n\n## Riepilogo\n- Questo corso integra due manuali: uno di programmazione Java e uno di filosofia stoica\n- L'algoritmo è il concetto centrale dell'informatica e richiede pensiero ordinato\n- Lo stoicismo offre strumenti per mantenere la chiarezza mentale nello sviluppo software\n- La capacità di distinguere ciò che controlliamo da ciò che non controlliamo è utile sia in programmazione sia nella vita\n- Le note e le fonti dei due libri sono state verificate per garantire la massima accuratezza didattica",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 487,
+        "riga_fine": 566
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 39,
+          "riga_fine": 46
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere la struttura e gli obiettivi del corso integrato",
+        "Identificare il rapporto tra pensiero algoritmico e disciplina mentale",
+        "Riconoscere l'importanza delle fonti nei due ambiti: programmazione e filosofia"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "tipo": "lezione",
+      "argomento": "Prologo e Prefazione: perché programmare è pensare",
+      "sintesi_breve": "## Introduzione\n\nIl Prologo del libro sullo stoicismo si apre con una domanda provocatoria: «E se qualcuno ci dicesse che molte delle sofferenze della nostra vita dipendono semplicemente dal modo in cui pensiamo alle cose?» Ansia, frustrazione, paura, delusione, rabbia — non il d",
+      "contenuto": "## Introduzione\n\nIl Prologo del libro sullo stoicismo si apre con una domanda provocatoria: «E se qualcuno ci dicesse che molte delle sofferenze della nostra vita dipendono semplicemente dal modo in cui pensiamo alle cose?» Ansia, frustrazione, paura, delusione, rabbia — non il dolore fisico, ma le sofferenze mentali che accompagnano ogni attività umana, incluso lo sviluppo software. La prefazione del manuale di programmazione, d'altro canto, descrive l'evoluzione della programmazione: dai linguaggi macchina ai linguaggi ad alto livello, un percorso di crescente astrazione. In entrambi i casi, il tema centrale è lo stesso: il pensiero è lo strumento fondamentale, e imparare a usarlo bene è il vero obiettivo.\n\n## Concetti chiave\n\n### I tre grandi stoici romani\nSeneca (precettore di Nerone), Epitteto (ex schiavo) e Marco Aurelio (imperatore) — tre vite diversissime, unite dalla scelta dello stoicismo come guida per vivere bene. Le loro opere sono sopravvissute fino a noi: i trattati e le lettere di Seneca, le Diatribe di Epitteto trascritte dall'allievo Arriano, e i pensieri privati di Marco Aurelio. Tutti e tre insegnano che la capacità di vivere bene è nelle nostre mani, perché dipende dal nostro giudizio, non dagli eventi esterni.\n\n### L'evoluzione della programmazione\nIl manuale spiega che programmare è «codificare un procedimento risolutivo in istruzioni per un esecutore». Dai primi programmi in linguaggio macchina si è passati a linguaggi sempre più astratti. Oggi, programmare significa combinare \"mattoni\" già pronti (oggetti, librerie), richiedendo un alto livello di astrazione e flessibilità mentale — esattamente le stesse qualità che lo stoicismo allena.\n\n### Astrazione come disciplina mentale\nSia la filosofia stoica sia la programmazione richiedono la capacità di distinguere diversi livelli: ciò che dipende da noi (il nostro codice, i nostri giudizi) e ciò che non dipende da noi (le reazioni altrui, i bug imprevisti). Il programmatore efficace è anche mentalmente disciplinato.\n\n## Esempio pratico\nUno sviluppatore deve integrare una libreria di terze parti. La documentazione è scarsa, i primi tentativi falliscono. La tentazione è arrabbiarsi con chi ha scritto la libreria. Seneca direbbe: «Non sono le cose in sé a turbarci, ma il giudizio che diamo su di esse». Invece di giudicare, lo sviluppatore può applicare l'astrazione: concentrarsi su ciò che la libreria *fa* (il suo comportamento osservabile) senza preoccuparsi di come è implementata. Questo è esattamente l'approccio che il manuale suggerisce per la programmazione a oggetti.\n\n## Riepilogo\n- Lo stoicismo insegna che molte sofferenze derivano dal nostro modo di pensare, non dagli eventi\n- I tre grandi stoici romani (Seneca, Epitteto, Marco Aurelio) hanno scritto opere ancora oggi attuali\n- La programmazione si è evoluta verso livelli di astrazione sempre più elevati\n- L'astrazione mentale è un'abilità condivisa tra filosofia e programmazione\n- Il manuale separa l'uso delle classi dalla loro implementazione per enfatizzare i diversi livelli di astrazione",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 21,
+        "riga_fine": 46
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 228,
+          "riga_fine": 262
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere la tesi centrale dello stoicismo sulle sofferenze evitabili",
+        "Riconoscere l'evoluzione della programmazione come astrazione crescente",
+        "Collegare la disciplina mentale stoica alla pratica della programmazione"
+      ],
+      "durata_stimata_minuti": 18,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "tipo": "lezione",
+      "argomento": "Il filosofo come medico e la mappa dei concetti Java",
+      "sintesi_breve": "## Introduzione\n\nLa prima lezione del libro sullo stoicismo presenta Epitteto, un ex schiavo che apre una scuola di filosofia a Nicopoli. La sua idea centrale è potente: il filosofo è come un medico, e la scuola filosofica è un ospedale per l'anima. Per uno sviluppatore, questa m",
+      "contenuto": "## Introduzione\n\nLa prima lezione del libro sullo stoicismo presenta Epitteto, un ex schiavo che apre una scuola di filosofia a Nicopoli. La sua idea centrale è potente: il filosofo è come un medico, e la scuola filosofica è un ospedale per l'anima. Per uno sviluppatore, questa metafora è immediatamente riconoscibile: ogni volta che affrontiamo un bug o un errore di progettazione, stiamo \"diagnosticando\" il nostro codice, cercando di curarlo. L'indice analitico del manuale Java, invece, elenca tutti i concetti che incontreremo: classi, oggetti, ereditarietà, eccezioni. È la mappa del nostro percorso di apprendimento.\n\n## Concetti chiave\n\n### Epitteto: il filosofo come medico\nEpitteto riprende la tradizione socratica: il compito del filosofo è prendersi cura dell'anima, intesa come mente, pensieri e opinioni. Così come un medico cura il corpo, il filosofo analizza e valuta le convinzioni che abbiamo, esaminandone coerenza e validità. La qualità della nostra vita, sostiene Socrate prima e gli stoici poi, dipende dalla condizione della nostra anima.\n\n### Le cose veramente buone\nSocrate insegnava che la ricchezza materiale è neutra: può essere usata per il bene o per il male. Il valore autentico risiede nel carattere della persona. Gli stoici chiamavano le cose esterne (denaro, reputazione) «indifferenti». L'unica cosa veramente buona è un carattere virtuoso, che si manifesta nelle quattro virtù cardinali: saggezza, giustizia, coraggio e temperanza.\n\n### L'indice analitico come bussola\nL'indice del manuale Java elenca oltre 500 voci: classi come ConsoleInputManager, concetti come ereditarietà e polimorfismo, e strumenti come il debugger. Studiare programmazione significa percorrere questa mappa, ma con la consapevolezza che ogni concetto ha il suo «posto nella natura» del linguaggio.\n\n## Esempio pratico\nImmagina di sentirti frustrato perché un programma non compila. La frustrazione nasce dal giudizio «dovrebbe funzionare subito». Epitteto ti inviterebbe a riformulare: «Ho scritto del codice che contiene errori. Il compilatore me li segnala. Questo è un aiuto, non un ostacolo». Cambiare prospettiva — da \"giudizio di fallimento\" a \"opportunità di apprendimento\" — è esattamente ciò che intendeva il filosofo come medico dell'anima.\n\n## Riepilogo\n- Epitteto, ex schiavo, insegnava che il filosofo è un medico dell'anima\n- Socrate ispira questa visione: l'anima (mente, pensieri) determina la qualità della vita\n- Le cose esterne sono «indifferenti»: il vero bene è il carattere virtuoso\n- Le quattro virtù cardinali stoiche sono saggezza, giustizia, coraggio e temperanza\n- L'indice analitico del manuale Java traccia la mappa dei concetti che impareremo",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 47,
+        "riga_fine": 96
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 23558,
+          "riga_fine": 23618
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere la metafora del filosofo come medico secondo Epitteto",
+        "Distinguere tra cose buone, indifferenti e indifferenti preferibili",
+        "Orientarsi nell'indice analitico del manuale Java"
+      ],
+      "durata_stimata_minuti": 22,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_004",
+      "ordine": 4,
+      "tipo": "lezione",
+      "argomento": "Cosa possiamo controllare: giudizi, impulsi e codice",
+      "sintesi_breve": "## Introduzione\n\nEpitteto apre il suo Manuale con una domanda cruciale: «Quali cose si possono controllare?» La risposta cambierà il modo in cui affronti la programmazione. Possiamo controllare i nostri giudizi, impulsi e desideri — ma non il corpo, gli averi, la reputazione. Nel",
+      "contenuto": "## Introduzione\n\nEpitteto apre il suo Manuale con una domanda cruciale: «Quali cose si possono controllare?» La risposta cambierà il modo in cui affronti la programmazione. Possiamo controllare i nostri giudizi, impulsi e desideri — ma non il corpo, gli averi, la reputazione. Nel codice funziona allo stesso modo: possiamo controllare ciò che scriviamo, ma non come reagirà l'utente, il sistema operativo o il collega che manuterrà il nostro programma dopo di noi.\n\n## Concetti chiave\n\n### La distinzione fondamentale\nEpitteto classifica le cose in due categorie: quelle che dipendono da noi (giudizi, impulsi, desideri) e quelle che non dipendono da noi (corpo, ricchezze, reputazione, successo). L'infelicità nasce quando classifichiamo erroneamente qualcosa come controllabile quando non lo è. In programmazione, un errore simile è pensare di poter prevedere ogni possibile input utente o stato del sistema.\n\n### I giudizi determinano le azioni\nI giudizi sono fondamentali perché determinano desideri e impulsi. Noi giudichiamo una cosa buona o cattiva, e questo giudizio ci spinge all'azione. Spesso formuliamo giudizi così rapidamente che non ce ne accorgiamo. Marco Aurelio esercitava la disciplina di fermarsi a pensare alla natura fisica delle cose: un buon pasto è solo il corpo morto di un animale; un'auto di lusso è solo metallo e plastica. Il valore è nei nostri giudizi, non nelle cose stesse.\n\n### Esercizi come palestra mentale\nIl manuale Java propone esercizi per consolidare ogni concetto. Allo stesso modo, Epitteto consigliava esercizi quotidiani: riflessioni mattutine e serali per esaminare i propri giudizi. L'esercizio costante è l'unico modo per sviluppare sia il pensiero algoritmico sia la disciplina stoica.\n\n## Esempio pratico\nIl tuo programma genera un'eccezione. Puoi controllare il codice che hai scritto (trovare il bug, correggerlo). Non puoi controllare che il file su disco sia presente (se l'utente lo cancella, è fuori dal tuo controllo). La saggezza stoica ti aiuta a concentrare le energie su ciò che puoi cambiare — il codice — anziché arrabbiarti per ciò che non puoi controllare — le azioni dell'utente.\n\n## Riepilogo\n- Ciò che controlliamo davvero sono i nostri giudizi, non gli eventi esterni\n- Classificare erroneamente ciò che è controllabile genera infelicità e frustrazione\n- Marco Aurelio esercitava la disciplina di osservare le cose per ciò che sono realmente\n- In programmazione, concentrati su ciò che puoi controllare (il tuo codice) e accetta ciò che non puoi controllare\n- Gli esercizi quotidiani, sia di programmazione sia di riflessione, rafforzano la disciplina mentale",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 97,
+        "riga_fine": 112
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 865,
+          "riga_fine": 885
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Applicare la distinzione stoica tra controllabile e non controllabile al debugging",
+        "Analizzare il ruolo dei giudizi nell'approccio ai problemi di programmazione",
+        "Riconoscere l'importanza degli esercizi quotidiani per la disciplina mentale"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_005",
+      "ordine": 5,
+      "tipo": "lezione",
+      "argomento": "Attenzione e disciplina: l'arte di non distrarsi programmando",
+      "sintesi_breve": "## Introduzione\n\nLa quarta lezione stoica ci parla di come affrontare le avversità e di come ogni evento avverso sia in realtà un'opportunità per esercitare la virtù. Seneca scrive «La provvidenza» per mostrare che le difficoltà temperano il carattere, proprio come l'esercizio fi",
+      "contenuto": "## Introduzione\n\nLa quarta lezione stoica ci parla di come affrontare le avversità e di come ogni evento avverso sia in realtà un'opportunità per esercitare la virtù. Seneca scrive «La provvidenza» per mostrare che le difficoltà temperano il carattere, proprio come l'esercizio fisico tempra il corpo. In programmazione, ogni bug, ogni eccezione imprevista, ogni requisito che cambia è un'«avversità» che ci tempra come sviluppatori. I problemi non sono ostacoli al nostro apprendimento: sono il nostro apprendimento.\n\n## Concetti chiave\n\n### Le avversità come esercizio\nSeneca paragona le avversità alla lotta: un lottatore non si allena con avversari deboli, ma cerca sfide che lo mettano alla prova. Allo stesso modo, la vita ci mette alla prova attraverso le difficoltà. In programmazione, i refactoring complessi, i bug ostici e i requisiti ambigui sono il nostro «allenamento».\n\n### La preparazione mentale\nSeneca raccomanda di prepararsi alle avversità future, di riflettere su ciò che potrebbe andare storto per non farsi trovare impreparati. In ingegneria del software, questo si chiama «gestione del rischio» e «testing». Lo sviluppatore stoico anticipa gli errori possibili, scrive test, considera i casi limite.\n\n### Esercizi come strumento didattico\nIl manuale Java propone esercizi, indispensabili e insostituibili strumenti di apprendimento. Non basta leggere; bisogna fare. Come la filosofia stoica è pratica quotidiana, la programmazione si impara solo scrivendo codice.\n\n## Esempio pratico\nIl tuo team riceve una revisione dei requisiti a metà progetto. Reagire con frustrazione («perché cambiano tutto sempre?») è un giudizio che puoi controllare. Invece, puoi vedere il cambiamento come un esercizio di adattabilità — esattamente come Seneca consiglia di vedere ogni avversità come un'opportunità per dimostrare la propria forza.\n\n## Riepilogo\n- Seneca vede le avversità come esercizi che rafforzano il carattere\n- Prepararsi mentalmente alle difficoltà future è una pratica stoica e ingegneristica\n- La programmazione si impara facendo, non solo leggendo — come la filosofia stoica\n- Ogni bug e ogni cambiamento dei requisiti è un'opportunità di crescita\n- L'attenzione costante è necessaria per non perdere i progressi fatti",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 523,
+        "riga_fine": 526
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 865,
+          "riga_fine": 885
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Applicare la metafora stoica delle avversità come esercizio al debugging",
+        "Analizzare l'importanza della preparazione mentale nel ciclo di sviluppo",
+        "Riconoscere gli esercizi pratici come strumento di apprendimento indispensabile"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_006",
+      "ordine": 6,
+      "tipo": "lezione",
+      "argomento": "Il problema delle emozioni nel debugging e la ricorsione mentale",
+      "sintesi_breve": "## Introduzione\n\nSeneca definiva le emozioni incontrollate come una «temporanea pazzia». In questa lezione integrata, esploriamo come gli stoici affrontano le emozioni dannose (ira, paura, frustrazione) e come questo si collega alla ricorsione — un concetto che richiede una mente",
+      "contenuto": "## Introduzione\n\nSeneca definiva le emozioni incontrollate come una «temporanea pazzia». In questa lezione integrata, esploriamo come gli stoici affrontano le emozioni dannose (ira, paura, frustrazione) e come questo si collega alla ricorsione — un concetto che richiede una mente calma e strutturata per essere compreso. L'ira del programmatore che non riesce a debuggare è paragonabile all'ira che Epitteto descrive nell'uomo adirato con il fratello: entrambe nascono da un giudizio errato.\n\n## Concetti chiave\n\n### Ira e prime impressioni\nCrisippo descriveva le emozioni improvvise come movimenti involontari dell'anima. Seneca aggiunge un'analogia potente: le emozioni sono come precipitare a terra — una volta iniziata la caduta, non possiamo fermarci. La chiave è intercettare il giudizio prima che trasformi un'emozione passeggera in un'azione distruttiva.\n\n### Ricorsione e organizzazione della memoria\nLa ricorsione in Java è un metodo che invoca se stesso. Richiede una pila di attivazioni (call stack) che registra ogni invocazione. Quando si verifica un errore in una funzione ricorsiva, l'analisi dello stack trace è essenziale. Lo stesso vale per le emozioni: dobbiamo \"risalire lo stack\" dei nostri giudizi per trovare la causa prima.\n\n### La risposta di Epitteto all'uomo adirato\nNelle Diatribe, Epitteto risponde a un uomo arrabbiato con il fratello: non è il fratello a farti arrabbiare, ma il tuo giudizio su ciò che il fratello ha fatto. Cambia il giudizio, e l'ira svanisce.\n\n## Esempio pratico\nStai implementando un metodo ricorsivo per calcolare il fattoriale. Ottieni una StackOverflowError. L'emozione immediata è frustrazione. Invece di reagire, fermati e analizza: la condizione di terminazione è corretta? Il passo ricorsivo riduce il problema? Questo approccio analitico — esattamente come Epitteto consiglia di analizzare i propri giudizi — risolve sia l'emozione sia il bug.\n\n## Riepilogo\n- Seneca vede le emozioni incontrollate come una temporanea pazzia\n- La ricorsione richiede una mente calma e un'analisi strutturata dello stack\n- Epitteto insegna che l'ira nasce dai nostri giudizi, non dagli eventi esterni\n- Il debugging è un'occasione per esercitare la disciplina stoica\n- Risalire la catena dei giudizi è analogo a risalire lo stack di chiamata",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 519,
+        "riga_fine": 522
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 19952,
+          "riga_fine": 19956
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere la visione stoica delle emozioni come giudizi affrettati",
+        "Collegare il concetto di stack di chiamata alla gestione delle emozioni",
+        "Applicare l'analisi dei giudizi al debugging di codice ricorsivo"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_001",
+      "ordine": 7,
+      "tipo": "quiz",
+      "argomento": "Verifica: Fondamenti di stoicismo e programmazione",
+      "sintesi_breve": "Quiz di verifica dopo mod_003",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 47,
+        "riga_fine": 96
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_003"
+      ],
+      "domande": [
+        {
+          "testo": "Secondo Epitteto, quali sono le cose che possiamo controllare?",
+          "opzioni": [
+            "Il nostro corpo e la nostra salute",
+            "I nostri giudizi, impulsi e desideri",
+            "La nostra reputazione e il successo",
+            "Tutte le nostre emozioni"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Epitteto sostiene che possiamo controllare solo i giudizi, impulsi e desideri. Corpo, averi e reputazione sono fuori dal nostro controllo."
+        },
+        {
+          "testo": "Cosa intendeva Epitteto paragonando il filosofo a un medico?",
+          "opzioni": [
+            "Il filosofo prescrive farmaci per il corpo",
+            "Il filosofo cura l'anima, intesa come mente e pensieri",
+            "Il filosofo opera chirurgicamente il carattere",
+            "Il filosofo diagnostica malattie fisiche"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Epitteto riprende Socrate: il filosofo è medico dell'anima (mente e pensieri), aiutando a esaminare e curare le convinzioni errate."
+        },
+        {
+          "testo": "Secondo gli stoici, come si chiamano le cose come denaro e reputazione?",
+          "opzioni": [
+            "Beni essenziali",
+            "Indifferenti preferibili",
+            "Virtù cardinali",
+            "Passioni irrazionali"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Zenone chiamava queste cose «indifferenti preferibili»: hanno valore ma non sono intrinsecamente buone come la virtù."
+        },
+        {
+          "testo": "Cosa accomuna l'evoluzione della programmazione e la filosofia stoica?",
+          "opzioni": [
+            "Richiedono entrambe memorizzazione nozionistica",
+            "Richiedono entrambe astrazione e disciplina mentale",
+            "Si basano entrambe su ricette predefinite",
+            "Sono entrambe attività solitarie"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Sia la programmazione (astrazione crescente dai linguaggi macchina a quelli ad alto livello) sia lo stoicismo richiedono astrazione e disciplina mentale."
+        }
+      ]
+    },
+    {
+      "id": "mod_007",
+      "ordine": 8,
+      "tipo": "lezione",
+      "argomento": "Algoritmi: definizione, proprietà e primi esempi",
+      "sintesi_breve": "## Introduzione\n\nDopo aver esplorato i fondamenti filosofici, entriamo nel cuore tecnico del corso con il primo concetto fondamentale dell'informatica: l'algoritmo. Un algoritmo non è solo una ricetta per computer — è un modo di pensare, una disciplina che struttura il ragionamen",
+      "contenuto": "## Introduzione\n\nDopo aver esplorato i fondamenti filosofici, entriamo nel cuore tecnico del corso con il primo concetto fondamentale dell'informatica: l'algoritmo. Un algoritmo non è solo una ricetta per computer — è un modo di pensare, una disciplina che struttura il ragionamento. Come la filosofia stoica insegna a distinguere ciò che conta, l'algoritmo insegna a scomporre un problema in passi elementari, eseguibili e non ambigui.\n\n## Concetti chiave\n\n### Definizione di algoritmo\nUn algoritmo è un insieme ordinato di passi *eseguibili* e *non ambigui*, che definiscono un processo che *termina*. Ogni requisito è fondamentale. L'eseguibilità significa che ogni passo può effettivamente essere compiuto. La non ambiguità garantisce che a ogni passo l'azione sia univocamente determinata. La terminazione assicura che il processo arrivi a una soluzione in un numero finito di passi.\n\n### L'algoritmo di Euclide\nIl più antico algoritmo tuttora in uso: per calcolare il massimo comun divisore (MCD) tra due interi positivi x e y, si calcola il resto della divisione di x per y; se il resto è diverso da zero, si ripete usando y come nuovo x e il resto come nuovo y; altrimenti, il MCD è y. La bellezza di questo algoritmo è che l'esecutore può applicarlo senza sapere cosa sia il MCD — l'intelligenza è tutta codificata nell'algoritmo.\n\n### Algoritmo vs programma\nUn algoritmo è un oggetto astratto, concettuale; un programma è l'espressione concreta di un algoritmo in un linguaggio comprensibile all'esecutore. Lo stesso algoritmo può essere espresso in linguaggi diversi.\n\n## Esempio pratico\nDevi calcolare se un numero è pari o dispari. L'algoritmo: leggi il numero n, calcola n MOD 2 (resto della divisione per 2), se il resto è 0 stampa \"pari\", altrimenti stampa \"dispari\". Questo semplice algoritmo ha tutti i requisiti: passi eseguibili (leggi, calcola, confronta, stampa), non ambigui (ogni azione è determinata), e termina sempre (una sola iterazione).\n\n## Riepilogo\n- L'algoritmo è il concetto centrale dell'informatica, molto più antico dei computer\n- Tre requisiti: passi eseguibili, non ambigui, processo terminante\n- L'algoritmo di Euclide per il MCD è un classico esempio millenario\n- L'intelligenza risiede nell'algoritmo, non nell'esecutore\n- Un algoritmo è astratto; un programma è la sua implementazione concreta",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 310,
+        "riga_fine": 348
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Definire il concetto di algoritmo con le sue tre proprietà fondamentali",
+        "Spiegare l'algoritmo di Euclide per il calcolo del MCD",
+        "Distinguere tra algoritmo astratto e programma concreto"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_008",
+      "ordine": 9,
+      "tipo": "lezione",
+      "argomento": "Programmi e linguaggi di programmazione: sintassi e semantica",
+      "sintesi_breve": "## Introduzione\n\nUn programma è l'espressione concreta di un algoritmo in un linguaggio che l'esecutore (il computer) è in grado di comprendere senza bisogno di ulteriori spiegazioni. Come abbiamo visto, lo stesso algoritmo può essere espresso in linguaggi diversi. In questa lezi",
+      "contenuto": "## Introduzione\n\nUn programma è l'espressione concreta di un algoritmo in un linguaggio che l'esecutore (il computer) è in grado di comprendere senza bisogno di ulteriori spiegazioni. Come abbiamo visto, lo stesso algoritmo può essere espresso in linguaggi diversi. In questa lezione esploriamo cosa sono i linguaggi di programmazione, come si definiscono e quali sono i loro elementi fondamentali: sintassi e semantica.\n\n## Concetti chiave\n\n### Sintassi e semantica\nOgni istruzione primitiva di un linguaggio di programmazione ha una *sintassi* (la forma con cui viene espressa) e una *semantica* (il significato dell'istruzione). L'esecutore, riconoscendo un'istruzione in base alla sintassi, attua l'azione corrispondente alla semantica. È come una lingua naturale: la frase \"Il gatto mangia il pesce\" ha una sintassi (soggetto-verbo-oggetto) e una semantica (l'azione di mangiare compiuta dal gatto sul pesce).\n\n### Istruzioni primitive e regole di combinazione\nPer rappresentare un algoritmo servono due elementi: le istruzioni primitive (i \"mattoni\" di base che l'esecutore capisce direttamente) e le regole per combinarle. L'insieme di questi due elementi costituisce la base del linguaggio di programmazione.\n\n### Informazione e misura in bit\nL'informazione su cui opera un computer si misura in bit. Un bit rappresenta una scelta binaria (0/1, vero/falso). Con n bit si possono rappresentare 2^n valori differenti. Una sequenza di 8 bit forma un byte, che può assumere 256 valori. I multipli sono Kilo (2^10), Mega (2^20), Giga (2^30) e Tera (2^40) byte.\n\n## Esempio pratico\nConsidera il comando che somma due numeri in Java: `int somma = a + b;`. La sintassi è: parola chiave `int` (tipo del risultato), identificatore `somma`, operatore `=`, espressione `a + b`, punto e virgola `;`. La semantica è: calcola la somma dei valori contenuti nelle variabili `a` e `b` e assegna il risultato alla variabile `somma`.\n\n## Riepilogo\n- Un programma è l'espressione concreta di un algoritmo in un linguaggio per esecutore\n- Ogni istruzione ha sintassi (forma) e semantica (significato)\n- Le istruzioni primitive e le regole di combinazione formano il linguaggio\n- L'informazione si misura in bit (2^n valori con n bit) e byte (8 bit)\n- I multipli del byte: Kilo (K), Mega (M), Giga (G), Tera (T)",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 349,
+        "riga_fine": 360
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Distinguere tra sintassi e semantica di un'istruzione",
+        "Descrivere la misurazione dell'informazione in bit e byte",
+        "Spiegare la relazione tra algoritmo astratto e programma concreto"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_009",
+      "ordine": 10,
+      "tipo": "lezione",
+      "argomento": "Computer, hardware e software: le due anime della macchina",
+      "sintesi_breve": "## Introduzione\n\nChe cos'è un computer? La risposta sembra ovvia, ma la definizione chiave è che il computer è una macchina elettronica *programmabile*. È questa programmabilità che lo distingue da una calcolatrice o da qualsiasi altro dispositivo. In questa lezione esploriamo l'",
+      "contenuto": "## Introduzione\n\nChe cos'è un computer? La risposta sembra ovvia, ma la definizione chiave è che il computer è una macchina elettronica *programmabile*. È questa programmabilità che lo distingue da una calcolatrice o da qualsiasi altro dispositivo. In questa lezione esploriamo l'architettura fondamentale di un computer, comprendendo l'hardware (la parte fisica) e il software (i programmi), due \"anime\" che collaborano.\n\n## Concetti chiave\n\n### Programmabilità\nUn computer riceve in ingresso un programma e dei dati, e produce risultati secondo il procedimento descritto dal programma. La potenza del computer deriva dalla sua capacità di eseguire istruzioni elementari in modo estremamente veloce e accurato. Combinando azioni semplici in lunghe sequenze, si eseguono compiti complessi.\n\n### Hardware e software\nL'hardware è l'insieme dei circuiti e dispositivi fisici. Il software è l'insieme di tutti i programmi. La programmazione a oggetti è una metodologia che modella la computazione come interazioni tra componenti, proprio come avviene in un sistema complesso (es. browser che interagisce con server).\n\n### Elementi hardware fondamentali\nIl processore (CPU) esegue l'elaborazione; la memoria centrale (RAM) contiene i programmi in esecuzione ed è ad accesso diretto ma volatile; la memoria di massa (hard-disk o flash) conserva i dati permanentemente ma è più lenta; le periferiche permettono la comunicazione con l'esterno; il bus collega tutti i componenti.\n\n## Esempio pratico\nUn browser web non esegue un singolo programma in isolamento. La visualizzazione di una pagina è il risultato dell'interazione tra il browser, il server remoto, e molti altri agenti software. Ogni componente fornisce servizi e comunica con gli altri — esattamente il modello della programmazione a oggetti.\n\n## Riepilogo\n- Un computer è una macchina elettronica programmabile\n- La programmabilità è la caratteristica distintiva rispetto ad altri dispositivi\n- Hardware = parte fisica; Software = programmi\n- Componenti hardware: CPU, RAM, memoria di massa, periferiche, bus\n- I sistemi moderni si basano su interazioni tra componenti software",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 361,
+        "riga_fine": 400
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Definire il computer come macchina programmabile",
+        "Distinguere tra hardware e software",
+        "Descrivere i componenti hardware fondamentali"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_010",
+      "ordine": 11,
+      "tipo": "lezione",
+      "argomento": "La macchina di von Neumann e il linguaggio macchina",
+      "sintesi_breve": "## Introduzione\n\nL'architettura dei computer moderni si basa su un modello proposto da John von Neumann negli anni Quaranta. In questo modello, il programma è memorizzato nella stessa memoria dei dati, permettendo al computer di essere riconfigurato semplicemente caricando un pro",
+      "contenuto": "## Introduzione\n\nL'architettura dei computer moderni si basa su un modello proposto da John von Neumann negli anni Quaranta. In questo modello, il programma è memorizzato nella stessa memoria dei dati, permettendo al computer di essere riconfigurato semplicemente caricando un programma diverso. È questa architettura che rende possibile il concetto stesso di \"computer programmabile\".\n\n## Concetti chiave\n\n### L'architettura di von Neumann\nIl modello prevede: una memoria centrale che contiene sia dati sia programma; un'unità aritmetico-logica (ALU) che esegue le operazioni; un'unità di controllo che decodifica e coordina le istruzioni; e dispositivi di input/output. Le istruzioni e i dati sono rappresentati in forma binaria e risiedono nella stessa memoria.\n\n### Il linguaggio macchina\nOgni processore ha un proprio linguaggio macchina, formato da codici binari (o mnemonici come LOAD, STORE, ADD). Il processore esegue ciclicamente: preleva un'istruzione dalla memoria (fetch), la decodifica (decode), la esegue (execute). Esempio: `LOAD R1, 101` carica nel registro R1 il valore contenuto nella cella di memoria 101.\n\n### Traduzione dell'algoritmo di Euclide\nL'algoritmo di Euclide in linguaggio macchina richiede istruzioni come LOAD, STORE, DIV, MUL, SUB, JUMP, JZERO. Ogni passo elementare dell'algoritmo diventa una o più istruzioni macchina. Il codice risultante è lungo e poco leggibile, ma è ciò che il processore esegue direttamente.\n\n## Esempio pratico\nPer calcolare 5 + 3 in linguaggio macchina: LOAD R1, 101 (carica 5 dal registro 101), LOAD R2, 102 (carica 3 dal registro 102), ADD R1, R2 (somma R1+R2, risultato in R1), STORE R1, 103 (salva il risultato nella cella 103). Quattro istruzioni per una semplice somma — ecco perché servono linguaggi ad alto livello.\n\n## Riepilogo\n- L'architettura di von Neumann memorizza programma e dati nella stessa memoria\n- Il ciclo di esecuzione: fetch → decode → execute\n- Il linguaggio macchina usa codici mnemonici come LOAD, STORE, ADD\n- Ogni processore ha il proprio linguaggio macchina\n- La programmazione in linguaggio macchina è complessa e poco portabile",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 530,
+        "riga_fine": 570
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare l'architettura di von Neumann",
+        "Descrivere il linguaggio macchina e i suoi codici mnemonici",
+        "Tradurre un semplice algoritmo in istruzioni macchina"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_011",
+      "ordine": 12,
+      "tipo": "lezione",
+      "argomento": "Dal linguaggio macchina ai linguaggi ad alto livello: il compilatore",
+      "sintesi_breve": "## Introduzione\n\nLa programmazione in linguaggio macchina presenta notevoli svantaggi: è necessario conoscere i dettagli architetturali del processore, i programmi non sono portabili, il codice è illeggibile e difficile da modificare. Per superare questi limiti sono nati i lingua",
+      "contenuto": "## Introduzione\n\nLa programmazione in linguaggio macchina presenta notevoli svantaggi: è necessario conoscere i dettagli architetturali del processore, i programmi non sono portabili, il codice è illeggibile e difficile da modificare. Per superare questi limiti sono nati i linguaggi ad alto livello, pensati per macchine astratte. Il traduttore che rende possibile tutto ciò è il *compilatore*.\n\n## Concetti chiave\n\n### Limiti del linguaggio macchina\nI programmatori devono conoscere le specifiche del processore. Il codice è formato da sequenze poco leggibili di codici. I programmi non possono essere trasferiti su macchine diverse senza essere completamente riscritti. Perfino l'autore del codice fatica a comprenderne la struttura.\n\n### Linguaggi ad alto livello\nI linguaggi come Pascal, C, Java sono progettati per essere compresi da \"macchine astratte\" che effettuano operazioni ad alto livello, vicine al modo di pensare umano. La programmazione viene così affrancata dalla conoscenza dei dettagli architetturali.\n\n### Il compilatore\nUn compilatore è un programma che traduce un programma scritto in un linguaggio ad alto livello nel linguaggio macchina del processore target. Ad esempio, un compilatore Pascal per una macchina X riceve in ingresso un programma P in Pascal e produce un programma P' in linguaggio macchina X equivalente.\n\n## Esempio pratico\nSe scrivi in Java `int somma = a + b;`, il compilatore Java traduce questa singola istruzione in una sequenza di 4-5 istruzioni macchina (LOAD, LOAD, ADD, STORE). Il programmatore non deve preoccuparsi di quali registri usare o di dove sono memorizzate le variabili — il compilatore gestisce tutto automaticamente.\n\n## Riepilogo\n- Il linguaggio macchina ha svantaggi: dipendenza dall'hardware, scarsa leggibilità, non portabilità\n- I linguaggi ad alto livello usano macchine astratte con operazioni più vicine al pensiero umano\n- Il compilatore traduce automaticamente da linguaggio ad alto livello a linguaggio macchina\n- Un programma compilato su una macchina X non funziona su una macchina Y (serve un nuovo compilatore)\n- I linguaggi ad alto livello permettono di concentrarsi sulla logica del problema, non sui dettagli della macchina",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 571,
+        "riga_fine": 600
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Descrivere i limiti del linguaggio macchina",
+        "Spiegare il concetto di linguaggio ad alto livello",
+        "Comprendere il ruolo del compilatore nella traduzione del codice"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_012",
+      "ordine": 13,
+      "tipo": "lezione",
+      "argomento": "Compilatori, interpreti e ciclo di vita di un programma",
+      "sintesi_breve": "## Introduzione\n\nAbbiamo visto che il compilatore traduce un programma ad alto livello in linguaggio macchina. Esiste però un'alternativa: l'interprete. In questa lezione esploriamo le differenze tra compilatori e interpreti, e l'intero ciclo di vita di un programma, dalla stesur",
+      "contenuto": "## Introduzione\n\nAbbiamo visto che il compilatore traduce un programma ad alto livello in linguaggio macchina. Esiste però un'alternativa: l'interprete. In questa lezione esploriamo le differenze tra compilatori e interpreti, e l'intero ciclo di vita di un programma, dalla stesura all'esecuzione.\n\n## Concetti chiave\n\n### Compilatore vs Interprete\nIl compilatore traduce l'intero programma prima dell'esecuzione, generando un file eseguibile. L'interprete, invece, traduce ed esegue ogni istruzione al volo, simulando direttamente una macchina astratta. Per programmi eseguiti più volte, il compilatore è più efficiente; per lo sviluppo rapido e il debugging interattivo, l'interprete è più pratico.\n\n### Il ciclo di vita del programma\n1. **Editor**: scrivi il programma sorgente in un file\n2. **Compilatore**: traduce il sorgente in codice oggetto\n3. **Linker**: collega i vari moduli oggetto e le librerie, producendo il codice eseguibile\n4. **Loader**: carica l'eseguibile in memoria per l'esecuzione\n\n### Errori nel ciclo di vita\nDurante la compilazione si possono verificare errori sintattici o di tipo. Durante il linking, errori di collegamento (es. funzione mancante). Durante l'esecuzione, errori a runtime (es. divisione per zero). Più errori si intercettano presto, meglio è.\n\n## Esempio pratico\nScrivi `CiaoMondo.java` con un editor. Lo compili con `javac CiaoMondo.java` (ottieni `CiaoMondo.class`). Il linker Java è implicito: la JVM carica automaticamente le classi necessarie. Esegui con `java CiaoMondo` e il loader carica il bytecode nella JVM, che lo interpreta o lo compila ulteriormente (JIT).\n\n## Riepilogo\n- Compilatore: traduce tutto il programma prima dell'esecuzione\n- Interprete: traduce ed esegue ogni istruzione al volo\n- Il ciclo di vita: editor → compilatore → linker → loader → esecuzione\n- Errori possibili: compilazione, linking, runtime\n- Java usa un approccio ibrido: compila in bytecode, poi la JVM interpreta o compila JIT",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 600,
+        "riga_fine": 628
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Distinguere tra compilatore e interprete",
+        "Descrivere le fasi del ciclo di vita di un programma",
+        "Identificare i tipi di errore in ogni fase"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_013",
+      "ordine": 14,
+      "tipo": "lezione",
+      "argomento": "Programmazione strutturata: sequenza, selezione e iterazione",
+      "sintesi_breve": "## Introduzione\n\nLa programmazione strutturata è un approccio che organizza il codice utilizzando tre strutture fondamentali: sequenza, selezione e iterazione. Ogni programma, per quanto complesso, può essere espresso combinando queste tre strutture. È un'idea potente che richiam",
+      "contenuto": "## Introduzione\n\nLa programmazione strutturata è un approccio che organizza il codice utilizzando tre strutture fondamentali: sequenza, selezione e iterazione. Ogni programma, per quanto complesso, può essere espresso combinando queste tre strutture. È un'idea potente che richiama la semplicità stoica: con pochi elementi fondamentali si costruisce qualsiasi cosa.\n\n## Concetti chiave\n\n### La struttura di sequenza\nLa sequenza è l'ordinamento predefinito di esecuzione: le istruzioni vengono eseguite nell'ordine in cui sono scritte. È la struttura più semplice e naturale: leggi a, leggi b, calcola somma = a + b, scrivi somma.\n\n### La struttura di selezione\nLa selezione permette di scegliere tra blocchi di codice in base a una condizione. Il costrutto è: `SE condizione ALLORA blocco1 ALTRIMENTI blocco2 FINESE`. Se la condizione è vera, si esegue blocco1, altrimenti blocco2.\n\n### La struttura di iterazione\nL'iterazione (o ciclo) permette di ripetere un blocco di istruzioni finché una condizione rimane vera. Lo schema `ESEGUI blocco QUANDO condizione` esegue il blocco almeno una volta (condizione valutata dopo). Lo schema `QUANDO condizione ESEGUI blocco RIPETI` valuta la condizione all'inizio, quindi il blocco può essere eseguito zero volte.\n\n## Esempio pratico\nPer calcolare la somma dei primi 100 numeri: inizia con somma = 0 e contatore = 1. Finché contatore ≤ 100, aggiungi contatore alla somma e incrementa contatore di 1. Alla fine, somma conterrà 5050. Nota che lo stesso risultato si ottiene con la formula di Gauss n(n+1)/2, ma l'approccio iterativo mostra come il computer esegue il calcolo passo per passo.\n\n## Riepilogo\n- La programmazione strutturata usa tre strutture: sequenza, selezione, iterazione\n- La sequenza esegue le istruzioni in ordine di scrittura\n- La selezione (SE-ALLORA-ALTRIMENTI) sceglie tra blocchi in base a una condizione\n- L'iterazione ripete un blocco finché la condizione è vera\n- Con queste tre strutture si esprime qualunque algoritmo",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 680,
+        "riga_fine": 710
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare le tre strutture della programmazione strutturata",
+        "Distinguere tra selezione e iterazione",
+        "Applicare le strutture a semplici algoritmi"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_014",
+      "ordine": 15,
+      "tipo": "lezione",
+      "argomento": "Variabili, tipi e assegnamenti in Java",
+      "sintesi_breve": "## Introduzione\n\nUno dei concetti fondamentali della programmazione è la *variabile*: un contenitore con un nome che memorizza un valore. In Java, ogni variabile ha un *tipo* che specifica quali valori può assumere e quali operazioni sono consentite. Il tipo fornisce un'astrazion",
+      "contenuto": "## Introduzione\n\nUno dei concetti fondamentali della programmazione è la *variabile*: un contenitore con un nome che memorizza un valore. In Java, ogni variabile ha un *tipo* che specifica quali valori può assumere e quali operazioni sono consentite. Il tipo fornisce un'astrazione rispetto alla rappresentazione effettiva dei dati in memoria.\n\n## Concetti chiave\n\n### Variabili come astrazione della memoria\nUna variabile è un'astrazione del concetto di locazione di memoria. L'assegnamento di un valore a una variabile è un'astrazione dell'operazione STORE in linguaggio macchina. Invece di preoccuparci di indirizzi di memoria (101, 102...), usiamo nomi significativi come `somma`, `contatore`, `discriminante`.\n\n### Assegnamento: non è uguaglianza\nL'istruzione `x ← y + z` significa: prendi i valori di `y` e `z`, calcola la somma, e inserisci il risultato in `x` sovrascrivendo il valore precedente. L'assegnamento `k ← k + 1` incrementa `k` di 1. In Java si usa `=` per l'assegnamento, ma non va confuso con l'uguaglianza matematica.\n\n### Tipi e dichiarazione\nOgni variabile ha un tipo (es. `int` per interi, `double` per reali). Java richiede la dichiarazione esplicita del tipo prima dell'uso. Questo accresce la leggibilità e permette al compilatore di rilevare errori di tipo precocemente.\n\n## Esempio pratico\n```java\nint somma;        // dichiarazione: somma è di tipo intero\nsomma = 0;        // assegnamento\nint cont = 1;     // dichiarazione con inizializzazione\nsomma = somma + cont;  // legge somma e cont, somma, riassegna a somma\ncont = cont + 1;  // incrementa cont\n```\nNota: `int somma = 0;` equivale a dichiarare e assegnare in un unico passo.\n\n## Riepilogo\n- Una variabile è un contenitore con nome per memorizzare un valore\n- Il tipo specifica l'insieme di valori e le operazioni ammesse\n- L'assegnamento non è uguaglianza: calcola il valore a destra e lo assegna a sinistra\n- Java richiede la dichiarazione del tipo prima dell'uso\n- I nomi delle variabili dovrebbero essere significativi per migliorare la leggibilità",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 788,
+        "riga_fine": 849
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare il concetto di variabile come astrazione della memoria",
+        "Distinguere tra assegnamento e uguaglianza",
+        "Dichiarare variabili con il tipo appropriato in Java"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_015",
+      "ordine": 16,
+      "tipo": "lezione",
+      "argomento": "Variabili e assegnamenti: esempi ed esercizi pratici",
+      "sintesi_breve": "## Introduzione\n\nMettiamo in pratica quanto appreso sulle variabili con due algoritmi classici: la soluzione delle equazioni di secondo grado e il calcolo della somma di una sequenza di numeri. Questi esempi mostrano come combinare variabili, assegnamenti, selezione e iterazione ",
+      "contenuto": "## Introduzione\n\nMettiamo in pratica quanto appreso sulle variabili con due algoritmi classici: la soluzione delle equazioni di secondo grado e il calcolo della somma di una sequenza di numeri. Questi esempi mostrano come combinare variabili, assegnamenti, selezione e iterazione in programmi completi.\n\n## Concetti chiave\n\n### Equazione di secondo grado\nL'algoritmo legge i coefficienti a, b, c, calcola il discriminante (b² - 4ac), poi in base al segno determina le soluzioni. Il discriminante negativo nessuna soluzione reale; nullo due soluzioni coincidenti; positivo due soluzioni distinte. Si usano variabili `a, b, c, discriminante, x, x1, x2` di tipo reale e operatori di confronto `<` e `==`.\n\n### Somma dei primi 100 numeri\nL'algoritmo usa due variabili: `somma` (inizializzata a 0) e `cont` (inizializzato a 1). Con un ciclo, aggiunge `cont` a `somma` e incrementa `cont` di 1, fino a quando `cont` supera 100. Alla fine, `somma` conterrà 5050.\n\n## Esempio pratico\nPer calcolare la media di una sequenza di numeri: usa una variabile `somma` per accumulare i valori e un contatore `n` per tener traccia di quanti numeri sono stati letti. Alla fine, media = somma / n. L'uso di variabili con nomi significativi (`somma`, `contatore`) rende l'algoritmo auto-documentante.\n\n## Riepilogo\n- Le variabili permettono di memorizzare e manipolare dati in modo astratto\n- L'algoritmo dell'equazione di secondo grado combina selezione e calcolo\n- I cicli iterativi richiedono variabili contatore e accumulatori\n- Nomi significativi migliorano la leggibilità del codice\n- La dichiarazione esplicita dei tipi aiuta il compilatore a prevenire errori",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 829,
+        "riga_fine": 850
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Implementare algoritmi con variabili numeriche",
+        "Applicare selezione e iterazione con variabili",
+        "Scegliere nomi significativi per le variabili"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_016",
+      "ordine": 17,
+      "tipo": "lezione",
+      "argomento": "Strutture di controllo: selezione e iterazione in azione",
+      "sintesi_breve": "## Introduzione\n\nOra che conosciamo le strutture di controllo fondamentali, vediamo come applicarle ad algoritmi classici. Il calcolo della somma di una sequenza di numeri e la verifica di numeri pari/dispari mostrano come combinare selezione e iterazione in modo efficace. Un asp",
+      "contenuto": "## Introduzione\n\nOra che conosciamo le strutture di controllo fondamentali, vediamo come applicarle ad algoritmi classici. Il calcolo della somma di una sequenza di numeri e la verifica di numeri pari/dispari mostrano come combinare selezione e iterazione in modo efficace. Un aspetto cruciale è la gestione del termine della sequenza: si può usare un contatore o un valore sentinella (come lo zero).\n\n## Concetti chiave\n\n### Sequenza con contatore\nL'utente comunica prima quanti numeri intende inserire. L'algoritmo usa un contatore che parte da 0 e viene incrementato a ogni iterazione, fermandosi quando raggiunge il numero indicato. Svantaggio: l'utente deve conoscere in anticipo la quantità.\n\n### Sequenza con valore sentinella\nSi fissa un valore speciale (ad esempio 0) per indicare la fine della sequenza. L'algoritmo legge numeri finché non incontra il valore sentinella. Vantaggio: non serve conoscere la quantità a priori. Attenzione: il valore sentinella non deve essere confuso con un dato valido.\n\n### Pari e dispari\nL'operatore MOD (in Java `%`) calcola il resto della divisione intera. Se n % 2 == 0, il numero è pari, altrimenti dispari. Si può memorizzare il resto in una variabile o valutarlo direttamente nella condizione.\n\n## Esempio pratico\n```java\n// Somma di una sequenza che termina con 0\nint somma = 0;\nint numero;\nnumero = input.nextInt();  // primo numero\nwhile (numero != 0) {\n    somma = somma + numero;\n    numero = input.nextInt();  // prossimo numero\n}\nSystem.out.println(somma);\n```\nL'algoritmo legge un numero prima del ciclo, poi all'interno del ciclo lo accumula e ne legge un altro. Quando arriva 0, il ciclo termina senza accumulare lo 0.\n\n## Riepilogo\n- Due metodi per terminare una sequenza: contatore o valore sentinella\n- Il valore sentinella (es. 0) non deve alterare il risultato\n- L'operatore MOD calcola il resto: n % 2 == 0 significa pari\n- Leggere un numero prima del ciclo evita di elaborare il sentinella\n- La combinazione di selezione e iterazione risolve problemi complessi con poche righe",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 887,
+        "riga_fine": 960
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Implementare cicli con contatore e con valore sentinella",
+        "Usare l'operatore MOD per determinare parità",
+        "Gestire correttamente la lettura di sequenze di numeri"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_017",
+      "ordine": 18,
+      "tipo": "lezione",
+      "argomento": "Il primo programma Java: classi, metodo main e output",
+      "sintesi_breve": "## Introduzione\n\nÈ tradizione che il primo programma in qualsiasi linguaggio sia \"Hello, World!\" che visualizza un messaggio. In Java, questo semplice programma introduce concetti fondamentali: le classi, il metodo `main`, e l'invocazione di metodi su oggetti. Anche se alcuni det",
+      "contenuto": "## Introduzione\n\nÈ tradizione che il primo programma in qualsiasi linguaggio sia \"Hello, World!\" che visualizza un messaggio. In Java, questo semplice programma introduce concetti fondamentali: le classi, il metodo `main`, e l'invocazione di metodi su oggetti. Anche se alcuni dettagli saranno chiari solo in seguito, questo esempio ci permette di iniziare a sperimentare con il compilatore e la Java Virtual Machine.\n\n## Concetti chiave\n\n### La classe e il file\nUn programma Java è costituito da classi. La parola `class` è seguita dal nome della classe (iniziale maiuscola). Il file deve chiamarsi come la classe con estensione `.java`. La compilazione produce un file `.class` con bytecode per la JVM.\n\n### Il metodo main\nL'esecuzione di un programma Java inizia sempre dal metodo `main` con questa intestazione: `public static void main(String[] args)`. Le parole `public static void` saranno spiegate in seguito. Per ora, è importante sapere che questo metodo è il punto di ingresso.\n\n### Invocazione di metodi su oggetti\nNella programmazione a oggetti, la computazione avviene tramite interazioni tra oggetti. Con `System.out.println(\"testo\")`, richiediamo all'oggetto `System.out` (lo schermo) di eseguire il metodo `println`, che visualizza la stringa e va a capo. Il metodo `print` visualizza senza andare a capo.\n\n## Esempio pratico\n```java\nclass BuonInizio {\n    public static void main(String[] args) {\n        System.out.println(\"Ti auguro una buona giornata!\");\n    }\n}\n```\nSalva in `BuonInizio.java`, compila con `javac BuonInizio.java`, esegui con `java BuonInizio`. Vedrai il messaggio stampato a schermo.\n\n## Riepilogo\n- Un programma Java è composto da classi (parola `class`)\n- Il file deve chiamarsi `NomeClasse.java`\n- L'esecuzione inizia dal metodo `main`\n- `System.out.println()` stampa una riga sullo schermo\n- La computazione a oggetti avviene tramite messaggi tra oggetti",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1214,
+        "riga_fine": 1250
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Scrivere il primo programma Java",
+        "Compilare ed eseguire un programma Java",
+        "Usare System.out.println per l'output"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_018",
+      "ordine": 19,
+      "tipo": "lezione",
+      "argomento": "Grammatiche e sintassi: BNF e carte sintattiche",
+      "sintesi_breve": "## Introduzione\n\nPer definire la sintassi di un linguaggio di programmazione serve una grammatica: un insieme di regole per costruire le frasi (istruzioni) del linguaggio. La notazione BNF (Backus-Naur Form) e le carte sintattiche sono due modi equivalenti per esprimere queste re",
+      "contenuto": "## Introduzione\n\nPer definire la sintassi di un linguaggio di programmazione serve una grammatica: un insieme di regole per costruire le frasi (istruzioni) del linguaggio. La notazione BNF (Backus-Naur Form) e le carte sintattiche sono due modi equivalenti per esprimere queste regole. Un compilatore conosce la grammatica del linguaggio e verifica la correttezza sintattica dei programmi applicando queste regole.\n\n## Concetti chiave\n\n### Elementi di una grammatica\nUna grammatica G è definita da: un insieme T di simboli terminali (le parole del linguaggio), un insieme N di simboli non terminali (metasimboli usati nella costruzione), un insieme P di regole di produzione, e un simbolo iniziale S. Il linguaggio generato è l'insieme di tutte le sequenze di terminali ottenibili applicando le regole da S.\n\n### Regole di produzione in BNF\nLa forma BNF scrive le regole come `simbolo ::= alternativa1 | alternativa2`. Ad esempio: `frase ::= soggetto verbo complemento` significa che una frase può essere composta da un soggetto, un verbo e un complemento. Le alternative sono separate da `|`.\n\n### Il compilatore come verificatore\nUn compilatore parte dal codice sorgente (sequenza di terminali) e cerca di risalire al simbolo iniziale applicando le regole al contrario. Se ci riesce, il programma è sintatticamente corretto. Le carte sintattiche rappresentano visivamente le regole: rettangoli per non terminali (da espandere), ovali per terminali.\n\n## Esempio pratico\nConsidera la grammatica: `S ::= 'if' '(' cond ')' stat`. Questa regola dice che un'istruzione condizionale inizia con `if`, seguita da `(`, una condizione, `)`, e un'istruzione. Il compilatore Java usa centinaia di regole simili per verificare che `if (x > 0) System.out.println(\"ok\");` sia sintatticamente valida.\n\n## Riepilogo\n- Una grammatica definisce la sintassi di un linguaggio\n- Quattro elementi: terminali, non terminali, regole di produzione, simbolo iniziale\n- BNF usa `::=` e `|` per esprimere le regole\n- Le carte sintattiche sono una rappresentazione visiva alternativa\n- Il compilatore verifica la sintassi risalendo le regole di produzione",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1077,
+        "riga_fine": 1145
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare i quattro elementi di una grammatica",
+        "Leggere e scrivere regole in notazione BNF",
+        "Comprendere il ruolo del compilatore come verificatore sintattico"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_002",
+      "ordine": 20,
+      "tipo": "quiz",
+      "argomento": "Verifica: algoritmi, variabili e strutture di controllo",
+      "sintesi_breve": "Quiz di verifica dopo mod_015",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 829,
+        "riga_fine": 850
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_015"
+      ],
+      "domande": [
+        {
+          "testo": "Quali sono le tre proprietà fondamentali di un algoritmo?",
+          "opzioni": [
+            "Velocità, efficienza, precisione",
+            "Passi eseguibili, non ambigui, processo che termina",
+            "Linguaggio ad alto livello, compilatore, debugger",
+            "Variabili, cicli, funzioni"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Un algoritmo è un insieme ordinato di passi eseguibili e non ambigui che definiscono un processo che termina."
+        },
+        {
+          "testo": "Cosa distingue un computer da una calcolatrice?",
+          "opzioni": [
+            "La velocità di calcolo",
+            "La programmabilità",
+            "Il prezzo",
+            "La memoria"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "La caratteristica fondamentale del computer è la programmabilità: può eseguire programmi diversi senza modifiche hardware."
+        },
+        {
+          "testo": "Cosa fa il compilatore?",
+          "opzioni": [
+            "Esegue il programma riga per riga",
+            "Traduce il codice ad alto livello in linguaggio macchina",
+            "Scrive il programma al posto del programmatore",
+            "Gestisce la memoria durante l'esecuzione"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "Il compilatore traduce automaticamente un programma scritto in un linguaggio ad alto livello nel linguaggio macchina."
+        },
+        {
+          "testo": "In Java, l'assegnamento k = k + 1 significa:",
+          "opzioni": [
+            "k è uguale a k+1 (equazione)",
+            "k viene incrementato di 1",
+            "k viene confrontato con k+1",
+            "k viene azzerato"
+          ],
+          "indice_corretto": 1,
+          "spiegazione": "L'assegnamento prima calcola il valore a destra (k+1) e poi lo assegna a k, sovrascrivendo il precedente."
+        }
+      ]
+    },
+    {
+      "id": "mod_019",
+      "ordine": 21,
+      "tipo": "lezione",
+      "argomento": "La programmazione a oggetti: stato, comportamento e messaggi",
+      "sintesi_breve": "## Introduzione\n\nLa programmazione a oggetti (OOP) è un paradigma che permette di rappresentare direttamente gli elementi del problema che vogliamo risolvere. A ogni agente del mondo reale corrisponde un oggetto software. Il programmatore risolve il problema simulando nel softwar",
+      "contenuto": "## Introduzione\n\nLa programmazione a oggetti (OOP) è un paradigma che permette di rappresentare direttamente gli elementi del problema che vogliamo risolvere. A ogni agente del mondo reale corrisponde un oggetto software. Il programmatore risolve il problema simulando nel software le interazioni che avverrebbero nel mondo reale.\n\n## Concetti chiave\n\n### Astrazione a oggetti\nNei linguaggi imperativi tradizionali, il programmatore deve tradurre gli elementi del problema in strutture del calcolatore (array, puntatori). Nei linguaggi a oggetti, invece, ogni agente reale può essere rappresentato direttamente come un oggetto. La corrispondenza tra dominio del problema e dominio della soluzione è naturale e chiara.\n\n### Stato e comportamento\nLo stato di un oggetto è l'insieme delle proprietà che lo caratterizzano in un dato istante (es. per un'automobile: colore, velocità, livello carburante). Il comportamento è l'insieme delle azioni che l'oggetto può compiere (frenare, accelerare). L'interfaccia (protocollo) è l'insieme dei messaggi che l'oggetto è in grado di interpretare.\n\n### Messaggi e responsabilità\nPer compiere un'azione, si invia un messaggio a un oggetto. Il messaggio specifica l'operazione e gli argomenti necessari. L'oggetto ricevente si assume la responsabilità di eseguire l'azione rispettando il contratto. L'insieme dei messaggi che un oggetto riconosce è la sua interfaccia.\n\n## Esempio pratico\nOrdinare una torta: invii il messaggio `ordinaTorta(torta, data)` alla pasticceria `daPinoPasticcino`. Non ti interessa come viene preparata la torta, solo che il contratto sia rispettato. Allo stesso modo, in Java invochi `System.out.println(\"Ciao\")` senza preoccuparti di come lo schermo visualizzi il testo.\n\n## Riepilogo\n- La OOP rappresenta gli agenti del problema come oggetti software\n- Ogni oggetto ha uno stato (proprietà) e un comportamento (azioni)\n- L'interfaccia è l'insieme dei messaggi che l'oggetto riconosce\n- Il contratto è ciò che l'oggetto promette di fare in risposta a un messaggio\n- L'implementazione interna è nascosta: conta solo l'effetto del messaggio",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1265,
+        "riga_fine": 1330
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare i concetti di stato e comportamento di un oggetto",
+        "Descrivere il meccanismo di messaggi e contratti",
+        "Differenziare la OOP dalla programmazione imperativa tradizionale"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_020",
+      "ordine": 22,
+      "tipo": "lezione",
+      "argomento": "Classi e oggetti: la classe Frazione in Java",
+      "sintesi_breve": "## Introduzione\n\nLa classe `Frazione` è un esempio didattico fondamentale utilizzato in tutto il manuale. Rappresenta una frazione matematica con numeratore e denominatore. Attraverso questa classe impariamo i concetti di costruzione di oggetti, invocazione di metodi, e collabora",
+      "contenuto": "## Introduzione\n\nLa classe `Frazione` è un esempio didattico fondamentale utilizzato in tutto il manuale. Rappresenta una frazione matematica con numeratore e denominatore. Attraverso questa classe impariamo i concetti di costruzione di oggetti, invocazione di metodi, e collaborazione tra oggetti.\n\n## Concetti chiave\n\n### Costruzione di oggetti\nCon `new Frazione(2, 1)` si crea un oggetto che rappresenta la frazione 2/1. La sintassi `new` seguito dal nome della classe e dagli argomenti tra parentesi invoca il costruttore. Un costruttore inizializza lo stato del nuovo oggetto.\n\n### Riferimenti a oggetti\n`Frazione f = new Frazione(3, 4)` dichiara una variabile `f` di tipo `Frazione` e vi assegna un riferimento al nuovo oggetto. Il riferimento permette di inviare messaggi all'oggetto: `f.piu(g)` invoca il metodo `piu` sull'oggetto referenziato da `f`.\n\n### Invocazione di metodi con risultato\n`Frazione h = f.piu(g);` — il metodo `piu` riceve `g` come argomento, calcola la somma delle due frazioni e restituisce un nuovo oggetto `Frazione` come risultato. La variabile `h` riceve il riferimento al risultato.\n\n## Esempio pratico\n```java\nFrazione f = new Frazione(1, 2);\nFrazione g = new Frazione(3, 4);\nFrazione h = f.piu(g);        // 1/2 + 3/4 = 5/4\nFrazione i = h.per(g);         // 5/4 * 3/4 = 15/16\n```\n\n## Riepilogo\n- `new NomeClasse(...)` costruisce un nuovo oggetto\n- Una variabile di tipo classe contiene un riferimento all'oggetto\n- I metodi si invocano con la notazione punto: `oggetto.metodo(argomenti)`\n- I metodi possono ricevere argomenti e restituire risultati\n- Ogni oggetto mantiene il proprio stato indipendentemente dagli altri",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1329,
+        "riga_fine": 1380
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Costruire oggetti con il costruttore usando new",
+        "Invocare metodi su oggetti con la notazione punto",
+        "Comprendere il concetto di riferimento a oggetto"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_021",
+      "ordine": 23,
+      "tipo": "lezione",
+      "argomento": "Riferimenti e oggetti: la memoria in Java",
+      "sintesi_breve": "## Introduzione\n\nIn Java, quando dichiariamo una variabile di tipo classe (es. `Frazione f`), la variabile non contiene l'oggetto stesso ma un *riferimento* all'oggetto, cioè l'indirizzo di memoria dove l'oggetto risiede. Questa distinzione tra variabile e oggetto è fondamentale:",
+      "contenuto": "## Introduzione\n\nIn Java, quando dichiariamo una variabile di tipo classe (es. `Frazione f`), la variabile non contiene l'oggetto stesso ma un *riferimento* all'oggetto, cioè l'indirizzo di memoria dove l'oggetto risiede. Questa distinzione tra variabile e oggetto è fondamentale: più variabili possono riferirsi allo stesso oggetto, e gli assegnamenti tra variabili copiano solo il riferimento, non l'oggetto.\n\n## Concetti chiave\n\n### Variabili riferimento\n`Frazione f = new Frazione(2, 3);` — la variabile `f` è memorizzata in una zona della memoria, l'oggetto Frazione in un'altra. `f` contiene il riferimento (indirizzo) dell'oggetto. Per inviare messaggi, usiamo `f.piu(g)` — il riferimento permette di raggiungere l'oggetto.\n\n### Assegnamento tra variabili\n`f = f.piu(g);` — la variabile `f` ora riferisce un nuovo oggetto (il risultato della somma). L'oggetto originale (2/3) non è più raggiungibile. `f = g;` — ora `f` e `g` riferiscono lo stesso oggetto. Modifiche tramite `f` si riflettono su `g` e viceversa.\n\n### Implicazioni pratiche\nSe due variabili riferiscono lo stesso oggetto e si modifica lo stato tramite una, l'altra \"vede\" la modifica. Questo è diverso dai tipi primitivi (int, double) dove ogni variabile ha una propria copia del valore.\n\n## Esempio pratico\n```java\nFrazione a = new Frazione(1, 2);\nFrazione b = a;       // b riferisce LO STESSO oggetto di a\n// Se la classe avesse metodi setter:\n// a.setDen(4);       // modifico tramite a\n// b.getDen() → 4     // b \"vede\" la modifica\n```\nCon tipi primitivi: `int x = 5; int y = x; x = 10;` → y vale ancora 5.\n\n## Riepilogo\n- Le variabili di tipo classe contengono riferimenti, non oggetti\n- Assegnare una variabile a un'altra copia il riferimento, non l'oggetto\n- Più variabili possono riferire lo stesso oggetto\n- Gli oggetti non più raggiungibili vengono eliminati dal garbage collector\n- I tipi primitivi (int, double) si comportano diversamente: copia del valore",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1380,
+        "riga_fine": 1440
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Distinguere tra variabile riferimento e oggetto in memoria",
+        "Prevedere l'effetto degli assegnamenti tra variabili riferimento",
+        "Comprendere le differenze tra tipi primitivi e tipi riferimento"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_022",
+      "ordine": 24,
+      "tipo": "lezione",
+      "argomento": "Input e output: ConsoleInputManager e ConsoleOutputManager",
+      "sintesi_breve": "## Introduzione\n\nPer interagire con l'utente, Java offre classi per input e output. La classe `ConsoleOutputManager` permette di stampare messaggi a video, mentre `ConsoleInputManager` legge dati dalla tastiera. Queste classi semplificano l'input/output senza richiedere la gestio",
+      "contenuto": "## Introduzione\n\nPer interagire con l'utente, Java offre classi per input e output. La classe `ConsoleOutputManager` permette di stampare messaggi a video, mentre `ConsoleInputManager` legge dati dalla tastiera. Queste classi semplificano l'input/output senza richiedere la gestione delle eccezioni, rendendo i primi programmi più accessibili.\n\n## Concetti chiave\n\n### Output: ConsoleOutputManager\nSi crea un oggetto con `new ConsoleOutputManager()`, poi si invoca `println(messaggio)` per stampare. Il metodo println aggiunge un ritorno a capo automaticamente. È analogo a System.out ma più semplice.\n\n### Input: ConsoleInputManager\n`ConsoleInputManager input = new ConsoleInputManager();` crea un lettore. `input.readInt()` legge un intero, `input.readDouble()` legge un numero decimale, `input.readLine()` legge una riga di testo.\n\n## Esempio pratico\n```java\nConsoleInputManager input = new ConsoleInputManager();\nConsoleOutputManager video = new ConsoleOutputManager();\nvideo.println(\"Inserisci un numero:\");\nint n = input.readInt();\nvideo.println(\"Hai inserito: \" + n);\n```\n\n## Riepilogo\n- ConsoleOutputManager stampa con println\n- ConsoleInputManager legge con readInt, readDouble, readLine\n- Queste classi semplificano l'I/O senza gestione eccezioni\n- L'output fa parte del programma: il monitor è un oggetto a cui inviamo messaggi",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1440,
+        "riga_fine": 1480
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Usare ConsoleInputManager per leggere input",
+        "Usare ConsoleOutputManager per stampare output",
+        "Scrivere programmi interattivi semplici"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_023",
+      "ordine": 25,
+      "tipo": "lezione",
+      "argomento": "Selezione in Java: l'istruzione if-else",
+      "sintesi_breve": "## Introduzione\n\nL'istruzione `if-else` è il costrutto fondamentale per la selezione in Java. Permette di eseguire un blocco di codice se una condizione è vera, e opzionalmente un altro blocco se è falsa. La condizione deve essere un'espressione booleana, cioè che restituisce `tr",
+      "contenuto": "## Introduzione\n\nL'istruzione `if-else` è il costrutto fondamentale per la selezione in Java. Permette di eseguire un blocco di codice se una condizione è vera, e opzionalmente un altro blocco se è falsa. La condizione deve essere un'espressione booleana, cioè che restituisce `true` o `false`.\n\n## Concetti chiave\n\n### Sintassi di if-else\n```java\nif (condizione) {\n    // codice eseguito se condizione == true\n} else {\n    // codice eseguito se condizione == false\n}\n```\nLa parte `else` è opzionale. Se il blocco contiene una sola istruzione, le parentesi graffe possono essere omesse (ma è buona pratica usarle sempre).\n\n### Espressioni booleane\nUna condizione può essere: un confronto (`x > 0`, `y == z`, `a != b`), un'espressione logica composta (`(x > 0) && (y < 10)`), o un valore booleano (`true` / `false`). Gli operatori di confronto sono: `==`, `!=`, `<`, `>`, `<=`, `>=`.\n\n### Selezione annidata\nÈ possibile inserire if-else all'interno di altri if-else per gestire casi multipli. Attenzione all'ambiguità dell'else pendente: ogni else si associa all'if più vicino non ancora associato.\n\n## Esempio pratico\n```java\nint voto = 85;\nif (voto >= 90) {\n    System.out.println(\"Eccellente\");\n} else if (voto >= 70) {\n    System.out.println(\"Buono\");\n} else {\n    System.out.println(\"Sufficiente\");\n}\n```\n\n## Riepilogo\n- if-else seleziona tra blocchi in base a una condizione booleana\n- La condizione deve essere di tipo boolean (true/false)\n- else è opzionale\n- Le condizioni si compongono con && (AND), || (OR), ! (NOT)\n- Ogni else si associa all'if più vicino non associato",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1600,
+        "riga_fine": 1650
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Scrivere istruzioni if-else per selezione",
+        "Comporre condizioni booleane con operatori logici",
+        "Gestire casi multipli con selezione annidata"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_024",
+      "ordine": 26,
+      "tipo": "lezione",
+      "argomento": "Il tipo boolean e gli operatori booleani",
+      "sintesi_breve": "## Introduzione\n\nIl tipo `boolean` in Java può assumere solo due valori: `true` e `false`. È il tipo di tutte le condizioni nelle istruzioni if e nei cicli. Gli operatori booleani (`&&`, `||`, `!`) permettono di comporre condizioni complesse a partire da condizioni semplici.\n\n## ",
+      "contenuto": "## Introduzione\n\nIl tipo `boolean` in Java può assumere solo due valori: `true` e `false`. È il tipo di tutte le condizioni nelle istruzioni if e nei cicli. Gli operatori booleani (`&&`, `||`, `!`) permettono di comporre condizioni complesse a partire da condizioni semplici.\n\n## Concetti chiave\n### Operatori di confronto\n`==` (uguale), `!=` (diverso), `<`, `>`, `<=`, `>=` producono valori booleani. Attenzione: `=` è assegnamento, `==` è confronto.\n\n### Operatori logici\n`&&` (AND logico), `||` (OR logico), `!` (NOT logico). `(x > 0) && (x < 100)` è vero solo se x è compreso tra 1 e 99. `(x <= -4) || (x >= 4)` è vero se x è ≤ -4 o ≥ 4.\n\n### Lazy evaluation\nJava valuta le espressioni booleane in cortocircuito: in `(x > 0) && (y++ != x)`, se `x > 0` è falso, `y++` non viene valutato. Questo evita effetti collaterali indesiderati e migliora l'efficienza.\n\n## Esempio pratico\n```java\nint eta = 25;\nboolean maggiorenne = eta >= 18;\nboolean puoGuidare = maggiorenne && hasPatente;\n```\n\n## Riepilogo\n- boolean ha solo due valori: true e false\n- Operatori di confronto: ==, !=, <, >, <=, >=\n- Operatori logici: && (AND), || (OR), ! (NOT)\n- Lazy evaluation: la seconda condizione non viene valutata se la prima determina il risultato",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1650,
+        "riga_fine": 1700
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Usare il tipo boolean in Java",
+        "Comporre condizioni con operatori logici",
+        "Applicare la lazy evaluation"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_025",
+      "ordine": 27,
+      "tipo": "lezione",
+      "argomento": "Il ciclo while e do-while in Java",
+      "sintesi_breve": "## Introduzione\n\nI cicli permettono di ripetere blocchi di codice. Java offre tre costrutti iterativi: `while`, `do-while` e `for`. Il ciclo `while` valuta la condizione all'inizio (possibile esecuzione zero volte), mentre `do-while` la valuta alla fine (almeno una esecuzione).\n\n",
+      "contenuto": "## Introduzione\n\nI cicli permettono di ripetere blocchi di codice. Java offre tre costrutti iterativi: `while`, `do-while` e `for`. Il ciclo `while` valuta la condizione all'inizio (possibile esecuzione zero volte), mentre `do-while` la valuta alla fine (almeno una esecuzione).\n\n## Concetti chiave\n### while\n```java\nwhile (condizione) {\n    // corpo del ciclo\n}\n```\nLa condizione viene valutata prima di ogni iterazione. Se falsa inizialmente, il corpo non viene mai eseguito.\n\n### do-while\n```java\ndo {\n    // corpo del ciclo\n} while (condizione);\n```\nIl corpo viene eseguito almeno una volta, poi la condizione viene valutata.\n\n## Esempio pratico\n```java\n// while: leggere finché l'utente non inserisce \"stop\"\nString input = tastiera.readLine();\nwhile (!input.equals(\"stop\")) {\n    System.out.println(\"Hai scritto: \" + input);\n    input = tastiera.readLine();\n}\n\n// do-while: menu interattivo\nint scelta;\ndo {\n    System.out.println(\"1. Opzione A  2. Opzione B  0. Esci\");\n    scelta = tastiera.readInt();\n} while (scelta != 0);\n```\n\n## Riepilogo\n- while: controllo in testa (0+ esecuzioni)\n- do-while: controllo in coda (1+ esecuzioni)\n- Scegli while quando potrebbero non servire iterazioni\n- Scegli do-while quando serve almeno un'esecuzione (es. menu)",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1700,
+        "riga_fine": 1750
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Usare il ciclo while per iterazione a controllo iniziale",
+        "Usare il ciclo do-while per iterazione a controllo finale",
+        "Scegliere il ciclo appropriato per diversi scenari"
+      ],
+      "durata_stimata_minuti": 10,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_026",
+      "ordine": 28,
+      "tipo": "lezione",
+      "argomento": "Il ciclo for in Java",
+      "sintesi_breve": "## Introduzione\n\nIl ciclo `for` è particolarmente adatto quando il numero di iterazioni è noto in anticipo o quando si lavora con un contatore. Raggruppa inizializzazione, condizione e aggiornamento in un'unica riga, rendendo il codice più compatto e leggibile.\n\n## Concetti chiav",
+      "contenuto": "## Introduzione\n\nIl ciclo `for` è particolarmente adatto quando il numero di iterazioni è noto in anticipo o quando si lavora con un contatore. Raggruppa inizializzazione, condizione e aggiornamento in un'unica riga, rendendo il codice più compatto e leggibile.\n\n## Concetti chiave\n### Sintassi del for\n```java\nfor (inizializzazione; condizione; aggiornamento) {\n    // corpo\n}\n```\n1. L'inizializzazione viene eseguita una volta all'inizio\n2. La condizione viene valutata prima di ogni iterazione\n3. Il corpo viene eseguito se la condizione è vera\n4. L'aggiornamento viene eseguito dopo ogni iterazione\n\n### Esempi classici\n```java\n// Somma dei primi 100 numeri\nint somma = 0;\nfor (int i = 1; i <= 100; i++) {\n    somma += i;\n}\n\n// Stringhe palindrome\nString s = \"radar\";\nboolean palindroma = true;\nfor (int i = 0; i < s.length() / 2; i++) {\n    if (s.charAt(i) != s.charAt(s.length()-1-i))\n        palindroma = false;\n}\n```\n\n## Riepilogo\n- for raggruppa inizializzazione, condizione e aggiornamento\n- Ideale per iterazioni con contatore\n- Le tre parti sono opzionali (for(;;) è un ciclo infinito)\n- La variabile di ciclo dichiarata nel for è locale al ciclo",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1750,
+        "riga_fine": 1800
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Usare il ciclo for per iterazioni con contatore",
+        "Comprendere le tre parti del for (inizializzazione, condizione, aggiornamento)",
+        "Applicare il ciclo for a problemi di elaborazione di sequenze"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_121",
+      "ordine": 131,
+      "tipo": "lezione",
+      "argomento": "Conclusione del corso: dalle fondamenta all'architettura software",
+      "sintesi_breve": "## Introduzione\n\nAbbiamo percorso un lungo viaggio: dagli algoritmi e dal linguaggio macchina fino alle strutture dati dinamiche e ai tipi generici, passando per la programmazione a oggetti, le eccezioni, l'I/O, la ricorsione e le collezioni. Il manuale \"Dai fondamenti agli ogget",
+      "contenuto": "## Introduzione\n\nAbbiamo percorso un lungo viaggio: dagli algoritmi e dal linguaggio macchina fino alle strutture dati dinamiche e ai tipi generici, passando per la programmazione a oggetti, le eccezioni, l'I/O, la ricorsione e le collezioni. Il manuale \"Dai fondamenti agli oggetti\" di Pighizzini e Ferrari ci ha guidati attraverso tutti questi concetti, mentre \"Sette brevi lezioni sullo stoicismo\" di John Sellars ci ha ricordato l'importanza della disciplina mentale, del controllo dei giudizi e dell'attenzione costante — qualità essenziali per ogni sviluppatore.\n\n## Concetti chiave\n\n### Il percorso completato\nAbbiamo iniziato con le basi: cos'è un algoritmo, come funziona un computer, cos'è un linguaggio di programmazione. Abbiamo imparato le strutture di controllo, le variabili, i tipi. Siamo passati alla programmazione a oggetti: classi, oggetti, ereditarietà, polimorfismo, interfacce. Abbiamo affrontato la gestione delle eccezioni, l'input/output, la ricorsione, le strutture dati dinamiche come pile, code, liste e alberi binari.\n\n### Lezioni filosofiche per lo sviluppatore\nLo stoicismo ci ha insegnato a distinguere tra ciò che controlliamo (il nostro codice, i nostri giudizi) e ciò che non controlliamo (i bug imprevisti, le reazioni altrui). Epitteto ci ricorda che la frustrazione nasce da un giudizio errato, non dall'evento stesso. Marco Aurelio ci invita all'attenzione costante. Seneca ci mostra che le avversità (i bug, i requisiti che cambiano) sono esercizi che ci rendono migliori.\n\n## Prossimi passi\nIl percorso non finisce qui. Con le basi solide che hai acquisito, puoi esplorare: design pattern (Singleton, Factory, Observer), framework (Spring, Hibernate), architetture software (MVC, microservizi), e linguaggi complementari (Python, Kotlin). La programmazione è un mestiere che si impara facendo: continua a scrivere codice, a leggere codice altrui, a riflettere sui tuoi errori.\n\n## Riepilogo\n- Completa padronanza dei fondamenti della programmazione Java\n- Capacità di progettare e implementare classi, gerarchie e interfacce\n- Competenza nella gestione di eccezioni, I/O e strutture dati\n- Consapevolezza della dimensione filosofica: disciplina, attenzione, resilienza\n- Pronti per approfondire design pattern, framework e architetture software",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 1,
+        "riga_fine": 5
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Riepilogare il percorso di apprendimento",
+        "Identificare le competenze acquisite",
+        "Pianificare i prossimi passi nello studio di Java"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_028",
+      "ordine": 132,
+      "tipo": "lezione",
+      "argomento": "Linguaggio macchina: istruzioni JUMP, JZERO e l'algoritmo di Euclide",
+      "sintesi_breve": "## Introduzione\n\nNelle lezioni precedenti hai visto l'architettura di von Neumann con la sua CPU, memoria e registri. Ora è il momento di scendere ancora più in profondità e osservare come si scrive il codice più elementare: le istruzioni in linguaggio macchina. Capire come il pr",
+      "contenuto": "## Introduzione\n\nNelle lezioni precedenti hai visto l'architettura di von Neumann con la sua CPU, memoria e registri. Ora è il momento di scendere ancora più in profondità e osservare come si scrive il codice più elementare: le istruzioni in linguaggio macchina. Capire come il processore esegue salti condizionati e cicli a bassissimo livello ti darà una consapevolezza impagabile quando, più avanti, scriverai cicli `while` e `for` in Java. È come un architetto che conosce la resistenza dei mattoni: anche se non la calcola ogni giorno, quella conoscenza informa ogni sua scelta progettuale.\n\n## Concetti chiave\n\n### Salto incondizionato e salto condizionato\n\nL'istruzione `JUMP et` dice al processore: «prosegui l'esecuzione dall'istruzione preceduta dall'etichetta `et`». È un salto *incondizionato* — salta sempre. L'istruzione `JZERO R, et` invece è un salto *condizionato*: se il registro `R` contiene zero, si salta all'etichetta `et`; altrimenti si prosegue con l'istruzione successiva. Questi due mattoni — salta sempre / salta se zero — bastano per costruire qualsiasi struttura di controllo: selezione, iterazione, persino la ricorsione.\n\n### Come la macchina valuta le condizioni\n\nImmagina di dover sommare due numeri se sono diversi, o mettere zero se sono uguali. Il codice in linguaggio macchina usa una sequenza di caricamenti, sottrazioni e salti condizionati:\n\n```\nLOAD R1, 30      ; carica valore cella 30 in R1\nLOAD R2, 31      ; carica valore cella 31 in R2\nSUB R1, R2       ; sottrae R2 da R1 → R1 = 30 - 31\nJZERO R1, alfa   ; se il risultato è zero, salta a \"alfa\"\nLOAD R1, 30      ; se non zero: carica 30\nADD R1, R2       ; somma\nalfa: STORE R1, 40  ; salva il risultato\n```\n\nSe i due valori sono uguali, la sottrazione dà zero, `JZERO` salta ad `alfa` e si salva il contenuto di R1 (che contiene ancora il caricamento iniziale? No attenzione: dopo `SUB R1, R2`, R1 contiene zero. Poi `JZERO` salta a `alfa`, e R1=0 viene salvato in posizione 40). Se sono diversi, la sottrazione dà un valore non zero, non si salta, si carica di nuovo il valore di 30 in R1, si somma, e si salva la somma. Questo esempio mostra come una condizione logica («se uguali fai una cosa, altrimenti un'altra») viene tradotta in operazioni aritmetiche e salti.\n\n### L'algoritmo di Euclide in linguaggio macchina\n\nL'algoritmo di Euclide per il Massimo Comun Divisore (MCD) è un esempio classico: dati due numeri _x_ e _y_, calcola il resto della divisione di _x_ per _y_, e finché il resto non è zero, assegna a _x_ il vecchio _y_ e a _y_ il resto. In linguaggio macchina ogni singolo passaggio viene esplicitato:\n\n```\nLOAD R1, 101       ; x in R1\nLOAD R2, 102       ; y in R2\nalfa: DIV R1, R2   ; x / y → R1\nMUL R1, R2         ; (x/y)*y → R1\nLOAD R2, 101       ; ricarica x in R2\nSUB R2, R1         ; x - (x/y)*y → R2 (resto)\nJZERO R2, fine     ; se resto = 0, vai a fine\nLOAD R1, 102       ; nuovo x = vecchio y\nSTORE R1, 101      ; aggiorna x in memoria\nSTORE R2, 102      ; aggiorna y in memoria (resto)\nJUMP alfa          ; ripeti\nfine: LOAD R1, 102 ; carica y (il MCD)\nSTORE R1, 103      ; salva risultato\n```\n\nOgni ciclo si traduce in circa 10 istruzioni macchina. Nota come il confronto «resto == 0?» viene implementato con `JZERO`, e il ciclo viene realizzato con un salto incondizionato `JUMP` all'indietro verso l'etichetta `alfa`.\n\n## Esempio pratico\n\nSupponiamo di voler calcolare MCD(12, 8) con questo codice. Partiamo con R1=12, R2=8. `DIV R1,R2` → R1=1 (12/8=1). `MUL R1,R2` → R1=8. `LOAD R2,101` → R2=12. `SUB R2,R1` → R2=4 (resto). `JZERO R2,fine` — 4≠0, non salta. `LOAD R1,102` → R1=8. `STORE R1,101` → memoria[101]=8. `STORE R2,102` → memoria[102]=4. `JUMP alfa`. Secondo ciclo: R1=8, R2=4. `DIV` → R1=2. `MUL` → R1=8. `LOAD R2,101` → R2=8. `SUB` → R2=0. `JZERO` → salta a `fine`. Salva R1 (che contiene il valore di y, 4) in posizione 103. MCD(12,8)=4. Corretto.\n\n## Riepilogo\n- `JUMP` esegue un salto incondizionato; `JZERO` salta solo se il registro è zero\n- Un'istruzione `if` in Java corrisponde, a livello macchina, a operazioni aritmetiche seguite da `JZERO`\n- L'algoritmo di Euclide in linguaggio macchina mostra come ogni ciclo richieda salti all'indietro\n- La comprensione del linguaggio macchina è il fondamento per capire compilatori, ottimizzazioni e debug\n- Simulare manualmente il codice con carta e penna è il metodo migliore per interiorizzare questi concetti\n\n## Metti in pratica\nPrendi carta e penna: simula l'esecuzione del programma Euclide con x=15, y=10. Scrivi lo stato dei registri R1 e R2 dopo ogni istruzione. Quanti cicli servono?",
+      "fonte": {
+        "percorso": "sources/Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk__clean.md",
+        "riga_inizio": 490,
+        "riga_fine": 570
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [
+        "Spiegare il funzionamento delle istruzioni JUMP e JZERO in linguaggio macchina",
+        "Tradurre mentalmente una condizione logica in sequenze di istruzioni macchina",
+        "Analizzare l'implementazione dell'algoritmo di Euclide in assembly",
+        "Simulare manualmente l'esecuzione di codice macchina"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-06-23T15:58:14Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/Strano",
+    "agente": "microlearning_planning_agent"
+  }
+}

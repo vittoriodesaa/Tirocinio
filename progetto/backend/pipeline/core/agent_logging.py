@@ -190,6 +190,11 @@ _runs_lock = threading.Lock()
 
 
 def start_run(course_id: str, workspace_dir: Optional[str] = None) -> RunLog:
+    with _runs_lock:
+        existing = _active_runs.get(course_id)
+        if existing and existing.status == "running":
+            _current_run.set(existing)
+            return existing
     run = RunLog(course_id=course_id, status="running", percent=0.0)
     if workspace_dir:
         run.bind_workspace(workspace_dir)

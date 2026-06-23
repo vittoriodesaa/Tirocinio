@@ -1,0 +1,1793 @@
+{
+  "titolo_corso": "Elettromagnetismo, Ottica e Algebra Lineare: dalla Fisica alle Applicazioni",
+  "lingua": "it",
+  "descrizione": "Corso integrato che fonde i contenuti di \"Problemi di Fisica Generale: Elettromagnetismo e Ottica\" (Porto, Lanzalone, Lombardo) e \"Linear Algebra and Optimization with Applications to Machine Learning\". Un percorso strutturato in 120+ lezioni che collega i principi dell'elettromagnetismo e dell'ottica con gli strumenti dell'algebra lineare moderna, dal calcolo vettoriale alla SVD, dai circuiti elettrici agli autovalori. Include oltre 40 quiz di verifica.",
+  "moduli": [
+    {
+      "id": "mod_001",
+      "ordine": 1,
+      "tipo": "lezione",
+      "argomento": "Integrazione: Introduzione · Contents",
+      "sintesi_breve": "## Introduzione\n\nBenvenuti in questo corso integrato che unisce due mondi complementari: la fisica dell'elettromagnetismo e dell'ottica, con gli strumenti dell'algebra lineare moderna. Il testo \"Problemi di Fisica Generale\" di Porto, Lanzalone e Lombardo raccoglie oltre 400 probl",
+      "contenuto": "## Introduzione\n\nBenvenuti in questo corso integrato che unisce due mondi complementari: la fisica dell'elettromagnetismo e dell'ottica, con gli strumenti dell'algebra lineare moderna. Il testo \"Problemi di Fisica Generale\" di Porto, Lanzalone e Lombardo raccoglie oltre 400 problemi d'esame assegnati agli studenti di Fisica dell'Università di Catania, offrendo un percorso pratico attraverso elettrostatica, circuiti, magnetostatica, onde elettromagnetiche e ottica. Il volume \"Linear Algebra and Optimization\" fornisce, invece, le basi matematiche — spazi vettoriali, basi, applicazioni lineari, determinanti, norme, SVD — che sono il linguaggio naturale della fisica moderna.\n\nPer uno sviluppatore o uno scienziato, padroneggiare entrambi i domini significa poter modellare fenomeni reali con precisione: un campo elettrico si descrive con vettori, un circuito con sistemi lineari, un'onda con funzioni in spazi di Hilbert.\n\n## Concetti chiave\n\n### Struttura del corso di Fisica (Elettromagnetismo e Ottica)\nIl libro di Porto, Lanzalone e Lombardo è organizzato in 9 capitoli: Elettrostatica (Cap.1), Circuiti in corrente stazionaria (Cap.2), Magnetostatica (Cap.3), Campi lentamente variabili (Cap.4), Circuiti in corrente non stazionaria (Cap.5), Onde elettromagnetiche (Cap.6), Ottica fisica (Cap.7), Ottica geometrica (Cap.8) e Fisica moderna (Cap.9). Ogni capitolo presenta una ricca raccolta di problemi con soluzioni complete.\n\n### Struttura del corso di Algebra Lineare\nIl testo di algebra lineare copre: spazi vettoriali (Chapter 2), matrici e applicazioni lineari (Chapter 3), basi di Haar e wavelet (Chapter 4), somme dirette e teorema rango-nullità (Chapter 5), determinanti (Chapter 6), eliminazione gaussiana e fattorizzazione LU (Chapter 7), norme vettoriali e matriciali (Chapter 8), metodi iterativi (Chapter 9), spazio duale (Chapter 10), spazi euclidei (Chapter 11), decomposizione QR (Chapter 12), spazi hermitiani (Chapter 13), autovalori e autovettori (Chapter 14), quaternioni (Chapter 15), teoremi spettrali (Chapter 16), calcolo di autovalori (Chapter 17), grafi e laplaciani (Chapter 18), SVD e forma polare (Chapter 20), applicazioni della SVD (Chapter 21).\n\n### Come si integrano\nL'elettrostatica usa il calcolo vettoriale (Chapter 2 del libro di algebra). I circuiti elettrici si risolvono con sistemi lineari (Chapter 7). La magnetostatica richiede campi vettoriali e rotori. Le onde elettromagnetiche si analizzano con spazi di Hilbert (Chapter 13). Le trasformate di Haar (Chapter 4) sono uno strumento per l'elaborazione di segnali, compresi quelli elettromagnetici.\n\n## Riepilogo\n- I due volumi coprono rispettivamente fisica applicata (elettromagnetismo/ottica) e algebra lineare teorico-applicativa.\n- I problemi di fisica forniscono il contesto concreto; l'algebra lineare fornisce gli strumenti formali.\n- Il corso integrato segue l'ordine naturale: prima i fondamenti di algebra lineare, poi le applicazioni elettromagnetiche.\n- Ogni lezione fonderà i due approcci, mostrando come l'algebra lineare emerga dalla fisica e come la fisica si comprenda meglio con l'algebra.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 1,
+        "riga_fine": 51
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 105,
+          "riga_fine": 351
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare la struttura generale del corso di Elettromagnetismo e Ottica",
+        "Riconoscere i macro-argomenti del volume di Algebra Lineare",
+        "Comprendere come i due volumi si integrino per una formazione completa"
+      ],
+      "durata_stimata_minuti": 30,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_001",
+      "ordine": 1,
+      "tipo": "quiz",
+      "argomento": "Verifica: Fondamenti Integrati",
+      "sintesi_breve": "Quiz di verifica dopo mod_006",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 82,
+        "riga_fine": 182
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_006"
+      ],
+      "domande": [
+        {
+          "testo": "Cosa rappresenta il principio di sovrapposizione in elettrostatica dal punto di vista dell'algebra lineare?",
+          "opzioni": [
+            "Una combinazione lineare di campi vettoriali",
+            "Un'operazione di prodotto scalare",
+            "Una trasformazione non lineare",
+            "Un'equazione differenziale"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il principio di sovrapposizione dice che il campo totale è la somma vettoriale dei campi individuali, cioè una combinazione lineare."
+        },
+        {
+          "testo": "Qual è l'analogia tra la struttura del libro di fisica e quella del libro di algebra lineare?",
+          "opzioni": [
+            "Entrambi iniziano dai fondamenti e progrediscono verso applicazioni avanzate",
+            "Uso dello stesso linguaggio di programmazione",
+            "Stessa casa editrice",
+            "Stesso numero di capitoli"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Entrambi partono dai concetti di base (elettrostatica/spazi vettoriali) e procedono verso argomenti più complessi."
+        },
+        {
+          "testo": "Quale spazio vettoriale rappresenta il modello matematico per descrivere i campi elettrici tridimensionali?",
+          "opzioni": [
+            "R^4",
+            "R^2",
+            "R^3",
+            "C^3"
+          ],
+          "indice_corretto": 2,
+          "spiegazione": "I campi elettrici in fisica classica sono campi vettoriali in R^3, lo spazio vettoriale tridimensionale reale."
+        },
+        {
+          "testo": "Qual è il metodo di studio consigliato da entrambi i testi?",
+          "opzioni": [
+            "Studiare la teoria, provare da soli, poi consultare la soluzione",
+            "Leggere solo la soluzione",
+            "Saltare la teoria e fare solo esercizi",
+            "Studiare solo la teoria senza esercizi"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Entrambi i testi raccomandano di studiare prima la teoria, poi provare a risolvere i problemi da soli, confrontandosi con le soluzioni solo dopo."
+        }
+      ]
+    },
+    {
+      "id": "mod_002",
+      "ordine": 2,
+      "tipo": "lezione",
+      "argomento": "Integrazione: PROBLEMI DI FISICA GENERALE · Introduzione",
+      "sintesi_breve": "## Introduzione\n\nIl libro \"Problemi di Fisica Generale: Elettromagnetismo e Ottica\" nasce dall'esperienza ventennale del Prof. Francesco Porto nel corso di Fisica Generale II presso l'Università di Catania. La prefazione svela il problema didattico centrale: molti studenti arriva",
+      "contenuto": "## Introduzione\n\nIl libro \"Problemi di Fisica Generale: Elettromagnetismo e Ottica\" nasce dall'esperienza ventennale del Prof. Francesco Porto nel corso di Fisica Generale II presso l'Università di Catania. La prefazione svela il problema didattico centrale: molti studenti arrivano impreparati alla prova scritta, sottovalutandone la difficoltà o scoprendo per la prima volta di dover risolvere problemi da soli, senza il supporto del docente. Il volume \"Linear Algebra and Optimization\" affronta una sfida analoga: la complessità della matematica che sta dietro a machine learning e computer vision richiede basi solide che molti testi saltano.\n\n## Concetti chiave\n\n### La sfida della prova scritta\nL'esame di Fisica Generale II richiede la risoluzione di problemi in tempo limitato. I fattori di insuccesso più comuni sono: la mancata percezione della difficoltà, la scarsa preparazione specifica e l'isolamento durante la prova. Il testo raccoglie circa 400 problemi d'esame con soluzioni complete per permettere allo studente di allenarsi.\n\n### Il parallelo con l'algebra lineare\nAnalogamente, il testo di algebra lineare nasce per colmare il divario tra \"ricette pronte\" (cookbook approach) e la comprensione profonda necessaria per fare ricerca seria in machine learning. Temi come i moltiplicatori di Lagrange, le dualità, la SVD richiedono una solida base teorica.\n\n### La metodologia didattica\nEntrambi i testi consigliano: studiare prima la teoria, provare a risolvere i problemi da soli, confrontarsi con le soluzioni solo dopo aver tentato, e cercare strategie alternative.\n\n## Esempio pratico\nUno studente che affronta un problema di circuiti con le leggi di Kirchhoff deve saper impostare un sistema lineare. Dal testo di fisica impara la fenomenologia; dal testo di algebra impara a risolvere il sistema con eliminazione gaussiana o LU factorization.\n\n## Riepilogo\n- I problemi di fisica sono il banco di prova per la comprensione teorica.\n- L'algebra lineare fornisce gli strumenti computazionali per risolverli.\n- Entrambi i testi enfatizzano l'apprendimento attivo (provare prima, soluzione dopo).\n- Il corso integrato unisce fenomenologia fisica e rigore matematico.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 3,
+        "riga_fine": 26
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 1,
+          "riga_fine": 51
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Spiegare la struttura e lo scopo del libro di problemi di Fisica Generale",
+        "Collegare le sfide didattiche della fisica con quelle dell'algebra lineare",
+        "Identificare la metodologia di studio consigliata per entrambe le discipline"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_002",
+      "ordine": 2,
+      "tipo": "quiz",
+      "argomento": "Verifica: Circuiti e Algebra Lineare",
+      "sintesi_breve": "Quiz di verifica dopo mod_013",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 203,
+        "riga_fine": 303
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_013"
+      ],
+      "domande": [
+        {
+          "testo": "Secondo le leggi di Kirchhoff, la somma delle correnti in un nodo è:",
+          "opzioni": [
+            "Zero",
+            "Uguale alla tensione applicata",
+            "Pari alla somma delle resistenze",
+            "Costante e diversa da zero"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La legge dei nodi (prima legge di Kirchhoff) stabilisce che la somma algebrica delle correnti entranti in un nodo è zero."
+        },
+        {
+          "testo": "Un circuito elettrico può essere rappresentato matematicamente come:",
+          "opzioni": [
+            "Un grafo",
+            "Un insieme di equazioni differenziali non lineari",
+            "Una funzione d'onda",
+            "Un integrale di linea"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Ogni circuito elettrico è un grafo, con nodi (punti di connessione) e archi (componenti)."
+        },
+        {
+          "testo": "In regime stazionario, un condensatore si comporta come:",
+          "opzioni": [
+            "Un circuito aperto",
+            "Un cortocircuito",
+            "Una resistenza variabile",
+            "Un generatore di corrente"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "In regime stazionario la tensione sul condensatore è costante e la corrente è zero, quindi si comporta come un circuito aperto."
+        },
+        {
+          "testo": "Quale metodo iterativo è comunemente usato per risolvere sistemi lineari di grandi dimensioni?",
+          "opzioni": [
+            "Metodo di Jacobi",
+            "Metodo di Eulero",
+            "Metodo di Runge-Kutta",
+            "Metodo di Newton-Raphson"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il metodo di Jacobi è un metodo iterativo classico per risolvere sistemi lineari di grandi dimensioni, particolarmente efficace per matrici a predominanza diagonale."
+        }
+      ]
+    },
+    {
+      "id": "mod_003",
+      "ordine": 3,
+      "tipo": "lezione",
+      "argomento": "Integrazione: Prefazione · Preface",
+      "sintesi_breve": "## Introduzione\n\nLa prefazione del libro di Porto, Lanzalone e Lombardo è un documento che rivela non solo le motivazioni del testo ma anche la filosofia didattica degli autori. Il libro nasce per colmare una lacuna: mancava una raccolta sistematica di problemi d'esame con soluzi",
+      "contenuto": "## Introduzione\n\nLa prefazione del libro di Porto, Lanzalone e Lombardo è un documento che rivela non solo le motivazioni del testo ma anche la filosofia didattica degli autori. Il libro nasce per colmare una lacuna: mancava una raccolta sistematica di problemi d'esame con soluzioni complete per preparare la prova scritta di Fisica Generale II. Parallelamente, la prefazione del volume di algebra lineare spiega perché la matematica classica sia fondamentale per comprendere machine learning e computer vision.\n\n## Concetti chiave\n\n### La genesi del libro di fisica\nIl Prof. Francesco Porto ha tenuto per 22 anni il corso di Fisica Generale II a Catania. Con i colleghi Lanzalone e Lombardo, ha raccolto problemi assegnati in oltre 20 anni, producendo un volume che copre elettromagnetismo e ottica con circa 400 problemi di media difficoltà. I destinatari sono studenti di Fisica, Matematica, Ingegneria, Chimica.\n\n### La genesi del libro di algebra\nIl testo di algebra nasce con l'obiettivo di fornire le basi per comprendere strumenti moderni come kernel PCA, ridge regression, support vector machines. L'autore nota che molti testi di machine learning aggirano le difficoltà matematiche con approcci \"cookbook\", inadatti a chi vuole fare ricerca seria.\n\n### Consigli agli studenti\nEntrambe le prefazioni enfatizzano lo stesso messaggio: studiare la teoria, tentare la soluzione da soli, solo dopo confrontarsi con le soluzioni proposte. È incoraggiata la ricerca di strategie alternative e il calcolo numerico con le corrette cifre significative.\n\n## Riepilogo\n- La prefazione del testo di fisica racconta 20 anni di esperienza didattica.\n- La prefazione del testo di algebra spiega perché servano basi solide per l'AI.\n- Entrambi enfatizzano l'apprendimento attivo e la pratica.\n- I problemi raccolti sono \"grandi classici\" di comprovata efficacia didattica.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 27,
+        "riga_fine": 55
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 48,
+          "riga_fine": 104
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere il contesto didattico da cui nasce il libro di fisica",
+        "Comprendere le motivazioni alla base del testo di algebra lineare applicata",
+        "Applicare la metodologia di studio consigliata per entrambi i volumi"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_003",
+      "ordine": 3,
+      "tipo": "quiz",
+      "argomento": "Verifica: Magnetostatica e Determinanti",
+      "sintesi_breve": "Quiz di verifica dopo mod_022",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_022"
+      ],
+      "domande": [
+        {
+          "testo": "Il prodotto vettore tra due vettori in R³ può essere espresso come:",
+          "opzioni": [
+            "Un determinante 3×3",
+            "Un prodotto scalare",
+            "Una somma di vettori",
+            "Un integrale di linea"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il prodotto vettore a×b si calcola come il determinante di una matrice 3×3 con versori e componenti."
+        },
+        {
+          "testo": "La forza di Lorentz F = q(v×B) è un esempio di:",
+          "opzioni": [
+            "Applicazione lineare dalla velocità alla forza",
+            "Applicazione non lineare",
+            "Forma bilineare simmetrica",
+            "Prodotto scalare"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Fissato B, la mappa v → v×B è lineare, quindi la forza di Lorentz è un'applicazione lineare."
+        },
+        {
+          "testo": "In uno spettrometro di massa, il raggio della traiettoria di una particella carica in campo magnetico è proporzionale a:",
+          "opzioni": [
+            "mv/(qB)",
+            "qmB/v",
+            "Bq/(mv)",
+            "vB/(mq)"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Dalla forza centripeta mv²/R = qvB si ricava R = mv/(qB)."
+        },
+        {
+          "testo": "Un deutone ha massa doppia rispetto a un protone. Con la stessa energia cinetica, la sua velocità è:",
+          "opzioni": [
+            "vp/√2",
+            "vp/2",
+            "vp√2",
+            "Uguale a vp"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Dall'uguaglianza ½mpvp² = ½(2mp)vd² si ricava vd = vp/√2."
+        }
+      ]
+    },
+    {
+      "id": "mod_004",
+      "ordine": 4,
+      "tipo": "lezione",
+      "argomento": "Integrazione: INDICE · 2.9 Summary",
+      "sintesi_breve": "## Introduzione\n\nL'indice del libro di fisica mostra l'architettura completa del corso di Elettromagnetismo e Ottica, suddiviso in 9 capitoli che spaziano dall'elettrostatica alla fisica moderna. Il \"2.9 Summary\" del testo di algebra lineare chiude il capitolo fondamentale sugli ",
+      "contenuto": "## Introduzione\n\nL'indice del libro di fisica mostra l'architettura completa del corso di Elettromagnetismo e Ottica, suddiviso in 9 capitoli che spaziano dall'elettrostatica alla fisica moderna. Il \"2.9 Summary\" del testo di algebra lineare chiude il capitolo fondamentale sugli spazi vettoriali, riassumendo i concetti di combinazioni lineari, basi e applicazioni lineari. La connessione? Ogni fenomeno elettromagnetico è un'applicazione lineare su uno spazio vettoriale.\n\n## Concetti chiave\n\n### I 9 capitoli di fisica\nIl percorso parte dall'elettrostatica (forze tra cariche, legge di Gauss, potenziale, condensatori), prosegue con circuiti in corrente stazionaria e continua (Ohm, Joule, Kirchhoff, transiente RC), magnetostatica (Ampère, Lorentz, ciclotrone), campi lentamente variabili (Faraday, induttanza), circuiti in corrente alternata (metodo dei vettori rotanti e numeri complessi), onde elettromagnetiche (Poynting, fotoni), ottica fisica (interferenza, diffrazione, polarizzazione), ottica geometrica (Snell-Cartesio, lenti sottili) e fisica moderna (effetto fotoelettrico, Compton, atomo di Bohr).\n\n### Il riepilogo di algebra lineare\nLa sezione 2.9 Summary del testo di algebra condensa: spazi vettoriali, indipendenza lineare, basi, matrici, applicazioni lineari, forme lineari e spazio duale — tutti strumenti indispensabili per descrivere i campi elettrici e magnetici.\n\n### Connessione: campi vettoriali\nIl campo elettrico E(x,y,z) è un campo vettoriale: a ogni punto dello spazio associa un vettore. Questo è esattamente il concetto di spazio vettoriale applicato alla fisica, dove i vettori \"vivono\" nello spazio tridimensionale.\n\n## Riepilogo\n- L'indice del testo di fisica traccia un percorso completo: da cariche puntiformi a fisica moderna.\n- Il summary di algebra lineare fornisce le basi per comprendere i campi vettoriali.\n- Ogni argomento di fisica ha un corrispettivo matematico in algebra lineare.\n- I capitoli successivi esploreranno in dettaglio queste connessioni.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 56,
+        "riga_fine": 80
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 2087,
+          "riga_fine": 2143
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere la struttura dei 9 capitoli di elettromagnetismo e ottica",
+        "Identificare i concetti chiave del summary di algebra lineare (Chapter 2)",
+        "Collegare i campi vettoriali della fisica agli spazi vettoriali dell'algebra"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_004",
+      "ordine": 4,
+      "tipo": "quiz",
+      "argomento": "Verifica: Campi Variabili, AC e Autovalori",
+      "sintesi_breve": "Quiz di verifica dopo mod_034",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_034"
+      ],
+      "domande": [
+        {
+          "testo": "La legge di Faraday-Neumann-Lenz stabilisce che la f.e.m. indotta è:",
+          "opzioni": [
+            "-dΦ(B)/dt",
+            "+dΦ(B)/dt",
+            "Φ(B)·t",
+            "d²Φ(B)/dt²"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La legge di Faraday dice che la forza elettromotrice indotta è pari alla derivata negativa del flusso magnetico."
+        },
+        {
+          "testo": "In un circuito RLC, l'equazione caratteristica è:",
+          "opzioni": [
+            "Lλ² + Rλ + 1/C = 0",
+            "Lλ + R + C = 0",
+            "Lλ² + Cλ + R = 0",
+            "Rλ² + Lλ + C = 0"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "L'equazione differenziale Lq'' + Rq' + q/C = 0 porta all'equazione caratteristica Lλ² + Rλ + 1/C = 0."
+        },
+        {
+          "testo": "Per un circuito in corrente alternata, l'impedenza Z è:",
+          "opzioni": [
+            "Z = √(R² + X²)",
+            "Z = R + X",
+            "Z = R·X",
+            "Z = 1/(R+X)"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "L'impedenza è il modulo del vettore (R, X) nel piano complesso: Z = √(R² + X²)."
+        },
+        {
+          "testo": "Il fattore di potenza in AC è definito come:",
+          "opzioni": [
+            "cos φ, dove φ è lo sfasamento tra V e I",
+            "sin φ",
+            "tan φ",
+            "R/Z²"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il fattore di potenza è cos φ, il coseno dell'angolo di sfasamento tra tensione e corrente."
+        }
+      ]
+    },
+    {
+      "id": "mod_005",
+      "ordine": 5,
+      "tipo": "lezione",
+      "argomento": "Integrazione: Capitolo 1 · Chapter 1",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 1 del libro di fisica introduce l'Elettrostatica, il primo e fondamentale argomento dello studio dell'elettromagnetismo. Il Chapter 1 del testo di algebra lineare è l'Introduzione generale, che spiega come il volume si proponga di coprire l'algebra li",
+      "contenuto": "## Introduzione\n\nIl Capitolo 1 del libro di fisica introduce l'Elettrostatica, il primo e fondamentale argomento dello studio dell'elettromagnetismo. Il Chapter 1 del testo di algebra lineare è l'Introduzione generale, che spiega come il volume si proponga di coprire l'algebra lineare \"classica\" fino alla decomposizione di Jordan, con accenni ad applicazioni moderne. L'elettrostatica è il punto d'incontro ideale: le forze tra cariche sono vettori, il campo elettrico è un campo vettoriale, il potenziale è uno scalare.\n\n## Concetti chiave\n\n### Il contenuto dell'Elettrostatica\nIl capitolo copre: forze e campi elettrici (cariche puntiformi e distribuite), legge di Gauss, moto di cariche in campi elettrici, potenziale elettrostatico, energia del campo, condensatori e dielettrici. Ogni concetto è accompagnato da problemi con soluzione completa.\n\n### Il Chapter 1 di algebra lineare\nL'introduzione spiega che il volume copre l'algebra lineare \"classica\" fino alla forma di Jordan, con alcuni argomenti avanzati come la SVD e le applicazioni a machine learning. Viene sottolineata l'importanza di avere una solida base per comprendere gli sviluppi moderni.\n\n### Perché l'elettrostatica è il punto di partenza\nLa legge di Coulomb F = k q1 q2 / r² è una relazione vettoriale. Sovrapporre più forze significa sommare vettori, cioè combinazioni lineari. Il campo elettrico E = F/q è anch'esso un vettore. Già dai primi problemi emerge la necessità di algebra vettoriale, che è il cuore dell'algebra lineare.\n\n## Riepilogo\n- L'elettrostatica è il fondamento fenomenologico dell'elettromagnetismo.\n- L'algebra lineare fornisce il linguaggio matematico per descrivere campi e forze.\n- La sovrapposizione degli effetti è una combinazione lineare di vettori.\n- I problemi del capitolo 1 mostrano applicazioni dirette dei concetti vettoriali.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 81,
+        "riga_fine": 181
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 352,
+          "riga_fine": 452
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Elencare i temi principali del capitolo di Elettrostatica",
+        "Comprendere la struttura introduttiva del volume di algebra lineare",
+        "Spiegare perché le forze elettriche richiedano strumenti vettoriali"
+      ],
+      "durata_stimata_minuti": 18,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "quiz_005",
+      "ordine": 5,
+      "tipo": "quiz",
+      "argomento": "Verifica: Ottica Fisica",
+      "sintesi_breve": "Quiz di verifica dopo mod_045",
+      "contenuto": "",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [],
+      "obiettivi_apprendimento": [],
+      "durata_stimata_minuti": 5,
+      "prerequisiti": [
+        "mod_045"
+      ],
+      "domande": [
+        {
+          "testo": "Il principio di Fermat afferma che:",
+          "opzioni": [
+            "La luce segue il percorso di tempo minimo",
+            "La luce segue il percorso più lungo",
+            "La luce segue una linea retta nel vuoto",
+            "La luce accelera nei mezzi più densi"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "Il principio di Fermat stabilisce che la luce segue il percorso di tempo minimo."
+        },
+        {
+          "testo": "La legge di Malus per la polarizzazione afferma che l'intensità trasmessa è:",
+          "opzioni": [
+            "I₀cos²θ",
+            "I₀sin²θ",
+            "I₀tan²θ",
+            "I₀cosθ"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La legge di Malus dice I = I₀cos²θ, dove θ è l'angolo tra l'asse del polarizzatore e la direzione di polarizzazione."
+        },
+        {
+          "testo": "La legge di Snell per la rifrazione afferma:",
+          "opzioni": [
+            "n₁sinθ₁ = n₂sinθ₂",
+            "n₁cosθ₁ = n₂cosθ₂",
+            "n₁/n₂ = sinθ₁/sinθ₂",
+            "θ₁ = θ₂"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La legge di Snell-Cartesio per la rifrazione è n₁sinθ₁ = n₂sinθ₂."
+        },
+        {
+          "testo": "In un reticolo di diffrazione, il potere risolutivo aumenta quando:",
+          "opzioni": [
+            "Il reticolo ha più fenditure",
+            "La luce è più intensa",
+            "La lunghezza d'onda è maggiore",
+            "La distanza dello schermo è maggiore"
+          ],
+          "indice_corretto": 0,
+          "spiegazione": "La risoluzione di un reticolo è R = mN, proporzionale al numero di fenditure N."
+        }
+      ]
+    },
+    {
+      "id": "mod_006",
+      "ordine": 6,
+      "tipo": "lezione",
+      "argomento": "Integrazione: Elettrostatica · Example 2.2",
+      "sintesi_breve": "## Introduzione\n\nL'Elettrostatica studia le cariche elettriche in quiete e i campi che generano. L'Example 2.2 del testo di algebra lineare illustra il concetto di spazio vettoriale concreto, mostrando come l'insieme R^n costituisca lo spazio vettoriale prototipico. I campi elett",
+      "contenuto": "## Introduzione\n\nL'Elettrostatica studia le cariche elettriche in quiete e i campi che generano. L'Example 2.2 del testo di algebra lineare illustra il concetto di spazio vettoriale concreto, mostrando come l'insieme R^n costituisca lo spazio vettoriale prototipico. I campi elettrici, essendo vettori in R^3, sono l'esempio perfetto di spazio vettoriale applicato alla fisica.\n\n## Concetti chiave\n\n### Campo elettrico come vettore\nIl campo elettrico E è definito in ogni punto dello spazio come forza per unità di carica. Ha modulo, direzione e verso. La somma di due campi elettrici (principio di sovrapposizione) è la somma vettoriale, che soddisfa tutte le proprietà di spazio vettoriale: commutatività, associatività, elemento neutro (campo nullo), inverso.\n\n### Spazio vettoriale R^n\nL'Example 2.2 mostra che R^n con le usuali operazioni di somma e prodotto per scalare è uno spazio vettoriale. I vettori di R^3 descrivono posizioni, velocità, forze e campi. La linearità delle equazioni di Maxwell deriva proprio da questa struttura.\n\n### Applicazione: principio di sovrapposizione\nIl campo elettrico generato da più cariche è la somma vettoriale dei campi individuali: E_tot = E_1 + E_2 + ... + E_n. Questo è un esempio di combinazione lineare, il primo concetto fondamentale dell'algebra lineare.\n\n## Esempio pratico\nConsideriamo due cariche: Q1 = +2 µC in (0,0) e Q2 = -1 µC in (3,0). Il campo nel punto (1,0) è la somma vettoriale dei campi generati da ciascuna carica. E1 punta verso destra (allontanandosi da Q1), E2 punta verso sinistra (attratto da Q2). Il campo risultante è E_tot = E1 + E2, una combinazione lineare.\n\n## Riepilogo\n- Il campo elettrico è un esempio fisico di spazio vettoriale.\n- La sovrapposizione dei campi è una somma vettoriale.\n- R^n è lo spazio vettoriale prototipico per la fisica classica.\n- L'elettrostatica fornisce esempi concreti di combinazioni lineari.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 82,
+        "riga_fine": 182
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 971,
+          "riga_fine": 1027
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Applicare il concetto di spazio vettoriale al campo elettrico",
+        "Comprendere la sovrapposizione come combinazione lineare",
+        "Identificare R^n come modello matematico per i campi fisici"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_007",
+      "ordine": 7,
+      "tipo": "lezione",
+      "argomento": "Simbologia Usata · Chapter 10 (Spazio Duale)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia usata nel testo di fisica è il vocabolario che serve per descrivere i fenomeni elettromagnetici. Il Chapter 10 del testo di algebra introduce lo spazio duale e le forme lineari, un concetto teorico che nella fisica si manifesta naturalmente: il pote",
+      "contenuto": "## Introduzione\n\nLa simbologia usata nel testo di fisica è il vocabolario che serve per descrivere i fenomeni elettromagnetici. Il Chapter 10 del testo di algebra introduce lo spazio duale e le forme lineari, un concetto teorico che nella fisica si manifesta naturalmente: il potenziale elettrico V è una forma lineare che associa a ogni punto dello spazio un numero (lo scalare potenziale). La simbologia della fisica (E, V, Φ, ε0, μ0) è la traduzione concreta dei concetti astratti dell'algebra.\n\n## Concetti chiave\n\n### La simbologia dell'elettrostatica\nIl testo di fisica elenca: densità di energia wE, energia elettrostatica WE, lavoro WA→B, energia potenziale U, energia cinetica K, costante dielettrica ε0 (8.85×10⁻¹² F/m), permeabilità magnetica μ0 (4π×10⁻⁷ H/m), campo elettrico E, momento di dipolo p0, costante di Coulomb k0=9×10⁹ Nm²/C².\n\n### Lo spazio duale in algebra lineare\nIl Chapter 10 introduce lo spazio duale E* come l'insieme delle forme lineari (funzioni lineari) da uno spazio vettoriale E al campo degli scalari. La dualità è fondamentale per comprendere il prodotto scalare, la trasposta di una mappa lineare, e i quattro sottospazi fondamentali.\n\n### Connessione: il potenziale come forma lineare\nIl potenziale elettrico V(r) associa a ogni punto r un numero reale, ed è lineare nel senso che V(r1+r2) = V(r1)+V(r2) in un intorno. Il gradiente del potenziale dà il campo elettrico: E = -∇V, che è un operatore lineare.\n\n## Riepilogo\n- La simbologia è il dizionario per tradurre la fisica in matematica.\n- Lo spazio duale E* è l'insieme delle forme lineari su uno spazio vettoriale.\n- Il potenziale elettrico è un esempio fisico di forma lineare.\n- La connessione tra simbologia e algebra lineare è il ponte per comprendere l'elettromagnetismo.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 11363,
+          "riga_fine": 11463
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare i simboli principali dell'elettrostatica e il loro significato",
+        "Comprendere il concetto di spazio duale in algebra lineare",
+        "Riconoscere il potenziale elettrico come esempio di forma lineare"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_008",
+      "ordine": 8,
+      "tipo": "lezione",
+      "argomento": "Soluzione di problemi · 15.9 Problems (Quaternioni)",
+      "sintesi_breve": "## Introduzione\n\nLa sezione \"Soluzione\" del testo di fisica contiene lo svolgimento completo dei problemi proposti. La sezione 15.9 Problems del testo di algebra riguarda i quaternioni unitari e le rotazioni in SO(3). A prima vista possono sembrare mondi lontani, ma le soluzioni ",
+      "contenuto": "## Introduzione\n\nLa sezione \"Soluzione\" del testo di fisica contiene lo svolgimento completo dei problemi proposti. La sezione 15.9 Problems del testo di algebra riguarda i quaternioni unitari e le rotazioni in SO(3). A prima vista possono sembrare mondi lontani, ma le soluzioni di molti problemi di fisica — specialmente quelli che coinvolgono rotazioni di cariche in campi magnetici — possono essere elegantemente descritte con i quaternioni.\n\n## Concetti chiave\n\n### Il metodo di soluzione in fisica\nI problemi di fisica vengono risolti con un approccio sistematico: identificare le grandezze note, applicare le leggi fisiche pertinenti (Coulomb, Gauss, Kirchhoff, Ampère, Faraday), impostare le equazioni, risolvere il sistema, verificare dimensionalmente e numericamente il risultato.\n\n### I quaternioni in algebra lineare\nIl Chapter 15 introduce SU(2), il gruppo dei quaternioni unitari, e la loro rappresentazione delle rotazioni in SO(3). Ogni rotazione in 3D può essere rappresentata da un quaternione unitario, evitando i problemi di gimbal lock delle matrici di rotazione euleriane.\n\n### Connessione: rotazioni di cariche in campo magnetico\nUna carica che si muove in un campo magnetico uniforme percorre una traiettoria circolare. La rotazione del vettore velocità può essere descritta elegantemente con i quaternioni, che forniscono una rappresentazione compatta e numericamente stabile.\n\n## Riepilogo\n- Le soluzioni dei problemi di fisica seguono un metodo sistematico.\n- I quaternioni rappresentano rotazioni in 3D senza ambiguità.\n- Le traiettorie circolari in campi magnetici sono rotazioni descrivibili con quaternioni.\n- La comprensione dei quaternioni è utile per la computer grafica e la robotica.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 18327,
+          "riga_fine": 18427
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere il metodo sistematico di risoluzione dei problemi di fisica",
+        "Comprendere il concetto di quaternione unitario e rotazione",
+        "Collegare le rotazioni di cariche in campi magnetici ai quaternioni"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_009",
+      "ordine": 9,
+      "tipo": "lezione",
+      "argomento": "Problema 1.63 (Condensatore con dielettrico) · 13.9 Problems",
+      "sintesi_breve": "## Introduzione\n\nIl Problema 1.63 del testo di fisica analizza un condensatore piano con dielettrico parziale. La sezione 13.9 Problems del testo di algebra riguarda problemi su spazi hermitiani e forme sesquilineari. La connessione? Il dielettrico modifica la capacità e quindi l",
+      "contenuto": "## Introduzione\n\nIl Problema 1.63 del testo di fisica analizza un condensatore piano con dielettrico parziale. La sezione 13.9 Problems del testo di algebra riguarda problemi su spazi hermitiani e forme sesquilineari. La connessione? Il dielettrico modifica la capacità e quindi la risposta lineare del condensatore alla differenza di potenziale — una relazione lineare Q = CV.\n\n## Concetti chiave\n\n### Il problema del condensatore con dielettrico\nUn condensatore piano con armature circolari (diametro 10 cm, distanza 5 mm) ha una lastra dielettrica (spessore 2 mm, εr=3.5) inserita. Il sistema equivale a due condensatori in serie: uno con dielettrico (C1) e uno in aria (C2). Con d.d.p. di 10V, si calcolano i campi elettrici nei due mezzi usando le condizioni al contorno (continuità della componente normale di D e condizioni alla superficie).\n\n### Forme hermitiane e sesquilineari\nIl Chapter 13 introduce gli spazi hermitiani, dotati di prodotto hermitiano (una forma sesquilineare). In fisica, il prodotto scalare complesso è la base della meccanica quantistica. Nel contesto dei condensatori, l'energia immagazzinata U = ½ CV² è una forma quadratica nella variabile V.\n\n### Il metodo di Cramer\nLa soluzione del problema 1.63 utilizza il metodo di Cramer per risolvere il sistema lineare a due equazioni. Questo è un esempio di determinante (Chapter 6 del testo di algebra) applicato a un problema fisico reale.\n\n## Riepilogo\n- I condensatori con dielettrico si modellano come condensatori in serie.\n- Le condizioni al contorno per il campo elettrico usano la linearità.\n- Il metodo di Cramer risolve i sistemi lineari che emergono dalla fisica.\n- L'energia immagazzinata è una forma quadratica, collegata alle forme hermitiane.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 155,
+        "riga_fine": 160
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 16481,
+          "riga_fine": 16631
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Calcolare la capacità equivalente di un condensatore con dielettrico parziale",
+        "Applicare il metodo di Cramer alla risoluzione di sistemi fisici",
+        "Collegare l'energia del condensatore alle forme quadratiche dell'algebra lineare"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_010",
+      "ordine": 10,
+      "tipo": "lezione",
+      "argomento": "Soluzione sistemi · Matrici invertibili",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione dei problemi di fisica spesso richiede la risoluzione di sistemi lineari. La sezione \"and we have\" del testo di algebra mostra un passaggio chiave nella dimostrazione di una proposizione sulle matrici invertibili. Invertire una matrice è essenziale p",
+      "contenuto": "## Introduzione\n\nLa soluzione dei problemi di fisica spesso richiede la risoluzione di sistemi lineari. La sezione \"and we have\" del testo di algebra mostra un passaggio chiave nella dimostrazione di una proposizione sulle matrici invertibili. Invertire una matrice è essenziale per risolvere sistemi come quelli che emergono dall'elettrostatica (equazioni di Poisson) o dai circuiti (legge di Kirchhoff).\n\n## Concetti chiave\n\n### Sistemi lineari in fisica\nI problemi di elettrostatica spesso portano a sistemi di equazioni. Per esempio, nel problema 1.3, l'equilibrio di tre cariche porta a un sistema di due equazioni in due incognite (Q₃ e x₃). Nel problema dei condensatori, il sistema lineare lega i campi E₁ e E₂.\n\n### Matrici invertibili\nUna matrice A è invertibile se esiste una matrice A⁻¹ tale che AA⁻¹ = A⁻¹A = I. Il determinante di una matrice invertibile è diverso da zero. La sezione \"and we have\" mostra una proprietà: se det(A) ≠ 0, allora A è invertibile e il sistema Ax = b ha un'unica soluzione x = A⁻¹b.\n\n### Applicazione ai circuiti\nI circuiti resistivi con n maglie indipendenti portano a un sistema lineare n×n che può essere risolto con l'inversione della matrice delle resistenze. Il metodo di Cramer è un modo, ma per sistemi grandi si usa l'eliminazione gaussiana (Chapter 7).\n\n## Riepilogo\n- I sistemi lineari sono onnipresenti in fisica (elettrostatica, circuiti).\n- Una matrice invertibile garantisce esistenza e unicità della soluzione.\n- Il determinante è il test per l'invertibilità.\n- I metodi numerici (eliminazione gaussiana) sono preferibili per sistemi grandi.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 5451,
+          "riga_fine": 5492
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Riconoscere i sistemi lineari nei problemi di fisica",
+        "Comprendere il significato di matrice invertibile",
+        "Applicare il determinante come test di invertibilità"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_011",
+      "ordine": 11,
+      "tipo": "lezione",
+      "argomento": "Capitolo 2 · Chapter 2 (Circuiti e Spazi Vettoriali)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 2 del libro di fisica introduce i circuiti con generatori di corrente stazionaria, coprendo corrente continua, resistenza, leggi di Ohm e Joule, circuiti puramente resistivi e transiente RC. Il Chapter 2 del testo di algebra è dedicato agli spazi vett",
+      "contenuto": "## Introduzione\n\nIl Capitolo 2 del libro di fisica introduce i circuiti con generatori di corrente stazionaria, coprendo corrente continua, resistenza, leggi di Ohm e Joule, circuiti puramente resistivi e transiente RC. Il Chapter 2 del testo di algebra è dedicato agli spazi vettoriali, basi e applicazioni lineari. I circuiti elettrici sono il perfetto terreno di incontro: le leggi di Kirchhoff danno origine a sistemi lineari che risiedono in spazi vettoriali.\n\n## Concetti chiave\n\n### Circuiti in corrente stazionaria\nI concetti fondamentali includono: corrente I = dQ/dt, resistenza R = V/I (Ohm), potenza dissipata P = I²R (Joule). Il regime stazionario implica che le correnti siano costanti nel tempo. I condensatori in regime stazionario si comportano come circuiti aperti (non conducono).\n\n### Spazi vettoriali e basi\nIl Chapter 2 dell'algebra definisce spazio vettoriale, indipendenza lineare, basi e dimensione. Le correnti in un circuito con n maglie indipendenti formano uno spazio vettoriale di dimensione n. La scelta delle maglie corrisponde a una base dello spazio delle correnti.\n\n### Leggi di Kirchhoff e sistemi lineari\nLa legge dei nodi (ΣI = 0) e la legge delle maglie (ΣV = 0) danno luogo a un sistema lineare. La matrice delle resistenze (o conduttanze) che ne deriva deve essere invertibile per avere un'unica soluzione. La struttura della matrice (simmetrica, definita positiva) garantisce che il sistema sia ben posto.\n\n## Riepilogo\n- I circuiti stazionari generano sistemi lineari risolvibili con l'algebra.\n- Le correnti formano uno spazio vettoriale di dimensione pari al numero di maglie.\n- Le leggi di Kirchhoff sono vincoli lineari sulle correnti.\n- La matrice delle resistenze è simmetrica e definita positiva.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 201,
+        "riga_fine": 301
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 416,
+          "riga_fine": 516
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere le basi dei circuiti in corrente stazionaria",
+        "Collegare il concetto di base vettoriale alle correnti di maglia",
+        "Applicare le leggi di Kirchhoff come sistema lineare"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_012",
+      "ordine": 12,
+      "tipo": "lezione",
+      "argomento": "Circuiti con generatori stazionari · Chapter 19 (Grafi)",
+      "sintesi_breve": "## Introduzione\n\nI circuiti con generatori di corrente stazionaria sono affrontati in dettaglio nel testo di fisica. Il Chapter 19 del testo di algebra introduce il graph drawing spettrale, ovvero come disegnare grafi usando autovalori e autovettori della matrice laplaciana. La c",
+      "contenuto": "## Introduzione\n\nI circuiti con generatori di corrente stazionaria sono affrontati in dettaglio nel testo di fisica. Il Chapter 19 del testo di algebra introduce il graph drawing spettrale, ovvero come disegnare grafi usando autovalori e autovettori della matrice laplaciana. La connessione? Un circuito elettrico è un grafo dove i nodi sono i punti di connessione e i rami sono i componenti (resistenze, generatori). L'analisi dei circuiti è un'applicazione della teoria dei grafi.\n\n## Concetti chiave\n\n### Il circuito come grafo\nOgni circuito elettrico può essere rappresentato come un grafo orientato. I nodi corrispondono ai punti di connessione, gli archi ai componenti. La matrice di incidenza nodi-rami cattura la topologia del circuito. La prima legge di Kirchhoff (nodi) dice che la matrice di incidenza moltiplicata per il vettore delle correnti è zero.\n\n### Graph drawing spettrale\nIl Chapter 19 mostra come usare gli autovettori del laplaciano di un grafo per posizionare i nodi in 2D o 3D minimizzando l'energia. Questo è analogo a trovare i potenziali nei nodi di un circuito che minimizzano la potenza dissipata.\n\n### Applicazione: analisi nodale\nIl metodo dei potenziali nodali per l'analisi dei circuiti costruisce una matrice di conduttanza (simile al laplaciano del grafo) e risolve G·V = I per trovare i potenziali ai nodi. La matrice di conduttanza è singolare se non c'è un riferimento di terra.\n\n## Riepilogo\n- I circuiti sono grafi con componenti elettrici sugli archi.\n- La matrice di incidenza nodi-rami è alla base dell'analisi circuitale.\n- Il laplaciano del grafo circuitale è analogo alla matrice di conduttanza.\n- Il graph drawing spettrale usa gli stessi strumenti dell'analisi nodale.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 202,
+        "riga_fine": 302
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 21284,
+          "riga_fine": 21384
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Rappresentare un circuito elettrico come un grafo",
+        "Comprendere la matrice di incidenza e il laplaciano associato",
+        "Collegare il metodo dei potenziali nodali al graph drawing spettrale"
+      ],
+      "durata_stimata_minuti": 18,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_013",
+      "ordine": 13,
+      "tipo": "lezione",
+      "argomento": "Corrente stazionaria · 17.8 Summary (Metodi Iterativi)",
+      "sintesi_breve": "## Introduzione\n\nLa corrente stazionaria nei circuiti implica che le variabili (correnti, tensioni) non variano nel tempo. Il 17.8 Summary del testo di algebra riassume il capitolo sul calcolo di autovalori e autovettori con metodi iterativi (QR, Arnoldi, Lanczos). I circuiti sta",
+      "contenuto": "## Introduzione\n\nLa corrente stazionaria nei circuiti implica che le variabili (correnti, tensioni) non variano nel tempo. Il 17.8 Summary del testo di algebra riassume il capitolo sul calcolo di autovalori e autovettori con metodi iterativi (QR, Arnoldi, Lanczos). I circuiti stazionari richiedono la soluzione di sistemi lineari, che per circuiti molto grandi si risolvono con metodi iterativi come Gauss-Seidel e Jacobi (Chapter 9 del testo di algebra).\n\n## Concetti chiave\n\n### Corrente stazionaria e regime\nNei circuiti con generatori stazionari, le correnti sono costanti. I condensatori in regime stazionario sono circuiti aperti (nessuna corrente continua li attraversa). Le equazioni del circuito si riducono a un sistema lineare algebrico.\n\n### Metodi iterativi per sistemi lineari\nI metodi di Jacobi e Gauss-Seidel (Chapter 9) risolvono sistemi lineari Ax = b decomponendo A = M - N e iterando x_{k+1} = M^{-1}(Nx_k + b). Questi metodi convergono se A è a predominanza diagonale, come accade per molti circuiti resistivi.\n\n### Metodi di Krylov\nI metodi di Arnoldi e Lanczos (Chapter 17) sono usati per calcolare autovalori e per risolvere sistemi lineari con l'approccio GMRES. La loro efficienza è cruciale per circuiti VLSI con milioni di nodi.\n\n## Riepilogo\n- I circuiti stazionari si risolvono con sistemi lineari Ax = b.\n- I metodi iterativi (Jacobi, Gauss-Seidel) convergono per matrici a predominanza diagonale.\n- I metodi di Krylov (Arnoldi, GMRES) sono adatti a circuiti molto grandi.\n- L'analisi circuitale beneficia dell'algebra lineare numerica.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 203,
+        "riga_fine": 303
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 20515,
+          "riga_fine": 20563
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Spiegare il comportamento di condensatori in regime stazionario",
+        "Comprendere le basi dei metodi iterativi di Jacobi e Gauss-Seidel",
+        "Collegare i metodi di Krylov all'analisi di circuiti su larga scala"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_014",
+      "ordine": 14,
+      "tipo": "lezione",
+      "argomento": "Simbologia circuiti · 10.9 Summary (Spazio Duale)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia dei circuiti con corrente stazionaria include grandezze come I (corrente), R (resistenza), ρ (resistività), σ (conducibilità), V (potenziale), C (capacità), P (potenza). Il 10.9 Summary del testo di algebra riassume il capitolo sullo spazio duale e ",
+      "contenuto": "## Introduzione\n\nLa simbologia dei circuiti con corrente stazionaria include grandezze come I (corrente), R (resistenza), ρ (resistività), σ (conducibilità), V (potenziale), C (capacità), P (potenza). Il 10.9 Summary del testo di algebra riassume il capitolo sullo spazio duale e le forme lineari. Nel contesto dei circuiti, la tensione V è una forma lineare che agisce sul vettore corrente I per dare la potenza P = V·I.\n\n## Concetti chiave\n\n### Le grandezze dei circuiti stazionari\nLa resistenza R = ρL/S, la conducibilità σ = 1/ρ, la potenza P = VI = I²R, la costante di tempo τ = RC. Ogni grandezza ha un significato fisico preciso e un ruolo nelle equazioni del circuito.\n\n### Richiamo: spazio duale\nIl teorema di dualità (10.3) stabilisce che uno spazio vettoriale e il suo duale hanno la stessa dimensione. Nei circuiti, tensione e corrente sono grandezze duali: il prodotto V·I dà la potenza, analogamente a come il pairing tra uno spazio e il suo duale dà uno scalare.\n\n### Forme lineari nei circuiti\nLa legge di Ohm V = IR può essere vista come una forma lineare che, applicata alla corrente I, restituisce la tensione V. La tensione ai capi di un resistore è una funzione lineare della corrente che lo attraversa.\n\n## Riepilogo\n- La simbologia dei circuiti è il linguaggio per descrivere le relazioni lineari.\n- Tensione e corrente sono grandezze duali il cui prodotto dà potenza.\n- La legge di Ohm è un esempio di relazione lineare.\n- Lo spazio duale fornisce la cornice teorica per la dualità tensione-corrente.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 12341,
+          "riga_fine": 12397
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze fondamentali dei circuiti stazionari",
+        "Comprendere la dualità tensione-corrente nel contesto dello spazio duale",
+        "Riconoscere la legge di Ohm come relazione lineare"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_015",
+      "ordine": 15,
+      "tipo": "lezione",
+      "argomento": "Problema 2.21 (Kirchhoff) · 9.7 Problems (Metodi Iterativi)",
+      "sintesi_breve": "## Introduzione\n\nIl Problema 2.21 è un classico esercizio di applicazione delle leggi di Kirchhoff: tre resistori, tre generatori, un circuito con due maglie. La sezione 9.7 Problems del testo di algebra propone problemi sui metodi iterativi. Il collegamento? Il sistema lineare c",
+      "contenuto": "## Introduzione\n\nIl Problema 2.21 è un classico esercizio di applicazione delle leggi di Kirchhoff: tre resistori, tre generatori, un circuito con due maglie. La sezione 9.7 Problems del testo di algebra propone problemi sui metodi iterativi. Il collegamento? Il sistema lineare che risulta da Kirchhoff può essere risolto sia con metodi diretti (Cramer, eliminazione gaussiana) sia con metodi iterativi.\n\n## Concetti chiave\n\n### Il problema\nDati V₁=12V, V₂=10V, V₃=8V, R₁=50Ω, R₂=20Ω, R₃=10Ω, si calcolano le correnti in ogni ramo. Si applica la legge dei nodi (al nodo A) e la legge delle maglie (per due maglie indipendenti), ottenendo un sistema 3×3.\n\n### Il sistema lineare\nIl sistema risultante ha la forma: nodo: I₁ = I₂ + I₃; maglia1: R₁I₁ + R₂I₂ = V₁ - V₂; maglia2: -R₂I₂ + R₃I₃ = V₂ - V₃. Sostituendo i valori numerici si ottiene una matrice dei coefficienti che è invertibile.\n\n### Metodi di risoluzione\nLa soluzione con Cramer richiede il calcolo del determinante della matrice 3×3, argomento del Chapter 6 di algebra. Per sistemi più grandi, i metodi iterativi del Chapter 9 sono più efficienti.\n\n## Riepilogo\n- I problemi di Kirchhoff generano sistemi lineari 3×3.\n- La legge dei nodi e delle maglie sono vincoli lineari.\n- La soluzione può essere ottenuta con determinanti o metodi diretti.\n- Per circuiti complessi si usano metodi iterativi o decomposizioni LU.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 224,
+        "riga_fine": 275
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 11278,
+          "riga_fine": 11362
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Applicare le leggi di Kirchhoff a un circuito a due maglie",
+        "Impostare il sistema lineare associato",
+        "Riconoscere metodi alternativi per la risoluzione"
+      ],
+      "durata_stimata_minuti": 13,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_016",
+      "ordine": 16,
+      "tipo": "lezione",
+      "argomento": "Soluzione circuiti · Proposition e Matrici",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione del problema 2.21 produce correnti con segni che indicano il verso effettivo. La sezione \"From the equation\" del testo di algebra illustra una proposizione sulle matrici. La soluzione dei sistemi lineari passa attraverso la manipolazione delle matric",
+      "contenuto": "## Introduzione\n\nLa soluzione del problema 2.21 produce correnti con segni che indicano il verso effettivo. La sezione \"From the equation\" del testo di algebra illustra una proposizione sulle matrici. La soluzione dei sistemi lineari passa attraverso la manipolazione delle matrici, e la verifica dei segni è un controllo importante della correttezza del risultato.\n\n## Concetti chiave\n\n### Interpretazione dei segni\nI segni delle correnti calcolate indicano se il verso ipotizzato inizialmente è corretto. Nel problema 2.21, il segno negativo per I₂ e I₃ indica che il verso reale è opposto a quello scelto. Questo è normale e fa parte del metodo: si sceglie un verso arbitrario, si risolve, e i segni dicono la verità.\n\n### Proposizioni sulle matrici\nIl testo di algebra presenta proposizioni dimostrate sulle proprietà delle matrici. Per esempio, se una matrice M ha determinante non nullo, è invertibile. La matrice del problema 2.21 ha determinante non nullo, garantendo un'unica soluzione.\n\n### Verifica dei risultati\nLa potenza totale dissipata (somma I²R per ogni resistenza) deve eguagliare la potenza erogata dai generatori (somma VI per ogni generatore). Questo è un principio di conservazione dell'energia che funge da verifica.\n\n## Riepilogo\n- I segni delle soluzioni indicano il verso reale delle correnti.\n- Il determinante non nullo garantisce unicità della soluzione.\n- La conservazione dell'energia (bilancio di potenza) verifica i calcoli.\n- Le proposizioni algebriche forniscono garanzie teoriche sui metodi di soluzione.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 12064,
+          "riga_fine": 12167
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Interpretare il segno delle correnti risolte in un circuito",
+        "Comprendere il ruolo del determinante nell'unicità della soluzione",
+        "Verificare i risultati con il bilancio di potenza"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_017",
+      "ordine": 17,
+      "tipo": "lezione",
+      "argomento": "Capitolo 3 · Chapter 6 (Magnetostatica e Determinanti)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 3 del libro di fisica introduce la Magnetostatica: campi magnetici generati da correnti, legge di Biot-Savart, legge di Ampère, forza di Lorentz. Il Chapter 6 del testo di algebra è dedicato ai determinanti, permutazioni e mappe multilineari alternate",
+      "contenuto": "## Introduzione\n\nIl Capitolo 3 del libro di fisica introduce la Magnetostatica: campi magnetici generati da correnti, legge di Biot-Savart, legge di Ampère, forza di Lorentz. Il Chapter 6 del testo di algebra è dedicato ai determinanti, permutazioni e mappe multilineari alternate. I determinanti sono essenziali per calcolare il prodotto vettoriale e il flusso magnetico, e per comprendere le proprietà del rotore.\n\n## Concetti chiave\n\n### Magnetostatica\nIl capitolo copre: campo magnetico generato da fili rettilinei, correnti distribuite, spire e solenoidi; legge di Ampère ∮B·dl = μ₀I; forza di Lorentz F = qv×B; moto di cariche in campi magnetici (traiettorie circolari, ciclotrone); effetto Hall; magnetismo nella materia.\n\n### Determinanti e permutazioni\nIl Chapter 6 introduce il determinante come funzione alternata multilineare delle colonne. La permutazione e la sua segnatura sono alla base della definizione di determinante. Il teorema di Cayley-Hamilton è un risultato profondo che collega matrici e polinomi caratteristici.\n\n### Il prodotto vettore come determinante\nIl prodotto vettoriale a×b in R³ si calcola come il determinante di una matrice 3×3 con versori i,j,k e le componenti di a e b. Questo è l'esempio più diretto di come il determinante emerga in fisica: la forza di Lorentz, il momento magnetico, e il rotore di un campo vettoriale usano tutti il determinante.\n\n## Riepilogo\n- La magnetostatica studia i campi magnetici generati da correnti stazionarie.\n- Il determinante è una funzione multilineare alternata.\n- Il prodotto vettore è un determinante 3×3, centrale nella magnetostatica.\n- La legge di Ampère e la forza di Lorentz usano il prodotto vettore.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 294,
+        "riga_fine": 394
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 4820,
+          "riga_fine": 4920
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Elencare i fenomeni principali della magnetostatica",
+        "Comprendere la definizione di determinante come mappa multilineare alternata",
+        "Applicare il determinante come prodotto vettore in fisica"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_018",
+      "ordine": 18,
+      "tipo": "lezione",
+      "argomento": "Magnetostatica · Spazi Vettoriali Geometrici",
+      "sintesi_breve": "## Introduzione\n\nLa Magnetostatica introduce il campo magnetico B, un campo vettoriale come il campo elettrico E. La citazione \"However, keep in mind that vector spaces are not just algebraic objects; they are also geometric objects\" dal testo di algebra sottolinea che gli spazi ",
+      "contenuto": "## Introduzione\n\nLa Magnetostatica introduce il campo magnetico B, un campo vettoriale come il campo elettrico E. La citazione \"However, keep in mind that vector spaces are not just algebraic objects; they are also geometric objects\" dal testo di algebra sottolinea che gli spazi vettoriali hanno una struttura geometrica oltre a quella algebrica. Il campo magnetico B(r) è un oggetto geometrico: a ogni punto dello spazio associa un vettore tangente.\n\n## Concetti chiave\n\n### Campi magnetici come campi vettoriali\nIl campo magnetico B è descritto dalla legge di Biot-Savart: dB = (μ₀/4π) I dl × r̂/r². La legge di Ampère ∮B·dl = μ₀I_inc segue la struttura geometrica delle linee di campo chiuse.\n\n### Gruppi e spazi vettoriali\nIl testo di algebra nota che gli spazi vettoriali non sono solo insiemi di vettori, ma hanno una struttura geometrica ricca. Il gruppo ortogonale O(3) e il gruppo speciale ortogonale SO(3) descrivono le simmetrie rotazionali dello spazio, che sono cruciali in magnetostatica (simmetria cilindrica di un filo, simmetria sferica di una spira).\n\n### Simmetria e campi magnetici\nLa legge di Ampère sfrutta la simmetria del sistema: per un filo rettilineo infinito, B ha simmetria cilindrica e dipende solo da r. Per un solenoide ideale, B è uniforme all'interno. Queste simmetrie sono descritte dai gruppi di trasformazioni geometriche.\n\n## Riepilogo\n- Il campo magnetico è un campo vettoriale geometrico.\n- Gli spazi vettoriali hanno una struttura geometrica oltre a quella algebrica.\n- I gruppi di simmetria (SO(3), O(3)) descrivono le proprietà dei campi.\n- La legge di Ampère sfrutta la simmetria per calcolare B.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 295,
+        "riga_fine": 395
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 816,
+          "riga_fine": 833
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere il campo magnetico come campo vettoriale geometrico",
+        "Riconoscere la struttura geometrica degli spazi vettoriali",
+        "Applicare le simmetrie per semplificare il calcolo di B"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_019",
+      "ordine": 19,
+      "tipo": "lezione",
+      "argomento": "Simbologia magnetostatica · 2.8 Forme Lineari e Spazio Duale",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia della magnetostatica include B (induzione magnetica), H (campo magnetico), M (magnetizzazione), μ₀ (permeabilità magnetica), μᵣ (permeabilità relativa). La sezione 2.8 del testo di algebra introduce le forme lineari e lo spazio duale. La relazione t",
+      "contenuto": "## Introduzione\n\nLa simbologia della magnetostatica include B (induzione magnetica), H (campo magnetico), M (magnetizzazione), μ₀ (permeabilità magnetica), μᵣ (permeabilità relativa). La sezione 2.8 del testo di algebra introduce le forme lineari e lo spazio duale. La relazione tra B e H, B = μ₀(H + M), è una relazione lineare che coinvolge lo spazio dei campi vettoriali e il suo duale.\n\n## Concetti chiave\n\n### Le grandezze magnetiche\nLa simbologia distingue: B (induzione magnetica) misurata in tesla (T), H (campo magnetico) misurato in A/m, M (magnetizzazione) momento magnetico per unità di volume. La permeabilità magnetica μ = μ₀μᵣ lega B e H: B = μH.\n\n### Forme lineari e spazio duale\nIl duale E* di uno spazio vettoriale E è l'insieme delle funzioni lineari f: E → R. Nel magnetismo, la mappa che associa a un vettore campo B il suo flusso attraverso una superficie Φ(B) = ∫∫ B·dS è una forma lineare sullo spazio dei campi.\n\n### Applicazione: flusso magnetico\nIl flusso magnetico Φ(B) è l'integrale di superficie di B. La legge di Faraday stabilisce che la f.e.m. indotta è -dΦ/dt. Questo è un esempio di come le forme lineari (il flusso) descrivano fenomeni fisici.\n\n## Riepilogo\n- La magnetostatica distingue B, H, M con relazioni lineari.\n- Lo spazio duale è l'insieme delle forme lineari su uno spazio vettoriale.\n- Il flusso magnetico è una forma lineare sullo spazio dei campi B.\n- La legge di Faraday collega la variazione di flusso alla f.e.m. indotta.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 1982,
+          "riga_fine": 2086
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze magnetostatiche principali",
+        "Comprendere lo spazio duale e le forme lineari",
+        "Collegare il flusso magnetico alle forme lineari"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_020",
+      "ordine": 20,
+      "tipo": "lezione",
+      "argomento": "Soluzione problemi magnetici · Example 2.8 (Applicazioni Lineari)",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione dei problemi di magnetostatica richiede l'applicazione della legge di Biot-Savart e di Ampère. L'Example 2.8 del testo di algebra illustra il concetto di applicazione lineare. La forza di Lorentz F = q(v×B) è un'applicazione lineare dalla velocità v ",
+      "contenuto": "## Introduzione\n\nLa soluzione dei problemi di magnetostatica richiede l'applicazione della legge di Biot-Savart e di Ampère. L'Example 2.8 del testo di algebra illustra il concetto di applicazione lineare. La forza di Lorentz F = q(v×B) è un'applicazione lineare dalla velocità v alla forza F, mediata dal campo magnetico B. Questa linearità è fondamentale in magnetostatica.\n\n## Concetti chiave\n\n### Forza di Lorentz come applicazione lineare\nLa forza su una carica in moto in un campo magnetico è F = q v × B. Fissato B, la mappa v → v×B è lineare: (v₁+v₂)×B = v₁×B + v₂×B e (αv)×B = α(v×B). Quindi per ogni B, la forza di Lorentz è un'applicazione lineare dallo spazio delle velocità allo spazio delle forze.\n\n### Applicazioni lineari in algebra\nUn'applicazione lineare f: V → W è una funzione che preserva combinazioni lineari: f(u+v) = f(u)+f(v) e f(αv) = αf(v). L'Example 2.8 mostra un'applicazione lineare concreta. Le applicazioni lineari sono il concetto centrale dell'algebra lineare.\n\n### Applicazione: spettrometro di massa\nIn uno spettrometro di massa, la forza di Lorentz F = qv×B curva la traiettoria delle particelle cariche. Il raggio di curvatura r = mv/(qB) dipende dalla massa m. Questo permette di separare ioni di massa diversa, ed è un'applicazione diretta della dipendenza lineare dalla velocità.\n\n## Riepilogo\n- La forza di Lorentz è un'applicazione lineare dalla velocità alla forza.\n- Le applicazioni lineari preservano combinazioni lineari.\n- Lo spettrometro di massa sfrutta la forza di Lorentz per separare ioni.\n- La linearità del prodotto vettore è essenziale in magnetostatica.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 1752,
+          "riga_fine": 1981
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere la forza di Lorentz come applicazione lineare",
+        "Definire il concetto di applicazione lineare in algebra",
+        "Applicare la linearità a problemi di spettrometria di massa"
+      ],
+      "durata_stimata_minuti": 27,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_021",
+      "ordine": 21,
+      "tipo": "lezione",
+      "argomento": "Problema 3.36 (Protoni e Deutoni) · 6.11 Problems",
+      "sintesi_breve": "## Introduzione\n\nIl Problema 3.36 riguarda un fascio di protoni e deutoni accelerati da una d.d.p. di 10⁶ V che entrano in un campo magnetico B = 1 T. La sezione 6.11 Problems del testo di algebra propone problemi sui determinanti. La traiettoria delle particelle cariche in un ca",
+      "contenuto": "## Introduzione\n\nIl Problema 3.36 riguarda un fascio di protoni e deutoni accelerati da una d.d.p. di 10⁶ V che entrano in un campo magnetico B = 1 T. La sezione 6.11 Problems del testo di algebra propone problemi sui determinanti. La traiettoria delle particelle cariche in un campo magnetico è determinata dalla forza di Lorentz, che è proporzionale al prodotto vettore — un determinante.\n\n## Concetti chiave\n\n### Il problema\nProtoni e deutoni sono accelerati dalla stessa d.d.p., quindi hanno la stessa energia cinetica K = 1 MeV. Ma il deutone ha massa doppia (md = 2mp), quindi velocità diversa. Nel campo magnetico percorrono semicirconferenze di raggio R = mv/(eB). Si chiede la distanza all'uscita e il ritardo temporale.\n\n### Determinanti in fisica\nIl prodotto vettore v×B può essere scritto come il determinante di una matrice 3×3: |i j k; vx vy vz; Bx By Bz|. Questo è esattamente il concetto di determinante come funzione multilineare alternata del Chapter 6.\n\n### Traiettorie circolari\nLa forza centripeta è fornita dalla forza di Lorentz: mv²/R = qvB, da cui R = mv/(qB). Il periodo T = 2πm/(qB) è indipendente dalla velocità (proprietà del ciclotrone). La differenza di massa tra protone e deutone porta a raggi e periodi diversi.\n\n## Riepilogo\n- Il prodotto vettore è un determinante 3×3.\n- Il raggio della traiettoria è proporzionale a mv/(qB).\n- Il periodo nel ciclotrone è indipendente dalla velocità.\n- La differenza di massa permette la separazione delle particelle.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 409,
+        "riga_fine": 418
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 5901,
+          "riga_fine": 6099
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Calcolare traiettorie di particelle cariche in campo magnetico",
+        "Collegare il prodotto vettore al determinante",
+        "Comprendere la separazione di particelle per massa in spettrometria"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_022",
+      "ordine": 22,
+      "tipo": "lezione",
+      "argomento": "Soluzione deutoni · Basi e Matrici",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione del problema 3.36 mostra che la distanza tra protoni e deutoni all'uscita dal campo magnetico è la differenza dei diametri. La sezione \"Recall that\" del testo di algebra richiama proprietà delle basi e delle matrici. La traiettoria delle particelle p",
+      "contenuto": "## Introduzione\n\nLa soluzione del problema 3.36 mostra che la distanza tra protoni e deutoni all'uscita dal campo magnetico è la differenza dei diametri. La sezione \"Recall that\" del testo di algebra richiama proprietà delle basi e delle matrici. La traiettoria delle particelle può essere descritta in diverse basi (coordinate cartesiane, coordinate polari), e la scelta della base opportuna semplifica i calcoli.\n\n## Concetti chiave\n\n### La soluzione del problema\nDeutoni (md = 2mp) hanno raggio Rd = mdvd/(eB), protoni Rp = mpvp/(eB). Poiché l'energia cinetica è la stessa: ½mpvp² = ½mdvd² = K, si ha vp/vd = √(md/mp) = √2. La distanza = 2(Rd - Rp) e il ritardo = Td/2 - Tp/2.\n\n### Basi e matrici in algebra\nUna base di uno spazio vettoriale permette di rappresentare ogni vettore in modo unico come combinazione lineare. La matrice che rappresenta una applicazione lineare dipende dalla scelta della base. Cambiare base (change of basis matrix, Chapter 3.3) semplifica i calcoli.\n\n### Scelta della base opportuna\nNel problema, scegliere coordinate cilindriche (r, θ, z) invece che cartesiane semplifica la descrizione della traiettoria circolare. Il vettore velocità ha componenti costanti in modulo ma rotanti, e in coordinate polari la descrizione è più semplice.\n\n## Riepilogo\n- La distanza all'uscita dipende dalla differenza di massa.\n- Una base di uno spazio vettoriale permette rappresentazioni uniche.\n- Cambiare base (coordinate) semplifica i calcoli fisici.\n- Le coordinate polari sono la base naturale per traiettorie circolari.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 2615,
+          "riga_fine": 2704
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Risolvere problemi di traiettorie in campo magnetico",
+        "Comprendere il concetto di base in algebra lineare",
+        "Scegliere il sistema di coordinate appropriato per semplificare i calcoli"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_023",
+      "ordine": 23,
+      "tipo": "lezione",
+      "argomento": "Capitolo 4 · Chapter 14 (Campi Variabili e Autovalori)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 4 del libro di fisica introduce i campi elettromagnetici lentamente variabili: legge di Faraday-Neumann-Lenz, induttanza, circuiti induttivi, energia magnetica, legge di Ampère-Maxwell e potenziale vettore. Il Chapter 14 del testo di algebra tratta au",
+      "contenuto": "## Introduzione\n\nIl Capitolo 4 del libro di fisica introduce i campi elettromagnetici lentamente variabili: legge di Faraday-Neumann-Lenz, induttanza, circuiti induttivi, energia magnetica, legge di Ampère-Maxwell e potenziale vettore. Il Chapter 14 del testo di algebra tratta autovalori e autovettori. I circuiti RLC e le equazioni di Maxwell in forma differenziale coinvolgono operatori lineari i cui autovalori determinano le frequenze di risonanza.\n\n## Concetti chiave\n\n### Campi lentamente variabili\nLegge di Faraday: f.e.m. = -dΦ(B)/dt. L'autoinduttanza L lega la f.e.m. alla variazione di corrente: ε = -L dI/dt. L'energia magnetica immagazzinata in un induttore è W = ½LI². La corrente di spostamento di Maxwell completa la legge di Ampère: ∮B·dl = μ₀(I + ε₀ dΦ(E)/dt).\n\n### Autovalori e autovettori\nUn autovettore v di una mappa lineare f soddisfa f(v) = λv. In fisica, le equazioni differenziali lineari si risolvono cercando soluzioni esponenziali, che corrispondono ad autofunzioni dell'operatore differenziale. Per un circuito RLC, l'equazione differenziale L d²q/dt² + R dq/dt + q/C = 0 ha soluzioni della forma e^{λt}.\n\n### Applicazione: circuiti RLC\nL'equazione caratteristica Lλ² + Rλ + 1/C = 0 dà gli autovalori λ che determinano il comportamento del circuito (smorzato, critico, oscillatorio). La parte immaginaria di λ dà la frequenza di oscillazione.\n\n## Riepilogo\n- La legge di Faraday collega la variazione di flusso alla f.e.m. indotta.\n- Gli autovalori determinano la dinamica dei sistemi lineari.\n- I circuiti RLC si analizzano con equazioni differenziali lineari.\n- Le frequenze di risonanza sono legate agli autovalori dell'operatore.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 451,
+        "riga_fine": 551
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 16632,
+          "riga_fine": 19638
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere la legge di Faraday e l'induttanza",
+        "Comprendere autovalori e autovettori di mappe lineari",
+        "Applicare gli autovalori all'analisi dei circuiti RLC"
+      ],
+      "durata_stimata_minuti": 29,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_024",
+      "ordine": 24,
+      "tipo": "lezione",
+      "argomento": "Campi EM variabili · Example 2.3 (Vettori)",
+      "sintesi_breve": "## Introduzione\n\nI campi elettromagnetici lentamente variabili includono i fenomeni di induzione. L'Example 2.3 del testo di algebra illustra un esempio di spazio vettoriale. La corrente di spostamento di Maxwell è l'esempio perfetto: introduce una simmetria tra campo elettrico e",
+      "contenuto": "## Introduzione\n\nI campi elettromagnetici lentamente variabili includono i fenomeni di induzione. L'Example 2.3 del testo di algebra illustra un esempio di spazio vettoriale. La corrente di spostamento di Maxwell è l'esempio perfetto: introduce una simmetria tra campo elettrico e magnetico, unificandoli in un unico campo tensoriale elettromagnetico che vive in uno spazio vettoriale a 6 dimensioni (3 componenti di E + 3 di B).\n\n## Concetti chiave\n\n### Corrente di spostamento\nMaxwell aggiunge il termine ε₀ dE/dt alla legge di Ampère per garantire la conservazione della carica. Questo porta all'equazione d'onda elettromagnetica e mostra che i campi variabili generano onde che si propagano alla velocità della luce.\n\n### Spazio vettoriale dei campi\nIl campo elettromagnetico è un tensore antisimmetrico Fμν in 4 dimensioni (spaziotempo di Minkowski). In 3D, E e B sono due vettori collegati dalle equazioni di Maxwell. Lo spazio dei campi (E,B) è uno spazio vettoriale a 6 dimensioni.\n\n### Linearità delle equazioni di Maxwell\nLe equazioni di Maxwell sono lineari: la somma di due soluzioni è ancora una soluzione. Questo principio di sovrapposizione vale sia per l'elettrostatica che per i campi variabili, ed è la manifestazione fisica della struttura di spazio vettoriale.\n\n## Riepilogo\n- La corrente di spostamento completa la legge di Ampère.\n- Il campo elettromagnetico è un tensore in 4 dimensioni.\n- Le equazioni di Maxwell sono lineari (sovrapposizione).\n- Lo spazio dei campi (E,B) è uno spazio vettoriale a 6 dimensioni.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 452,
+        "riga_fine": 552
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 1028,
+          "riga_fine": 1066
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere la corrente di spostamento di Maxwell",
+        "Riconoscere il campo EM come spazio vettoriale a 6 dimensioni",
+        "Applicare il principio di sovrapposizione ai campi variabili"
+      ],
+      "durata_stimata_minuti": 14,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_025",
+      "ordine": 25,
+      "tipo": "lezione",
+      "argomento": "Campi variabili · Spazi Vettoriali, Basi, Mappe Lineari",
+      "sintesi_breve": "## Introduzione\n\nI campi lentamente variabili costituiscono il ponte tra l'elettrostatica/magnetostatica e le onde elettromagnetiche. Il titolo del Chapter 2 del testo di algebra — \"Vector Spaces, Bases, Linear Maps\" — descrive esattamente gli strumenti necessari per comprendere ",
+      "contenuto": "## Introduzione\n\nI campi lentamente variabili costituiscono il ponte tra l'elettrostatica/magnetostatica e le onde elettromagnetiche. Il titolo del Chapter 2 del testo di algebra — \"Vector Spaces, Bases, Linear Maps\" — descrive esattamente gli strumenti necessari per comprendere questi fenomeni. I campi variabili nel tempo introducono la nozione di operatore differenziale (∂/∂t) come mappa lineare sullo spazio delle funzioni.\n\n## Concetti chiave\n\n### Operatori differenziali lineari\nGli operatori ∇ (gradiente), ∇· (divergenza), ∇× (rotore) e ∂/∂t sono mappe lineari sullo spazio vettoriale dei campi. Le equazioni di Maxwell usano tutti questi operatori: ∇·E = ρ/ε₀, ∇×E = -∂B/∂t, ∇·B = 0, ∇×B = μ₀J + μ₀ε₀∂E/∂t.\n\n### Basi di funzioni\nLe soluzioni delle equazioni di Maxwell possono essere espresse come combinazioni lineari di onde piane (serie di Fourier). Le onde piane e^{i(k·r - ωt)} formano una base (ortonormale) dello spazio delle soluzioni. Questa è un'applicazione del concetto di base in spazi di funzioni.\n\n### Potenziale vettore\nIl potenziale vettore A è definito da B = ∇×A. L'arbitrarietà di gauge (A' = A + ∇Λ) riflette il fatto che A è definito a meno di un elemento del kernel dell'operatore rotore — un concetto puramente algebrico.\n\n## Riepilogo\n- Gli operatori differenziali sono mappe lineari su spazi di funzioni.\n- Le onde piane formano una base per le soluzioni di Maxwell.\n- Il potenziale vettore è definito a meno di trasformazioni di gauge.\n- La linearità delle equazioni di Maxwell permette la sovrapposizione delle onde.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 453,
+        "riga_fine": 553
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 417,
+          "riga_fine": 517
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare gli operatori differenziali come mappe lineari",
+        "Riconoscere le onde piane come base per le soluzioni di Maxwell",
+        "Comprendere il potenziale vettore e l'arbitrarietà di gauge"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_026",
+      "ordine": 26,
+      "tipo": "lezione",
+      "argomento": "Simbologia campi EM · 8.1 Spazi Vettoriali Normati",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia dei campi elettromagnetici variabili include grandezze come Φ_B (flusso magnetico), E_i (f.e.m. indotta), L (induttanza), Z (impedenza). La sezione 8.1 del testo di algebra introduce gli spazi vettoriali normati. La norma di un vettore è essenziale ",
+      "contenuto": "## Introduzione\n\nLa simbologia dei campi elettromagnetici variabili include grandezze come Φ_B (flusso magnetico), E_i (f.e.m. indotta), L (induttanza), Z (impedenza). La sezione 8.1 del testo di algebra introduce gli spazi vettoriali normati. La norma di un vettore è essenziale per definire l'energia del campo elettromagnetico: la densità di energia è ½ε₀E² + ½μ₀B², che è la norma al quadrato del campo nello spazio di Hilbert.\n\n## Concetti chiave\n\n### Le grandezze dei campi variabili\nLa simbologia del Capitolo 4 include: Φ_B flusso magnetico, Φ_E flusso elettrico, E_i forza elettromotrice indotta, L induttanza, ω pulsazione, m massa, τ momento meccanico, Z impedenza, C capacità, D induzione dielettrica.\n\n### Spazi normati\nUno spazio vettoriale normato ha una funzione ||·|| che misura la lunghezza dei vettori. La norma soddisfa: ||v|| ≥ 0, ||αv|| = |α|·||v||, ||v+w|| ≤ ||v|| + ||w||. In fisica, la norma euclidea è la lunghezza geometrica.\n\n### Energia come norma\nL'energia del campo elettrico è U_E = ∫½ε₀E² dV, che è ½ε₀ volte la norma al quadrato di E nello spazio L². Analogamente, l'energia magnetica U_B = ∫½μ₀B² dV è una norma al quadrato. L'energia totale del campo EM è la somma di queste due norme.\n\n## Riepilogo\n- La simbologia dei campi variabili include flussi, impedenze e induttanze.\n- Gli spazi normati misurano la grandezza dei vettori.\n- L'energia del campo EM è una norma al quadrato.\n- Le norme forniscono il linguaggio per l'energia e la potenza.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 8508,
+          "riga_fine": 8558
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare la simbologia dei campi elettromagnetici variabili",
+        "Comprendere il concetto di spazio normato",
+        "Collegare l'energia del campo EM alla norma vettoriale"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_027",
+      "ordine": 27,
+      "tipo": "lezione",
+      "argomento": "Soluzione problemi EM · 21.7 Problems (SVD)",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione di problemi con campi variabili coinvolge l'integrazione di equazioni differenziali. La sezione 21.7 Problems del testo di algebra riguarda l'SVD (Singular Value Decomposition) e le sue applicazioni. L'SVD è uno strumento potente per risolvere proble",
+      "contenuto": "## Introduzione\n\nLa soluzione di problemi con campi variabili coinvolge l'integrazione di equazioni differenziali. La sezione 21.7 Problems del testo di algebra riguarda l'SVD (Singular Value Decomposition) e le sue applicazioni. L'SVD è uno strumento potente per risolvere problemi inversi e analizzare segnali, inclusi quelli elettromagnetici.\n\n## Concetti chiave\n\n### Problemi di campi variabili\nI problemi del Capitolo 4 riguardano circuiti RL, generatori di corrente alternata, potenziale vettore, energia magnetica. Le soluzioni coinvolgono funzioni trigonometriche ed esponenziali.\n\n### SVD e decomposizione di segnali\nLa SVD decompone una matrice A in A = UΣV^T, dove U e V sono ortogonali e Σ è diagonale con i valori singolari. Per l'analisi di segnali, la SVD può separare il segnale dal rumore: i componenti con valori singolari grandi corrispondono al segnale, quelli piccoli al rumore.\n\n### Applicazione: filtraggio di segnali EM\nUn segnale elettromagnetico rumoroso può essere filtrato calcolandone la SVD e azzerando i valori singolari piccoli. Questa tecnica (truncated SVD) è usata nell'elaborazione di segnali radar e nelle comunicazioni wireless.\n\n## Riepilogo\n- I problemi di campi variabili richiedono la risoluzione di equazioni differenziali.\n- La SVD decompone una matrice in componenti ortogonali pesate.\n- Il filtraggio con SVD rimuove il rumore dai segnali EM.\n- L'SVD è uno strumento fondamentale per l'elaborazione di segnali.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 23176,
+          "riga_fine": 23250
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Risolvere problemi di campi elettromagnetici variabili",
+        "Comprendere la decomposizione SVD",
+        "Applicare l'SVD al filtraggio di segnali"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_028",
+      "ordine": 28,
+      "tipo": "lezione",
+      "argomento": "Problema 4.40 (Sbarretta conduttrice) · 14.7 Problems",
+      "sintesi_breve": "## Introduzione\n\nIl Problema 4.40 descrive una sbarretta conduttrice che scorre senza attrito su guide verticali in un campo magnetico. La sezione 14.7 Problems del testo di algebra riguarda autovalori e autovettori. La sbarretta in movimento genera una f.e.m. indotta ε = BLv, ch",
+      "contenuto": "## Introduzione\n\nIl Problema 4.40 descrive una sbarretta conduttrice che scorre senza attrito su guide verticali in un campo magnetico. La sezione 14.7 Problems del testo di algebra riguarda autovalori e autovettori. La sbarretta in movimento genera una f.e.m. indotta ε = BLv, che dipende dalla velocità. L'equazione del moto è un'equazione differenziale lineare del primo ordine che può essere risolta con autovalori.\n\n## Concetti chiave\n\n### Il problema\nUna sbarretta conduttrice (L=10cm, m=25g, R=0.3Ω) scorre su guide verticali con una pila V=6V. Il circuito è in un campo magnetico B. La corrente nella sbarretta produce una forza magnetica F_B = ILB che si oppone al moto (legge di Lenz). L'equazione del moto combina forza di Lorentz e legge di Faraday.\n\n### Autovalori per l'analisi temporale\nL'equazione del moto è del tipo m dv/dt = mg - (B²L²/R)v. La soluzione è v(t) = v_∞(1 - e^{-t/τ}), dove τ = mR/(B²L²) è la costante di tempo. L'autovalore λ = -1/τ determina la scala temporale del sistema.\n\n### Applicazione: freno elettromagnetico\nIl principio è lo stesso dei freni elettromagnetici usati nei treni: una lastra conduttrice in moto in un campo magnetico subisce una forza frenante proporzionale alla velocità. Il sistema è lineare e l'autovalore determina l'efficienza del freno.\n\n## Riepilogo\n- Una sbarretta in moto in un campo B genera una f.e.m. indotta.\n- L'equazione del moto è lineare con soluzione esponenziale.\n- L'autovalore λ = -1/τ determina la costante di tempo.\n- Il sistema è un esempio di freno elettromagnetico lineare.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 494,
+        "riga_fine": 497
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 17308,
+          "riga_fine": 17642
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Analizzare il moto di una sbarretta conduttrice in campo magnetico",
+        "Comprendere gli autovalori come scala temporale",
+        "Collegare il problema al freno elettromagnetico"
+      ],
+      "durata_stimata_minuti": 23,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_029",
+      "ordine": 29,
+      "tipo": "lezione",
+      "argomento": "Soluzione sbarretta · Mappe Lineari",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione del problema 4.40 mostra che la forza agente sulla sbarretta è proporzionale alla velocità (F = -kv). La sezione \"that is\" del testo di algebra illustra una proprietà delle mappe lineari. La relazione tra forza frenante e velocità è lineare: F = -(B²",
+      "contenuto": "## Introduzione\n\nLa soluzione del problema 4.40 mostra che la forza agente sulla sbarretta è proporzionale alla velocità (F = -kv). La sezione \"that is\" del testo di algebra illustra una proprietà delle mappe lineari. La relazione tra forza frenante e velocità è lineare: F = -(B²L²/R)v, un esempio concreto di applicazione lineare dalla velocità alla forza.\n\n## Concetti chiave\n\n### Forza frenante lineare\nLa forza magnetica F_B = ILB, con I = (V_0 - BLv)/R, diventa F_B = (B²L²/R)v. Questa è una relazione lineare tra forza e velocità, con coefficiente di smorzamento viscoso equivalente b = B²L²/R.\n\n### Mappe lineari in fisica\nUna mappa lineare T: V → W soddisfa T(αv₁ + v₂) = αT(v₁) + T(v₂). La forza frenante F(v) = -bv è lineare: F(αv₁+v₂) = -b(αv₁+v₂) = αF(v₁)+F(v₂). Questo è un modello di smorzamento viscoso.\n\n### Stabilità del sistema\nL'equazione m dv/dt = mg - bv ha punto fisso v_∞ = mg/b. L'autovalore λ = -b/m è negativo, quindi il punto fisso è stabile: qualsiasi condizione iniziale converge a v_∞. Lo studio della stabilità lineare si basa sugli autovalori della mappa lineare.\n\n## Riepilogo\n- La forza frenante è lineare nella velocità (F = -bv).\n- La mappa velocità→forza è un'applicazione lineare.\n- L'autovalore negativo garantisce stabilità del sistema.\n- Il sistema converge esponenzialmente alla velocità limite.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 4459,
+          "riga_fine": 4509
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Riconoscere la linearità della forza frenante",
+        "Comprendere le mappe lineari nella modellazione fisica",
+        "Analizzare la stabilità di un sistema lineare"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_030",
+      "ordine": 30,
+      "tipo": "lezione",
+      "argomento": "Capitolo 5 · Chapter 18 (Circuiti non stazionari e Grafi)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 5 del libro di fisica introduce i circuiti con generatori di corrente non stazionaria: circuiti oscillanti, corrente alternata, metodo dei vettori rotanti e metodo dei numeri complessi. Il Chapter 18 del testo di algebra introduce grafi e laplaciani. ",
+      "contenuto": "## Introduzione\n\nIl Capitolo 5 del libro di fisica introduce i circuiti con generatori di corrente non stazionaria: circuiti oscillanti, corrente alternata, metodo dei vettori rotanti e metodo dei numeri complessi. Il Chapter 18 del testo di algebra introduce grafi e laplaciani. I circuiti in corrente alternata sono analizzati con numeri complessi e fasori, una tecnica che trasforma equazioni differenziali lineari in equazioni algebriche lineari nel dominio della frequenza.\n\n## Concetti chiave\n\n### Circuiti in corrente alternata\nLa corrente alternata I(t) = I₀cos(ωt+φ) è descritta da fasori (numeri complessi). L'impedenza Z = R + jX generalizza la resistenza al regime alternato. La legge di Ohm in AC: V = ZI.\n\n### Grafi e circuiti AC\nLa struttura topologica del circuito (grafo) è la stessa per DC e AC. Le leggi di Kirchhoff valgono anche in AC, ma con correnti e tensioni fasoriali. La matrice delle impedenze (complessa) sostituisce la matrice delle resistenze.\n\n### Metodo dei vettori rotanti\nIl \"metodo dei vettori rotanti\" è un'applicazione del fatto che le soluzioni di equazioni differenziali lineari omogenee sono combinazioni lineari di esponenziali complessi. Ogni fasore ruota nel piano complesso con velocità ω.\n\n## Riepilogo\n- La corrente alternata si analizza con fasori (numeri complessi).\n- Le leggi di Kirchhoff valgono in forma fasoriale.\n- L'impedenza Z generalizza la resistenza al regime AC.\n- Il metodo dei vettori rotanti usa la rappresentazione complessa.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 512,
+        "riga_fine": 612
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 20597,
+          "riga_fine": 20697
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere l'analisi dei circuiti in corrente alternata",
+        "Utilizzare i fasori come rappresentazione complessa",
+        "Collegare la topologia dei circuiti alla teoria dei grafi"
+      ],
+      "durata_stimata_minuti": 17,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_031",
+      "ordine": 31,
+      "tipo": "lezione",
+      "argomento": "Circuiti non stazionari · 2.5 Basi di uno Spazio Vettoriale",
+      "sintesi_breve": "## Introduzione\n\nI circuiti con generatori di corrente non stazionaria includono circuiti RLC oscillanti, filtri passa-basso, e circuiti risonanti. La sezione 2.5 del testo di algebra introduce le basi di uno spazio vettoriale. Un circuito RLC ha una base di soluzioni (libera e f",
+      "contenuto": "## Introduzione\n\nI circuiti con generatori di corrente non stazionaria includono circuiti RLC oscillanti, filtri passa-basso, e circuiti risonanti. La sezione 2.5 del testo di algebra introduce le basi di uno spazio vettoriale. Un circuito RLC ha una base di soluzioni (libera e forzata) che genera tutte le possibili evoluzioni temporali.\n\n## Concetti chiave\n\n### Circuiti oscillanti RLC\nL'equazione L d²q/dt² + R dq/dt + q/C = V(t) descrive la carica q(t). La soluzione omogenea è combinazione lineare di due esponenziali (complessi coniugati o reali). La soluzione particolare dipende dalla forzante V(t).\n\n### Basi nello spazio delle soluzioni\nLo spazio vettoriale delle soluzioni dell'equazione omogenea ha dimensione 2. Una base è data da {e^{λ₁t}, e^{λ₂t}} se λ₁≠λ₂, oppure {e^{λt}, te^{λt}} se λ è doppio. Ogni soluzione dell'omogenea è combinazione lineare della base.\n\n### Applicazione: filtri RLC\nUn circuito RLC in serie si comporta come filtro passa-banda. La frequenza di risonanza ω₀ = 1/√(LC) e il fattore di qualità Q = (1/R)√(L/C) determinano la selettività. Questi parametri emergono dagli autovalori del sistema.\n\n## Riepilogo\n- I circuiti RLC sono descritti da equazioni differenziali lineari.\n- Le soluzioni formano uno spazio vettoriale di dimensione 2.\n- Gli autovalori determinano la dinamica (smorzata, oscillatoria).\n- I filtri RLC sfruttano la risonanza per selezionare frequenze.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 513,
+        "riga_fine": 1253
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 1408,
+          "riga_fine": 1418
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Analizzare circuiti RLC oscillanti",
+        "Comprendere lo spazio delle soluzioni e le basi",
+        "Calcolare frequenza di risonanza e fattore di qualità"
+      ],
+      "durata_stimata_minuti": 27,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_032",
+      "ordine": 32,
+      "tipo": "lezione",
+      "argomento": "Simbologia AC · Example 8.1 (Norme)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia dei circuiti a corrente non stazionaria include W (energia), L (induttanza), Z (impedenza), ω (pulsazione), φ (sfasamento), X (reattanza). L'Example 8.1 del testo di algebra illustra un esempio di spazio normato. La potenza media in AC P_media = V_r",
+      "contenuto": "## Introduzione\n\nLa simbologia dei circuiti a corrente non stazionaria include W (energia), L (induttanza), Z (impedenza), ω (pulsazione), φ (sfasamento), X (reattanza). L'Example 8.1 del testo di algebra illustra un esempio di spazio normato. La potenza media in AC P_media = V_rms I_rms cos φ è un'applicazione della norma e del prodotto scalare tra fasori.\n\n## Concetti chiave\n\n### Le grandezze dei circuiti non stazionari\nW = energia immagazzinata, Q = carica, C = capacità, L = induttanza, Z = impedenza, ω = pulsazione, f = frequenza, P = potenza dissipata, X = reattanza, φ = sfasamento. L'impedenza Z = √(R² + X²) è una norma nel piano complesso.\n\n### Norme e distanze\nL'Example 8.1 mostra come calcolare la norma di un vettore. La norma euclidea in R² generalizza il teorema di Pitagora. L'impedenza Z è la norma del vettore (R, X) nel piano complesso.\n\n### Potenza in AC\nLa potenza attiva P = VI cos φ richiede il prodotto scalare tra i fasori di tensione e corrente. Il fattore di potenza cos φ è il coseno dell'angolo tra i due fasori, una misura di allineamento.\n\n## Riepilogo\n- L'impedenza Z è la norma di (R, X) nel piano complesso.\n- I fasori sono vettori nel piano complesso con norma e angolo.\n- La potenza attiva è il prodotto scalare tra fasori.\n- Lo sfasamento φ determina il fattore di potenza.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 8559,
+          "riga_fine": 8877
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze dei circuiti non stazionari",
+        "Collegare impedenza e norma vettoriale",
+        "Calcolare potenza attiva con prodotto scalare tra fasori"
+      ],
+      "durata_stimata_minuti": 24,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_033",
+      "ordine": 33,
+      "tipo": "lezione",
+      "argomento": "Soluzione AC · Proposizione 13.8 (Hermitiani)",
+      "sintesi_breve": "## Introduzione\n\nLe soluzioni dei problemi in AC coinvolgono fasori e numeri complessi. La Proposition 13.8 del testo di algebra riguarda le proprietà degli spazi hermitiani. I numeri complessi sono il campo base degli spazi hermitiani, e il modulo di un numero complesso è la sua",
+      "contenuto": "## Introduzione\n\nLe soluzioni dei problemi in AC coinvolgono fasori e numeri complessi. La Proposition 13.8 del testo di algebra riguarda le proprietà degli spazi hermitiani. I numeri complessi sono il campo base degli spazi hermitiani, e il modulo di un numero complesso è la sua norma. La potenza complessa S = P + jQ = VI* è un prodotto hermitiano.\n\n## Concetti chiave\n\n### Soluzione di circuiti AC\nI circuiti AC si risolvono convertendo in fasori, applicando le leggi di Kirchhoff nel dominio dei fasori, risolvendo il sistema lineare complesso. La potenza complessa S = VI* = P + jQ ha parte reale P (attiva) e immaginaria Q (reattiva).\n\n### Spazi hermitiani\nUno spazio hermitiano è uno spazio vettoriale complesso con un prodotto hermitiano ⟨·,·⟩ che è sesquilineare: lineare nel primo argomento e antilineare nel secondo. Il prodotto VI* è hermitiano: P = Re(VI*) = (VI* + V*I)/2.\n\n### Applicazione: rifasamento\nIl rifasamento consiste nell'aggiungere condensatori o induttori per rendere il fattore di potenza cos φ vicino a 1. Questo minimizza la potenza reattiva Q, riducendo le perdite nelle linee di trasmissione.\n\n## Riepilogo\n- I circuiti AC si risolvono con fasori e sistemi lineari complessi.\n- La potenza complessa S = VI* è un prodotto hermitiano.\n- Il rifasamento ottimizza il fattore di potenza.\n- Gli spazi hermitiani forniscono la struttura algebrica per l'AC.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 15650,
+          "riga_fine": 15720
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Risolvere circuiti AC con fasori",
+        "Comprendere il prodotto hermitiano nell'analisi di potenza",
+        "Applicare il rifasamento per migliorare il fattore di potenza"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_034",
+      "ordine": 34,
+      "tipo": "lezione",
+      "argomento": "Soluzione sistemi AC · 4.8 Problems (Haar)",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione dei sistemi di equazioni per circuiti AC coinvolge matrici complesse. La sezione 4.8 Problems del testo di algebra riguarda le basi di Haar e le matrici di Hadamard. Le matrici di Hadamard hanno elementi ±1 e sono ortogonali, utili nell'elaborazione ",
+      "contenuto": "## Introduzione\n\nLa soluzione dei sistemi di equazioni per circuiti AC coinvolge matrici complesse. La sezione 4.8 Problems del testo di algebra riguarda le basi di Haar e le matrici di Hadamard. Le matrici di Hadamard hanno elementi ±1 e sono ortogonali, utili nell'elaborazione di segnali. Sono anche usate nei codici di correzione errori e nella spettroscopia.\n\n## Concetti chiave\n\n### Sistemi lineari complessi\nI circuiti AC generano sistemi lineari con coefficienti complessi. La matrice delle impedenze Z è complessa e simmetrica. Il sistema Z·I = V si risolve con eliminazione gaussiana complessa o con fattorizzazione LU complessa.\n\n### Matrici di Hadamard\nUna matrice di Hadamard H ha elementi h_ij = ±1 e soddisfa HH^T = nI. Le matrici di Hadamard sono ortogonali e sono usate nelle trasformate di Walsh-Hadamard per l'elaborazione di segnali.\n\n### Applicazione: codici di correzione errori\nLe matrici di Hadamard sono alla base dei codici di Reed-Muller e dei codici ortogonali usati nelle comunicazioni (CDMA). I segnali elettromagnetici possono essere codificati con trasformate di Hadamard per la trasmissione robusta.\n\n## Riepilogo\n- I circuiti AC richiedono la soluzione di sistemi lineari complessi.\n- Le matrici di Hadamard hanno elementi ±1 e sono ortogonali.\n- Le trasformate di Hadamard sono utili nell'elaborazione di segnali.\n- I codici di correzione errori usano proprietà delle matrici ortogonali.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 3685,
+          "riga_fine": 3801
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Risolvere sistemi lineari complessi per circuiti AC",
+        "Comprendere le matrici di Hadamard e le loro proprietà",
+        "Collegare le trasformate ortogonali all'elaborazione di segnali"
+      ],
+      "durata_stimata_minuti": 13,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_035",
+      "ordine": 35,
+      "tipo": "lezione",
+      "argomento": "Capitolo 6 · 13.8 Summary (Onde EM e Spazi Hermitiani)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 6 del libro di fisica introduce le Onde Elettromagnetiche: equazione d'onda, vettore di Poynting, intensità, quantità di moto, energia, fotoni. Il 13.8 Summary del testo di algebra riassume gli spazi hermitiani. Le onde EM sono soluzioni dell'equazion",
+      "contenuto": "## Introduzione\n\nIl Capitolo 6 del libro di fisica introduce le Onde Elettromagnetiche: equazione d'onda, vettore di Poynting, intensità, quantità di moto, energia, fotoni. Il 13.8 Summary del testo di algebra riassume gli spazi hermitiani. Le onde EM sono soluzioni dell'equazione di Maxwell nello spazio di Hilbert delle funzioni a quadrato integrabile L²(R³), che è uno spazio hermitiano.\n\n## Concetti chiave\n\n### Onde elettromagnetiche\nL'equazione d'onda ∇²E = μ₀ε₀ ∂²E/∂t² si ricava da Maxwell. La velocità c = 1/√(μ₀ε₀). Il vettore di Poynting S = E×H dà la densità di potenza. L'intensità I = ⟨S⟩_media è il valor medio. La pressione di radiazione è P = I/c per assorbimento totale.\n\n### Spazi hermitiani e onde\nNel summary di Chapter 13, si ricordano le proprietà degli spazi con prodotto hermitiano. Le onde piane e^{i(k·r - ωt)} formano una base ortonormale nello spazio di Hilbert L². La condizione di ortogonalità ∫ e^{ik·r}e^{-ik'·r} dV = (2π)³δ(k-k') è alla base dell'analisi di Fourier.\n\n### Quantizzazione del campo EM\nL'energia di un'onda EM è quantizzata in fotoni di energia E = hν. Lo spazio di Hilbert della teoria quantistica dei campi è uno spazio hermitiano (complesso) dove gli stati sono vettori e le osservabili sono operatori hermitiani.\n\n## Riepilogo\n- Le onde EM sono soluzioni dell'equazione d'onda derivata da Maxwell.\n- Le onde piane formano una base ortonormale in L².\n- Lo spazio di Hilbert L² è uno spazio hermitiano.\n- I fotoni sono la quantizzazione dell'energia del campo EM.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 649,
+        "riga_fine": 749
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 16428,
+          "riga_fine": 16480
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere l'equazione d'onda elettromagnetica",
+        "Comprendere lo spazio di Hilbert e le basi ortonormali",
+        "Collegare onde EM e fotoni alla struttura hermitiana"
+      ],
+      "durata_stimata_minuti": 13,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_036",
+      "ordine": 36,
+      "tipo": "lezione",
+      "argomento": "Onde EM · Chapter 8 (Norme Vettoriali)",
+      "sintesi_breve": "## Introduzione\n\nLe onde elettromagnetiche trasportano energia e quantità di moto. Il Chapter 8 del testo di algebra tratta le norme vettoriali e matriciali. La norma L² di un campo EM è proporzionale all'energia trasportata. La norma L^∞ (massimo) dà l'ampiezza massima del campo",
+      "contenuto": "## Introduzione\n\nLe onde elettromagnetiche trasportano energia e quantità di moto. Il Chapter 8 del testo di algebra tratta le norme vettoriali e matriciali. La norma L² di un campo EM è proporzionale all'energia trasportata. La norma L^∞ (massimo) dà l'ampiezza massima del campo.\n\n## Concetti chiave\n\n### Vettore di Poynting ed energia\nIl vettore di Poynting S = E×H = E×B/μ₀ dà il flusso di energia per unità di area. Il valor temporale ⟨S⟩ è l'intensità dell'onda. Per un'onda piana, ⟨S⟩ = ½ε₀cE₀², proporzionale al quadrato della norma del campo elettrico.\n\n### Norme di vettori e matrici\nIl Chapter 8 distingue norme vettoriali (L¹, L², L^∞) e norme matriciali. La norma L² (euclidea) è la più usata per i campi: ||E||² = ∫|E(r)|² dV è proporzionale all'energia.\n\n### Applicazione: potenza irradiata\nL'antenna irradia potenza P = ∫∫ S·dA. Per un dipolo elettrico oscillante, la potenza irradiata è P = (μ₀p₀²ω⁴)/(12πc). Questo dipende dalla norma del momento di dipolo.\n\n## Riepilogo\n- Il vettore di Poynting descrive il flusso di energia dell'onda EM.\n- La norma L² del campo è proporzionale all'energia.\n- La potenza irradiata da un'antenna si calcola integrando S.\n- Le norme matriciali sono essenziali nell'analisi numerica dei campi EM.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 650,
+        "riga_fine": 750
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 8506,
+          "riga_fine": 16631
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere il vettore di Poynting e l'energia trasportata",
+        "Applicare le norme vettoriali ai campi EM",
+        "Calcolare la potenza irradiata da un'antenna"
+      ],
+      "durata_stimata_minuti": 30,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_037",
+      "ordine": 37,
+      "tipo": "lezione",
+      "argomento": "Simbologia onde EM · Remarks (Spazio Duale)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia delle onde EM include il vettore di Poynting S, l'intensità I, la pressione di radiazione e la velocità della luce c. Le \"Remarks\" del testo di algebra contengono osservazioni sullo spazio duale. La dualità tra campi E e B è alla base delle equazion",
+      "contenuto": "## Introduzione\n\nLa simbologia delle onde EM include il vettore di Poynting S, l'intensità I, la pressione di radiazione e la velocità della luce c. Le \"Remarks\" del testo di algebra contengono osservazioni sullo spazio duale. La dualità tra campi E e B è alla base delle equazioni di Maxwell: E genera B e B genera E in un ciclo di mutua induzione.\n\n## Concetti chiave\n\n### La simbologia delle onde EM\nc = velocità della luce (3×10⁸ m/s), S = vettore di Poynting, I = intensità (potenza/area), p = pressione di radiazione, h = costante di Planck, ν = frequenza, λ = lunghezza d'onda.\n\n### Dualità elettrico-magnetico\nLe equazioni di Maxwell mostrano una simmetria tra E e B (in assenza di cariche e correnti). La trasformazione di dualità (E → cB, B → -E/c) lascia invariate le equazioni. Questa è una manifestazione di dualità nello spazio vettoriale dei campi.\n\n### Polarizzazione come vettore\nLa polarizzazione di un'onda EM descrive l'orientamento del campo E. Uno stato di polarizzazione generico (lineare, circolare, ellittica) è un vettore in uno spazio a 2 dimensioni (base {e_x, e_y}). \nL'analisi con matrici di Jones usa algebra lineare 2D.\n\n## Riepilogo\n- I simboli delle onde EM descrivono energia e trasporto.\n- La dualità tra campi E e B è una simmetria di Maxwell.\n- La polarizzazione è descritta da vettori in uno spazio 2D.\n- Le matrici di Jones operano sullo spazio di polarizzazione.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 11707,
+          "riga_fine": 11735
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze caratteristiche delle onde EM",
+        "Comprendere la dualità tra campo elettrico e magnetico",
+        "Descrivere la polarizzazione con vettori"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_038",
+      "ordine": 38,
+      "tipo": "lezione",
+      "argomento": "Soluzione onde EM · 5.6 Problems (Somme Dirette)",
+      "sintesi_breve": "## Introduzione\n\nLe soluzioni dei problemi sulle onde EM coinvolgono la propagazione e l'energia trasportata. La sezione 5.6 Problems del testo di algebra riguarda le somme dirette e le mappe affini. Un'onda EM può essere decomposta in somma diretta di polarizzazioni e modi di pr",
+      "contenuto": "## Introduzione\n\nLe soluzioni dei problemi sulle onde EM coinvolgono la propagazione e l'energia trasportata. La sezione 5.6 Problems del testo di algebra riguarda le somme dirette e le mappe affini. Un'onda EM può essere decomposta in somma diretta di polarizzazioni e modi di propagazione.\n\n## Concetti chiave\n\n### Soluzione di problemi sulle onde\nI problemi tipici riguardano: calcolo del vettore di Poynting, intensità media, pressione di radiazione, energia termica assorbita, e fotoni. Le soluzioni usano le equazioni di Maxwell in forma d'onda.\n\n### Somme dirette\nLa somma diretta V = V₁ ⊕ V₂ permette di scomporre uno spazio vettoriale in sottospazi indipendenti. Per un'onda EM, i modi TE e TM sono sottospazi ortogonali nella somma diretta dello spazio delle soluzioni.\n\n### Applicazione: decomposizione modale\nUna guida d'onda supporta modi TE (trasverso elettrico) e TM (trasverso magnetico). La soluzione generale è combinazione lineare di questi modi, che formano una base per lo spazio delle soluzioni.\n\n## Riepilogo\n- I modi di propagazione sono sottospazi ortogonali.\n- La somma diretta decompone lo spazio delle soluzioni.\n- I modi TE e TM sono indipendenti.\n- La guida d'onda supporta combinazioni lineari di modi.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 4533,
+          "riga_fine": 4819
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Risolvere problemi base sulle onde EM",
+        "Comprendere la somma diretta di sottospazi",
+        "Decomporre un'onda EM in modi TE e TM"
+      ],
+      "durata_stimata_minuti": 27,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_039",
+      "ordine": 39,
+      "tipo": "lezione",
+      "argomento": "Soluzione onde EM (2) · 8.10 Problems (Norme)",
+      "sintesi_breve": "## Introduzione\n\nI problemi di propagazione delle onde EM includono la diffrazione da fenditure. La sezione 8.10 Problems del testo di algebra propone esercizi su norme e disuguaglianze. La diffrazione di Fraunhofer è descritta dalla trasformata di Fourier, che è un'isometria lin",
+      "contenuto": "## Introduzione\n\nI problemi di propagazione delle onde EM includono la diffrazione da fenditure. La sezione 8.10 Problems del testo di algebra propone esercizi su norme e disuguaglianze. La diffrazione di Fraunhofer è descritta dalla trasformata di Fourier, che è un'isometria lineare (conserva la norma L²) nello spazio di Hilbert.\n\n## Concetti chiave\n\n### Diffrazione di Fraunhofer\nLa figura di diffrazione di una fenditura è data da I(θ) = I₀(sinc(πa sinθ/λ))². La larghezza della figura centrale è inversamente proporzionale alla larghezza a della fenditura.\n\n### Norme e trasformata di Fourier\nLa trasformata di Fourier F è lineare e, a meno di costanti, unitaria: ||Ff|| = ||f|| (teorema di Parseval). La diffrazione di Fraunhofer è la trasformata di Fourier della funzione apertura.\n\n### Applicazione: potenza risolutiva\nIl criterio di Rayleigh stabilisce che due sorgenti sono risolte se il massimo di una cade sul primo minimo dell'altra. Questa è una condizione di distanza in uno spazio di Hilbert.\n\n## Riepilogo\n- La diffrazione è descritta dalla trasformata di Fourier.\n- La trasformata di Fourier conserva la norma L².\n- Il criterio di Rayleigh definisce il potere risolutivo.\n- Le norme in spazi di Hilbert quantificano la risoluzione ottica.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 10142,
+          "riga_fine": 10390
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Calcolare figure di diffrazione da fenditure",
+        "Comprendere la trasformata di Fourier come isometria",
+        "Applicare il criterio di Rayleigh"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_040",
+      "ordine": 40,
+      "tipo": "lezione",
+      "argomento": "Capitolo 7 · Chapter 13 (Ottica Fisica e Spazi Hermitiani)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 7 del libro di fisica introduce l'Ottica Fisica: interferenza, esperienza di Young, diffrazione, polarizzazione, legge di Malus, angolo di Brewster. Il Chapter 13 del testo di algebra tratta gli spazi hermitiani. La polarizzazione della luce è descrit",
+      "contenuto": "## Introduzione\n\nIl Capitolo 7 del libro di fisica introduce l'Ottica Fisica: interferenza, esperienza di Young, diffrazione, polarizzazione, legge di Malus, angolo di Brewster. Il Chapter 13 del testo di algebra tratta gli spazi hermitiani. La polarizzazione della luce è descritta da vettori di Jones in uno spazio hermitiano complesso 2D.\n\n## Concetti chiave\n\n### Ottica Fisica\nInterferenza: due onde coerenti producono frange con spaziatura Δy = λD/d. Diffrazione: una fenditura produce pattern di sinc. Polarizzazione: il campo E oscilla in un piano. Legge di Malus: I = I₀cos²θ. Angolo di Brewster: l'angolo per cui la luce riflessa è totalmente polarizzata.\n\n### Spazi hermitiani in ottica\nI vettori di Jones (E_x, E_y) descrivono lo stato di polarizzazione in uno spazio complesso 2D. Le matrici di Jones (come polarizzatori e lamina a λ/4) sono operatori lineari (hermitiani o unitari) su questo spazio.\n\n### Applicazione: polarimetria\nUn polarimetro misura lo stato di polarizzazione della luce. L'analisi usa le matrici di Müller (4×4 reali, basate sui parametri di Stokes) o le matrici di Jones (2×2 complesse). Entrambi sono strumenti di algebra lineare.\n\n## Riepilogo\n- L'interferenza e la diffrazione sono fenomeni ondulatori classici.\n- La polarizzazione è descritta da vettori di Jones (spazio 2D complesso).\n- Le matrici di Jones sono operatori lineari sullo spazio di polarizzazione.\n- Il polarimetro è uno strumento di misura basato sull'algebra lineare.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 727,
+        "riga_fine": 827
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 15137,
+          "riga_fine": 15237
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere i fenomeni di interferenza e diffrazione",
+        "Comprendere i vettori di Jones e la polarizzazione",
+        "Applicare le matrici di Jones all'analisi polarimetrica"
+      ],
+      "durata_stimata_minuti": 17,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_041",
+      "ordine": 41,
+      "tipo": "lezione",
+      "argomento": "Ottica Fisica · Trasvezioni e Dilatazioni",
+      "sintesi_breve": "## Introduzione\n\nL'ottica fisica copre i fenomeni ondulatori della luce. La sezione 7.15 del testo di algebra introduce le trasvezioni e dilatazioni. In ottica, le lenti e gli specchi possono essere visti come trasformazioni lineari (o affini) del fronte d'onda, con ingrandimenti",
+      "contenuto": "## Introduzione\n\nL'ottica fisica copre i fenomeni ondulatori della luce. La sezione 7.15 del testo di algebra introduce le trasvezioni e dilatazioni. In ottica, le lenti e gli specchi possono essere visti come trasformazioni lineari (o affini) del fronte d'onda, con ingrandimenti trasversali e longitudinali.\n\n## Concetti chiave\n\n### Trasvezioni e dilatazioni\nUna trasvezione è una trasformazione lineare della forma x' = x + tv, dove t parametro e v vettore fisso. Una dilatazione è x' = λx. Queste sono trasformazioni elementari dei fronti d'onda.\n\n### Lenti come trasformazioni\nUna lente sottile convergente trasforma un fronte d'onda piano in uno sferico. La matrice dei raggi ABCD (ottica parassiale) descrive questa trasformazione: [y'; θ'] = [1 0; -1/f 1][y; θ], che è una trasvezione.\n\n### Applicazione: sistema di lenti\nUn sistema di lenti sottili è una composizione di trasvezioni (propagazione) e dilatazioni (rifrazione). La matrice ABCD totale è il prodotto delle matrici individuali. L'ottica matriciale è un'applicazione diretta dell'algebra lineare.\n\n## Riepilogo\n- Le lenti sono trasformazioni lineari del fronte d'onda.\n- La matrice ABCD descrive la propagazione dei raggi.\n- Propagazione e rifrazione sono trasvezioni e dilatazioni.\n- L'ottica matriciale usa l'algebra lineare 2×2.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 728,
+        "riga_fine": 828
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 7920,
+          "riga_fine": 8111
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere le trasformazioni lineari in ottica",
+        "Utilizzare le matrici ABCD per sistemi ottici",
+        "Applicare trasvezioni e dilatazioni ai fronti d'onda"
+      ],
+      "durata_stimata_minuti": 29,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_042",
+      "ordine": 42,
+      "tipo": "lezione",
+      "argomento": "Simbologia ottica · Dualità e Pairing (10.2)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia dell'ottica include angolo di Brewster, intensità, polarizzazione. La sezione 10.2 del testo di algebra introduce il pairing e la dualità tra E e E*. In ottica, la relazione tra campo elettrico E e campo magnetico H è di dualità: B = μ₀H, e il vetto",
+      "contenuto": "## Introduzione\n\nLa simbologia dell'ottica include angolo di Brewster, intensità, polarizzazione. La sezione 10.2 del testo di algebra introduce il pairing e la dualità tra E e E*. In ottica, la relazione tra campo elettrico E e campo magnetico H è di dualità: B = μ₀H, e il vettore di Poynting S = E×H è un pairing tra i due campi.\n\n## Concetti chiave\n\n### Grandezze dell'ottica\nLa simbologia include angolo limite, indice di rifrazione n, lunghezza d'onda λ, frequenza ν. Le costanti del vuoto sono c, μ₀, ε₀.\n\n### Pairing e dualità\nIl pairing ⟨·,·⟩: E*×E → R associa a una forma lineare e un vettore uno scalare. In fisica, il prodotto scalare (E·D, H·B) e il prodotto vettore (E×H) sono esempi di pairing.\n\n### Polarizzazione e dualità\nLa legge di Malus I = I₀cos²θ può essere vista come il quadrato del pairing (prodotto scalare) tra il vettore di polarizzazione incidente e l'asse del polarizzatore. L'angolo di Brewster θ_B = arctan(n₂/n₁) è l'angolo per cui il pairing E·k riflesso si annulla.\n\n## Riepilogo\n- I vettori di polarizzazione descrivono l'orientamento di E.\n- Il pairing E*×E dà il prodotto scalare dei vettori.\n- La legge di Malus è un pairing al quadrato.\n- L'angolo di Brewster annulla la componente riflessa polarizzata.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 11592,
+          "riga_fine": 11706
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze ottiche fondamentali",
+        "Comprendere il pairing tra spazio e duale",
+        "Applicare il concetto di dualità alla polarizzazione"
+      ],
+      "durata_stimata_minuti": 15,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_043",
+      "ordine": 43,
+      "tipo": "lezione",
+      "argomento": "Soluzione ottica · 3.6 Problems (Matrici)",
+      "sintesi_breve": "## Introduzione\n\nLa soluzione dei problemi di ottica fisica coinvolge calcolo di frange, intensità e angoli. La sezione 3.6 Problems del testo di algebra riguarda la rappresentazione di mappe lineari con matrici. Un problema tipico di interferenza usa matrici per rappresentare la",
+      "contenuto": "## Introduzione\n\nLa soluzione dei problemi di ottica fisica coinvolge calcolo di frange, intensità e angoli. La sezione 3.6 Problems del testo di algebra riguarda la rappresentazione di mappe lineari con matrici. Un problema tipico di interferenza usa matrici per rappresentare la combinazione di onde da due fenditure.\n\n## Concetti chiave\n\n### Interferenza a due fenditure\nLa posizione dei massimi è d sinθ = mλ. L'intensità I(θ) = I₀cos²(πd sinθ/λ). La combinazione delle due onde è una somma vettoriale.\n\n### Matrici e cambi di base\nUn cambiamento di coordinate (da cartesiane a polari, o da base standard a base di modi) è una matrice di cambiamento di base. In ottica, si passa dalla base delle onde piane alla base dei modi di diffrazione.\n\n### Applicazione: reticolo di diffrazione\nUn reticolo di diffrazione ha equazione d(sinθ_m - sinθ_i) = mλ. La risoluzione R = λ/Δλ = mN dipende dal numero di fenditure N, che determina la dimensione dello spazio dei modi.\n\n## Riepilogo\n- L'interferenza a due fenditure è una somma di onde.\n- Le matrici di cambiamento di base trasformano le rappresentazioni.\n- Il reticolo di diffrazione ha risoluzione proporzionale a N.\n- Le matrici rappresentano le trasformazioni lineari delle onde.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 2928,
+          "riga_fine": 3130
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Calcolare figure di interferenza a due fenditure",
+        "Comprendere i cambi di base in ottica",
+        "Analizzare il reticolo di diffrazione"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_044",
+      "ordine": 44,
+      "tipo": "lezione",
+      "argomento": "Soluzione ottica (2) · 7.17 Problems (Eliminazione Gaussiana)",
+      "sintesi_breve": "## Introduzione\n\nI problemi di ottica fisica includono lamine sottili, polarimetri, e legge di Bragg. La sezione 7.17 Problems del testo di algebra riguarda l'eliminazione gaussiana e la fattorizzazione LU. I sistemi ottici complessi (come un reticolo di diffrazione) possono esse",
+      "contenuto": "## Introduzione\n\nI problemi di ottica fisica includono lamine sottili, polarimetri, e legge di Bragg. La sezione 7.17 Problems del testo di algebra riguarda l'eliminazione gaussiana e la fattorizzazione LU. I sistemi ottici complessi (come un reticolo di diffrazione) possono essere analizzati con decomposizioni matriciali.\n\n## Concetti chiave\n\n### Lamine sottili\nLe lamine sottili producono frange di interferenza per cammino ottico. Lo spessore d e l'indice n determinano la differenza di fase: Δφ = 2π(2nd)/λ.\n\n### Eliminazione gaussiana in ottica\nL'analisi di un sistema multistrato (coating antiriflesso, filtri interferenziali) richiede la soluzione di sistemi lineari che legano i campi E nei diversi strati. La matrice di trasferimento (T-matrix) si ottiene con eliminazione gaussiana delle variabili interne.\n\n### Applicazione: filtri dielettrici\nI filtri interferenziali sono composti da strati alternati di materiali con diverso indice di rifrazione. L'analisi richiede la moltiplicazione di matrici di trasferimento 2×2 per ogni interfaccia.\n\n## Riepilogo\n- Le lamine sottili producono interferenza per cammino ottico.\n- I sistemi multistrato richiedono matrici di trasferimento.\n- L'eliminazione gaussiana risolve il sistema per i campi EM.\n- I filtri interferenziali usano matrici 2×2 per strato.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 8165,
+          "riga_fine": 8505
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Analizzare l'interferenza da lamine sottili",
+        "Comprendere le matrici di trasferimento in ottica",
+        "Applicare l'eliminazione gaussiana ai sistemi multistrato"
+      ],
+      "durata_stimata_minuti": 25,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_045",
+      "ordine": 45,
+      "tipo": "lezione",
+      "argomento": "Soluzione ottica (3) · Proof (Dimostrazioni)",
+      "sintesi_breve": "## Introduzione\n\nLe soluzioni dei problemi di ottica spesso richiedono dimostrazioni geometriche. La sezione \"Proof. We have\" del testo di algebra mostra una dimostrazione per una proprietà di matrici. Le dimostrazioni in ottica (come la legge di Snell) usano principi variazional",
+      "contenuto": "## Introduzione\n\nLe soluzioni dei problemi di ottica spesso richiedono dimostrazioni geometriche. La sezione \"Proof. We have\" del testo di algebra mostra una dimostrazione per una proprietà di matrici. Le dimostrazioni in ottica (come la legge di Snell) usano principi variazionali (Fermat) che sono analoghi ai problemi di ottimizzazione.\n\n## Concetti chiave\n\n### Principio di Fermat\nLa luce segue il percorso di tempo minimo. Da questo principio si derivano le leggi di riflessione (θ_r = θ_i) e rifrazione (n₁sinθ₁ = n₂sinθ₂ di Snell-Cartesio).\n\n### Dimostrazioni algebriche\nLa dimostrazione della legge di Snell usa il calcolo delle variazioni, che è un problema di ottimizzazione. Le condizioni di ottimalità (derivata prima nulla) portano a un sistema di equazioni.\n\n### Applicazione: fibre ottiche\nNelle fibre ottiche a gradino di indice, il cammino della luce segue la legge di Snell. L'angolo di accettazione θ_max = arcsin(NA) dove NA = √(n₁²-n₂²) è l'apertura numerica.\n\n## Riepilogo\n- Il principio di Fermat governa la propagazione della luce.\n- Le dimostrazioni in ottica usano l'ottimizzazione variazionale.\n- La legge di Snell si dimostra con il principio di Fermat.\n- L'apertura numerica determina l'angolo di accettazione della fibra.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 10021,
+          "riga_fine": 10072
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere il principio di Fermat in ottica",
+        "Applicare metodi di ottimizzazione alla propagazione della luce",
+        "Calcolare l'apertura numerica di una fibra ottica"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_046",
+      "ordine": 46,
+      "tipo": "lezione",
+      "argomento": "Capitolo 8 · Chapter 11 (Ottica Geom. e Spazi Euclidei)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 8 del libro di fisica introduce l'Ottica Geometrica: riflessione, rifrazione, specchi sferici, diottri e lenti sottili. Il Chapter 11 del testo di algebra introduce gli spazi euclidei, con prodotto scalare e proprietà di ortogonalità. In ottica geomet",
+      "contenuto": "## Introduzione\n\nIl Capitolo 8 del libro di fisica introduce l'Ottica Geometrica: riflessione, rifrazione, specchi sferici, diottri e lenti sottili. Il Chapter 11 del testo di algebra introduce gli spazi euclidei, con prodotto scalare e proprietà di ortogonalità. In ottica geometrica, i raggi luminosi seguono percorsi rettilinei in mezzi omogenei, e le leggi di riflessione e rifrazione sono descritte da trasformazioni lineari ortogonali.\n\n## Concetti chiave\n\n### Ottica geometrica e matrici ABCD\nLa propagazione dei raggi parassiali è descritta da matrici 2×2: [[1, d],[0, 1]] per la propagazione libera e [[1, 0],[-1/f, 1]] per una lente sottile. Il prodotto di queste matrici descrive sistemi ottici complessi.\n\n### Spazi euclidei e ortogonalità\nUno spazio euclideo ha un prodotto scalare che definisce angoli e distanze. Le riflessioni e rotazioni sono trasformazioni ortogonali (mantengono il prodotto scalare). In ottica, uno specchio piano è una riflessione ortogonale.\n\n### Applicazione: sistema di lenti\nUn telescopio o microscopio è una composizione di lenti. La matrice totale ABCD del sistema si ottiene moltiplicando le matrici individuali. L'ingrandimento M = A (per oggetti all'infinito) è un elemento della matrice.\n\n## Riepilogo\n- I raggi parassiali si propagano con matrici 2×2.\n- Le trasformazioni ortogonali conservano il prodotto scalare.\n- Uno specchio piano è una riflessione ortogonale.\n- I sistemi ottici si analizzano con il prodotto di matrici.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 817,
+        "riga_fine": 917
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 12489,
+          "riga_fine": 12589
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere le matrici ABCD per sistemi ottici",
+        "Applicare i concetti di ortogonalità alla riflessione",
+        "Analizzare sistemi di lenti con prodotto di matrici"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_047",
+      "ordine": 47,
+      "tipo": "lezione",
+      "argomento": "Ottica Geometrica · 12.1 Riflessioni Ortogonali",
+      "sintesi_breve": "## Introduzione\n\nL'Ottica Geometrica studia la propagazione della luce usando i raggi. La sezione 12.1 del testo di algebra introduce le riflessioni ortogonali (Householder). Uno specchio sferico in ottica parassiale può essere descritto con una riflessione, e la matrice di House",
+      "contenuto": "## Introduzione\n\nL'Ottica Geometrica studia la propagazione della luce usando i raggi. La sezione 12.1 del testo di algebra introduce le riflessioni ortogonali (Householder). Uno specchio sferico in ottica parassiale può essere descritto con una riflessione, e la matrice di Householder è lo strumento algebrico per calcolarla.\n\n## Concetti chiave\n\n### Specchi sferici\nUno specchio sferico di raggio R ha distanza focale f = R/2. L'equazione dello specchio è 1/p + 1/q = 1/f. L'ingrandimento M = -q/p. La matrice ABCD per uno specchio sferico è [[1,0],[-2/R,1]].\n\n### Riflessioni di Householder\nUna riflessione di Householder è H = I - 2vv^T/(v^Tv), dove v è un vettore. H è ortogonale e simmetrica (H^T = H e H² = I). In ottica, una riflessione speculare è una matrice di Householder nel piano o nello spazio.\n\n### Applicazione: aberrazione sferica\nLa riflessione su uno specchio sferico produce aberrazione sferica: i raggi parassiali e marginali non convergono nello stesso punto. La correzione richiede superfici asferiche o lenti multiple.\n\n## Riepilogo\n- Gli specchi sferici hanno equazione 1/p + 1/q = 1/f.\n- Le riflessioni di Householder sono matrici ortogonali simmetriche.\n- La matrice di uno specchio è una riflessione del raggio incidente.\n- L'aberrazione sferica è un effetto non ideale degli specchi sferici.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 818,
+        "riga_fine": 918
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 14326,
+          "riga_fine": 14501
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere gli specchi sferici in ottica parassiale",
+        "Comprendere le riflessioni di Householder",
+        "Applicare le matrici ortogonali all'ottica"
+      ],
+      "durata_stimata_minuti": 18,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_048",
+      "ordine": 48,
+      "tipo": "lezione",
+      "argomento": "Simbologia ottica geometrica · Remarks (Spazio Nullo)",
+      "sintesi_breve": "## Introduzione\n\nLa simbologia dell'ottica geometrica include distanza focale f, indice di rifrazione n, angolo di rifrazione. Le \"Remarks\" del testo di algebra contengono osservazioni sul kernel (spazio nullo) di una mappa lineare. In ottica, il fuoco di una lente è il punto in ",
+      "contenuto": "## Introduzione\n\nLa simbologia dell'ottica geometrica include distanza focale f, indice di rifrazione n, angolo di rifrazione. Le \"Remarks\" del testo di algebra contengono osservazioni sul kernel (spazio nullo) di una mappa lineare. In ottica, il fuoco di una lente è il punto in cui i raggi paralleli convergono: è l'immagine del punto all'infinito, un concetto legato al kernel della matrice di proiezione.\n\n## Concetti chiave\n\n### Grandezze dell'ottica geometrica\nDistanza focale f, indice di rifrazione n, angolo di incidenza θᵢ, angolo di rifrazione θᵣ, apertura numerica NA, ingrandimento M. Lo spazio immagine e oggetto sono legati da una trasformazione lineare.\n\n### Kernel e immagine\nIl kernel Ker(f) di una mappa lineare f: V→W è l'insieme dei vettori v tali che f(v) = 0. L'immagine Im(f) è l'insieme dei vettori w = f(v). Per una lente convergente, il kernel della matrice di proiezione dà il punto focale.\n\n### Applicazione: profondità di fuoco\nLa profondità di campo in fotografia è legata alla distanza focale e all'apertura del diaframma. Il cerchio di confusione è l'immagine di un punto come macchia, descritta dalla struttura della matrice di imaging.\n\n## Riepilogo\n- Il kernel e l'immagine sono sottospazi fondamentali di una mappa.\n- Il punto focale è legato al kernel della matrice di proiezione.\n- L'ingrandimento è un autovalore della matrice ottica.\n- La profondità di fuoco dipende dalla geometria del sistema.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 83,
+        "riga_fine": 90
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 11707,
+          "riga_fine": 11735
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Identificare le grandezze dell'ottica geometrica",
+        "Comprendere il kernel e l'immagine di una mappa lineare",
+        "Collegare il punto focale al kernel della matrice"
+      ],
+      "durata_stimata_minuti": 12,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_049",
+      "ordine": 49,
+      "tipo": "lezione",
+      "argomento": "Soluzione ottica geometrica · 11.11 Problems (Spazi Euclidei)",
+      "sintesi_breve": "## Introduzione\n\nI problemi di ottica geometrica riguardano lenti, specchi e sistemi ottici. La sezione 11.11 Problems del testo di algebra riguarda problemi su spazi euclidei e prodotti scalari. La formula delle lenti sottili 1/f = 1/p + 1/q è un'applicazione del prodotto scalar",
+      "contenuto": "## Introduzione\n\nI problemi di ottica geometrica riguardano lenti, specchi e sistemi ottici. La sezione 11.11 Problems del testo di algebra riguarda problemi su spazi euclidei e prodotti scalari. La formula delle lenti sottili 1/f = 1/p + 1/q è un'applicazione del prodotto scalare in coordinate focali.\n\n## Concetti chiave\n\n### Lenti sottili\nL'equazione 1/f = (n-1)(1/R₁ - 1/R₂) per una lente sottile. Ingrandimento M = -q/p. La matrice di una lente è [[1,0],[-1/f,1]] in ottica parassiale.\n\n### Prodotto scalare e distanza\nIl prodotto scalare ⟨x,y⟩ = x₁y₁ + ... + xₙyₙ definisce distanze e angoli. In ottica, la distanza dell'immagine dalla lente si calcola con l'equazione delle lenti, che è una relazione iperbolica.\n\n### Applicazione: ingrandimento\nL'ingrandimento trasversale M dipende dalla posizione dell'oggetto. Per M > 0 l'immagine è dritta, per M < 0 è capovolta. Questa relazione è un esempio di trasformazione lineare nello spazio oggetto-immagine.\n\n## Riepilogo\n- L'equazione delle lenti lega distanza focale, oggetto e immagine.\n- Il prodotto scalare definisce la geometria dello spazio.\n- L'ingrandimento dipende dalla posizione dell'oggetto.\n- I sistemi di lenti si analizzano con matrici 2×2.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 13898,
+          "riga_fine": 14322
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Applicare l'equazione delle lenti sottili",
+        "Comprendere il prodotto scalare in geometria",
+        "Analizzare l'ingrandimento come trasformazione"
+      ],
+      "durata_stimata_minuti": 27,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_050",
+      "ordine": 50,
+      "tipo": "lezione",
+      "argomento": "Soluzione ottica (2) · 10.10 Problems (Dualità)",
+      "sintesi_breve": "## Introduzione\n\nI problemi di sistemi ottici combinano lenti e specchi. La sezione 10.10 Problems del testo di algebra riguarda il duale e le sue applicazioni. In fotografia, la relazione tra apertura del diaframma e quantità di luce è una relazione di dualità: diaframma più chi",
+      "contenuto": "## Introduzione\n\nI problemi di sistemi ottici combinano lenti e specchi. La sezione 10.10 Problems del testo di algebra riguarda il duale e le sue applicazioni. In fotografia, la relazione tra apertura del diaframma e quantità di luce è una relazione di dualità: diaframma più chiuso = più profondità di campo ma meno luce.\n\n## Concetti chiave\n\n### Sistemi ottici composti\nUn telescopio combina un obiettivo (f₁) e un oculare (f₂). L'ingrandimento angolare M_θ = f₁/f₂. La matrice totale del sistema è il prodotto delle matrici di lente e propagazione.\n\n### Dualità e complementarità\nIl teorema di dualità afferma che E ed E* hanno la stessa dimensione. In fotografia, la relazione tra apertura f-stop e tempo di esposizione è duale: aperture più piccole richiedono tempi più lunghi.\n\n### Applicazione: fotometria\nLa quantità di luce che raggiunge il sensore è proporzionale all'area del diaframma (π(D/2)²) e inversamente proporzionale al quadrato della distanza focale (f²). Questo è espresso dal numero f: N = f/D.\n\n## Riepilogo\n- I telescopi combinano due lenti per l'ingrandimento.\n- La dualità in fotografia lega apertura e tempo.\n- Il numero f = f/D descrive la luminosità dell'obiettivo.\n- I sistemi ottici sono composizioni di matrici elementari.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 12398,
+          "riga_fine": 12488
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Analizzare sistemi ottici composti",
+        "Comprendere la dualità in fotografia",
+        "Calcolare l'ingrandimento di un telescopio"
+      ],
+      "durata_stimata_minuti": 13,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_051",
+      "ordine": 51,
+      "tipo": "lezione",
+      "argomento": "Soluzione sistemi ottici · Proof (Serie di Matrici)",
+      "sintesi_breve": "## Introduzione\n\nLe soluzioni dei problemi di ottica geometrica usano frequenze spaziali e risoluzione. La sezione \"Proof. We have\" del testo di algebra mostra dimostrazioni su serie di matrici. L'espansione in serie di una matrice ottica (come l'approssimazione parassiale di una",
+      "contenuto": "## Introduzione\n\nLe soluzioni dei problemi di ottica geometrica usano frequenze spaziali e risoluzione. La sezione \"Proof. We have\" del testo di algebra mostra dimostrazioni su serie di matrici. L'espansione in serie di una matrice ottica (come l'approssimazione parassiale di una lente spessa) è un'applicazione delle serie di potenze di matrici.\n\n## Concetti chiave\n\n### Risoluzione in ottica\nIl criterio di Rayleigh per l'occhio umano stabilisce che due punti sono risolti se separati da almeno 1/6000 di radiante. Per un microscopio, la risoluzione è d = 0.61λ/NA, dove NA è l'apertura numerica.\n\n### Serie di matrici\nL'esponenziale di una matrice e^A = I + A + A²/2! + ... è usato per descrivere l'evoluzione di sistemi lineari. In ottica, la propagazione in mezzi non omogenei può essere approssimata da sviluppi in serie.\n\n### Applicazione: lente spessa\nUna lente spessa ha due raggi di curvatura e uno spessore. La matrice ABCD totale è il prodotto di tre matrici: rifrazione sulla prima superficie, propagazione nello spessore, rifrazione sulla seconda superficie. Lo sviluppo in serie approssima lenti sottili.\n\n## Riepilogo\n- Il criterio di Rayleigh definisce la risoluzione ottica.\n- L'esponenziale di matrice descrive l'evoluzione lineare.\n- Le serie di matrici approssimano sistemi ottici complessi.\n- Le lenti spesse richiedono tre matrici elementari.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 111,
+        "riga_fine": 154
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 10021,
+          "riga_fine": 10072
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Comprendere il criterio di Rayleigh",
+        "Applicare l'esponenziale di matrice ai sistemi ottici",
+        "Analizzare lenti spesse con matrici"
+      ],
+      "durata_stimata_minuti": 11,
+      "prerequisiti": [],
+      "domande": []
+    },
+    {
+      "id": "mod_052",
+      "ordine": 52,
+      "tipo": "lezione",
+      "argomento": "Capitolo 9 · Chapter 4 (Fisica Moderna e Basi di Haar)",
+      "sintesi_breve": "## Introduzione\n\nIl Capitolo 9 del libro di fisica introduce la Fisica Moderna: effetto fotoelettrico, effetto Compton, atomo di Bohr, nucleo atomico, energia di legame. Il Chapter 4 del testo di algebra introduce le basi di Haar e le wavelet. La meccanica quantistica usa gli spa",
+      "contenuto": "## Introduzione\n\nIl Capitolo 9 del libro di fisica introduce la Fisica Moderna: effetto fotoelettrico, effetto Compton, atomo di Bohr, nucleo atomico, energia di legame. Il Chapter 4 del testo di algebra introduce le basi di Haar e le wavelet. La meccanica quantistica usa gli spazi di Hilbert e le trasformate wavelet per analizzare funzioni d'onda su scale multiple.\n\n## Concetti chiave\n\n### Fisica Moderna\nEffetto fotoelettrico: E_fotone = hν = φ + K_e (Einstein). Effetto Compton: Δλ = h/(mₑc)(1 - cosθ). Atomo di Bohr: livelli energetici E_n = -13.6 eV/n². Il nucleo: A = Z + N (numero di massa), difetto di massa Δm = Zmp + Nmn - M_nucleo.\n\n### Basi di Haar e wavelet\nLe wavelet di Haar sono funzioni a scala multipla che formano una base ortonormale per L²(R). Sono usate per compressione di segnali e immagini. La trasformata di Haar è lineare e reversibile.\n\n### Applicazione: analisi di segnali quantistici\nLe wavelet sono usate per analizzare segnali quantistici come gli spettri di assorbimento, dove diverse scale energetiche corrispondono a diverse strutture atomiche.\n\n## Riepilogo\n- La fisica moderna introduce la quantizzazione dell'energia.\n- Le basi di Haar permettono analisi multiscala.\n- Le wavelet combinano tempo e frequenza come le variabili quantistiche.\n- La trasformata di Haar è uno strumento di compressione lineare.",
+      "fonte": {
+        "percorso": "sources/linElettr_clean.md",
+        "riga_inizio": 911,
+        "riga_fine": 1011
+      },
+      "fonti_aggiuntive": [
+        {
+          "percorso": "sources/Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk__clean.md",
+          "riga_inizio": 3131,
+          "riga_fine": 3231
+        }
+      ],
+      "obiettivi_apprendimento": [
+        "Descrivere i fenomeni della fisica moderna (fotoelettrico, Compton, Bohr)",
+        "Comprendere le basi di Haar e wavelet",
+        "Collegare wavelet e analisi multiscala"
+      ],
+      "durata_stimata_minuti": 16,
+      "prerequisiti": [],
+      "domande": []
+    }
+  ],
+  "metadati": {
+    "generato_il": "2026-06-23T15:42:45Z",
+    "workspace": "/home/domenico/clone/TirocinioVittorio/Tirocinio/progetto/backend/workspace/linElettr",
+    "agente": "microlearning_planning_agent"
+  }
+}

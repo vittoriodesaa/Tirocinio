@@ -1,0 +1,36 @@
+{
+  "source_id": "Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk_",
+  "quality_score": 0.79,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.9,
+    "reading_order": 0.7,
+    "noise_level": 0.6,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.5
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Missing spaces in code: 'importprog.io.*' should be 'import prog.io.*' (multiple occurrences)."
+    },
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Corrupted character: '_⃝_' instead of copyright symbol."
+    },
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Text 'E[`] UN REATO' with backtick instead of accented E."
+    },
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Code line cut off at page 278: 'Sequenza<Rettan' incomplete; continues on next page."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

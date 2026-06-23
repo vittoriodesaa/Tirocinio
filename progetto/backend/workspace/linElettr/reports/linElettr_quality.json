@@ -1,0 +1,36 @@
+{
+  "source_id": "linElettr",
+  "quality_score": 0.6,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.85,
+    "reading_order": 0.5,
+    "noise_level": 0.65,
+    "table_quality": 0.3,
+    "ocr_confidence": 0.7
+  },
+  "issues": [
+    {
+      "severity": "critical",
+      "type": "table_degradation",
+      "message": "La tabella finale e' duplicata e contiene marcatori HTML <br> al posto di interruzioni di riga markdown, compromettendo la leggibilita'."
+    },
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Frammento di testo '--- CENTRO --- rrente.' presente, probabilmente rumore OCR o taglio di parola."
+    },
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "La prefazione termina bruscamente a meta' frase ('da un'analisi di tali risultati si e' potuto dedurre che, oltre a pochi casi in cui la difficolta,'), con interruzione non gestita."
+    },
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Salti di pagina non coerenti (dalla pagina 2 direttamente alla 29) con contenuto mancante tra le sezioni."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

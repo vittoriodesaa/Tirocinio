@@ -132,6 +132,10 @@ class ModuloMicrolearning(BaseModel):
         description="Testo didattico completo in italiano (lezioni); vuoto per i quiz",
     )
     fonte: FonteRiferimento
+    fonti_aggiuntive: List[FonteRiferimento] = Field(
+        default_factory=list,
+        description="Altre sorgenti integrate nella stessa lezione (corpus)",
+    )
     obiettivi_apprendimento: List[str] = Field(default_factory=list)
     durata_stimata_minuti: int = Field(default=10, ge=1, le=120)
     prerequisiti: List[str] = Field(default_factory=list)
@@ -173,6 +177,15 @@ class AcquisitionRecord(BaseModel):
 # 5. PLANNING AGENT (mappa strutturale + punti di taglio)
 
 
+class SegmentoFonte(BaseModel):
+    """Un estratto da una sorgente, usato nei punti di taglio integrati (corpus)."""
+    source_id: str
+    markdown_sorgente: str
+    riga_inizio: int = Field(ge=1)
+    riga_fine: int = Field(ge=1)
+    titolo_originale: str = ""
+
+
 class PuntoTaglio(BaseModel):
     id: str
     ordine: int = Field(ge=1)
@@ -183,11 +196,23 @@ class PuntoTaglio(BaseModel):
     durata_stimata_minuti: int = Field(ge=1, le=180)
     concetti_chiave: List[str] = Field(default_factory=list)
     prerequisiti: List[str] = Field(default_factory=list, description="ID punti taglio prerequisito")
+    source_id: Optional[str] = Field(
+        default=None,
+        description="Sorgente del punto (piano corpus multi-documento)",
+    )
+    markdown_sorgente: Optional[str] = Field(
+        default=None,
+        description="Path relativo al markdown, es. sources/manuale.md",
+    )
+    segmenti_fonte: List[SegmentoFonte] = Field(
+        default_factory=list,
+        description="Segmenti da più libri da integrare in una sola lezione (corpus)",
+    )
 
 
 class StructuralPlan(BaseModel):
     source_id: str
-    livello_struttura: str = Field(description="structured | flat | hybrid")
+    livello_struttura: str = Field(description="structured | flat | hybrid | corpus")
     markdown_sorgente: str
     unita_tempo_totale_minuti: int = 0
     punti_taglio: List[PuntoTaglio] = Field(default_factory=list)
@@ -196,6 +221,17 @@ class StructuralPlan(BaseModel):
         description='Archi {"da": "pt_001", "a": "pt_002"}',
     )
     note_pianificazione: str = ""
+    sorgenti: List[str] = Field(
+        default_factory=list,
+        description="Ordine delle source_id unite (piano corpus)",
+    )
+
+
+class CourseSourceEntry(BaseModel):
+    source_id: str
+    filename: str = ""
+    order: int = Field(default=1, ge=1)
+    role: str = Field(default="primary", description="primary | supplement | reference")
 
 
 # 6. SEGMENTATION AGENT (moduli grezzi)

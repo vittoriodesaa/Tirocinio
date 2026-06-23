@@ -1,0 +1,20 @@
+{
+  "course_id": "Strano",
+  "sources": [
+    {
+      "source_id": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk_",
+      "filename": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk,_1lib_sk,.pdf",
+      "order": 1,
+      "role": "primary"
+    },
+    {
+      "source_id": "Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk__1lib_sk_",
+      "filename": "Dai_fondamenti_agli_oggetti_Corso_di_z_library_sk,_1lib_sk,.pdf",
+      "order": 2,
+      "role": "primary"
+    }
+  ],
+  "source_id": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk__1lib_sk_",
+  "filename": "Sette_brevi_lezioni_sullo_stoicismo_z_library_sk,_1lib_sk,.pdf",
+  "updated_at": "2026-06-23T15:55:19.692691+00:00"
+}

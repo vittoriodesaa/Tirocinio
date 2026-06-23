@@ -46,7 +46,7 @@ from pipeline.core.agent_logging import (
     setup_logging,
 )
 from pipeline.core.llm_factory import create_chat_model
-from pipeline.core.pipeline_state import detect_source_id
+from pipeline.core.pipeline_state import CORPUS_SOURCE_ID, corpus_plan_path, detect_source_id, list_course_sources
 from pipeline.models.schemas import DomandaQuiz, FonteRiferimento, MicrolearningCourse, ModuloMicrolearning
 
 _MAX_READ_LINES = 200
@@ -71,6 +71,29 @@ def _register_microlearning_harness() -> None:
     _HARNESS_REGISTERED = True
 
 
+def _plan_point_count(workspace: Path) -> int:
+    """Numero di punti nel piano strutturale (corpus o singola sorgente)."""
+    ws = workspace.resolve()
+    corp = corpus_plan_path(ws)
+    if corp.exists():
+        try:
+            plan = json.loads(corp.read_text(encoding="utf-8"))
+            return len(plan.get("lezioni") or plan.get("punti_taglio") or [])
+        except json.JSONDecodeError:
+            pass
+    sid = detect_source_id(ws)
+    if not sid:
+        return 0
+    plan_path = ws / "reports" / f"{sid}_plan.json"
+    if not plan_path.exists():
+        return 0
+    try:
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+        return len(plan.get("lezioni") or plan.get("punti_taglio") or [])
+    except json.JSONDecodeError:
+        return 0
+
+
 def _compute_max_steps(workspace: Path, override: Optional[int] = None) -> int:
     """
     Limite recursion LangGraph (≈ turni agente + tool).
@@ -83,45 +106,43 @@ def _compute_max_steps(workspace: Path, override: Optional[int] = None) -> int:
     if env:
         return max(20, int(env))
 
-    cap = int(os.getenv("MICROLEARNING_MAX_STEPS_CAP", "150"))
-    base = int(os.getenv("MICROLEARNING_MAX_STEPS_DEFAULT", "80"))
-    ws = workspace.resolve()
-    sid = detect_source_id(ws)
-    bonus = 0
-    if sid:
-        plan_path = ws / "reports" / f"{sid}_plan.json"
-        if plan_path.exists():
-            try:
-                plan = json.loads(plan_path.read_text(encoding="utf-8"))
-                n = len(plan.get("lezioni") or plan.get("punti_taglio") or [])
-                if n > 100:
-                    bonus = 40
-                elif n > 40:
-                    bonus = 20
-            except json.JSONDecodeError:
-                pass
-    return min(cap, base + bonus)
+    cap = int(os.getenv("MICROLEARNING_MAX_STEPS_CAP", "400"))
+    base = int(os.getenv("MICROLEARNING_MAX_STEPS_DEFAULT", "120"))
+    per_lesson = int(os.getenv("MICROLEARNING_STEPS_PER_LESSON", "5"))
+    n = _plan_point_count(workspace)
+    _, target_lez, _ = _target_course_size(workspace)
+    estimated = base + target_lez * per_lesson
+    if n > 80:
+        estimated += 40
+    return min(cap, max(80, estimated))
 
 
 def _target_course_size(workspace: Path) -> tuple[int, int, int]:
-    """(min_lezioni, max_lezioni, min_quiz) in base al piano strutturale."""
-    min_lez = int(os.getenv("MICROLEARNING_TARGET_MIN_LESSONS", "8"))
-    max_lez = int(os.getenv("MICROLEARNING_TARGET_MAX_LESSONS", "12"))
-    min_quiz = int(os.getenv("MICROLEARNING_TARGET_MIN_QUIZ", "2"))
-    ws = workspace.resolve()
-    sid = detect_source_id(ws)
-    if sid:
-        plan_path = ws / "reports" / f"{sid}_plan.json"
-        if plan_path.exists():
-            try:
-                plan = json.loads(plan_path.read_text(encoding="utf-8"))
-                n = len(plan.get("lezioni") or plan.get("punti_taglio") or [])
-                if n > 100:
-                    max_lez = min(max_lez, 10)
-                    min_lez = min(min_lez, 8)
-            except json.JSONDecodeError:
-                pass
-    return min_lez, max_lez, max(min_quiz, 1)
+    """(min_lezioni, target_lezioni, min_quiz) scalato dal piano strutturale."""
+    floor_min = int(os.getenv("MICROLEARNING_TARGET_MIN_LESSONS", "15"))
+    floor_target = int(os.getenv("MICROLEARNING_TARGET_MAX_LESSONS", "40"))
+    cap = int(os.getenv("MICROLEARNING_TARGET_LESSONS_CAP", "120"))
+    min_quiz_env = int(os.getenv("MICROLEARNING_TARGET_MIN_QUIZ", "3"))
+    cov_min = float(os.getenv("MICROLEARNING_PLAN_COVERAGE_MIN", "0.5"))
+    cov_target = float(os.getenv("MICROLEARNING_PLAN_COVERAGE", "0.85"))
+
+    n = _plan_point_count(workspace)
+    if n > 0:
+        min_lez = max(floor_min, min(cap, int(n * cov_min)))
+        target_lez = min(cap, max(min_lez, int(n * cov_target)))
+        if n <= floor_target:
+            target_lez = max(min_lez, n)
+    else:
+        min_lez = floor_min
+        target_lez = floor_target
+
+    min_quiz = max(min_quiz_env, max(2, target_lez // 3))
+    return min_lez, target_lez, min_quiz
+
+
+def _completion_lesson_threshold(min_lez: int, target_lez: int) -> int:
+    ratio = float(os.getenv("MICROLEARNING_TARGET_THRESHOLD", "0.9"))
+    return max(min_lez, int(target_lez * ratio))
 
 
 def _count_modules(course: MicrolearningCourse) -> tuple[int, int]:
@@ -130,15 +151,134 @@ def _count_modules(course: MicrolearningCourse) -> tuple[int, int]:
     return lez, quiz
 
 
+def _corpus_source_ids(workspace: Path) -> List[str]:
+    corp = corpus_plan_path(workspace)
+    if corp.exists():
+        try:
+            plan = json.loads(corp.read_text(encoding="utf-8"))
+            sorgenti = plan.get("sorgenti") or []
+            if len(sorgenti) >= 2:
+                return list(sorgenti)
+        except json.JSONDecodeError:
+            pass
+    sources = list_course_sources(workspace)
+    if len(sources) >= 2:
+        return [s["source_id"] for s in sources]
+    return []
+
+
+def _source_id_from_fonte_path(percorso: str) -> Optional[str]:
+    name = Path((percorso or "").replace("\\", "/")).name
+    if name.endswith("_clean.md"):
+        return name[: -len("_clean.md")]
+    if name.endswith(".md"):
+        return name[:-3]
+    return None
+
+
+def _count_lessons_by_source(course: MicrolearningCourse) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for m in course.moduli:
+        if m.tipo != "lezione":
+            continue
+        paths = [m.fonte.percorso]
+        paths.extend(fa.percorso for fa in (m.fonti_aggiuntive or []))
+        seen: set[str] = set()
+        for percorso in paths:
+            sid = _source_id_from_fonte_path(percorso)
+            if sid and sid not in seen:
+                seen.add(sid)
+                counts[sid] = counts.get(sid, 0) + 1
+    return counts
+
+
+def _min_lessons_per_corpus_source(threshold: int, n_sources: int) -> int:
+    if n_sources < 2:
+        return 0
+    floor = int(os.getenv("MICROLEARNING_CORPUS_MIN_PER_SOURCE", "0"))
+    if floor > 0:
+        return floor
+    return max(3, threshold // (n_sources * 2))
+
+
+def _corpus_balance_ok(
+    workspace: Path,
+    course: MicrolearningCourse,
+    *,
+    threshold: int,
+) -> bool:
+    """Ogni documento del corpus deve contribuire al mix prima di chiudere il corso."""
+    sids = _corpus_source_ids(workspace)
+    if len(sids) < 2:
+        return True
+    by_src = _count_lessons_by_source(course)
+    min_each = _min_lessons_per_corpus_source(threshold, len(sids))
+    return all(by_src.get(sid, 0) >= min_each for sid in sids)
+
+
+def _corpus_bootstrap_lines(workspace: Path, course: MicrolearningCourse) -> List[str]:
+    sids = _corpus_source_ids(workspace)
+    if len(sids) < 2:
+        return []
+    by_src = _count_lessons_by_source(course)
+    corp = corpus_plan_path(workspace)
+    preview_lines: List[str] = []
+    if corp.exists():
+        try:
+            plan = json.loads(corp.read_text(encoding="utf-8"))
+            pts = plan.get("punti_taglio") or []
+            n_done = sum(1 for m in course.moduli if m.tipo == "lezione")
+            if n_done < len(pts):
+                nxt = pts[n_done]
+                segmenti = nxt.get("segmenti_fonte") or []
+                if len(segmenti) >= 2:
+                    preview_lines.append(
+                        f"Prossima lezione INTEGRATA (ordine {nxt.get('ordine')}): "
+                        f"«{nxt.get('titolo', '')[:70]}»"
+                    )
+                    for seg in segmenti:
+                        preview_lines.append(
+                            f"  - {seg.get('source_id')}: {seg.get('markdown_sorgente')} "
+                            f"righe {seg.get('riga_inizio')}-{seg.get('riga_fine')} "
+                            f"«{(seg.get('titolo_originale') or '')[:50]}»"
+                        )
+                else:
+                    preview_lines.append(
+                        f"Prossimo punto piano (ordine {nxt.get('ordine')}): "
+                        f"«{nxt.get('titolo', '')[:60]}» → {nxt.get('markdown_sorgente', '')}"
+                    )
+        except (json.JSONDecodeError, IndexError, TypeError):
+            pass
+    lines = [
+        "",
+        "CORPUS MULTI-DOCUMENTO — LEZIONI INTEGRATE:",
+        f"Sorgenti: {', '.join(sids)}.",
+        "Ogni punto in corso_plan.json con segmenti_fonte (2+ libri) è UNA sola lezione che "
+        "fonde i materiali: leggi TUTTI i segmenti, poi scrivi un racconto didattico unico in italiano "
+        "con collegamenti espliciti tra i libri (non due mini-lezioni separate).",
+        "In aggiungi_modulo_corso: percorso_fonte = primo segmento; fonti_aggiuntive = gli altri "
+        "(stesse righe del piano).",
+        "Lezioni per sorgente finora: "
+        + ", ".join(f"{s}={by_src.get(s, 0)}" for s in sids),
+    ]
+    lines.extend(preview_lines)
+    lines.append("Segui l'ordine di corso_plan.json: un modulo per punto_taglio.")
+    return lines
+
+
 def _is_course_sufficient(
     course: MicrolearningCourse,
     *,
+    workspace: Path,
     min_lez: int,
     max_lez: int,
     min_quiz: int,
 ) -> bool:
     lez, quiz = _count_modules(course)
-    return lez >= min_lez and quiz >= min_quiz and lez <= max_lez + 2
+    threshold = _completion_lesson_threshold(min_lez, max_lez)
+    if lez < threshold or quiz < min_quiz:
+        return False
+    return _corpus_balance_ok(workspace, course, threshold=threshold)
 
 
 def _next_module_ids(course: MicrolearningCourse) -> tuple[str, str, int]:
@@ -565,6 +705,11 @@ def build_course_tools(workspace_dir: str, course_store: _CourseStore) -> list:
         ] = [],
         durata_minuti: Annotated[int, "Durata stimata modulo"] = 12,
         prerequisiti: Annotated[list[str], "ID moduli prerequisito"] = [],
+        fonti_aggiuntive: Annotated[
+            list[dict],
+            "Altre fonti della stessa lezione integrata: "
+            "[{percorso, riga_inizio, riga_fine}] (corpus multi-libro)",
+        ] = [],
     ) -> str:
         """Aggiunge una LEZIONE strutturata (non un articolo o checklist); salva subito il JSON."""
         testo = (contenuto or "").strip()
@@ -577,6 +722,20 @@ def build_course_tools(workspace_dir: str, course_store: _CourseStore) -> list:
         err_struct = _valida_struttura_lezione(testo)
         if err_struct:
             return err_struct
+        extra_fonti: list[FonteRiferimento] = []
+        for i, raw in enumerate(fonti_aggiuntive or []):
+            if isinstance(raw, str):
+                return f"ERRORE fonti_aggiuntive[{i}]: passa un oggetto JSON, non una stringa."
+            percorso = str(raw.get("percorso", "")).strip()
+            if not percorso:
+                return f"ERRORE fonti_aggiuntive[{i}]: percorso mancante."
+            extra_fonti.append(
+                FonteRiferimento(
+                    percorso=percorso,
+                    riga_inizio=int(raw.get("riga_inizio", 1)),
+                    riga_fine=raw.get("riga_fine"),
+                )
+            )
         modulo = ModuloMicrolearning(
             id=id_modulo,
             ordine=ordine,
@@ -589,6 +748,7 @@ def build_course_tools(workspace_dir: str, course_store: _CourseStore) -> list:
                 riga_inizio=riga_inizio,
                 riga_fine=riga_fine,
             ),
+            fonti_aggiuntive=extra_fonti,
             obiettivi_apprendimento=obiettivi or [],
             durata_stimata_minuti=durata_minuti,
             prerequisiti=prerequisiti or [],
@@ -721,7 +881,8 @@ OBIETTIVO:
 0. Leggi /README.md, /notes/percorsi_filesystem.md e /notes/workflow_microlearning.md; riusa script in /scripts/.
 1. Esplora il corso corrente su /sources, /chunks, /reports (tool dominio + script); piano solo in write_todos o tool corso.
 2. Chiama imposta_corso una volta.
-3. Per ogni LEZIONE: leggi il materiale sorgente, poi aggiungi_modulo_corso con:
+3. Per ogni LEZIONE: se il punto corrente in corso_plan.json ha segmenti_fonte, leggi OGNI segmento
+   (read_file su ogni markdown/righe), poi aggiungi_modulo_corso con:
    - argomento = titolo breve della lezione (una riga);
    - contenuto = lezione markdown strutturata (min {_MIN_CONTENUTO_LEZIONE} caratteri);
    - obiettivi_apprendimento = 3-4 verbi d'azione (usati anche nella UI, non ripetere tutto il testo lì);
@@ -733,14 +894,20 @@ OBIETTIVO:
 {_LEZIONE_TEMPLATE}
 
 REGOLE:
-- 8-12 lezioni per libri lunghi (centinaia di moduli nel piano); 8-15 per testi medi.
+- Copri il piano strutturale (punti_taglio / gerarchia): una lezione per argomento significativo, non un riassunto di pochi capitoli.
+- Corso corpus (reports/corso_plan.json con più sorgenti): ogni punto_taglio con segmenti_fonte
+  richiede UNA lezione che integra tutti i libri elencati (leggi ogni segmento, sintetizza in italiano,
+  collega i concetti). Usa fonti_aggiuntive per le sorgenti oltre la prima. NON alternare lezioni
+  separate per libro.
+- L'obiettivo preciso (min/target lezioni e quiz) è nel messaggio utente iniziale: prosegui finché non lo raggiungi.
+- Inserisci quiz ogni 2-3 lezioni fino a soddisfare il minimo quiz richiesto.
 - Riscrivi in italiano didattico (non copiare l'inglese grezzo).
 - Ogni lezione deve INSEGNARE, non solo elencare consigli.
 - Non inventare righe fonte: verificale con i tool.
 - PATH: solo path virtuali del corso (/sources, /chunks, /reports). MAI path assoluti su disco (/home/...).
   Se read_file fallisce su assoluto, non esplorare /home o / — vedi /notes/percorsi_filesystem.md.
-- EFFICIENZA: dopo 1-2 esplorazioni (gerarchia + chunk o script) passa subito a imposta_corso e alle lezioni;
-  non leggere l'intero libro; per ogni lezione: trova_sezione/read_file → aggiungi_modulo_corso (2-4 tool max).
+- Dopo 1-2 esplorazioni (gerarchia + chunk o script) passa subito a imposta_corso e alle lezioni;
+  per ogni lezione: trova_sezione/read_file → aggiungi_modulo_corso (2-4 tool max).
 - Se il messaggio utente dice RIPRESA: NON rifare imposta_corso né lezioni già elencate; aggiungi SOLO moduli mancanti.
 - Quando obiettivo lezioni/quiz raggiunto, rispondi in testo senza altri tool (zero chiamate tool).
 
@@ -816,15 +983,17 @@ class MicrolearningPlanningAgent:
         ws = Path(self.workspace_dir)
         shared = shared_agent_home_path()
         course = self._course_store.course
-        min_lez, max_lez, min_quiz = _target_course_size(ws)
+        min_lez, target_lez, min_quiz = _target_course_size(ws)
+        threshold = _completion_lesson_threshold(min_lez, target_lez)
         lez, quiz = _count_modules(course)
         next_mod, next_quiz, next_ord = _next_module_ids(course)
+        plan_n = _plan_point_count(ws)
 
         if resume and course.moduli:
             lines = [
                 "RIPRESA corso microlearning (NON ricominciare da zero).",
                 f"Corso: «{course.titolo_corso}» — già presenti {lez} lezioni e {quiz} quiz.",
-                f"Obiettivo: almeno {min_lez} lezioni e {min_quiz} quiz (max {max_lez} lezioni).",
+                f"Obiettivo: ≥{threshold} lezioni (target {target_lez}, min {min_lez}) e ≥{min_quiz} quiz.",
                 "",
                 "Moduli già salvati (NON duplicare):",
             ]
@@ -837,11 +1006,13 @@ class MicrolearningPlanningAgent:
                 "Se obiettivo già raggiunto → rispondi solo testo di chiusura, zero tool.",
                 "Altrimenti aggiungi SOLO le lezioni/quiz mancanti (1-2 tool per lezione).",
             ])
+            lines.extend(_corpus_bootstrap_lines(ws, course))
         else:
             lines = [
                 "Pianifica un corso microlearning completo in italiano.",
                 "PATH: leggi /notes/percorsi_filesystem.md — usa solo /sources, /chunks, /reports (mai /home/...).",
-                f"Obiettivo: {min_lez}-{max_lez} lezioni e almeno {min_quiz} quiz.",
+                f"Obiettivo: ≥{threshold} lezioni (target {target_lez}, min {min_lez}) e ≥{min_quiz} quiz.",
+                f"Piano strutturale: {plan_n} punti_taglio nel report — copri la maggior parte con lezioni dedicate.",
                 f"Corso corrente (WORKSPACE_ROOT): {self.workspace_dir}",
                 f"Libreria globale agente (condivisa): {shared}",
                 f"Output JSON: {self.course_path.relative_to(ws) if self.course_path.is_relative_to(ws) else self.course_path}",
@@ -865,6 +1036,7 @@ class MicrolearningPlanningAgent:
                 "Esplorazione minima (1-2 tool), poi imposta_corso, poi lezioni+quiz.",
                 "Non creare file in /notes con nomi di questo corso.",
             ])
+            lines.extend(_corpus_bootstrap_lines(ws, course))
 
         return "\n".join(lines)
 
@@ -947,16 +1119,19 @@ class MicrolearningPlanningAgent:
         """Esegue il deep agent; riprende da disco e ripete fino a obiettivo o max round."""
         ws = Path(self.workspace_dir)
         min_lez, max_lez, min_quiz = _target_course_size(ws)
-        max_rounds = int(os.getenv("MICROLEARNING_MAX_ROUNDS", "4"))
-        cont_steps = int(os.getenv("MICROLEARNING_CONTINUATION_STEPS", "45"))
+        threshold = _completion_lesson_threshold(min_lez, max_lez)
+        max_rounds = int(os.getenv("MICROLEARNING_MAX_ROUNDS", "8"))
+        cont_steps = int(os.getenv("MICROLEARNING_CONTINUATION_STEPS", "80"))
 
         with phase("microlearning_planning", workspace=self.workspace_dir):
             course = self._course_store.course
             lez, quiz = _count_modules(course)
-            if _is_course_sufficient(course, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz):
+            if _is_course_sufficient(
+                course, workspace=ws, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz,
+            ):
                 narrative(
                     f"Corso già completo: {lez} lezioni e {quiz} quiz "
-                    f"(obiettivo {min_lez}-{max_lez} lezioni, ≥{min_quiz} quiz).",
+                    f"(obiettivo ≥{threshold} lezioni, ≥{min_quiz} quiz).",
                     percent=phase_percent_for("microlearning_agent", 1.0),
                 )
                 return course
@@ -964,7 +1139,7 @@ class MicrolearningPlanningAgent:
             if course.moduli:
                 narrative(
                     f"Riprendo il corso esistente: {lez} lezioni, {quiz} quiz — "
-                    f"obiettivo {min_lez}-{max_lez} lezioni.",
+                    f"obiettivo ≥{threshold} lezioni (target {max_lez}).",
                     percent=phase_percent_for("microlearning_agent", 0.05),
                 )
             else:
@@ -978,7 +1153,9 @@ class MicrolearningPlanningAgent:
 
             for round_idx in range(1, max_rounds + 1):
                 course = self._course_store.course
-                if _is_course_sufficient(course, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz):
+                if _is_course_sufficient(
+                course, workspace=ws, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz,
+            ):
                     break
 
                 resume = bool(course.moduli)
@@ -1029,6 +1206,7 @@ class MicrolearningPlanningAgent:
                 lez, quiz = _count_modules(self._course_store.course)
                 if _is_course_sufficient(
                     self._course_store.course,
+                    workspace=ws,
                     min_lez=min_lez,
                     max_lez=max_lez,
                     min_quiz=min_quiz,
@@ -1042,10 +1220,12 @@ class MicrolearningPlanningAgent:
             elapsed = time.perf_counter() - t0
             course = self._course_store.course
             lez, quiz = _count_modules(course)
-            if not _is_course_sufficient(course, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz):
+            if not _is_course_sufficient(
+                course, workspace=ws, min_lez=min_lez, max_lez=max_lez, min_quiz=min_quiz,
+            ):
                 narrative(
                     f"Dopo {max_rounds} round: {lez} lezioni e {quiz} quiz "
-                    f"(obiettivo {min_lez}-{max_lez}). Rilancia microlearning per continuare "
+                    f"(obiettivo ≥{threshold}, target {max_lez}). Rilancia microlearning per continuare "
                     f"o alza MICROLEARNING_MAX_STEPS / MICROLEARNING_MAX_ROUNDS.",
                     level="warn",
                 )

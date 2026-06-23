@@ -1,0 +1,36 @@
+{
+  "source_id": "Linear_Algebra_and_Optimization_with_z_library_sk__1lib_sk_",
+  "quality_score": 0.75,
+  "status": "PASS_WITH_WARNINGS",
+  "blocking": false,
+  "signals": {
+    "title_structure": 0.8,
+    "reading_order": 0.7,
+    "noise_level": 0.4,
+    "table_quality": 1.0,
+    "ocr_confidence": 0.6
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Testo troncato: 'ritten' probabilmente 'Written'."
+    },
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Formattazione matematica persa: sottolineature e parentesi usate per indici."
+    },
+    {
+      "severity": "warning",
+      "type": "gibberish",
+      "message": "Immagini omesse contrassegnate da 'picture intentionally omitted'."
+    },
+    {
+      "severity": "warning",
+      "type": "missing_formatting",
+      "message": "Segni di separazione pagina presenti nel testo."
+    }
+  ],
+  "recommended_action": "continue_with_warnings"
+}

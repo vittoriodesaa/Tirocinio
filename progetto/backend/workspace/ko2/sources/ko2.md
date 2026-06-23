@@ -4,14 +4,14 @@ filename: "ko2.pdf"
 document_class: "text_document"
 language: "it"
 conversion_strategy: "llm_routed"
-quality_score: 0.68
+quality_score: 0.79
 issues_detected:
-  - "Titolo principale non standard: 'EP-133 **K.O.** ~~**II**~~' con barratura e doppio grassetto, seguito da tre righe '**A Guidebook** **A Notebook A Reference Book**' senza gerarchia chiara."
-  - "Fine pagina ripetuta: '--- end of page.page_number=2 ---' appare due volte consecutive senza contenuto intermedio."
-  - "Testo spurio 'UT OUT OUT OUT' prima di '**----- End of picture text -----**' a centro documento; probabilmente frammento OCR residuo."
-  - "Blocco '## M ## Q ## N' e '## R' a pagina 217 sembra un frammento di indice con strutture di intestazione innaturali, forse da unione errata di colonne."
-  - "Indice a pagina 218 presenta voci con spaziatura e ritorno a capo non uniformi (es. 'Tempo  16,  44,  47' vs 'Velocity  124–125')."
-  - "Immagini omesse intenzionalmente indicate con '**==> picture [dimensione] intentionally omitted <==**'. Non costituiscono errore ma riducono completezza del contenuto."
+  - "Testo incomprensibile: 'UT OUT OUT OUT'"
+  - "Titolo isolato: '## M'"
+  - "Titolo isolato: '## Q'"
+  - "Titolo isolato: '## N'"
+  - "Carattere speciale incomprensibile nel testo: '▌MANUALLY LIVE SLICING A SAMPLE TO PADS'"
+  - "Parola troncata: 'sequencin' invece di 'sequencing'"
 page_count: 170
 ---
 
